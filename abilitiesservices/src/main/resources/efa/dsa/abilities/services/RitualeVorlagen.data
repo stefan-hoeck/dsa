@@ -1,0 +1,8 @@
+<data>
+    <dsa_ritual_item>
+        <name>Ritualkenntnis</name>
+        <id>-1</id>
+        <raisingCost>A</raisingCost>
+        <desc></desc>
+    </dsa_ritual_item>
+</data>

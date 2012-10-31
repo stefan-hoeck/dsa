@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="RpgTool">
+        <folder name="Explorer">
+            <folder name="Fähigkeiten">
+                <file name="Vorteile.data">
+                    <attr name="position" intvalue="0"/>
+                </file>
+                <file name="Nachteile.data">
+                    <attr name="position" intvalue="100"/>
+                </file>
+                <file name="Sonderfertigkeiten.data">
+                    <attr name="position" intvalue="200"/>
+                </file>
+                <file name="Rituale.data">
+                    <attr name="position" intvalue="300"/>
+                </file>
+                <file name="Zauber.data">
+                    <attr name="position" intvalue="400"/>
+                </file>
+                <attr name="position" intvalue="100"/>
+            </folder>
+            <folder name="Talente">
+                <file name="Sprachen.data">
+                    <attr name="position" intvalue="150"/>
+                </file>
+                <file name="Schriften.data">
+                    <attr name="position" intvalue="200"/>
+                </file>
+                <file name="NahkampfTalente.data">
+                    <attr name="position" intvalue="50"/>
+                </file>
+                <file name="FernkampfTalente.data">
+                    <attr name="position" intvalue="100"/>
+                </file>
+                <file name="Talente.data">
+                    <attr name="position" intvalue="0"/>
+                </file>
+                <attr name="position" intvalue="200"/>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

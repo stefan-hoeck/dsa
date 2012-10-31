@@ -1,0 +1,1087 @@
+<folder><name>Gegenstände</name>
+    <folder><name>Kleidung</name>
+        <dsa_equipment_item>
+            <name>Kleidung (stabil und wetterfest)</name>
+            <id>1</id>
+            <price>0</price>
+            <weight>0</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+    </folder>
+    <folder><name>Waffen- und Rüstungszubehör</name>
+        <dsa_equipment_item>
+            <name>Armbrustsehne</name>
+            <id>2</id>
+            <price>100</price>
+            <weight>2500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Bogensehne</name>
+            <id>3</id>
+            <price>40</price>
+            <weight>625</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Bogensehne (Lang- und Kriegsbogen)</name>
+            <id>4</id>
+            <price>100</price>
+            <weight>1250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Bolzenköcher, Leder</name>
+            <id>5</id>
+            <price>400</price>
+            <weight>18750</weight>
+            <desc>für 10 Bolzen</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Bolzenköcher, Holz</name>
+            <id>6</id>
+            <price>600</price>
+            <weight>25000</weight>
+            <desc>für 10 Bolzen</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Bolzenköcher, Stofftasche</name>
+            <id>7</id>
+            <price>200</price>
+            <weight>12500</weight>
+            <desc>für 10 Bolzen</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Dolchscheide</name>
+            <id>8</id>
+            <price>500</price>
+            <weight>6250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Dolchscheide, versteckt</name>
+            <id>9</id>
+            <price>1500</price>
+            <weight>5000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Köcher, Holz</name>
+            <id>10</id>
+            <price>600</price>
+            <weight>37500</weight>
+            <desc>für 20 Pfeile</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Köcher, Leder</name>
+            <id>11</id>
+            <price>1500</price>
+            <weight>18750</weight>
+            <desc>für 20 Pfeile</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Köcher, lederner Hüftköcher</name>
+            <id>12</id>
+            <price>1800</price>
+            <weight>21875</weight>
+            <desc>für 20 Pfeile</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Drolina</name>
+            <id>13</id>
+            <price>25000</price>
+            <weight>12500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schultergurt für Rückenscheide</name>
+            <id>14</id>
+            <price>1000</price>
+            <weight>12500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schwertgürtel</name>
+            <id>15</id>
+            <price>1000</price>
+            <weight>25000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schwertgürtel, verstärkt</name>
+            <id>16</id>
+            <price>4000</price>
+            <weight>50000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Axtgehänge</name>
+            <id>17</id>
+            <price>1500</price>
+            <weight>25000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Axtgehänge, verstärkt</name>
+            <id>18</id>
+            <price>4000</price>
+            <weight>50000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schwertscheide</name>
+            <id>19</id>
+            <price>1000</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Springarm</name>
+            <id>20</id>
+            <price>10000</price>
+            <weight>9375</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Unterkleidung</name>
+            <id>21</id>
+            <price>2500</price>
+            <weight>62500</weight>
+            <desc>für Metallrüstungen</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Unterkleidung verstärkt</name>
+            <id>22</id>
+            <price>8000</price>
+            <weight>100000</weight>
+            <desc>für Metallrüstungen
+verstärkt mit Kettengeflecht
+            </desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Waffenpflegeutensilien</name>
+            <id>23</id>
+            <price>1500</price>
+            <weight>25000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Wattierte Kappe</name>
+            <id>24</id>
+            <price>500</price>
+            <weight>12500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+    </folder>
+    <folder><name>Behälter</name>
+        <dsa_equipment_item>
+            <name>Geldbeutel, Leder</name>
+            <id>25</id>
+            <price>10</price>
+            <weight>625</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Gürteltasche, Hartleder</name>
+            <id>26</id>
+            <price>40</price>
+            <weight>2500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Tuchbeutel</name>
+            <id>27</id>
+            <price>40</price>
+            <weight>9375</weight>
+            <desc>max 5 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Lederranzen</name>
+            <id>28</id>
+            <price>200</price>
+            <weight>15625</weight>
+            <desc>max 8 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Lederrucksack</name>
+            <id>29</id>
+            <price>400</price>
+            <weight>25000</weight>
+            <desc>max 15 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Tragesack</name>
+            <id>30</id>
+            <price>100</price>
+            <weight>18750</weight>
+            <desc>max 15 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Korb</name>
+            <id>31</id>
+            <price>400</price>
+            <weight>50000</weight>
+            <desc>max 20 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kiepe</name>
+            <id>32</id>
+            <price>700</price>
+            <weight>50000</weight>
+            <desc>max 20 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Transportkiste</name>
+            <id>33</id>
+            <price>300</price>
+            <weight>75000</weight>
+            <desc>max 30 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Transportkiste mit Eisenbändern</name>
+            <id>34</id>
+            <price>800</price>
+            <weight>125000</weight>
+            <desc>max 30 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Truhe, klein</name>
+            <id>35</id>
+            <price>800</price>
+            <weight>125000</weight>
+            <desc>max 50 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Truhe, klein, mit Eisenbändern</name>
+            <id>36</id>
+            <price>1200</price>
+            <weight>200000</weight>
+            <desc>max 50 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Truhe, klein, mit Eisenbändern und Schloss</name>
+            <id>37</id>
+            <price>2500</price>
+            <weight>225000</weight>
+            <desc>max 50 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schmuckkästchen</name>
+            <id>38</id>
+            <price>200</price>
+            <weight>25000</weight>
+            <desc>max 3 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schmuckkästchen mit Schloss</name>
+            <id>40</id>
+            <price>1500</price>
+            <weight>28125</weight>
+            <desc>max 3 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schachtel aus Birkenrinde</name>
+            <id>41</id>
+            <price>150</price>
+            <weight>6250</weight>
+            <desc>max 1 Stein</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Lackdose</name>
+            <id>42</id>
+            <price>200</price>
+            <weight>625</weight>
+            <desc>max 5 Unzen</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Holzeimer</name>
+            <id>43</id>
+            <price>300</price>
+            <weight>37500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Flasche, Ton</name>
+            <id>44</id>
+            <price>100</price>
+            <weight>7500</weight>
+            <desc>2 Schank</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Flasche, Bronze</name>
+            <id>45</id>
+            <price>800</price>
+            <weight>31250</weight>
+            <desc>2 Schank</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Flasche, Glas</name>
+            <id>46</id>
+            <price>1200</price>
+            <weight>6250</weight>
+            <desc>2 Schank</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Glasphiole</name>
+            <id>47</id>
+            <price>500</price>
+            <weight>2500</weight>
+            <desc>3 Flux</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Tontiegel</name>
+            <id>48</id>
+            <price>50</price>
+            <weight>6250</weight>
+            <desc>10 Flux</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Salbendöschen aus Alabaster</name>
+            <id>49</id>
+            <price>800</price>
+            <weight>9375</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Wasserfass</name>
+            <id>50</id>
+            <price>1800</price>
+            <weight>75000</weight>
+            <desc>20 Mass</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Trinkflasche</name>
+            <id>51</id>
+            <price>200</price>
+            <weight>5000</weight>
+            <desc>5 Schank</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Wasserschlauch</name>
+            <id>52</id>
+            <price>100</price>
+            <weight>3125</weight>
+            <desc>5 Schank</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Brotbeutel</name>
+            <id>53</id>
+            <price>50</price>
+            <weight>5000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+    </folder>
+    <folder><name>Seile und Ketten</name>
+        <dsa_equipment_item>
+            <name>Schnur</name>
+            <id>54</id>
+            <price>5</price>
+            <weight>313</weight>
+            <desc>Angaben pro Schritt</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Hanfseil</name>
+            <id>55</id>
+            <price>70</price>
+            <weight>3125</weight>
+            <desc>Angaben pro Schritt</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Tau</name>
+            <id>56</id>
+            <price>150</price>
+            <weight>7500</weight>
+            <desc>Angaben pro Schritt
+2 Finger Durchmesser
+            </desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Seidenseil</name>
+            <id>57</id>
+            <price>1200</price>
+            <weight>1250</weight>
+            <desc>Angaben pro Schritt</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Fesselseil, Leder</name>
+            <id>58</id>
+            <price>100</price>
+            <weight>6250</weight>
+            <desc>Angaben pro Schritt</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Strickleiter</name>
+            <id>59</id>
+            <price>240</price>
+            <weight>9375</weight>
+            <desc>Angaben pro Schritt</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kette, dünn</name>
+            <id>60</id>
+            <price>400</price>
+            <weight>15625</weight>
+            <desc>Angaben pro Schritt</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kette, schwer</name>
+            <id>61</id>
+            <price>1000</price>
+            <weight>50000</weight>
+            <desc>Angaben pro Schritt</desc>
+        </dsa_equipment_item>
+    </folder>
+    <folder><name>Beleuchtung</name>
+        <dsa_equipment_item>
+            <name>Pechfackel</name>
+            <id>0</id>
+            <price>50</price>
+            <weight>1250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kerze</name>
+            <id>62</id>
+            <price>10</price>
+            <weight>1250</weight>
+            <desc>1 Spann länge</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Öllampe</name>
+            <id>63</id>
+            <price>100</price>
+            <weight>6250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kerzenständer, Zinn</name>
+            <id>64</id>
+            <price>400</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kerzenlaterne, Holz/Pergament</name>
+            <id>65</id>
+            <price>500</price>
+            <weight>12500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Sturmlaterne</name>
+            <id>66</id>
+            <price>1200</price>
+            <weight>18750</weight>
+            <desc>betrieben mit Öl, abblendbar</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Lampenöl</name>
+            <id>67</id>
+            <price>50</price>
+            <weight>6250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Duftöl</name>
+            <id>68</id>
+            <price>100</price>
+            <weight>6250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Feuerstein und Stahl</name>
+            <id>69</id>
+            <price>60</price>
+            <weight>3125</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Zunder, Dose</name>
+            <id>70</id>
+            <price>200</price>
+            <weight>5000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Zunder, Dose (wasserdicht)</name>
+            <id>71</id>
+            <price>700</price>
+            <weight>6250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Gwen-Petryl-Stein</name>
+            <id>72</id>
+            <price>100000</price>
+            <weight>18750</weight>
+            <desc>faustgross</desc>
+        </dsa_equipment_item>
+    </folder>
+    <folder><name>Sonstiger Reisebedarf</name>
+        <dsa_equipment_item>
+            <name>Kletterhaken</name>
+            <id>73</id>
+            <price>50</price>
+            <weight>3125</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Wurfhaken</name>
+            <id>74</id>
+            <price>500</price>
+            <weight>6250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Angelhaken mit Schnur</name>
+            <id>75</id>
+            <price>20</price>
+            <weight>625</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Fischernetz, klein</name>
+            <id>76</id>
+            <price>1000</price>
+            <weight>25000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Hängematte</name>
+            <id>77</id>
+            <price>1300</price>
+            <weight>50000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Zeltplane</name>
+            <id>78</id>
+            <price>2000</price>
+            <weight>187500</weight>
+            <desc>für 2 Personen</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Zeltboden</name>
+            <id>79</id>
+            <price>800</price>
+            <weight>50000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Zeltstangen</name>
+            <id>80</id>
+            <price>300</price>
+            <weight>75000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Vierpersonenzelt</name>
+            <id>81</id>
+            <price>5000</price>
+            <weight>562500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Wolldecke</name>
+            <id>82</id>
+            <price>200</price>
+            <weight>37500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Fellgefütterter Schlafsack</name>
+            <id>83</id>
+            <price>1000</price>
+            <weight>50000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schneeschuhe</name>
+            <id>84</id>
+            <price>1200</price>
+            <weight>37500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Nivesische Skier</name>
+            <id>85</id>
+            <price>1800</price>
+            <weight>37500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+    </folder>
+    <folder><name>Koch- und Essgeschirr</name>
+        <dsa_equipment_item>
+            <name>Holzbecher, billig</name>
+            <id>86</id>
+            <price>10</price>
+            <weight>1250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Henkelbecher, Zinn</name>
+            <id>87</id>
+            <price>400</price>
+            <weight>12500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Silberpokal</name>
+            <id>88</id>
+            <price>1000</price>
+            <weight>6250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Holzteller, einfach</name>
+            <id>89</id>
+            <price>40</price>
+            <weight>2500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Holzlöffel, einfach</name>
+            <id>90</id>
+            <price>10</price>
+            <weight>1875</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Essmesser, Eisen</name>
+            <id>91</id>
+            <price>300</price>
+            <weight>3125</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Essbesteck, Zinn</name>
+            <id>92</id>
+            <price>500</price>
+            <weight>6250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Tonkrug, einfach</name>
+            <id>93</id>
+            <price>100</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Karaffe aus Neethaer Glas</name>
+            <id>94</id>
+            <price>2000</price>
+            <weight>12500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Einfaches Trinkhorn</name>
+            <id>95</id>
+            <price>500</price>
+            <weight>9375</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Eisenpfanne</name>
+            <id>96</id>
+            <price>800</price>
+            <weight>50000</weight>
+            <desc>1.5 Spann Durchmesser</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Eisentopf</name>
+            <id>97</id>
+            <price>1000</price>
+            <weight>75000</weight>
+            <desc>12 Mass</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kessel</name>
+            <id>98</id>
+            <price>1500</price>
+            <weight>43750</weight>
+            <desc>2 Mass emailiert
+            </desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kupferkessel</name>
+            <id>99</id>
+            <price>2000</price>
+            <weight>100000</weight>
+            <desc>25 Mass</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Bratspiess, Eisen</name>
+            <id>100</id>
+            <price>500</price>
+            <weight>75000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+    </folder>
+    <folder><name>Kleidung</name>
+        <dsa_equipment_item>
+            <name>Wollstrümpfe</name>
+            <id>102</id>
+            <price>30</price>
+            <weight>2500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Seidenstrümpfe</name>
+            <id>103</id>
+            <price>1200</price>
+            <weight>1250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Lendentuch</name>
+            <id>104</id>
+            <price>10</price>
+            <weight>5000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Brusttuch</name>
+            <id>105</id>
+            <price>10</price>
+            <weight>5000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Unterhose / Bruch</name>
+            <id>106</id>
+            <price>200</price>
+            <weight>12500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Nachthemd, Leinen</name>
+            <id>107</id>
+            <price>100</price>
+            <weight>9375</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Unterkleid, Leinen</name>
+            <id>108</id>
+            <price>100</price>
+            <weight>12500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schnürmieder</name>
+            <id>109</id>
+            <price>200</price>
+            <weight>15625</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Korsett</name>
+            <id>110</id>
+            <price>6000</price>
+            <weight>21875</weight>
+            <desc>aus Fischbein und Seide</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Hemd / Bluse</name>
+            <id>111</id>
+            <price>80</price>
+            <weight>9375</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Weste</name>
+            <id>112</id>
+            <price>200</price>
+            <weight>15625</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Jacke / Wams</name>
+            <id>113</id>
+            <price>200</price>
+            <weight>25000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Wappenrock</name>
+            <id>114</id>
+            <price>200</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Hose</name>
+            <id>115</id>
+            <price>100</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Rock</name>
+            <id>116</id>
+            <price>100</price>
+            <weight>28125</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Belhanker Röckchen, Bausch</name>
+            <id>117</id>
+            <price>400</price>
+            <weight>9375</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kleid</name>
+            <id>118</id>
+            <price>200</price>
+            <weight>37500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Horasisches Ballkleid, teuer</name>
+            <id>119</id>
+            <price>5000</price>
+            <weight>37500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Tunika, Leinen</name>
+            <id>120</id>
+            <price>100</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Burnus oder Kaftan</name>
+            <id>121</id>
+            <price>200</price>
+            <weight>31250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kutte</name>
+            <id>122</id>
+            <price>200</price>
+            <weight>50000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Magierrobe, Taft</name>
+            <id>123</id>
+            <price>6000</price>
+            <weight>75000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kapuzenumhang, lang</name>
+            <id>124</id>
+            <price>400</price>
+            <weight>50000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Mantel oder Schaube</name>
+            <id>125</id>
+            <price>300</price>
+            <weight>37500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kusliker Kurzmantel</name>
+            <id>126</id>
+            <price>200</price>
+            <weight>31250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Balihoer Wachsmantel</name>
+            <id>127</id>
+            <price>600</price>
+            <weight>43750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kapuze / Gugel</name>
+            <id>129</id>
+            <price>80</price>
+            <weight>9375</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Wollmütze / Filzkappe / Fez</name>
+            <id>130</id>
+            <price>20</price>
+            <weight>1875</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Fellmütze</name>
+            <id>131</id>
+            <price>300</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Kopftuch / Haube, Leinen</name>
+            <id>132</id>
+            <price>50</price>
+            <weight>1875</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Stirnband</name>
+            <id>133</id>
+            <price>50</price>
+            <weight>1250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Baret</name>
+            <id>134</id>
+            <price>100</price>
+            <weight>2500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Federhut</name>
+            <id>135</id>
+            <price>300</price>
+            <weight>9375</weight>
+            <desc>mit breiter Krempe</desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Turban</name>
+            <id>136</id>
+            <price>400</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schal, Wolle</name>
+            <id>137</id>
+            <price>20</price>
+            <weight>2500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Halstuch, Seide</name>
+            <id>138</id>
+            <price>400</price>
+            <weight>1250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schleier, feinste Seide</name>
+            <id>139</id>
+            <price>400</price>
+            <weight>1250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Taschentuch, Leinen</name>
+            <id>140</id>
+            <price>100</price>
+            <weight>1250</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Maske aus Tuch</name>
+            <id>141</id>
+            <price>300</price>
+            <weight>3125</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Ledergürtel</name>
+            <id>142</id>
+            <price>200</price>
+            <weight>5000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Seidenschärpe</name>
+            <id>143</id>
+            <price>1000</price>
+            <weight>2500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Lederschürze mit Taschen</name>
+            <id>144</id>
+            <price>500</price>
+            <weight>25000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Wollfäustlinge</name>
+            <id>145</id>
+            <price>30</price>
+            <weight>2500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Lederhandschuhe</name>
+            <id>146</id>
+            <price>300</price>
+            <weight>3750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Stulpenhandschuhe</name>
+            <id>147</id>
+            <price>800</price>
+            <weight>15625</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Strohschuhe, billig</name>
+            <id>148</id>
+            <price>30</price>
+            <weight>15625</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Sandalen</name>
+            <id>149</id>
+            <price>60</price>
+            <weight>18750</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Lederschuhe</name>
+            <id>150</id>
+            <price>200</price>
+            <weight>25000</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Leichte Stiefel</name>
+            <id>151</id>
+            <price>900</price>
+            <weight>46875</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Schwere Reiterstiefel</name>
+            <id>152</id>
+            <price>2000</price>
+            <weight>62500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+        <dsa_equipment_item>
+            <name>Stulpenstiefel</name>
+            <id>153</id>
+            <price>3000</price>
+            <weight>62500</weight>
+            <desc></desc>
+        </dsa_equipment_item>
+    </folder>
+    <dsa_equipment_item>
+        <name>Ausrüstung</name>
+        <id>154</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc>Dies ist ein Platzhalter für die Heldengenerierung</desc>
+    </dsa_equipment_item>
+</folder>

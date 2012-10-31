@@ -1,0 +1,1402 @@
+<folder><name>Geschosse</name>
+    <dsa_ammunition_item>
+        <name>Bolzen für Arbalette</name>
+        <id>0</id>
+        <price>250</price>
+        <weight>5000</weight>
+        <desc></desc>
+        <tp>2W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Bolzen für Arbalone</name>
+        <id>1</id>
+        <price>400</price>
+        <weight>6250</weight>
+        <desc></desc>
+        <tp>3W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Bolzen für Balestra</name>
+        <id>2</id>
+        <price>200</price>
+        <weight>3125</weight>
+        <desc></desc>
+        <tp>2W6+2</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Bolzen für Balestrina</name>
+        <id>3</id>
+        <price>150</price>
+        <weight>3125</weight>
+        <desc></desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Bolzen für Eisenwalder</name>
+        <id>4</id>
+        <price>150</price>
+        <weight>0</weight>
+        <desc></desc>
+        <tp>1W6+3</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Bolzen für Leichte Armbrust</name>
+        <id>5</id>
+        <price>150</price>
+        <weight>1875</weight>
+        <desc></desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Bolzen für Windenarmbrust</name>
+        <id>6</id>
+        <price>200</price>
+        <weight>2500</weight>
+        <desc></desc>
+        <tp>2W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Pfeil für Elfenbogen</name>
+        <id>7</id>
+        <price>40</price>
+        <weight>1875</weight>
+        <desc></desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Pfeil für Kompositbogen</name>
+        <id>8</id>
+        <price>25</price>
+        <weight>1250</weight>
+        <desc></desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Pfeil für Kriegsbogen</name>
+        <id>9</id>
+        <price>60</price>
+        <weight>2500</weight>
+        <desc></desc>
+        <tp>1W6+7</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Pfeil für Kurzbogen</name>
+        <id>10</id>
+        <price>25</price>
+        <weight>1250</weight>
+        <desc></desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Pfeil für Langbogen</name>
+        <id>11</id>
+        <price>40</price>
+        <weight>1875</weight>
+        <desc></desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Pfeil für Orkischer Reiterbogen</name>
+        <id>12</id>
+        <price>25</price>
+        <weight>1250</weight>
+        <desc></desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Bolzen für Balläster</name>
+        <id>13</id>
+        <price>60</price>
+        <weight>3125</weight>
+        <desc></desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegsbolzen für Arbalette</name>
+        <id>14</id>
+        <price>375</price>
+        <weight>5000</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegsbolzen für Arbalette</name>
+        <id>15</id>
+        <price>1500</price>
+        <weight>5000</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Bolzen für Arbalette</name>
+        <id>16</id>
+        <price>1000</price>
+        <weight>5000</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>2W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherbolzen für Arbalette</name>
+        <id>17</id>
+        <price>750</price>
+        <weight>5000</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>2W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Bolzen für Arbalette</name>
+        <id>18</id>
+        <price>500</price>
+        <weight>5000</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>2W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderbolzen für Arbalette</name>
+        <id>19</id>
+        <price>750</price>
+        <weight>5000</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandbolzen für Arbalette</name>
+        <id>20</id>
+        <price>2000</price>
+        <weight>5000</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>2W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegsbolzen für Arbalone</name>
+        <id>21</id>
+        <price>600</price>
+        <weight>6250</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>3W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegsbolzen für Arbalone</name>
+        <id>22</id>
+        <price>2400</price>
+        <weight>6250</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>3W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Bolzen für Arbalone</name>
+        <id>23</id>
+        <price>1600</price>
+        <weight>6250</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>3W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherbolzen für Arbalone</name>
+        <id>24</id>
+        <price>1200</price>
+        <weight>6250</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>3W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Bolzen für Arbalone</name>
+        <id>25</id>
+        <price>800</price>
+        <weight>6250</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>3W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderbolzen für Arbalone</name>
+        <id>26</id>
+        <price>1200</price>
+        <weight>6250</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>3W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandbolzen für Arbalone</name>
+        <id>27</id>
+        <price>3200</price>
+        <weight>6250</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>3W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegsbolzen für Balestra</name>
+        <id>28</id>
+        <price>300</price>
+        <weight>3125</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+2</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegsbolzen für Balestra</name>
+        <id>29</id>
+        <price>1200</price>
+        <weight>3125</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+2</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Bolzen für Balestra</name>
+        <id>30</id>
+        <price>800</price>
+        <weight>3125</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>2W6+2</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherbolzen für Balestra</name>
+        <id>31</id>
+        <price>600</price>
+        <weight>3125</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>2W6+2</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Bolzen für Balestra</name>
+        <id>32</id>
+        <price>400</price>
+        <weight>3125</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>2W6+2</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderbolzen für Balestra</name>
+        <id>33</id>
+        <price>600</price>
+        <weight>3125</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+2</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandbolzen für Balestra</name>
+        <id>34</id>
+        <price>1600</price>
+        <weight>3125</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>2W6+2</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegsbolzen für Balestrina</name>
+        <id>35</id>
+        <price>225</price>
+        <weight>3125</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegsbolzen für Balestrina</name>
+        <id>36</id>
+        <price>900</price>
+        <weight>3125</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Bolzen für Balestrina</name>
+        <id>37</id>
+        <price>600</price>
+        <weight>3125</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherbolzen für Balestrina</name>
+        <id>38</id>
+        <price>450</price>
+        <weight>3125</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Bolzen für Balestrina</name>
+        <id>39</id>
+        <price>300</price>
+        <weight>3125</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderbolzen für Balestrina</name>
+        <id>40</id>
+        <price>450</price>
+        <weight>3125</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandbolzen für Balestrina</name>
+        <id>41</id>
+        <price>1200</price>
+        <weight>3125</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegsbolzen für Eisenwalder</name>
+        <id>42</id>
+        <price>225</price>
+        <weight>0</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+3</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegsbolzen für Eisenwalder</name>
+        <id>43</id>
+        <price>900</price>
+        <weight>0</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+3</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Bolzen für Eisenwalder</name>
+        <id>44</id>
+        <price>600</price>
+        <weight>0</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+3</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherbolzen für Eisenwalder</name>
+        <id>45</id>
+        <price>450</price>
+        <weight>0</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+3</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Bolzen für Eisenwalder</name>
+        <id>46</id>
+        <price>300</price>
+        <weight>0</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+3</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderbolzen für Eisenwalder</name>
+        <id>47</id>
+        <price>450</price>
+        <weight>0</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+3</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandbolzen für Eisenwalder</name>
+        <id>48</id>
+        <price>1200</price>
+        <weight>0</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+3</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegsbolzen für Leichte Armbrust</name>
+        <id>49</id>
+        <price>225</price>
+        <weight>1875</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegsbolzen für Leichte Armbrust</name>
+        <id>50</id>
+        <price>900</price>
+        <weight>1875</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Bolzen für Leichte Armbrust</name>
+        <id>51</id>
+        <price>600</price>
+        <weight>1875</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherbolzen für Leichte Armbrust</name>
+        <id>52</id>
+        <price>450</price>
+        <weight>1875</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Bolzen für Leichte Armbrust</name>
+        <id>53</id>
+        <price>300</price>
+        <weight>1875</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderbolzen für Leichte Armbrust</name>
+        <id>54</id>
+        <price>450</price>
+        <weight>1875</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandbolzen für Leichte Armbrust</name>
+        <id>55</id>
+        <price>1200</price>
+        <weight>1875</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegsbolzen für Windenarmbrust</name>
+        <id>56</id>
+        <price>300</price>
+        <weight>2500</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegsbolzen für Windenarmbrust</name>
+        <id>57</id>
+        <price>1200</price>
+        <weight>2500</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Bolzen für Windenarmbrust</name>
+        <id>58</id>
+        <price>800</price>
+        <weight>2500</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>2W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherbolzen für Windenarmbrust</name>
+        <id>59</id>
+        <price>600</price>
+        <weight>2500</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>2W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Bolzen für Windenarmbrust</name>
+        <id>60</id>
+        <price>400</price>
+        <weight>2500</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>2W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderbolzen für Windenarmbrust</name>
+        <id>61</id>
+        <price>600</price>
+        <weight>2500</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>2W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandbolzen für Windenarmbrust</name>
+        <id>62</id>
+        <price>1600</price>
+        <weight>2500</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>2W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegspfeil für Elfenbogen</name>
+        <id>63</id>
+        <price>60</price>
+        <weight>1875</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegspfeil für Elfenbogen</name>
+        <id>64</id>
+        <price>240</price>
+        <weight>1875</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Pfeil für Elfenbogen</name>
+        <id>65</id>
+        <price>160</price>
+        <weight>1875</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherpfeil für Elfenbogen</name>
+        <id>66</id>
+        <price>120</price>
+        <weight>1875</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Pfeil für Elfenbogen</name>
+        <id>67</id>
+        <price>80</price>
+        <weight>1875</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderpfeil für Elfenbogen</name>
+        <id>68</id>
+        <price>120</price>
+        <weight>1875</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandpfeil für Elfenbogen</name>
+        <id>69</id>
+        <price>320</price>
+        <weight>1875</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegspfeil für Kompositbogen</name>
+        <id>70</id>
+        <price>38</price>
+        <weight>1250</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegspfeil für Kompositbogen</name>
+        <id>71</id>
+        <price>150</price>
+        <weight>1250</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Pfeil für Kompositbogen</name>
+        <id>72</id>
+        <price>100</price>
+        <weight>1250</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherpfeil für Kompositbogen</name>
+        <id>73</id>
+        <price>75</price>
+        <weight>1250</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Pfeil für Kompositbogen</name>
+        <id>74</id>
+        <price>50</price>
+        <weight>1250</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderpfeil für Kompositbogen</name>
+        <id>75</id>
+        <price>75</price>
+        <weight>1250</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandpfeil für Kompositbogen</name>
+        <id>76</id>
+        <price>200</price>
+        <weight>1250</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegspfeil für Kriegsbogen</name>
+        <id>77</id>
+        <price>90</price>
+        <weight>2500</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+7</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegspfeil für Kriegsbogen</name>
+        <id>78</id>
+        <price>360</price>
+        <weight>2500</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+7</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Pfeil für Kriegsbogen</name>
+        <id>79</id>
+        <price>240</price>
+        <weight>2500</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+7</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherpfeil für Kriegsbogen</name>
+        <id>80</id>
+        <price>180</price>
+        <weight>2500</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+7</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Pfeil für Kriegsbogen</name>
+        <id>81</id>
+        <price>120</price>
+        <weight>2500</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+7</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderpfeil für Kriegsbogen</name>
+        <id>82</id>
+        <price>180</price>
+        <weight>2500</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+7</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandpfeil für Kriegsbogen</name>
+        <id>83</id>
+        <price>480</price>
+        <weight>2500</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+7</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegspfeil für Kurzbogen</name>
+        <id>84</id>
+        <price>38</price>
+        <weight>1250</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegspfeil für Kurzbogen</name>
+        <id>85</id>
+        <price>150</price>
+        <weight>1250</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Pfeil für Kurzbogen</name>
+        <id>86</id>
+        <price>100</price>
+        <weight>1250</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherpfeil für Kurzbogen</name>
+        <id>87</id>
+        <price>75</price>
+        <weight>1250</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Pfeil für Kurzbogen</name>
+        <id>88</id>
+        <price>50</price>
+        <weight>1250</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderpfeil für Kurzbogen</name>
+        <id>89</id>
+        <price>75</price>
+        <weight>1250</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandpfeil für Kurzbogen</name>
+        <id>90</id>
+        <price>200</price>
+        <weight>1250</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegspfeil für Langbogen</name>
+        <id>91</id>
+        <price>60</price>
+        <weight>1875</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegspfeil für Langbogen</name>
+        <id>92</id>
+        <price>240</price>
+        <weight>1875</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Pfeil für Langbogen</name>
+        <id>93</id>
+        <price>160</price>
+        <weight>1875</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherpfeil für Langbogen</name>
+        <id>94</id>
+        <price>120</price>
+        <weight>1875</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Pfeil für Langbogen</name>
+        <id>95</id>
+        <price>80</price>
+        <weight>1875</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderpfeil für Langbogen</name>
+        <id>96</id>
+        <price>120</price>
+        <weight>1875</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandpfeil für Langbogen</name>
+        <id>97</id>
+        <price>320</price>
+        <weight>1875</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+6</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegspfeil für Orkischer Reiterbogen</name>
+        <id>98</id>
+        <price>38</price>
+        <weight>1250</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegspfeil für Orkischer Reiterbogen</name>
+        <id>99</id>
+        <price>150</price>
+        <weight>1250</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Pfeil für Orkischer Reiterbogen</name>
+        <id>100</id>
+        <price>100</price>
+        <weight>1250</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherpfeil für Orkischer Reiterbogen</name>
+        <id>101</id>
+        <price>75</price>
+        <weight>1250</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Pfeil für Orkischer Reiterbogen</name>
+        <id>102</id>
+        <price>50</price>
+        <weight>1250</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderpfeil für Orkischer Reiterbogen</name>
+        <id>103</id>
+        <price>75</price>
+        <weight>1250</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandpfeil für Orkischer Reiterbogen</name>
+        <id>104</id>
+        <price>200</price>
+        <weight>1250</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+5</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kriegsbolzen für Balläster</name>
+        <id>105</id>
+        <price>90</price>
+        <weight>3125</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Kriegsbolzen für Balläster</name>
+        <id>106</id>
+        <price>360</price>
+        <weight>3125</weight>
+        <desc>
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Gehärteter Bolzen für Balläster</name>
+        <id>107</id>
+        <price>240</price>
+        <weight>3125</weight>
+        <desc>
+                Halbiert den RS des Ofpers. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Kettenbrecherbolzen für Balläster</name>
+        <id>108</id>
+        <price>180</price>
+        <weight>3125</weight>
+        <desc>
+                Ignoriert den Schutz von Ketten- und Tuchrüstungen;
+                Der RS von Mischrüstungen mit Kettenanteil und von Leder-
+                rüstungen wird halbiert. Platten- und Schuppenrüstungen
+                schützen normal. Nicht wiederverwendbar.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Stumpfe Bolzen für Balläster</name>
+        <id>109</id>
+        <price>120</price>
+        <weight>3125</weight>
+        <desc>
+                Richten nur TP(A) an. Ein gezielter Schuss mit einer
+                zusätzlichen Erschwernis von +4 kann das Opfer niederwerfen
+                (KK-Probe + halbe TP(A)). Stumpfe Pfeile haben nur die halbe
+                Reichweite normaler Pfeile.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Sehnenschneiderbolzen für Balläster</name>
+        <id>110</id>
+        <price>180</price>
+        <weight>3125</weight>
+        <desc>
+                Haben nur halbe Reichweite, der RS des Opfers wird
+                zudem verdoppelt. Sie verwenden die Schadensregelung der
+                Kriegspfeile:
+                Bleibt ein solcher Pfeil im Opfer stecken (5-6 auf W6 bei Schadenswurf)
+                verursacht er beim Opfer pro KR in der es sich heftig bewegt 1W3 SP(A)
+                und einen Punkt Erschöpfung. Bewegt sich das Opfer nur langsam, gilt
+                der Schaden pro Spielrunde. Können entweder gewaltsam entfernt werden
+            (KK-Probe, 1W6+2 SP) oder mit 
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+    <dsa_ammunition_item>
+        <name>Brandbolzen für Balläster</name>
+        <id>111</id>
+        <price>480</price>
+        <weight>3125</weight>
+        <desc>
+                Diese Pfeile können Brennmaterial tragen, haben
+                aber nur halbe Reichweite.
+        </desc>
+        <tp>1W6+4</tp>
+    </dsa_ammunition_item>
+</folder>

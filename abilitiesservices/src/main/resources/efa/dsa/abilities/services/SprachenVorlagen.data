@@ -1,0 +1,11 @@
+<data>
+    <dsa_language_item>
+        <name>Sprache</name>
+        <id>-1</id>
+        <desc></desc>
+        <raisingCost>A</raisingCost>
+        <family></family>
+        <scripture></scripture>
+        <complexity>1</complexity>
+    </dsa_language_item>
+</data>

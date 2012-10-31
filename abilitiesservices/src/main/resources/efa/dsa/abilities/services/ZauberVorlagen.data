@@ -1,0 +1,9 @@
+<data>
+    <dsa_spell_item>
+        <name>Zauber</name>
+        <id>-1</id>
+        <raisingCost>A</raisingCost>
+        <attributes>CH CH CH</attributes>
+        <desc></desc>
+    </dsa_spell_item>
+</data>

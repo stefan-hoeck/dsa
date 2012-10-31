@@ -1,0 +1,9 @@
+<data>
+    <dsa_disadvantage_item>
+        <name>Nachteil</name>
+        <id>-1</id>
+        <gp>0</gp>
+        <desc>
+            &lt;b&gt;GP:&lt;/b&gt; 0</desc>
+    </dsa_disadvantage_item>
+</data>

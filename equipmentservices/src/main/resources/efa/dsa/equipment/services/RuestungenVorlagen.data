@@ -1,0 +1,12 @@
+<data>
+    <dsa_armor_item>
+        <name>Rüstung</name>
+        <id>-1</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+        <rs>0</rs>
+        <be>0</be>
+        <addition>false</addition>
+    </dsa_armor_item>
+</data>

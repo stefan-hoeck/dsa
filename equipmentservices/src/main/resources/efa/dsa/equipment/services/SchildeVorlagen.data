@@ -1,0 +1,14 @@
+<data>
+    <dsa_shield_item>
+        <name>Schild</name>
+        <id>-1</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+        <ini>0</ini>
+        <size>klein</size>
+        <shieldtype>S</shieldtype>
+        <wm>0/0</wm>
+        <bf>0</bf>
+    </dsa_shield_item>
+</data>

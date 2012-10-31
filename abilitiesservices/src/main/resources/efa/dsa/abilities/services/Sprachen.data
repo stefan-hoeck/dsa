@@ -1,0 +1,559 @@
+
+<folder><name>Sprachen</name>
+    <dsa_language_item>
+        <name>Garethi</name>
+        <id>0</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Hochsprache und wichtigste Verkehrssprache mit den Dialekten
+                Horathi, Bornländisch, Brabaci, Maraskani, Alberned, Ander-
+                gastisch, Charypto und Gatamo (die jeweils Lehnwörter und
+            Aussprache von der Umgebung angenommen haben).
+        </desc>
+        <family></family>
+        <scripture>Kusliker Zeichen</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Bosparano</name>
+        <id>1</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Die Hochsprache des Alten Reichs, das nur noch rituell -
+            dort aber recht häufig - verwendet wird.
+        </desc>
+        <family></family>
+        <scripture>Kusliker Zeichen</scripture>
+        <complexity>21</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Aureliani</name>
+        <id>2</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Auch &apos;Altgüldenländisch&apos;. Die Sprache entwickelte sich zu
+            Bosparano weiter. Benötigt das Talent &lt;i&gt;Sprachenkunde&lt;/i&gt;
+        </desc>
+        <family></family>
+        <scripture>Imperiale Zeichen</scripture>
+        <complexity>21</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Zyklopäisch</name>
+        <id>3</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Eigenständig aus dem Altgüldenländisch entwickelte Sprache,
+                die in neuerer Zeit wieder stark mit Lehnwörtern aus dem
+                Garethischen verunreinigt wurde. Wird ausserhalb der Zy-
+            klopeninseln nur von Sprachwisseschaftlern gesprochen.
+        </desc>
+        <family></family>
+        <scripture>Kusliker Zeichen</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Tulamidya</name>
+        <id>4</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Dialekte:
+                Khom-Novadisch, verwendet die Geheiligten Glyphen von Unau
+                Aranisch, verwendet die Kusliker Zeichen
+                Mhanadisch, verwendet Tulamydia
+            Balashidisch, verwendet Tulamydia
+        </desc>
+        <family></family>
+        <scripture>Tulamidya</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Ur-Tulamidya</name>
+        <id>5</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Seit 1000 Jahren tot Sprache
+                Benötigt das Talent &lt;i&gt;Sprachenkunde&lt;/i&gt;
+                Ursprünglich verwendet Ur-Tulamydia die Chrmk-Zeichen, später
+            Ur-Tulamydia, dann Tulamydia
+        </desc>
+        <family></family>
+        <scripture>Ur-Tulamidya</scripture>
+        <complexity>21</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Zelemja</name>
+        <id>6</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>aus Rssahh und Ur-Tulamydia entstanden. Wird heutzutage nur noch
+            in der Gegend von Selem gesprochen
+        </desc>
+        <family></family>
+        <scripture>Chrmk</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Alaani</name>
+        <id>7</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Norbardische Sprache</desc>
+        <family></family>
+        <scripture>Kusliker Zeichen</scripture>
+        <complexity>21</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Zhulchammaqra</name>
+        <id>8</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Sprache der Trollzacker, verwendet üblicherweise keine Schrift.
+            Aus dem Ur-Tulamidya entstanden.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Ferkina</name>
+        <id>9</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Sprache der Ferkina, verwendet üblicherweise keine Schrift.
+            Aus dem Ur-Tulamidya entstanden.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>16</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Ruuz</name>
+        <id>10</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Sprache der Beni Rurech, der Maraskanischen Urbesiedler. Heutzutage
+            fast ausgestorben.
+        </desc>
+        <family></family>
+        <scripture>Ur-Tulamidya</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Altes Kemi</name>
+        <id>11</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Verwendet die Gleichnamigen Zeichen (Ableitungenn aus dem Zelemja).
+            Wird derzeit von den kemschen Autoritäten künstlich wiederbelebt.
+        </desc>
+        <family></family>
+        <scripture>Altes Kemi</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Rabensprache</name>
+        <id>12</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Geheimsprache der Boronkirche Al&apos;Anfas, die mittlerweile recht
+            verbreitet ist.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Nujuka</name>
+        <id>13</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Schriftlose Sprache der Nivesen</desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Mohisch</name>
+        <id>14</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Verschiedene Dialekte von &apos;Waldmenschen-Sprachen&apos; (schriftlos).
+                Die Sprache der Tocamuyac und das Puka-Puka der Waldinsel-Utulus
+            heben sich deutlich vom Rest ab.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Thorwalsch</name>
+        <id>15</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Aus dem Hjaldingsch entstandene Sprache, heute mit vielen Lehn-
+                wörtern aus dem Garethi durchsetzt. Dialekte des Thorwalsch (oder
+                besser Abarten des Hjaldingsch) sind die Dialekte der Gjalsker-
+                länder und Fjarninger.
+                Ein Thorwalsch-Muttersprachler lernt Garethi um eine Spalte er-
+            leichtert. 
+        </desc>
+        <family></family>
+        <scripture>Kusliker Zeichen</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Fjarningsch</name>
+        <id>16</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Abart des Hjaldingsch und Sprache der Fjarninger
+            (Ein Dialekt des Thorwalsch)
+        </desc>
+        <family></family>
+        <scripture>Hjaldingsche Runen</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Gjalskisch</name>
+        <id>17</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Sprache der Gjalskerländer (Dialekt des Thorwalsch, oder besser:
+                Abart des Hjaldingsch). Helden mit Gjalskisch als Muttersprache
+            lernen Alaani um eine Spalte erleichtert.
+        </desc>
+        <family></family>
+        <scripture>Gjalskisch</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Hjaldingsch</name>
+        <id>18</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Saga-Thorwalsch aus dem sich das Thorwalsch, Gjalskisch und
+            Fjarningsch entwickelten.
+        </desc>
+        <family></family>
+        <scripture>Hjaldingsche Runen</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Isdira</name>
+        <id>19</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Von den Elfenvölkern gesprochene Sprache, die aus dem ungleich
+                komplexeren Asdharia hervorgegangen ist. Die Sprache kann ohne
+                Kenntnis zweistimmigen Gesangs nur bis Komplexität 15 gelernt
+            werden.
+        </desc>
+        <family></family>
+        <scripture>Isdira</scripture>
+        <complexity>21</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Asdharia</name>
+        <id>20</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>B</raisingCost>
+        <ebe>-</ebe>
+        <desc>Benötigt &lt;i&gt;Sprachenkunde&lt;/i&gt;. Ur-Sprache der Elfen, aus dem
+                das Isdira hervorgegangen ist. Ohne zweistimmigen Gesang nur bis
+            Komplexität 15 erlernbar.
+        </desc>
+        <family></family>
+        <scripture>Asdharia</scripture>
+        <complexity>24</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Rogolan</name>
+        <id>21</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Sprache der Zwerge, die aus dem altzwergischen Angram hervorge-
+            gangen ist.
+        </desc>
+        <family></family>
+        <scripture>Rogolan</scripture>
+        <complexity>21</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Angram</name>
+        <id>22</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Ur-Sprache der Zwerge, aus dem Rogolan hervorgegangen ist.
+            Erfordert &lt;i&gt;Sprachenkunde&lt;/i&gt;.
+        </desc>
+        <family></family>
+        <scripture>Angram</scripture>
+        <complexity>21</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Orkisch</name>
+        <id>23</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Zwei Varianten:
+                Ologhaijan (Hochorkisch des Hochlands, wird speziell von Schamanen und
+                Häuptlingen gesprochen)
+                Oloarkh (Gemein-Orkisch, wird auch von Yurach und Ogern gesprochen)
+            Beide Sprachen sind schriftlos.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Goblinisch</name>
+        <id>24</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Schriftlose Sprache der Goblins</desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>12</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Trollisch</name>
+        <id>25</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>komplizierte Sprache der Trolle</desc>
+        <family></family>
+        <scripture>Trollische Raumbilderschrift</scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Rssahh</name>
+        <id>26</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Die Verkehrsprache aller geschuppter Wesen. Steigern nach Spalte
+            B und maximal bis TaW 9 für Nicht-Echsen.
+        </desc>
+        <family></family>
+        <scripture>Chrmk</scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Mahrisch</name>
+        <id>27</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>&apos;Meeressprache&apos;</desc>
+        <family></family>
+        <scripture>Mahrische Glyphen</scripture>
+        <complexity>20</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Rissoal</name>
+        <id>28</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Auf beiden Seiten des Meeres der sieben Winde gesprochene,
+            schriftlose &apos;Meeressprache&apos;.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>20</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Molochisch</name>
+        <id>29</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Nur bei dieser Volksgruppe bekannte Sprache</desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>17</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Neckergesang</name>
+        <id>30</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Teilweise mit telepathischer Kommunikation verbunden. Unter Ver-
+            wendung von &lt;i&gt;Gedankenbildern&lt;/i&gt; bis Komplexität 24.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>18</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Grolmisch</name>
+        <id>31</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Wegen seiner Schnalz- und Knacklaute nur schwer erlernbar.</desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>17</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Z&apos;Lit</name>
+        <id>32</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Nur von Kiementrägern erlernbare Sprache der Ziliten.</desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>17</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Koboldisch</name>
+        <id>33</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Sehr schnell gesprochene Sprache, die nur von Schelmen oder unter
+                Verwendung eines &lt;i&gt;Axxeleratus&lt;/i&gt; erlernt und gesprochen werden
+                kann. Unter Umständen auch mit dem Vorteil &lt;i&gt;Koboldfreund&lt;/i&gt; er-
+            lernbar.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Drachisch</name>
+        <id>34</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Nur unter Einsatz von Magie (Gedankenlese- und Sendezauber) erlern-
+            bare Sprache der Drachen.
+        </desc>
+        <family></family>
+        <scripture>Drakned-Glyphen</scripture>
+        <complexity>21</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Zhayad</name>
+        <id>35</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Geheimsprache eitler Magier, von der es heisst, nur in dieser
+            Sprache können man mit Dämonen kommunizieren.
+        </desc>
+        <family></family>
+        <scripture>Zhayad</scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Atak</name>
+        <id>36</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Erlernen prinzipiell nach Spalte A
+                Von tulamidischen Händlern wie auch fast aventurienweit von
+            Dieben und Einbrechern benutzte Zeichen- und Gebärdensprache
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>12</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Füchsisch</name>
+        <id>37</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Erlernen prinzipiell nach Spalte A, beinhaltet Kenntnis der Zinken.
+                Gaunersprache, die aus Umdeutungen bekannter Worte besteht und ausser
+                einzelnen Warnzeichen (den sogenannten &apos;Zinken&apos;) keine Schrift-
+            form aufweist.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>12</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Ologhaijan</name>
+        <id>38</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Hochorkisch des Hochlands, wird speziell von Schamanen und
+            Häuptlingen gesprochen
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Oloarkh</name>
+        <id>39</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Gemein-Orkisch, wird auch von Yurach und Ogern gesprochen.
+            Schriftlose Sprache.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>15</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Muttersprache</name>
+        <id>40</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Dies ist ein Platzhalter für die Helden-
+generierung.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>1</complexity>
+    </dsa_language_item>
+    <dsa_language_item>
+        <name>Fremdsprache</name>
+        <id>44</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>A</raisingCost>
+        <ebe>-</ebe>
+        <desc>Dies ist ein Platzhalter für die Helden-
+generierung.
+        </desc>
+        <family></family>
+        <scripture></scripture>
+        <complexity>1</complexity>
+    </dsa_language_item>
+</folder>

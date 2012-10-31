@@ -1,0 +1,10 @@
+<data>
+    <dsa_rangedTalent_item>
+        <name>Fernkampftalent</name>
+        <id>-1</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>C</raisingCost>
+        <ebe>0</ebe>
+        <desc></desc>
+    </dsa_rangedTalent_item>
+</data>

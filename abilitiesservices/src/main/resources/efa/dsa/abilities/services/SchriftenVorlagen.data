@@ -1,0 +1,9 @@
+<data>
+    <dsa_scripture_item>
+        <name>Schrift</name>
+        <id>-1</id>
+        <raisingCost>A</raisingCost>
+        <desc></desc>
+        <complexity>1</complexity>
+    </dsa_scripture_item>
+</data>

@@ -1,0 +1,10 @@
+<data>
+    <dsa_ammunition_item>
+        <name>Geschoss</name>
+        <id>-1</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+        <tp>1W6</tp>
+    </dsa_ammunition_item>
+</data>

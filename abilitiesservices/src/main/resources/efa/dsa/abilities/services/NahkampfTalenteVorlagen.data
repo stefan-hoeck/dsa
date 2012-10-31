@@ -1,0 +1,10 @@
+<data>
+    <dsa_meleeTalent_item>
+        <name>Nahkampftalent</name>
+        <id>-1</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>D</raisingCost>
+        <ebe>0</ebe>
+        <desc></desc>
+    </dsa_meleeTalent_item>
+</data>

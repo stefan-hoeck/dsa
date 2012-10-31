@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.0//EN" "http://www.netbeans.org/dtds/filesystem-1_0.dtd">
+<filesystem>
+    <folder name="RpgTool">
+        <folder name="Explorer">
+            <folder name="Ausrüstung">
+                <file name="Nahkampfwaffen.data">
+                    <attr name="position" intvalue="0"/>
+                </file>
+                <file name="Fernkampfwaffen.data">
+                    <attr name="position" intvalue="50"/>
+                </file>
+                <file name="Geschosse.data">
+                    <attr name="position" intvalue="100"/>
+                </file>
+                <file name="Ruestungen.data">
+                    <attr name="position" intvalue="150"/>
+                </file>
+                <file name="Zonenruestungen.data">
+                    <attr name="position" intvalue="200"/>
+                </file>
+                <file name="Schilde.data">
+                    <attr name="position" intvalue="250"/>
+                </file>
+                <file name="Gegenstaende.data">
+                    <attr name="position" intvalue="300"/>
+                </file>
+                <attr name="position" intvalue="500"/>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

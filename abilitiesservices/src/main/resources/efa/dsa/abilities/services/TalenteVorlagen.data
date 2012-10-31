@@ -1,0 +1,63 @@
+
+<data>
+    <dsa_talent_item>
+        <name>Körperliches Talent</name>
+        <id>-1</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>D</raisingCost>
+        <ebe>0</ebe>
+        <desc></desc>
+        <attributes>CH CH CH</attributes>
+        <talentType>Körper</talentType>
+    </dsa_talent_item>
+    <dsa_talent_item>
+        <name>Gesellschaftliches Talent</name>
+        <id>-2</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>B</raisingCost>
+        <ebe>-</ebe>
+        <desc></desc>
+        <attributes>CH CH CH</attributes>
+        <talentType>Gesellschaft</talentType>
+    </dsa_talent_item>
+    <dsa_talent_item>
+        <name>Naturtalent</name>
+        <id>-3</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>B</raisingCost>
+        <ebe>-</ebe>
+        <desc></desc>
+        <attributes>CH CH CH</attributes>
+        <talentType>Natur</talentType>
+    </dsa_talent_item>
+    <dsa_talent_item>
+        <name>Wissenstalent</name>
+        <id>-4</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>B</raisingCost>
+        <ebe>-</ebe>
+        <desc></desc>
+        <attributes>CH CH CH</attributes>
+        <talentType>Wissen</talentType>
+    </dsa_talent_item>
+    <dsa_talent_item>
+        <name>Handwerkstalent</name>
+        <id>-5</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>B</raisingCost>
+        <ebe>-</ebe>
+        <desc></desc>
+        <attributes>CH CH CH</attributes>
+        <talentType>Handwerk</talentType>
+    </dsa_talent_item>
+    <dsa_talent_item>
+        <name>Gabe</name>
+        <id>-6</id>
+        <baseTalent>false</baseTalent>
+        <raisingCost>G</raisingCost>
+        <ebe>-</ebe>
+        <desc></desc>
+        <attributes>CH CH CH</attributes>
+        <talentType>Gabe</talentType>
+    </dsa_talent_item>
+</data>

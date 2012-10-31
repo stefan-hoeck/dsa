@@ -1,0 +1,823 @@
+<folder><name>Fernkampfwaffen</name>
+    <dsa_rangedweapon_item>
+        <name>Blasrohr</name>
+        <id>0</id>
+        <price>4000</price>
+        <weight>9375</weight>
+        <desc>typische Jagdwaffe aus Südaventurien, bei der mittels Atem-
+                kraft kleine Pfeile verschossen werden; Pfeile sind meist mit
+                Gift bestrichen (WdH 147f.). Blasrohre lassen sich vom Pferde-
+            rücken aus nur auf einem stehenden Reittier einsetzen.
+        </desc>
+        <tp>1W6-1</tp>
+        <talent>Blasrohr</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>2/5/10/20/40</reach>
+        <tpplus>0/0/0/0/-2</tpplus>
+        <wound>false</wound>
+        <timetoload>2</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Borndorn</name>
+        <id>1</id>
+        <price>4000</price>
+        <weight>18750</weight>
+        <desc>besonderer Wurfdolch aus dem Bornland, fast schon ein Wurf-
+            pfeil; stabile Dreikantklinge, bedingt nahkampftauglich.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Wurfmesser</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>2/4/6/8/15</reach>
+        <tpplus>1/0/0/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Dolch</name>
+        <id>2</id>
+        <price>2000</price>
+        <weight>12500</weight>
+        <desc>als Wurfwaffen nur improvisiert zu führen.</desc>
+        <tp>1W6</tp>
+        <talent>Wurfmesser</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>true</improvised>
+        <ammunition>false</ammunition>
+        <reach>1/3/5/7/10</reach>
+        <tpplus>0/0/0/-1/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Wurfdolch</name>
+        <id>3</id>
+        <price>3000</price>
+        <weight>12500</weight>
+        <desc>speziell zum Werfen ausgelegte (meist kopflastige) Klingen
+                ohne Parierstange und ohne Knauf. Griff meist nur dünn mit
+            Leder umwickelt, bei Wurfmessern meist gar nicht.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Wurfmesser</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>2/4/6/8/15</reach>
+        <tpplus>1/0/0/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Wurfmesser</name>
+        <id>4</id>
+        <price>1500</price>
+        <weight>6250</weight>
+        <desc>speziell zum Werfen ausgelegte (meist kopflastige) Klingen
+                ohne Parierstange und ohne Knauf. Griff meist nur dünn mit
+            Leder umwickelt, bei Wurfmessern meist gar nicht.
+        </desc>
+        <tp>1W6</tp>
+        <talent>Wurfmesser</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>2/4/6/8/15</reach>
+        <tpplus>1/0/0/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Wurscheibe</name>
+        <id>5</id>
+        <price>3500</price>
+        <weight>6250</weight>
+        <desc>am Rand angeschliffene oder gezackte Metallscheiben; vor allem
+                deswegen beliebt, weil mehrere von ihnen gemeinsam als &apos;Hagel&apos;
+                geworfen werden können (WdH 95); einige Exemplare singen sogar
+            in verschiedenen Tönen.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Wurfmesser</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>2/4/8/12/20</reach>
+        <tpplus>1/0/0/0/0</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Dschadra</name>
+        <id>6</id>
+        <price>12000</price>
+        <weight>50000</weight>
+        <desc>die Universalwaffe der tulamidischen und novadischen Reiter;
+                vom Pferderücken aus geworfen richtet die Waffe 2 TP zusätzlich
+            an.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Wurfspeere</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>5/10/15/25/40</reach>
+        <tpplus>3/2/1/0/0</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Efferdbart</name>
+        <id>7</id>
+        <price>8000</price>
+        <weight>56250</weight>
+        <desc>auch zum Werfen gut geeigneter Dreizack der Efferd-Geweihenschaft.
+                Ein Treffer mit dem Efferdbart hat auf den Getroffenen die
+            Wirkung eines Angriffs zum &lt;i&gt;Niederwerfen&lt;/i&gt;.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Wurfspeere</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>3/6/10/15/25</reach>
+        <tpplus>2/1/0/-1/-2</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Granatapfel</name>
+        <id>8</id>
+        <price>0</price>
+        <weight>25000</weight>
+        <desc>Talent &lt;i&gt;Wurfspeere&lt;/i&gt; oder &lt;i&gt;Schleuder&lt;/i&gt;
+                Hierbei handelt es sich um eine Tonkugel, die mit Hylailer
+                Feuer gefüllt ist, die mit einer Lunte entzündet und gegen
+                den Feind wirft oder an einer angebrachten Schnur schleudert.
+                Beim Auftreten zerplatzt der Behälter und verspritzt brennendes
+                Öl. Nicht frei erhältlich (und auch auf dem Schwarzmarkt sehr
+                teuer); Besitz ausserhalb einer Armee wird vielerorts empfindlich
+                bestraft. Ein nicht abgewendeter Patzer bei der Wurfwaffen-Probe
+                heisst, dass der Werfer sich selber mit voller Auswirkung in
+            Brand gesetzt hat.
+        </desc>
+        <tp>4W6</tp>
+        <talent>Wurfspeere</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/5/10/15/20</reach>
+        <tpplus>0/0/0/0/0</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Holzspeer</name>
+        <id>9</id>
+        <price>1000</price>
+        <weight>37500</weight>
+        <desc>ein einfacher, gerader Speer mit einer feuergehärteten Holz-
+                klinge; etwas schwerere Varianten (+10 U) mit Spitzen aus
+                Stein oder Horn richten 1 TP mehr an. Typische Waffe primitiver
+            Stammesgesellschaften.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Wurfspeere</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>5/10/15/25/40</reach>
+        <tpplus>1/0/0/-1/-2</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Speer</name>
+        <id>10</id>
+        <price>3000</price>
+        <weight>50000</weight>
+        <desc>Auch der gewöhnliche Speer kann geworfen werden, jedoch nur
+            als improvisierte Waffe.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Wurfspeere</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>5/10/15/25/40</reach>
+        <tpplus>1/0/0/-1/-2</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Speerschleuder</name>
+        <id>11</id>
+        <price>2500</price>
+        <weight>18750</weight>
+        <desc>ein Führungsholz mit einer Rinne, die den kurzen Speer (oder
+                langen Bolzen) aufnimmt und somit den Arm des Werfers um
+                effektiv einen halben Schritt verlängert; seltene Jagdwaffe
+            bei den Steppenvölkern, bei Tocamuyac und Firnelfen.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Wurfspeere</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>0/15/30/60/100</reach>
+        <tpplus>0/1/0/0/-1</tpplus>
+        <wound>true</wound>
+        <timetoload>2</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Stabschleuder</name>
+        <id>12</id>
+        <price>1500</price>
+        <weight>25000</weight>
+        <desc>eine Steinschleuder, die nicht herumgewirbelt wird, sondern
+                deren Wirkung wie bei der Speerschleuder aus dem langen Hebelarm
+                kommt, im Endeffekt eine Schleuder, deren eines Ende an einem
+                geraden Stab befestigt ist; etwas besser zu handhaben als eine
+                Schleuder und als Zivilistenwaffe recht weit verbreitet.
+                Stabschleudern lassen sich nicht vom Pferderücken aus ein-
+            setzen.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Wurfspeere</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/5/20/40/60</reach>
+        <tpplus>0/0/0/0/0</tpplus>
+        <wound>true</wound>
+        <timetoload>2</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Wurfspeer</name>
+        <id>13</id>
+        <price>3000</price>
+        <weight>50000</weight>
+        <desc>etwa vier Spann langer, gut ausgewuchteter Speer mit Eisen-
+                spitze, die mit langen Eisenbändern an einem geraden, schweren
+            Holzschaft befestigt ist.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Wurfspeere</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>5/10/15/25/40</reach>
+        <tpplus>3/1/0/-1/-1</tpplus>
+        <wound>true</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Schneidzahn</name>
+        <id>14</id>
+        <price>6000</price>
+        <weight>31250</weight>
+        <desc>throwalsche, meist runen- oder ornamentverzierte Wurfaxt mit
+                komplizierter Flugbahn. Probe auf &lt;i&gt;Wurfbeil&lt;/i&gt; um 1 Punkt
+            erschert, Ziel muss mindestens 5 Fuss entfernt sein.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Wurfbeile</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/5/10/15/30</reach>
+        <tpplus>0/1/1/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Wurfbeil</name>
+        <id>15</id>
+        <price>3500</price>
+        <weight>37500</weight>
+        <desc>Diese kleinen Äxte betehen meist vollständig aus Metall und
+                sind bis auf das Griffstück an allen Seiten geschliffen; Modelle
+                mit Holzgriff und separatem Axtkopf sind selten, kommen aber vor.
+            Ziel muss mindestens 5 Schritt entfernt sein.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Wurfbeile</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/5/10/15/25</reach>
+        <tpplus>0/1/1/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Wurfkeule</name>
+        <id>16</id>
+        <price>1800</price>
+        <weight>21875</weight>
+        <desc>ein kopflastiges Wurfholz, das sich während des Fluges mehr-
+                fach überschlägt und daher nicht ganz einfach zu werfen ist.
+            Eine Wurfkeule richtet 2W6+4 TP(A) an.
+        </desc>
+        <tp>2W6+4</tp>
+        <talent>Wurfbeile</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/5/15/25/40</reach>
+        <tpplus>0/1/1/1/0</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Arbalette</name>
+        <id>17</id>
+        <price>60000</price>
+        <weight>125000</weight>
+        <desc>eine schwere Torsionswaffe, die gehörtete Bleikugeln verschiesst
+                und mit einer Kurbel gespannt wird. Ein Treffer einer Arbalette
+                kann den Getroffenen &lt;i&gt;niederwerfen&lt;/i&gt;. Arbaletten werden
+                zum Schuss meist auf einen Stützstock (ca. 1.5 Schritt, 40 U)
+            aufgelegt.
+        </desc>
+        <tp>2W6+5</tp>
+        <talent>Armbrust</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/20/30/60/100</reach>
+        <tpplus>2/1/0/-1/-2</tpplus>
+        <wound>true</wound>
+        <timetoload>30</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Arbalone</name>
+        <id>18</id>
+        <price>80000</price>
+        <weight>300000</weight>
+        <desc>massive, Kugeln verschiessende Torsionswaffe aus dem Horasreich,
+                die auf ein Dreibein gestützt wird; wird mit einer Kurbel
+                nachgespannt. Ein Treffer einer Arbalone hat auf den Getroffenen
+                die Wirkung eines Angriffs zum &lt;i&gt;Niederwerfen&lt;/i&gt;. Eine
+            Arbalone kann nicht vom Pferderücken aus abgeschossen werden.
+        </desc>
+        <tp>3W6+6</tp>
+        <talent>Armbrust</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>15/30/60/120/250</reach>
+        <tpplus>4/2/0/-1/-3</tpplus>
+        <wound>true</wound>
+        <timetoload>40</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Balestra</name>
+        <id>19</id>
+        <price>50000</price>
+        <weight>93750</weight>
+        <desc>eine im Horasreich beliebte Schusswaffe der Reiterei und zur
+                Jagd; diese Kugeln verschiessende Schusswaffe wird mit einem
+                anmontierten &apos;Geissfuss&apos; gespannt. Ein Treffer kann das Opfer
+            &lt;i&gt;niederwerfen&lt;/i&gt;.
+        </desc>
+        <tp>2W6+2</tp>
+        <talent>Armbrust</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/20/30/50/60</reach>
+        <tpplus>2/1/0/0/-1</tpplus>
+        <wound>true</wound>
+        <timetoload>12</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Balestrina</name>
+        <id>20</id>
+        <price>45000</price>
+        <weight>37500</weight>
+        <desc>eine Faust-Torsionswaffe, die mit einem Unterlauf-Hebel gespannt
+                wird, und die wie ihre &apos;grossen Geschwister&apos; Kugeln verschiesst.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Armbrust</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>2/4/8/15/25</reach>
+        <tpplus>2/1/0/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>4</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Eisenwalder</name>
+        <id>21</id>
+        <price>40000</price>
+        <weight>125000</weight>
+        <desc>Auf dieser Armbrust ist ein Magazin angebracht,
+                in dem sich Platz für 10 leichte Bolzen findet; durch
+                Zurückziehen des Magazins wird die Waffe gespannt und
+                gleichzeitig nachgeladen. Das Auffüllen des Magazins benötigt
+                2 Aktionen pro Bolzen. Nach einem Geländemarsch muss geprüft
+                werden, ob die Waffe so stark verschmutzt ist (19 und 20 auf
+                W20), dass eine Aufwendige Reinigung von 3 SR Dauer nötig
+                ist, damit die Waffe nicht bis zur Reinigung eine Erschwernis
+                auf den Schuss von 3 Punkten bekommt und bei 19 und 20
+            einen Patzer produziert.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Armbrust</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>5/10/15/20/40</reach>
+        <tpplus>1/0/0/0/-1</tpplus>
+        <wound>true</wound>
+        <timetoload>3</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Leichte Armbrust</name>
+        <id>22</id>
+        <price>18000</price>
+        <weight>93750</weight>
+        <desc>eine Armbrust, die mit einem sogenannten &apos;Geissfuss&apos; gespannt
+                werden kann; beliebt als verzierte Jagd- und einfache Landwehr-
+                waffe. Bei einer KK von weniger als 12 verdoppelt sich die
+            Ladezeit.
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Armbrust</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/15/25/40/60</reach>
+        <tpplus>1/1/0/0/-1</tpplus>
+        <wound>true</wound>
+        <timetoload>15</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Windenarmbrust</name>
+        <id>23</id>
+        <price>35000</price>
+        <weight>125000</weight>
+        <desc>eine (von Eigengewicht und Wirkung her) schwere Armbrust, die
+                mit einer Winde gespannt werden muss, die entweder aufgesetzt
+                wird oder in die Arbrust eingebaut ist. Extrem lange Nachladezeit
+                aber hohe Reichweite und Präzision.
+                Nach einem Geländemarsch muss geprüft
+                werden, ob die Waffe so stark verschmutzt ist (19 und 20 auf
+                W20), dass eine Aufwendige Reinigung von 3 SR Dauer nötig
+                ist, damit die Waffe nicht bis zur Reinigung eine Erschwernis
+                auf den Schuss von 3 Punkten bekommt und bei 19 und 20
+            einen Patzer produziert.
+        </desc>
+        <tp>2W6+6</tp>
+        <talent>Armbrust</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/30/60/100/180</reach>
+        <tpplus>4/2/0/-1/-3</tpplus>
+        <wound>true</wound>
+        <timetoload>30</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Elfenbogen</name>
+        <id>24</id>
+        <price>0</price>
+        <weight>15625</weight>
+        <desc>Etwas kürzer als ein Langbogen, zeugt diese Waffe von
+                elfischer Handwerkskunst und ist üblicherweise in den Händen
+                von Menschen nicht zu finden und auch nicht käuflich zu
+            erwerben.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Bogen</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/25/50/100/200</reach>
+        <tpplus>3/2/1/1/0</tpplus>
+        <wound>true</wound>
+        <timetoload>3</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Kompositbogen</name>
+        <id>25</id>
+        <price>8000</price>
+        <weight>21875</weight>
+        <desc>Der Bogen dieser Waffe ist aus mehreren Teilen und verschiedenen
+                Materialien (Horn, Sehnen, Holz) zusammengesetzt, die insgesamt
+                für eine erhöhte Spannkraft sorgen; nur ab KK 15 vernünftig
+                zu bedienen, bei geringerer KK gelten alle Ziele als eine
+            Klasse weiter entfernt, ausserdem TP-2.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Bogen</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/20/35/50/80</reach>
+        <tpplus>2/1/1/0/0</tpplus>
+        <wound>true</wound>
+        <timetoload>3</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Kriegsbogen</name>
+        <id>26</id>
+        <price>10000</price>
+        <weight>28125</weight>
+        <desc>extrem harter und dabei noch recht kurzer Bogen;
+                nur ab KK 16 vernünftig
+                zu bedienen, bei geringerer KK gelten alle Ziele als eine
+                Klasse weiter entfernt, ausserdem TP-2.
+                kann nur von &lt;i&gt;Berittenen Schützen&lt;/i&gt; vom Pferderücken aus
+            eingesetzt werden.
+        </desc>
+        <tp>1W6+7</tp>
+        <talent>Bogen</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/20/40/80/150</reach>
+        <tpplus>3/2/1/0/0</tpplus>
+        <wound>true</wound>
+        <timetoload>4</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Kurzbogen</name>
+        <id>27</id>
+        <price>4500</price>
+        <weight>12500</weight>
+        <desc>der typische Aventurische Jagdbogen von vier bis sechs Spann
+                Bogenlänge; entweder einfach, meist aber zweifach gebogen; auch
+            als Reiterwaffe verbreitet.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Bogen</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>5/15/25/40/60</reach>
+        <tpplus>1/1/0/0/-1</tpplus>
+        <wound>true</wound>
+        <timetoload>2</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Langbogen</name>
+        <id>28</id>
+        <price>6000</price>
+        <weight>18750</weight>
+        <desc>körperlanger (8 Spann und mehr) Bogen aus Esche oder Eibe mit
+                hoher Zugkraft und demzufolge hoher Reichweite und durch-
+                schlagender Wirkung. vor allem im nördlichen Mittelreich,
+                Nostria und Andergast verbreitet.
+                nur ab KK 15 vernünftig
+                zu bedienen, bei geringerer KK gelten alle Ziele als eine
+                Klasse weiter entfernt, ausserdem TP-2.
+            Kann nicht vom Pferderücken aus eingesetzt werden.
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Bogen</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/25/50/100/200</reach>
+        <tpplus>3/2/1/0/-1</tpplus>
+        <wound>true</wound>
+        <timetoload>4</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Orkischer Reiterbogen</name>
+        <id>29</id>
+        <price>12000</price>
+        <weight>25000</weight>
+        <desc>krude aussehender, nichtsdestotrotz mörderisch effektiver
+                Komposit-Kurzbogen mit hoher Spannkraft.
+                nur ab KK 15 vernünftig
+                zu bedienen, bei geringerer KK gelten alle Ziele als eine
+            Klasse weiter entfernt, ausserdem TP-2.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Bogen</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>5/15/30/60/100</reach>
+        <tpplus>3/1/0/-1/-2</tpplus>
+        <wound>true</wound>
+        <timetoload>3</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Fledermaus</name>
+        <id>30</id>
+        <price>1000</price>
+        <weight>12500</weight>
+        <desc>ursprünglich zwergische Jagdwaffe, die mittlerweile in
+                einigen Steppenkulturen einzug gehalten hat. Eine Fledermaus
+                besteht aus zwei Metallgewichten, die mit einer Schnur verbunden
+                sind. Wird über dem Kopf geschleudert und auf das Ziel geworfen,
+                in der Hoffnung, dass dessen Beine in den Schnüren verheddern.
+                Eine Fledermaus richtet keine echten TP an; statt dessen ist
+                als TP die Erschwernis auf den &lt;i&gt;Entfesseln&lt;/i&gt;-Wurf
+                genannt, den das Ziel nach einem Treffer ablegen muss; das
+                Opfer darf diese Probe jede KR ablegen, bei Misslingen steigt
+            die Schwierigkeit für folgende Probe jedoch um 1.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Schleuder</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/5/10/15/25</reach>
+        <tpplus>0/0/0/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>1</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Kettenkugel</name>
+        <id>31</id>
+        <price>0</price>
+        <weight>156250</weight>
+        <desc>eigentlich eine Gjalskerländer Nahkampfwaffe, die auch mehr
+            schlecht als recht geworfen werden kann.
+        </desc>
+        <tp>2W6+6</tp>
+        <talent>Schleuder</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>1/2/3/4/5</reach>
+        <tpplus>0/1/0/0/0</tpplus>
+        <wound>false</wound>
+        <timetoload>2</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Lasso</name>
+        <id>32</id>
+        <price>1200</price>
+        <weight>25000</weight>
+        <desc>Wurfschlinge aus Lederseil. Richtet keine echten TP an;
+                statt dessen ist als die TP die Erschwernis auf einen
+                &lt;i&gt;Entfesseln&lt;/i&gt;-Wurf genannt, den das Ziel nach einem Treffer
+                ablegen muss. Das Opfer darf diese Probe jede KR ablegen; bei
+                Misslingen steigert die Schwierigkeit für folgende Proben
+            jedoch um 1.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Schleuder</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/2/5/10/15</reach>
+        <tpplus>0/0/0/-1/-2</tpplus>
+        <wound>false</wound>
+        <timetoload>1</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Schleuder</name>
+        <id>33</id>
+        <price>1500</price>
+        <weight>6250</weight>
+        <desc>Diese Hirtenwaffe ist mittlerweilen nur noch wenig verbreitet,
+            aber in den Händen eines Könners durchaus effektiv.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Schleuder</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>0/5/15/25/40</reach>
+        <tpplus>0/0/0/0/0</tpplus>
+        <wound>false</wound>
+        <timetoload>2</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Wurfnetz</name>
+        <id>34</id>
+        <price>3500</price>
+        <weight>50000</weight>
+        <desc>bei Tierfängern und Schaukämpfern verbreitet. Der Einsatz
+                eines Wurfnetzes erfordert eine Probe +8 (schweres Netz: +10)
+                modifiziert nach Zielgrösse. Trifft das Netzt, so gibt der
+                Schadenswurf an, um wieviele Punkte eine &lt;i&gt;Entfesseln&lt;/i&gt;
+                Probe des Opfers erschwert ist; dazu kommen die Punkte aus einer
+                eventuellen Ansage des Werfers. Das Opfer darf diese Probe jede
+                KR ablegen, bei Misslingen steigt die Schwierigkeit für folgende
+            Proben jedoch um 1.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Schleuder</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/0/0/5/5</reach>
+        <tpplus>0/0/0/0/0</tpplus>
+        <wound>false</wound>
+        <timetoload>1</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Schweres Wurfnetz</name>
+        <id>35</id>
+        <price>6000</price>
+        <weight>125000</weight>
+        <desc>bei Tierfängern und Schaukämpfern verbreitet. Der Einsatz
+                eines Wurfnetzes erfordert eine Probe +8 (schweres Netz: +10)
+                modifiziert nach Zielgrösse. Trifft das Netzt, so gibt der
+                Schadenswurf an, um wieviele Punkte eine &lt;i&gt;Entfesseln&lt;/i&gt;
+                Probe des Opfers erschwert ist; dazu kommen die Punkte aus einer
+                eventuellen Ansage des Werfers. Das Opfer darf diese Probe jede
+                KR ablegen, bei Misslingen steigt die Schwierigkeit für folgende
+            Proben jedoch um 1.
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Schleuder</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>0/0/0/5/5</reach>
+        <tpplus>0/0/0/0/0</tpplus>
+        <wound>false</wound>
+        <timetoload>1</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Diskus</name>
+        <id>36</id>
+        <price>2500</price>
+        <weight>18750</weight>
+        <desc>maraskanische Wurfwaffe aus Hartholz, häufig bunt verziert.
+            Der Jagddiskus ist eine recht seltene Waffe.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Diskus</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>5/10/20/30/60</reach>
+        <tpplus>1/0/0/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Jagddiskus</name>
+        <id>37</id>
+        <price>3000</price>
+        <weight>21875</weight>
+        <desc>maraskanische Wurfwaffe aus Hartholz, häufig bunt verziert.
+            Der Jagddiskus ist eine recht seltene Waffe.
+        </desc>
+        <tp>2W6+4</tp>
+        <talent>Diskus</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>5/10/20/30/60</reach>
+        <tpplus>1/0/0/0/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Kampfdiskus</name>
+        <id>38</id>
+        <price>6000</price>
+        <weight>31250</weight>
+        <desc>verstärkte Variante des maraskanischen Diskus, die eine rasier-
+                messerscharfe Stahlkannte besitzt und daher mit einem speziellen
+                Wurfhandschuh (Preis 15 S) geworfen wird. KK 14 Bedingung.
+                Einige Exemplare sind dafür bekannt, dass sie während des
+            Fluges heulende Töne von sich geben.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Diskus</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>false</ammunition>
+        <reach>10/20/30/45/60</reach>
+        <tpplus>1/0/0/0/0</tpplus>
+        <wound>true</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+    <dsa_rangedweapon_item>
+        <name>Balläster</name>
+        <id>39</id>
+        <price>20000</price>
+        <weight>75000</weight>
+        <desc>eine Armbrust, mit der nicht Bolzen sondern Blei- oder Stein-
+                kugeln verschossen werden; diese Waffe ist bei Adligen für
+            die Vogeljagd sehr beliebt und oft als verziertes Stück zu finden.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Armbrust</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>10/20/30/60/100</reach>
+        <tpplus>3/1/0/-1/-1</tpplus>
+        <wound>false</wound>
+        <timetoload>8</timetoload>
+    </dsa_rangedweapon_item>
+</folder>

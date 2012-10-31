@@ -1,0 +1,32 @@
+<data>
+  <dsa_feat_item>
+    <name>Allgemeine SF</name>
+    <id>-1</id>
+    <ap>0</ap>
+    <featType>Allgemein</featType>
+    <desc>
+&lt;b&gt;Vorraussetzungen:&lt;/b&gt;
+&lt;b&gt;Verbreitung:&lt;/b&gt;
+&lt;b&gt;Kosten:&lt;/b&gt;</desc>
+  </dsa_feat_item>
+  <dsa_feat_item>
+    <name>Magische SF</name>
+    <id>-2</id>
+    <ap>0</ap>
+    <featType>Magisch</featType>
+    <desc>
+&lt;b&gt;Vorraussetzungen:&lt;/b&gt;
+&lt;b&gt;Verbreitung:&lt;/b&gt;
+&lt;b&gt;Kosten:&lt;/b&gt;</desc>
+  </dsa_feat_item>
+  <dsa_feat_item>
+    <name>Kampf-SF</name>
+    <id>-3</id>
+    <ap>0</ap>
+    <featType>Kampf</featType>
+    <desc>
+&lt;b&gt;Vorraussetzungen:&lt;/b&gt;
+&lt;b&gt;Verbreitung:&lt;/b&gt;
+&lt;b&gt;Kosten:&lt;/b&gt;</desc>
+  </dsa_feat_item>
+</data>

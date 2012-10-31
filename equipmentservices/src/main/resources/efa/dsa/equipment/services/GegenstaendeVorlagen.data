@@ -1,0 +1,9 @@
+<data>
+    <dsa_equipment_item>
+        <name>Gegenstand</name>
+        <id>-1</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+    </dsa_equipment_item>
+</data>

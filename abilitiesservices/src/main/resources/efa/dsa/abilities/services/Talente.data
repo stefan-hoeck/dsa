@@ -1,0 +1,2884 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<folder><name>Allgemein</name><folder><name>Körper</name><dsa_talent_item><id>0</id><name>Akrobatik</name><baseTalent>false</baseTalent><ebe>x2</ebe><attributes>MU GE KK</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	In diesem Talent sind Dinge zusammengefasst, in denen sich Gaukler seit ihrer
+	Kindheit üben; Balancieren, Schwingen an Seilen und Trapezen, Rad-
+	und Purzelbaumschlagen und halsbrecherische Salti.
+	Wann immer ein Held eine Aktion unter-
+	nimmt, die eines Zirkusartisten würdig wäre - das heisst,
+	bei allen willentlich ausgeführten
+	akrobatischen Aktionen -, können Sie als
+	Meister eine Akrobatikprobe von ihm verlangen.
+	Eher gewöhnliche (und vor allem:
+	intuitiv ablaufende) Aktionen der Körperbeherrschung,
+	wie speziell das Abrollen nach
+	Stürzen, fallen unter das Talent Körperbeherrschung.
+	Ebenfalls zur Akrobatik gehört es, sich
+	durch enge Gänge oder Stollen zu winden
+	- eventuell sogar aus Fesseln. Beachten
+	Sie bitte auch den Vorteil Schlangenmensch.
+	Das Akrobatik-Talent modifiziert auch den
+	Ausweichen-Wert des Helden: je 3
+	volle TaW Akrobatik über 9 hinaus (also TaW
+	12, 15 usw) geben dem Helden einen Zusatzpunkt
+	auf seinen Ausweichen-Wert.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Voraussetzung:&lt;/b&gt; Körperbeherrschung 4
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Balancieren, Bodenakrobatik, Schwingen, Sprünge, Winden
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Körperbeherrschung ( +5), Athletik ( +10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>1</id><name>Athletik</name><baseTalent>true</baseTalent><ebe>x2</ebe><attributes>GE KO KK</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Dies ist Fähigkeit, Kraft, Gewandtheit und Konstitution auf einen Punkt zu
+	konzentrieren und in den klassischen athletischen Disziplinen zu brillieren,
+	nur selten, um damit den Lorbeer in einer entsprechenden Veranstaltung zu
+	erringen, sondern meist, weil es zum Berufsbild gehört, lange Strecken zu
+	laufen oder schwere Lasten zu stemmen.  Athletik ist der aktive Einsatz
+	der körperlichen Fähigkeiten (im Gegensatz zum Talent Körperbeherrschung,
+	das bei Reaktionen auf äußere Ereignisse zum Einsatz kommt).  Athletik-Proben
+	können abgelegt werden, um die Sprintgeschwindigkeit zu erhöhen (Seite 138), den
+	Ausdauerverlust bei Langstreckenläufen zu vermindern, eine KK-Probe
+	beim Gewichtheben zu unterstützen oder die üblichen Sprungreichweiten und -höhen
+	zu vergrößern (Seite 141). Beim Langlauf sollte die Probe auf (GE/KO/KO) abgelegt
+	werden.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Hochsprung, Kraftakte, Langlauf, Sprint, Weitsprung
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Körperbeherrschung  (+5), Akrobatik (+10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>2</id><name>Fliegen</name><baseTalent>false</baseTalent><ebe>0</ebe><attributes>MU IN GE</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Unter dieses Talent fällt die Bewegung auf fliegenden Gegenständen
+	ohne eigenen Willen, namentlich also auf Hexenbesen oder fliegenden
+	Teppichen. Wann immer der Held sich nicht darauf beschränkt, still
+	und ergeben auf seinem Fluggerät zu hocken, sondern gewagte Manöver
+	(z.B. der Flug durch ein Fenster, Steilkehre oder Looping) unternimmt,
+	wird eine Probe fällig, ebenso natürlich bei Verfolgungsjagden. Regeln
+	zu Stürzen und Sturzschaden finden Sie auf Seite 144 - und
+	Stürze aus den üblichen Flughöhen neigen dazu, tödlich zu enden.
+	Ritte auf fliegenden Lebewesen werden über das Talent Reiten abgehandelt
+	(siehe dort).
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Hexenbesen, Fliegender Teppich, weitere
+	magische Fluggeräte (jeweils einzelnes Gerät pro Spezialisierung)
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt; Akrobatik (+10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>3</id><name>Gaukeleien</name><baseTalent>false</baseTalent><ebe>x2</ebe><attributes>MU CH FF</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Unter diesem Stichwort sind alle Arten von kleinen Kunststücken
+	zusammengefasst, mit denen ein Gaukler auf dem Jahrmarkt
+	sein Geld verdienen und als Gefangener in einer Ogerhöhle
+	möglicherweise sein Leben retten kann: Jonglieren, Bauchreden,
+	Feuerschlucken usw. Auch solche Nebenverdienste wie Hütchenspiele
+	fallen unter dieses Talent, nicht jedoch das gewerbliche
+	Falschspiel mit Karten und Würfeln  (das ein eigenes Talent ist).
+	Je nach Art der vorgeführten Gaukelei können die geprobten
+	Eigenschaften variieren (IN/CH/KO beim Bauchreden, MU/CH/KO beim
+	Feuerspucken etc.).
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Bauchreden, Feuerkunst,
+	Jonglieren, Possenreissen, Taschenspielereien
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Falschspiel (+10), Taschendiebstahl (+10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>4</id><name>Klettern</name><baseTalent>true</baseTalent><ebe>x2</ebe><attributes>MU GE KK</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Eine Kletterprobe steht immer dann an, wenn der Held eine schwierige
+	Klettertour (wie das Überklettern einer Burgmauer oder das Bezwingen
+	einer Felsklippe) unternimmt. Je nach Art und Höhe des zu
+	überkletternden Hindernisses kann die Probe mit einem Zuschlag
+	belegt werden; Kletterhilfen (Steighaken, Seile, Wurfanker) erleichtern
+	natürlich die Probe, wenn man mit ihnen umzugehen versteht.
+	Ein Held mit Höhenangst legt entweder zusätzlich Höhenangstproben ab,
+	oder aber seine Kletterproben werden von vornherein mit Zuschlägen
+	belegt. Längere Klettertouren können auch auf MU/GE/KO abgelegt werden,
+	ebenso ist es hierbei möglich, mit der Methode des längerfristigen
+	Talenteinsatzes (Ansammeln von TaP*) zu arbeiten.
+	Da man beim Klettern abstürzen kann, empfiehlt es sich auch,
+	auf Seite 144 den Abschnitt zum Thema Sturz und Sturzschaden durchzulesen.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; 
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Akrobatik (+5), Athletik (+5), Körperbeherrschung (+10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>5</id><name>Körperbeherrschung</name><baseTalent>true</baseTalent><ebe>x2</ebe><attributes>MU IN GE</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Ausrutscher auf einer steilen Treppe, Abrollen nach einem Sturz
+	vom Pferd oder ein Hechtsprung über das just einstürzende
+	Brückensegment, das Auf-den-Beinen-bleiben auf einem Schiff
+	im Sturm - in all diesen Fällen ist das Talent Körperbeherrschung
+	gefragt. Je nach Schwierigkeit der Situation sollte auch die Höhe
+	der Zuschläge ausfallen. Siehe auch die Anmerkungen zu den
+	Talenten Akrobatik und Athletik. In Fragen der Standfestigkeit
+	beachten Sie bitte auch den Vorteil Herausragende Balance und die
+	Sonderfertigkeit Standfest. Regeln zu Stürzen
+	und Sturzschaden finden Sie auf Seite 144.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Fallen, Sprünge, Standfestigkeit
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Akrobatik (+5), Athletik (+10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>6</id><name>Reiten</name><baseTalent>false</baseTalent><ebe>-2</ebe><attributes>CH GE KK</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Man benötigt kein Reiten-Talent, um sich auf einem Pferd zu halten,
+	das im Schritt geht und von einem Begleiter am Zügel geführt wird.
+	Selbst wenn das Pferd durchgeht und man verzweifelt versucht,
+	sich im Sattel zu halten, ist eher Körperbeherrschung als Reiten
+	gefragt.  Allerdings wird ein Held, der nicht reiten kann, kein
+	Pferd dazu bringen, in eine bestimmte Richtung zu gehen, wenn in
+	einer anderen Richtung saftiges Gras oder duftender Hafer zu finden ist.
+	Proben werden immer dann fällig, wenn aussergewöhnliche Leistungen
+	verlangt werden: Scharfer Galopp und Sprünge über Hindernisse
+	(auch niedrige) sind nicht ohne Probe möglich; Ritte über unwegsames
+	Terrain und zügelloses Galoppieren (weil der Held beide Hände
+	frei haben will) erfordern bereits Proben mit Zuschlägen, die bei
+	ausgesprochenen Großtaten  (Sprünge über 1,5 Schritt Höhe oder mehr
+	als 5 Schritt Länge) durchaus drastisch ausfallen sollten.
+	Reiten-Proben auf unbekannten Reittieren (wie Kamelen und Elefanten
+	für jemanden, der bislang nur Pferde und Esel gewohnt ist)
+	sollten die ersten Male mit einem Zuschlag versehen werden.
+	Ebenfalls mit Reiten-Proben gelenkt werden fliegende Wesen
+	wie Flugechsen oder Hippogriffe. Hier sind jedoch alle Proben
+	prinzipiell um 5 Punkte erschwert, wenn man sich nicht üblicherweise
+	auf diesen Tieren fortbewegt (eine entsprechende Spezialisierung
+	erworben hat).  Ein guter Reiten-TaW ist Vorbedingung für das
+	Erlernen verschiedener Sonderfertigkeiten des berittenen Kampfs
+	und auch ansonsten im Kampf zu Pferd unerlässlich.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; nach Tierart: Pferd/Esel/
+	Muli, Kamel, Strauß, Reitechse, Flugechse,
+	Hippogriff, goblinisches Reitwildschwein etc.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Körperbeherrschung (+10), Akrobatik (+15)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>7</id><name>Schleichen</name><baseTalent>true</baseTalent><ebe>0</ebe><attributes>MU IN GE</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Erfolgreiches Schleichen ist nicht nur eine Frage der
+	Körperbeherrschung, sondern auch der Aufmerksamkeit, um potentielle
+	Geräuschquellen wie knarrende Dielen oder trockene Zweige auf dem
+	Boden rechtzeitig zu erkennen und zu vermeiden. Natürlich
+	spielen auch das Terrain und die Bekleidung des Helden
+	eine wichtige Rolle bei dem Versuch, sich geräuschlos
+	fortzubewegen. Auf festgestampftem Erdboden mag dem barfüssigen
+	Helden ein Anschleichen ohne Probe gelingen. Mit Reitstiefeln
+	(durch deren Sohlen man keine Zweige auf dem Boden spüren
+	kann) durch einen Wald voller trockener Äste
+	zu schleichen, erfordert schon ein ausserordentliches Schleichen-Talent.
+	Der Spielleiter sollte eventuelle Zuschläge von
+	Bodenbeschaffenheit, Rüstung und Schuhwerk des Schleichenden abhängig
+	machen.  Eine Schleichen-Probe kann mit einer erfolgreichen
+	Sinnenschärfe-Probe gekontert werden (siehe dazu auch die
+	Bemerkungen zu Vergleichenden Talentproben auf Seite 15).
+	Schleichen-Proben der Helden können (und sollten)
+	vom Meister verdeckt gewürfelt werden.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; nach Gelände: Eis/
+	Schnee, Gebäude, Geröll, Straßen, Wald/ Dschungel
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Körperbeherrschung (+10), Sich Verstecken (+10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>8</id><name>Schwimmen</name><baseTalent>true</baseTalent><ebe>x2</ebe><attributes>GE KO KK</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Ein Held mit einem Talentwert von 2 kann sich einigermaßen
+	über Wasser halten und auch langsam in die gewünschte Richtung
+	paddeln. Er muss also keine Schwimmen-Probe ablegen,
+	wenn er in einen Tümpel fällt. Proben werden vor allem fällig, wenn
+	der Held im Wasser eine ungewöhnliche Leistung vollbringen
+	will, z.B. tauchen, einen Gefährten oder eine
+	sperrige Last befördern oder im oder unter Wasser kämpfen.
+	Bei dem Talent Schwimmen hat der Spielleiter
+	eine Reihe von Faktoren zu berücksichtigen,
+	die die Zuschläge auf eine Probe beeinflussen können:
+	vor allem die Bewegtheit des Wassers (reißende Brandung
+	oder ein wilder Gebirgsfluss können bis zu 8 Punkte Zuschlag
+	verursachen) und die Rüstung des Helden.
+	Welche Strecken ein Held schwimmend oder
+	tauchend zurücklegen kann, hängt von seiner Ausdauer ab
+	(siehe Seite 139/140); was passiert, wenn seine Ausdauer
+	endet, finden Sie auf Seite 83.
+	Ein guter Schwimmen-TaW ist die Vorbedingung zum Erlernen
+	der Sonderfertigkeit Unterwasserkampf.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Langstrecken schwimmen,
+	Schnellschwimmen, Tauchen, Unterwasserkampf
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Athletik (+10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>9</id><name>Selbstbeherrschung</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>MU KO KK</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Zum einen bezeichnet die Selbstbeherrschung
+	die Fähigkeit, großen Schmerzen zu widerstehen.
+	Ein hoher TaW kann also nicht nur
+	auf der Folterbank, sondern auch im Kampf
+	(um nach einem schweren Treffer nicht sofort
+	das Bewusstsein zu verlieren) oder auf einem
+	strapaziösen Eilmarsch von Nutzen sein.
+	Zum anderen ist die Selbstbeherrschung auch
+	dann gefordert, wenn es gilt, Versuchungen
+	zu widerstehen oder ein Lachen oder eine
+	spöttische Bemerkung zu unterdrücken. In
+	einigen der letztgenannten Situationen ist
+	es jedoch angebracht, den Helden nicht auf
+	seine Selbstbeherrschung, sondern auf seinen
+	Jähzorn, seinen Stolz o.ä. zu prüfen - oder
+	aber die Selbstbeherrschungs-Probe (in diesem
+	Fall auf MU/MU/KL) um den genannten
+	Wert zu erschweren.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Erschöpfung Ignorieren,
+	Schmerz Unterdrücken, Störungen Ignorieren,
+	Wunden Ignorieren. Bei diesen Spezialisierungen gilt:
+	Für jeden Punkt Probenmodifikation, der ignoriert werden
+	soll, ist die Selbstbeherrschungs-Probe um 5 Punkte
+	erschwert. Die Wirkung einer gelungenen
+	Probe hält 5 KR an. Zum Ignorieren von
+	Wunden siehe Seite 82.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt; -
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>10</id><name>Sich Verstecken</name><baseTalent>true</baseTalent><ebe>-2</ebe><attributes>MU IN GE</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Das Talent bestimmt die Fähigkeit, ein geeignetes
+	Versteck blitzschnell zu entdecken
+	und zu nutzen. Ein Held, dessen Talentprobe
+	misslingt, hat entweder die Sinnenschärfe
+	seiner Verfolger unterschätzt oder war zu lange
+	unschlüssig (.. soll ich lieber unter den
+	Stuhl ... oder in den Schrank ... oder doch
+	auf den Leuchter ...?). In einer Umgebung,
+	die absolut keine Verstecke bietet, braucht
+	der Meister dem Helden keine Talentprobe
+	zu gestatten. Talentproben in Sich Verstecken
+	können vom Meister nach Bedarf verdeckt
+	gewürfelt werden; auch der direkte Vergleich
+	mit einer Sinnenschärfe-Probe ist möglich.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Gebäude, Gebirge, Grasland,
+	Eis/Schnee, Stadt, Wald/Dschungel, Wüste
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Schleichen (+10), Körperbeherrschung (+15)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>11</id><name>Singen</name><baseTalent>true</baseTalent><ebe>-3</ebe><attributes>IN CH CH</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Eine gute Singstimme ist zwar nicht jedem
+	und jeder in die Wiege gelegt, das heisst aber
+	nicht, dass sie sich nicht entwickeln und bilden
+	liesse. Das Talent Singen ist sowohl zum
+	Sologesang, dem Vortrag eines Heldenepos
+	oder der Begleitung von Musik geeignet, und
+	ein passabler Vortrag wird sowohl von den
+	Novizen verschiedener Kulte als auch von
+	Theaterchören - und natürlich von professionellen
+	Sängern, Barden und Skalden - erwartet.
+	Einige Sangesleistungen (besonders lautes
+	Singen, Koloraturen) erfordern eine Probe
+	auf (IN/CH/KO).
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Balladenvortrag, Chorgesang,
+	Mehrstimmigheit, Operngesang
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt; -
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>12</id><name>Sinnenschärfe</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL IN IN</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	&quot;Ich presse mein Ohr an die Tür, höre
+	ich etwas?&quot; So lautet eine Standardfrage
+	in jedem Spiel. Der Spielleiter kann
+	die  Genauigkeit  aller  Heldenwahrnehmungen
+	von Talentproben auf Sinnenschärfe
+	abhängig machen. Sinnenschärfe-Proben (die
+	sich natürlich auch auf das Erspüren feiner
+	Gerüche oder das Erspähen weit entfernter
+	Ziele, auf das Ertasten filigraner Gravuren
+	und das Schmecken von Gift im Wein beziehen)
+	sollten vom Meister verdeckt gewürfelt
+	werden. Sinnenschärfe-Proben sind häufig
+	der passive Teil einer vergleichenden Probe
+	(siehe Seite 15) gegen Schleichen oder Sich
+	Verstecken.
+	Die meisten Proben werden auf die Eigenschaften
+	KL/IN/IN gewürfelt, nur bei denjenigen,
+	die mit dem Tastsinn zu tun haben,
+	gilt die Kombination KL/IN/FF. Misslungene Proben
+	bedeuten entweder, dass der
+	Held nichts wahrnimmt, oder, dass er einer
+	Täuschung unterliegt.
+	Die Probe kann von den Umständen (Umgebungslärm,
+	Verletzungen) modifiziert sein,
+	auf jeden Fall aber vom Vorteil Herausragender
+	Sinn bzw. dem Nachteil Eingeschränkter Sinn.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Hören, Riechen/Schmecken,
+	Sehen, Tasten
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt; -
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>13</id><name>Skifahren</name><baseTalent>false</baseTalent><ebe>-2</ebe><attributes>GE GE KO</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Die Technik, sich auf zwei vorne hochgebogenen
+	Brettern aus unterseits gewachstem
+	Holz fortzubewegen, angetrieben von einem
+	etwa acht Spann langen Stütz- und Balancierstock,
+	dessen Enden jeweils einem kleinen Schneeschuh ähneln,
+	ist eigentlich nur den Nivesen, Firnelfen und einigen wenigen
+	Waldläufern der Nordlande bekannt. Diese
+	Fortbewegungsart ist gut zum Überwinden
+	grösserer Schneefelder geeignet, nicht aber für
+	rasante Abfahrten oder gar Sprünge. Proben
+	auf dieses Talent sollten vor allem abgelegt
+	werden, um festzustellen, ob ein Skifahrer
+	seine pro Tag zurück gelegte Strecke vergrössern
+	oder plötzlich auftretenden Gefahren
+	ausweichen kann. Bei einer Abfahrt können
+	Sie getrost hohe Probenzuschläge verlangen,
+	ebenso für Sprünge über kleinere Abhänge
+	oder Spalten.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; keine
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Athletik (+10), Körperbeherrschung (+15)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>14</id><name>Stimmen Imitieren</name><baseTalent>false</baseTalent><ebe>-4</ebe><attributes>KL IN IN</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Ein guter Wert in diesem Talent deutet vor
+	allem auf die Fähigkeit hin, Tierstimmen täuschend
+	echt nachzuahmen, mit höheren
+	Talentwerten ist es jedoch  durchaus
+	möglich, Menschenstimmen zu imitieren. In beiden Fällen
+	gilt, dass der
+	Nachahmer ausreichend Gelegenheit
+	gehabt haben muss, sich den speziellen
+	Ton einzuprägen und zu üben. Erst ein
+	Meisterimitator mit einem TaW von mindestens 15 kann z.B.
+	dem Kammerdiener des Staatsministers des Horasreichs auf Anhieb
+	mit der Stimme seines Herrn antworten.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Voraussetzung:&lt;/b&gt; Sinnenschärfe 4
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Haustiere, Tagwild,
+	Menschliche Stimmen, Raubtiere, Vögel
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Gaukeleien (nur mit der Spezialisierung Bauchreden) (+5)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>15</id><name>Tanzen</name><baseTalent>true</baseTalent><ebe>x2</ebe><attributes>CH GE GE</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Gelungene Tanzen-Proben können  nicht
+	nur an manchem Grafenhof, sondern auch
+	bei einem Hexenfest grosse Vorteile bringen,
+	während eine gescheiterte Probe auch den
+	imposantesten  Helden  der  Lächerlichkeit
+	preisgibt und ihn gesellschaftliches Ansehen
+	kosten kann. Dieses Talent regelt die grundsätzliche
+	Bewegungskoordination und das
+	Rhythmusgefühl; um bei komplizierten höfischen Tänzen eine
+	gute Figur zu machen, ist zudem auch eine solide Kenntnis der
+	Etikette vonnöten, bei Tänzen aus fremden Kulturen auch
+	die Sonderfertigkeit Kulturkunde.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; Ausdruckstänze, Formationstänze,
+	Höfische Tänze (Etikette 6+ als
+	Voraussetzung), Kulttänze (Götter/Kulte 6+ als Voraussetzung),
+	Meditationstänze
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Akrobatik (+5), Körperbeherrschung (+5)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>16</id><name>Taschendiebstahl</name><baseTalent>false</baseTalent><ebe>x2</ebe><attributes>MU IN FF</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Sei es das Beutelschneiden oder das unbemerkte Stibitzen
+	eines Gegenstandes aus einer fremden Umhängetasche:
+	Viele Helden von nicht ganz einwandfreiem Ruf bedienen
+	sich dieses Talents. Bei der Festlegung der
+	Zuschläge auf eine Probe sind diverse Faktoren zu
+	berücksichtigen: Rechnet das Opfer mit einem Diebstahl?
+	Wie sperrig ist die Beute? Hat der Dieb einen Komplizen, der
+	das Opfer anrempelt oder auf andere Weise
+	ablenkt? Und so weiter. Der Spieler kann
+	die Probe beeinflussen, indem er seine Vorgehensweise
+	beschreibt und dem Meister
+	plausibel macht, dass sein spezieller
+	Diebestrick besonders Erfolg versprechend ist. Ein
+	versuchter Taschendiebstahl kann mit einer erfolgreichen
+	Sinnenschärfe-Probe gekontert werden
+	(siehe Vergleichende Probe, Seite 15).
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Voraussetzung:&lt;/b&gt; Um Taschendiebstahl
+	auf einen höheren Wert als 10 zu bringen, muss der Held
+	eine Menschenkenntnis von 4 oder höher aufweisen.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; keine
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt;
+	Gaukeleien (nur mit Spezialisierung Taschenspielereien) (+10)
+&lt;/P&gt;</desc></dsa_talent_item><dsa_talent_item><id>17</id><name>Zechen</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>IN KO KK</attributes><talentType>Körper</talentType><raisingCost>D</raisingCost><desc>&lt;P&gt;
+	Ein Held kann jederzeit zu einem Gelage
+	eingeladen werden, das ihn an die Grenze
+	seiner Belastbarkeit bringt. Normalerweise
+	entstehen durch starkes Zechen zwar Zugewinne an Mut und
+	Verminderungen diverser Ängste, aber drastische Abzüge auf
+	alle an deren guten Eigenschaften, wie auch eine
+	Steigerung von Attributen wie Neugier, Aberglauben und vor
+	allem Jähzorn.
+	Durch gelungene Proben auf Zechen kann
+	ein Held solche üblen Folgen abwehren.
+	Auch der schwere Kopf am nächsten Tag
+	- in Aventurien je nach Schwere 'Wolf' oder
+	'Werwolf' genannt - lässt sich durch eine
+	erfolgreiche Zechen-Probe in die Schranken weisen.
+	Ein hoher Wert in Zechen kann, je nach
+	Kulturkreis, auch einen vernünftigen Umgang (oder
+	besondere Übung) mit anderen
+	Rauschmitteln bedeuten.
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Spezialisierungen:&lt;/b&gt; keine
+&lt;/P&gt;
+&lt;P&gt;
+	&lt;b&gt;Ersatzweise verwendbare Fertigkeiten:&lt;/b&gt; -
+&lt;/P&gt;</desc></dsa_talent_item></folder><folder><name>Gesellschaft</name><dsa_talent_item><id>18</id><name>Betören</name><baseTalent>false</baseTalent><ebe>-2</ebe><attributes>IN CH CH</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(IN/CH/CH) (Spezial)&lt;br&gt;
+Die Ausstrahlung auf das andere Geschlecht
+der eigenen Spezies wird durch dieses Talent
+bewertet. Eine gelungene Talentprobe besagt,
+dass das ‘Opfer’ der Annäherungsversuche
+dem Helden gewogen ist. Was die betörte
+Person für den Helden zu tun bereit ist, steht auf
+einem anderen Blatt und hängt stark von der
+jeweiligen Spielsituation ab. Bei ausgesprochen
+‘harten Nüssen’ beiderlei Geschlechts
+kann der Meister die Betören-Probe mit Zuschlägen
+versehen. Will ein Held versuchen,
+ein Mitglied einer anderen Art (speziell zwischen
+Elfen und Zwergen) zu betören, dann
+sollte der Meister deutliche Probenzuschläge
+verlangen; weniger heftige Zuschläge sind
+für Betörungsversuche gegenüber dem eigenen
+Geschlecht oder gegenüber Personen aus
+anderen Kulturkreisen erforderlich. Die Einstellung
+der Meisterperson zu einem Helden
+muss auf jeden Fall in die Probe einbezogen
+werden.&lt;br&gt;
+Betören kann mit Menschenkenntnis oder Betören
+gekontert werden (siehe Vergleichende
+Probe; Seite 15); auch ein Ansammeln von
+TaP* (längerfristiger Talenteinsatz) über einen
+längeren Zeitraum kann sinnvoll sein.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Menschenkenntnis 4&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: BE –2&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Kultur&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: je
+nach Situation Überreden (+10) oder
+Überzeugen (+10)</desc></dsa_talent_item><dsa_talent_item><id>19</id><name>Etikette</name><baseTalent>false</baseTalent><ebe>-2</ebe><attributes>KL IN CH</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(KL/IN/CH) (Spezial)&lt;br&gt;
+So mancher Held kann unversehens in feine
+Gesellschaft geraten – sei es, weil er als
+Belohnung für eine besondere Tat zu einem
+Hofball oder einer Audienz eingeladen
+wird, sei es, weil er am Herzogenhof einem
+Schurken nachspioniert. Wie aber lautet die
+korrekte Anredeform für die Tochter des
+Markgrafen, welcher Anwesende wird zuerst
+gegrüßt, welches Wappen trägt das Haus
+Sturmfels-Mersingen? Aber auch: Welche
+Weine gelten momentan als schick? Welche
+Mode trägt man am Horashof? Ist es degoutant,
+süße Pastetchen nach Hammelaufläufen
+zu reichen? Da der Spieler all diese Dinge
+unmöglich im Kopf behalten kann, sollte
+sein Held sich möglichst auf dem Feld der
+Etikette auskennen. Etikette-Proben können
+vom Meister verdeckt gewürfelt werden. Etikette
+ist ein Talent, das in vollem Umfang von
+der jeweiligen Kultur und daher von der SF
+Kulturkunde abhängig ist.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: BE –2&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Kultur&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: –</desc></dsa_talent_item><dsa_talent_item><id>20</id><name>Gassenwissen</name><baseTalent>false</baseTalent><ebe>-4</ebe><attributes>KL IN CH</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(KL/IN/CH) (Spezial)&lt;br&gt;
+Dieses Talent ermöglicht eine rasche Einschätzung
+der Örtlichkeiten in einer fremden
+Stadt, und zwar durch Einschätzen der
+Umgebung und ihrer Bewohner, durch
+(nicht ausgespielte) Fragen an ‘die richtigen
+Leute’ und durch Vergleich mit
+vertrauten, ähnlichen Strukturen (der
+Heimatstadt). Erfolgreiche Proben veranlassen
+den Meister zu Antworten auf
+Fragen wie die folgenden: Wo treffe ich
+voraussichtlich auf Gardisten? Wo finde ich
+einen preiswerten Unterschlupf? Wo kann
+ich hier am leichtesten meinem Steckenpferd
+(der Beutelschneiderei) nachgehen? In welchem
+Tempel hat man am ehesten ein Herz
+für eine arme Seele, die sich für eine kräftige
+Mahlzeit zu jedem beliebigen Gott bekennt?
+Auch städtebauliche Fragen können mit diesem
+Talent beantwortet werden: Wie erkenne
+ich einen Eingang zu einem für Menschen
+passend großen Kanalisationsschacht? Ist in
+dieser Stadt mit Sackgassen oder abgeschlossenen
+Hinterhöfen zu rechnen? Ebenfalls
+hilfreich ist in diesem Zusammenhang die
+Sonderfertigkeit Ortskenntnis, aber auch die
+Vorteile Innerer Kompass bzw. Richtungssinn.
+Proben auf Gassenwissen können vom Meister
+verdeckt gewürfelt werden und sollten kulturelle
+Unterschiede in Betracht ziehen.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: BE –4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Beschatten, Hehlerei,
+Kontakte, Ortseinschätzung&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Menschenkenntnis (+10)</desc></dsa_talent_item><dsa_talent_item><id>21</id><name>Lehren</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN CH</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(KL/IN/CH) (Spezial)&lt;br&gt;
+Nicht jedem ist es gegeben, eigenes Wissen
+und Fertigkeiten so an andere weiterzugeben,
+dass diese tatsächlich Lehren für sich
+selber daraus ziehen können. Da vermutlich
+nur wenige Helden sich ernsthaft für eine
+Lehrmeister-Tätigkeit interessieren, wird die
+Pflege dieses Talentes wohl hauptsächlich
+Meisterpersonen vorbehalten bleiben. Wie
+Helden dieses Talent beim gegenseitigen
+Lehren und Lernen einsetzen, erfahren Sie
+auf Seite 167 in diesem Band.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um in Lehren einen höheren
+Wert als 10 zu erreichen, muss der Held eine
+Menschenkenntnis von TaW 4 oder höher aufweisen.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Talentgruppe: Kampftalente,
+Körperliche Talente, Gesellschaftliche
+Talente, Natur-Talente, Wissenstalente,
+Handwerkstalente, Sprachen und Schriften&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Überzeugen (+10)</desc></dsa_talent_item><dsa_talent_item><id>22</id><name>Menschenkenntnis</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL IN CH</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(KL/IN/CH) (Basis)&lt;br&gt;
+Eine Talentprobe hilft dem Helden, die wahren
+Absichten einer Meisterperson zu durchschauen.
+Die Zuverlässigkeit eines Bergführers
+kann auf diese Art ebenso überprüft
+werden wie die Ehrlichkeit eines Rosshändlers.
+Menschenkenntnis-Proben werden prinzipiell
+vom Meister verdeckt ausgeführt.
+Je nach Gelingen teilt der Meister dem
+Spieler mit, welche Gefühle die Person
+bei dem Helden auslöst – dies kann bei
+einer misslungenen Probe auch durchaus
+eine Fehleinschätzung sein. Um zu
+verhindern, dass der Held mit Hilfe einer
+einfachen Menschenkenntnis-Probe den
+zentralen Bösewicht eines Abenteuers schon
+bei der ersten Begegnung entlarvt, kann der
+Meister die Talentprobe mit einem geheimen
+Zuschlag belegen, der sich üblicherweise aus
+der Erfahrung der Meisterperson ergibt. Eine
+andere Möglichkeit ist eine vergleichende
+Probe gegen den Überreden-Wert desjenigen,
+der durchschaut werden soll.
+Um die Absichten eines Wesens aus
+einer fremden Spezies einzuschätzen,
+ist auf jeden Fall eine erschwerte Probe
+erforderlich; bei Personen aus anderen
+Kulturen (also solchen, zu denen man
+über keine passende Kulturkunde verfügt)
+sind Zuschläge zumindest empfehlenswert.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Kultur&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Heilkunde Seele (+5)</desc></dsa_talent_item><dsa_talent_item><id>23</id><name>Schauspielerei</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL MU CH</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(MU/KL/CH) (Spezial)&lt;br&gt;
+Das herkömmliche, ‘intuitive’ Verkörpern
+fremder Personen und überzeugende
+Vertreten unwahrer Behauptungen
+– all das also, was landläufig als
+‘Schauspielerei’ bezeichnet werden mag
+– ist bereits gut durch die Talente Überreden
+oder auch Überzeugen vertreten. Das
+Talent Schauspielerei hingegen bezeichnet
+die eher handwerklichen Aspekte: die
+Kenntnis wichtiger Stücke und Rollen,
+die Fähigkeit, laut und trotzdem deutlich
+zu deklamieren, die rechte Mimik, auf dass
+auch die hinteren Reihen alles mitbekommen
+– kurzum, all jene Gaben, die einen Mimen
+der Vinsalter Horasbühne vom Knallchargen
+einer Wanderbühne unterscheiden.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: je nach zu verkörpernder
+Rolle&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um den TaW Schauspielerei
+über 10 hinaus zu steigern, muss der Held ei-
+nen Wert in Etikette, Sich Verkleiden, Singen,
+Überreden und Überzeugen von jeweils mindestens
+4 aufweisen. &lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Komödie, Posse, Tragödie &lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Überreden (+10)</desc></dsa_talent_item><dsa_talent_item><id>24</id><name>Schriftlicher Ausdruck</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN IN</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(KL/IN/IN) (Spezial) &lt;br&gt;
+Dies ist die Fertigkeit, nicht nur Buchstaben
+aufs Papier zu bringen (obwohl eine gute
+Handschrift hier viel hilft), sondern damit
+auch eine verständliche Aussage zu verbinden.
+In diesem Rahmen gibt es zwei grundsätzliche
+Ausrichtungen: &lt;br&gt;
+Beim Schreiber handelt es sich um einen der
+wichtigsten Berufe in einer Welt, in der viele
+Bewohner nur eines rudimentären Gekrakels
+mächtig sind. Schreiber verfassen für
+gutes Geld Briefe an die Obrigkeit oder Bot-
+schaften an entfernt wohnende Verwandte
+(die dann häufig wieder von einem Schreiber
+vorgelesen werden).
+Im Unterschied zum Schreiber ist es die
+Gabe des Schriftstellers, wohlklingende Texte
+zu verfassen: Epen oder Dramen, Lustspiele
+oder Gedichte, Balladen oder Romane, vornehmlich
+natürlich mit belehrendem oder
+religiösem Inhalt, gerne auch historische
+Abhandlungen oder Biographien – alles eine
+Frage der Bezahlung, aber gerade im Horasreich,
+bei den Bürgern Almadas und Garetiens
+sowie bei den Granden Al‘Anfas (also
+bei zahlungskräftiger Kundschaft) ist solcher
+Lesestoff sehr beliebt.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Lesen/Schreiben [entsprechende
+Schrift] 6&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Schreiber, Schriftsteller&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: verwendete
+Sprache (+10), Überzeugen (nur mit
+der Spezialisierung auf schriftliche Rhetorik)
+(+5)</desc></dsa_talent_item><dsa_talent_item><id>25</id><name>Sich Verkleiden</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU CH GE</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(MU/CH/GE) (Spezial)&lt;br&gt;
+Der Spielleiter legt die Zuschläge auf die
+Probe nach Art der gewünschten Verkleidung
+fest, auch die hervorstechenden Körpermerkmale
+des Helden sind zu berücksichtigen.
+(Ein hünenhafter Thorwaler hat gewisse
+Schwierigkeiten, als zierliches Mohamädel
+aufzutreten.) Eine gelungene Sich Verkleiden
+Probe bewirkt, dass einem Helden seine
+Verkleidung von der Umgebung zunächst
+einmal abgenommen wird, die Kleidung also
+ebenso überzeugend ist wie die Bewegungen
+und das Verhalten. Doch auch ein gut verkleideter
+Held muss sein Gegenüber überreden,
+wenn er mit ihm ins Gespräch kommt. Hohe
+TaP* aus der Sich Verkleiden-Probe mögen die
+Überreden-Probe erleichtern, werden sie aber
+kaum überflüssig machen. Ebenfalls in diesem
+Talent enthalten ist eine grundlegende
+Kenntnis der Mode und des Schminkens.
+In diesem Talent sollten Sie auf jeden
+Fall die bei einer Probe übrig behaltenen
+Talentpunkte (offene Probe; siehe
+Seite 13) beachten.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: nach Situation
+von keiner Behinderung bis BE×2&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: anderer Stand, anderes
+Geschlecht, andere Rasse, fremde
+Kultur&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Schauspielerei (+10)</desc></dsa_talent_item><dsa_talent_item><id>26</id><name>Überreden</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>MU IN CH</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(MU/IN/CH) (Basis)&lt;br&gt;
+Mit diesem Talent ist ein Held in der
+Lage, sein Gegenüber mit einem Wortgewitter
+so zu beeinflussen, dass sich
+dieses – zumindest kurzfristig – vom
+Helden zu bestimmten Handlungen
+bewegen lässt. Viele Varianten des
+Überredens sind kulturabhängig und
+von der Einstellung des Gegenübers
+abhängig. Anwendungsgebiete dieses
+Talents sind:&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Aufwiegeln&lt;/i&gt;&lt;/b&gt;: Hierdurch kann eine Menge
+zu einer bestimmten Tat (oder Unterlassung
+aufgestachelt werden; diese
+Talentspezialisierung ist unabdingbar,
+wenn ein Held mehr als 4 Personen
+gleichzeitig überreden will.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Betteln&lt;/i&gt;&lt;/b&gt;: Dies umfasst sowohl die Kenntnis
+der richtigen Verkleidung als auch der entsprechenden
+herzerweichenden Sprüche,
+um mitleidigen Seelen einige Heller aus der
+Tasche zu ziehen. Betteln ist in den Städten
+nicht nur unumgänglicher Zwang für die
+Ärmsten der Armen, nein, es hat sich über
+die Jahre zu einer Art Lehrberuf entwickelt,
+wie ja auch die Bettler in den großen Städten
+Aventuriens oftmals regelrechte Gilden
+gegründet haben. &lt;br&gt;
+&lt;b&gt;&lt;i&gt;Einschüchtern&lt;/i&gt;&lt;/b&gt;: Ähnlich wie mit dem all-
+gemeinen Überreden lässt sich mit dieser
+Spezialisierung ein Gegenüber zu einer
+bestimmten Handlung motivieren, weil es
+Angst vor dem Einschüchternden hat. Waffe
+und Rüstung, aber auch ein barbarisches
+Aussehen können beim Einschüchtern von
+Vorteil sein. &lt;br&gt;
+&lt;b&gt;&lt;i&gt;Feilschen&lt;/i&gt;&lt;/b&gt;: Neben anderen gehört auch das
+Feilschen zu den Fertigkeiten, die nach Möglichkeit
+nicht durch Proben, sondern durch
+reale Spieleraktionen dargestellt werden
+können. In diesem Fall lässt sich der Meister
+je nach Talentwert des Helden leichter,
+schwieriger oder gar nicht herunterhandeln.
+Im Interesse einer zügigen Spielabwicklung
+kann aber auch eine Feilschen-Probe gewürfelt
+werden. Der Spieler kann sich selbst Zuschläge
+auf die Probe auferlegen – je höher der Zuschlag,
+desto höher der Prozentsatz, um den er
+den Verkäufer herunterhandeln kann: +0 = 5
+%, +1 = 10 %, +2 = 15 % usw. bis zu einem
+Maximum von +9 = 50 %. Hier ist durchaus
+auch eine vergleichende Probe möglich. Auch
+das Anpreisen, also die Fertigkeit, eine beliebige
+Ware so lautstark und wortgewandt zu
+präsentieren, dass sich zumindest potentielle
+Käufer einfinden, die die Ware begutachten,
+fällt unter diesen Bereich. &lt;br&gt;
+&lt;b&gt;&lt;i&gt;Lügen&lt;/i&gt;&lt;/b&gt;: Eigentlich sollte man denken, dass
+jeder Held dieses Talent besitzt, doch es gibt
+einige Typen, die so gründlich zur Ehrlichkeit
+erzogen wurden, dass sie auch dann Probleme
+mit dem Lügen haben, wenn es um
+ihr Leben geht. Eine Lüge kann nur dann
+erfolgreich sein, wenn das Opfer im Augenblick
+keine Möglichkeit hat, den Wahrheitsgehalt
+einer Aussage zu überprüfen. Eine
+gelungene Probe kann das Opfer dazu bringen,
+auf die Überprüfung einer unwahren
+Aussage zu verzichten. Lügen-Proben sollten
+vom Meister verdeckt gewürfelt werden. Eine
+Lüge lässt sich unter Umständen durch eine
+erfolgreiche Menschenkenntnis-Probe durchschauen
+(vergleichende Probe; Seite 15).
+Die Fertigkeit, vor Gardisten, Richtern und
+gehörnten Ehegatten eigene Verfehlungen
+als klein und unwichtig erscheinen zu lassen
+und schnell zu anderen Themen überzugehen,
+nennt man üblicherweise nicht Lügen,
+sondern Herausreden, sie wird aber trotzdem
+genauso behandelt. &lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Überreden auf einen
+höheren Wert als 10 zu bringen, muss der
+Held eine Menschenkenntnis von mindestens
+4 aufweisen. &lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: je nach Situation BE –
+4, beim Betteln mit sichtbarer Rüstung BE×2&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Aufwiegeln, Betteln, Einschüchtern
+Feilschen, Lügen (s.o.)&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Überzeugen
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>27</id><name>Überzeugen</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN CH</attributes><talentType>Gesellschaft</talentType><raisingCost>B</raisingCost><desc>(KL/IN/CH) (Spezial)&lt;br&gt;
+Dieses Talent bewirkt bei richtiger Anwendung
+eine mindestens einige Tage andauernde
+Bewusstseinsänderung, ganz im Gegensatz
+zum eher kurzfristigen Überreden.
+Der Meister legt die Zuschläge auf die
+entsprechende Probe fest, die von der
+Klugheit und der Lebenseinstellung des
+Opfers abhängen, ebenso natürlich von
+der Kultur und der Einstellung gegenüber
+dem Helden. Wer eine Karriere als
+Geweihter oder Demagoge anstrebt, wird
+um dieses Talent nicht herumkommen.
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Menschenkenntnis 4&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: je nach Situation
+evtl. BE –4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Öffentliche Rede (Demagogie
+Plädoyer, Predigt), Einzelgespräch
+(Verhör, Bekehrung), Diskussions-Rhetorik,
+schriftliche Rhetorik&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Überreden
+(+10)</desc></dsa_talent_item></folder><folder><name>Natur</name><dsa_talent_item><id>28</id><name>Fährtensuchen</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL IN KO</attributes><talentType>Natur</talentType><raisingCost>B</raisingCost><desc>(KL/IN/KO) (Basis)&lt;br&gt;
+Das Suchen und Verfolgen einer Fährte wird
+durch Proben auf dieses Talent geregelt. Die
+Schwierigkeit, einer Fährte zu folgen, hängt
+natürlich von Bodenbeschaffenheit, Lichtverhältnissen
+und ähnlichem ab. Der Spielleiter
+sollte bei jedem Terrainwechsel eine Probe
+verlangen, die von –7 (frische Schneedecke)
+bis zu +12 (kahler Fels) variieren kann.
+Um eine Spur über eine längere Strecke zu
+verfolgen, wird die Probe auf (KL/IN/KO)
+abgelegt; sollen an einer begrenzten Stelle
+möglichst viele Informationen aus den Spuren
+gewonnen werden, dann sind KL und
+zweimal IN die richtigen Eigenschaften.
+Bei bestimmten Bodentypen (wie z.B. einem
+staubfreien Marmorfußboden) braucht der
+Meister keine Probe zu erlauben. Die Anzahl
+der übrig behaltenen Talentpunkte bestimmt
+die Menge der Informationen, die man erhält
+Fährtensuchen-Proben der Helden können
+vom Meister verdeckt gewürfelt werden.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um den TaW Fährtensuchen
+über 10 hinaus zu steigern, muss der Held eine
+Sinnenschärfe von mindestens 4 aufweisen.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: – (Außer der Held
+trägt Kleidung oder Rüstung, die seine Wahrnehmung
+einschränkt.)&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Eis/Schnee, Gebirge,
+Grasland, Stadt, Sumpf, Unterirdisch, Wald/
+Dschungel, Wüste&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Sinnenschärfe
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>29</id><name>Fallenstellen</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Natur</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Dieses Talent umfasst das Konstruieren, geschickte
+Platzieren und Tarnen einer Wildfalle
+(Schlinge, kleine Grube, zuschnappende
+Äste). Eine gelungene Probe bedeutet,
+dass ein Tier, das die Falle passiert, sich in ihr
+fängt; ob tatsächlich eine Beute in die Nähe
+der Falle kommt, ist natürlich von der Umgebung
+abhängig – dies kann der Meister vom
+Zufall abhängig machen. Bei der Fallenjagd
+zur Ernährung geben die übrig behaltenen
+Talentpunkte an, wie viele Rationen erbeutet
+werden konnten: pro TaP* eine halbe Ration
+(mindestens jedoch eine Ration). Das Platzieren
+von Fallen benötigt inklusiver der Auswahl
+der geeigneten Orte etwa eine Stunde.
+Ein Fallensteller mit einem Talentwert von
+mindestens 6 ist in der Lage, Fallen anzulegen
+die auch von intelligenten Wesen kaum
+entdeckt werden können; das Entdecken
+solcher Fallen wird über entsprechend erschwerte
+Sinnenschärfe-Proben geregelt, wobei
+natürlich ein hoher Wert in Fallenstellen
+auch als Hilfstalent zum Entdecken hilfreich
+ist. Fallenkonstruktionen in Gebäuden, Stollen
+usw. gehören in den Bereich Mechanik.
+Die Jagd auf eine spezielle Art von Tieren
+oder gar ein bestimmtes Einzelstück sollte
+über einzelne Proben für jede Falle (korrekte
+Köderwahl, Platzierung der Falle etc.) bei
+entsprechenden Probenvorgaben von Seiten
+des Meisters erfolgen und auch eine Probe
+auf Tierkunde als Hilfstalent beinhalten.
+Wenn die Probe misslingt, bleiben die Fallen
+leer; ein Patzer bedeutet, dass die Mehrzahl
+der Fallen unbrauchbar geworden ist. Wie
+sich ein längerer (oder auch kürzerer) Aufenthalt
+der Heldengruppe auf den Wildbestand
+und damit die Probe auswirkt, ist Meisterentscheidung&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Fallenstellen auf einen
+höheren Wert als 10 zu bringen,
+muss der Held Wildnisleben wenigstens
+mit TaW 4 beherrschen.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Gruben, Schlingen,
+Speere&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Wildnisleben
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>30</id><name>Fesseln/Entfesseln</name><baseTalent>false</baseTalent><ebe>0</ebe><attributes>FF GE KK</attributes><talentType>Natur</talentType><raisingCost>B</raisingCost><desc>(FF/GE/KK) (Spezial)&lt;br&gt;
+Dieses Talent beinhaltet sowohl das Wissen
+um unterschiedliche Knotenformen für unterschiedliche
+Zwecke und die Fähigkeit,
+diese Knoten auch stabil und haltbar zu
+schnüren, als auch die Fähigkeit, Schwachstellen
+von Verschnürungen zu erkennen
+und sich aus eventuellen Fesselungen zu
+befreien.
+Eine Fesseln-Probe ist nur dann erforderlich,
+wenn der Held eine zuverlässige Fessel, die
+mindestens über mehrere Stunden halten
+soll, anlegen will. Aus einer mit einer Talentprobe
+verstärkten Fessel kann sich ein Opfer
+folgendermaßen befreien: Der Fesselnde
+gibt Punkte in Höhe seiner doppelten übrig
+behaltenen Fesseln-TaP vor, die dann mit offenen
+Proben und den TaP* des Entfesselnden
+abgebaut werden können; hierbei ist jede
+halbe Stunde eine Probe erlaubt. Wenn die
+vom Fesselnden vorgegebenen Punkte den
+doppelten TaW des Gefesselten übersteigen,
+ist eine Probe in der Regel nicht möglich.
+Außer jagderfahrenen Aventuriern sind viele
+Seefahrer, speziell auch die Thorwaler, Meister
+der Fesselkunst, weil sie eine Vielzahl
+komplizierter Schlingen und Knoten knüpfen
+können.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: Beim Fesseln ist die
+Behinderung in der Regel irrelevant (außer
+man behält die Panzerhandschuhe an), beim
+Entfesseln schränkt eine getragene Rüstung
+mit einem Wert von BE ein.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Entfesseln, Fesseln, Knotenkunde
+Taue Spleißen, Netze Knüpfen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Seefahrt
+(+10), Seiler (+10), zum Entfesseln
+auch Akrobatik (nur mit der Spezialisierung
+Winden +5), Gaukeleien (nur bei passender
+Spezialisierung +10), Taschendiebstahl (+10)
+oder eine Ringen-PA (+10)</desc></dsa_talent_item><dsa_talent_item><id>31</id><name>Orientierung</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL IN IN</attributes><talentType>Natur</talentType><raisingCost>B</raisingCost><desc>(KL/IN/IN) (Basis)&lt;br&gt;
+Das Talent regelt die Fähigkeit, Himmelsrichtungen
+zu bestimmen und sich in unbekanntem
+Gelände zurechtzufinden. Diese
+Begabung ist natürlich bei Seefahrern und
+Wüstenbewohnern besonders ausgeprägt
+– bei Leuten also, für die eine gute Orientierung
+in extrem gleichförmiger Umgebung lebenswichtig
+ist. Ein sicherer Orientierungssinn
+versagt aber auch in großen Gebäuden
+und unterirdischen Anlagen nicht, weil der
+Held ein Gefühl für die Proportionen der
+Räume und ihre Lage zueinander hat.
+Orientierungs-Proben kann der Meister verdeckt
+würfeln, in besonders schwierigen
+Situationen (gleichförmige Eiswüsten, unterirdische
+Labyrinthe) sollte er das sogar
+tun. Die Vorteile Richtungssinn und Innerer
+Kompass können die Proben erleichtern,
+ebenso eine passende Sonderfertigkeit Geländekunde
+bzw. Ortskundig.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: – (In manchen Situationen
+kann der Meister einem Helden,
+dessen Blickfeld durch einen Helm eingeschränkt
+ist, einen Zuschlag von bis zu 3
+Punkten auferlegen.)&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Dschungel, Eis/Schnee,
+Gebirge, Grasland, Meer, Stadt, Unterirdisch
+Wald, Wüste&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Sternkunde
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>32</id><name>Wettervorhersage</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN IN</attributes><talentType>Natur</talentType><raisingCost>B</raisingCost><desc>(KL/IN/IN) (Spezial)&lt;br&gt;
+Dem wetterkundigen Helden kündigen
+sich bei erfolgreicher Probe auf dieses Talent
+ungünstige Wetterlagen so frühzeitig
+an, dass er geeignete Vorsichtsmaßnahmen
+treffen kann. Bei Bewohnern von Gegenden
+mit ständig gleich bleibendem Wetter und
+bei typischen Städtern ist dieses Talent wenig
+ausgeprägt. Die Proben auf Wettervorhersage
+sollten vom Meister verdeckt gewürfelt werden
+In passendem Terrain kann eine Wettervorhersage
+Probe durch eine passende Geländekunde
+unterstützt werden.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Geländetyp/Region&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Wildnisleben
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>33</id><name>Wildnisleben</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>IN GE KO</attributes><talentType>Natur</talentType><raisingCost>B</raisingCost><desc>(IN/GE/KO) (Basis)&lt;br&gt;
+Unter diesem Begriff sind all die kleinen
+Dinge zusammengefasst, die für ein Leben
+unter freiem Himmel wichtig sind: Auswahl
+und Einrichten eines geeigneten und
+geschützten Lagerplatzes, Feuer anzünden,
+optimales Brennmaterial finden, das sich
+auch in feuchtem Zustand für ein Lagerfeuer
+eignet, Entdecken günstiger Stellen für eine
+Jagd usw. Ein Held, der bei dieser Talentprobe
+scheitert, darf sich nicht wundern, wenn
+bei einem nächtlichen Wolkenbruch sein
+Zelt samt Ausrüstung davonschwimmt, weil
+er das Bächlein, an dessen Ufer er rastet, gewaltig
+unterschätzt hat.
+Wildnisleben-Proben können vom Meister
+verdeckt gewürfelt werden, je nach bekannter
+Umgebung kann eine passende Sonderfertigkeit
+Geländekunde oder eine Ortskenntnis die
+Wildnisleben-Proben erleichtern.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: je nach Situation,
+beim Erkennen und Einschätzen von Situationen
+ist die BE irrelevant.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Dschungel, Eis/Schnee,
+Gebirge, Meer, Steppe, Sumpf, Wald, Wüste&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: je nach
+Situation eventuell Tier- oder Pflanzenkunde
+(+10)</desc></dsa_talent_item></folder><folder><name>Wissen</name><dsa_talent_item><id>34</id><name>Anatomie</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU KL FF</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(MU/KL/FF) (Spezial)&lt;br&gt;
+Die Kunde von den Körpern, ihren inneren
+Zusammenhängen und ihrem Aufbau
+ist eine der grundlegenden Wissenschaften
+für die Heilkunst. Da diese Kunst nur an
+Leichen oder Verurteilten gewonnen werden
+kann, ist der Beruf des Anatomen nicht
+sonderlich angesehen, ja, vielerorts sogar verboten
+Dafür ist ein gebildeter Anatom aber
+auch in der Lage, schwere Wunden und bestimmte
+Arten von Organkrankheiten sofort
+als solche zu erkennen und zu behandeln
+(Anatomie als Hilfstalent bei entsprechenden
+Heilkunde-Proben). Zudem kennt er die
+verwundbarsten Punkte des menschlichen
+Körpers und richtet daher im waffenlosen
+Kampf stets 1 TP mehr an als ein unkundiger
+Kämpfer, wenn er über einen Anatomie-TaW
+von 10 oder mehr verfügt.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: keine Schlechte Eigenschaft
+Totenangst&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Spezies&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Heilkunde
+Wunden (+5), Heilkunde Krankheiten
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>35</id><name>Baukunst</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL FF</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/FF) (Spezial)&lt;br&gt;
+Baumeister beschäftigen sich mit der Konstruktion
+und der Überwachung von Bauwerken
+Sie sind als einzige in der Lage,
+ein Gebäude, das über eine zweizimmrige
+Holzhütte hinausgeht, zu planen und so zu
+entwerfen, dass es auch den nächsten Sturm
+übersteht. Jeder Hochadlige, der etwas auf
+ich hält, beschäftigt einen Baumeister für
+eventuelle Prunkbauten, so dass diese Fertigkeit
+auch so etwas wie eine ‘Altersversicherung
+für Helden darstellt, die sich zur Ruhe
+setzen wollen. Die eigentliche Ausführung
+des Baus übernehmen Maurer, Steinmetze
+oder Zimmerleute; unterirdische Anlagen
+werden mittels Bergbau geplant und gebaut.&lt;br&gt;
+&lt;b&gt;Voraussetzungen&lt;/b&gt;: Lesen/Schreiben 4, Malen
+Zeichnen 5, Rechnen 5&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Hochbau (Wohn- und
+Repräsentationsgebäude), Tiefbau (Brücken,
+Kanäle, Straßen), Wehranlagen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Zimmermann
+(+10), Maurer (+10), Steinmetz
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>36</id><name>Brett-/Kartenspiel</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Die Kenntnis der verschiedensten Brettspiele
+(wie z.B. Urdas, Garadan oder das weit verbreitete
+und vielfach variierte tulamidische
+Kamelspiel), Würfelspiele und Kartenspiele
+(hier namentlich das verbreitete Boltan- oder
+Fünfas-Spiel) gehören zu dieser Fertigkeit, die
+nicht nur Regelkunde, sondern auch Spieltechnik
+Gewinnkombinationen, Stellungseinschätzung
+und dergleichen mehr beinhaltet.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Spiel&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: unter
+Umständen Kriegskunst (Strategie) (+10)
+oder Rechnen (+10)</desc></dsa_talent_item><dsa_talent_item><id>37</id><name>Geographie</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Die Landeskunde ist ein Fach, das man aus
+Schriften mühselig einpauken oder auf weiten
+Reisen quasi von selbst erlernen kann,
+wobei die praktische Erfahrung der theoretischen
+bei weitem vorzuziehen ist. Bei einer
+gelungenen Geographie-Probe sollte der
+Spielleiter dem Spieler-Helden die passenden
+geographischen Fakten (zu Landschaftsform,
+Klima, Böden, zu schiffbaren Flüssen und
+gangbaren Pässen ...) mitteilen. Mit einem
+hohen Geographie-Wert kennt man zwar
+auch die grundsätzlichen Fakten zu den Bewohnern
+einer Region, jedoch sind ohne eine
+passende Kulturkunde-Sonderfertigkeit alle
+Geographie-Proben zur Klärung kultureller
+Detailfragen erschwert. Detailwissen zu deren
+Sitten und Gebräuchen erfordert zusätzlich
+das Talent Etikette, zu deren Mythen und
+religiösen Praktiken dagegen Sagen/Legenden
+bzw. Götter/Kulte.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Region&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Sagen/
+Legenden (+10)</desc></dsa_talent_item><dsa_talent_item><id>38</id><name>Geschichtswissen</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL CH</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Die schriftlich niedergelegte Geschichte
+Aventuriens beträgt mittlerweile bereits dreitausend
+Jahre, aber die Erzählungen vieler
+Völker reichen deutlich weiter in die Vergangenheit
+– die Zeitalter davor, von denen
+nur noch verwitterte Ruinen künden, gar
+nicht eingerechnet. Da die meisten Helden
+immer wieder einmal mit der Vergangenheit
+ihrer Welt konfrontiert werden – weil sie zum
+Beispiel die Toten nicht in ihrer Gruft ruhen
+lassen können –, wird es oft von Nutzen sein,
+einen geschichtsbewanderten Gefährten in
+der Nähe zu wissen. Historie ist eines der
+wenigen Wissensgebiete, das sehr stark auf
+schriftlichen Quellen beruht, und nicht nur
+das Entziffern, sondern auch das Einordnen
+und Bewerten alter Texte sind wichtiges
+Handwerkszeug für den Geschichtskundigen
+Geschichtswissen ist ein Talent, das
+bei fehlender Kulturkunde erschwert
+werden kann.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Lesen/Schreiben 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Kultur oder
+nach Thema: Bau- und Kunstgeschichte
+Militär-, Religions-, Wissenschaftsgeschichte&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: je
+nach Thema Sagen/Legenden oder passende
+Fach-Talente (jeweils +10)</desc></dsa_talent_item><dsa_talent_item><id>39</id><name>Gesteinskunde</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN FF</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/IN/FF) (Spezial)&lt;br&gt;
+Eine Ausbildung in diesem Talent ermöglicht
+das Erkennen geeigneter Gesteinsarten für
+Bauzwecke, aber auch das Absuchen des Bodens
+nach Erzadern oder das Schürfen nach
+Edelmetallen und Edelsteinen. Dazu kommt
+eine grundsätzliche Kenntnis der Materialeigenschaften
+verschiedenster Gesteins-, Erzund
+Edelsteinarten.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Baugestein, Edelmetalle,
+Edelsteine&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: je
+nach Gestein und Umständen Steinmetz
+(+5), Bergbau (+10), Baukunst (+10), Steinschneider
+(+10), Hüttenkunde (+10)</desc></dsa_talent_item><dsa_talent_item><id>40</id><name>Götter/Kulte</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Basis)&lt;br&gt;
+Dies ist das Wissen um religiöse Riten und
+Bekenntnisse des eigenen Glaubens. Für jeden
+Geweihten ein absolutes Muss, will man
+nicht im Tempel einer Bruder- oder Schwestergottheit
+unangenehm auffallen. Ebenfalls
+zu diesem Talent gehört die Kenntnis von
+Göttersagen und Heiligenlegenden sowie
+auch der geziemenden Anreden und Verbeugungen
+vor einem Priester oder einer Priesterin
+Wer sich gut genug mit Göttern und Kulten
+auskennt (TaW mindestens 7), kann sich
+entscheiden, auch sein Wissen über andere
+Religionen zu vertiefen (die erste Spezialisierung
+muss sich nicht auf die eigene Religion
+beziehen). Ohne die passende Kulturkunde
+sind fremde Religionen jedoch nur schwer zu
+verstehen, weswegen entsprechende Proben
+erschwert werden sollten.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: je nach Glaubensausrichtung&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+eventuell Geschichtswissen (+10), Sagen/Legenden
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>41</id><name>Heraldik</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL FF</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/FF) (Spezial)&lt;br&gt;
+Während das Talent Etikette eher die allgemeinen
+Umgangsformen – vor allem bei Hofe
+– regelt und die Wappenkunde eher nebenher
+mit umfasst, beschäftigt sich die Heraldik
+einzig und allein mit der Geschichte, Entstehung
+und Verbreitung von Wappen, Schildund
+Feldzeichen, Helmzieren, Spruchbändern
+und ähnlichem mehr, dazu noch mit
+ein wenig Kunde der wichtigsten Verwandtschaftsbeziehungen
+und Erblinien. Ein Held
+kann mit dem Talent Heraldik feststellen, aus
+welcher Provinz ein Ritter stammt, ob aus
+einem angeheirateten Zweig eines alten
+Adelshauses – oder ob irgendein Schurke
+sich mit gefälschten oder Phantasiewappen
+schmückt. Dazu kommt – bei
+höherem TaW – noch die Kenntnis der
+Farben und Banner der Regimenter (und
+ihrer einzelnen Unterabteilungen) der
+großen Reiche. Auch dieses Talent ist
+von einer entsprechenden Kulturkunde
+abhängig.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Staat&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Etikette (+10)</desc></dsa_talent_item><dsa_talent_item><id>42</id><name>Hüttenkunde</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN KO</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/IN/KO) (Spezial)&lt;br&gt;
+Das Wissen um die Herstellung reiner
+Metalle und Legierungen für die vielfältigsten
+Aufgaben ist eine Wissenschaft für
+sich, von der weder die Bergleute auf der
+einen noch die Schmiede auf der anderen
+Seite große Ahnung haben. Hüttenkundige
+sind an Fürstenhöfen und bei den
+Handelsherren, die ihr Geld im Bergbau
+verdienen, so begehrt, weil sie als einzige
+Metalle aus den verschiedenen Erzen herstellen
+können. Sie sind außerdem in der
+Lage, Metallwaren zu begutachten und
+die Qualität von Erzadern einzuschätzen
+&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Metall/Erz
+(Edelmetalle, Eisen/Stahl, Kupfer/Bronze
+Messing, Zinn, Magische Metalle ...)&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+Alchimie (+10), Metallguss (+10), Grobschmied
+(+15)</desc></dsa_talent_item><dsa_talent_item><id>43</id><name>Kriegskunst</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU KL CH</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(MU/KL/CH) (Spezial)&lt;br&gt;
+Als Kämpfer eine mutige Rolle in einer
+Schlacht zu spielen ist eine Sache – eine
+andere ist es, die Schlacht selbst zu lenken.
+Truppen müssen bewegt, versorgt und motiviert
+werden. Das Terrain und die taktischen
+Möglichkeiten des Gegners sind zu erkunden
+Nicht zuletzt müssen der Zeitpunkt des
+Handelns festgelegt und überdies die Gunst
+der Götter erworben werden. Strategie, Taktik
+und auch die Entscheidungen des Hauptmanns
+vor Ort – all dies sind Anwendungsgebiete
+der Kriegskunst.
+(und hier vor allem die Spezialisierung
+auf Taktik) ist ein wichtiges Talent
+bei der Einschätzung von Kampfsituationen;
+Näheres hierzu finden Sie auf Seite 80.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Logistik, Militärgeschichte
+Monstren, Seegefechte, Strategie, Taktik
+(bei den Zwergen noch die Spezialisierung
+auf Drachen und deren Bekämpfung)&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Strategische
+Entscheidungen können bisweilen
+vom Brett-/Kartenspiel (+10) hergeleitet
+werden; auch Rechnen und Menschenkenntnis
+können in bestimmten Situationen zu Rate
+gezogen werden, beim Kampf gegen Monstren
+auch Tierkunde.</desc></dsa_talent_item><dsa_talent_item><id>44</id><name>Kryptographie</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Es gibt immer wieder Nachrichten, deren
+Inhalt so geheim ist, dass die Verschlüsselung
+durch das Kauderwelsch der Gilden
+oder die Verwendung allfälliger Geheimtinten
+nicht ausreicht, aber doch nicht so geheim
+dass man dafür aufwendige magische
+Methoden anwenden müsste. Genau in diesen
+(nicht einmal seltenen) Bereich fällt die
+Kryptographie, die Lehre vom Ver- und Entschlüsseln
+die vor allem natürlich bei den
+Agenten großer Handelsunternehmungen,
+aber auch bei Spitzeln aller Art verbreitet
+ist (wenn sie die Voraussetzungen erfüllen).
+Kryptographie-Proben können vom Meister
+verdeckt gewürfelt werden; übliche Methode
+zum Entschlüsseln eines codierten Textes
+ist aber das Ansammeln von TaP* (längerfristiger
+Talenteinsatz, Seite 15) bei je nach
+Verschlüsselungssystem erschwerten Proben.
+(Einfache Geheimschriften sollten Sie die
+Spieler ruhig am Tisch selbst entschlüsseln
+lassen und ihnen nach bestandener Probe
+vielleicht ein paar Hinweise zukommen lassen
+– aber vertrauen Sie uns: Beim dritten
+Ersetzungsalphabet fängt es an, langweilig
+zu werden.)&lt;br&gt;
+&lt;b&gt;Voraussetzungen&lt;/b&gt;: Lesen/Schreiben und Rechnen
+je 6, Sprachenkunde 4, Malen/Zeichnen 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Rechnen
+(+10), Sprachenkunde (+10)</desc></dsa_talent_item><dsa_talent_item><id>45</id><name>Magiekunde</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Was passiert als nächstes, wenn der alanfanische
+Zauberer die Hand zur Faust ballt?
+Könnte dieser in allen Farben schillernde
+Ring ein altes echsisches Artefakt sein? Wie
+kann es sein, dass die Fußspuren des Elfen
+auf einer freien Fläche abrupt enden?
+Alle diese Fragen können auch von nicht
+magisch begabten Helden beantwortet werden
+die sich mit den arkanen Künsten
+beschäftigt haben. Ob als (seltenes und
+geheimes) Bücherwissen oder aus eigener
+leidvoller Erfahrung – vielleicht
+bringt ein Fetzen dieses Wissens in der
+nächsten Auseinandersetzung die Entscheidung
+Ein hoher TaW (und eine
+passende Spezialisierung) ist für Magier
+natürlich unabdingbar.
+Die Spezialisierung Zauberpraxis beschäftigt
+sich in erster Linie mit dem Erkennen
+von Handbewegungen, Formeln
+und Auswirkungen, so dass ein kundiger
+Held sich auf die Wirkung eines Zaubers
+vorbereiten kann; Dämonologie,
+Elementarismus, Sphärologie, Magietheorie
+und Magiehistorie sind eher ‘Hilfswissenschaften
+und Hintergrundwissen,
+während man für die Spezialisierungen
+Magische Analyse, Zauberwerkstatt und
+Artefaktherstellung zumindest rudimentär
+magisch begabt sein muss.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Magiekunde auf
+einen höheren Wert als 10 zu bringen,
+muss der Held in Lesen/Schreiben einer
+geeigneten Kultursprache einen TaW 6
+oder höher aufweisen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Artefaktherstellung, Dämonologie
+Elementarismus, Magiehistorie,
+Magietheorie, Magische Analyse, Sphärologie
+Zauberpraxis, Zauberwerkstatt&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: je
+nach Fall möglicherweise Sagen/Legenden
+(+10) (vor allem in den Bereichen Dämonologie
+Elementarismus und Zauberpraxis)
+oder Götter/Kulte (+10) (im Bereich Sphärologie</desc></dsa_talent_item><dsa_talent_item><id>46</id><name>Mechanik</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL FF</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/FF) (Spezial)&lt;br&gt;
+Die Kenntnis der Mechanik kann in vielen
+Situationen nützlich sein: Dieses Talent beschreibt
+das Wissen um einfache physikalische
+Grundlagen wie die Hebelgesetze, die
+Reibungskraft, den Flaschenzug, die schiefe
+Ebene und ähnliches mehr. Wenn der Held
+selbst improvisierte mechanische Gegenstände
+herstellen will (z.B. Raumfallen, Schleuderapparate
+oder Flaschenzüge), so muss er
+durch eine gelungene Mechanik-Probe die
+Funktionsfähigkeit seines Apparates nachweisen
+Je komplizierter das Gerät ist, desto
+höher fällt der Zuschlag auf die MechanikProbe
+aus bzw. desto mehr TaP* müssen bei
+Konstruktion und Bau angesammelt werden
+Nur teilweise in diesen Bereich fällt die
+Kenntnis der Feinmechanik, also der Funktionsweise
+von Schlössern, Schlossfallen,
+Spieluhren oder Ähnlichem; hierzu wird das
+Handwerks-Talent Feinmechanik benötigt.
+Der Meister kann Mechanik-Proben verdeckt
+auswürfeln und die Funktionsfähigkeit erst
+bei einer ersten Anwendung oder einem Probelauf
+bekannt geben.
+Ein guter Mechanik-TaW ist im Umgang
+mit Belagerungswaffen und Armbrüsten
+von Nutzen.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Mechanik auf einen
+höheren Wert als 10 zu bringen, muss
+der Held in Lesen/Schreiben, Malen/
+Zeichnen und Rechnen einen TaW von 6
+oder höher aufweisen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Belagerungswaffen,
+Kräne/Hebewerke/Mahlwerke, Materialkunde
+Pumpen und Wasserkraft,
+Windkraft&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Feinmechanik (+10)</desc></dsa_talent_item><dsa_talent_item><id>47</id><name>Pflanzenkunde</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN FF</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/IN/FF) (Spezial)&lt;br&gt;
+Der Pflanzenkundige weiß nicht nur,
+wo er nach ihm bekannten Pflanzen
+suchen muss, sondern er ist auch in der
+Lage, fremde Pflanzen einzuschätzen,
+da er sie mit bekannten Gewächsen vergleichen
+kann. Auch die Fähigkeit, aus
+Pflanzen Gifte oder Heilmittel zu gewinnen
+wird über das Talent Pflanzenkunde
+geregelt. In allen drei Bereichen
+(Pflanzen suchen, bestimmen, Elixiere
+brauen) sind Proben möglich, wobei
+eine misslungene Probe bei der Pflanzensuche
+zur Folge hat, dass man die Pflanze
+nicht findet; gescheiterte Proben auf das
+Bestimmen von Gewächsen und/oder das
+Brauen von Elixieren können verhängnisvollere
+Wirkungen haben. Bestimmungsund
+Brau-Proben können vom Meister verdeckt
+gewürfelt werden.
+Eine detaillierte Methode der Pflanzensuche
+und -bestimmung finden Sie in der Zoo-Botanica
+Aventurica auf den Seiten 223f. bzw.
+in diesem Band ab Seite 189.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Gelände: Dschungel
+Gebirge, Grasland, Meer, Steppe, Sumpf,
+Tundra, Wald, Wüste&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Wildnisleben
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>48</id><name>Philosophie</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Dieses Wissenstalent umfasst die Kenntnis
+verschiedener Denkschulen alter und neuer
+Zeit unabhängig von Glaubensbekenntnissen
+und im Vergleich der Völker, seien es erkenntnistheoretische
+Überlegungen, formale
+Logik, moralisch-ethische Grundsätze oder
+kosmogonisch-mythologische Spekulationen
+über den Ursprung der Welt.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+Götter/Kulte (+10), Magiekunde (+10),
+Geschichtswissen (+15), Sagen/Legenden
+(+15)</desc></dsa_talent_item><dsa_talent_item><id>49</id><name>Rechnen</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Basis)&lt;br&gt;
+Ähnlich wie beim Lesen und Schreiben wird
+es auch bei diesem Talent selten zu einer
+Probe kommen. Ein Held mit einem TaW
+von 0 kann zwar mühsam zählen, aber nicht
+rechnen; er unterscheidet zwischen ‘viel’ und
+‘wenig’ bzw. zwischen ‘mehr’ oder ‘weniger’.
+Helden mit TaW 1 bis 2 rechnen mühselig
+und unter Zuhilfenahme von Fingern und
+Zehen. Bei TaW 3 beginnt eine halbwegs
+flüssige Beherrschung der Grundrechenarten
+TaW 4 ist die Mindestvoraussetzung
+für das Ablegen von Proben auf verschiedenen
+Wissensgebieten, während sich die höheren
+Mysterien (Geometrie, Wurzelziehen,
+Zinseszins bis hin zu den Grundlagen der
+Infinitesimalrechnung) erst ab einem TaW
+von 6 zu erschließen beginnen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Arithmetik, Buchführung
+Geometrie&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: –</desc></dsa_talent_item><dsa_talent_item><id>50</id><name>Rechtskunde</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Dieses Talent regelt die Kenntnis des Rechtswesens
+verschiedener aventurischer Länder
+und Völker, vor allem aber der unterschiedlichen
+Rechtssysteme der einzelnen Gilden,
+dem Kirchenrecht der Zwölfgötter-Kirchen
+(oder die aus den 99 Gesetzen abgeleiteten
+Regelungen der Novadis), dem Staats- und
+dem Strafrecht. Da die Vorstellungen von
+Recht und Unrecht von Land zu Land variieren
+hilft Rechtskunde auch fahrenden Helden
+nicht auf Schritt und Tritt mit der Ordnungsmacht
+zu kollidieren. Besonders
+nützlich in diesem Zusammenhang ist
+das Talent, wenn es um das Vermeiden
+von oder den richtigen Umgang mit
+heldentypischen Vergehen (Gifteinsatz
+Beleidigung von weltlichen und
+geistlichen Würdenträgern, Waffengesetze
+handelt.
+Rechtskunde-Proben können vom Meister
+verdeckt gewürfelt werden, sie werden
+durch eventuell vorhandene (oder
+fehlende)
+Kulturkunde-Sonderfertigkeiten
+modifiziert.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Gildenrecht, Kirchenrecht
+Strafrecht, Staatsrecht oder
+nach jeweiligem Staat&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+Etikette (+10), Staatskunst (+10)</desc></dsa_talent_item><dsa_talent_item><id>51</id><name>Sagen/Legenden</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL CH IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/IN/CH) (Basis)&lt;br&gt;
+Wer sich in diesem Talent gebildet hat,
+kennt sich nicht nur mit Sitten und Gewohnheiten
+des eigenen Volkes aus, sondern
+kann auch die Götter und Heroen
+identifizieren und ist in der Lage, Sagen
+und Legenden in Wort und/oder Schrift
+wiederzugeben. Um die Sagen und Legenden
+fremder Völker zu kennen, ist
+eine entsprechende Kulturkunde vonnöten
+ansonsten sind die Talentproben mit
+einem Zuschlag zu versehen. Insofern
+ist dies nicht nur ein Talent für Diplomaten
+und Völkerkundler, sondern auch
+für reisende Sänger und Geschichtenerzähler
+Bei den verbreiteten Mythen und
+Legenden der eigenen Kultur sind nur in
+Ausnahmefällen Proben nötig.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Kultur&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: je
+nach Spezialthema eventuell Geschichtswissen
+(+10), Götter/Kulte (+10)</desc></dsa_talent_item><dsa_talent_item><id>52</id><name>Schätzen</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/IN/IN) (Spezial)&lt;br&gt;
+Wenn man in einer verlassenen Gruft einen
+kleinen Ring oder einen goldenen Kelch findet
+kann man nicht darauf hoffen, dass an
+dem Fundstück ein Preisschild befestigt ist.
+Nach einer gelungenen Schätzen-Probe teilt
+der Meister dem Helden mit, welchen Preis
+er in etwa für einen Gegenstand erzielen
+kann. Beim Einkauf auf dem Markt hilft eine
+Probe, den wahren Wert einer überteuerten
+Ware zu erkennen. Schätzen-Proben können
+(und sollten bisweilen) vom Meister verdeckt
+gewürfelt werden.
+Anmerkung: Das Talent Schätzen bezieht
+sich übrigens nur auf materielle Werte, nicht
+jedoch auf das Abschätzen von Entfernungen,
+benötigten Bausteinen etc. (Für solche Einschätzungen
+benötigt man ein jeweils passendes
+anderes Talent, im obigen Fall Sinnenschärfe
+oder Baukunst; je nach Fragestellung
+auch KL- oder IN-Proben.)&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Antiquitäten, Materialwert
+Schmuck, Handwerksgüter&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+Feinmechanik (nur mit der Spezialisierung
+Goldschmied) (+5), Handel (+5),
+Steinschneider/Juwelier (+5)</desc></dsa_talent_item><dsa_talent_item><id>53</id><name>Sprachenkunde</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Viele Sprachen zu kennen ist zwar für einen
+Händler wichtig, hilft aber wenig, wenn man
+auf ein Volk trifft, das einen obskuren Dialekt
+spricht, oder man über eine Schrifttafel
+stolpert, die zwar ‘irgendwie tulamidisch’
+aussieht, aber offensichtlich ein anderes Alphabet
+verwendet. Hier kommt das Talent
+Sprachenkunde ins Spiel, das sich mit den Zusammenhängen
+der bekannten Sprachen, ihren
+Entwicklungen, Untergruppen und auch
+ihren verschiedenen Schriftformen beschäftigt
+Der Meister kann Proben auf dieses Talent
+erlauben, wenn der Held Kenntnis einer
+verwandten Sprache besitzt und von dort auf
+eine unbekannte Sprache oder Schrift schließen
+will, um einen Dialekt oder eine Weiterentwicklung
+einer Sprache zu erkennen.
+Sprachenkunde wird zum Erlernen bestimmter
+(alter) Fremdsprachen benötigt (siehe unten).&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Sprachfamilie&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: –</desc></dsa_talent_item><dsa_talent_item><id>54</id><name>Staatskunst</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN CH</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/IN/CH) (Spezial)&lt;br&gt;
+Die Kenntnis der Zusammenhänge der Gesellschaft
+der verschiedenen Herrschaftsformen,
+der königlichen Finanzen und dergleichen ist
+kein Talent, das ein umherstreifender Abenteurer
+benötigt, aber wenn besagter Abenteurer
+ein Spross eines Adelshauses ist, werden
+gewisse Grundkenntnisse nicht an ihm vorübergegangen
+sein, und wenn man eine Karriere
+als Diplomat oder kaiserlicher Beamter
+anstrebt, kommt man um theoretische Kenntnisse
+des Zusammenlebens von Staaten und
+Völkern auch nicht herum.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Diplomatie, Intrige, Verwaltung&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+Hauswirtschaft (+10), Rechtskunde (Staatsrecht
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>55</id><name>Sternenkunde</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(KL/KL/IN) (Spezial)&lt;br&gt;
+Nicht nur die Astrologie als Methode der Zukunftsdeutung
+fällt unter dieses Talent
+sondern auch und vor allem
+die Navigation nach den Sternen
+Methoden der Zeitbestimmung
+die schiere Katalogisierung
+der Himmelsphänomene und
+dergleichen mehr; dazu auch
+die theoretischen Kenntnisse
+um den Lauf der Himmelskörper
+auf denen schlussendlich alle
+vorgenannten Teilbereiche beruhen
+Da gute Teleskope rar und
+teuer sind, ist dies immer noch ein
+Talent für Leute mit Geduld und
+scharfen Augen.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Sternkunde auf einen
+höheren Wert als 10 zu bringen, muss der
+Held in einer passenden Sprache und Schrift
+(üblicherweise Garethi oder Tulamidya),
+Rechnen und Sinnenschärfe einen TaW von 6
+oder höher aufweisen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Himmelskartographie,
+Horoskope, Navigation, Zeitbestimmung&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Gabe
+Prophezeien (Astrologie) (+5)</desc></dsa_talent_item><dsa_talent_item><id>56</id><name>Tierkunde</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU KL IN</attributes><talentType>Wissen</talentType><raisingCost>B</raisingCost><desc>(MU/KL/IN) (Spezial)&lt;br&gt;
+Für eine erfolgreiche Jagd ist ein solides Wissen
+über Verbreitung und Verhaltensweise der
+häufigsten Tierarten natürlich eine Grundvoraussetzung
+Der erfahrene Tierkundler
+kann auch ihm bisher unbekannte Tiere einschätzen
+da er sie mit ihm vertrauten Arten
+zu vergleichen vermag. Erfolgreiche Proben
+auf Tierkunde können zur Bestimmung einer
+Tierart dienen, zum Vorausahnen ihres
+Verhaltens oder aber (in Kombination mit
+Schleichen-Proben und sicherer Waffenhandhabung
+über den Ausgang einer Jagd
+entscheiden. Auch die Grundlagen der
+tierischen Anatomie (und ihre Unterschiede
+zur menschlichen) sind dem
+Tierkundler bekannt.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Drachen, Jagdwild,
+Meeresgetier, Monstren, Nutztiere,
+Raubtiere, Schädlinge, Vielbeiner
+Vögel oder nach Region
+Ersatzweise verwendbare
+Fertigkeiten: je
+nach Wesen Reiten
+(+10), Viehzucht
+(+10) oder Wildnisleben
+(+10)</desc></dsa_talent_item></folder><folder><name>Handwerk</name><dsa_talent_item><id>57</id><name>Abrichten</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU IN CH</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(MU/IN/CH) (Spezial)&lt;br&gt;
+Wann immer ein Held seinem Tier ein
+Kunststück (einem Pferd den ‘stummen
+Alarm’, einem Hund das Apportieren oder
+Männchen machen) beibringen will, ist eine
+Probe auf Abrichten fällig. Zuschläge auf die
+Probe entstehen durch Fehlversuche (+2 für
+jede gescheiterte Probe), durch die Schwierigkeit
+des Kunststücks und die grundsätzliche
+Lernfähigkeit und potentielle Loyalität
+des Tieres. Übungen, die einem Tier wegen
+körperlicher oder geistiger Beschränkungen
+nicht möglich sind, kann ihm auch ein meisterlicher
+Abrichter nicht beibringen.
+Abrichten ist ein Talent, bei dem typischerweise
+übrigbehaltene Talentpunkte gesammelt
+werden können; wie häufig Proben erlaubt
+sind und wie viele Punkte angesammelt werden
+müssen, liegt in der Hand des Meisters.
+Um ein Tier abzurichten, sind gute Werte in
+Tierkunde nützlich, aber nicht unbedingt
+erforderlich (Verwendung als Hilfstalent
+; in vielen Fällen ist es jedoch notwendig
+die richtige Spezialisierung
+aufzuweisen: Um ein Pferd zu einem
+Schlachtross auszubilden, ist auf jeden
+Fall die Spezialisierung Zureiter vonnöten
+&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Abrichten auf einen höheren
+Wert als 10 zu bringen, muss der Held
+Tierkunde auf TaW 4 oder höher aufweisen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Dompteur , Echsenbändiger
+Falkner, Hundeführer, Zureiter&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: je
+nach Wesen Reiten (+10), Tierkunde (+10),
+Viehzucht (+10)</desc></dsa_talent_item><dsa_talent_item><id>58</id><name>Ackerbau</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN FF KO</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/FF/KO) (Spezial)&lt;br&gt;
+Dies ist die grundlegende Kenntnis von Bodenverhältnissen
+Aussaat und Ernte, Feldbestellungs
+und Lagerungsmethoden. Mit
+dem Talent kann man (auch fremde) Nutzpflanzen
+als solche erkennen und unterscheiden
+und auf diese Art und Weise z.B. eine auf
+einer einsamen Insel gestrandete Heldengruppe
+vor dem Verhungern bewahren. Zudem
+erkennt ein Ackerbau-Kundiger leicht
+Wert und Haltbarkeit von Nahrungsmitteln.
+Auf der aktiven Seite heißt dies auch, dass ein
+entsprechend ausgebildeter Held mit Pflug,
+Hacke und Dreschflegel umzugehen weiß.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: eventuell nach angebauter
+Frucht oder nach Klimazone, zwergische
+Pilzzucht&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: unter
+Umständen Viehzucht (+10), Pflanzenkunde
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>59</id><name>Alchimie</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU KL FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(MU/KL/FF) (Spezial)&lt;br&gt;
+Dieses Talent regelt die Herstellung ‘normaler
+Chemikalien und wundertätiger Mittel.
+Der Spieler teilt dem Meister mit, welches
+alchimistische Gemisch sein Held herstellen
+will, und der Spielleiter legt den Zuschlag
+(oder Abzug) auf die erforderliche Probe
+fest. Bevor es zur Probe kommt, muss
+der Held natürlich erst einmal in den
+Besitz der benötigten Zutaten und
+auch der Rezeptur kommen. Eine gescheiterte
+Probe auf diesem gefährlichen
+Gebiet kann mancherlei bewirken: ein
+harmloses, aber bestialisch stinkendes, grünes
+Wölkchen zum Beispiel, oder aber einen Urknall
+der ein halbes Stadtviertel in Schutt
+und Asche legt. Der Meister sollte so fair sein,
+seinen Helden in etwa anzudeuten, was eine
+gescheiterte Probe für sie bedeuten könnte.
+Talentproben in Alchimie können auch zur
+Analyse unbekannter Mixturen dienen – aber
+auch auf diesem Gebiet kann ein Irrtum verhängnisvolle
+Folgen haben (und hier sollte
+der Meister auch ruhig verdeckt würfeln).
+Das reine Erkennen einer bekannten alchimistischen
+Mixtur anhand von Geruch und
+Farbe kann auch anhand von SinnenschärfeProben
+geschehen, wenn der Held einen genügend
+hohen Alchimie-TaW besitzt oder er
+die Rezeptur kennt.
+Bei bestimmten Mixturen kann Alchimie
+auch durch die Talentspezialisierung Kochen
+(Tränke) (von Hexen, speziell unter Einsatz
+des Hexenkessels) oder durch das Talent
+Pflanzenkunde (z.B. zur Haltbarmachung
+von Kräutergebräuen) ersetzt werden.
+Eine Einführung zum Thema Alchimie findet
+sich im Band Wege der Zauberei, eine
+umfassende Abhandlung in Stäbe, Ringe,
+Dschinnenlampen.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Lesen/Schreiben 4, Rechnen 4;
+Zugang zu einem Laboratorium oder (für die
+Analyse) zumindest einer tragbaren Untersuchungsausrüstung
+&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Brandmittel, Gifte, Laborpraxis
+Zauber-Elixiere, Farben/Lacke,
+Materialveredelung (Gläser, Porzellan, besondere
+Legierungen, Goldmacherei), Theoretische
+Alchimie (Elementarismus und
+Sympathetik)&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Kochen
+(Tränke) (+10), Pflanzenkunde (+10)</desc></dsa_talent_item><dsa_talent_item><id>60</id><name>Bergbau</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN KO KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/KO/KK) (Spezial)&lt;br&gt;
+Dieses Talent umfasst das sachgerechte
+Anlegen von Tunneln und Schächten und
+deren Luftversorgung und Abwasserentsorgung
+Außerdem ermöglichen Kenntnisse im
+Bergbau die Beurteilung von unterirdischen
+Anlagen: Welche Wesen haben sie geschaffen
+Wo wurden bauliche Veränderungen
+vorgenommen? Solche und ähnliche Fragen
+müssen vom Meister nach gelungener Bergbau
+Probe des Helden beantwortet werden.
+Dass sich die aventurischen Zwerge fast von
+Natur aus auf solche Kenntnisse verstehen,
+verwundert nicht.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Bergbau auf einen Wert
+von mehr als 10 zu bringen, muss der Held
+einen Gesteinskunde-TaW von wenigstens 4
+haben.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Bergwerke, Kanalisation,
+natürliche Höhlen, Sappeur, unterirdische
+Städte&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: je
+nachdem Baukunst (+10), Gesteinskunde
+(+10), Maurer (+10), Steinmetz (+10)</desc></dsa_talent_item><dsa_talent_item><id>61</id><name>Bogenbau</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/IN/FF) (Spezial)&lt;br&gt;
+Bogenbauer und Armbruster beschäftigen
+sich mit der Herstellung von Schusswaffen
+aller Art und sind die einzigen, die auf
+Spannung basierende, Projektile verschießende
+Fernwaffen (und die dazugehörigen
+Geschosse) bauen können. Natürlich können
+sie auch die Qualität solcher Waffen
+einschätzen. Weiterführende Informationen
+zur Herstellung von Bögen und Armbrüsten
+finden Sie im Kapitel Feuer und Eisen auf
+Seite 183.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Holzbearbeitung 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Armbrust, Bogen, Bolzen
+Pfeile, Torsionswaffen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+Holzbearbeitung (+10), bei Armbrüsten auch
+Grobschmied (+15) und Feinmechanik (+10)</desc></dsa_talent_item><dsa_talent_item><id>62</id><name>Boote Fahren</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>GE KO KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(GE/KO/KK) (Spezial)&lt;br&gt;
+Alle Talente, die zur Fortbewegung eines
+kleinen Wasserfahrzeuges dienen – Rudern
+Segeln, Paddeln, Staken – sind hier
+zusammengefasst. Der Meister sollte es den
+Helden gestatten, ohne Probe gemächlich
+über einen stillen Teich zu rudern – irgendwie
+wird der Held schon ans andere Ufer
+gelangen. Segeln, Wildwasserfahrten und
+ähnliche Aktionen sind nur per gelungener
+Probe möglich. Für die Handhabung größerer
+Segel- oder Ruderschiffe sind das Talent
+Seefahrt und eine große Anzahl von Matrosen
+nötig.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Einmaster (Segeln), Flöße
+(Staken), Kanus/Kajaks (Paddeln), Ruderboote
+(Rudern), Eissegler&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Seefahrt
+(+5)</desc></dsa_talent_item><dsa_talent_item><id>63</id><name>Brauer</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Ein Handwerkstalent, das sich mit der Herstellung
+von ‘fermentierten, alkoholhaltigen
+Gebräuen auf der Basis von Stärke’ befasst
+– inwieweit man so etwas Bier nennen darf,
+ist häufig (wie im Fall des berüchtigten nostrischen
+Spinatbiers Knat) fraglich. Ein
+Brauer weiß auch um die korrekte Lagerung
+von Getreide und kann Gebräue beurteilen
+(oft zu seinem Leidwesen).&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Alchimie
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>64</id><name>Drucker</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Ein vor allem im Horasreich und bei den maraskanischen
+Exilanten sehr moderner und
+angesehener, in anderen Teilen Aventuriens
+weniger bekannter oder gar geschmähter
+Beruf. Ein Drucker kennt sowohl die Feinheiten
+der Schrift und Typographie und die
+richtige Mischung der Farben als auch den
+mechanischen Aufbau des Druckstocks. Viele
+Jung-Gesellen ziehen als ‘Pamphletist’ umher
+und verbreiten auf ihren transportablen
+Druckerpressen Erlasse der Fürsten, Werbeschriften
+von Händlern und bisweilen sogar
+rebellisches Gedankengut.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Lesen/Schreiben 6, Mechanik
+4, Malen/Zeichnen 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Buchdruck, Druckereitechnik
+Pamphlete, Typographie&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Mechanik
+(+10), unter Umständen auch Alchimie
+(+10), Stoffe Färben (+10) und Metallguss
+(+15)</desc></dsa_talent_item><dsa_talent_item><id>65</id><name>Fahrzeuge Lenken</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN CH FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/CH/FF) (Spezial)&lt;br&gt;
+Die Art des Fahrzeugs und vor allem die
+Anzahl der Zugtiere bestimmen die Schwierigkeiten
+einer Probe. Um z.B. eine vierspännige
+Rennkutsche auch bei geringem Tempo
+einigermaßen auf der Straße zu halten, muss
+eine Probe +4 gelingen, ein von einem geduldigen
+Maultier gezogener Lastkarren
+fährt sich da schon bedeutend gemütlicher.
+Erschwerte Proben werden fällig, wenn gewagte
+Manöver ausgeführt werden sollen: im
+scharfen Galopp ein Stadttor passieren oder
+ein von sechs durchgehenden Darpatrindern
+gezogenes Brauereigespann einbremsen.
+Ebenfalls erschwert ist das Steuern ungewohnter
+Fahrzeuge wie Hundeschlitten für
+solche Helden, die bislang nur Erfahrung
+mit Pferdekutschen haben.
+Ein guter TaW in Fahrzeug Lenken ist die
+Vorbedingung für das Erlernen der SF Reiterkampf
+(Streitwagen).&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Lastkarren, Streitwagen,
+Zuggespanne, Hunde- und Dachsschlitten&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: –</desc></dsa_talent_item><dsa_talent_item><id>66</id><name>Falschspiel</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU CH FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(MU/CH/FF) (Spezial)&lt;br&gt;
+Je nach Erfolg der Probe kann der Held entweder
+sein eingesetztes Geld vervielfachen
+oder (bei einem ausgespielten Glücksspiel)
+Würfelergebnisse zu seinen Gunsten ändern,
+neue Karten ziehen und dergleichen. Das
+Scheitern einer Probe kann den Helden in
+arge Bedrängnis bringen (notorische Falschspieler
+genießen überall in Aventurien eine
+extrem kurze Lebenserwartung). In Kombination
+mit einer Sinnenschärfe-Probe kann
+ein hohes Falschspiel-Talent auch dazu dienen
+eventuelle Mogeleien zu enttarnen.
+(Aber auch hier ist absolute Vorsicht angeraten
+Aus oben genannten Gründen ist eine
+falsche Bezichtigung meist Grund genug
+für eine Duellforderung.) Falschspiel-Proben
+können natürlich auch vom Meister verdeckt
+gewürfelt werden.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Menschenkenntnis 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Würfel, Karten&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Gaukeleien
+(Taschenspielereien) (+10)</desc></dsa_talent_item><dsa_talent_item><id>67</id><name>Feinmechanik</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/FF) (Spezial)&lt;br&gt;
+Grundlage dieser Tätigkeit ist die Fein- oder
+Goldschmiedekunst, mit der man Schmuck
+und andere filigrane Arbeiten aus Gold, Silber,
+Mondsilber und anderen Edelmetallen herstellen
+kann. Dass sich Feinmechaniker daher
+auch mit Wert und Qualität von Schmuckwaren
+auskennen, versteht sich von selbst. Der
+nächste Schritt sind Gravuren in verschiedenen
+Metallen (für Schilder und Medaillen
+bis hin zum künstlerischen Kupferstich), der
+Guss von kleinen und kleinsten Formen (für
+Siegel- oder Prägestöcke und auch für deren
+Fälschung) und schließlich der Zusammenbau
+all dieser Teile zu Uhrwerken, kleinsten
+Schlössern, winzigen Armbrustmechanismen
+oder Spieluhren. Feinmechaniker arbeiten
+meist eng mit Steinschneidern und Juwelieren
+zusammen, wenn sie diese Kunst nicht
+gar selbst beherrschen. Besonders bei Zwergen
+ist dieses Talent weit verbreitet, während
+es bei Menschen eine eher seltene und daher
+hochgeschätzte Fertigkeit ist.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Malen/Zeichnen 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Gold- und Silberschmied,
+Gravieren, Schlösser, Siegelstöcke, Trickwaffen
+Fallen, Uhrwerke&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: –</desc></dsa_talent_item><dsa_talent_item><id>68</id><name>Feuersteinbearbeitung</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/FF) (Spezial)&lt;br&gt;
+Mit diesem Talent kann man aus Feuerstein
+oder anderen scharfkantig brechenden Steinen
+wie Vulkanglas Werkzeuge von groben
+Faustkeilen bis zu feinen Rasierklingen und
+Pfeilspitzen herstellen. Ebenfalls mit diesem
+Talent oder wahlweise mit Holzbearbeitung
+kann man die Steingeräte weiterverarbeiten,
+also etwa Messerklingen mit einem Holzgriff
+versehen oder Beile und Speere anfertigen.
+Ein Meister des Fachs kann Klingen und
+Werkzeuge herstellen, die in ihrer Schärfe
+kaum hinter geschmiedetem Stahl nachstehen
+allerdings natürlich zerbrechlicher
+sind.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Steinmetz
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>69</id><name>Fleischer</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Ein Schlachter, Fleischer oder Metzger weiß,
+wie man Nutztiere korrekt tötet, möglichst
+viele verwertbare Materialien erhält und
+daraus haltbare Schinken, Wurstwaren und
+Bratenstücke herstellt. Er kann beurteilen,
+wie lange Fleisch noch haltbar ist und welchen
+Preis es auf dem Markt erzielt.
+Zudem kennt er sich ähnlich wie der Anatom
+mit verwundbaren Punkten aus und richtet
+deswegen im Kampf gegen Wesen, die seinem
+üblichen Schlachtvieh auch nur grob
+ähneln, 1 TP mehr an als ein unkundiger
+Kämpfer, wenn er über einen Fleischer-TaW
+von 10 oder mehr verfügt. (Die Zusatzpunkte
+von Anatomie und Fleischer werden nicht
+aufaddiert: Auch ein Anatomie-beschlagener
+Fleischer erhält keine 2 zusätzlichen TP im
+waffenlosen Kampf.)&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Fische, Geflügel, Reptilien
+Säugetiere&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: unter
+Umständen Anatomie, Fischen/Angeln,
+Kochen, Tierkunde, Viehzucht oder Gerber/
+Kürschner (Trophäen) (jeweils +10)</desc></dsa_talent_item><dsa_talent_item><id>70</id><name>Gerber/Kürschner</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KO</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KO) (Spezial)&lt;br&gt;
+Dieses Talent dient dazu, die Haut und/
+oder das Fell von Tieren haltbar und dabei
+ansehnlich zu machen und zu Lederwaren
+oder Pelzen weiterzuverarbeiten, was oft eine
+ziemlich unappetitliche Angelegenheit ist,
+die einen starken Magen und eine Art ‘intuitiver
+Alchimie’ erfordert. Gerber und Kürschner
+sind in der Lage, Pelz- und Lederwaren
+nach Wert und Qualität zu beurteilen. Eine
+bisweilen ausgeübte Spezialisierung ist die
+Präparation von Trophäen aus Tieren aller
+Art.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Gerber, Kürschner, Trophäen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Alchimie
+(+10), Fleischer (+10)</desc></dsa_talent_item><dsa_talent_item><id>71</id><name>Glaskunst</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>FF FF KO</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(FF/FF/KO) (Spezial)&lt;br&gt;
+Glasbläser stellen Gläser und Karaffen, aber
+auch Butzenscheiben und Glasspiegel her,
+alles Gegenstände, die einen hohen Preis erzielen
+weil sie mit großem Aufwand unter
+härtesten Arbeitsbedingungen angefertigt
+werden. Außerdem können Glasbläser natürlich
+Marktwert und Qualität von Glaswaren
+einschätzen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Fensterscheiben, Glasbläserei
+Linsenschleifen, Spiegel&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: eventuell
+Steinschneider/Juwelier (+10)</desc></dsa_talent_item><dsa_talent_item><id>72</id><name>Grobschmied</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>FF KO KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(FF/KO/KK) (Spezial)&lt;br&gt;
+Dieses Talent regelt die Verarbeitung von Eisen
+und Stahl mittels Schmiedeverfahren (im
+Gegensatz zum Metallguss). Übliche Unterteilungen
+des Schmiedehandwerks sind:
+Schwarzschmiede (die trotz des Namens
+auch bisweilen mit Messing und Bronze umzugehen
+wissen) beschäftigen sich vor allem
+mit der Herstellung von landwirtschaftlichem
+Gerät, dem Beschlagen von Reittieren
+oder der Produktion von Kleineisenteilen wie
+Nägeln, Bolzen, Ketten und Scharnieren. Sie
+sind die häufigsten Vertreter ihres Berufs
+und auch in kleineren Dörfern anzutreffen.
+Zudem sind sie in der Lage, Waffen zu reparieren
+Ein Waffenschmied ist zwar, wie auch
+der Schwarzschmied, in der Lage,
+Harken, Türbeschläge oder Truhenbänder
+herzustellen, seine Spezialität
+sind jedoch Metallwaffen aller Art, die
+er sowohl herstellen und reparieren als
+auch beurteilen kann.
+Der Plättner und Harnischmacher – zu
+dessen Tätigkeit auch das Erstellen mannigfaltiger
+Kettenrüstungen gehört – hat das
+Grobschmiedehandwerk bis zum äußersten
+verfeinert und stellt nur noch metallene Rüstungen
+aller Art her; er ist der einzige, der
+Harnische, Lamellare und Kettenhemden
+nicht nur reparieren, sondern auch herstellen
+kann.
+Spengler oder Blechwerker schließlich befassen
+sich mit der Weiterverarbeitung von Metallblechen
+(vor allem zu Rohren) und deren
+Einsatz, wozu auch Kenntnisse im Nieten
+und Löten gehören; sie sind ebenfalls in der
+Lage, Rüstungen zu reparieren.
+Mehr zur Verwendung dieses Talents bei der
+Herstellung und Reparatur von Waffen und
+Rüstungen finden Sie im Kapitel Feuer und
+Eisen auf Seite 186.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Drahtzieher/Sarwirker,
+Hufschmied, Plättner, Schwarzschmied,
+Spengler, Waffenschmied&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Metallguss
+(+15)</desc></dsa_talent_item><dsa_talent_item><id>73</id><name>Handel</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN CH</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/IN/CH) (Spezial)&lt;br&gt;
+Ein Händler – welche Waren auch immer
+er verkauft – muss eine solide Kenntnis der
+Marktpreise besitzen und wissen, wo er eine
+Ware besonders preiswert ein-, wo teuer verkaufen
+und wie er sie möglichst billig von
+einem Ort zum andern schaffen kann.
+Geldwechsler beschäftigen sich mit allen Arten
+alter oder fremdländischer Münzen, vor
+allem mit deren Umtausch und Verleih, aber
+auch ihrer Erkennung, Wertschätzung und
+zeitlichen Einordnung. Dies erleichtert ihnen
+– jedoch nur auf ihrem speziellen Gebiet
+– Proben auf Geschichtswissen und kann bei
+einem anderen Wechsler schon einmal helfen
+den geforderten Kurs zu verbessern.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Rechnen 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Region (Thorwal,
+Weiden, Mhanadistan ...) oder nach Warengruppe
+(Korn, Metalle, Sklaven, Geldwechsel
+...)&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Hauswirtschaft
+(+10), Geographie (+15), Schätzen
+(+15)</desc></dsa_talent_item><dsa_talent_item><id>74</id><name>Hauswirtschaft</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN CH FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/CH/FF) (Spezial)&lt;br&gt;
+Die Hauptaufgabe eines Hausdieners oder
+Gutsverwalters ist es, im Haushalt der Herrschaften
+für Ordnung zu sorgen, die Vorräte
+zu kontrollieren und aufzufüllen, die Handwerker
+zu bestellen, wenn das Dach leckt,
+Ungeziefer zu beseitigen (oder beseitigen zu
+lassen), das Personal richtig einzuteilen, aber
+häufig auch bei Tisch aufzuwarten, Gäste zu
+empfangen und Feste und Feiern zu organisieren
+Ein gut ausgebildeter Hausdiener hat
+meist einen Stab von Bediensteten unter sich,
+da er die vielen Aufgaben alleine gar nicht
+erledigen kann. Mit den entsprechenden Referenzen
+kann man es auch als Mensch von
+niedriger Geburt zum Majordomus eines
+Grafenhofs oder gar zum Vogt eines Edlenguts
+oder einer Baronie bringen. Neben Hausdienern
+beherrschen auch Gastwirte, Travia- und
+Rahja-Geweihte dieses Handwerk natürlich
+als wichtigen Teil ihres Berufs.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Bewirtung/Feiern, Personal
+Vorratshaltung&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Rechnen
+(Buchführung) (+10)</desc></dsa_talent_item><dsa_talent_item><id>75</id><name>Heilkunde Gift</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU KL IN</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(MU/KL/IN) (Spezial)&lt;br&gt;
+Eine gelungene erste Probe (Erkennungsprobe
+auf das Heilen von Vergiftungen bedeutet
+dass das Gift richtig identifiziert wurde.
+(Einige besonders tückische
+Gifte erfordern einen Zuschlag
+in Höhe ihrer halben Stufe.)
+Der Meister benennt die Art
+des Giftes und teilt mit, wie
+die Vergiftung zu behandeln
+ist – möglicherweise muss der
+Heiler zunächst bestimmte
+Kräuter oder andere Zutaten
+beschaffen.
+Sind diese Voraussetzungen erfüllt
+kann der Heiler eine zweite
+Probe (Behandlungsprobe) ablegen
+die mit einem Zuschlag
+in Höhe der vollen Stufe des
+Giftes zu belegen ist. Gelingt
+auch diese Probe, so ist die Wirkung
+des Gifts gestoppt und der
+Heiler kann dem Vergifteten
+Lebenspunkte zurückgeben,
+die er durch diese Vergiftung
+verloren hatte: 1 LeP pro übrigbehaltenem
+Talentpunkt.
+Eine dritte Probe regelt die
+Nachbehandlung; auch hier
+können dem Patienten LeP je
+nach übrigbehaltenen Talentpunkten
+zurückgegeben werden
+der Zuschlag beträgt jetzt die halbe Stufe
+des Giftes. Der Patient erhält die LeP während
+der nächsten Regenerationsphase zurück.
+Das Scheitern der Erkennungsprobe bedeutet
+dass der Heiler das Gift offensichtlich
+nicht (er)kennt und keine Heilmethode
+weiß; das Scheitern der Behandlungsprobe
+bedeutet, dass keine Heilung einsetzt (bei
+einem Patzer sogar, dass der Vergiftete 1W6
+zusätzliche SP erleidet); das Scheitern der
+Nachbehandlungsprobe bedeutet ebenfalls,
+dass der Patient zusätzlichen Schaden erleidet
+(1W6 SP).
+Zum Ablegen der Erkennungsprobe werden
+mindestens 5 Kampfrunden benötigt, zum
+Ablegen der Behandlungs- und der Nachbehandlungs
+Probe jeweils mindestens 1 SR,
+die Nachbehandlungs-Probe kann zudem
+erst zwölf Stunden nach der BehandlungsProbe
+(und nur einmal) abgelegt werden. Bei
+Misslingen der Proben kann der Heiler keinen
+zweiten Versuch unternehmen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Art (alchimistische/
+Zaubergifte, mineralische Gifte, pflanzliche
+Gifte, tierische Gifte) oder Wirkung (Atemgifte
+Einnahmegifte, Kontaktgifte, Waffengifte
+, Tierheilkunde&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Alchimie
+(Gifte) (+5), Heilkunde Krankheiten
+(+10), Kochen (Tränke) (+10)</desc></dsa_talent_item><dsa_talent_item><id>76</id><name>Heilkunde Krankheiten</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU KL CH</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(MU/KL/CH) (Spezial)&lt;br&gt;
+Alle Arten von Krankheiten – auch das gefährliche
+Wundfieber – können mit Hilfe
+dieses Talents behandelt werden.
+Der Heilkundige legt eine erste Talentprobe
+ab, die zur Diagnose und zum Bestimmen
+der benötigten Salben oder Arzneien dient:
+die Erkennungsprobe. Eventuell ist diese Probe
+um die halbe Stufe der Krankheit erschwert,
+wenn es sich um eine schleichende Krankheit
+ohne eindeutige Symptome handelt.
+Anschließend kann durch eine zweite Probe,
+die um die Stufe der Krankheit erschwert ist,
+die Heilung eingeleitet werden, wobei der
+Heiler dem Patienten so viele Lebenspunkte
+zurückgibt, wie er Talentpunkte übrig behalten
+hat (maximal natürlich so viele, wie durch
+die Krankheit verloren gegangen sind).
+Einen Tag später (und dann folgend jeden
+weiteren Tag) ist eine Nachbehandlungs-Probe
+möglich, die um die halbe Stufe der Krankheit
+erschwert ist; die TaP* kommen dem Patienten
+als LeP zugute (auch hier natürlich
+nur, um den Schaden zu reduzieren, der aus
+einer Krankheit herrührt). Beim Scheitern
+der ersten Probe kommt es nicht zu einer
+Heilung; beim Scheitern einer der anschließenden
+Proben wird die Heilung gestoppt
+und der Patient erleidet 1W6 zusätzliche
+Schadenspunkte.
+Zum Ablegen der Erkennungs-Probe wird
+mindestens 1 Spielrunde benötigt, zum Ablegen
+der Behandlungs-Probe und der Nachbehandlungs
+Proben mindestens 6 SR. Die
+Nachbehandlungs-Proben können erst einen
+Tag nach der Behandlungs-Probe abgelegt
+werden (und dann jeweils am nächsten Tag);
+bei Misslingen dieser Proben kann der Heiler
+keinen zweiten Versuch unternehmen.
+Details zu Krankheiten und deren Behandlung
+finden Sie auf den Seiten 151ff.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Region, Tierheilkunde&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Heilkunde
+Gift (+10)</desc></dsa_talent_item><dsa_talent_item><id>77</id><name>Heilkunde Seele</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN CH CH</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/CH/CH) (Spezial)&lt;br&gt;
+Ein Seelenheiler kann vor allem solche Schäden
+lindern, die bei Opfern von magischen
+Anschlägen entstanden sind. Durch erfolgreiche
+Talentproben können z.B. bezauberte
+Helden von einem Bann oder Fluch befreit
+werden, und auch Schlechte Eigenschaften
+kann man von einem Seelenheiler jederzeit
+behandeln lassen, so dass sie einen entweder
+zeitweilig nicht stören oder dauerhaft
+vermindert werden. Die Seelenheilkunde ist
+eine schwer zu beherrschende und für den
+Patienten gefährliche Kunst.
+Wenn die Wirkungen von Magie kuriert
+werden sollen, sind alle Proben
+mit einem Zuschlag in Höhe der dreifachen
+ZfP* des Zauberers zu belegen, der die Verzauberung
+bewirkt hat. Die genauen Auswirkungen
+sind so vielfältig, dass sie der besonderen
+Beurteilung des Meisters bedürfen.
+Scheitert die Probe beim Bannen einer geistigen
+Verzauberung, so er erhält der Patient
+üblicherweise zusätzlich für 1W6 Tage eine
+passende schlechte Eigenschaft (nach Wahl
+des Meisters) in Höhe von 1W6+5 Punkten
+Eine Probe dauert eine Zeiteinheit (ca.
+2 Stunden), die Heiler und Patient in völliger
+Abgeschiedenheit verbringen müssen.
+Beim Behandeln der aktuellen Auswirkungen
+schlechter Eigenschaften
+(wenn man einen Held mit Höhenangst dazu
+überreden muss, eine schwankende Hängebrücke
+zu überqueren) ist die HeilkundeProbe
+um den doppelten Wert der Schlechten
+Eigenschaft erschwert. Bei Erfolg sinkt die
+Schlechte Eigenschaft für eine Stunde um
+1W6 plus TaP* Punkte (und eine erneute
+Probe ist erlaubt); bei Misserfolg steigt die
+Schlechte Eigenschaft um 1W6 Punkte. Eine
+solche Probe dauert etwa eine Spielrunde.
+Optional: Beim dauerhaften Behandeln
+von schlechten Eigenschaften gilt folgender
+Zuschlag: 18 minus Eigenschaftswert;
+eine erfolgreiche Probe senkt den Eigenschaftswert
+für den Zeitraum von 1W6 Wochen um
+TaP* Punkte (mindestens 1 Punkt). Wenn es
+gelingt, den Wert der Schlechten Eigenschaft
+zeitweilig auf 0 zu senken, dann sinkt der Wert
+auch permanent um 1 Punkt. Gescheiterte
+Proben haben eine verheerende Wirkung auf
+den Patienten: Zum einen wird das Ziel der
+Heilung nicht erreicht, zum anderen sinkt
+eine der geistigen Eigenschaften des Patienten
+vorübergehend (für 1W6 Tage) um 1 Punkt,
+die behandelte Schlechte Eigenschaft dagegen
+steigt vorübergehend (für 1W6 Tage) um 1W6
+Punkte; steigt ihr Wert dabei über 12, so steigt
+sie permanent um 1 Punkt. Eine Probe dauert
+1 Spieltag, den Heiler und Patient in völliger
+Abgeschiedenheit verbringen müssen.
+Anmerkungen: Durch Seelenheilkunde können
+keine körperlichen Schäden, die dem
+Opfer aus einem Zauber entstanden sind,
+kuriert werden. Ein Seelenheilkundiger kann
+sein Talent nicht auf sich selbst anwenden.
+Seelenheilkunde ist ein gewinnträchtiges
+Geschäft: Ein professioneller Seelenheiler
+berechnet pro Probe zwischen 10 und 100
+Dukaten; der Preis hängt von der sozialen
+Stellung, nicht aber von der Qualität des Heilers
+ab – und ist im Voraus zu entrichten. Die
+Senkung einer Schlechten Eigenschaft durch
+eine Heilkunde Seele-Probe erfordert keinen
+Aufwand an AP (zur Senkung Schlechter Eigenschaften
+durch Erfahrung siehe Seite 169).
+Heilkunde Seele unterliegt denselben Modifikatoren
+wie gesellschaftliche Talente (siehe
+Seite 22); es gibt kein benötigtes Handwerkszeug
+&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Menschenkenntnis
+(+10), Überzeugen (+10)</desc></dsa_talent_item><dsa_talent_item><id>78</id><name>Heilkunde Wunden</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL CH FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/CH/FF) (Basis)&lt;br&gt;
+Brüche, Schnitte, Stiche und andere Verletzungen
+die im Kampf oder durch Unfälle
+entstehen, sind durch dieses Talent zu kurieren
+Eine Probe auf Heilkunde Wunden erfordert
+immer Hilfsmittel wie Verbandszeug,
+grundlegende Kräuter zum Blutstillen, evtl.
+ein Skalpell oder eine Pinzette und dergleichen
+Ohne solche Hilfsmittel ist die Probe
+erschwert oder sogar unmöglich; siehe dazu
+die Anmerkungen zu Handwerkszeug auf
+Seite 33. Es sind nur solche LeP-Verluste mit
+diesem Talent zu heilen, die durch Verletzungen
+verursacht wurden.
+Erste Hilfe: Ein lebensbedrohlich Verletzter
+(0 oder weniger LeP) kann dadurch gerettet
+werden, dass dem behandelnden Gefährten
+eine Heilkunde Wunden-Probe gelingt, die
+um doppelt so viele Punkte erschwert ist, wie
+die LeP des Patienten unter 0 liegen. Diese
+Probe dauert doppelt so viele KR wie die
+LeP des Patienten unter 0 liegen, abzüglich
+der übrigbehaltenen TaP aus der HeilkundeProbe
+mindestens jedoch 2 KR. Misslingt die
+Probe, so erleidet der Patient 1W6 weitere SP;
+die Probe kann jedoch wiederholt werden,
+wenn der Verletzte noch lebt. Bei Gelingen
+der Probe ist die akute Todesgefahr gebannt
+und der Patient hat nun genau 1 LeP
+.
+Heilung fördern: Zur allgemeinen Versorgung
+nicht direkt lebensbedrohlicher Verletzungen
+sind üblicherweise zwei Proben
+erforderlich: Der Heilkundige legt eine
+erste Probe ab, die der allgemeinen Versorgung
+der Verletzung dient, noch offene Blutungen
+stoppt und damit weiteren Schaden
+unterbindet und auch das Ausbrechen von
+Wundfieber verhindert. Diese Probe dauert
+vier Spielrunden. Beim Scheitern der ersten
+Probe kommt es nicht zu einer Heilung, der
+Patient erkrankt mit einer erhöhten Wahrscheinlichkeit
+an Wundfieber (KO-Wurf um
+3 erschwert).
+Die zweite, direkt darauf folgende, zweite
+Heilkunde Wunden-Probe dient der Förderung
+der Regeneration des Patienten und der Versorgung
+eventueller Wunden. Der Kranke erhält
+halb so viele LeP zurück, wie der Punktüberschuss
+aus der zweiten Probe beträgt.
+Diese LeP gelten zusätzlich zu den LeP, die
+der Verletzte aus der normalen Heilung (der
+nächtlichen Regeneration) gewinnt, und werden
+auch nur während dieser Regenerationsphase
+zurückgewonnen. Jeweils 7 TaP* heilen
+eine Wunde sofort (ohne weitere KO-Probe;
+der Patient hat nicht mehr mit den negativen
+Auswirkungen der Wunde zu kämpfen), je 2
+TaP* darüber hinaus geben dem Patienten in
+der folgenden Regenerationsphase einen Bonus
+von einem Punkt auf die KO-Probe (siehe
+Heilung von Wunden, Seite 161).
+Am nächsten Tag (und den folgenden) kann
+jeweils eine Nachbehandlungs-Probe pro
+Patient durchgeführt werden, die die allgemeine
+Regenerationsfähigkeit des Patienten
+verbessert: Pro 3 übrig behaltener Punkte aus
+dieser Probe erhält der Patient einen Punkt
+zu seiner folgenden nächtlichen Regeneration
+hinzu (bei 5 übrig behaltenen Punkten
+also 1 zusätzlichen LeP) und seine KOProbe
+zum Ausheilen von Wunden ist
+um einen Punkt erleichtert.
+Beim Scheitern der zweiten Heilprobe
+und der Nachbehandlungs-Proben
+wird die normale Heilung für 24 Stunden
+unterbrochen und der Verletzte erleidet
+1W6 zusätzliche Schadenspunkte. Die zweite
+Probe und die Nachbehandlungs-Proben
+dauern jeweils sechs Spielrunden.
+Alle Proben auf Heilkunde Wunden können
+je nach Umständen erschwert sein; eine typische
+Erschwernis rührt aus Wunden (siehe
+Seite 57) her, die der Patient erlitten hat.
+Wenn Sie nicht mit den Trefferzonensystem
+(Seite 107) spielen, gilt folgendes: Pro noch
+nicht verheilter Wunde ist die Erstversorgungs
+Probe um zwei Punkte erschwert, die
+zweite Probe um jeweils drei Punkte.
+Optional: Wenn Sie mit Trefferzonen spielen,
+gelten für die Proben etwas detaillierte Zuschläge
+Bei der Erstversorgungs-Probe, der
+zweiten Probe zur Förderung der LeP-Regeneration
+und den Nachbehandlungsproben
+gilt der höchste Zuschlag (die schlimmste
+Wunde) aus der folgenden Tabelle. Für die
+Versorgung der eigentlichen Wunden werden
+die Werte aus der Tabelle aufsummiert
+und dann eine einzige Probe gewürfelt. Jeder
+TaP* aus dieser Probe erleichtert die KO-Probe
+in der folgenden Regenerationsphase um
+einen Punkt; je 7 TaP* schließen eine Wunde
+sofort, wobei dies in folgender Reihenfolge
+geschieht: zuerst die höchste Mehrfach-Wunde
+in einer Zone, dann die Wunde mit dem
+geringsten Zuschlag aus der untenstehenden
+Tabelle. Um einen Helden mit zwei Wunden
+am linken Bein und einer Kopfwunde
+komplett zu versorgen, sind also eine Probe
++12 (+7 und +5) für die Wunden und eine
+Probe +7 (höchster Zuschlag für schwerste
+Wunde), um die LeP-Regeneration zu fördern
+Bei Gelingen der Proben heilt zuerst
+die zweite Beinwunde, dann die Kopfwunde,
+dann die verbleibende Beinwunde.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Brüche/Quetschungen,
+Innere Verletzungen, Schnitte, Tierheilkunde
+Verbrennungen, Zahnleiden&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Anatomie (+10)</desc></dsa_talent_item><dsa_talent_item><id>79</id><name>Holzbearbeitung</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Basis)&lt;br&gt;
+Dieses Talent hat viele Anwendungsmöglichkeiten
+im täglichen Heldenleben
+Eine morsche Bootsplanke ist
+auszutauschen, eine improvisierte Waffe
+oder ein Werkzeug soll hergestellt, auf die
+Schnelle ein Kinderspielzeug geschnitzt
+werden. Eine gelungene Probe auf dieses
+Talent kann die erfolgreiche Herstellung
+oder Reparatur eines hölzernen Gegenstandes
+bedeuten. Für die Fertigstellung
+komplizierter Holzgeräte oder besonders
+kunstfertiger Schnitzereien sollte
+die Probe mit einem Zuschlag belegt
+werden; beim Erstellen hölzerner Skulpturen
+zählen natürlich die TaP* für den
+künstlerischen Eindruck.
+Mit diesem Talent werden auch Beinschnitzereien
+(aus Knochen, Geweihen,
+Stoßzähnen) gehandhabt.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;:
+Beinschnitzerei,
+Holzkunde, Holzwaffen, Küfer/Wagner,
+Möbelschreinerei/Tischlerei, Schnitzen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Zimmermann (+5)</desc></dsa_talent_item><dsa_talent_item><id>80</id><name>Instrumentenbauer</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/IN/FF) (Spezial)&lt;br&gt;
+Dieser angesehene Beruf vereint in sich sowohl
+Holz- als auch Metallbearbeitung. Ein
+Instrumentenbauer hat sich meist auf eine
+bestimmte Gruppe von Instrumenten (Saiteninstrumente
+Flöten ...) spezialisiert. Er
+ist natürlich in der Lage, Qualität und Wert
+eines auf dem Markt feilgebotenen Instruments
+einzuschätzen.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Holzbearbeitung 4, Feinmechanik
+4, Musizieren 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Blasinstrumente, Saiteninstrumente
+Tasteninstrumente, Trommeln&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: je
+nach Situation Holzbearbeitung (+10), Feinmechanik
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>81</id><name>Kartographie</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL KL FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/KL/FF) (Spezial)&lt;br&gt;
+Ein Kartograph befasst sich mit dem Erstellen
+von Karten und Plänen, sowohl von
+Gebäuden als auch von Landschaften. Im
+Spiel bedeutet dieses Talent, dass dem Helden
+Orientierungs-Proben erleichtert werden,
+wenn er sich in einer Landschaft oder einem
+Höhlensystem befindet, das er bereits erkundet
+und kartiert hat. Er erhält vom Meister
+Hinweise zum korrekten Aufzeichnen von
+Höhlensystemen, Gebäuden etc. und kann
+auch leichter Reiseentfernungen abschätzen.
+Das Lesen von Landkarten ohne dieses Talent
+fällt schwer und kann leicht zu Fehlinterpretationen
+führen.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Malen/Zeichen 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Gebäude, Höhlen/Tunnel
+Küsten/Meere, Landschaften, Stadt&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+unter Umständen Orientierung (+10) oder
+Sternkunde (+10)</desc></dsa_talent_item><dsa_talent_item><id>82</id><name>Kochen</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL IN FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/IN/FF) (Basis)&lt;br&gt;
+Ein Held, der seine Gäste (daheim oder am
+Lagerfeuer) durch ein gelungenes Essen beeindrucken
+will, muss eine erfolgreiche Probe
+– evtl. mit Zuschlägen – ablegen. Eine knapp
+gelungene Probe bedeutet, dass es dem Helden
+gelungen ist, etwas Essbares zu kochen –
+um etwas Genießbares zu produzieren, sollte
+er mindestens 3 TaP übrig behalten; schmackhafte
+Kost beginnt bei 6 verbleibenden Punkten
+Gerade in den Küchen des Hochadels
+ist diese Kunst nicht nur angesehen, sondern
+auch oft weiter unterteilt – Spezialisten für
+süßes Backwerk oder Bratensoßen sind keine
+Seltenheit.
+Die Spezialisierung Backen/Braten versteht
+sich von selbst; Tränke regelt die Herstellung
+von heilkräftigen oder giftigen Kräutergebräuen
+Haltbarmachen befasst sich mit der
+Weiterverarbeitung und Konservierung von
+Lebensmitteln aller Art, sei es durch Pökeln,
+Räuchern, Dörren oder sicheres Verpacken;
+Marschversorgung dreht sich um besonders
+kräftige, zugleich haltbare und kompakte
+Nahrung; Festmahle behandelt kulinarische
+Organisationsfragen; Vorkoster schließlich
+erfordert eine Kenntnis von möglichst vielen
+Speisen im ‘Normalzustand’ (und eine hohe
+Sinnenschärfe, vorzugsweise auch noch einen
+Herausragenden Geschmackssinn).&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Backen/Braten, Festmahle
+Haltbarmachen, Marschversorgung,
+Tränke, Vorkoster&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+eventuell Alchimie (+10) (wenn Kochen
+(Tränke) gefordert), Fleischer
+(+10), Fischen/Angeln (+10), Wildnisleben
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>83</id><name>Kristallzucht</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/IN/FF) (Spezial)&lt;br&gt;
+Wenn man genügend Geduld und Kontemplation
+mitbringt, kann dies ein sehr
+ausfüllender Beruf sein – jedoch ist diese
+Geduld nur von den aventurischen
+Zwergen bekannt. Kristallzüchter versuchen
+Kristalle möglichst reiner Farbe,
+Kristallstruktur oder besonderer (meist
+magischer) Eigenschaften zu erhalten,
+indem sie einer Schmelze oder Lösung
+besondere Bedingungen bereiten und
+diese – und das ist die Schwierigkeit
+– konstant halten, gleichmäßig oder zu
+regelmäßigen Zeiten ändern.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Alchimie (+15)</desc></dsa_talent_item><dsa_talent_item><id>84</id><name>Lederarbeiten</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL FF FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/FF) (Basis)&lt;br&gt;
+Zu den täglichen Aufgaben einer Reisegruppe
+gehört sicherlich auch, sich
+hin und wieder Gedanken über den Zustand
+ihres Schuhwerks oder ihrer Garderobe machen
+Wenn ein Held mit TaW 0 erklärt, er
+werde – um Geld zu sparen – die abgerissene
+Sohle selbst unter seinen Stiefel nageln, sollte
+ihn der Spielleiter beim Marsch zum nächsten
+Einsatzort diese Entscheidung bereuen lassen
+Viele Berufe haben das Lederhandwerk
+deutlich spezialisiert: Die Berufsgruppen der
+Schuster und Sattler befassen sich mit Lederarbeiten
+aller Art, vor allem, wie der Name
+schon sagt, mit Schuhwerk und Sätteln, aber
+auch mit lederner Kleidung, Polstermöbeln
+und Lederharnischen. Zudem sind Schuster
+als einzige in der Lage, eine Lederrüstung
+nicht nur provisorisch zu flicken, sondern
+vollständig wiederherzustellen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Gurte/Riemen, Lederkleidung
+Lederrüstungen, Sättel, Schuhwerk&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Gerber
+Kürschner (+10), Schneidern (+10)</desc></dsa_talent_item><dsa_talent_item><id>85</id><name>Malen/Zeichnen</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL IN FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/IN/FF) (Basis)&lt;br&gt;
+Natürlich kann alles, was es am Spieltisch zu
+zeichnen gibt, von den Spielern real zu Papier
+gebracht werden, aber im Interesse des Spielflusses
+(und der Belastung des Sehzentrums
+des Spielleiterhirns) sollte man auch hier mit
+Talentproben arbeiten. Ein an einem Luxusleben
+interessierter Held kann darüber nachdenken
+ob er nicht diesen Talentwert steigert
+und seine Brötchen als Hofmaler verdient.
+Beim Zusammentreffen mit primitiven Stämmen
+hat übrigens schon der eine oder andere
+talentierte Abenteurer durch die schmeichelhafte
+Porträtierung des Häuptlings sein Leben
+beträchtlich verlängert und sich außerdem
+einen (ungerechtfertigten) Ruf als
+mächtiger Zauberer erworben.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Architektur, Landschaften
+Porträt, technische Skizze&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+teilweise Kartographie (+10), Steinmetz
+(Bildhauer) (+10) oder Tätowieren
+(+5)</desc></dsa_talent_item><dsa_talent_item><id>86</id><name>Maurer</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>GE FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(FF/GE/KK) (Spezial)&lt;br&gt;
+Ein Maurer ist in der Lage, Ziegel- oder
+Natursteine zu Mauern, Bögen und Gewölben
+zusammenzusetzen und auch
+die Qualität (oder Einsturzgefährdung)
+der Bauten zu beurteilen. Außerdem
+umfasst dieses Talent die korrekte Anmischung
+von Mörtel oder Gussgranit,
+den Umgang mit Lot und Winkel, die
+Einschätzung benötigter Baumaterialien
+und dergleichen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Steinbau, Steinguss
+Ziegelbau&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Baukunst (+10)</desc></dsa_talent_item><dsa_talent_item><id>87</id><name>Metallguss</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Kenner dieses Handwerks wissen um
+die richtigen Legierungen für Röhrenglocken
+Gongs und Wasserrohre, um die
+genauen Aufheiz- und Abkühlzeiten der
+Schmelze, die Anlage der korrekten einmaligen
+oder wiederverwertbaren Formen und
+Grundlagen der Bildhauerei für Reliefdarstellungen
+oder Statuetten. Natürlich sind
+sie in der Lage, gegossene Metallwaren zu
+beurteilen.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Hüttenkunde 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Klangkörper, Rohre, Reliefplatten
+Statuen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Hüttenkunde
+(+10), Grobschmied (+10)</desc></dsa_talent_item><dsa_talent_item><id>88</id><name>Musizieren</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN CH FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/CH/FF) (Spezial)&lt;br&gt;
+Zwar kann auch dieses Talent real von den
+Spielern ausgeführt werden, aber die Praxis
+hat gezeigt, dass der Verzicht auf solche
+Versuche enorm zum Frieden am Spieltisch
+beitragen kann. Eine gelungene MusizierenProbe
+kann an einem Fürstenhof ein paar
+Dukaten in den Heldenbeutel bringen, die
+Unterkunft in einer Herberge sichern, aber
+auch einen aufgebrachten Bären besänftigen.
+Ein Held kann sich auch auf ein Instrument
+spezialisieren oder danach trachten, mehrere
+zu beherrschen. Um einen einigermaßen
+hörbaren Vortrag zustande zu bekommen,
+ist zumindest eine einfach gelungene Probe
+vonnöten; um damit Geld zu verdienen,
+sollten wenigstens 4 TaP übrig bleiben.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Blechblasinstrumente,
+Flöten, Harfen, Kapellmeister/Dirigent, Lauten
+Rhythmusinstrumente, Streichinstrumente
+Tasteninstrumente&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: –</desc></dsa_talent_item><dsa_talent_item><id>89</id><name>Schlösser Knacken</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN FF FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/FF/FF) (Spezial)&lt;br&gt;
+Dies ist die Grundlage des Einbrecherhandwerks
+Um ein Schloss ohne den passenden
+Schlüssel (d.h., mit Dietrichen, Haarnadeln,
+Messern o.ä.) zu öffnen, kann der Meister
+Proben auf Schlösser Knacken verlangen, die
+je nach den Umständen mit deftigen Zuschlägen
+versehen sind. Ein Misslingen der
+Probe bedeutet in den meisten Fällen, dass
+der Dietrich oder das improvisierte Einbruchswerkzeug
+im Schloss abgebrochen
+ist und weitere Öffnungsversuche nur unter
+nochmals erschwerten Bedingungen durchgeführt
+werden können. Mit diesem Talent
+können auch bestimmte Arten mechanischer
+Fallen entschärft werden. Hierbei bedeutet
+ein Scheitern der Probe allerdings stets, dass
+der Held die Falle ausgelöst hat und ihre
+volle Schadenswirkung erleidet. Komplexe
+– zwergische – Kombinationsschlösser oder
+schwierige, gestaffelte Fallen-Mechanismen
+werden am Besten mittels längerfristigem Talenteinsatz
+(Ansammeln von TaP*; Seite 15)
+bei erschwerten Proben überwunden.
+Auch ein Held, der von Schlössern oder Feinmechanik
+nicht die geringste Ahnung hat,
+kann versuchen, ein Schloss oder eine Falle
+mit Dolch oder Haarnadel zu bearbeiten.
+Hierfür ist eine FF-Probe nötig, die um so
+viele Punkte erschwert ist, wie es die Talentprobe
+wäre, mindestens jedoch um 7 Punkte.
+Ein Draht oder eine Haarnadel können die
+Probe um 1 Punkt erleichtern, ein regelrechter
+Dietrich sogar um 2 Punkte. Es ist
+nur eine solche Probe pro Held erlaubt,
+und ein Scheitern der Probe bedeutet,
+dass das Schloss so beschädigt
+wurde, dass auch nachfolgende
+Versuche anderer Helden um 1
+Punkt erschwert sind. Scheitern
+beim Entschärfen einer Falle bedeutet
+immer, dass der Held die volle Schadenswirkung
+erleidet.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Fallen, Schlösser&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Feinmechanik (+5)</desc></dsa_talent_item><dsa_talent_item><id>90</id><name>Schnaps Brennen</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/IN/FF) (Spezial)&lt;br&gt;
+Die Anwendung dieser Fertigkeit erfordert
+natürlich eine hinreichend ausgestattete
+Brennerei oder zumindest eine
+transportable Destille – aber mit dieser
+ist der Schnapsbrenner in der Lage, aus
+fast jedem alkoholischen Getränk einen
+trinkbaren (nicht zwangsläufig genießbaren
+) Schnaps zu destillieren.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: alchimistische Destillation
+Beeren-/Obstbrände, Kornbrände
+Kräuterschnäpse, Lagerung&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+Alchimie (+5), Brauer (+10), Winzer
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>91</id><name>Schneidern</name><baseTalent>true</baseTalent><ebe>-</ebe><attributes>KL FF FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/FF) (Basis)&lt;br&gt;
+Das Schneidern-Talent umfasst für Helden
+in erster Linie Flickschneidereien wie das
+Annähen abgerissener Knöpfe und Bänder,
+das Aufnähen von Flicken oder das Stopfen
+von Löchern. Wer aber hier einen hohen Talentwert
+vorweisen kann, der ist auch in der
+Lage, Änderungen an ungeliebter Garderobe
+vorzunehmen oder gar von Grund auf neue
+Kleidung herzustellen.
+Ein professioneller Schneider stellt aus Tuchen
+verschiedenster Art Kleidungsstücke
+her, ja, man kann sagen, er veredelt die Stoffe.
+Schneider sind in der Lage, aus schlichtem
+Stoff wahre Wunderwerke entstehen zu lassen
+und natürlich können sie auch getragene
+und verschlissene Kleidung wieder in einen
+annehmbaren Zustand versetzen. Ein Held
+mit diesem Beruf kann selbstverständlich
+Wert und Qualität von Kleidungsstücken
+einschätzen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Entwurf/Festgewänder,
+Flick-/Gebrauchsschneiderei, Maßschneidern
+Tuchrüstungen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Lederarbeiten
+(+10), Webkunst (+10)</desc></dsa_talent_item><dsa_talent_item><id>92</id><name>Seefahrt</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>FF GE KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(FF/GE/KK) (Spezial)&lt;br&gt;
+Kleinere Wasserfahrzeuge können mit dem
+Talent Boote Fahren gesteuert werden; Seefahrer
+sind jedoch die einzigen, die ein mehrmastiges
+Schiff bedienen und instand halten
+können. Vor allem das Setzen der Takelage,
+das Tiefenloten, die Wartung der Ruderanlage
+die Überwachung der Ladung,
+aber auch das Abdichten kleinerer
+Leckagen, das korrekte Aufrollen von
+Tauen und Ketten – all dies gehört in
+den Aufgabenbereich des Seefahrers.
+Die Organisation der gesamten Mannschaft
+und die Navigation eines Schiffes erfordern
+die Spezialisierung Steuermann.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Ruderschiff, Segelschiff,
+Steuermann&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Boote
+Fahren (+10)</desc></dsa_talent_item><dsa_talent_item><id>93</id><name>Seiler</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>FF FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(FF/FF/KK) (Spezial)&lt;br&gt;
+Wie der Name schon sagt, stellen Seiler alle
+Arten von Tauen und Stricken her. Sie sind
+in der Lage, Festigkeit und Wert aller Arten
+von Seilen zu bestimmen und Tauwerk
+kunstgerecht zu reparieren. Die Herstellung
+von Seilen erfordert eine Anlage, die definitiv
+nicht transportabel ist, aber das Spleißen von
+Tauen an Bord und die Verwertung alter Seilstücke
+können auch vonstatten gehen, ohne
+auf die Reeperbahn zu müssen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Fesseln
+(Taue spleißen) (+10)</desc></dsa_talent_item><dsa_talent_item><id>94</id><name>Steinmetz</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>FF FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(FF/FF/KK) (Spezial)&lt;br&gt;
+Ein Steinmetz ist nicht nur in der Lage,
+Skulpturen aus Stein zu erschaffen, im
+Hoch- oder Flachrelief zu meißeln und
+verschiedene Gesteinsarten für seine Kunst
+zu bewerten, sondern kann auch kann mit
+einer Talentprobe die Sicherheit eines Gebäudes
+oder einer Steinbrücke (nicht aber
+eines Tunnels oder Stollens) feststellen und
+bestimmen, aus welchen Baumaterialien ein
+Bauwerk besteht oder wie viele Steine und
+Mörtel benötigt werden, um ein bestimmtes
+Gebäude zu errichten.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Gesteinskunde 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Baugestein, Reliefs, Statuen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;:
+eventuell Baukunst (+10), Bergbau (+10),
+Malen/Zeichnen (+10), Maurer (+10)</desc></dsa_talent_item><dsa_talent_item><id>95</id><name>Steinschneider/Juwelier</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN FF FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/FF/FF) (Spezial)&lt;br&gt;
+Diese Berufe beschäftigen sich mit dem Zuschneiden
+Schleifen, Polieren und Einpassen
+von Edelsteinen und Kristallen aller Art, in
+erster Linie zu Schmuck-, aber auch zu magischen
+Zwecken. Steinschneider und Juweliere
+sind in der Lage, den Wert von Schmuck
+und Schmucksteinen zu schätzen.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Steinschneider auf einen
+höheren Wert als 10 zu bringen, muss der
+Held eine Gesteinskunde von 4 oder höher
+aufweisen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: –&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Feinmechanik
+(+10), Kristallzüchter (+10)</desc></dsa_talent_item><dsa_talent_item><id>96</id><name>Stellmacher</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Stellmacher befassen sich mit dem Bau und
+der Instandhaltung von Kutschen und Schlitten
+und müssen von Holz-, Leder- und Metallbearbeitung
+Kenntnis haben, vor allem
+aber in der Lage sein, all diese Teile zu einem
+funktionsfähigen Ganzen zu verbinden.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: die Talente Holzbearbeitung,
+Lederarbeiten, Grobschmied jeweils auf TaW 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Karren/Wagen, Schlitten,
+Streitwagen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Zimmermann
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>97</id><name>Stoffe Färben</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Kenner der Färberkunst besitzen eine grundlegende
+Kenntnis verschiedener Naturfarben
+und der entsprechenden Kräuter, Tierteile
+oder Mineralien, die zu deren Erstellung notwendig
+sind. Sie sind in der Lage, Stoffe und
+Leder so zu färben, dass die Farbe nicht nach
+zwei Wochen Tragen ausbleicht, mit der ersten
+Wäsche im Fluss verschwindet oder den
+Stoff auffrisst. Sie sind demzufolge auch in
+der Lage, die Färbung eines Stoffes nach Wert
+und Herkunft zu beurteilen. Eine besonders
+ausgefeilte Verfeinerung stellt der Stoffdruck
+dar, der seit 200 Jahren ausschließlich auf
+Maraskan verbreitet ist.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: alchimistische Farben,
+mineralische Farben, pflanzliche Farben, tierische
+Farben oder nach Art des Stoffes oder
+Stoffdruck&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: Alchimie
+(+10), eventuell Drucker (+10) für
+Stoffdruck</desc></dsa_talent_item><dsa_talent_item><id>98</id><name>Tätowieren</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN FF FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/FF/FF) (Spezial)&lt;br&gt;
+Die Verzierung der Haut mit Bildern ist
+vor allem bei den Thorwalern sehr beliebt,
+die diese Kunst auch in den Hafenstädten
+Aventuriens verbreitet haben. Ein Tätowierer
+muss wissen, wo er ein bestimmtes Motiv
+am besten anbringt, wie viel Farbe er bei
+welchem Hauttyp verwendet – und er muss
+die Stechernadel zu führen wissen. Tätowierer
+sind als einzige in der Lage, dauerhafte
+Hautbilder anzufertigen. (Die Luloa-Hautmalereien
+der Mohas werden mit speziellen
+Pinseln aufgetragen, was das Talent Malen/
+Zeichnen erfordert.)
+Tätowieren (IN/FF/FF) (Spezial)
+Die Verzierung der Haut mit Bildern ist
+vor allem bei den Thorwalern sehr beliebt,
+die diese Kunst auch in den Hafenstädten
+Aventuriens verbreitet haben. Ein Tätowierer
+muss wissen, wo er ein bestimmtes Motiv
+am besten anbringt, wie viel Farbe er bei
+welchem Hauttyp verwendet – und er muss
+die Stechernadel zu führen wissen. Tätowierer
+sind als einzige in der Lage, dauerhafte
+Hautbilder anzufertigen. (Die Luloa-Hautmalereien
+der Mohas werden mit speziellen
+Pinseln aufgetragen, was das Talent Malen/
+Zeichnen erfordert.)&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Malen/Zeichnen 4&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Naturalistische Darstellung
+Ornamente, Zaubertätowierungen&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Malen/
+Zeichnen (+10)</desc></dsa_talent_item><dsa_talent_item><id>99</id><name>Töpfern</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF FF</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/FF) (Spezial)&lt;br&gt;
+Das Talent beschreibt nicht nur das Herstellen
+erstklassiger Töpferwaren, sondern auch
+das Anfertigen improvisierter Gefäße (z.B.
+aus ungebranntem Ton), wenn es einmal
+darauf ankommt, irgendeine Flüssigkeit fortzutragen
+und alle Wasserschläuche wieder
+einmal bis zum Bersten mit Heiltrank gefüllt
+sind. Ein hauptberuflicher Töpfer hat sich
+jahrelang mit Ton- und Steingutwaren beschäftigt
+und ist in der Lage, den Wert solcher
+Waren zu begutachten. Ebenfalls in den Bereich
+der Töpferei gehört die Herstellung von
+Bau- oder Schmuckziegeln, die Beurteilung
+der Stabilität von Ziegelkonstruktionen und
+die Bewertung von Tonerde oder bestimmten
+Lehmsorten.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Gefäße, Statuetten, Ziegelei&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeiten&lt;/b&gt;: eventuell
+Maurer (+10), Steinmetz (+10)</desc></dsa_talent_item><dsa_talent_item><id>100</id><name>Viehzucht</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/IN/KK) (Spezial)&lt;br&gt;
+Ein Viehzüchter kennt sich mit allerlei Arten
+von Nutztieren, deren Fütterung, benötigten
+Weideflächen und dergleichen aus, kann auf
+dem Viehmarkt angebotene Tiere beurteilen
+und ist auch in der Lage, bestimmte (NutzTierkrankheiten
+zu erkennen. Und natürlich
+ist er in der Lage, die richtigen Tiere
+auszuwählen, um besonders gute Zuchtergebnisse
+zu erzielen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Tierart: Rind, Schaf/
+Ziege, Schwein, Pferd, Hund etc.&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Tierkunde
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>101</id><name>Webkunst</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>FF FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(FF/FF/KK) (Spezial)&lt;br&gt;
+Professionelle Weber sind in der Lage, aus
+dem entsprechenden Garn Stoffe herzustellen
+Dazu benötigen sie allerdings einen
+Webstuhl – ein Gerät, das in den meisten
+Formen nicht unbedingt leicht zu transportieren
+ist. Außerdem können Weber Qualität
+und Preis von Tuchen einschätzen. Ebenfalls
+mit diesem Talent abgehandelt werden alle
+anderen Möglichkeiten, aus einzelnen Fäden
+Stoffe zu machen, auch wenn diese gänzliche
+andere Werkzeuge und Methoden erfordern.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: nach Material oder nach
+Technik (Häkeln, Klöppeln, Stricken, Teppichknüpfen
+Weben)&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Schneidern
+(+10)</desc></dsa_talent_item><dsa_talent_item><id>102</id><name>Winzer</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Ein Winzer weiß nicht nur um gute Anbaugebiete
+für verschiedene Rebsorten, um die
+Kelterei und die notwendigen Reifezeiten
+für Weine, sondern ist natürlich auch in der
+Lage, Weine zu beurteilen. Auch die Herstellung
+von Schaum- und Fruchtweinen fällt in
+diesen Bereich.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Wein, Fruchtweine,
+Schaumweine, Weinkenner&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: –</desc></dsa_talent_item><dsa_talent_item><id>103</id><name>Zimmermann</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL FF KK</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(KL/FF/KK) (Spezial)&lt;br&gt;
+Zimmerleute, Schiffszimmerleute und
+Dachdecker beherrschen die verschiedensten
+Arten der Holzbearbeitung, wobei sie sich jedoch
+(im Gegensatz zur normalen Holzbear
+beitung) eher mit größeren Holzarbeiten wie
+Treppen, Dachbalken oder Schiffsmasten,
+deren Statik und deren Verbindungen beschäftigen
+Außerdem sind sie in der Lage,
+den Wert und die Stabilität von Holzkonstruktionen
+zu beurteilen.&lt;br&gt;
+&lt;b&gt;Voraussetzung&lt;/b&gt;: Um Zimmermann auf einen
+Wert von mehr als 10 zu bringen, muss der
+Held einen Holzbearbeitungs-TaW von mindestens
+4 aufweisen.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Dachdecker, Holzkonstruktionen
+Schiffszimmermann, Schiffbau
+(erfordert die Talente Lesen/Schreiben,
+Malen/Zeichnen, Rechnen und Seefahrt
+jeweils auf TaW 4)&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;:
+Holzbearbeitung (+10)</desc></dsa_talent_item><dsa_talent_item><id>104</id><name>Fischen/Angeln</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>CH FF KL</attributes><talentType>Handwerk</talentType><raisingCost>B</raisingCost><desc>(IN/FF/KK) (Spezial)&lt;br&gt;
+Um beurteilen zu können, ob es sich in einem
+bestimmten Gewässer überhaupt lohnt, eine
+Angel (ein Netz, eine Reuse) auszuwerfen,
+ist eine Probe auf (IN/IN/KL) nötig. Eine
+gelungene Probe bedeutet nicht nur, dass der
+Angler irgendetwas gefangen hat, sondern
+dass der Köder so geschickt gewählt wurde,
+dass ein ausreichend großer Speisefisch angebissen
+hat. Pro übrig behaltenem Talentpunkt
+kann man davon ausgehen, dass der
+Angler eine halbe Ration essbaren Fisch (insgesamt
+jedoch mindestens eine Ration bei
+gelungener Probe) gefangen hat. Eine Probe
+ist stündlich möglich.&lt;br&gt;
+&lt;b&gt;Effektive Behinderung&lt;/b&gt;: BE bei bestimmten
+Formen des Angelns, sonst wird Behinderung
+allenfalls dann interessant, wenn der Fischende
+ins Wasser fällt und schwimmen muss.&lt;br&gt;
+&lt;b&gt;Spezialisierungen&lt;/b&gt;: Flüsse/Bäche, Hochseeangeln
+Seen/Sumpf/Brackwasser, Strand/
+Riff, Seefischerei&lt;br&gt;
+&lt;b&gt;Ersatzweise verwendbare Fertigkeit&lt;/b&gt;: Wildnisleben
+(+10)</desc></dsa_talent_item></folder><folder><name>Gaben</name><dsa_talent_item><id>105</id><name>Empathie</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU IN IN</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                        Diese Gabe erlaubt die Durchleuchtung der Gefühlswelt eines Ge-
+                        schöpfs. Die Probe ist erschwert durch die Fremdartigkeit einer
+                        Rasse (+1 wenn ein nostrische Empath einen Utulu durchleuchtet,
+                        +7 bei der Einschätzung eines Drachen durch einen Menschen), vor
+                        allem aber durch den halben MU-Wert des 'Opfers', wenn es den
+                        Empath bei seiner Tätigkeit erspürt (IN-Probe + 10).
+                        Die Reichweite dieser Gabe beträgt TaW/2 Schritt. Übrigbehaltene
+                        Punkte lassen sich dazu verwenden, Gesellschaftliche Talentproben
+                        und Proben auf Sprachverständnis zu erleichtern.
+                        Eine Empathie-Probe dauert 1 Aktion und bringt einen Punkt Er-
+                        schöpfung (3 Aktionen und W6 Erschöpfung falls die Punkte zur
+                        Erleichterung einer Gesellschaftlichen Probe verdoppelt werden
+                        sollen). Gescheiterte Proben können sofort mit 3 Punkten Aufschlag
+                        wiederholt werden, nach einer SR ohne Aufschlag.
+                        Eine erfolgreiche Probe wirkt für TaP* SR mindestens jedoch 1 SR.
+                        Der Startwert der Gabe beträgt 3.
+            </desc></dsa_talent_item><dsa_talent_item><id>106</id><name>Gefahreninstinkt</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>KL IN IN</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                        Diese Gabe lässt einen Helden Gefahren frühzeitig erkennen. Sie
+                        hilft, einen Hinterhalt zu Erkennen und Überraschungssituationen
+                        zu Kampfbeginn leichter zu überwinden (WdS 78). Die Probe sollte
+                        verdeckt gewürfelt werden. Wenn sie gelingt, weiss der Held, dass
+                        er akut in Gefahr schwebt. Je mehr TaP* übrigbleiben, desto eher
+                        kann er die Gefahr eingrenzen.
+                        Der Startwert der Gabe beträgt 3.
+            </desc></dsa_talent_item><dsa_talent_item><id>107</id><name>Geräuschhexerei</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN CH KO</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                    Diese Gabe kann nur von Schelmen oder Helden mit dem Vorteil 
+            </desc></dsa_talent_item><dsa_talent_item><id>108</id><name>Kräfteschub</name><baseTalent>false</baseTalent><ebe>0</ebe><attributes>MU IN KO</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                        Diese Gabe ermöglicht es dem Helden, durch besondere Konzentration
+                        für eine Probe auf eine körperliche Eigenschaft (KO, KK, FF, GE)
+                        eine Erleichterung um TaP*/2 zu erhalten. Die Probe muss innerhalb
+                        einer SR nach der Kräfteschubprobe erfolgen. Die Verwendung dieser
+                        Gabe für mehrere Proben ist nur zulässig, wenn diese direkt auf-
+                        einander folgen (z.B. bei einem Armdrücken-Wettbewerb). Diese
+                        Gabe beschränkt sich auf eine Eigenschaft (Gewandheitsschub, Körper-
+                        kraftschub etc.), kann aber mehrfach gewählt werden.
+                        Der Einsatz dieser Gabe bringt dem Helden 1W3 Punkte Erschöpfung und
+                        benötigt 4 Aktionen Konzentration. Ein Kraftschub kann auch spontan
+                        mit einer Aktion Zeitaufwand ausgelöst werden, was jedoch 1W3+2
+                        Punkte Erschöpfung bringt.
+                        Startwert ist 3.
+            </desc></dsa_talent_item><dsa_talent_item><id>109</id><name>Talentschub</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>CH CH CH</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                        Diese Gabe ermöglicht es dem Helden, durch besondere Konzentration
+                        für eine Talentprobe
+                        eine Erleichterung um TaP* zu erhalten. Die Probe muss innerhalb
+                        einer SR nach der Talentschubprobe erfolgen. Misslingt die Probe,
+                        so ist die Folgeprobe um 3 Punkte erschwert. Die Verwendung dieser
+                        Gabe für mehrere Proben ist nur zulässig, wenn diese direkt auf-
+                        einander folgen (z.B. bei einem Armdrücken-Wettbewerb). Diese
+                        Gabe beschränkt sich auf ein Talent (z.B. Schwimmen), kann aber
+                        mehrfach gewählt werden.
+                        Der Einsatz dieser Gabe bringt dem Helden 1W3 Punkte Erschöpfung und
+                        benötigt 4 Aktionen Konzentration.
+                        Startwert ist 3.
+            </desc></dsa_talent_item><dsa_talent_item><id>110</id><name>Magiegespür</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU IN IN</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                        Der Held kann Quellen astraler Kraft spüren, die sich unmittelbar
+                        in seiner Nähe befinden. Dies sollte vom Meister verdeckt gewürfelt
+                        werden, eine willentliche Probe ist erst ab TaW 7 möglich.
+                        Erleichterungen bis 7 Punkte (rohe astrale Kraft von der Dimension
+                        eines Sphärendurchbruchs oder ein sich enthüllender mächtiger Dämon)
+                        und Erschwernisse bis 10 Punkte (gebundene Magie in mässig kraft-
+                        vollen Artefakten, Berührung eines Zauberkundigen) sind möglich.
+                        Der Held weiss häufig nur, dass es in der Nähe eine Kraftquelle gibt,
+                        nicht aber wo oder welcher Art. Alle ODEM ARCANUM und OCULUS-Proben
+                    sind um 1/5 der TaW in 
+            </desc></dsa_talent_item><dsa_talent_item><id>111</id><name>Prophezeihen</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN IN CH</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                        Der Held hat ein Gespür für grossräumige, zukünftige Entwicklungen.
+                        Wann immer er die von im gewählte Methode des Propheziehens an-
+                        wendet (Sterndeutung, Kartenlegen, Visionen im Drogenrausch,
+                        Werfen von Runenstäben, Deuten des Vogelflugs, der Eingeweide von
+                        Opfertieren oder auch nur des Teesatzes), kann der Meister eine
+                    Probe auf 
+            </desc></dsa_talent_item><dsa_talent_item><id>112</id><name>Tierempathie</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>MU IN CH</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                        Diese Gabe reicht von einfachem Stimmungssinn und dem guten Ein-
+                        fühlungsvermögen für Tiere bis hin zur vollständigen Verständigung
+                        mit Tieren, was über den TaW und die TaP* geregelt wird. Eine
+                        Probe ist erschwert durch die Fremdartigkeit der Kreatur (1 bis
+                        7 Punkte) und durch die Willenskraft und Klugheit des Tieres
+                        (-2 bis +5 Punkte). Der Tier-Empath darf nicht weiter als 1 Schritt
+                    vom Tier entfernt sein. TaP* aus 
+            </desc></dsa_talent_item><dsa_talent_item><id>113</id><name>Zwergennase</name><baseTalent>false</baseTalent><ebe>-</ebe><attributes>IN IN FF</attributes><talentType>Gabe</talentType><raisingCost>F</raisingCost><desc>
+                        Der Held hat einen übernatürlichen Instikt zum Aufspüren von Geheimtüren, -gängen
+                    und Hohlräumen entwickelt - auch wenn diese keine 
+            </desc></dsa_talent_item></folder></folder>

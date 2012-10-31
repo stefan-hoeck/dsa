@@ -1,0 +1,18 @@
+<data>
+    <dsa_rangedweapon_item>
+        <name>Fernkampfwaffe</name>
+        <id>-1</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc>0</desc>
+        <tp>1W60</tp>
+        <talent>Talent</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <ammunition>true</ammunition>
+        <reach>0/0/0/0/0</reach>
+        <tpplus>0/0/0/0/0</tpplus>
+        <wound>false</wound>
+        <timetoload>0</timetoload>
+    </dsa_rangedweapon_item>
+</data>

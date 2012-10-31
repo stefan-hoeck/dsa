@@ -1,0 +1,2786 @@
+<folder><name>Nahkampfwaffen</name>
+    <dsa_meleeweapon_item>
+        <name>Bastardschwert</name>
+        <id>0</id>
+        <price>20000</price>
+        <weight>75000</weight>
+        <desc>Talent &lt;i&gt;Schwerter&lt;/i&gt; oder &lt;i&gt;Anderthalbhänder&lt;/i&gt;
+                Schwert von fünf bis sechs Spann Klingenlänge
+                und mit einem langen Griff und gutem Gegengewicht
+                im Knauf; kann ab KK 15 einhändig (mit Talent &lt;i&gt;Schwerter&lt;/i&gt;)
+                geführt werden.
+            dann: TP/KK 12/4, INI -1
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Anderthalbhänder</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>110</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Nachtwind</name>
+        <id>1</id>
+        <price>50000</price>
+        <weight>43750</weight>
+        <desc>Talent &lt;i&gt;Anderthalbhänder&lt;/i&gt; oder &lt;i&gt;Schwerter&lt;/i&gt;
+                maraskanisches Schwert mit einschneidiger, gerader Klinge und
+                langem Griff, die Scheide ist verstärkt, so dass mit ihr pariert
+                werden kann. Durch einen Steckmechanismus an der Scheide
+                können mehrere Schwerter zu einer Räuberleiter verbunden
+                werden; Klinge meist geschwärzt; ab GE 16 auch einhändig mit
+            dem Talent &lt;i&gt;Schwerter&lt;/i&gt; zu führen, TP/KK unverändert.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Anderthalbhänder</talent>
+        <tpkk>11/5</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>2</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Rondrakamm</name>
+        <id>2</id>
+        <price>0</price>
+        <weight>81250</weight>
+        <desc>Talent &lt;i&gt;Anderthalbhänder&lt;/i&gt; oder &lt;i&gt;Zweihandscherter/-säbel&lt;/i&gt;
+                ein langer, sehr gut ausgewogener Anderthalbhänder mit
+                geflammter Klinge, der als Standeszeichen der Rondra-Geweihtenschaft
+            gilt.
+        </desc>
+        <tp>2W6+2</tp>
+        <talent>Anderthalbhänder</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>NS</dk>
+        <length>130</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Tuzakmesser</name>
+        <id>3</id>
+        <price>40000</price>
+        <weight>62500</weight>
+        <desc>Talent &lt;i&gt;Anderthalbhänder&lt;/i&gt; oder &lt;i&gt;Zweihandschwerter/-hiebwaffen&lt;/i&gt;
+                maraskanisches Schwert mit leicht gebogener, anderthalb-
+                schneidiger Klinge. Um aus der recht leichten Klinge viel
+                Wirkung herauszuholen, wird das Tuzakmesser sehr schnell
+                geführt, weswegen die Bedingung für das Führen dieser Waffe
+                eine Mindest-GE von 15 ist. Liegt die GE unter diesem Wert,
+                richtet das Tuzakmesser pro GE-Punkt unter 15 einen TP weniger
+                an, verliert einen Punkt INI-Bonus und erleidet einen PA-
+            Nachteil von einem Punkt.
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Anderthalbhänder</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>1</ini>
+        <wm>0/0</wm>
+        <dk>NS</dk>
+        <length>130</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Basiliskenzunge</name>
+        <id>4</id>
+        <price>7000</price>
+        <weight>15625</weight>
+        <desc>Dolch mit geflammter Klinge und meist ohne Parierhilfe;
+                im tulamidischen Raum und Horasreich beliebt;
+            gilt vielen als Meuchlerwaffe
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>H</dk>
+        <length>30</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Borndorn</name>
+        <id>5</id>
+        <price>4000</price>
+        <weight>18750</weight>
+        <desc>speziell bei den Bornflössern verbreiteter Wurfdolch
+                mit Dreikantklinge; stabil und lang genug, um ihn
+                auch im Nahkampf zu führen, jedoch ohne Parierstange
+            oder -haken.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>H</dk>
+        <length>40</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Dolch</name>
+        <id>6</id>
+        <price>2000</price>
+        <weight>12500</weight>
+        <desc>die universelle Seitenwaffe fast aller Aventurier.
+                Meist eine gerade, beidseitig angeschliffene Klinge
+                von etwa einem Spann Länge; selten einmal ernstzunehmende
+            Parierhilfen.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>H</dk>
+        <length>30</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Drachenzahn</name>
+        <id>7</id>
+        <price>12000</price>
+        <weight>25000</weight>
+        <desc>Ein breiter und sehr stabilder zwergischer Dolch.
+            Üblicherweise keine Ausführung für Menschenhände bekannt.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>H</dk>
+        <length>40</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Eberfänger</name>
+        <id>8</id>
+        <price>6000</price>
+        <weight>25000</weight>
+        <desc>ein massiver, bereits dem Kurzschwert ähnlicher Dolch ohne
+                Parierstangen, der in Nordaventurien gerne als Seitenwaffe
+            zur Jagd getragen wird.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>H</dk>
+        <length>40</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Hakendolch</name>
+        <id>9</id>
+        <price>9000</price>
+        <weight>31250</weight>
+        <desc>Besteht aus einer langen Klinge aus Rundstahl, die jedoch
+                nur an der Spitze angeschärft ist; des weiteren besitzt
+                er lange, aufwärts gebogene Parierstangen derselben
+            Machart; sehr stabile Parierwaffe.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>0/1</wm>
+        <dk>HN</dk>
+        <length>60</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Jagdmesser</name>
+        <id>10</id>
+        <price>5000</price>
+        <weight>9375</weight>
+        <desc>Leicht gebogenes, sehr scharfes Messer, das hauptsächlich
+                zum Abhäuten von Tieren verwendet wird; bisweilen mit
+                Sägerücken und Aufbrechhaken. Elfische Jagdmesser sind
+                meist edel verziert, dabei trotzdem stabiler (BF 1) und
+            meist nicht verkäuflich.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-1</ini>
+        <wm>0/-2</wm>
+        <dk>H</dk>
+        <length>30</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Langdolch</name>
+        <id>11</id>
+        <price>4500</price>
+        <weight>18750</weight>
+        <desc>Talent &lt;i&gt;Dolche&lt;/i&gt; oder &lt;i&gt;Fechtwaffen&lt;/i&gt;
+                recht schmaler, sehr langer Dolch, der bisweilen linkshändig
+            geführt wird; teilweise als eigenständige Waffe verwendet.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>H</dk>
+        <length>40</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Linkhand</name>
+        <id>12</id>
+        <price>9000</price>
+        <weight>18750</weight>
+        <desc>ein zwar angeschliffener, jedoch meist zu Paradezwecken und
+                demzufolge für die linke Hand genutzter Dolch mit langen
+                Parierstangen und ausladendem Handschutz; bisweilen Versionen
+                mit Klingenfänger und -brecher; im Horasreich &lt;i&gt;die&lt;/i&gt;
+            Zweitwaffe zu Fechtwaffen und leichten Schwertern.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>0/1</wm>
+        <dk>H</dk>
+        <length>30</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Mengbilar</name>
+        <id>13</id>
+        <price>20000</price>
+        <weight>12500</weight>
+        <desc>zerbrechlicher Dolch mit Giftkanal in der Klinge. Zum Schaden
+                durch die Klinge ist ein eventueller Giftschaden zu addieren;
+                beliebte Meuchlerwaffe und nicht für den Nahkampf geeignet
+            (daher improvisierte Waffe).
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>true</improvised>
+        <bf>7</bf>
+        <ini>-2</ini>
+        <wm>0/-3</wm>
+        <dk>H</dk>
+        <length>25</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Messer</name>
+        <id>14</id>
+        <price>1000</price>
+        <weight>6250</weight>
+        <desc>Hierunter fallen alle nicht für den Kampf ausgewuchteten, fast
+                stets nur einseitig angeschliffenen Nutz-, Ess- und Arbeitsmesser
+                von einem halben bis zu einem Spann Klingenlänge; improvisierte
+            Waffe.
+        </desc>
+        <tp>1W6</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/6</tpkk>
+        <improvised>true</improvised>
+        <bf>4</bf>
+        <ini>-2</ini>
+        <wm>-2/-3</wm>
+        <dk>H</dk>
+        <length>25</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Ogerfänger</name>
+        <id>15</id>
+        <price>15000</price>
+        <weight>21875</weight>
+        <desc>breitklingiger Dolch; bei einem Treffer, der eine Wunde ver-
+                ursacht, klappen Widerhaken aus der Klinge und verhindern,
+                dass die Waffe entfernt werden kann. Verbleibt sie in der Wunde,
+                richtet sie pro KR, in der das Opfer sich heftig bewegt (sprich
+                kämpft oder flüchtet), 1W6 SP(A) und einen Punkt Erschöpfung
+                pro Spielrunde. Bewegt sich das Opfer langsam oder gar nicht,
+                beträgt der zusätzliche Schaden immer noch 1W3 SP(A) und einen
+                Punkt Erschöpfung pro Spielrunde.
+                Der Dolch kann noch im Kampf gewaltsam entfernt werden (eine
+                Aktion, KK-Probe; einen in einem anderen Kämpfer steckender
+                Ogerfänger zu ergreifen erfordert zudem eine gelungene &lt;i&gt;Raufen&lt;/i&gt;-
+                AT +6 und verursacht dabei 1W6+3 SP. Nach einem Kampf kann die
+                Klinge auch in Ruhe entfernt werden, was 1 SR dauert und nach
+                gelungener &lt;i&gt;Heilkunde Wunden&lt;/i&gt;-Probe 1W6-1 SP verursacht,
+            bei misslungener Probe 1W6+2 SP.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>0</ini>
+        <wm>0/-2</wm>
+        <dk>H</dk>
+        <length>35</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Scheibendolch</name>
+        <id>16</id>
+        <price>6000</price>
+        <weight>25000</weight>
+        <desc>Weniger eine Waffe als ein Gerät der letzten Gnade ist dieser
+                lange Drei- oder Vierkantstahl, der eine kleine Parierscheibe
+                und eine Scheibe als Knauf aufweist. Auf letztere kann man
+                sich mit seinem gesamten Gewicht stützen, um auch schwerst-
+            gepanzerten den Gnadenstoss zu geben.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>0/-3</wm>
+        <dk>H</dk>
+        <length>45</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Schwerer Dolch</name>
+        <id>17</id>
+        <price>4000</price>
+        <weight>18750</weight>
+        <desc>Dolch mit längerer und breiterer Klinge als der gewöhnliche
+            Dolch; häufig Seiten- oder verzierte Offizierswaffe.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>H</dk>
+        <length>35</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Vulkanglasdolch</name>
+        <id>18</id>
+        <price>0</price>
+        <weight>18750</weight>
+        <desc>Ritualinstrument der Druiden; improvisierte Waffe aus Obsidian</desc>
+        <tp>1W6-1</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>true</improvised>
+        <bf>6</bf>
+        <ini>-2</ini>
+        <wm>-2/-3</wm>
+        <dk>H</dk>
+        <length>30</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Waqqif</name>
+        <id>19</id>
+        <price>6000</price>
+        <weight>21875</weight>
+        <desc>Talent &lt;i&gt;Dolche&lt;/i&gt; oder &lt;i&gt;Säbel&lt;/i&gt;
+                ein breiter Krummdolch, der im tulamidischen Raum (besonders
+                bei den Novadis) auch Schmuck und Ehrenzeichen ist. Gilt
+            für Parade-Einschränkungen als Dolch.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>-2</ini>
+        <wm>-1/-3</wm>
+        <dk>H</dk>
+        <length>45</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Wurfdolch</name>
+        <id>20</id>
+        <price>3000</price>
+        <weight>12500</weight>
+        <desc>speziell für den Wurf ausgewuchtete Klinge (etwas länger und
+                schwerer als das Wurfmesser); meist ohne feste Griffschalen
+                und daher im Nahkampf eine improvisierte Waffe. Mit dem
+                Wurfdolch können die Schläge von Kettenwaffen, Zweihand-
+                Hiebwaffen, Zweihand-Schwertern/-säbeln und der Hellebarde
+            nicht pariert werden.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>true</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>-1/-2</wm>
+        <dk>H</dk>
+        <length>25</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Wurfmesser</name>
+        <id>21</id>
+        <price>1500</price>
+        <weight>6250</weight>
+        <desc>speziell für den Wurf ausgewuchtete Klinge; meist ohne feste
+                Griffschalen und daher im Nahkampf eine improvisierte Waffe.
+                Mit dem Wurfmesser können die Schläge von Kettenwaffen,
+                Zweihand-Hiebwaffen, Zweihand-Schwertern und -säbeln nicht
+            pariert werden.
+        </desc>
+        <tp>1W6-1</tp>
+        <talent>Dolche</talent>
+        <tpkk>12/6</tpkk>
+        <improvised>true</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>-2/-3</wm>
+        <dk>H</dk>
+        <length>20</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Degen</name>
+        <id>22</id>
+        <price>15000</price>
+        <weight>25000</weight>
+        <desc>ein sehr schmales Schwert mit ausgearbeitetem Griffkorb;
+                meist nur einschneidig, dafür mit ausgeprägter Spitze;
+                gilt als Essenz der Fechtwaffen und ist in Almada und
+            dem Horasreich weit verbreitet.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Fechtwaffen</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>2</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Florett</name>
+        <id>23</id>
+        <price>18000</price>
+        <weight>18750</weight>
+        <desc>Fechtwaffe, die keine Schneide, sondern nur eine Spitze
+                besitzt; glockenförmiger Handschutz mit ausladenden
+            Parierbügeln; sehr flexibel.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Fechtwaffen</talent>
+        <tpkk>13/5</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>3</ini>
+        <wm>1/-1</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Magierdegen</name>
+        <id>24</id>
+        <price>15000</price>
+        <weight>18750</weight>
+        <desc>Repräsentationswaffe einiger Gildenmagier.
+            Leicht und zierlich.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Fechtwaffen</talent>
+        <tpkk>13/5</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>1</ini>
+        <wm>0/-2</wm>
+        <dk>N</dk>
+        <length>75</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Panzerstecher</name>
+        <id>25</id>
+        <price>12000</price>
+        <weight>50000</weight>
+        <desc>Neumodische Hybridwaffe aus Scheibendolch und Rapier, die
+                dazu gedacht ist, auch massive Rüstungen im Stich zu durch-
+                dringen. Muss beim &lt;i&gt;Gezielten Stich&lt;/i&gt; keine Zuschläge
+            aus RS des Gegners hinnehmen.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Fechtwaffen</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>-1/-1</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Rapier</name>
+        <id>26</id>
+        <price>12000</price>
+        <weight>28125</weight>
+        <desc>Talent &lt;i&gt;Fechtwaffen&lt;/i&gt; oder &lt;i&gt;Schwerter&lt;/i&gt;
+                eigentlich ein schmales Schwert mit verziertem Handschutz;
+            die Übergänge zwischen Degen, Rapier und Schwert sind fliessend.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Fechtwaffen</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>1</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Stockdegen</name>
+        <id>27</id>
+        <price>18000</price>
+        <weight>21875</weight>
+        <desc>Trickwaffe; im Spazierstock versteckte Klinge (daher ohne
+            Parierhilfen), häufig verziert und sehr teuer.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Fechtwaffen</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>0</ini>
+        <wm>-1/-3</wm>
+        <dk>N</dk>
+        <length>80</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Wolfsmesser</name>
+        <id>28</id>
+        <price>25000</price>
+        <weight>31250</weight>
+        <desc>Talent &lt;i&gt;Fechtwaffen&lt;/i&gt; oder &lt;i&gt;Säbel&lt;/i&gt; oder &lt;i&gt;Schwerter&lt;/i&gt;
+                waldelfisches Jagdrapier mit robuster (trotzdem eleganter),
+            dreikantiger Klinge; sehr selten.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Säbel</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>1</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Baccanaq</name>
+        <id>29</id>
+        <price>18000</price>
+        <weight>50000</weight>
+        <desc>Auch Pantherklaue genannte Waffe aus den Dschungeln Südaventuriens;
+                mehrere gebogene Krallen an einem Holzschaft. Der Baccanaq benutzt
+                die Bruchtest-Regeln von steinernen Waffen (WdH. S 186).
+                Eine etwas stabiliere Variante ist die Bakka der Gjalskerländer
+            (BF 4, normale Bruchtest-Regeln, ansonsten identisch)
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-1</ini>
+        <wm>0/-2</wm>
+        <dk>N</dk>
+        <length>80</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Beil</name>
+        <id>30</id>
+        <price>2000</price>
+        <weight>43750</weight>
+        <desc>kurzes Handbeil, die typische Waffe gegen Holzscheite;
+                gegen bewegliche Ziele (also im normalen Kampf) nur
+            als improvisierte Waffe zu führen.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>true</improvised>
+        <bf>5</bf>
+        <ini>-1</ini>
+        <wm>-1/-2</wm>
+        <dk>N</dk>
+        <length>50</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Brabakbengel</name>
+        <id>31</id>
+        <price>10000</price>
+        <weight>75000</weight>
+        <desc>eine besondere Form des Streitkolbens, bei dem
+                aus einer schweren Kugel mehrere Dornen herausragen;
+                meist mit einem Gesicht verziert, was der Waffe
+                den Namen gegeben hat. Der zentrale Dorn kann auch
+                (mit dem Talent &lt;i&gt;Dolche&lt;/i&gt;) zum Stechen verwendet
+                werden, jedoch mit einer um 3 erschwerten Attacke;
+                die darauf folgende eigene Parade ist ebenfalls um 3
+                Punkte erschwert, jedoch richtet der Dorn so 1d6+6 TP
+                an; die Regel zum &lt;i&gt;Niederwerfen&lt;/i&gt; gilt nicht für
+            den Stich.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Byakka</name>
+        <id>32</id>
+        <price>9000</price>
+        <weight>81250</weight>
+        <desc>eine orkische Axt, die wie eine vergrösserte Version
+                der thorwalschen Skraja aussieht und deren Dorn auch
+                Stiche erlaubt (Talent &lt;i&gt;Dolche&lt;/i&gt;, AT -3, nächste Parade
+                ebenfalls -3, TP 1d6+6). Die Regel zum &lt;i&gt;Niederwerfen&lt;/i&gt;
+            gilt nicht für den Stich.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>14/2</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-1</ini>
+        <wm>0/-2</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Fackel</name>
+        <id>33</id>
+        <price>50</price>
+        <weight>18750</weight>
+        <desc>Mit einer Fackel (als &lt;i&gt;improvisierte&lt;/i&gt; Waffe) kann
+                man einem Gegner - zumal einem tierischen - ordentlich
+                einheizen: Jedes mal, wenn man mit der Fackel Schadenspunkte
+                anrichtet, kommen noch 1W6-1 SP Feuerschaden hinzu.
+                Fällt beim Feuerschadenswurf eine 6, erlischt die Fackel
+            nach der Schadensermittlung.
+        </desc>
+        <tp>1W6</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/5</tpkk>
+        <improvised>true</improvised>
+        <bf>8</bf>
+        <ini>0</ini>
+        <wm>-2/-3</wm>
+        <dk>HN</dk>
+        <length>50</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Fleischerbeil</name>
+        <id>34</id>
+        <price>2000</price>
+        <weight>37500</weight>
+        <desc>Ein Werkzeug zur Zerkleinerung von Fleischprotionen und
+                zum Zerhauen von Knochen; findet bisweilen als &lt;i&gt;improvisierte&lt;/i&gt;
+            Waffe Verwendung.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>true</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>-2/-3</wm>
+        <dk>N</dk>
+        <length>30</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Haumesser</name>
+        <id>35</id>
+        <price>4000</price>
+        <weight>56250</weight>
+        <desc>Talent &lt;i&gt;Säbel&lt;/i&gt; oder &lt;i&gt;Hiebwaffen&lt;/i&gt;
+                Sehr &apos;kopflastiges&apos; Arbeitsmesser, das üblicherweise
+                zur beseitigung von Weghindernissen dient und daher im
+            Kampf nur als &lt;i&gt;improvisierte&lt;/i&gt; Waffe geführt wird.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>true</improvised>
+        <bf>3</bf>
+        <ini>-1</ini>
+        <wm>0/-2</wm>
+        <dk>HN</dk>
+        <length>50</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Keule</name>
+        <id>36</id>
+        <price>1500</price>
+        <weight>62500</weight>
+        <desc>Ein durch hinzugefügte Eisenbänder, hindurchgetriebene
+            lange Nägel etc. &apos;verbesserter&apos; Knüppel.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/-2</wm>
+        <dk>N</dk>
+        <length>80</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Knochenkeule</name>
+        <id>37</id>
+        <price>0</price>
+        <weight>68750</weight>
+        <desc>Ritualinstrument der Schamanen, das in verschiedenen
+                Grössen vorkommt und durch den Einsatz von Astralenergie
+                in seinem Wesen (TP, BF) verändert werden kann. Die hier
+                angegebenen Werte gelten für eine unverzauberte, mittelgrosse
+            Knochenkeule.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Knüppel</name>
+        <id>38</id>
+        <price>100</price>
+        <weight>37500</weight>
+        <desc>Die primitivste Form einer Waffe - ein einigermassen
+                ausgewuchteter, grob abgehobelter oder gerade geschnitzter
+                Ast, selten einmal (für Gardisten) ein gedrehtes Rundholz.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>false</improvised>
+        <bf>6</bf>
+        <ini>0</ini>
+        <wm>0/-2</wm>
+        <dk>N</dk>
+        <length>80</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kriegsfächer</name>
+        <id>39</id>
+        <price>25000</price>
+        <weight>31250</weight>
+        <desc>Aranische Stilblüte in Form eines gewöhnlichen Fächers,
+                oft verziert, teilweise auch ganz aus Metall (BF 1, 60 Unzen,
+                30 D), bisweilen sogar mit Dornen (+5 Unzen). Mit geschlossenem
+                Fächer Paradeeinschränkungen wie Dolche; bei offenem
+                Fächer nur Parade gegen Dolche und Fechtwaffen möglich.
+                Vollmetallfächer kann wie ein &lt;i&gt;kleiner&lt;/i&gt; Schild
+            gegen Fernwaffen-Angriffe bis 1W6+4 TP eingesetzt werden.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/1</wm>
+        <dk>H</dk>
+        <length>40</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Lindwurmschläger</name>
+        <id>40</id>
+        <price>12000</price>
+        <weight>59375</weight>
+        <desc>eine zwergische Handaxt mit extrem langbärtigem Blatt; für
+            ihre geringe Grösse sehr schwer.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>HN</dk>
+        <length>50</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Molokdeschnaja</name>
+        <id>41</id>
+        <price>9000</price>
+        <weight>62500</weight>
+        <desc>eine von den Norbarden gehandelte (und auch genutzte) Waffe,
+                die sich zum einen bei den Fjarningern grosser Beliebtheit
+                erfreut, zum anderen auch als Werkzeug zum Holz-Zurichten
+            gute Dienste leistet.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Rabenschnabel</name>
+        <id>42</id>
+        <price>13000</price>
+        <weight>56250</weight>
+        <desc>ein typischer leichter Reiterhammer mit einer stumpfen und
+            einer spitzen Seite.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>10/4</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>110</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Schmiedehammer</name>
+        <id>43</id>
+        <price>0</price>
+        <weight>93750</weight>
+        <desc>Ritualinstrument der Ingerimm-Geweihtenschafft; meist mit
+                Rogolan-Runen und geistlichen Wahlsprüchen verziert; her-
+                vorragende Handwerksarbeit, aber nur sekundär als Waffe
+                gedacht. Ein besonders wuchtiger Schlag mit dem Schmiedehammer
+                hat auf den Getroffenen die Auswirkung eines Angriffs zum
+                &lt;i&gt;Niederwerfen&lt;/i&gt; (WdH 63). Gemeint ist hier wie gesagt
+            der Ritualgegenstand, nicht das gleichnamige Werkzeug.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>14/2</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>-1</ini>
+        <wm>-1/-1</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Sichel</name>
+        <id>44</id>
+        <price>2500</price>
+        <weight>18750</weight>
+        <desc>gebogene Klinge zum Ernten von Korn oder auch Kräutern; im
+                Kampf nur als improvisierte Waffe zu verwenden. Gilt für
+            Parade-Einschränkungen als Dolch.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>true</improvised>
+        <bf>6</bf>
+        <ini>-2</ini>
+        <wm>-2/-2</wm>
+        <dk>H</dk>
+        <length>50</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Skraja</name>
+        <id>45</id>
+        <price>5000</price>
+        <weight>56250</weight>
+        <desc>thorwalsche Doppelblatt Handaxt, häufig noch mit zusätzlichem
+                langen Dorn an der Spitze. Ein Stich mit dem Dorn (AT auf
+            Talent &lt;i&gt;Dolche&lt;/i&gt;, erschwert um 3) richtet 1W6+3 TP an.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>70</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Sonnenszepter</name>
+        <id>46</id>
+        <price>0</price>
+        <weight>56250</weight>
+        <desc>Das zwölfflammige Sonnenszepter is das Zeichen der Würde
+                der Praios-Geweihtenschaft und in der hier präsentierten
+            Form sogar zum Kampf geeignet.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>-1/-1</wm>
+        <dk>N</dk>
+        <length>70</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Streitaxt</name>
+        <id>47</id>
+        <price>5000</price>
+        <weight>75000</weight>
+        <desc>das generische Kriegsbeil; in allen aventurischen Kulturen
+            in irgend einer Form bekannt.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>13/2</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Streitkolben</name>
+        <id>48</id>
+        <price>5000</price>
+        <weight>75000</weight>
+        <desc>Dies ist die klassische stumpfe Hiebwaffe, bei der von
+                einem zentralen, robusten Stiel bis zu acht eiserne Schlag-
+                blätter ausgehen, mit denen man nicht nur Knochen brechen
+            sondern auch Rüstungen zertrümmern kann.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>75</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Stuhlbein</name>
+        <id>49</id>
+        <price>0</price>
+        <weight>25000</weight>
+        <desc>die improvisierte Waffe der Wahl, wenn sich partout nichts
+                anderes findet; die letzten &apos;Argumentationshilfe&apos; bevor
+            bei einer Kneipenschlägerei Messer gezogen werden.
+        </desc>
+        <tp>1W6</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/5</tpkk>
+        <improvised>true</improvised>
+        <bf>8</bf>
+        <ini>-1</ini>
+        <wm>-1/-1</wm>
+        <dk>HN</dk>
+        <length>40</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Wurfbeil</name>
+        <id>50</id>
+        <price>3500</price>
+        <weight>31250</weight>
+        <desc>Die seltenen Wurfbeile mit Holzstiel könne auch als impro-
+                visierte Waffe im Nahkampf verwendet werden. Mit dem Wurfbeil
+                können Schläge von Kettenwaffen und Zweihand-Hiebwaffen nicht
+            pariert werden.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>10/4</tpkk>
+        <improvised>true</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>0/-2</wm>
+        <dk>N</dk>
+        <length>40</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Wurfkeule</name>
+        <id>51</id>
+        <price>1800</price>
+        <weight>21875</weight>
+        <desc>Wurfkeulen und Wurfhölzer sind nicht für den Nahkampf gedacht
+            und demzufolge nur als improvisierte Waffe zu führen.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>true</improvised>
+        <bf>3</bf>
+        <ini>-1</ini>
+        <wm>-1/-1</wm>
+        <dk>N</dk>
+        <length>40</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Zwergenskraja</name>
+        <id>52</id>
+        <price>10000</price>
+        <weight>50000</weight>
+        <desc>eine in den letzten Jahren beliebt gewordene, auf
+                zwergische Grösse angepasste Version der thorwalschen
+            Skraja.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>HN</dk>
+        <length>60</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Glefe</name>
+        <id>53</id>
+        <price>4500</price>
+        <weight>75000</weight>
+        <desc>häufige Infanteriewaffe mit breiter, einschneidiger Klinge
+                und meist ohne Spitze; wie der Hakenspiess in der Regel
+                einfach gehalten und bei Truppen im Gebrauch, die in
+            aufgelockerten Formationen kämpfen.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-1</ini>
+        <wm>0/-2</wm>
+        <dk>S</dk>
+        <length>200</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Hakenspiess</name>
+        <id>54</id>
+        <price>7000</price>
+        <weight>75000</weight>
+        <desc>Preiswerte und verbreitete Landwehrwaffe, mit der auch
+            Reiter vom Pferd geholt werden können; selten einmal verziert.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>13/4</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>0</ini>
+        <wm>-1/-1</wm>
+        <dk>S</dk>
+        <length>250</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Hellebarde</name>
+        <id>55</id>
+        <price>7500</price>
+        <weight>93750</weight>
+        <desc>Die klassische Infanteriewaffe,mit der auch im Einzelkampf erstaunliche
+                Manöver möglich sind, die aber einen echten Könner erfordern.
+                Die Schläge der Hellebarde können von etlichen Waffen
+            nicht pariert werden.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>S</dk>
+        <length>200</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Korspiess</name>
+        <id>56</id>
+        <price>20000</price>
+        <weight>87500</weight>
+        <desc>Talent &lt;i&gt;Infanteriewaffen&lt;/i&gt; oder &lt;i&gt;Speere&lt;/i&gt;
+                Ein Speer mit extrem breitem, neunfach gezacktem Blatt
+            in verschiedenen Varianten. Rituelle Waffe der Kor-Geweihtenschaft.
+        </desc>
+        <tp>2W6+2</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>S</dk>
+        <length>180</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Neethaner Langaxt</name>
+        <id>57</id>
+        <price>16000</price>
+        <weight>100000</weight>
+        <desc>Talent &lt;i&gt;Infanteriewaffen&lt;/i&gt; oder &lt;i&gt;Zweihand-Hiebwaffen&lt;/i&gt;
+                eine lange (bisweilen zu einer Spitze auslaufenden) Axtklinge
+                an einem noch längeren Stiel; bisweilen als Pailos-Ersatz
+            verkauft und geführt.
+        </desc>
+        <tp>2W6+2</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>13/4</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-2</ini>
+        <wm>-1/-3</wm>
+        <dk>S</dk>
+        <length>180</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Pailos</name>
+        <id>58</id>
+        <price>30000</price>
+        <weight>112500</weight>
+        <desc>Talent &lt;i&gt;Infanteriewaffen&lt;/i&gt; oder &lt;i&gt;Zweihand-Hiebwaffen&lt;/i&gt;
+                Ein schweres Axtblatt und eine Stossklinge an einem massiven
+                Schaft mit Handschutz zeichnen diese seltene Waffe aus. Die
+                Stossklinge kann auch (mit dem Talent &lt;i&gt;Speere&lt;/i&gt;) zum Stechen
+                verwendet werden, jedoch mit einer um 5 erschwerten Attacke;
+                die darauf folgende Parade ist ebenfalls um 5 Punkte erschwert,
+                jeder richtet der Dorn bei solcher Art Verwendung 1W6+7 TP an
+                und ist auch in der Lage, Gegner niederzuwerfen. Mit dem Pailos
+            sind nur die Manöver von Zweihand-Hiebwaffen erlaubt.
+        </desc>
+        <tp>2W6+4</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>14/2</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-2</ini>
+        <wm>-1/-3</wm>
+        <dk>S</dk>
+        <length>175</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Partisane</name>
+        <id>59</id>
+        <price>8000</price>
+        <weight>93750</weight>
+        <desc>Talent &lt;i&gt;Infanteriewaffen&lt;/i&gt; oder &lt;i&gt;Speere&lt;/i&gt;
+                eine Stangenwaffe mit breiter Stossklinge und symmetrischen
+            Seitenklingen; häufig verziert als höfische Gardistenwaffe.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>0</ini>
+        <wm>0/-2</wm>
+        <dk>S</dk>
+        <length>200</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Sense</name>
+        <id>60</id>
+        <price>3000</price>
+        <weight>62500</weight>
+        <desc>eine bäuerliches Erntewerkzeug, das bisweilen (von aufständischen
+            Bauern) als improvisierte Waffe genutzt wird.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>13/4</tpkk>
+        <improvised>true</improvised>
+        <bf>7</bf>
+        <ini>-2</ini>
+        <wm>-2/-4</wm>
+        <dk>S</dk>
+        <length>160</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Sturmsense</name>
+        <id>61</id>
+        <price>4000</price>
+        <weight>75000</weight>
+        <desc>Befestigt man die Klinge längs statt quer am Schaft, so
+                erhält man eine Sturmsense, eine typiche Waffe für Landwehr-
+            haufen.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Infanteriewaffen</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-1</ini>
+        <wm>-1/-2</wm>
+        <dk>S</dk>
+        <length>180</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Dreigliederstab</name>
+        <id>62</id>
+        <price>18000</price>
+        <weight>62500</weight>
+        <desc>Variante des Kettenstabes mit drei, jeweils durch
+                (kürzere) Kettenstücke verbundenen Holzstäben
+                Ein Dreigliederstab ingnoriert den Verteidigungsbonus von Schilden.
+                Mit einem Dreigliederstab ist das &lt;i&gt;Entwaffnen&lt;/i&gt; aus der
+                Attacke (WdH 61) um 4 Punkte erleichtert und die Um-
+                wandlung von Angriff- in Abwehraktionen (ab TaW 10)
+            ohne Abzüge möglich.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Kettenstäbe</talent>
+        <tpkk>13/4</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>2</ini>
+        <wm>1/1</wm>
+        <dk>HN</dk>
+        <length>130</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kettenstab</name>
+        <id>63</id>
+        <price>12000</price>
+        <weight>62500</weight>
+        <desc>Zwei ca. 2 Spann lange Rundhölzer, die mit einer etwa
+                gleich langen Kette verbunden sind; GE von 15 Mindestbedigung.
+                Ein Kettenstab ingnoriert den Verteidigungsbonus von Schilden.
+                Mit einem Kettenstab ist das &lt;i&gt;Entwaffnen&lt;/i&gt; aus der
+                Attacke (WdH 61) um 4 Punkte erleichtert und die Um-
+                wandlung von Angriff- in Abwehraktionen (ab TaW 10)
+            ohne Abzüge möglich.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Kettenstäbe</talent>
+        <tpkk>13/4</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>2</ini>
+        <wm>1/0</wm>
+        <dk>HN</dk>
+        <length>120</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Geissel</name>
+        <id>64</id>
+        <price>1500</price>
+        <weight>18750</weight>
+        <desc>Peitsche mit ca. 2 Spann langem Griff und einer etwa
+                drei Spann langen Peitschenschnur; einst als Disziplinierinstrument;
+            die Geissel ignoriert den Verteidigungsbonus von Schilden.
+        </desc>
+        <tp>1W6-1</tp>
+        <talent>Kettenwaffen</talent>
+        <tpkk>14/5</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-1</ini>
+        <wm>0/-4</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kettenkugel</name>
+        <id>65</id>
+        <price>15000</price>
+        <weight>156250</weight>
+        <desc>Bei den Gjalskerländern beliebte, grobe Eisenkugel
+                mit angeschmiedeter Kette, aber ohne Stiel (dafür bisweilen
+                mit einem Ring, so dass sie auch geworfen werden kann;
+            mit den Flugeigenschaften eines toten Maulwurfs).
+        </desc>
+        <tp>3W6</tp>
+        <talent>Kettenwaffen</talent>
+        <tpkk>16/2</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>-3</ini>
+        <wm>-2/-4</wm>
+        <dk>S</dk>
+        <length>100</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Morgenstern</name>
+        <id>66</id>
+        <price>10000</price>
+        <weight>87500</weight>
+        <desc>eine - häufig dornengespickte - Kugel, die mit einer kurzen
+                Kette an einem Holzstiel angebracht ist. Mit einem Morgenstern
+                ist es möglich, um die Kante eines Schildes herum zu schlagen
+                und so dessen Schutz zu ignorieren (PA-WM des Schildes wird
+                nicht angerechnet); die Abwehr eines Angriffs mit einem Morgen-
+                stern ist für alle Waffen, die überhaupt in der Lage sind
+                einen solchen Schlag zu parieren, um zwei Punkte erschwert.
+                Mit eine Morgenstern drohen Patzer bereits bei einem AT- oder
+                PA-Wurf von 19 oder 20; der Prüfwurf (WdH 84) ist um 2 Punkte
+            erschwert.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Kettenwaffen</talent>
+        <tpkk>14/2</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>-1/-2</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Neunschwänzige</name>
+        <id>67</id>
+        <price>6000</price>
+        <weight>50000</weight>
+        <desc>eine besondere Form der Geissel mit neune Peitschenschnüren,
+                in deren Enden meist Gewichte eingeflochten sind. Die Neun-
+                schwänzige eignet sich besonders gut zum Kampf gegen Schwärme
+                von Kleingetier (Ratten, Fledermäuse, etc.). Bei einer ge-
+                lungenen AT/2 werden zwei Tiere getroffen, bei einer glücklichen
+                Attacke sogar drei Tiere; der TP-Wurf ist für alle Tiere gleich.
+                Gegen menschliche Ziele gilt, dass bei einer AT/2 ein TP mehr
+                angerichtet wird (glückliche Attacken nach den üblichen Regeln).
+                Einen neunschwänzige ignoriert den Verteidigungsbonus von
+            Schilden.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Kettenwaffen</talent>
+        <tpkk>14/4</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-1</ini>
+        <wm>-1/-4</wm>
+        <dk>N</dk>
+        <length>120</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Ochsenherde</name>
+        <id>68</id>
+        <price>25000</price>
+        <weight>187500</weight>
+        <desc>eine Morgenstern-ähnliche Waffe, jedoch mit drei Kugeln, die
+                wegen ihres enormen Gewichts eine Mindest-KK von 16 erfordert.
+                Mit einer Ochsenherde ist es möglich, um die Kante eines Schildes
+                herumzuschlagen und so dessen Schutz zu ignorieren (PA-WM des
+                Schildes wird nicht angerechnet); die Abwehr eines Angriffs
+                mit einer Ochsenherde ist für alle Waffen, die überhaupt in
+                der Lage sind, einen solchen Schlag zu parieren, um 2 Punkte
+                erschwert. Mit einer Ochsenherde drohen Patzer bereits bei
+                einem AT- oder PA-Wurf von 19 oder 20; der Kontrollwurf (WdH 84)
+            ist um 4 Punkte erschwert.
+        </desc>
+        <tp>3W6+3</tp>
+        <talent>Kettenwaffen</talent>
+        <tpkk>17/0</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-3</ini>
+        <wm>-2/-4</wm>
+        <dk>N</dk>
+        <length>110</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Ogerschelle</name>
+        <id>69</id>
+        <price>18000</price>
+        <weight>150000</weight>
+        <desc>eine Morgenstern-ähnliche Waffe mit zwei Kugeln, die wegen ihres
+                hohen Gewichts eine mindest KK von 15 erfordert. Mit einer
+                Ogerschelle ist es möglich, um die Kante eines Schildes herum-
+                zuschlagen und so dessen Schutz zu ignorieren (PA-WM des Schildes
+                wird nicht angerechnet); die Abwehr eines Angriffs mit einer
+                Ogerschelle ist für alle Waffen, die überhaupt in der Lage
+                sind, einen solchen Schlag zu parieren, um 2 Punkte erschwert.
+                Mit einer Ogerschelle drohen Patzer bereits bei einem AT- oder
+                PA-Wurf von 19 oder 20; der Prüfwurf (WdH 84) ist um 3 Punkte
+            erschwert.
+        </desc>
+        <tp>2W6+2</tp>
+        <talent>Kettenwaffen</talent>
+        <tpkk>15/0</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-2</ini>
+        <wm>-1/-3</wm>
+        <dk>N</dk>
+        <length>120</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Peitsche</name>
+        <id>70</id>
+        <price>2500</price>
+        <weight>37500</weight>
+        <desc>eine lange Fuhrmannspeitsche, die von wirklichen Spezialisten
+                als Waffe eingesetzt wird, dann aber einige spektakuläre Effekte
+                erzielen kann: mit der Peitsche ist es möglich, einen Gegner
+                zu entwaffnen oder ihn von den Beinen zu holen; ausserdem
+                ignoriert die Peitsche den Verteidigungsbonus von Schilden.
+                Eine Peitsche erleidet in der Distanzklasse &lt;i&gt;Nahkampf&lt;/i&gt;
+                einen Malus von 8 Punkten und ist im &lt;i&gt;Handgemenge&lt;/i&gt; nicht
+            zu verwenden.
+        </desc>
+        <tp>1W6</tp>
+        <talent>Peitsche</talent>
+        <tpkk>14/5</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>S</dk>
+        <length>250</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Amazonensäbel</name>
+        <id>71</id>
+        <price>18000</price>
+        <weight>46875</weight>
+        <desc>Talent &lt;i&gt;Schwerter&lt;/i&gt; oder &lt;i&gt;Säbel&lt;/i&gt;
+                schmales Schwert mit einschneidiger, gebogener Klinge,
+            auch Reitersäbel genannt
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Säbel</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>1</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Arbach</name>
+        <id>72</id>
+        <price>12000</price>
+        <weight>62500</weight>
+        <desc>Talent &lt;i&gt;Schwerter&lt;/i&gt; oder &lt;i&gt;Säbel&lt;/i&gt;
+                orkischer Säbel mit leicht gekrümmter, geflammter Klinge
+            und einfachem Handschutz
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Säbel</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Entermesser</name>
+        <id>73</id>
+        <price>5000</price>
+        <weight>43750</weight>
+        <desc>breite, einschneidige gerade Klinge und Griffkorb; die
+            typische Seitenwaffe von Matrosen, Piraten und Seekriegern.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Säbel</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>75</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Khunchomer</name>
+        <id>74</id>
+        <price>13000</price>
+        <weight>56250</weight>
+        <desc>Die ist der typische tulamidische Säbel, der vo Griff
+                weg breiter wird und daher recht &apos;kopflastig&apos; ist und
+            auch keine Spitze aufweist.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Säbel</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>80</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kusliker Säbel</name>
+        <id>75</id>
+        <price>16000</price>
+        <weight>43750</weight>
+        <desc>Talent &lt;i&gt;Schwerter&lt;/i&gt; oder &lt;i&gt;Säbel&lt;/i&gt;
+                Ein gerades, meist anderthalbschneidiges Schwert mit verziertem
+                engem Griffkorb; auch Korbschwert genannt; beliebt bei
+            Seekriegern
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Säbel</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>1</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>80</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Robbentöter</name>
+        <id>76</id>
+        <price>20000</price>
+        <weight>43750</weight>
+        <desc>Talent &lt;i&gt;Fechtwaffen&lt;/i&gt; oder &lt;i&gt;Säbel&lt;/i&gt; oder &lt;i&gt;Schwerter&lt;/i&gt;
+                seltene, bei den Firnelfen beliebte Jagdwaffe; ein stabiler
+                Säbel mit gerader Klinge; einseitig geschliffen, aber sowohl
+                mit ausgearbeiteter Spitze als auch breitem Rücken universell
+            verwendbar.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Säbel</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Säbel</name>
+        <id>77</id>
+        <price>10000</price>
+        <weight>37500</weight>
+        <desc>Talent &lt;i&gt;Säbel&lt;/i&gt; oder &lt;i&gt;Schwerter&lt;/i&gt;
+                einschneidige, meist leicht gekrümmte Klinge und ausgearbeitete
+                Spitze; mit Bügel oder Griffkorb zum Handschutz, jedoch keinen
+            Parierhilfen; eine typische Seitenwaffe von Reitern.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Säbel</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>1</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Sklaventod</name>
+        <id>78</id>
+        <price>25000</price>
+        <weight>50000</weight>
+        <desc>ein dem Khunchomer verwandter, breiter Säbel aus Süd-
+            aventuerien; bisweilen mit Widerhaken.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Säbel</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Barbarenschwert</name>
+        <id>79</id>
+        <price>20000</price>
+        <weight>62500</weight>
+        <desc>Talent &lt;i&gt;Schwerter&lt;/i&gt; oder &lt;i&gt;Hiebwaffen&lt;/i&gt;
+                archaische Übergangsform zwischen Schwert und Axt, die
+                bei Fjarningern, Gjalskerländern und Trollzackern sehr
+                beliebt ist.
+            Klinge und Verzierungen häufig aus Bronze.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Schwerter</talent>
+        <tpkk>13/2</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Breitschwert</name>
+        <id>80</id>
+        <price>12000</price>
+        <weight>50000</weight>
+        <desc>eine etwas altertümlich wirkende Schwertform mit breiter
+            Klinge und meist ohne Parierstange; beliebt bei Thorwalern
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Schwerter</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>85</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kurzschwert</name>
+        <id>81</id>
+        <price>8000</price>
+        <weight>25000</weight>
+        <desc>Talent &lt;i&gt;Dolche&lt;/i&gt; oder &lt;i&gt;Säbel&lt;/i&gt; oder &lt;i&gt;Schwerter&lt;/i&gt;
+                Mit gerader Klinge, kurzen Parierstangen (auch -scheiben)
+                und kurzem Griff; sehr effektive und daher seit mehr
+                als 2&apos;000 Jahren in Aventurien beliebte Waffe. Eine
+                leicht gebogene, tulamidische Variante - von der Grösse
+                zwischen Waqqif und Khunchomer angeordnet - war ebenfalls
+            lange Zweit verbreitet (Werte wie gewöhnliches Kurzschwert).
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Schwerter</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>HN</dk>
+        <length>50</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Schwert</name>
+        <id>82</id>
+        <price>18000</price>
+        <weight>50000</weight>
+        <desc>das aventurische Langschwert mit gerader oder leicht abwärts
+                gebogener Parierstange; quasi das Standeszeichen aller
+                kämpfenden Professionen; schwerere Varianten mit Scheiben
+            oder Kegelknauf, leichtere mit Spindelknauf.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Schwerter</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>95</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Turnierschwert</name>
+        <id>83</id>
+        <price>8000</price>
+        <weight>37500</weight>
+        <desc>eine wie ein Langschwert ausgewuchtete Waffe mit stumpfen und
+                recht weichen Kanten; richtet 1W6+3 TP(A) an. Auch in
+            hölzerner Variante als Übungsschwert (1W6+1 TP(A), BF 5)
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Schwerter</talent>
+        <tpkk>11/5</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>80</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Drachentöter</name>
+        <id>84</id>
+        <price>0</price>
+        <weight>250000</weight>
+        <desc>Ein überlanger, zwergischer Spiess mit einer gezahnten,
+                mörderisch scharfen Klinge aus einer geheimen Legierung;
+                wird prinzipiell von einem &lt;i&gt;Spiessgespann&lt;/i&gt; (Sonderfertigkeit
+            S. 76 WdH) geführt.
+        </desc>
+        <tp>3W6+5</tp>
+        <talent>Speere</talent>
+        <tpkk>20/0</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-3</ini>
+        <wm>-2/-4</wm>
+        <dk>P</dk>
+        <length>400</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Dreizack</name>
+        <id>85</id>
+        <price>5000</price>
+        <weight>56250</weight>
+        <desc>An der aventurischen Westküste verbreiterer Fischspiess;
+            der auch als improvisierte Waffe dienen kann.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Speere</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>true</improvised>
+        <bf>5</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>S</dk>
+        <length>140</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Dschadra</name>
+        <id>86</id>
+        <price>12000</price>
+        <weight>50000</weight>
+        <desc>Eine tulamidische kurze Reiterlanze, die besonders bei
+                den Novadis verbreitet ist und die sowohl vom Pferderücken
+                als auch im Nahkampf oder als Wurfwaffe verwendet werden
+            kann. Die hier genannten Werte gelten für den Nahkampf.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Speere</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>6</bf>
+        <ini>-1</ini>
+        <wm>0/-3</wm>
+        <dk>S</dk>
+        <length>200</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Efferdbart</name>
+        <id>87</id>
+        <price>8000</price>
+        <weight>56250</weight>
+        <desc>Ritualinstrument der Efferd-Geweihtenschaft, aus dem
+                gewöhnlichen Dreizack hervorgegangen; die drei Spitzen
+                sind so um die Achse der Waffe angeordnet, dass man mit
+                dem Efferdbart erstaunlich gut parieren und sogar Gegner
+            entwaffnen (WdH 68) kann; kann auch geworfen werden.
+        </desc>
+        <tp>1W6+4</tp>
+        <talent>Speere</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>NS</dk>
+        <length>120</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Holzspeer</name>
+        <id>88</id>
+        <price>1000</price>
+        <weight>37500</weight>
+        <desc>Ein einfacher, gerader Speer mit einer feuergehärteten
+                Holzklinge; -2 TP gegen alle Arten von Plattenrüstung;
+                etwas schwerere Variante (+10 Unzen) mit Spitzen aus
+                Stein oder Horn richten gegen nur mit Stoff oder dünnem
+                Leder gerüstete oder nur mit natürlichem Fell bewehrte
+                Gegner 1 TP mehr an; gegen Plattenrüstungen eingesetzt,
+                müssen sie jedoch bei jedem erfolgreichen Treffer einen
+                Bruchtest durchführen. Kann einhändig geführt werden
+                (TP 1W6+2, TP/KK 13/5, WM -1/-6). Typische Waffe
+                primitiver Stammesgesellschaften; sowohl im Nahkampf
+            als auch als Wurfwaffe verwendbar.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Speere</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>0</ini>
+        <wm>-1/-3</wm>
+        <dk>S</dk>
+        <length>150</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Jagdspiess</name>
+        <id>89</id>
+        <price>8000</price>
+        <weight>50000</weight>
+        <desc>Ein vor allem bei Waldelfen gebräuchlicher Speer mit
+                einem Knebel hinter der Klinge, der das zu tiefe Eindringen
+                der Waffe ins Wild verhindern soll. Kann ab KK 15 einhändig
+                geführt werden (TP 1W6+5, TP/KK 13/5, WM 0/-4). Elfische
+                Varianten sind etwas leichter (75 Unzen) und stabilder (BF 2),
+            dafür auch stets teurer.
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Speere</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>S</dk>
+        <length>200</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kriegslanze</name>
+        <id>90</id>
+        <price>12000</price>
+        <weight>93750</weight>
+        <desc>Die hier angegebenen Werte gelten für die zweckfremde
+                Verwendung als improvisierter Speer, ihre Werte im
+            Reiterkampf siehe WdH 106.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Speere</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-2</ini>
+        <wm>-2/-4</wm>
+        <dk>P</dk>
+        <length>300</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Pike</name>
+        <id>91</id>
+        <price>5000</price>
+        <weight>112500</weight>
+        <desc>ein überlanger, stabilder Spiess, der eigentlich nur in Formation
+                angewendet Sinn macht, dann aber mit solchen Sonderfertigkeiten
+                wie &lt;i&gt;Formation&lt;/i&gt; und &lt;i&gt;Spiessgespann&lt;/i&gt; tödlich für
+            anrennende Gegner ist.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Speere</talent>
+        <tpkk>14/4</tpkk>
+        <improvised>false</improvised>
+        <bf>6</bf>
+        <ini>-2</ini>
+        <wm>-1/-2</wm>
+        <dk>P</dk>
+        <length>350</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Speer</name>
+        <id>92</id>
+        <price>3000</price>
+        <weight>50000</weight>
+        <desc>etwa anderthalb Schritt langer Holzschaft mit lanzettförmiger
+                Stossklinge; mittlerweile fast nur noch bei Jägern gebräuchlich
+                Waffe; kann ab KK 16 einhändig geführt werden (TP 1W6+4,
+                TP/KK 13/5, WM 0/-5).
+                sonst TP 1W6+5, TP/KK 12/4, WM 0/-2
+            Kann mehr schlecht als recht geworfen werden.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Speere</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-1</ini>
+        <wm>0/-2</wm>
+        <dk>S</dk>
+        <length>190</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Stossspeer</name>
+        <id>93</id>
+        <price>10000</price>
+        <weight>93750</weight>
+        <desc>langer Speer mit breiter Klinge, meist auch mit Knebel und
+            Handschutz; eine Waffe zur Jagd auf schweres Wild
+        </desc>
+        <tp>2W6+2</tp>
+        <talent>Speere</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>S</dk>
+        <length>200</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Turnierlanze</name>
+        <id>94</id>
+        <price>5000</price>
+        <weight>75000</weight>
+        <desc>Die hier angegebenen Werte gelten für die zweckfremde
+                Verwendung als improvisierter Speer, ihre Werte im Reiter-
+            kampf siehe WdH 106.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Speere</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>true</improvised>
+        <bf>8</bf>
+        <ini>-2</ini>
+        <wm>-2/-4</wm>
+        <dk>P</dk>
+        <length>300</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Wurfspeer</name>
+        <id>95</id>
+        <price>3000</price>
+        <weight>50000</weight>
+        <desc>etwa vier Spann langer, gut ausgewuchteter Speer mit Eisen-
+                spitze, die mit langehn Eisenbändern an einem geraden,
+                schweren Holzschaft befestigt ist; im Nahkampf nur als
+            improvisierte Waffe zu führen.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Speere</talent>
+        <tpkk>11/5</tpkk>
+        <improvised>true</improvised>
+        <bf>4</bf>
+        <ini>-2</ini>
+        <wm>-1/-3</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Wurmspiess</name>
+        <id>96</id>
+        <price>12000</price>
+        <weight>75000</weight>
+        <desc>Talent &lt;i&gt;Infanteriewaffen&lt;/i&gt; oder &lt;i&gt;Speere&lt;/i&gt;
+                eine zwergische Abart der Partisane, die von den Proportionen
+            her speziell für Angroschim geeignet ist.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Speere</talent>
+        <tpkk>13/4</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>0</ini>
+        <wm>0/-2</wm>
+        <dk>S</dk>
+        <length>180</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kampfstab</name>
+        <id>97</id>
+        <price>4000</price>
+        <weight>50000</weight>
+        <desc>Ein etwa doppelt fingerdicker, gerader Holzstab von etwa anderthalb
+                Schritt Länge, meist mit Eisenbändern an den Enden, um
+                Auffasern zu verhindern. &lt;i&gt;Entwaffnen&lt;/i&gt; aus der Attacke
+            (WdH 61) um 2 Punkte erleichtert.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Stäbe</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>1</ini>
+        <wm>0/0</wm>
+        <dk>NS</dk>
+        <length>150</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Magierstab</name>
+        <id>98</id>
+        <price>0</price>
+        <weight>56250</weight>
+        <desc>Ritualinstrument und Standeszeichen der Magier; ein verzierter
+                und unzerbrechlicher Kampfstab. Varianten des Zauberstabs
+                tragen eine Kristallkugel (dann als &lt;i&gt;Zweihand Hiebwaffe&lt;/i&gt;
+                und sind (teilweise) deutlich kürzer (&lt;i&gt;Hiebwaffen&lt;/i&gt;).
+
+                &lt;i&gt;Entwaffnen&lt;/i&gt; aus der Attacke
+            (WdH 61) um 2 Punkte erleichtert.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Stäbe</talent>
+        <tpkk>11/5</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>-1/-1</wm>
+        <dk>NS</dk>
+        <length>150</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Zweililien</name>
+        <id>99</id>
+        <price>20000</price>
+        <weight>50000</weight>
+        <desc>eine ausgefallene Waffe aus der Gegend um Grangor:
+                an einem etwa schrittlangen Stab sind an beiden Enden
+                breite Dolchklingen mit kleinen Widerhaken angebracht.
+                Mit der Zweililien ist das Entwaffnen aus der Attacke
+            (WdH 61) um 4 Punkte erleichtert.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Stäbe</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>1</ini>
+        <wm>1/-1</wm>
+        <dk>N</dk>
+        <length>140</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Dreschflegel</name>
+        <id>100</id>
+        <price>1500</price>
+        <weight>62500</weight>
+        <desc>Ein bäuerliches Arbeitsgerät (improvisierte Waffe) mit
+                einem Schlagstück an einem langen Stiel; ignoriert den
+            Verteidigungsbonus von Schilden.
+        </desc>
+        <tp>1W6+3</tp>
+        <talent>Zweihandflegel</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>true</improvised>
+        <bf>6</bf>
+        <ini>-3</ini>
+        <wm>-2/-3</wm>
+        <dk>S</dk>
+        <length>150</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kriegsflegel</name>
+        <id>101</id>
+        <price>5000</price>
+        <weight>75000</weight>
+        <desc>Die mit Eisenbändern verstärkte, besser ausgewogene,
+                kriegerische Variante des Dreschflegels; ignoriert den
+            Verteidigungsbonus von Schilden.
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Zweihandflegel</talent>
+        <tpkk>12/2</tpkk>
+        <improvised>false</improvised>
+        <bf>5</bf>
+        <ini>-1</ini>
+        <wm>-1/-2</wm>
+        <dk>S</dk>
+        <length>150</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Barbarenstreitaxt</name>
+        <id>102</id>
+        <price>15000</price>
+        <weight>156250</weight>
+        <desc>massive Doppelblattact, die vor allem in
+                Hord-Aventurien verwendet wird. (und dort eigentlich
+            auch nur von Throwalern, Fjarningern und Gjalskerländern)
+        </desc>
+        <tp>3W6+2</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>15/0</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-2</ini>
+        <wm>-1/-4</wm>
+        <dk>N</dk>
+        <length>120</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Echsische Axt</name>
+        <id>103</id>
+        <price>0</price>
+        <weight>56250</weight>
+        <desc>Sehr seltene, langstielige Doppelblattaxt der Achaz, die
+                heutzutage kaum noch hergestellt wird. Die Stossspitze
+                der Axt kann auch (mit dem Talent &lt;i&gt;Speere&lt;/i&gt;) zum Stechen
+                verwendet werden (AT -3, 1W6+4 TP; die Regeln zum
+                &lt;i&gt;Niederwerfen&lt;/i&gt; gelten nicht für den Stich). Mit der
+                echsischen Axt können auch alle Manöver des Talents Stäbe
+            sowie das Festnageln eingesetzt werden.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>0/-1</wm>
+        <dk>NS</dk>
+        <length>150</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Felsspalter</name>
+        <id>104</id>
+        <price>30000</price>
+        <weight>93750</weight>
+        <desc>Zwergische Doppelblattaxt, die von den Proportionen her
+            speziell für Angroschim ausgelegt ist.
+        </desc>
+        <tp>2W6+2</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>14/2</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>0/-2</wm>
+        <dk>N</dk>
+        <length>120</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Gruufhai</name>
+        <id>105</id>
+        <price>12000</price>
+        <weight>112500</weight>
+        <desc>Ein orkischer Kriegshammer mit Dornen auf der grossen Schlagfläche
+                (und einem eher dekorativen Dorn an der Spitze); kann ab
+                KK 18 einhändig mit dem Talent &lt;i&gt;Hiebwaffen&lt;/i&gt; geführt
+            werden (TP/KK 15/3).
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>14/2</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-2</ini>
+        <wm>-1/-3</wm>
+        <dk>N</dk>
+        <length>120</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Holzfälleraxt</name>
+        <id>106</id>
+        <price>8000</price>
+        <weight>100000</weight>
+        <desc>Improvisierte Waffe, die ihre besondere Schadenswirkung
+            vor allem gegen Bäume entwickelt.
+        </desc>
+        <tp>2W6</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>12/2</tpkk>
+        <improvised>true</improvised>
+        <bf>5</bf>
+        <ini>-2</ini>
+        <wm>-1/-4</wm>
+        <dk>N</dk>
+        <length>110</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Kriegshammer</name>
+        <id>107</id>
+        <price>12000</price>
+        <weight>112500</weight>
+        <desc>Die Werte sind nur eines von vielen möglichen Beispielen
+                für eine überaus variantenreiche Waffenklasse; siehe auch
+                z.B. Zwergenschlägel; bisweilen ist die Schlagfläche
+                mit Dornen besetzt, um Rüstungen durchdringen zu können.
+                Ein Kriegshammer kann ab KK 18 einhändig mit dem Talent
+            &lt;i&gt;Hiebwaffen&lt;/i&gt; geführt werden. TP/KK dann 15/3.
+        </desc>
+        <tp>2W6+3</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>14/2</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>-2</ini>
+        <wm>-1/-3</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Orknase</name>
+        <id>108</id>
+        <price>7500</price>
+        <weight>68750</weight>
+        <desc>thorwalsche Axt mit lang herunter gezogener (&apos;bärtiger&apos;) Klinge.
+                kann ab KK 14 einhändig mit dem Talent &lt;i&gt;Hiebwaffen&lt;/i&gt; geführt
+            werden (TP/KK dann 13/3).
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>12/2</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Schnitter</name>
+        <id>109</id>
+        <price>12000</price>
+        <weight>56250</weight>
+        <desc>Talent &lt;i&gt;Zweihand-Hiebwaffen&lt;/i&gt; oder &lt;i&gt;Infanteriewaffen&lt;/i&gt; oder &lt;i&gt;Speere&lt;/i&gt;
+                aus einer der Sturmsense ähnlichen, improvisierten Waffe
+                weiterentwickelter Klingenstab, der sich vor allem im
+                Balash und auf Maraskan grosser Beliebtheit erfreut;
+                kann ab GE 16 einhändig mit &lt;i&gt;Speere&lt;/i&gt; oder &lt;i&gt;Hiebwaffen&lt;/i&gt;
+                geführt werden (dann TP 1W6+3, TP/KK 15/5, WM 0/-1)
+            sonst TP 1W6+5, TP/KK 14/4, WM 0/0
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>14/4</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>NS</dk>
+        <length>130</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Spitzhacke</name>
+        <id>110</id>
+        <price>2000</price>
+        <weight>125000</weight>
+        <desc>ein Arbeitsgerät, das auch als improvisierte Waffe verwendet
+                werden kann; kann ab KK 18 einhändig mit dem Talent
+                &lt;i&gt;Hiebwaffen&lt;/i&gt; geführt werden (dann TP/KK 14/3, sonst 13/2)
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>13/2</tpkk>
+        <improvised>true</improvised>
+        <bf>5</bf>
+        <ini>-3</ini>
+        <wm>-2/-4</wm>
+        <dk>N</dk>
+        <length>100</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Vorschlaghammer</name>
+        <id>111</id>
+        <price>3000</price>
+        <weight>156250</weight>
+        <desc>ein Arbeitsgerät, das auch als improvisierte Waffe verwendet
+            werden kann.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>13/2</tpkk>
+        <improvised>true</improvised>
+        <bf>5</bf>
+        <ini>-3</ini>
+        <wm>-2/-4</wm>
+        <dk>N</dk>
+        <length>90</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Warunker Hammer</name>
+        <id>112</id>
+        <price>15000</price>
+        <weight>93750</weight>
+        <desc>Talent &lt;i&gt;Zweihand-Hiebwaffen&lt;/i&gt; oder &lt;i&gt;Infanteriewaffen&lt;/i&gt;
+                äusserst effektives Mehrzweckt-Tötungsgerät, das eine lange
+                Stossspitze, einen flachen, recht grossen Hammerkopf und
+                eine gerade Axtklinge aufweist; diese Metallteile sind
+                mit Eisenbändern am langen Stiel befestigt, so dass man mit
+                der Waffe auch angemessen parieren kann. Ein Stich mit der
+                Stossklinge (Talent &lt;i&gt;Speere&lt;/i&gt; erschwert um 3) richtet
+                1W6+5 TP an, ist aber nicht in der Lage, den Gegener
+            &lt;i&gt;niderzuwerfen&lt;/i&gt;.
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>14/3</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>NS</dk>
+        <length>150</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Zwergenschlägel</name>
+        <id>113</id>
+        <price>15000</price>
+        <weight>75000</weight>
+        <desc>ein zwerigischer Kriegshammer, der von den Proportionen
+            her speziell für die Angroschim geeignet ist.
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Zweihand Hiebwaffen</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>N</dk>
+        <length>120</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Andergaster</name>
+        <id>114</id>
+        <price>35000</price>
+        <weight>137500</weight>
+        <desc>überlanges Zweihandschwert mit langer Fehlschärfe;
+                trotz ihres Namens die Lieblingswaffe der almadanischen und
+            horasischen Doppelsöldner
+        </desc>
+        <tp>3W6+2</tp>
+        <talent>Zweihandschwerter/-säbel</talent>
+        <tpkk>14/2</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-3</ini>
+        <wm>0/-2</wm>
+        <dk>S</dk>
+        <length>200</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Anderthalbhänder</name>
+        <id>115</id>
+        <price>25000</price>
+        <weight>62500</weight>
+        <desc>Talent &lt;i&gt;Anderthalbhänder&lt;/i&gt; oder &lt;i&gt;Zweihandschwerter/-säbel&lt;/i&gt;
+                die garetische Variante des Bastardschwertes
+                Übergangsform zwischen Schwert und Zweihänder
+                wird je nach Situation mit einer oder zwei Händen geführt und ermöglicht damit
+            einen besonders variantenreichen Kampfstil
+        </desc>
+        <tp>1W6+5</tp>
+        <talent>Zweihandschwerter/-säbel</talent>
+        <tpkk>11/4</tpkk>
+        <improvised>false</improvised>
+        <bf>1</bf>
+        <ini>1</ini>
+        <wm>0/0</wm>
+        <dk>NS</dk>
+        <length>115</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Boronssichel</name>
+        <id>116</id>
+        <price>40000</price>
+        <weight>100000</weight>
+        <desc>ein überlanges gebogenes Schwert mit anderthalbschneidiger
+                Klinge, das speziell zum Einsatz gegen Kavallerie gedacht
+                ist; meist ohne Parierstangen; besonders verbreitet in
+            Almada und Aranien.
+        </desc>
+        <tp>2W6+6</tp>
+        <talent>Zweihandschwerter/-säbel</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-2</ini>
+        <wm>0/-3</wm>
+        <dk>S</dk>
+        <length>180</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Doppelkhunchomer</name>
+        <id>117</id>
+        <price>25000</price>
+        <weight>93750</weight>
+        <desc>Eindrucksvolle Klingenwaffe aus dem tulamidischen Raum,
+                die meist von Leib- oder Haremswächtern zur Abschreckung
+            geführt wird.
+        </desc>
+        <tp>1W6+6</tp>
+        <talent>Zweihandschwerter/-säbel</talent>
+        <tpkk>12/2</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>0/1</wm>
+        <dk>NS</dk>
+        <length>130</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Grosser Sklaventod</name>
+        <id>118</id>
+        <price>35000</price>
+        <weight>100000</weight>
+        <desc>In Südaventurien verbreitete Variante des Doppelkhunchomers;
+                meist verziert; bisweilen mit Widerhaken versehen und
+            daher eine typische Abschreckungswaffe.
+        </desc>
+        <tp>2W6+4</tp>
+        <talent>Zweihandschwerter/-säbel</talent>
+        <tpkk>13/2</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>-2</ini>
+        <wm>0/-2</wm>
+        <dk>NS</dk>
+        <length>140</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Richtschwert</name>
+        <id>119</id>
+        <price>0</price>
+        <weight>125000</weight>
+        <desc>Talent &lt;i&gt;Zweihand-Hiebwaffen&lt;/i&gt; oder &lt;i&gt;Zweihandschwerter/-säbel&lt;/i&gt;
+                sehr breite, kopflastige Klinge mit scharfer Schneide (und
+                meist mit praios- und borongefälligen Gravuren, Wahlsprüchen
+                etc.; nicht für den Kampf gedacht und daher eine improvisierte
+                Waffe). Derartige Waffen liegen meist als wohlgehütete Richt-
+                instrumente in den Zeughäusern der Städte und werden nur den
+            Henkern zum Vollzug ihres Amtes überlassen.
+        </desc>
+        <tp>3W6+4</tp>
+        <talent>Zweihandschwerter/-säbel</talent>
+        <tpkk>13/2</tpkk>
+        <improvised>true</improvised>
+        <bf>5</bf>
+        <ini>-3</ini>
+        <wm>-2/-4</wm>
+        <dk>N</dk>
+        <length>130</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Zweihänder</name>
+        <id>120</id>
+        <price>25000</price>
+        <weight>100000</weight>
+        <desc>Der &apos;klassische&apos; Zweihänder ist ein relativ breitklingiges,
+                zweischneidiges Schwert mit langem Griff, das insgesamt recht
+            vorderlastig ist, dafür aber auch hohen Schaden verursacht.
+        </desc>
+        <tp>2W6+4</tp>
+        <talent>Zweihandschwerter/-säbel</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>2</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>NS</dk>
+        <length>155</length>
+        <twohanded>true</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Fausthieb</name>
+        <id>121</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+        <tp>1W6</tp>
+        <talent>Raufen</talent>
+        <tpkk>10/3</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>-2</ini>
+        <wm>-1/-2</wm>
+        <dk>H</dk>
+        <length>0</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Tritt/Kopfstoss</name>
+        <id>122</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+        <tp>1W6</tp>
+        <talent>Raufen</talent>
+        <tpkk>10/3</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>-1</ini>
+        <wm>-1/-2</wm>
+        <dk>H</dk>
+        <length>0</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Drachenklaue</name>
+        <id>123</id>
+        <price>35000</price>
+        <weight>125000</weight>
+        <desc>Eine moderne Variante des Panzerarms, auf die verschiedene
+                Aufsätze montiert werden können. Erzeugt im Waffenlosen
+                Kampf echte TP. Mit der Hand, an der sich eine Drachenklaue
+                befindet, kann keine weitere Waffe oder ein Schild geführt
+                werden; auch der Einsatz von Fernwaffen ist mit dieser
+            Hand nicht möglich.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Raufen</talent>
+        <tpkk>12/3</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>-1</ini>
+        <wm>0/0</wm>
+        <dk>H</dk>
+        <length>20</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Veteranenhand</name>
+        <id>124</id>
+        <price>25000</price>
+        <weight>43750</weight>
+        <desc>eine wie eine Unterarmprothese aussehende Trickwaffe; aus
+                dem Handrücken schnellen vier kurze Klingen, wenn der Träger
+                die Fäuste ballt. Die Veteranenhand erzeug im waffenlosen
+                Kampf echte TP. Mit der Hand, an der man eine Veteranenhand
+                trägt, kann man keine weitere Waffe oder Schild führen; auch
+            der Einsatz von Fernwaffen ist mit dieser Hand nicht möglich.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Raufen</talent>
+        <tpkk>12/4</tpkk>
+        <improvised>false</improvised>
+        <bf>4</bf>
+        <ini>-1</ini>
+        <wm>0/-1</wm>
+        <dk>H</dk>
+        <length>0</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Schlagring</name>
+        <id>125</id>
+        <price>2500</price>
+        <weight>12500</weight>
+        <desc>mehrere miteinander verschmiedete Ringe aus Bronze oder Eisen,
+                die &apos;eherne&apos; Knöchel geben; erzeugt im Waffenlosen Kampf
+                zwar TP(A) jedoch zwei mehr als ein gewöhnlicher Fausthieb.
+                Mit der Hand, an der sich der Schlagring befindet, kann
+                keine weitere Waffe oder Schild geführt werden; auch der
+            Einsatz von Fernwaffen ist mit dieser Hand nicht möglich.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Raufen</talent>
+        <tpkk>10/3</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>-1/-2</wm>
+        <dk>H</dk>
+        <length>0</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Orchidee</name>
+        <id>126</id>
+        <price>18000</price>
+        <weight>21875</weight>
+        <desc>seltene Handgemengewaffe aus Südaventurien, bei der auf einen Schlagring
+                noch gebogene Klingen geschmiedet sind, so dass die Hand einer
+                Klaue gleicht. Diese Waffe erzeugt im waffenlosen Kampf echte
+                TP. Mit der Hand, an der sich eine Orchidee befindet, kann
+                keine weitere Waffe oder ein Schild geführt werden; auch der
+            Einsatz von Fernwaffen ist mit dieser Hand nicht möglich.
+        </desc>
+        <tp>1W6+1</tp>
+        <talent>Raufen</talent>
+        <tpkk>12/5</tpkk>
+        <improvised>false</improvised>
+        <bf>3</bf>
+        <ini>0</ini>
+        <wm>-1/-2</wm>
+        <dk>H</dk>
+        <length>0</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Panzerarm</name>
+        <id>127</id>
+        <price>14000</price>
+        <weight>137500</weight>
+        <desc>ein bis über den Ellenbogen hinausreichender, steifer Panzer-
+                Handschuh mit einem Dorn an der geballten Faust; üblicherweise
+            als Schild/Parierwaffe (in der linken Hand) verwendet.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Raufen</talent>
+        <tpkk>11/3</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>H</dk>
+        <length>20</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Bock</name>
+        <id>128</id>
+        <price>8000</price>
+        <weight>75000</weight>
+        <desc>ein schwerer Faustschild mit einem, zwei oder drei
+                langen Dornen; üblicherweise als Schild/Parierwaffe
+            (und mit der linken Hand) verwendet.
+        </desc>
+        <tp>1W6+2</tp>
+        <talent>Raufen</talent>
+        <tpkk>10/5</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>-1</ini>
+        <wm>0/0</wm>
+        <dk>H</dk>
+        <length>20</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>Stoss mit Schild</name>
+        <id>129</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+        <tp>1W6+1</tp>
+        <talent>Raufen</talent>
+        <tpkk>13/3</tpkk>
+        <improvised>true</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>H</dk>
+        <length>0</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+    <dsa_meleeweapon_item>
+        <name>aaTest</name>
+        <id>130</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+        <tp>1W6</tp>
+        <talent>Hiebwaffen</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>0</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+</folder>

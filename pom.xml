@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>nb</artifactId>
+    <groupId>efa.mvn</groupId>
+    <version>1.0.1</version>
+  </parent>
+
+  <groupId>efa</groupId>
+  <artifactId>dsa</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>dsa</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>efa.scala</groupId>
+      <artifactId>scalaW</artifactId>
+    </dependency>
+  </dependencies>
+  <dependencyManagement>
+    <dependencies>    
+      <dependency>
+        <groupId>efa.scala</groupId>
+        <artifactId>scalaW</artifactId>
+        <version>2.9.2</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.scala</groupId>
+        <artifactId>scalazW</artifactId>
+        <version>7.0.0-M3</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.scala</groupId>
+        <artifactId>scalaCheckW</artifactId>
+        <version>1.9</version>
+      </dependency>
+
+      <dependency>
+        <groupId>efa.react</groupId>
+        <artifactId>core</artifactId>
+        <version>${react.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.react</groupId>
+        <artifactId>swing</artifactId>
+        <version>${react.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>efa</groupId>
+        <artifactId>core</artifactId>
+        <version>${util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa</groupId>
+        <artifactId>io</artifactId>
+        <version>${util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa</groupId>
+        <artifactId>nb</artifactId>
+        <version>${util.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>efa.rpg</groupId>
+        <artifactId>core</artifactId>
+        <version>${rpg.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.rpg</groupId>
+        <artifactId>preferences</artifactId>
+        <version>${rpg.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.rpg</groupId>
+        <artifactId>items</artifactId>
+        <version>${rpg.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.rpg</groupId>
+        <artifactId>explorer</artifactId>
+        <version>${rpg.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.rpg</groupId>
+        <artifactId>describedPanel</artifactId>
+        <version>${rpg.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.rpg</groupId>
+        <artifactId>rules</artifactId>
+        <version>${rpg.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.rpg</groupId>
+        <artifactId>rulesUI</artifactId>
+        <version>${rpg.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa.rpg</groupId>
+        <artifactId>being</artifactId>
+        <version>${rpg.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.netbeans.api</groupId>
+        <artifactId>org-netbeans-core-multiview</artifactId>
+        <version>${netbeans.version}</version>
+      </dependency>
+    </dependencies>    
+  </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>nbm-maven-plugin</artifactId>
+          <configuration>
+            <brandingToken>${brandingToken}</brandingToken>
+            <cluster>${brandingToken}</cluster>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <modules>
+    <module>application</module>
+    <module>branding</module>
+    <module>world</module>
+    <module>abilities</module>
+    <module>abilitiesservices</module>
+    <module>equipment</module>
+    <module>equipmentservices</module>
+    <module>being</module>
+    <module>beingCalc</module>
+    <module>beingServices</module>
+    <module>generation</module>
+  </modules>
+
+  <properties>
+    <brandingToken>dsatool</brandingToken>
+    <util.version>0.1.0-SNAPSHOT</util.version>
+    <react.version>0.1.0-SNAPSHOT</react.version>
+    <rpg.version>1.0.0-SNAPSHOT</rpg.version>
+    <world.version>1.0.0-SNAPSHOT</world.version>
+    <abilities.version>1.0.0-SNAPSHOT</abilities.version>
+    <abilitiesservices.version>1.0.0-SNAPSHOT</abilitiesservices.version>
+    <equipment.version>1.0.0-SNAPSHOT</equipment.version>
+    <equipmentservices.version>1.0.0-SNAPSHOT</equipmentservices.version>
+    <being.version>1.0.0-SNAPSHOT</being.version>
+    <beingCalc.version>1.0.0-SNAPSHOT</beingCalc.version>
+    <beingServices.version>1.0.0-SNAPSHOT</beingServices.version>
+    <generation.version>1.0.0-SNAPSHOT</generation.version>
+  </properties>
+</project>
+
+<!-- vim: set ts=2 sw=2 et: -->

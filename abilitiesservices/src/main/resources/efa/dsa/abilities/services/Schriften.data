@@ -1,0 +1,212 @@
+
+<folder><name>Schriften</name>
+    <dsa_scripture_item>
+        <name>Altes Alaani</name>
+        <id>0</id>
+        <raisingCost>A</raisingCost>
+        <desc>um 1000 Wort- und Schriftzeichen</desc>
+        <complexity>18</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Altes Kemi</name>
+        <id>1</id>
+        <raisingCost>A</raisingCost>
+        <desc>mehrere Tausend Wort- und Deutzeichen</desc>
+        <complexity>21</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Amulashtra (modern)</name>
+        <id>2</id>
+        <raisingCost>A</raisingCost>
+        <desc>alte Artefakt-Schrift; 24 Lautzeichen</desc>
+        <complexity>11</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Amulashtra (historisch)</name>
+        <id>3</id>
+        <raisingCost>A</raisingCost>
+        <desc>alte Artefakt-Schrift; um 300 Zeichen</desc>
+        <complexity>17</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Angram</name>
+        <id>4</id>
+        <raisingCost>A</raisingCost>
+        <desc>altzwergische Bilderschrift</desc>
+        <complexity>21</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Arkanil</name>
+        <id>5</id>
+        <raisingCost>C</raisingCost>
+        <desc>magisch potente Schrift; unbekannte Zeichenzahl
+            (Rohalsschrift)
+        </desc>
+        <complexity>24</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Chrmk</name>
+        <id>6</id>
+        <raisingCost>A</raisingCost>
+        <desc>5&apos;000 Wort- und Deutzeichen (&apos;Zelemja&apos;)</desc>
+        <complexity>18</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Chuchas</name>
+        <id>7</id>
+        <raisingCost>B</raisingCost>
+        <desc>&apos;Yash-Hualay-Glyphen&apos;, &apos;Protozelemja&apos;
+            um 20&apos;000 Zeichen
+        </desc>
+        <complexity>24</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Drakhard-Zinken</name>
+        <id>8</id>
+        <raisingCost>A</raisingCost>
+        <desc>&apos;Zauberrunen&apos; für Ritzungen; 24 Lautzeichen, spe-
+            zielle Ligaturen möglich
+        </desc>
+        <complexity>9</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Drakned-Glyphen</name>
+        <id>9</id>
+        <raisingCost>B</raisingCost>
+        <desc>Angeblich die &apos;Umschrift&apos; des Drachischen</desc>
+        <complexity>15</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Geheiligte Glyphen von Unau</name>
+        <id>10</id>
+        <raisingCost>A</raisingCost>
+        <desc>19 Laut- und Deutzeichen</desc>
+        <complexity>13</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Gimaril</name>
+        <id>11</id>
+        <raisingCost>A</raisingCost>
+        <desc>verbreitete &apos;Geheim&apos;-Schrift mit 29 Laut- und Deut-
+            zeichen
+        </desc>
+        <complexity>10</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Gjalskisch</name>
+        <id>12</id>
+        <raisingCost>A</raisingCost>
+        <desc>Misch-Schrift aus Hjaldingschen Runen und Ur-
+            Tulamidya
+        </desc>
+        <complexity>14</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Hjaldingsche Runen</name>
+        <id>13</id>
+        <raisingCost>A</raisingCost>
+        <desc>um 30 Lautzeichen und mehrere Dutzend Piktogramme
+            (mit diesen Komplexität 16)
+        </desc>
+        <complexity>10</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Imperiale Zeichen</name>
+        <id>14</id>
+        <raisingCost>A</raisingCost>
+        <desc>&apos;Altgüldenländisch&apos;
+            57 Lautzeichen
+        </desc>
+        <complexity>12</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Isdira</name>
+        <id>15</id>
+        <raisingCost>A</raisingCost>
+        <desc>27 Lautzeichen, dazu subtile Deutzeichen</desc>
+        <complexity>15</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Asdharia</name>
+        <id>16</id>
+        <raisingCost>A</raisingCost>
+        <desc>27 Lautzeichen, dazu subtile Deutzeichen</desc>
+        <complexity>18</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Kusliker Zeichen</name>
+        <id>17</id>
+        <raisingCost>A</raisingCost>
+        <desc>31 Lautzeichen</desc>
+        <complexity>10</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Mahrische Glyphen</name>
+        <id>18</id>
+        <raisingCost>B</raisingCost>
+        <desc>Viele Hundert Bildzeichen, nahezu unbekannt</desc>
+        <complexity>15</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Nanduria</name>
+        <id>19</id>
+        <raisingCost>A</raisingCost>
+        <desc>häufige &apos;Geheim&apos;-Schrift, 26 Lautzeichen</desc>
+        <complexity>10</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Rogolan</name>
+        <id>20</id>
+        <raisingCost>A</raisingCost>
+        <desc>24 Laut-Runen, davon 4 wenig verwendet</desc>
+        <complexity>11</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Trollische Raumbilderschrift</name>
+        <id>21</id>
+        <raisingCost>C</raisingCost>
+        <desc>dreidimensionale Steinsetzungen</desc>
+        <complexity>24</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Tulamidya</name>
+        <id>22</id>
+        <raisingCost>A</raisingCost>
+        <desc>56 Silbenzeichen</desc>
+        <complexity>14</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Ur-Tulamydia</name>
+        <id>23</id>
+        <raisingCost>A</raisingCost>
+        <desc>um 300 Wort-, Deut- und Silbenzeichen</desc>
+        <complexity>16</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Zhayad</name>
+        <id>24</id>
+        <raisingCost>A</raisingCost>
+        <desc>Magier-Geheimschrift; mehrere hundert Laut- und Sil-
+            benzeichen
+        </desc>
+        <complexity>18</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Lesen/Schreiben Muttersprache</name>
+        <id>25</id>
+        <raisingCost>A</raisingCost>
+        <desc>Dies ist ein Platzhalter für die Helden-
+generierung.
+        </desc>
+        <complexity>1</complexity>
+    </dsa_scripture_item>
+    <dsa_scripture_item>
+        <name>Lesen/Schreiben Fremdsprache</name>
+        <id>29</id>
+        <raisingCost>A</raisingCost>
+        <desc>Dies ist ein Platzhalter für die Helden-
+generierung.
+        </desc>
+        <complexity>1</complexity>
+    </dsa_scripture_item>
+</folder>

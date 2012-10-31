@@ -1,0 +1,1603 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<folder><name>Sonderfertigkeiten</name><folder><name>Allgemein</name><dsa_feat_item><id>0</id><name>Akklimatisierung</name><ap>150</ap><featType>Allgemein</featType><desc>&lt;P&gt;Diese SF erlaubt es dem Helden, die Vorteile &lt;I&gt;Hitzeresistenz&lt;/I&gt;
+bzw. &lt;I&gt;Kälteresistenz&lt;/I&gt; nachträglich zu erwerben. Wesen mit
+diesen Vorteilen erleiden durch aussergewöhnliche
+Umgebungstemperaturen keinen Schaden, so lange diese Temperaturen im
+erträglichen Rahmen bleiben; sie müssen nur dann Einschränkungen
+hinnehmen, wenn sie sich unangemessen verhalten: etwa sich bei
+grosser Hitze noch übermässig anstrengen. Diese SF schützt nicht
+gegen Zauber, die auf Feuer oder Eis basieren.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KO 12; kann nur durch längeren Aufenthalt
+(mindestens 5 Jahre) in der entsprechenden Klimazone erworben werden,
+es ist allerdings kein weiterer Lern- zeit Aufwand erforderlich. Die
+5 Jahre können unterbrochen werden. Es ist sowohl möglich
+&lt;I&gt;Akklimatisierung (Hitze)&lt;/I&gt; als auch &lt;I&gt;Akklimatisierung (Kälte)&lt;/I&gt;
+zu erwerben. Allfällige Nachteile &lt;I&gt;Hitzeempfindlich&lt;/I&gt; oder
+&lt;I&gt;Kälteempfindlich&lt;/I&gt; müssen zuerst weg gekauft werden, um diese
+SF zu erlernen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7, kann ohne Lehrmeister erlernt werden&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; je 150 AP, nicht zu Spielbeginn wählbar 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>78</id><name>Meister der Improvisation</name><ap>200</ap><featType>Allgemein</featType><desc>&lt;P&gt;Wer über diese SF verfügt, kann fehlendes Werkzeug durch
+improvisierte Hilfsmittel kompensieren. Probenzuschläge durch
+schlechtes oder nicht vorhandenes Werkzeug sind halbiert, wenn der
+Held genügend Zeit hat, andere Hilfsmittel zu suchen: Ein Stein als
+Hammer, Gräser als Schnüre, etwas Scharfkantiges als
+Schneidewerkzeug und dergleichen. Beim Ausweichen auf ein verwandtes
+Talent gelten bei Handwerkstalenten für einen &lt;I&gt;Meister der
+Improvisation&lt;/I&gt; nur die halben Zuschläge.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; IN und FF mindestens 12&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7, ergibt sich vor allem aus Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>76</id><name>Kulturkunde</name><ap>150</ap><featType>Allgemein</featType><desc>&lt;P&gt;&amp;quot;Wenn zwei das Gleiche machen, ist es doch nicht dasselbe.&amp;quot;
+Die Lebewesen aller Kulturen müssen essen, kennen überirdische
+Wesen horten einen Schatz aus Sagen und Legenden, kleiden oder
+schmücken sich, halte ihre Herrscher oder Ältesten in Ehren - aber
+alles auf unterschiedliche Art und Weise. Proben auf
+Gesellschaftliche und bestimmte Wissens-Talente sind ausserhalb der
+eigenen Kultur meist erschwert (um mindestens +3, eher +7, teilweise
+auch bis zu +15 Punkte; siehe WdS). Die SF &lt;I&gt;Kulturkunde&lt;/I&gt; erlaubt
+es, diese Erschwernisse zu ignorieren. Zuschläge, die auch ein
+Mitglied der entsprechenden Kultur betreffen würden - etwa
+SO-Differenz - werden hierdurch nicht beeinflusst). Als wählbare
+Kulturen für die SF gelten die Kulturen &lt;I&gt;Mittelreich, Almada,
+Andergast und Nostria, Bornland, Svellttal, Nordlande, Horasreich,
+Zyklopeninsel, Amazonen, Aranien, Tulamiedenlande, Novadi, Ferkina,
+Zahori, Throwal, Gjalskerländer, Fjarninger, Waldmenschen,
+Tocamuyac, Maraskan, Südaventurien, Bukanier, Nivesen, Norbarden,
+Trollzacker, Schwarze Lande, Ambosszwerge, Brillantzwerge, Erzzwerge,
+Hügelzwerge, Brobim, Auelfen, Waldelfen, Firnelfen, Steppenelfen,
+Orks, Goblins, Archaische Achaz, Stammes-Achaz, Trolle, Grolme&lt;/I&gt;
+sowie evtl. weitere bei der Entdeckung 'neuer' Kulturen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KL und IN 10, Sprache der Kultur 5,
+&lt;I&gt;Kulturkunde&lt;/I&gt; wird in erster Linie durch den Aufenthalt unter
+Wesen der betreffenden Kultur erworben (mindestens 1 Jahr; dabei dann
+jedoch kein weiterer Zeitaufwand), es ist aber durchaus auch möglich,
+genügend über eine Kultur aus Reiseberichten, Schriftwechseln oder
+von einem Lehrmeister zu erfahren (was jedoch einen den AP
+entsprechenden Zeitaufwand mit sich bringt).&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7, kann ohne Lehrmeister erlernt werden&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten&lt;/B&gt; Kostenlos, für die &lt;I&gt;Kulturkunde&lt;/I&gt; der eigenen
+Kultur; 150 AP für jede weitere Kultur; verbilligt (75 AP) für
+Helden mit dem Vorteil &lt;I&gt;Soziale Anpassungsfähigkeit&lt;/I&gt;
+beziehungsweise der SF &lt;I&gt;Nandusgefälliges Wissen&lt;/I&gt; (doppelt
+verbilligt, falls beide vorhanden: 38 AP) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>82</id><name>Nandusgefälliges Wissen</name><ap>200</ap><featType>Allgemein</featType><desc>&lt;P&gt;Der Held besitzt eine für aventurische Verhältnisse fantastische
+Allgemeinbildung und ist in der Lage, Wissen aus verwandten Gebieten
+zu kombinieren und daraus die richtigen Schlüsse zu ziehen. Beim
+Ableiten eines nicht vorhandenen Wissenstalents gelten für einen
+Besitzer dieser SF nur die Hälfte der Erschwernisse, insbesondere
+auch beim Ableiten auf KL. Dies kommt insbesondere bei Kenntnissen
+zum Tragen, die nur schwer von einem existierenden Talent abgedeckt
+werden, z.B. die Kenntnis bedeutender Künstler oder Kunstwerke,
+verbreiteter Gedichte und Standorte grosser Bibliotheken. Der Held
+hat grosse Erfahrung in der Bibliotheksrecherche und braucht nur die
+halbe Zeit, um interessante Dinge in Büchern zu finden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KL und IN mindestens 12&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, bei allen Kulturen und Professionen die auf
+Allgemeinbildung Wert legen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP; automatisch beim Vorteil &lt;I&gt;Akademische
+Ausbildung (Gelehrter)&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>84</id><name>Ortskenntnis</name><ap>150</ap><featType>Allgemein</featType><desc>&lt;P&gt;Der Held hat Kenntnis eines speziellen Gebiets, seiner
+Weghindernisse, Wetterverhältnisse, Strassenbedingungen, wilden
+Tiere und dergleichen. Das Gebiet sollte nicht grösser als 100
+Rechtmeilen (Quadratkilometer) sein, kann aber auch (im Falle eines
+Flusses oder einer Küste) eine Strecke von 100 mal 1 Meile oder gar
+eine Strasse und deren nähere Umgebung (250 Schritt mal 400 Meilen)
+sein. In einer Kleinstadt bedeutet dies Kenntnis der Stadt, ihrer
+Abkürzungen Kanalisationsanlagen, das Verhalten der Garde und so
+fort; in einer Grossstadt (ab ca. 10'000 Einwohnern) steht
+Ortskenntnis nur für die Kenntnis eines einzelnen Stadtteils. Diese
+SF kann mehrfach (wie für benachbarte Stadtteile, den Verlauf des
+Grossen Flusses und mehr) gewählt werden. Spieltechnisch erlaubt die
+SF bis zu 7 Punkte aus Probenzuschlägen auf passende Talente
+(&lt;I&gt;Wildnisleben&lt;/I&gt; und &lt;I&gt;Orientieren&lt;/I&gt; in der freien Natur,
+&lt;I&gt;Gassenwissen&lt;/I&gt; und &lt;I&gt;Orientierung&lt;/I&gt; in Städten) zu
+ignorieren, wenn sich der Held am passenden Ort aufhält. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Längerer Aufenthalt an gewünschtem Ort
+oder häufigere Reise entlang der Strecke (Meisterentscheid; bei
+'Aufenthalt' jedoch nicht unter einem halben Jahr); es ist allerdings
+kein weiterer Aufwand an Lernzeit nötig.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;AP:&lt;/B&gt; 150 pro bekannter Örtlichkeit / Strecke für erste
+Ortskenntnis, 100 AP für alle folgenden 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>18</id><name>Berufsgeheimnis</name><ap>100</ap><featType>Allgemein</featType><desc>&lt;P&gt;Der Held hat von einem Zunftmeister ein Geheimnis der
+Handwerkskunst erfahren, das ihm besondere Herstellungsverfahren oder
+die Verwendung spezieller Materialien erlaubt. Typische Beispiele
+stammen in erster Linie aus der Schmiedekunst, wo z.B.
+Damaszierungstechniken oder Zwergengespann jeweils ein solches
+&lt;I&gt;Berufsgeheimnis&lt;/I&gt; darstellen. Die Verarbeitung von (echten)
+Elfenbausch oder die Herstellung von Spinnenseide fallen ebenso in
+den Bereich der &lt;I&gt;Berufsgeheimnisse&lt;/I&gt; wie die Konstruktion von
+Hand-Torsionswaffen. Die entsprechenden Regelungen und Boni dürfen
+nur genutzt werden, wenn der Held das entsprechende &lt;I&gt;Berufsgeheimnis&lt;/I&gt;
+erlernt hat.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; TaW 15+ im passenden Handwerkstalent, ein
+bis zwei passende Hilfstalente jeweils auf TaW 7+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, üblicherweise bei Zunftmeistern und
+ähnlichen Veteranen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>62</id><name>Fälscher</name><ap>100</ap><featType>Allgemein</featType><desc>&lt;P&gt;Ermöglicht das effektive Fälsche von Schriftstücken und
+Kunstwerken. Diese SF erleichtert alle Proben (also meist solche auf
+&lt;I&gt;Schriftlicher Ausdruck, Alchimie, Malen/Zeichnen&lt;/I&gt; und andere
+handwerkliche Talente), die sich um eine solche Fälschung drehen, um
+3 Punkte. Proben auf &lt;I&gt;Sinnenschärfe&lt;/I&gt; oder passende
+Wissenstalent zum Enttarnen einer solchen Fälschung sind zusätzlich
+zu den übrigen TaP* um 5 Punkte erschwert. Die SF hilft auch bei
+Erkennen von Fälschungen. Entsprechende Proben sind um 5 Punkte
+erleichtert. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Alchimie 5, Malen/Zeichnen 7,
+Schriftlicher Ausdruck 5, passende Schriften 7+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>64</id><name>Geländekunde</name><ap>150</ap><featType>Allgemein</featType><desc>&lt;P&gt;Diese Fertigkeit steht einem Helden offen, wenn er längere Zeit
+in einer bestimmten Art von Wildnis verbringt. Er ist mit dieser Art
+von Umgebung besonders vertraut, so dass für ihn alle Proben, die
+sich auf den Umgang mit dieser Wildnis beziehen, um 3 Punkte
+erleichtert sind. Dies bezieht sich vor allem auf die Talente
+&lt;I&gt;Wettervorhersage, Wildnisleben, Tier-&lt;/I&gt; und &lt;I&gt;Pflanzenkunde&lt;/I&gt;
+sowie (je nach Meistermassgabe) auch &lt;I&gt;Sinnenschärfe&lt;/I&gt; und
+&lt;I&gt;Fährtensuchen&lt;/I&gt;. Vor allem ist ein &lt;I&gt;geländekundiger&lt;/I&gt; Held
+in der Lage, im entsprechenden Gebiet mittels &lt;I&gt;Wettervorhersage &lt;/I&gt;-
+oder &lt;I&gt;Wildnisleben&lt;/I&gt;-Proben sehr plötzlichen Phänomene
+vorherzusehen, die ein mit diesem Gebiet weniger vertrauter Held
+nicht erahnen kann (zum Beispiel einen für diese Region typischen,
+plötzlichen Wetterumschwung, oder auch tückische Sumpflöcher oder
+Schneewehen). Folgende Arten von Geländekunde sind möglich:
+&lt;I&gt;Dschungelkundig, Eiskundig, Gebirgskundig, Höhlenkundig,
+Maraskankundig, Meereskundig, Steppenkundig, Sumpfkundig, Waldkundig,
+Wüstenkundig&lt;/I&gt;. Geländekunde kann mehrfach (also für
+verschiedene Geländetypen) gewählt werden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; kann nur durch längeren Aufenthalt
+(mindestens 12 Monate) im entsprechenden Gelände erlernt werden; es
+ist allerdings auch kein weiterer Lernzeitaufwand erforderlich. Die
+12 Monate können unterbrochen werden, längere Unterbrechungen
+können zusätzliche Zeit erfordern.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7, kann ohne Lehrmeister erlernt werden&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP für die erste Geländekunde, jedes
+zusätzliche Gebiet 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>88</id><name>Rosstäuscher</name><ap>100</ap><featType>Allgemein</featType><desc>Mit Hilfe dieser SF kann ein Tier (meistens Pferd) gezielt geschminkt, d.h. optisch
+                aufgewertet werden, um einen höheren Preis beim Verkauf zu erzielen. Der Held kennt
+                viele Methoden und kann sie selbst anwenden (siehe ZBA). Bei allen Tätigkeiten, die
+                mit dem Verschönern von Pferden zusammenhängen (&lt;i&gt;(Sich) Verkleiden, Tierkunde, Ab-
+                richten, Pflanzenkunde, Alchimie, Menschenkenntnis&lt;/i&gt; und &lt;i&gt;Überreden&lt;/i&gt;) hat der
+                Held einen um 5 Punkte verbesserten TaW.
+                Dieser Bonus wird auch angerechnet, wenn der Held auf dem Pferdemarkt feststellen will,
+      &lt;P&gt;Mit Hilfe dieser SF kann ein Tier (meistens Pferd) gezielt
+geschminkt, d.h. optisch aufgewertet werden, um einen höheren Preis
+beim Verkauf zu erzielen. Der Held kennt viele Methoden und kann sie
+selbst anwenden (siehe ZBA). Bei allen Tätigkeiten, die mit dem
+Verschönern von Pferden zusammenhängen (&lt;I&gt;(Sich) Verkleiden,
+Tierkunde, Abrichten, Pflanzenkunde, Alchimie, Menschenkenntnis&lt;/I&gt;
+und &lt;I&gt;Überreden&lt;/I&gt;) hat der Held einen um 5 Punkte verbesserten
+TaW. Dieser Bonus wird auch angerechnet, wenn der Held auf dem
+Pferdemarkt feststellen will, ob ein Tier mittels solcher Methoden
+behandelt worden ist.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Reiten, Abrichten, Sich Verkleiden und
+Überreden jeweils TaW 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;          ob ein Tier mittels solcher Methoden behandelt worden ist.
+                &lt;b&gt;Vorraussetzungen:&lt;/b&gt; Reiten, Abrichten, Sich Verkleiden und Überreden jeweils TaW 7
+                &lt;b&gt;Verbreitung:&lt;/b&gt; 4
+            &lt;b&gt;Kosten:&lt;/b&gt; 100 AP
+            </desc></dsa_feat_item><dsa_feat_item><id>106</id><name>Standfest</name><ap>200</ap><featType>Allgemein</featType><desc>Für den Helden sind alle &lt;i&gt;Körperbeherrschungs-, Athletik-&lt;/i&gt; und &lt;i&gt;Akrobatik-&lt;/i&gt;
+                Proben um 2 und alle GE-Proben um 1 Punkt erleichtert, wenn sie mit dem Balancehalten
+                oder dem Stehenbleiben auf schwankendem Untergrund zu tun haben. Weiter hilft diese SF
+                im Kampf, nach bestimmten Manövern stehen zu bleiben oder einen Sturz bei einem Patzer
+     &lt;P&gt;Für den Helden sind alle &lt;I&gt;Körperbeherrschungs-, Athletik-&lt;/I&gt;
+und &lt;I&gt;Akrobatik-&lt;/I&gt; Proben um 2 und alle GE-Proben um 1 Punkt
+erleichtert, wenn sie mit dem Balance halten oder dem Stehenbleiben
+auf schwankendem Untergrund zu tun haben. Weiter hilft diese SF im
+Kampf, nach bestimmten Manövern stehen zu bleiben oder einen Sturz
+bei einem Patzer zu vermeiden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, bei Kulturen oder Professionen, die viel
+mit schwankendem oder unsicherem Untergrund (Schiffe, Gebirge) zu tun
+haben&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP; ist in den Vorteilen &lt;I&gt;Balance&lt;/I&gt; und
+&lt;I&gt;Herausragende Balance&lt;/I&gt; enthalten 
+&lt;/P&gt;           zu verweiden.
+                &lt;b&gt;Vorraussetzungen:&lt;/b&gt; GE 12
+                &lt;b&gt;Verbreitung:&lt;/b&gt; 4, bei Kulturen oder Professionen, die viel mit schwankendem oder
+                unsicherem Untergrund (Schiffe, Gebirge) zu tun haben
+                &lt;b&gt;Kosten:&lt;/b&gt; 200 AP; ist in den Vorteilen &lt;i&gt;Balance&lt;/i&gt; und &lt;i&gt;Herausragende Balance&lt;/i&gt;
+            enthalten
+            </desc></dsa_feat_item><dsa_feat_item><id>108</id><name>Talentspezialisierung</name><ap>1</ap><featType>Allgemein</featType><desc>&lt;P&gt;Der Held spezialisiert sich in einem Bereich eines Talents wie zum
+Beispiel auf einen der Bereiche Betteln, Feilschen oder Lügen für
+das Talent &lt;I&gt;Überreden&lt;/I&gt;, eine bestimmte Kultur im Talent
+&lt;I&gt;Geschichtswissen&lt;/I&gt; oder auf Schwarzschmied, Spengler,
+Waffenschmied oder Plättner im Talent &lt;I&gt;Grobschmied&lt;/I&gt;. Eine
+Auflistung der möglichen Spezialisierungen finden sich beim
+jeweiligen Talent. Der Held besitzt im gewählten Spezialgebiet einen
+um 2 Punkte höheren TaW.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; TaW 7, 14, 21 oder 28 für die erste,
+zweite, dritte und vierte Spezialisierung 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; je nach Talent bei entsprechenden
+Vorgebildeten oder durch lang- jährige Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; die erste Spezialisierung kostet 20 mal den
+Aktivierungsfaktor des Talents in AP (also z.B. 60 AP für ein Talent
+der Kategorie C); die zweite das Doppelte, die dritte das Dreifache,
+die vierte das Vierfache 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Kampf</name><folder><name>Ausweichen</name><dsa_feat_item><id>7</id><name>Ausweichen I</name><ap>300</ap><featType>Kampf</featType><desc>&lt;P&gt;Gibt 3 Punkte Bonus auf alle &lt;I&gt;Ausweichen&lt;/I&gt; Proben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 10&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5, durch Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP (150 bei Vorteil &lt;I&gt;Schlangenmensch&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>8</id><name>Ausweichen II</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Weitere 3 Punkte Bonus auf alle &lt;I&gt;Ausweichen&lt;/I&gt; Proben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12, SF &lt;I&gt;Ausweichen I&lt;/I&gt; und
+&lt;I&gt;Aufmerksamkeit&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, durch Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP (100 bei Vorteil &lt;I&gt;Schlangenmensch&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>9</id><name>Ausweichen III</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Weitere 3 Punkte Bonus auf alle &lt;I&gt;Ausweichen&lt;/I&gt; Proben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 15, SF &lt;I&gt;Ausweichen II&lt;/I&gt; und
+&lt;I&gt;Kampfreflexe&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, durch Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP (100 bei Vorteil &lt;I&gt;Schlangenmensch&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Rüstungsgewöhnung</name><dsa_feat_item><id>89</id><name>Rüstungsgewöhnung I</name><ap>150</ap><featType>Kampf</featType><desc>&lt;P&gt;-1 BE durch Rüstung eines bestimmten Typs und auch dann nur, wenn
+der Hauptteil dieser Rüstung getragen wird.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzung:&lt;/B&gt; KK 10&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6, durch mindestens einjährige Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP; verteuert für Magier mit &lt;I&gt;akademischer
+Ausbildung&lt;/I&gt; (225 AP) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>91</id><name>Rüstungsgewöhnung II</name><ap>300</ap><featType>Kampf</featType><desc>&lt;P&gt;Wie &lt;I&gt;Rüstungsgewöhnung I&lt;/I&gt;, aber bei allen Rüstungen. Der
+Held muss über längere Zeit (ca. 1 Jahr) Rüstung in verschiedenen
+Formen behindernde Rüstung (BE 4 oder höher) gekämpft und sich
+körperlich betätigt haben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzung:&lt;/B&gt; KK 12, SF &lt;I&gt;Rüstungsgewöhnung I&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, durch mindestens einjährige Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP; verteuert für Magier mit &lt;I&gt;akademischer
+Ausbildung&lt;/I&gt; (450 AP) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>90</id><name>Rüstungsgewöhnung III</name><ap>450</ap><featType>Kampf</featType><desc>&lt;P&gt;BE -2 für alle Rüstungen. Ausserdem wird er INI-Abzug durch
+Rüstungen halbiert (also (BE-2)/2. Zum Erwerb muss der Held während
+mindestens 2 Jahren in schwerer Rüstung (BE 5+ vor Abzug von
+BE-Boni) gekämpft und sich körperlich betätigt haben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzung:&lt;/B&gt; KK 15, SF &lt;I&gt;Rüstungsgewöhnung II&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, durch Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 450 AP; verteuert für Magier mit &lt;I&gt;akademischer
+Ausbildung&lt;/I&gt; (675 AP) 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Waffenlose Kampfstile</name><dsa_feat_item><id>115</id><name>Bornländisch</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Bornländische oder Gossen-Stil ist der erfolgreiche Einsatz
+aller körperlicher Mittel, um eine Rauferei zu gewinnen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Boni:&lt;/B&gt; &lt;I&gt;Ringen&lt;/I&gt; AT und PA je plus 1&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Manöver:&lt;/B&gt; Auspendeln, Biss, Block, Fussfeger, Griff,
+Halten, Klammern Knie, Kopfstoss, Niederringen, Schmutzige Tricks,
+Schwitzkasten, Tritt, Wurf, Würgegriff&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Raufen&lt;/I&gt; 5, &lt;I&gt;Ringen&lt;/I&gt; 5&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP (50 AP für &lt;I&gt;Schlangenmenschen&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>116</id><name>Gladiatorenstil</name><ap>150</ap><featType>Kampf</featType><desc>&lt;P&gt;Dieser Stil ist auf spektakuläre Manöver ausgelegt - und darauf,
+dass die Kontrahenten sich möglichst wenig Schaden zufügen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Boni:&lt;/B&gt; &lt;I&gt;Ringen&lt;/I&gt; oder &lt;I&gt;Raufen&lt;/I&gt; AT und PA je plus 1,
+Kämpfer kann bei TP(A) darauf verzichten, echte TP anzurichten&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Manöver:&lt;/B&gt; Auspendeln, Beinarbeit, Block, Doppelschlag,
+Eisenarm, Fussfeger, Gerade, Griff, Halten, Hoher Tritt, Klammer,
+Kopfstoss, Kreuzblock, Niederringen, Schwinger, Schwitzkasten,
+Sprung, Sprungtritt, Wurf &lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Raufen&lt;/I&gt; 7,
+&lt;I&gt;Ringen&lt;/I&gt; 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 (Gladiatoren, Schau- und Jahrmarktskämpfer)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP (75 AP für &lt;I&gt;Schlangenmenschen&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>117</id><name>Hammerfaust</name><ap>150</ap><featType>Kampf</featType><desc>&lt;P&gt;Dieser in Thorwal beliebte Stil lehrt die Grundlagen erfolgreichen
+Boxens.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Boni:&lt;/B&gt; &lt;I&gt;Raufen&lt;/I&gt; AT und PA je plus 1, darf Waffenlosen
+Ausfall durchführen, kann mit blosser Faust Gegenstände
+beschädigen, ohne sich dabei zu verletzen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Manöver:&lt;/B&gt; Auspendeln, Block, Doppelschlag, Eisenarm,
+Gerade, Handkante, Kreuzblock, Schmetterschlag, Schwinger&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Raufen&lt;/I&gt; 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 (aventurischer Nordosten, Schaukämpfer)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP (75 AP für &lt;I&gt;Schlangenmenschen&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>118</id><name>Hruruzat</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Verbreitet ist diese tänzerisch wirkende Kampftechnik bei den
+Waldmenschen. Auf Maraskan ist ein ähnlicher Stil bekannt.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Boni:&lt;/B&gt; &lt;I&gt;Raufen&lt;/I&gt; AT und PA je plus 1, alle Tritte
+richten 2W6 TP(A) an, fällt dabei ein Pasch (Zat), so darf der
+Schaden nochmals nachgewürfelt und addiert werden, Kämpfer kann für
+je 4 Punkte einer Ansage einen der Schadens W6 so um 1 Punkt
+verändern, dass ein Zat entsteht.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Manöver:&lt;/B&gt; Auspendeln, Beinarbeit, Block, Doppelschlag,
+Eisenarm, Fussfeger, Gerade, Griff, Handkante, Hoher Tritt, Knie,
+Kopfstoss, Kreuzblock, Schwinger, Sprung, Sprungtritt, Tritt, Wurf.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Raufen&lt;/I&gt; 10, &lt;I&gt;Ringen&lt;/I&gt; 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 (Waldmenschen-Kulturen, Maraskan, Südl.
+Statdtstaaten)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP (100 AP für &lt;I&gt;Schlangenmenschen&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>119</id><name>Mercenario</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Kampfstil, der zum Kampf in beengter Umgebung und zur Kombination
+mit dem bewaffneten Kampf entwickelt wurde.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Boni:&lt;/B&gt; &lt;I&gt;Raufen&lt;/I&gt; AT und PA je plus 1, erleidet nur einen
+AT-Abzug von 3, wenn er einen Bewaffneten in DK N bekämpft, AT zur
+DK-Verminderung gegen Bewaffneten nur um 2 Punkte erschwert.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Manöver:&lt;/B&gt; Auspendeln, Beinarbeit, Block, Eisenarm,
+Fussfeger, Griff, Halten, Klammer, Knaufschlag, Knie, Kopfstoss,
+Niederringen, Schmutzige Tricks, Schwinger, Schwitzkasten, Sprung,
+Tritt, Versteckte Klinge, Wurf&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Raufen&lt;/I&gt; 10, &lt;I&gt;Ringen&lt;/I&gt; 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 (Söldner und Seesöldner, eher
+Südaventurisch)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP (100 AP für &lt;I&gt;Schlangenmenschen&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>120</id><name>Unauer Schule</name><ap>150</ap><featType>Kampf</featType><desc>&lt;P&gt;Das Ringen nach der &lt;I&gt;Unauer Schule&lt;/I&gt; ist eine stark
+formalisierte Ausbildung in Griffen, Würfen und Haltetechniken.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Boni:&lt;/B&gt; &lt;I&gt;Ringen&lt;/I&gt; AT und PA je plus 1, Entwinden-Manöver
+(egal, ob GE- Akrobatik, Entfesseln, oder Ringen-Probe; auch gegen
+Pflanzen und Tiere) um 2 Punkte erleichtert&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Manöver:&lt;/B&gt; Auspendeln, Beinarbeit, Eisenarm, Fussfeger,
+Griff, Halten, Nieder- ringen, Klammer, Schwitzkasten, Wurf&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Ringen&lt;/I&gt; 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 (v.a. Tulamidenlande)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP (75 AP für &lt;I&gt;Schlangenmenschen&lt;/I&gt;) 
+&lt;/P&gt;</desc></dsa_feat_item></folder><dsa_feat_item><id>69</id><name>Kampf im Wasser</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Kämpfer erleidet nur die Hälfte der Abzüge beim Kampf in
+schulter- oder knietiefem Wasser (WdS 58). Erlaubt zudem einige
+Manöver, die sonst im Wasser nicht erlaubt sind. Kann im
+schultertiefen Wasser nur mit den Talenten &lt;I&gt;Dolche&lt;/I&gt;,
+&lt;I&gt;Infanteriewaffen&lt;/I&gt; und &lt;I&gt;Speere&lt;/I&gt; benutzt werden. Ansonsten
+mit allen Nahkampffertigkeiten ausser Peitsche und Lanzenreiten.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12, TaW &lt;I&gt;Körperbeherrschung&lt;/I&gt; 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, bei Kulturen die an Fluss- oder Seeufern
+leben, bei den verschiedenen Kämpfern zur See&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>70</id><name>Kampfgespür</name><ap>300</ap><featType>Kampf</featType><desc>&lt;P&gt;Hebt den INI-Basiswert um zusätzliche 2 Punkte. Erschwert
+Passierschläge gegen den Kämpfer um zusätzliche 2 Punkte. Erlaubt
+das allzeitige Umwandeln von Angriffs- in Abwehrreaktionen (und
+umgekehrt) ohne Ankündigung zu Beginn der Kampfrunde. Allfällige
+IN-Proben um zu verhindern, Überrascht zu werden sind um zusätzliche
+4 Punkte erleichtert. Bei Kombination mit den SF &lt;I&gt;Klingenwand&lt;/I&gt;
+oder &lt;I&gt;Klingensturm&lt;/I&gt; können AT- und PA-Werte nach Belieben
+aufgeteilt werden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; IN 15, SF &lt;I&gt;Aufmerksamkeit&lt;/I&gt; und
+&lt;I&gt;Kampfreflexe&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei erfahrenen Einzelkämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>71</id><name>Kampfreflexe</name><ap>300</ap><featType>Kampf</featType><desc>&lt;P&gt;Erhöht die INI-Basis eines Kämpfers um 4 Punkte, wenn seine BE 4
+Punkte nicht übersteigt.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; INI-Basiswert 10&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, professionelle Kämpfer&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>68</id><name>Improvisierte Waffen</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das verwenden fast jeden Gegenstandes als Waffe. Erlaubt
+zusätzliche Tricks, die sonst mit improvisierten Waffen nicht
+möglich sind (WdS 115). Bedingt auch für improvisierte Wurfwaffen
+einsetzbar.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; IN 12, GE 12, TaW &lt;I&gt;Raufen&lt;/I&gt; 10; um die
+SF auch mit Wurfwaffen einsetzen zu können, muss der TaW einer
+Wurfwaffe mindestens 10 betragen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, im Umfeld heimlicher Kulte und Orden, bei
+Schaukämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>77</id><name>Linkhand</name><ap>300</ap><featType>Kampf</featType><desc>&lt;P&gt;Diese SF repräsentiert die Erfahrung, die ein Held haben muss, um
+Schilde, Parierwaffen oder Zweitwaffen effektiv zu führen; für das
+Führen von Parier- und Zweitwaffen ist diese SF sogar
+Grundvoraussetzung. Die SF gibt einem Kämpfer mit Schild, Parier-
+oder Zweitwaffe einen Bonuspunkt auf PA und vermindert die Abzüge
+beim Kampf mit der falschen Hand auf -6/-6.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 10, GE 10&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6; überall wo Schilde oder Parierwaffen
+verbreitet sind&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP; 150 AP bei Vorteil &lt;I&gt;Beidhändig&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>72</id><name>Klingensturm</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt beim gleichnamigen Manöver (WdS 63) das gleichmässige
+Aufspalten des AT-Wertes auf zwei Attacken. Mit SF &lt;I&gt;Kampfgespür&lt;/I&gt;
+kann der AT-Wert beliebig aufgeteilt werden. Ein &lt;I&gt;Klingentänzer&lt;/I&gt;
+kann den AT-Wert sogar gegen 3 Gegner aufspalten.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; AT-Basis 9, SF &lt;I&gt;Ausfall&lt;/I&gt; und
+&lt;I&gt;Kampfreflexe&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, typisch für Schwert-, Säbel- und
+Fechtwaffenkämpfer&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>73</id><name>Klingentänzer</name><ap>400</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Kämpfer darf zur Bestimmung seiner Initiative 2W6 würfeln,
+zudem muss er nach einer misslungenen Ansage nur die Hälfte der
+angesagten Punkte als Zuschlag für seine nächste Aktion hinnehmen.
+Bei den SF &lt;I&gt;Klingensturm&lt;/I&gt; und &lt;I&gt;Klingenwand&lt;/I&gt; darf er die
+AT/PA-Werte nach Belieben und &lt;I&gt;nach&lt;/I&gt; dem Würfeln zuteilen, und
+er darf diese beiden SF gegen bis zu drei Gegner einsetzen. All dies
+ist nur bis zu einem BE von 2 möglich. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 15, &lt;I&gt;Kampfgespür, Klingensturm,
+Klingenwand&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 1; einige wenige - vornehmlich tulamidische –
+Schwertmeister&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 400 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>74</id><name>Klingenwand</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Held ist in der Lage, seinen PA-Wert gleichmässig aufzuteilen
+und so gegen zwei Gegner einzusetzen; verfügt er zudem über die SF
+&lt;I&gt;Kampfgespür&lt;/I&gt;, kann er den PA-Wert beliebig aufteilen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; PA-Basis 9, &lt;I&gt;Defensiver Kampfstil,
+Kampfreflexe&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, typisch für Schwert-, Säbel- und
+Fechtwaffenkämpfer&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>75</id><name>Kriegsreiterei</name><ap>300</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Held muss deutlich reduzierte Zuschläge bei Kampfaktionen mit
+dem Pferd oder vom Pferderücken aus in Kauf nehmen. Die SF erlaubt
+zudem bestimmte Manöver, die anderen Reitern verschlossen bleiben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Reiten&lt;/I&gt; 10, &lt;I&gt;Reiterkampf&lt;/I&gt;;
+diese SF kann sich auch auf das Talent &lt;I&gt;Fahrzeug Lenken&lt;/I&gt; (TaW
+10) beziehen, wenn der Held einen Streitwagen lenkt.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3; bei Reiterkulturen und den Veteranen
+beritten kämpfender Professionen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>67</id><name>Hammerschlag</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das gleichnamige Alles-oder-Nichts-Manöver (WdS 63).&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, SF &lt;I&gt;Niederwerfen&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei Axt- und Zweihandschwertkämpfern, bei
+Elitegarden mit Infanteriewaffen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>66</id><name>Halbschwert</name><ap>150</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das kämpfen mit bestimmten Waffen in einer kürzeren
+Distanzklasse. Ermöglicht zusätzlich in dieser DK Manöver wie
+&lt;I&gt;Defensiver Kampf&lt;/I&gt; oder &lt;I&gt;Gezielter Stich&lt;/I&gt;. Verringert die
+angerichteten TP der Waffe (WdS 72).&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Aufmerksamkeit&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5, bei professionelle Zweihandschwerter und
+Infanteriewaffen-Kämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>79</id><name>Meisterliches Entwaffnen</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Ermöglicht auch das Entwaffnen von Kämpfern mit Zweihandwaffen.
+Die KK-Probe des Gegners ist zudem erschwert, wenn er eine
+Einhandwaffe führt.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 15, &lt;I&gt;Entwaffnen&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, bei Duellkämpfern, Schwertgesellen und
+Rondra- Geweihten&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>80</id><name>Meisterparade</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Durch Erschweren der eigenen Parade erhält der Kämpfer einen
+entsprechenden Bonus auf seine nächste Attacke.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; PA-Basis 8&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5, bei vielen Kämpfern mit Einhandwaffe (und
+Schild)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>81</id><name>Meisterschütze</name><ap>300</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Held kann bei einem angesagten Fernkampf-Angriff seine volle
+Ansage zu den TP addieren. Er erhält zudem geringere Abzüge bei
+verschiedenen Fernkampf-Manövern und -bedingungen. Angesagte
+Fernangriffe und gezielte Schüsse kosten nur eine zusätzliche
+Aktion.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; TaW der Fernwaffe 15, &lt;I&gt;Scharfschütze&lt;/I&gt;;
+muss für jedes mögliche Fernkampftalent separat erlernt werden&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2; bei einzelnen Scharfschützen und Jägern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>3</id><name>Aufmerksamkeit</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Held benötigt nur 1 statt 2 Aktionen, um sich im Kampf zu
+&lt;I&gt;orientieren&lt;/I&gt;. Die dazugehörige IN-Probe entfällt. Die
+IN-Proben, um &lt;I&gt;Überraschung&lt;/I&gt; zu verhindern oder bei einem
+&lt;I&gt;Hinterhalt&lt;/I&gt; schnell zu reagieren, ist um 4 Punkte erleichtert.
+&lt;I&gt;Passierschläge&lt;/I&gt; gegen den Helden sind um 4 Punkte erschwert.
+Ein Held mit dieser Sonderfertigkeit muss zudem das Umwandeln von
+Aktionen nicht zu Beginn der Kampfrunde ankündigen sondern erst,
+bevor er die erste Angriffs- oder Abwehraktion durchführt.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; IN 12&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, durch Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>6</id><name>Ausfall</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Ermöglicht dem Kämpfer, das gleichnamige Manöver (WdS 59)
+durchzuführen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KO 12; SF &lt;I&gt;Finte&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, professionelle Kämpfer&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>15</id><name>Befreiungsschlag</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Ermöglicht das gleichnamige Manöver (WdS 60); einen Rundumschlag
+gegen bis zu drei Gegnern, um diese zurückzudrängen und sich Raum
+zu verschaffen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 15, MU 12, SF &lt;I&gt;Niederwerfen&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, vor allem bei Axtkämpfern (Zwerge,
+Thorwaler)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>16</id><name>Beidhändiger Kampf I</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Die Abzüge im Kampf mit links werden vermindert auf -3/-3.
+Erlaubt zusätzliche Manöver sowie Nutzung des KK-Bonus auf die TP
+der linken Hand.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12, SF &lt;I&gt;Linkhand&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei Gladiatoren und Schaukämpfern, im
+tulamidischen und Südaventurischen Raum. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP; Vorteil &lt;I&gt;Beidhändig&lt;/I&gt;: 50 AP; Vorteil
+&lt;I&gt;Linkshändig&lt;/I&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>17</id><name>Beidhändiger Kampf II</name><ap>400</ap><featType>Kampf</featType><desc>&lt;P&gt;Keine Abzüge bei Kampf mit linker Hand. Erlaubt zusätzliche
+Manöver und stellt eine zweite Angriffs- oder Abwehrreaktion pro KR
+(nicht kumulativ mit &lt;I&gt;Tod von Links&lt;/I&gt; oder &lt;I&gt;Parierwaffen II&lt;/I&gt;)
+mit der Zweitwaffe zur Verfügung.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 15, SF &lt;I&gt;Beidhändiger Kampf I&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, bei Gladiatoren und Schaukämpfern, im
+tulamidischen und Südaventurischen Raum&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 400 AP; Vorteil &lt;I&gt;Beidhändig&lt;/I&gt;: 200 AP; Vorteil
+&lt;I&gt;Linkshändig&lt;/I&gt;: 300 AP; Bei Beherrschung der SF &lt;I&gt;Tod von Links&lt;/I&gt;
+werden jene AP in vollem Umfang als Rabatt angerechnet. 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>19</id><name>Betäubungsschlag</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Ermöglicht das Manöver &lt;I&gt;Betäubungsschlag&lt;/I&gt; (WdS 61).
+Halbiert die Erschwernisse bei einem &lt;I&gt;Stumpfen Schlag&lt;/I&gt;.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Finte&lt;/I&gt; und &lt;I&gt;Wuchtschlag&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei Wundärzten, Tierfängern oder
+zwielichtigen Personen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>20</id><name>Binden</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das gleichnamige Manöver während der eigenen Parade, um
+die nächste gegnerische PA zu erschweren oder die eigene AT zu
+erleichtern.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; IN und GE 12; SF &lt;I&gt;Meisterparade&lt;/I&gt; oder
+&lt;I&gt;Parierwaffen I&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, vor allem bei Schwert- und
+Fechtwaffenkämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>21</id><name>Blindkampf</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Abzüge auf AT und PA bei schlechten Sichtverhältnissen betragen
+maximal -2/-2. Kämpfe in DK &lt;I&gt;Pike&lt;/I&gt; sowie Angriffe mit Peitsche
+oder beim Lanzenreiten sind nicht erleichtert. In Überraschungs- und
+Hinterhaltsituationen sind allfällige IN-Proben um 2 Punkte
+erleichtert.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12, TaW &lt;I&gt;Sinnenschärfe&lt;/I&gt; 15, SF
+&lt;I&gt;Kampfgespür&lt;/I&gt;; gilt nicht für Fernkampffähigkeiten 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 1, Mystiker und Ordenskrieger&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>24</id><name>Defensiver Kampfstil</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Beim Umwandeln von Angriff- in Abwehrreaktion verfällt der
+übliche 4 Punkte Malus. Die Absicht zu einer solchen Umwandlung muss
+zu Beginn der Kampfrunde verkündet werden, selbst wenn die SF
+&lt;I&gt;Aufmerksamkeit&lt;/I&gt; oder &lt;I&gt;Kampfgespür&lt;/I&gt; vorhanden sind.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12, SF &lt;I&gt;Meisterparade&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, bei vielen professionellen Kämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>25</id><name>Doppelangriff</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt Zuschlagen mit zwei Nahkampfwaffen gegen einen Gegner (WdS
+61).&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Beidhändiger Kampf I&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei Kämpfern, die einen beidhändigen
+Kampfstil pflegen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP; bei Vorteil &lt;I&gt;Beidhändig&lt;/I&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>58</id><name>Entwaffnen</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Ermöglicht einen Entwaffnungsangriff: Entweder mit einer um 8
+Punkte erschwerten Attacke, oder mit einer entsprechenden
+Abwehraktion (erfordert SF &lt;I&gt;Meisterparade&lt;/I&gt; oder eine Parierwaffe
+und SF &lt;I&gt;Parierwaffen I&lt;/I&gt;). Mit dieser SF ist es nicht möglich,
+einen Kämpfer mit zweihändig geführter Waffe zu entwaffnen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 12, SF &lt;I&gt;Binden&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, vor allem bei Schwertgesellen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>59</id><name>Festnageln</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das Ausführen des gleichnamigen Manövers (WdS 62), um
+den Gegner am Boden zu halten.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 13, KK 13&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, vor allem bei Grosswildjägern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>60</id><name>Finte</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Durch erschweren des eigenen AT-Wurfs wird die gegnerische PA
+erschwert. Dies ist auch ohne diese SF möglich, allerdings weniger
+effektiv (WdS 62). &lt;I&gt;Finten&lt;/I&gt; sind bei Benutzung eines Schildes
+erschwert.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12, AT-Basis 8&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6, fast überall ausser bei Barbaren-Kulturen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>61</id><name>Formation</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das Koordinieren von AT- und PA-Aktionen in Gruppen von
+mindestens 3 Personen (WdS 68)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Aufmerksamkeit&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5, vor allem bei Heeren die mit Speeren oder
+Infanteriewaffen ausgestattet sind&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>63</id><name>Gegenhalten</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Ermöglicht einen Gegenangriff in einen feindlichen Angriff hinein
+(WdS 68).&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, GE 12, SF &lt;I&gt;Meisterparade&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, typischerweise bei Duell-orientierten
+Kämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>65</id><name>Gezielter Stich</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das gleichnamige Manöver (WdS 62), das den gegnerischen
+RS umgeht, leichter Wunden verursacht und automatisch eine Wunde
+anrichtet.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Finte&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, bei vielen Speer- und Fechtwaffenkämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>83</id><name>Niederwerfen</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das entsprechende Manöver, eine besondere Form des
+Wuchtschlags.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Wuchtschlag&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, vor allem bei Kämpfern mit Äxten oder
+Hämmern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>85</id><name>Parierwaffen I</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Gibt zusätzliche Boni und ermöglicht bestimmte Manöver beim
+Umgang mit Parierwaffen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12, &lt;I&gt;Linkhand&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4; bei entsprechenden Kulturen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP; 150 AP bei Vorteil &lt;I&gt;Beidhändig&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>86</id><name>Parierwaffen II</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Gibt weitere Boni und Zugang zu weiteren Manövern beim Umgang mit
+Parierwaffen. Erlaubt zudem eine zusätzliche Abwehraktion mit der
+Parierwaffe.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 15, &lt;I&gt;Parierwaffen I&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3; bei entsprechenden Kulturen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP; 150 AP bei Vorteil &lt;I&gt;Beidhändig&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>87</id><name>Reiterkampf</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Held muss geringere Zuschläge auf &lt;I&gt;Reiten&lt;/I&gt;-Proben im
+Kampf hinnehmen bzw. kann ganz auf bestimmte Proben verzichten. Zudem
+richten Attacken gegen Fusskämpfer vom Pferderücken aus mehr TP an
+und sind erleichtert. Erlaubt bestimmte Manöver vom Pferderücken
+aus.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Reiten&lt;/I&gt; 7; kann sich auch auf &lt;I&gt;Fahr-
+zeug Lenken&lt;/I&gt; beziehen (TaW 7), wenn der Held einen Streitwagen
+lenkt. In diesem Fall muss die SF separat als &lt;I&gt;Reiterkampf (Streit-
+wagen)&lt;/I&gt; erlernt werden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5; bei allen Reiterkulturen und berittenen
+Kämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>92</id><name>Scharfschütze</name><ap>300</ap><featType>Kampf</featType><desc>&lt;P&gt;Ein Scharfschütze kann bei einem &lt;I&gt;Angesagten Fernkampfangriff&lt;/I&gt;
+die volle Ansage zu seinen TP addieren; er benötigt dabei zwei
+zusätzliche Aktionen weniger zum Zielen (mindestens jedoch eine
+zusätzliche Aktion). Ein Scharfschütze verwendet bei &lt;I&gt;Gezielten
+Schüssen&lt;/I&gt; (bei Verwendung des Zonentreffersystems) die
+entsprechend erleichterte Spalte; dafür benötigt er halb so viele
+zusätzliche Aktionen wie der Aufschlag beträgt. Er erleidet nur
+einen Aufschlag von einem Punkt (statt zwei) bei &lt;I&gt;Schnellschüssen&lt;/I&gt;.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; TaW der Fernkampfwaffe 7; wird für jedes
+mögliche Fernkampftalent separat erlernt&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5, bei vielen Jägern und einigen
+professionelle Fernwaffen- Kämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>93</id><name>Schildkampf I</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Gibt einen weiteren +2 Bonus auf PA beim Benutzen eines Schildes.
+Erlaubt es zudem, mit dem Talent &lt;I&gt;Raufen&lt;/I&gt; und einigen
+Modifikatoren den Schild für Angriffe zu benutzen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 12, &lt;I&gt;Linkhand&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6, bei sehr vielen professionellen Kämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP, 150 mit Vorteil &lt;I&gt;Beidhändig&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>94</id><name>Schildkampf II</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Gibt weitere +2 Punkte auf PA bei der Benutzung eines Schildes.
+Erlaubt zudem eine zweite Abwehraktion mit dem Schild pro KR.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 15, &lt;I&gt;Schildkampf I&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei professionelle Kämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP, 150 bei Vorteil &lt;I&gt;Beidhändig&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>95</id><name>Schildspalter</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Ermöglicht das entsprechende Manöver.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 15, &lt;I&gt;Niederwerfen&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, vor allem bei Axtkämpfern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>96</id><name>Schnellladen</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Diese SF kann für Bögen oder Armbrüste erlernt werden. Im Falle
+von Bögen sinkt die Ladezeit um eine Aktion, im Falle von Armbrüsten
+wird sie auf 3/4 des in den Tabellen angegebenen Werts reduziert.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; FF 12, KK 12, TaW &lt;I&gt;Bogen&lt;/I&gt; resp.
+&lt;I&gt;Armbrust&lt;/I&gt; 7; muss für die beiden genannten Talente separat
+erlernt werden&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5, bei professionellen Fernkampf-Einheiten&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>97</id><name>Schnellziehen</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Held benötigt eine freie Aktion, um eine Waffe aus einer
+Gürtelscheide zu ziehen, eine volle Aktion, um eine Waffe aus einer
+Rückenscheide zu ziehen und drei Aktionen, um einen Schild an den
+Arm zu binden. Diese SF gilt auch für Wurfspeere, -äxte und
+-messer, wobei für letztere Brustgurte und Armscheiden als
+Gürtelscheiden zählen. Die SF muss nicht für jede Waffengattung
+separat erlernt werden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; GE 12, FF 10&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4, verbreitet im tulamidischen Raum&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP, 100 bei Vorteil &lt;I&gt;Schlangenmensch&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>105</id><name>Spiessgespann</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Mit dieser SF kann ein überlanger Spiess (Pike, Drachentöter)
+gleichzeitig von zwei Personen geführt werden. Wenn beiden eine AT
+oder PA gelingt, gelingt die gesamte Angriffs- oder Abwehraktion. Bei
+einer gelungenen Attacke richtete das Spiessgespann doppelten Schaden
+an, zudem können die Kämpfer ihre KK addieren, um den Schadensbonus
+(TP/KK) der Waffe zu nutzen. Die INI eines Spiessgespanns ist so hoch
+wie die niedrigste INI der beteiligten Kämpfer modifiziert um den
+INI-Wert der Waffe. Spezielle Manöver und SF können nur eingesetzt
+werden, wenn beide Kämpfer die Proben bestehen und die nötigen SF
+besitzen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; TaW &lt;I&gt;Speere&lt;/I&gt; 10, &lt;I&gt;Sturmangriff&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, fast ausschliesslich bei Zwergen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>107</id><name>Sturmangriff</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das gleichnamige Manöver.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 12, &lt;I&gt;Wuchtschlag&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, vor allem bei Kulturen, die mit Äxten oder
+Speeren kämpfen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>109</id><name>Tod von Links</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Kämpfer kann pro KR eine zusätzliche Attacke mit seiner
+Parierwaffe durchführen. Dies erhöht nicht die Anzahl der freien
+Aktionen pro Runde. Nicht kumulierbar mit einer Zusatzaktion aus
+&lt;I&gt;Parierwaffen II&lt;/I&gt; oder &lt;I&gt;Beidhändiger Kampf II&lt;/I&gt;.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Beidhändiger Kampf I, Parierwaffen II&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei Parierwaffen-Kämpfern (v.a. im
+Horasreich)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP, 75 bei Vorteil &lt;I&gt;Beidhändig&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>110</id><name>Todesstoss</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das gleichnamige Manöver mit einer zum Stich geeigneten
+Waffe.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, &lt;I&gt;Gezielter Stich&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, für Speerkämpfer bei erfahrenen Jägern,
+für Fechter bei Duellisten im Horasreich und Almada&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>111</id><name>Turnierreiterei</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erleichtert alle &lt;I&gt;Lanzenreiten&lt;/I&gt;-Proben für einen
+Turnierreiter um 5 Punkte (nicht kumulativ mit eventuellen
+Erleichterungen aus &lt;I&gt;Kriegsreiterei&lt;/I&gt;), die &lt;I&gt;Reiten&lt;/I&gt;-Probe
+um nach einem Treffer im Sattel zu bleiben, ist um die Hälfte
+erleichtert. Bei einem &lt;I&gt;Lanzenreiten&lt;/I&gt;-Angriff darf der Reiter
+eine Ansage in Höhe seiner Lanzenreiten-AT machen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; TaW &lt;I&gt;Reiten&lt;/I&gt; 10; &lt;I&gt;Reiterkampf&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei klassischen Rittern, also in
+Weiden/Greifenfurt, Garetien, Nostria/Andergast und dem Bornland&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>112</id><name>Umreissen</name><ap>100</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das gleichnamige Manöver.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 12, &lt;I&gt;Finte&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>113</id><name>Unterwasserkampf</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Der Held erleidet nicht die üblichen Einbussen beim Kampf unter
+Wasser. Diese SF kann nur mit den Nahkampf-Talenten &lt;I&gt;Dolche,
+Fechtwaffen, Raufen, Ringen, Speere&lt;/I&gt; eingesetzt werden. Unter
+Wasser ist zudem nur eine eingeschränkte Zahl von Manövern möglich.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; TaW &lt;I&gt;Schwimmen&lt;/I&gt; 10; der Held muss zur
+Anwendung in der Lage sein, unter Wasser zu atmen oder lange genug
+die Luft anhalten zu können&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 1, bei einigen wenigen Seekämpfern, ansonsten
+nur bei Unterwasserwesen (Necker, Risso etc.)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>114</id><name>Waffe zerbrechen</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt das entsprechende Manöver.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 12, PA-Basis 9, &lt;I&gt;Binden&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei Parierwaffen-Kämpfern im yaquirischen
+oder tulamidischen Umfeld&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>121</id><name>Waffenspezialisierung</name><ap>1</ap><featType>Kampf</featType><desc>&lt;P&gt;Eine Spezialisierung auf eine Waffe bedeutet, dass der Held mit
+dieser Waffe eine um 1 Punkt erhöhte AT und PA aufweist. An den
+Steigerungskosten der Waffenkategorie ändert sich dabei nichts. Bei
+Fernwaffen erhöht sich der FK-Wert um 2 Punkte. Bei einer
+Waffenspezialisierung spezialisiert man sich auf eine Waffenart,
+nicht auf eine einzelne Waffe: Also zum Beispiel auf die Waffenart
+&lt;I&gt;Skraja&lt;/I&gt;. Ein Held kann diese SF mehrmals für unterschiedliche
+Waffenarten (auch aus verschiedenen Kampftechnik-Talenten) erlernen.
+Eine Spezialisierung auf improvisierte Waffen ist nicht möglich. Die
+Bonuspunkte sind mit denen aus einer persönlichen Waffe kumulativ.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; TaW 7 in entsprechender Kampftechnik, für
+zweite Spezialisierung in der selben Kampftechnik TaW 14, für dritte
+TaW 21 etc. Es ist nicht möglich, sich mehrmals auf die selbe
+Waffengattung zu spezialisieren.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2-4 je nach Art und Verbreitung der Waffe oder
+durch langjährige Praxis&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 20 mal Aktivierungsfaktor AP; eine zweite
+Spezialisierung in der selben Kampftechnik kostet das Doppelte, eine
+dritte das Dreifache etc. 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>122</id><name>Windmühle</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Erlaubt den Einsatz des gleichnamigen Manövers.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Gegenhalten, Wuchtschlag&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, bei erfahrenen Kämpfern mit Schwert,
+Anderthalthänder, Zweihänder&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>123</id><name>Wuchtschlag</name><ap>200</ap><featType>Kampf</featType><desc>&lt;P&gt;Die Erschwernis auf AT wird bei erfolgreicher Attacke zum Schaden
+hinzugefügt.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KK 12&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Magisch</name><folder><name>Hexenflüche</name><dsa_feat_item><id>134</id><name>Hexenfluch: Beiss auf Granit</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>138</id><name>Hexenfluch: Beute</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>135</id><name>Hexenfluch: Hagelschlag</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>136</id><name>Hexenfluch: Hexenschuss</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>137</id><name>Hexenfluch: Kornfäule</name><ap>125</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 125 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>139</id><name>Hexenfluch: Krötenkuss</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>140</id><name>Hexenfluch: Mit Blindheit schlagen</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>141</id><name>Hexenfluch: Pech an den Hals</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>142</id><name>Hexenfluch: Pestilenz</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>143</id><name>Hexenfluch: Schlaf rauben</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>144</id><name>Hexenfluch: Todesfluch</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>145</id><name>Hexenfluch: Unfruchtbarkeit</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>146</id><name>Hexenfluch: Viehverstümmelung</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>147</id><name>Hexenfluch: Warzen spriessen</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>148</id><name>Hexenfluch: Zunge lähmen</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>133</id><name>Hexenfluch: Ängste mehren</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Diese Flüche umgehen die Magieresistenz und sind teilweise sehr
+schwer aufzuheben. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Profession Hexe, Teilnahme an Hexennächten
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Keulenrituale</name><dsa_feat_item><id>162</id><name>Keulenritual: Apport der Keule</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane, RK &lt;I&gt;Geister binden&lt;/I&gt; 11,
+&lt;I&gt;Geister Rufen&lt;/I&gt; 11 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>160</id><name>Keulenritual: Bann der Keule</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane, RK &lt;I&gt;Geister binden&lt;/I&gt; 11 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>161</id><name>Keulenritual: Geist der Keule</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane, RK &lt;I&gt;Geister binden&lt;/I&gt; 11 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>155</id><name>Keulenritual: Gespür der Keule</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane, RK &lt;I&gt;Geister binden&lt;/I&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>157</id><name>Keulenritual: Hilfe der Keule</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;&lt;B&gt;Hilfe der Keule&lt;/B&gt; 
+&lt;/P&gt;
+&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane, RK &lt;I&gt;Geister binden&lt;/I&gt; 7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>153</id><name>Keulenritual: Härte der Keule</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>156</id><name>Keulenritual: Kraft der Keule</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane, RK &lt;I&gt;Geister binden&lt;/I&gt; 7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>158</id><name>Keulenritual: Nähe zur Natur</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane, RK &lt;I&gt;Geister binden&lt;/I&gt; 7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>154</id><name>Keulenritual: Opferkeule</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>152</id><name>Keulenritual: Weihe der Keule</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>159</id><name>Keulenritual: Zauber der Keule</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;OR Mit diesem Ritual kann ein Schamane seine Knochenkeule
+verzaubern. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Schamane, RK &lt;I&gt;Geister binden&lt;/I&gt; 9 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Schutzkreise</name><dsa_feat_item><id>98</id><name>Schutzgeist gegen Traumgänger</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Schutzkreise schliessen Wesen aus einem Bereich aus. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Zib5, Mag2 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>99</id><name>Schutzkreis gegen Elementare</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Schutzkreise schliessen Wesen aus einem Bereich aus. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Ach5, Alc4, Mag3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>100</id><name>Schutzkreis gegen Gehörnte Dämonen</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Schutzkreise schliessen Wesen aus einem Bereich aus. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; oder ZfW INVOCATIO
+MINOR/MAIOR +7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Mag5, Alc2 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP (50 falls Bannkreis gegen Niedere Dämonen) 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>101</id><name>Schutzkreis gegen Geisterwesen</name><ap>25</ap><featType>Magisch</featType><desc>&lt;P&gt;Schutzkreise schliessen Wesen aus einem Bereich aus. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Mag5, Ach4, Zib3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 25 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>102</id><name>Schutzkreis gegen Niedere Dämonen</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Schutzkreise schliessen Wesen aus einem Bereich aus. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; oder ZfW INVOCATIO
+MINOR/MAIOR +7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Mag6, Alc4, Zib1 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>103</id><name>Schutzkreis gegen Reptilien</name><ap>25</ap><featType>Magisch</featType><desc>&lt;P&gt;Schutzkreise schliessen Wesen aus einem Bereich aus. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Mag3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 25 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>104</id><name>Schutzkreis gegen Ungeziefer</name><ap>25</ap><featType>Magisch</featType><desc>&lt;P&gt;Schutzkreise schliessen Wesen aus einem Bereich aus. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Ach6, Mag4, Alc3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 25 AP 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Druidische Dolchrituale</name><dsa_feat_item><id>27</id><name>Dolchritual: Bann</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual kann der Vulkanglasdolch der Druiden belegt
+werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Merkmal Antimagie oder Geisterwesen, RkW 7
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>28</id><name>Dolchritual: Ernte</name><ap>25</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 25 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>29</id><name>Dolchritual: Gespür</name><ap>25</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; IN 12 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 25 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>30</id><name>Dolchritual: Lebenskraft</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>31</id><name>Dolchritual: Leib</name><ap>25</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual kann der Vulkanglasdolch der Druiden belegt
+werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KO 12, RkW 7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 25 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>32</id><name>Dolchritual: Licht</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>33</id><name>Dolchritual: Opferdolch</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual kann der Vulkanglasdolch der Druiden belegt
+werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Blutmagie&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>34</id><name>Dolchritual: Schneide</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Merkmal Erz oder Feuer, RkW 11 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>35</id><name>Dolchritual: Schutz</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RkW 11, &lt;I&gt;Wildnisleben&lt;/I&gt; 10 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>36</id><name>Dolchritual: Weg</name><ap>25</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 25 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>37</id><name>Dolchritual: Weihe</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>38</id><name>Dolchritual: Weisung</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Mit diesem Ritual können der Vulkanglasdolch der Druiden oder die
+Goldsichel der Geoden belegt werden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Kraftlinienmagie I&lt;/I&gt;, RkW 11,
+&lt;I&gt;Magiekunde&lt;/I&gt; 10 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Druidische Herrschaftsrituale</name><dsa_feat_item><id>39</id><name>Herrschaftsritual: Amulett der Herrschaft</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;Dieses Ritual erlaubt die Einflussnahme auf ein Opfer über eine
+grosse Entfernung. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RkW 7, RK Druide (oder Geister Binden für
+Ferkina/ Trollzacker-Schamane) 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>40</id><name>Herrschaftsritual: Kristall der Herrschaft</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Dieses Ritual erlaubt die Einflussnahme auf ein Opfer über eine
+grosse Entfernung. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RkW 11, RK Druide (oder Geister Binden für
+Ferkina/ Trollzacker-Schamane) 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Ko</desc></dsa_feat_item><dsa_feat_item><id>41</id><name>Herrschaftsritual: Miniatur der Herrschaft</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Dieses Ritual erlaubt die Einflussnahme auf ein Opfer über eine
+grosse Entfernung. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RkW 7, RK Druide (oder Geister Binden für
+Ferkina/ Trollzacker-Schamane) 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>42</id><name>Herrschaftsritual: Wachs der Herrschaft</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Dieses Ritual erlaubt die Einflussnahme auf ein Opfer über eine
+grosse Entfernung. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RkW 7, RK Druide (oder Geister Binden für
+Ferkina/ Trollzacker-Schamane) 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Bannkreise</name><dsa_feat_item><id>10</id><name>Bannkreis gegen Elementare</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Bannkreise halten Wesen im Inneren gefangen. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Ach5, Alc4, Mag3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>11</id><name>Bannkreis gegen Geisterwesen</name><ap>25</ap><featType>Magisch</featType><desc>&lt;P&gt;Bannkreise halten Wesen im Inneren gefangen. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Mag5, Ach4, Zib3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 25 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>12</id><name>Bannkreis gegen Niedere Dämonen</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Bannkreise halten Wesen im Inneren gefangen. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; oder ZfW INVOCATIO
+MINOR/MAIOR +7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Mag6, Alc4, Zib1 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>13</id><name>Bannkreis gegen gehörnte Dämonen</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Bannkreise halten Wesen im Inneren gefangen. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Zauberzeichen&lt;/I&gt; oder ZfW INVOCATIO
+MINOR/MAIOR +7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; Mag5, Alc2 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP (50 falls Bannkreis gegen Niedere Dämonen) 
+&lt;/P&gt;</desc></dsa_feat_item></folder><folder><name>Elfenlieder</name><dsa_feat_item><id>48</id><name>Elfenlied: Erinnerungsmelodie</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>49</id><name>Elfenlied: Freundschaftslied</name><ap>50</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 50 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>50</id><name>Elfenlied: Friedenslied</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>51</id><name>Elfenlied: Lied der Lieder</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>52</id><name>Elfenlied: Lied der Reinheit</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>53</id><name>Elfenlied: Lied des Trostes</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>54</id><name>Elfenlied: Melodie der Kunstfertigkeit</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>55</id><name>Elfenlied: Sorgenlied</name><ap>75</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 75 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>56</id><name>Elfenlied: Windgeflüster</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>57</id><name>Elfenlied: Zaubermelodie</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Die traditionellen Melodien der Elfen stellen machtvolle
+Zauberrituale dar. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Zweistimmiger Gesang&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item></folder><dsa_feat_item><id>168</id><name>Regeneration</name><ap>100</ap><featType>Magisch</featType><desc>Regeneration 1d6+1 pro Nacht.
+&lt;b&gt;Vorraussetzungen:&lt;/b&gt;
+&lt;b&gt;Verbreitung:&lt;/b&gt;6
+&lt;b&gt;Kosten:&lt;/b&gt;100 AP</desc></dsa_feat_item><dsa_feat_item><id>167</id><name>Zauberkontrolle</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;ZH&lt;/P&gt;
+&lt;P&gt;Der Zaubernde kann jeden von ihm gesprochene Spruch
+nach Belieben noch während seiner Wirkung aufheben, was
+normalerweise nur mit Sprüchen funktioniert, die aufrechterhalten
+werden. Ein Zaubernder mit Zauberkontrolle kann das Ergebnis
+seiner Zauberprobe einschätzen - und weiss damit zu sagen, ob
+ein Zauber gelungen ist, an den Fähigkeiten des Zauberers selbst
+gescheitert ist oder erst durch MR oder andere Störfaktoren
+vereitelt wurde.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Spruchzauberer; KL 12&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100AP; eine nur auf von Elfen gesprochene
+Zauber in elfischer Repräsentation reduzierte Version dieser SF
+ist Teil ebenjener elfischen Repräsentation. Diese Kenntnis zählt
+als erworbene Kenntnis der SF Zauberkontrolle für den Erwerb
+höherer magischer Sonderfertigkeiten, so lange die mit diesen
+SF verwendeten Zauber ebenfalls in elfischer Repräsentation
+gesprochen werden. Der Erwerb der 'vollen' SF Zauberkontrolle
+kostet Elfen nur 50 AP.&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>166</id><name>Merkmalskenntnis [einzelnes Merkmal]</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;ZH&lt;/P&gt;
+&lt;P&gt;Der Zauberer hat im Laufe seiner Ausbildung oder durch persönliche
+Studien besondere Einblicke in ein Merkmal von Zaubern erhalten und
+kann zukünftig alle Zauber mit diesem Merkmal um eine Spalte leichter
+erlernen. Bei Magiern, Hexen, Druiden, Geoden, Kristallomanten und
+Scharlatanen ist die Kenntnis des ersten Merkmals üblicherweise in
+der Profession integriert.&lt;BR&gt;
+Die Merkmale sind aufgrund verschiedener Faktoren (Verbreitung, Komplexität,
+Anzahl der zugehörigen Zauber, aber auch Spielgleichgewicht) in drei Stufen
+aufgeteilt. In Stufe I finden sich die Merkmale &lt;I&gt;Dämonisch (einzelne
+				Domäne), Elementar (einzelnes Element), Geisterwesen, Heilung, 
+				Herbeirufung, Illusion, Schaden, Telekinese&lt;/I&gt; und &lt;I&gt;Verständigung&lt;/I&gt;;
+Stufe II umfasst die Merkmale &lt;I&gt;Antimagie, Beschwörung, Eigenschaften,
+				Einfluss, Form, Hellsicht, Herrschaft, Karft, Object&lt;/I&gt; und &lt;I&gt;
+				Umwelt&lt;/I&gt;; Stufe III beinhaltet die Merkmale &lt;I&gt;Dämonisch (gesamt),
+				Elementar (gesamt), Limbus, Metamagie&lt;/I&gt; und &lt;I&gt;Temporal&lt;/I&gt;.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Spruchzauberer; Leiteigenschaft (KL oder IN) 13
+für die Kenntnis eines zweiten Merkmals, Leiteigenschaft 15 für die Kenntnis
+von drei Merkmalen, 16 für 4 Merkmale usw.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 1 - 5, je nach Merkmal&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP für Merkmale der Kategorie I, 200 AP für Kategorie II
+und 300 AP für Kategorie III&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>165</id><name>Ritualkenntnis [Tradition]</name><ap>0</ap><featType>Magisch</featType><desc>&lt;P&gt;Der Zauberkundige ist in der Lage, Rituale einer bestimmten
+magischen Tradition (üblicherweise der eigenen) zu erkennen, zu
+erlernen und durchzuführen, wobei das Erlernen einzelner Rituale
+meist an einen bestimmten Wert der &lt;I&gt;Ritualkenntnis&lt;/I&gt; (abgekürzt
+als RK, mit RkW als &lt;I&gt;Ritualkenntnis&lt;/I&gt;-Wert und RkP* übrig
+behaltene Punkte aus einer &lt;I&gt;Ritualkenntnis&lt;/I&gt;-Probe) gekoppelt
+ist. &lt;I&gt;Ritualkenntnis [Tradition]&lt;/I&gt; wird im Spiel wie ein Talent
+gehandhabt. Die Eigenschafts- proben, auf die die Ritualkenntnis
+angewendet wird, sind jedoch üblicherweise durch das spezielle
+Ritual vorgegeben. Eine Ritualkenntnis kann wie ein gewöhnliches
+Talent gesteigert werden, wobei man für eine Ritualkenntnis der
+eigenen Tradition (eine RK zu der man die zugehörige Repräsentation
+verinnerlicht hat) die Spalte E verwendet, für die Ritualkenntnis
+Alchimie und die RK Scharlatan jeweils D. Für Ritualkenntnisse,
+deren Repräsentation dem Helden nicht bekannt ist, wird eine um zwei
+Spalten teurere Steigerung verwendet. Verbesserung der Ritualkenntnis
+erfordert stets einen Lehrmeister (oder ein Buch mit entsprechenden
+Qualitäten). Startwert der RK ist stets 3; einige Professionen und
+Varianten erhalten einen höheren Startwert (wenn also Ritualkenntnis
++4 angegeben ist, startet der Charakter mit einer RkW von 7).
+Viertelzauberern ist jeweils nur ihre eigene RK zugänglich.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7 bei der jeweiligen Tradition&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; Ritualkenntnis einer Fremdrepräsentation kostet
+250 AP Aktivierungskosten (und erfordert meisterliche Erlaubnis). 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>164</id><name>Repräsentation [Tradition]</name><ap>0</ap><featType>Magisch</featType><desc>&lt;P&gt;Die Kenntnis der Zauberstrukturen, Rituale, Denkhilfen und
+Gewohnheiten einer Zaubertradition werden durch die Repräsentation
+ihrer Sprüche und Rituale dargestellt. Daher ist es ein langwieriger
+Prozess, eine bestimmte Repräsentation zu erlernen, was
+üblicherweise während der Lehrzeit des Charakters
+(Heldenerschaffung) geschieht. Es ist jedoch auch möglich, im
+späteren Leben eine zweite oder gar weitere Repräsentationen zu
+erlernen. Eine Ausnahme stellen hier Schamanen dar, die üblicherweise
+keine Repräsentation erlernen (da sie keine Spruchzauberei
+betreiben); einige wenige von ihnen sind jedoch in der Lage, die
+druidische Repräsentation zu meistern und auf diese Art Spruchmagie
+zu wirken. Kenntnis einer Repräsentation bedeutet, einen Zauber in
+der entsprechenden Repräsentation gemäss seiner Grundschwierigkeit
+(Komplexität) erlernen zu können - Zauber in einer fremden
+Repräsentation werden um zwei Spalten schwieriger erlernt. Folgende
+Repräsentationen sind den Aventuriern bekannt:
+&lt;I&gt;Achaz-Kristallomantisch, Borbaradianisch, Druidisch, Elfisch,
+Geodisch, Gildenmagisch, Hexisch, Scharlatanisch, Schelmisch.&lt;/I&gt;
+Schamanen haben eine eigene Ritualkenntnis, jedoch keine
+Repräsentation, gleiches gilt für Derwische, Durro-Dhun, Zibiljas
+und die Zaubertänzer.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Kenntnis einer zweiten Repräsentation
+erfordert KL und IN je 15 und eine Kenntnis von insgesamt 50 ZfP in
+der fremden Repräsentation; eine dritte erfordert KL 18 und
+ebenfalls Kenntnis von insgesamt 50 ZfP in der fremden
+Repräsentation.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 7 bei den jeweiligen Traditionen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; erste Repräsentation automatisch je nach
+Kultur/Profession; zweite 2000 für Voll- und 3000 für Halbzauberer,
+dritte 4000 für Vollzauberer (Halbzauberer unmöglich). Um eine neue
+Repräsentation zu erlernen, muss man sich mindestens ein Jahr
+intensiv mit der anderen Art der Zauberei beschäftigen (während man
+nicht auf Abenteuer ausziehen kann) und muss natürlich einen
+willigen Lehrmeister finden. Das Erlernen der borbaradianischen
+Repräsentation kostet Gildenmagier nur drei Viertel des angegebenen
+Wertes, das erlernen der scharlatanischen sogar nur die Hälfte.
+Scharlatane müssen nur drei Viertel für die gildenmagische
+Repräsentation zahlen. Druiden zahlen für die geodische
+Repräsentation ebenfalls drei Viertel und umgekehrt. 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>163</id><name>Konzentrationsstärke</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;ZH(V) Die &lt;I&gt;Selbstbeherrschungs&lt;/I&gt;&lt;SPAN STYLE=&quot;font-style: normal&quot;&gt;-Probe&lt;/SPAN&gt;
+während des Wirkens von Zaubern durch störende äussere Einflüsse
+ist um 7 Punkte erleichtert. Diese SF gilt auch für die
+Konzentration bei Ritualen. Zudem erleichtert die SF die Proben zur
+&lt;I&gt;Astralen Meditation&lt;/I&gt; und zur &lt;I&gt;Grossen Meditation&lt;/I&gt; um je 2
+Punkte. Einige ausgebildete Viertelzauberer sind in der Lage, diese
+SF zu erlernen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>150</id><name>Hypervehemenz</name><ap>300</ap><featType>Magisch</featType><desc>&lt;P&gt;Z Ermöglicht das Schaffen von Artefakten mit ARCANOVI mit schier
+überwältigenden Effekten: Beim Nutzen des Stapeleffekts bei der
+Artefaktherstellung darf der Zauberer zum Ansammeln von ZfP* beliebig
+viele Proben auf wirkende Sprüche einbinden (siehe Stäbe, Ringe,
+Dschinnenlampen).&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Magiekunde&lt;/I&gt; 16, ARCANOVI 14, SF
+&lt;I&gt;Stapeleffekt&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, von einigen wenigen Meistern der hohen
+Alchimie gehütet und nur selten weitergegeben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP; halbe Kosten bei Merkmalskenntnis &lt;I&gt;Metamagie&lt;/I&gt;
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>149</id><name>Höhere Dämonenbindung</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;Z Der Beschwörer muss bei der Bindung oder Manifestation eines
+Dämons nur geringe AsP-Kosten aufwenden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; SF &lt;I&gt;Dämonenbindung II&lt;/I&gt;,
+Beherrschungs-Wert 15, RK [Dru, Mag, Hex, Kri] 11&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, nur bei wenigen Privatgelehrten und
+Dämonenpaktierern; 4 in den schwarzen Landen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>151</id><name>Invocatio Integra</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;ZHV Erlaubt das Durchführen des gleichnamigen Rituals, um bei der
+Beschwörung eines Gehörnten mehr Sicherheit durch Paraphernalia und
+Donaria, Beschwörungszeitpunkt und Wahre Namen zu erreichen, vor
+allem aber durch eine längere Vorbereitung auf die Beschwörung.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; INVOCATIO MAIOR 7&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3; bei professionellen Dämonenbeschwörern
+und Exorzisten&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP; halbe Kosten bei Merkmalskenntnis
+&lt;I&gt;Beschwörung&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>132</id><name>Grosse Meditation</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Z Durch einen langen Meditationsprozess kriegt der Zauberer je
+nach Tradition KL/3 oder IN/3 AsP zu seinem Grundvorrat hinzu; beim
+Gelingen einer RK-Probe (auf MU/KL/CH oder MU/IN/CH) sogar noch
+zusätzlich RkP*/10 Punkte zusätzlich. Druide, Gildenmagier und Herr
+der Erde benutzen KL; Achaz- Kristallomant, Hexe und Diener Sumus IN.
+Elfen legen die Probe auf MU/IN/CH ab und können die Hälfte ihres
+TaW &lt;I&gt;Singen&lt;/I&gt; oder &lt;I&gt;Musizieren&lt;/I&gt; als Bonus verwenden. Kenner
+der SF &lt;I&gt;Gefäss der Sterne&lt;/I&gt; können auf Wunsch auch CH als
+Leiteigenschaft wählen. Das Ritual kann nur einmal pro Jahr
+durchgeführt werden, was jeweils im Rahmen der eigenen magischen
+Tradition geschieht und entsprechende Riten und Formalismen erfüllen
+muss.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KL und IN 12&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP; die Durchführung kostet 400 AP und einen
+Monat Vorbereitung und innere Einkehr 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>1</id><name>Apport</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;Objektritual Kann auf jedes persönlich gebundene Artefakt
+gesprochen werden, um die Gefahr des Verlustes zu minimieren: Ein
+solcherart verzauberter Gegenstand kehrt auf Befehl zum Zauberer
+zurück.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzung:&lt;/B&gt; Bindungsritual des Traditionsartefakts, MU,
+KL je 12, IN, CH je 13&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5, bei magischen Traditionen, die über
+Traditionsartefakte verfügen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>2</id><name>Astrale Meditation</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;ZH Der Magier ist in der Lage, einen Punkt LE in einen Punkt AE zu
+verwandeln, was eine Probe auf IN/CH/KO erleichtert um den halben RkW
+bzw. den halben TaW &lt;I&gt;Musizieren&lt;/I&gt; bei Elfen erfordert. Dies
+dauert eine SR pro umgewandelten Punkt. Durch die Anstrengung
+verliert der Meditierende W3-1 LE. Wer Thonnys und gleichzeitig die
+SF verwendet, für den ist die Probe um 3 Punkte erleichtert und die
+Umwandlung erfolgt in einem besseren Verhältnis (WdZ 8ff.)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzung:&lt;/B&gt; IN 13&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 6, vor allem bei Vollzauberern&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>4</id><name>Aura verhüllen</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;ZHV Der Zauberkundige kann durch Willenskraft - eine MU-Probe mit
+selbst gewähltem Aufschlag - seine magische Ausstrahlung
+unterdrücken, so dass selbst spezialisierte und gezielte
+Erkenntniszauber und -rituale ins Leere laufen: Die Proben sind um
+den dreifachen Wert des Aufschlags erschwert. Ungezielte
+Erkenntniszauberei wird durch diese SF komplett getäuscht. Die Probe
+kostet 1W3 Punkte Erschöpfung. Während man die Aura unter- drückt
+(max. 1 h, kann jedoch erneuert werden), ist man nicht in der Lage,
+selbst zu zaubern oder Zauber aufrecht zu erhalten.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzung:&lt;/B&gt; MU 13, IN 13&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3 (besonders bei Hexen 4, extrem selten bei
+Elfen)&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP; halbe Kosten bei Nachteil &lt;I&gt;Schwache
+Ausstrahlung&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>5</id><name>Aurapanzer</name><ap>500</ap><featType>Magisch</featType><desc>&lt;P&gt;Der Charakter erhält einen RS von MR Punkten gegen magischen
+Schaden (aus Schadenszauber und mTP von magischen Waffen). Dieser
+Schutz hilft nicht gegen elementaren Sekundärschanden und
+körperliche Angriffe von Dämonen. Als MR zählt hier die natürliche
+MR, die sich aus Eigenschaften, Vorteilen und zugekauften Punkten
+ergibt; nicht hinzu gezählt werden MR Boni aus Zaubern, SF und
+Artefakten.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, KL, IN, KO 13; SF &lt;I&gt;Gedankenschutz&lt;/I&gt;;
+der Held muss sich mindestens ein halbes Jahr zu Kontemplation zurück
+ziehen; er darf nicht die Nachteile &lt;I&gt;Arkanophobie, Astraler Block,
+Jähzorn, Niedrige Magieresistenz, Schwacher Astralkörper, Unstet,
+Wilde Magie&lt;/I&gt; haben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, einzelne Lehrmeister im Umfeld magischer
+und religiöser Traditionen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 500 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>14</id><name>Bannschwert</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;OR&lt;/P&gt;
+&lt;P&gt;Mit diesem Ritual wird ein magisches Objekt erschaffen, mit dem
+die Verbindung jenseitiger Wesen ins Diesseits zerstört und dadurch
+ihre Austreibung erleichtert wird.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; RK Druide, Geode, Hexe, Kristallomant,
+Gildenmagier oder Schamane&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, bei o.g. Traditionen, besonders bei Magiern
+(Beschwörungs- und Antimagie-Schulen) und Schamanen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>22</id><name>Blutmagie</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;ZHVB Ermöglicht die Techniken der Blutmagie (Speisen von Zaubern
+und Ritualen mit der Kraft fremden Blutes). Vielerorts bei
+Todesstrafe verboten.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 12&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung: &lt;/B&gt;3, jedoch nur selten weitergegeben; gängig in
+einigen Barbarenkunden, verbreitet in den schwarzen Landen, verpönt
+in zwölfgöttlichen Regionen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>23</id><name>Chimärengeister</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;Z&lt;/P&gt;
+&lt;P&gt;Kenner dieser SF haben Erleichterungen bei der Erschaffung von
+Chimären.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, &lt;I&gt;Magiekunde&lt;/I&gt; TaW 15,
+Merkmalskenntnis Dämonisch (Asfaloth), CHIMAEROFORM ZfW 11&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, nur bei wenigen Privatgelehrten&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>26</id><name>Druidenrache</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Der Zauberer kann all seine Fertigkeiten (LE, Eigenschaften,
+Fertigkeitspunkte) in einen finalen, spektakulären Zauber legen, um
+mit diesem zu vergehen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, Spruchzauberer&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 5 bei Druiden, deutlich seltener bei anderen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP, halbiert bei SF &lt;I&gt;Verbotene Pforten&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>43</id><name>Dämonenbindung I</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;Ermöglicht das dauerhafte Binden eines Niederen Dämonen in der
+3. Sphäre, was täglich AsP und LeP kostet.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Magiekunde&lt;/I&gt; 11, INVOCATIO MINOR 15&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, Akademie Brabak, frühere Abgänger der
+Akademie Rashdul; ansonsten nur bei Privatgelehrten. Kenntnis ist
+auch in Punin vorhanden, wird aber nicht an Akademiefremde
+weitergegeben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>44</id><name>Dämonenbindung II</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;Ermöglicht das dauerhafte Binden eines Gehörnten Dämonen in der
+3. Sphäre, was täglich AsP und LeP kostet.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Magiekunde&lt;/I&gt; 11, INVOCATIO MAIOR 15,
+&lt;I&gt;Dämonenbindung I&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, Akademie Brabak, frühere Abgänger der
+Akademie Rashdul; ansonsten nur bei Privatgelehrten. Kenntnis ist
+auch in Punin vorhanden, wird aber nicht an Akademiefremde
+weitergegeben.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>45</id><name>Eiserner Wille I</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;Der Helden kann durch Konzentration (2 Aktionen, 1 Punkt
+Erschöpfung) seine MR um 3 Punkte gegen Zauber mit den Merkmalen
+&lt;I&gt;Einfluss, Hellsicht, Herrschaft, Verständigung&lt;/I&gt; sowie andere
+den Geist beeinflussende Zauberei für MU/2 SR erhöhen. Während der
+Held sich konzentriert, sind alle Zauber um 3 Punkte erschwert,
+Eigenschaftsproben und Kampfwürfe um 1 Punkt. Der Bonus dieser SF
+ist kumulativ mit den Boni aus anderen SF, Vorteilen etc.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 13, IN 12; keine Nachteile Jähzorn&lt;I&gt;,
+Unstet, Wilde Magie&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4; bei Lehrmeistern magischer, geweihter und
+einiger Kämpferprofessionen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>46</id><name>Eiserner Wille II</name><ap>300</ap><featType>Magisch</featType><desc>&lt;P&gt;Der Helden kann durch Konzentration (2 Aktionen, 1 Punkt
+Erschöpfung) seine MR um 7 Punkte gegen Zauber mit den Merkmalen
+&lt;I&gt;Einfluss, Hellsicht, Herrschaft, Verständigung&lt;/I&gt; sowie andere
+den Geist beeinflussende Zauberei für MU/2 SR erhöhen. Während der
+Held sich konzentriert, sind alle Zauber um 3 Punkte erschwert,
+Eigenschaftsproben und Kampfwürfe um 1 Punkt. Der Bonus dieser SF
+ist kumulativ mit den Boni aus anderen SF, Vorteilen etc.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 13, IN 12; SF &lt;I&gt;Eiserner Wille I&lt;/I&gt;
+keine Nachteile Jähzorn&lt;I&gt;, Unstet, Wilde Magie&lt;/I&gt; 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3; bei Lehrmeistern magischer, geweihter und
+einiger Kämpferprofessionen.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 300 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>47</id><name>Elementarharmonisierte Aura</name><ap>700</ap><featType>Magisch</featType><desc>&lt;P&gt;ZH Der Zauberer kann die Merkmalskenntnis des Gegenelements seines
+bevorzugten Elementes lernen und ist dann in der Lage, die
+entsprechenden Zauber ohne weitere Einschränkungen zu erlernen.
+Diese SF muss für jedes Paar von Elementen einzeln erlernt werden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; KL 15, IN 15, &lt;I&gt;Magiekunde&lt;/I&gt; 12,
+&lt;I&gt;Merkmalskenntnis&lt;/I&gt; oder &lt;I&gt;Begabung&lt;/I&gt; in mindestens einem
+Element. Der Held muss sich mindestens 6 Monate zur Kontemplation
+zurück ziehen; nicht Nachteile &lt;I&gt;Affinität zu Dämonen,
+Animalische Magie, Arkanophobie, Astraler Block, Schwache
+Ausstrahlung, Schwacher Astralkörper, Unstet&lt;/I&gt; oder
+Merkmalskenntnis oder Begabung in einem dämonischen Merkmal; der
+Held darf kein &lt;I&gt;Paktierer&lt;/I&gt; sein&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, fast ausschliesslich bei Elementaristen
+gildenmagischer, druidischer oder geodischer Tradition&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 700 AP (500 AP bei Vorteil &lt;I&gt;Affinität zu
+Elementaren&lt;/I&gt; 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>124</id><name>Exorzist</name><ap>200</ap><featType>Magisch</featType><desc>&lt;P&gt;Der Held kann bei der Austreibung von Dämonen oder Geistern oder
+beim Errichten eines Bann- oder Schutzkreises (oder eines anderen
+Zauberzeichens gegen Dämonen, Geistern oder Untote) eine
+&lt;I&gt;Magiekunde&lt;/I&gt;-Probe ablegen und die Hälfte der TaP* als
+Erleichterung auf die entsprechende &lt;I&gt;Ritualkenntnis-&lt;/I&gt;, Mirakel-
+oder Beschwörungsprobe verwenden. Ausserdem kann er TaP*/4 auf
+eventuell anfallende &lt;I&gt;Beherrschungs&lt;/I&gt;- und Vertreibungsproben
+verwenden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, &lt;I&gt;Magiekunde&lt;/I&gt; 11&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4; an allen Schulen mit Merkmalen &lt;I&gt;Antimagie&lt;/I&gt;
+oder &lt;I&gt;Beschwörung&lt;/I&gt;, bekannt bei Hesinde-, Praios und allenfalls
+Boronkirchen; bei der Schwesternschaft des Wissens (Hexen); einige
+Kristallomanten und einige Druiden. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 200 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>125</id><name>Fernzauberei</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Die Zuschläge auf Zauberproben bei Distanz &lt;I&gt;Horizont&lt;/I&gt; sind
+halbiert.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; IN 12, Spruchzauberer&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>126</id><name>Form der Formlosigkeit</name><ap>150</ap><featType>Magisch</featType><desc>&lt;P&gt;ZH 
+&lt;/P&gt;
+&lt;P&gt;Erlaubt das Mitgeben zusätzlicher Fähigkeiten bei oder nach der
+Beschwörung eines Dämons sowie das nachträgliche Verbessern von
+(Kampf)Werten.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Magiekunde&lt;/I&gt; 11, INVOCATIO MINOR oder
+MAIOR 11&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3, in Brabak und Punin, ansonsten bei
+Privatpersonen und in den schwarzen Landen; auch am Institut der
+Arkanen Analysen von Kuslik aber nicht für Akademiefremde; für
+Hexen bei Schwesternschaft des Wissens oder in 'schwarzen'
+Hexenzirkeln.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 150 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>127</id><name>Geber der Gestalt</name><ap>100</ap><featType>Magisch</featType><desc>&lt;P&gt;Z Erlaubt das mitgeben zusätzlicher Eigenschaften beim
+nachträglichen Formen eines Dämons. 
+&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; &lt;I&gt;Magiekunde&lt;/I&gt; 15, INVOKATIO MINOR oder
+MAIOR 15, Ritualkenntnis [Dru, Mag, Hex, Kri] 11, SF &lt;I&gt;Form der
+Formlosigkeit&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2, nur an der Akademie in Brabak; ansonsten
+bei Privatgelehrten und in den schwarzen Landen&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 100 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>128</id><name>Gedankenschutz</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;Gibt ohne weitere Anstrengung dauerhaft +3 auf MR gegen
+Herrschafts-, Einfluss-, Hellsicht- und Verständigungszauber, sowie
+gegen andere, den Geist beeinflussende Magie und übersinnliche
+Wirkungen. Der Bonus ist kumulativ mit anderen MR-Boni und kann mit
+entsprechender Konzentration (SF &lt;I&gt;Eiserner Wille II&lt;/I&gt;) auf +7
+erhöht werden.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, IN 13; SF &lt;I&gt;Eiserner Wille I&lt;/I&gt;&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3; üblicherweise nur bei magischen und
+klerikalen Gemeinschaften&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>129</id><name>Gefäss der Sterne</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;ZH Die Grund-AE des Helden berechnet sich aus (MU+IN+CH+CH)/2. Bei
+der &lt;I&gt;Grossen Meditation&lt;/I&gt; kann er auf Wunsch hin auch CH als
+Leiteigenschaft wählen (statt KL oder IN) und so CH/3 plus RkP*/10
+aus einer (MU/CH/CH)-Probe als AsP hinzugewinnen. Zudem kann er
+dieses Ritual durchführen, wo es ihm beliebt. Diese SF heisst bei
+Druiden, Hexen und Geoden &lt;I&gt;Sumus Fülle&lt;/I&gt;.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; CH 15, IN 13&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 3&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>130</id><name>Gestalt aus Rauch</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; Mitglied der geodischen Gemeinschaft, RK
+Geoden 3&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 4&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item><dsa_feat_item><id>131</id><name>Golembauer</name><ap>250</ap><featType>Magisch</featType><desc>&lt;P&gt;Z Kenner dieser SF haben Erleichterungen bei Erschaffen von
+Golems; die Golems sind zudem loyaler als üblich.&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Voraussetzungen:&lt;/B&gt; MU 15, &lt;I&gt;Magiekunde&lt;/I&gt; 11, STEIN WANDLE
+11 oder STAUB WANDLE 11&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Verbreitung:&lt;/B&gt; 2; bei wenigen Privatgelehrten&lt;/P&gt;
+&lt;P&gt;&lt;B&gt;Kosten:&lt;/B&gt; 250 AP 
+&lt;/P&gt;</desc></dsa_feat_item></folder></folder>

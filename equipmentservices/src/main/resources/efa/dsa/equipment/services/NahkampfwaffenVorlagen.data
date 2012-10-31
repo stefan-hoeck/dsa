@@ -1,0 +1,20 @@
+
+<data>
+    <dsa_meleeweapon_item>
+        <name>Nahkampfwaffe</name>
+        <id>-1</id>
+        <price>0</price>
+        <weight>0</weight>
+        <desc></desc>
+        <tp>1W6</tp>
+        <talent>Talent</talent>
+        <tpkk>0/0</tpkk>
+        <improvised>false</improvised>
+        <bf>0</bf>
+        <ini>0</ini>
+        <wm>0/0</wm>
+        <dk>N</dk>
+        <length>0</length>
+        <twohanded>false</twohanded>
+    </dsa_meleeweapon_item>
+</data>

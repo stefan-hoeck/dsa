@@ -1,0 +1,3264 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<folder><name>Zauber</name><folder><name>S</name><dsa_spell_item><id>20</id><name>Somnigravis tiefer Schlaf</name><attributes>KL CH CH</attributes><raisingCost>B</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / CH / CH (+MR)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Elf stellt ein Gähnen dar und
+summt dann leise die Melodie des samagra dao’sa
+sha e‘fey.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 7 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Dieser Zauber versetzt ein Lebewesen in
+traumlosen Tiefschlaf, aus dem es jedoch sofort erwacht,
+wenn es tätlich angegriffen oder unsanft geschüttelt
+wird.&lt;br&gt;
+Der Zauberer muss das Opfer sehen können, das sich
+unmittelbar vor dem Zauber in einem ruhigen Zustand (Sitzen,
+Stehen, Liegen; dabei nicht körperlich aktiv) befunden haben
+muss.&lt;br&gt;
+Wer von diesem Schlafzauber getroffen wird, fällt nicht schlagartig
+zu Boden, sondern sinkt langsam in sich zusammen. Während des
+unnatürlichen Schlafs findet keine Regeneration statt; Krankheiten
+oder Gifte setzen ihr verheerendes Werk jedoch unvermindert fort.
+Wird eine bereits schlafende Person verzaubert, vertieft sich deren
+Nachtruhe, so dass sie erst durch lauten Lärm oder schmerzhafte
+Handgreiflichkeiten erwacht.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 7 AsP (Sch: 4 AsP)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: ZfW/2 Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP*/2 Stunden
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Erzwingen,
+Kosten, Zielobjekt (s.u.), Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Zielobjekt&lt;/i&gt;&lt;/b&gt;: mehrere. In der Variante
+gegen mehrere Personen kostet der Zauber 6
+AsP pro Opfer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Zielobjekt: beliebiges Wesen &lt;/i&gt;&lt;/b&gt;(+3). Wirkt auch
+gegen Tiere, nicht jedoch gegen Wesen, die keinen
+Schlaf kennen, wie Elementare, Geister, Dämonen,
+Untote und Golems, sehr wohl aber gegen Vampire und
+etliche Chimären.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Ohnmacht &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11). Eine verschärfte Version,
+die mit verkürzter Zauberdauer (4 Aktionen) das Opfer selbst
+mitten im Kampfgetümmel schlagartig in Bewusstlosigkeit
+versinken lässt, aus der es für ZfP* Kampfrunden kaum wieder
+zu erwecken ist.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: weckt einen Schlafenden und führt zu einem
+kurzzeitigen Unvermögen, Schlaf zu finden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: EINFLUSS BANNEN beendet die Wirkung; kann
+in einer entsprechenden antimagischen Zone nur erschwert gewirkt
+werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Einfluss
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: B
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Elf 6; Mag 5; Ach, Dru,
+Geo, Hex, Sch, Srl je 3&lt;br&gt;
+Dieser Zauber gehörte zu den ersten, die die menschlichen Magier
+nach Tamaras Forschungen von den Waldelfen übernahmen, und
+dementsprechend verbreitet ist er auch. Zauberkräfte der Natur
+beschreibt die Formel jedoch kaum ausreichend.&lt;br&gt;</desc></dsa_spell_item><dsa_spell_item><id>19</id><name>Sensibar Empathicus</name><attributes>KL IN CH</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / IN / CH (+MR)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Elf konzentriert seine Gedanken
+auf das Opfer und harmonisiert diese mit der
+Melodie des sanya bha vara la.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 10 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der Zaubernde kann die Gefühle und Stimmungen
+seines Gegenübers erkennen. Ist es nervös, gefasst,
+traurig, frohlockend oder ängstlich? Steht es einer anderen
+Person oder dem Zauberer freundlich oder feindlich gegen-
+über? Dabei ist es recht einfach zu erkennen, was das Ziel des
+Zaubers allgemein fühlt (Grundstimmung), etwa schwieriger,
+was es dem Zauberer gegenüber fühlt, noch schwieriger, was es
+unterschwellig fühlt (aber sich selbst vielleicht gar nicht bewusst
+ist), und am schwierigsten, was es gegenüber anderen Personen
+oder gar Konzepten und Prinzipien fühlt.&lt;br&gt;
+Zum echten Gedankenlesen oder zum Erkennen selbst einfachster
+Gedankenbilder ist diese Empathieformel nicht geeignet, ebenso
+wenig zum Einsatz gegen nicht-fühlende Wesen wie Untote und
+Dämonen.&lt;br&gt;
+Die Zauberprobe kann je nach Menschenkenntnis des Zaubernden,
+Gefühlsstärke des Gegenübers und Fremdartigkeit seines Geistes im
+Rahmen von +/–5 Punkten modifiziert werden. Weiß der Beobachtete,
+dass seine Gefühle erforscht werden, kann er mühsam versuchen,
+seine wahren Gefühle unterdrücken: Selbstbeherrschungs-Probe +
+ZfP*.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 3 AsP pro 10 Aktionen (Sch: 2 AsP pro 10 Aktionen)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: ZfW Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: nach AsP-Aufwand
+(A)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Erzwingen,
+Kosten, Zielobjekt (s.u.), Reichweite, Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Massensinn &lt;/i&gt;&lt;/b&gt;(+3 + höchste MR). Der Elf erhält
+einen Eindruck, was die vorherrschende Stimmung in einer
+Gruppe von Wesen (maximal ZfW x 5 Personen) ist.
+&lt;b&gt;&lt;i&gt;Tierempathie &lt;/i&gt;&lt;/b&gt;(+3; Zielobjekt: Einzelwesen; nur in
+elfischer, geodischer und hexischer Repräsentation). Der Spruch
+kann auch auf Tiere angewendet werden, deren Gefühlsleben
+den Zaubernden interessiert. Zu einer Verständigung mit Tieren
+ist der Spruch jedoch nicht geeignet, dafür wird der
+TIERGEDANKEN (S. 257) benötigt.
+&lt;b&gt;&lt;i&gt;Artefaktempathie &lt;/i&gt;&lt;/b&gt;(+5; nicht in der elfischen, druidischen
+und schelmischen Repräsentation). Mit dem Zauber kann man die
+Stimmungslage einer Artefaktseele bestimmen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: Die Gefühle des Zaubernden werden dem Gegenüber
+offenbar (Probe gegen MR, falls das Gegenüber unwillig ist).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: ist in einer Zone des HELLSICHT TRÜBEN erschwert
+zu wirken und kann von diesem Zauber gezielt beendet werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Hellsicht
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Elf 7; Mag 6; Dru, Hex,
+Geo je 5; Ach, Sch, Srl je 4&lt;br&gt;
+Dieser elfische Zauber ist auch unter anderen Völkern seit
+Jahrhunderten bekannt, so dass sich eigentlich stets eine Akademie oder ein
+Lehrmeister finden lässt, der einem Helden die Formel beibringt.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>18</id><name>Schleier der Unwissenheit</name><attributes>KL KL FF</attributes><raisingCost>D</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / KL / FF
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Die Hexe berührt das Objekt oder die
+Person mit der flachen, linken Hand, konzentriert
+sich auf den ihr eigenen Hang zur Heimlichkeit und
+lässt ihre Kräfte fließen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 1 Spielrunde
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Diese Formel ermöglicht es, eine magisch
+begabte Person oder ein zauberkräftiges Artefakt vor magischer
+Entdeckung zu schützen. Die Hexe gibt an, wie viele AsP sie
+in den Spruch investieren will. Gelingt der Spruch, so müssen
+bei eventuellen ODEM- oder ANALYS-Proben, Sinnenschärfe-
+Proben unter der Wirkung des OCULUS oder Magiegespür-
+Proben mindestens so viele Punkte übrig behalten werden, um den
+Spruch zu durchschauen, wie für den SCHLEIER ZfP* erwürfelt
+wurden plus die AsP, die in den Zauber investiert wurden.
+Göttlich-karmatisches Wirken wird von diesem Spruch nicht betroffen.
+Im Limbus wirkt der Zauber zwar, ist jedoch wegen der Struktur
+seiner ‘Umgebung’ um 7 Punkte schwerer zu sprechen. Dämonen, die
+sich auf ihre magische Wahrnehmung verlassen, können mit diesem
+Zauber getäuscht werden. Der Zauber wirkt auch gegen mächtige
+Artefakte wie Zauberstäbe, Knochenkeulen, Druidendolche usw. Die
+Auswirkungen des Zaubers sind kumulativ zu solche aus eventuellen
+Aura-Tarnungen.&lt;br&gt;
+Anmerkung: Dieser Zauber wirkt auch gegen die Entdeckung durch
+Nachtwinde. Für das Magiegespür eines Nachtwinds kann man von
+einem Wert von 2W6+6 ausgehen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 2 AsP plus die blockierenden AsP (siehe oben)
+(borbaradianische Variante: mindestens 1W3 AsP plus die blockierenden AsP
+bzw. die Hälfte dieser Kosten als LeP)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelobjekt, Einzelwesen, freiwillig (speziell auch
+der Vertraute der Hexe)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: selbst, Berührung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP* Stunden
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten,
+Zielobjekt (mehrere), Reichweite
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: keine Wirkung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des EIGENSCHAFT
+WIEDERHERSTELLEN oder des METAMAGIE NEUTRALISIEREN
+nur erschwert gewirkt und von diesen
+Zaubern auch beendet werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Eigenschaften, Metamagie (Bor: Eigenschaften,
+Metamagie, Dämonisch (Iribaar))
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: D
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Hex 6; Mag 4;
+Bor, Dru je 2&lt;br&gt;
+Es ist schwer zu sagen, ob diese Formel aus dem satuarischen oder
+dem gildenmagischen Umfeld stammt, da beide Gruppen einen
+Zauber ähnlicher Wirkung entwickelt haben. Bei den Magiern geriet
+er im Rahmen ihres Aufstiegs in die höchsten gesellschaftlichen
+Positionen in Vergessenheit, während er bei den Töchtern Satuarias
+nie vergessen war und gerade zur Zeit der Priesterkaiser eine Blüte
+erlebte.&lt;br&gt;
+Gegen die göttlichen Gaben, mit denen Praios- und Hesinde-Geweihte
+Spuren von Zauberei entdecken können, wirkt diese Formel jedoch
+nicht. Unter bestimmten Umständen kann eine Anwendung dieses
+Spruches sogar eine Anklage gemäß Cod.Alb. Fol. III, § 19 nach
+sich ziehen.&lt;br&gt;
+Magiern ist diese Formel als AURARCANIA DELEATUR bekannt;
+sie wird Gildenmagiern an den beiden Fasarer Akademien, in
+Mirham und der Halle der Macht in Lowangen gelehrt (und ist in
+Punin bekannt).&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>R</name><dsa_spell_item><id>17</id><name>Respondami Wahrheitszwang</name><attributes>MU IN CH</attributes><raisingCost>B</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / IN / CH (+MR)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Magier blickt seinem Opfer in
+die Augen und spricht die Formel, anschließend
+stellt er eine Frage.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 3 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der Zauber zwingt das Opfer zur wahrheitsgemäßen
+Beantwortung einer (einzigen) Ja-oder-Nein-
+Frage. Kann der Verzauberte die gestellte Frage nicht mit
+Ja oder Nein beantworten, so bleibt er stumm, erleidet jedoch
+Schmerzen 1W6–2 SP(A) – ganz so, als hätte er eine Ohrfeige
+erhalten. Es ist Sache des Magiers, die Frage so eindeutig wie
+möglich und nötig zu formulieren.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 3 AsP
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: 1 Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: augenblicklich (eine Frage)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Reichweite,
+Erzwingen&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Fragenkatalog &lt;/i&gt;&lt;/b&gt;(+5; ab ZfW 14). Eine längerfristig wirkende
+Variante erschließt sich all jenen, die den RESPONDAMI auf
+mindestens ZfW 14 und den IMPERAVI oder den ZAUBERZWANG auf
+mindestens ZfW 11 beherrschen: Für den Einsatz von 7 AsP und bei
+einer Erschwernis von 5 Punkten gelingt es, das Opfer zu ZfP*
+wahrheitsgemäßen Antworten (jedoch ebenfalls nur auf Ja/Nein-Fragen)
+zu zwingen. Auch hier gilt, dass das Opfer für jede Frage, die es nicht
+mit Ja oder Nein beantworten kann, 1W6–2 SP(A) erleidet.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: zwingt das Opfer zu einer Lüge bei
+einer Ja/Nein-Frage.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann nicht in einer Zone des
+BEHERRSCHUNG BRECHEN gewirkt werden; die langfristige
+Variante kann mit einem BEHERRSCHUNG BRECHEN
+beendet werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Herrschaft
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: B
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Mag 7; Dru, Geo
+je 5; Elf, Hex je 4&lt;br&gt;
+Wie zu sehen, ist die Kenntnis dieses Spruchs recht weit verbreitet
+(so u.a. als ZWANG ZUR WAHRHEIT bei Druiden und Geoden);
+als besondere Meister des RESPONDAMI gelten die Abgänger der
+Elenviner Akademie. Übrigens wird der RESPONDAMI in einigen
+Akademien gern zur Züchtigung von Eleven eingesetzt, indem der
+Lehrer die Formel mit einer nicht mit Ja oder Nein zu beantwortenden
+Frage verbindet und den Schüler zum Beispiel fragt: “Willst du weiter
+solche Albernheiten treiben oder dich nun endlich auf den Ernst der
+Wissenschaft besinnen?”&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>P</name><dsa_spell_item><id>16</id><name>Psychostabilis</name><attributes>MU KL KO</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / KL / KO
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Magier reibt sich oder das
+Wesen, das er verzaubern will, an den Schläfen und
+murmelt die Formel.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 5 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Dieser Zauber stärkt das Selbstbewusstsein
+und die Integrität der körperlichen Aura und erhöht auf
+diese Weise die Magieresistenz einer Person um ZfP* Punkte,
+gegen auf den Geist einwirkende Zauber mit den Merkmalen
+Einfluss, Hellsicht, Herrschaft und Verständigung jeweils
+um zusätzliche 2 Punkte.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 8 AsP plus 1 AsP pro SR
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson, freiwillig
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Berührung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: nach AsP; muss vorher festgelegt werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten,
+Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Zielobjekt (Einzelwesen&lt;/i&gt;&lt;/b&gt;) (+3; ab ZfW 7). Mit dieser Variante
+kann die Magieresistenz von Tieren (wie Vertrauten oder Reittieren)
+erhöht werden.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Selbstanwendung &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 7). Die Variante, bei der der
+Zaubernde die eigene MR verbessert, ist erschwert, da der Zaubernde
+sich quasi ‘selbst einmauert’. (In der scharlatanischen Repräsentation
+ist dies die Basis-Variante: nicht erschwert; ab ZfW 1)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Kleine Stabilisierung &lt;/i&gt;&lt;/b&gt;(ab ZfW 10). Es existiert eine längerfristig,
+aber nicht so stark wirkende Variante: Der Zauber hebt für 7 AsP pro
+Stunde die MR des Verzauberten um ZfP*/2 Punkte.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Gegenzauber &lt;/i&gt;&lt;/b&gt;(+MR des Nutznießers; ab ZfW 10). Diese Variante
+kann auf das Opfer eines bereits wirkenden
+Zauberspruchs mit dem Merkmal Einfluss oder
+Herrschaft gesprochen werden und reduziert die
+Stärke von dessen Auswirkung (also die ZfP*) um
+die ZfP* des PSYCHOSTABILIS, eventuell bis zur
+völligen Wirkungslosigkeit. Nach Ablauf der Wirkung des
+Gegenzaubers setzt die volle Wirkung des
+Beherrschungsspruchs wieder ein. Bei Zaubern, deren Wirkungsdauer von
+den ZfP* bestimmt wird, ist die Gesamtwirkungsdauer um
+die Wirkungsdauer des PSYCHOSTABILIS reduziert. (Der
+wirkende Spruch ist also während des Gegenzaubers
+aufgehoben, nicht aufgeschoben.)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: senkt die MR des Verzauberten um ZfP* Punkte.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann mit einem EIGENSCHAFT
+WIEDERHERSTELLEN beendet und nicht in einer entsprechenden Zone gewirkt
+werden. Ein mit einem PROTECTIONIS gesicherter Zauber, der
+gegen den Verzauberten gerichtet ist, kann eine entsprechende
+Punktzahl erhöhter MR ignorieren.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Antimagie, Eigenschaften
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Mag 6; Dru, Geo, Hex
+je 5; Ach, Srl je 3; Elf (Mag) 3&lt;br&gt;
+Dieser Spruch ist die neueste Variante des Zaubers zur Steigerung der
+Widerstandskraft gegen Zauber, der bereits seit geraumer Zeit bekannt
+ist und der im Lauf der letzten Jahrzehnte durch die mittlerweile
+völlig ersetzte Formel WIDER HELLSICHT eine weitere Verbesserung
+erhalten hat. Der Zauber scheint dem ATTRIBUTO eng verwandt,
+zeigt jedoch in seiner Struktur einige deutliche Änderungen.&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>O</name><dsa_spell_item><id>15</id><name>Odem Arcanum</name><attributes>KL IN IN</attributes><raisingCost>A</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / IN / IN (+Mod.)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Elf betrachtet sein Ziel intensiv und spricht die Melodie
+des uida mandra sanya'ray.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;4 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Mittels dieses Zaubers lässt sich Zauberei in weltlichem
+Wirken erkennen. Wenn in dem vom Elfen betrachteten Ziel (das kann ein
+Gegenstand, ein Lebewesen oder auch eine Aktion sein) eine magische Kraft
+wirksam ist, nimmt er 2 Kampfrunden lang (die Zauberdauer entspricht der
+Wirkungsdauer) einen rötlichen Schimmer wahr, der das Ziel umgibt. Die Probe
+wird gemäss der Intensität der vorhandenen Astralenergie modifiziert.
+Je nach den ZfP* kann das Gewebe aus Matrxifäden auch genauer erkannt werden.&lt;br&gt;
+Bei &lt;b&gt;0 bis 2 ZfP*&lt;/b&gt; kann nur ein Urteil gefällt werden, ob hier Magier
+vorhanden ist oder nicht.&lt;br&gt;
+&lt;b&gt;3 ZfP*&lt;/b&gt; erlauben Aussagen über die Intensität der anwesenden Magie
+(wie dick sind die Fäden: ist also kaum, wenig, viel oder sehr viel Astralenergie
+zu sehen).&lt;br&gt;
+&lt;b&gt;7 ZfP*&lt;/b&gt; zeigen ein grobes Bild des Gewebes (ob die Kraft z.B. um den
+Kopf eines Opfers konzentriert ist; erfolgreiche &lt;i&gt;Magiekunde&lt;/i&gt;-Proben
+erlauben dann eventuell Rückschlüsse auf die beobachtete Zauberwirkung,
+wenn der Elf diesen oder einen ähnlich wirkenden Zauber selbst beherrscht)
+und geben Aufschluss darüber, ob die Kraft durch LE (also Blutmagie)
+oder dämonisches Wirken 'verunreinigt' ist.&lt;br&gt;
+ab &lt;b&gt;12 ZfP*&lt;/b&gt; kann der Elf ein fein strukturiertes Bild des Gewebes
+erkennen und auch eine eventuelle Fliessrichtung der Kraft sehen: Hierdurch
+ist die &lt;i&gt;Magiekunde&lt;/i&gt;-Probe erleichtert und der Elf kann auch die Wirkung
+eines Zaubers einschätzen, der ihm ansonsten unbekannt ist. (Zuschläge auf
+die genannten &lt;i&gt;Magiekunde&lt;/i&gt;-Proben sind jeweils Meisterentscheid.)&lt;br&gt;
+Der Zauber erkennt nur das Vorhandensein von Kraft und ihr Gewebe, nicht die
+Art der Kraft (also z.B. nicht die Repräsentation und die Merkmale eines
+wirkenden Zaubers); dafür müssen die Formeln ANALYS und OCULUS bemüht werden.
+Die Präsenz von göttlichem Wirken und von Karmaenergie ist nicht feststellbar.
+Zu starke Kraftquellen erscheinen als hellrotes Gleissen oder gar als im
+Geist des Hellsichtigen explodierende Sonne (bei den Gildenmagiern als
+Teclador-Effekt bekannt): Der Zaubernde ist für einige Zeit geblendet und
+wird für geraume Zeit von Kopfschmerzen geplagt (KL vermindert).&lt;br&gt;
+Genau wie beim ANALYS bietet der ODEM dem Spielleiter viele Möglichkeiten,
+dem Zaubernden das Astralkontinuum anschaulich zu beschreiben.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;4 AsP (Sch: 3 AsP)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelperson, Einzelobjekt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;ZfW Schritt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;2 KR
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Erzwingen, Reichweite,
+Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Sichtbereich &lt;/i&gt;&lt;/b&gt;(+2). Statt eines Einzelobjektes kann der Elf
+einen Bereich betrachten, der von ihm aus kegelförmig im 45-Grad Winkel
+ausgeht und eine Reichweite wie oben hat. Das Leuchten der erkannten magischen
+Objekte/Personen wird von unbelebter Materie deutlich geschwächt
+(Meisterentscheid) und von antimagischen Materialien oder anderen magischen
+Auren blockiert.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Umgebung &lt;/i&gt;&lt;/b&gt;(+7). Wie Sichtbereich. Wirkungsdauer ZfP* Kampfrunden
+lang (A), der Zaubernde kann den Kopf bewegen und damit den Kegel seiner Sicht
+verschieben.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;nicht möglich
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;Eine Zone des HELLSICHT TRÜBEN erschwert das Wirken des
+Zaubers; gezielte Anwendung kann den ODEM abbrechen lassen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Hellsicht, Kraft
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;A
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Ach, Elf, Mag je 7; Geo 6; Dru, Hex je 5; Sch, Srl je 4&lt;br&gt;
+Der ODEM gilt als der bekannteste Zauber überhaupt - ein Spruch, über den
+alle Zaubekundigen recht früh verfügen können und sollten. Im Vergleich zur
+intuitive Gabe &lt;i&gt;Magiegespür&lt;/i&gt; ist er deutliche gezielter, sicherer und
+wissenschaftlicher. Häufig wird der Spruch als Vorbereitung einer Analyse
+mit dem ANALYS gesprochen. Ein gesundes Magiegespür wiederum erleichtert den ODEM.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Probenmodifikatoren: &lt;/b&gt;&lt;br&gt;
+pro permanent gebundenem AsP (in Artefakten, Golems, Untoten...):	-1&lt;br&gt;
+Punkte aus SCHLEIER DER UNWISSENHEIT / HELLSICHT TRÜBEN:	+ZfP*&lt;br&gt;
+pro angefangenen 10 AsP über 30 (wirkender Zauber, Zauberkundiger mit AE-Vorrat): -1
+pro angefangenen 5 AsP unter 30 (wie oben): +1&lt;br&gt;&lt;br&gt;
+Zeit seit Zauber vergangen (doppelter Zuschlag für einfache Präsenz: z.B. die
+Untersuchung von Objekten, die lediglich mit einem Kraftträger in Berührung
+gekommen sind (Schatulle, in der ein magisches Amulett lag; Türklinke, die ein 
+Zauberer berührt hat; Fussstapfen eines Dämons; Raum, in dem sich ein Kobold
+aufgehalten hat etc.):&lt;br&gt;
+Spielrunde	+4
+Stunde	+8&lt;br&gt;
+Tag	+8&lt;br&gt;
+Woche +10&lt;br&gt;
+Monat +12&lt;br&gt;
+Jahr +14&lt;br&gt;
+Jahrzehnt +16&lt;br&gt;
+Jahrhundert +18&lt;br&gt;&lt;br&gt;
+Magische Wesen:&lt;br&gt;
+Mindergeist, Ikanariaschmetterling:	+5&lt;br&gt;
+Ghul, Wiedergänger: +3&lt;br&gt;
+Geist: +1&lt;br&gt;
+Elementargeist: -1&lt;br&gt;
+Grolm:	-2&lt;br&gt;
+Kobold, Dschinn, Westwinddrache: -3&lt;br&gt;
+Niederer Dämon, Einhorn: -4&lt;br&gt;
+Gehörnter Dämon, Elementarer Meister, Purpurwurm, Kaiserdrache: -5&lt;br&gt;
+Elementarherr, Erzdämon, Alter Drache: -7&lt;br&gt;
+&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>K</name><dsa_spell_item><id>14</id><name>Karnifilo Raserei</name><attributes>MU IN CH</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;MU / IN / CH (+MR)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Magier berührt mit Zeige- und Mittelfinger der linken
+Hand den Waffenarm eines Gefährten und spricht die Formel.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;3 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Der Verzauberte verfällt in einen Kampfrausch. Dabei erhöhen
+sich sein AT-Basiswert, MU und KK und je 5 Punkt, während der PA-Basiswert,
+KL und CH um je 5 Punkte sinken. Der Kämpfer kann keine Kampfmanöver
+ausser Ausweichen, Befreiungsschlag, Hammerschlag, Niederwerfen, Schildparade,
+Sturmangriff und Wuchtschlag (sowie gewöhnliche AT- und PA-Aktionen) anwenden.&lt;br&gt;
+Für die Veränderung des AT- und PA-Wertes gelten die oben festgelegten Zahlen,
+eine Neuberechnung aufgrund der veränderten Eigenschaften muss also nicht durchgeführt werden; die TP können sich jedoch aufgrund der gesteigerten KK verbessern.&lt;br&gt;
+Das Opfer dieses Zaubers nimmt keine Schmerzen mehr wahr (der Meister
+notiert die verlorenen LeP verdeckt) und wird auch von LeP/AuP-Verlust
+und Wunden nicht in seinem Kampfrausch behindert (keine AT/PA-Einbussen,
+keine Kampfunfähigkeit). Nach Ablauf der Wirkungsdauer beträgt die AU des
+Kämpfers 0 und er hat ZfP*/2 Punkte Erschöpfung erlitten.&lt;br&gt;
+Sind alle Gegner vor Ablauf der Wirkungsdauer besiegt, greift der Rasende auch seine Kampfgefährten an und kann nur mittels Antimagie davon abgebracht werden.&lt;br&gt;
+Auf Personen mit dem Vorteil &lt;i&gt;Kampfrausch&lt;/i&gt; oder dem Nachteil
+&lt;i&gt;Blutrausch&lt;/i&gt; gesprochen, ist dieser Spruch nicht um die MR erschwert.
+In beiden Fällen schliessen sich an die Wirkungsdauer des Zaubers noch
+1W20 Kampfrunden lang die Auswirkungen des entsprechenden Vor-/Nachteils an.&lt;br&gt;
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;11 AsP (borbaradianische Variante: 1W20 AsP bzw. 1W20/2 LeP)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelperson
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;Berührung
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;ZfP* x 5 Kampfrunden
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Erzwingen, Kosten, Reichweite,
+Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Blutrausch &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 14): Das Opfer dieses Spruches
+verwandelt sich in einen rasenden Wüterich, der alles angreift, das sich ihm
+in den Weg stellt - sei es Freund oder Feind. Die Werte-Veränderungen sind
+2 Punkte stärker als oben angegeben. Nach dem Amoklauf ist es so ermattet,
+dass es keine weiteren anstrengenden Aktionen unternehmen kann (AU fällt
+auf 0; Verzauberter erleidet 2 x ZfP* Punkte Erschöpfung).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Borbaradianische Repräsentation &lt;/i&gt;&lt;/b&gt;Kosten und Wirkungsdauer
+werden mit 1W20 ausgewürfelt; enthält automatisch die Blutrausch-Variante;
+als zusätzliches Merkmal kommt &lt;i&gt;Dämonisch (Belhalhar)&lt;/i&gt; hinzu und die
+Modifikation &lt;i&gt;Kosten&lt;/i&gt; kann nicht angewendet werden.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Achaz Repräsentation &lt;/i&gt;&lt;/b&gt;wirkt nur auf Geschuppte, kostet jedoch auch
+nur 7 AsP (Kristallomanten-Bonus bereits eingerechnet).
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;hebt einen wirkenden KARNIFILO auf oder beruhigt Walwütige und
+andere Berserker, bewirkt jedoch keine Eigenschaftsänderung.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;kann nicht in einer Zone des EINFLUSS BANNEN oder des
+EIGENSCHAFTEN WIEDERHERSTELLEN gewirkt werden und kann mit diesen
+Antimagie-Sprüchen beendet werden. Gegen die borbaradianische Variante
+wirkt auch der BELHALHARBANN.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Einfluss, Eigenschaften (borbaradianische Variante:
+Einfluss, Eigenschaften, Dämonisch (Belhalhar))
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;C
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Mag 4; Ach, Bor je 3&lt;br&gt;
+Die Struktur der Formel wie auch die fehlende Erwähnung und frühzeitlichen
+Schriften lässt darauf schliessen, dass es sich bei diesem Zauber um eine
+Entwicklung der Schüler Borbarads oder sogar den Dämonenmeister selbst handelt.
+Gleichwohl fand der Zauber im Lauf der Magierkriege schnell eine solche
+Verbreitung, dass der Ursprung im Dunkel blieb und die Gilden den damals noch
+als SAFT KRAFT MONSTERMACHT bekannten Zauber für alle Magier zum Studium
+freigaben. Da die Herkunft der Formel nunmehr geklärt scheint, haben sich die
+Akademien, die dem Weg der rechten Hand folgen, schon im Jahre 1007 BF
+geeinigt, die Formel komplett aus ihrem Lehrplan zu streichen. Sie ist
+jedoch in Andergast, Al'Anfa und Lowangen (Halle der Macht) weiterhin
+verfüg- und erlernbar. Den Achaz schliesslich ist eine Variante bekannt,
+die den Kampfrausch der Marus simulieren soll, deren Thesiskern dem
+gildenmagischen aber bis auf wenige Details gleicht - möglicherweise diejenige
+Formel, aus der der KARNIFILO einst entwickelt wurde.
+&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>H</name><dsa_spell_item><id>11</id><name>Horriphobus Schreckgestalt</name><attributes>MU IN CH</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;MU / IN / CH (+MR)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Magier droht mit der Faust in Richtung seines Opfers
+und brüllt die Formel.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;3 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Der Zauberer erscheint seinem Opfer als eine bedrohliche
+Gestalt und schüchtert es abhängig von den ZfP* ein.&lt;br&gt;
+
+&lt;b&gt;&lt;i&gt;1 ZfP*: &lt;/i&gt;&lt;/b&gt;Das Opfer hat gehörigen Respekt vor dem Zaubernden
+und hält ihn für einen überlegenen Gegner, dem es sich - wenn überhaupt -
+nur vorsichtig nähert. Attacken gegen den Zaubernden sind nur nach einer
+vorherigen MU-Probe möglich, die um die ZfP* erschwert ist.&lt;br&gt;
+
+&lt;b&gt;&lt;i&gt;4 ZfP*: &lt;/i&gt;&lt;/b&gt;Das Opfer fürchtet den Zaubernden und wird - wenn
+möglich - zurückweichen, d.h. im Kampf ein Rückzugsgefecht führen (MU, AT
+INI-Basis je - 1W6, wenn eine MU-Probe, erschwert um die ZfP* misslingt;
+Das Opfer setzt keine Aktionsmanöver mit Zuschlägen von +4 oder höher ein).&lt;br&gt;
+
+&lt;b&gt;&lt;i&gt;7 ZfP*: &lt;/i&gt;&lt;/b&gt;Das Opfer sieht in dem Zaubernden einen Furcht
+erregenden, zu allem entschlossenen und übermächtigen Feind. Stark
+demoralisiert, wird es sich (nach Naturell und örtlichen Gegebenheiten)
+entweder angsterfüllt in einer Ecke zusammenkauern oder zumindest so weit
+fliehen, bis der Zaubernde ausser Sichtweite ist. Es muss eine MU-Probe
+erschwert um die ZfP* ablegen. Misslingt diese, erleidet das Opfer Abzüge
+von jeweils 1W6 Punkten auf die Werte MU, KL, CH, FF, AT, PA, FK und
+INI-Basis. Dieser Malus baut sich fern der Gegenwart des Zaubernden mit
+einem Punkt pro Spielrunde ab.&lt;br&gt;
+
+&lt;b&gt;&lt;i&gt;10+ ZfP*: &lt;/i&gt;&lt;/b&gt;Dem Opfer erscheint der Zaubernde wie aus einem
+Alptraum entsprungen; es verfällt in heillose Panik und sucht schreiend
+das Weite. MU-Probe und Abzüge wie oben.&lt;br&gt;
+
+Dieser Zauber wirkt gegen alle Arten von denkenden und fühlenden
+Lebewesen sowie gegen einige Geisterwesen (Letzteres ist Meisterentscheid).
+Schleimgetier oder Insekten lassen sich von der Formel jedoch nicht
+beeindrucken, genauso wenig wie Elementare, Untote und Dämonen.
+Beim HORRIPHOBUS ist die MR des Opfers um die Hälfte der stärksten Angst
+(also diejenigen &lt;i&gt;Schlechten Eigenschaften&lt;/i&gt;, in denen der Begriff
+'Angst' oder 'Phobie' vorkommt, einschliesslich &lt;i&gt;Aberglaube&lt;/i&gt; reduziert.
+Tiere, bei denen kein MU angegeben ist, verwenden stattdessen ihren GW
+für die Gegen-Proben.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;7 AsP (borbaradianische Variante 2W6 AsP bzw. die Hälfte
+dieser Kosten als LeP.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelwesen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;7 Schritt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;ZfP*/2 SR
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Erzwingen, Kosten,
+Zielobjekt (mehrere), Reichweite, Wirkungsdauer&lt;br&gt;
+In der Variante gegen mehrere Personen kostet der Zauber 6 AsP pro
+Opfer.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;bringt das Opfer dazu, sich für die Wirkungsdauer
+in den Zauberer zu verlieben.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;kann in einer Zone des EINFLUSS BANNEN nur erschwert
+gewirkt und mit diesem Antimagie-Spruch beendet werden. ÄNGSTE LINDERN
+kann die Wirkung des HORRIPHOBUS aufheben oder zumindest abschwächen.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Einfluss (Bor: Einfluss, Dämonisch (allgemein))
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;C
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Mag 6, Bor 4, Dru 3, Hex (Dru) 2,
+Srl 1&lt;br&gt;
+Hierbei handelt es sich um einen der 'klassischsten' Magierzauber überhaupt,
+der vor allem zur Kampfvermeidung als höchst effizient angesehen wird. Die
+Ähnlichkeit zum BÖSEN BLICK hat es schon vor geraumer Zeit ermöglicht,
+dass auch Druiden eine eigenständige Repräsentation entwickelt haben,
+während die borbaradianische Variante erst aus jüngster Zeit stammt,
+allerdings schnell Verbreitung gefunden hat. In der druidischen Variante
+ist er auch Hexen bekannt, und Gerüchten zufolge haben auch einige
+Scharlatane diesen Spruch gemeistert.
+&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>I</name><dsa_spell_item><id>13</id><name>Imperavi Handlungszwang</name><attributes>KL CH CH</attributes><raisingCost>E</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / CH / CH (+MR)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Magier fixiert sein Opfer und flüstert die Formel.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;10 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Dieser Zauber erzeugt beim Opfer absoluten Gehorsam
+für &lt;b&gt;einen einzigen&lt;/b&gt; konkreten Befehl des Magiers. In gewisser
+Weise wirkt der IMPERAVI ähnlich wie der Spruch BANNBALADIN, jedoch
+länger, ausschliesslich auf intelligente Wesen und durch tiefer
+gehende Gefühlsveränderung, weswegen er auch nur schwer zu brechen ist.
+Bei Befehlen, die dem Selbsterhaltungstrieb oder den innersten
+Überzeugungen (wie ein Mordauftrag an Tsa-Geweihte) zuwiderlaufen,
+steht dem Opfer stündliche eine MU-Probe zu, die um die ZfP* erschwert
+ist, um den Befehl für die kommende Stunde zu verweigern.&lt;br&gt;
+&quot;Erschlage den reichen Kaufmann, suche seine Truhe und bring mir seine
+Dukaten!&quot;, sind drei Befehle (auch wenn man sie in einen Satz packen kann).
+Eine 'Kaskadierung' des Imperavi (&quot;Folge allen weiteren Befehlen!&quot; oder
+&quot;Du beantwortest mir nun alle Fragen wahrheitsgemäss.&quot;) ist nicht möglich.
+Während der Wirkungsdauer ist es dem Opfer nicht möglich, gegen den
+Zauberer vorzugehen.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;13 AsP
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelperson
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;1 Schritt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;maximal ZfP* Stunden; die Wirkung endet auch mit
+der vollständigen Erfüllung des Befehls.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Erzwingen, Kosten Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Auslöser &lt;/i&gt;&lt;/b&gt;(+3). Es besteht auch die Möglichkeit, den Zauber
+so zu sprechen, dass das Opfer den Befehl erst beim Eintreten eines
+gewissen Ereignisses (Fingerschnippen, Schlüsselwort, Opfer betritt den
+Raum etc.) ausführt.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Befehl und Gehorsam &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 7). Der Magier kann dem
+Opfer einen einzelnen, kurzen Befehl geben (&quot;Halt's Maul!&quot;, &quot;Waffe weg!&quot;),
+den es sofort ausführen muss; danach verfliegt die Wirkung des Zaubers.
+Bei Befehlen, die den innersten Grundwerten oder Selbsterhaltungstrieb des
+Opfers widersprechen, muss der Zauberer eine Zauberprobe ablegen, die
+um die doppelte MR erschwert ist. Zauberdauer 3 Aktionen, Kosten 7 AsP.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Dauerhafter Diener &lt;/i&gt;&lt;/b&gt;(+7, ab ZfW 11). Diese Variante wirkt
+maximal ZfP* Tage lang; es können während dieser Zeit bis zu ZfP* konkrete
+Befehle erteilt werden. Dafür kostet sie 21 AsP und erfordert Berührung
+und eine Spielrunde Zauberdauer (während der die Berührung aufrechterhalten
+werden muss).
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;hebt einen bestehenden IMPERAVI auf.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;kann in einer Zone des BEHERRSCHUNG BRECHEN nur erschwert
+gewirkt und von diesem Zauber beendet werden.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Herrschaft
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;E
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Mag 4, Dru (Mag) 2&lt;br&gt;
+Der IMPERAVI ist eine 'Neuentwicklung' der Magierakademien auf der
+Grundlage des BANNBALADIN (und stellt ein Beispiel dar, wie man einen
+bestehenden Spruch verändern kann- Näheres hierzu finden Sie in WdZ im
+Kapitel Zauberwerkstatt). An vielen Akademien, die bisher den BANNBALADIN
+lehrten (und dies sind fast alle Magierschulen), wird nun auch dieser Spruch
+an die Schüler weitergegeben, in Neersand und Fasar wird er sogar als
+Hausspruch gelehrt, er ist auch in allen antimagischen Instituten zum
+Zwecke des Brechens der Beherrschung einsichtig. (In Donnerbach, Norburg
+und im Kreis der Einfühlung wird ausschliesslich der überlieferte Elfenzauber
+beibehalten). Hexe ist die Kenntnis dieser Formel bisher noch versagt,
+während alle uns bekannten Elfen die Formel rundheraus verdammen und sie
+wohl freiwillig nie erlernen werden. Es gibt mittlerweile jedoch Druiden der
+Gruppe der Mehrer der Macht, die sich den Zauber in gildenmagischer
+Repräsentation zu Eigen gemacht haben.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>12</id><name>Ignifaxius Flammenstrahl</name><attributes>KL FF KO</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / FF / KO
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Magier hebt die rechte Hand zur linken Schultere
+konzentriert sich auf die Formel und deutet dann ruckartig mit Zeige-
+und Mittelfinger auf sein Opfer.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;4 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Aus den Fingern des Zaubernden schiesst ein Strahl
+elementarer Gewalten: eine Lanze aus Feuer und Licht. Der Spieler muss
+vor der Zauberprobe ansagen, wie viele Würfel er für den IGNIFAXIUS
+einsetzten will: Dem Magier stehen maximal ZfW Würfel zur Verfügung.
+Dann würfelt er und addiert alle Punkte zu einer Trefferpunktsumme.
+(Dadurch kann es unter Umständen passieren, dass mehr TP erwürfelt werden,
+als dem Magier AsP zur Verfügung stehen - in diesem Fall misslingt der
+Zauber mit den üblichen Folgen.) Ein Opfer, das den Zaubervorgang
+beobachtet und erkennt, kann versuchen, ihm auszuweichen; dazu ist ein um
+5 Punkte erschwertes &lt;b&gt;Ausweichen&lt;/b&gt;-Manöver (WdS 66) erforderlich:
+Für jeden Punkt, den das Opfer besser ausweicht, kann es einen Würfel
+von der Schadenswirkung abziehen.&lt;br&gt;
+Der Zauber verursacht Trefferpunkte, die noch um den Rüstungsschutz
+des Opfers vermindert werden, jedoch wird auch die Rüstung angegriffen:
+Für je 10 Trefferpunkte verliert das Opfer einen Punkt seines
+Rüstungsschutzes (nicht bei natürlicher oder magischer Rüstung).
+Durch die erlittenen Schadenspunkte können dem Opfer eine oder
+mehrere Wunden entstehen.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;Anzahl der TP in AsP
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelwesen (kann auch auf ein einzelnes Objekt
+gezielt werden, um Strukturschaden anzurichten).
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;21 Schritt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;augenblicklich
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Die Punkte, die bei allen folgenden
+Modifikationen und Varianten aufgewendet werden, verringern (als Ausnahme
+zu WdZ 19) die Anzahl der zur Verfügung stehenden Trefferwürfel.&lt;br&gt;
+Zauberdauer, Reichweite (Bei Reichweite: Horizont gelten die
+Modifikationen aus WdZ 21 zusätzlich zu denen der folgenden Varianten;
+die Zielerfassungsprobe ist gleichzeitig die Zauberprobe.&lt;br&gt;
+Die folgenden Modifikationen bis auf Kegel sind alle Kombinierbar.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Kegel &lt;/i&gt;&lt;/b&gt;(+2; ab ZfW 11). Es entsteht ein Flammenkegel mit
+2 Schritt Basisbreite, der grosse Oberflächenwirkung hat: Er richtet zwar nur
+1W6-1 TP pro eingesetztem Würfel an, dafür sinkt der RS des Opfers für
+je 5 Punkte um 1. Pro Punkt zusätzlicher Erschwernis kann die Basisbreite
+des Kegels um 1 Schritt vergrössert werden. Wird der Kegel auf mehrere
+Personen gleichzeitig gezielt, so erhält jedes Opfer nur einen entsprechenden
+Anteil der ausgewürfelten TP (hierbei immer abrunden). Es ist um weitere
+5 Punkte (insgesamt 10 Punkte) erschwert, einem kegelförmigen IGNIFAXIUS
+auszuweichen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Enger Strahl &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 11). Es entsteht nur ein fingerdicker
+Flammenstrahl, der keinen Rüstungsschaden, dafür aber pro KO/2-2 SP eine
+Wunde anrichtet. Die Trefferzone hierfür wird per Zufall bestimmt: 19-20 Kopf,
+15-18 Brust, 9-14 Arme (ungerade für links, gerade für rechts), 7-8 Bauch,
+1-6 Beine (wie Arme). Um eine bestimmte Körperzone anzuvisieren, ist die
+Probe nochmals erschwert: +5 für Kopf oder Arm, +4 für Bein, +3 für Brust/Rücken
+oder Bauch.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Mehrere Ziele &lt;/i&gt;&lt;/b&gt;(+5; ab ZfW 7). Strahlen schiessen aus beliebig
+vielen Fingern des Magiers; Die erwürfelten TP können auf bis zu 5 Opfer
+gleichmässig verteilt werden.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Doppelschuss&lt;/i&gt;&lt;/b&gt;(+5; ab ZfW 11). Der Magier kann mit einer
+Probe und unter Aufwendung einer Zauberdauer gleichzeitig zwei Zauber
+auf ein und dasselbe Ziel wirken; für jeden der Zauber stehen ihm maximal
+ZfW-5 Würfel zur Verfügung (Zauberfertigkeit minus die Schwierigkeit der
+Modifikation); dazu verwendet er beide Hände.&lt;br&gt;
+Ab einer &lt;b&gt;&lt;i&gt;Schwelle von ZfW 11&lt;/i&gt;&lt;/b&gt; misslingt der Zauber nicht
+automatisch, wenn die AsP nicht ausreichen, weil ein zu hohes Resultat
+erwürfelt wurde. Stattdessen verbraucht der Spruch dann nur genau die noch
+vorhandenen AsP und wandelt sie in wirkende TP um.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Elementare Varianten &lt;/i&gt;&lt;/b&gt;(FRIGIFAXIUS, ARCHOFAXIUS, ORCANOFAXIUS,
+AQUAFAXIUS, HUMOFAXIUS) erfordern separate Zauber, deren Repräsentationen
+sehr selten (maximal Geo 2, Mag 2, Ach 2) zu finden sind. Auch diese
+Zauber rufen jeweils die zerstörerischen Aspekte eines reinen Elements
+herbei und haben regeltechnisch ähnliche Auswirkungen - orientiere Sie
+sich an &lt;b&gt;Elementare Sekundärschäden&lt;/b&gt; auf Seite 123 des
+&lt;i&gt;Liber Cantiones&lt;/i&gt;. Dokumente aus bosparanischer Zeit berichten
+von dem verwandten Zauber IGNIFLUMEN, der Feuerstrahlen und Flammenspuren
+über den Erdboden laufen liess.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;Die Elementare Wirkung wird zu einem AQUAFAXIUS
+(mit gleicher Schadenswirkung wie der IGNIFAXIUS) umgekehrt, der die
+&lt;b&gt;Elementaren Sekundäreffekte&lt;/b&gt; des Wassers hervorruft.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;kann nicht in eine Zone eindringen, die mit
+SCHADENSZAUBER BANNEN oder FEUERBANN errichtet wurde; kann mit diesen
+beiden Zaubern beim Schaffen des Zaubers gestört werden; wird vom
+GARDIANUM aufgefangen und vom INVERCANO reflektiert; LEIB DES FEUERS
+reduziert den entstehenden Schaden.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Schaden, Elementar (Feuer)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;C
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Mag 5, Ach 3, Dru (Mag) 2&lt;br&gt;
+Bei sehr vielen Gildenmagiern bekannte Formel, die als exemplarischer
+Kampfzauber gilt; dabei Grundlage für elementare Transitionen. Speziell
+vom elementaren Ansatz her ist sie auch den Achaz-Kristallomanten
+zugänglich. Gerüchten zufolge kennen auch einige wenige Druiden den
+Spruch in gildenmagischer Repräsentation.
+&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>G</name><dsa_spell_item><id>10</id><name>Gardianum Zauberschild</name><attributes>KL IN KO</attributes><raisingCost>D</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / IN / KO
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Magier hebt den Zauberstab über den Kopf und lässt ihn einmal
+waagerecht rotieren; zauberkundige Helden ohne Zauberstab zeichnen mit beiden Händen
+einen grossen Kreis über sich in die Luft.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;2 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Der Zauber erschafft um den Magier eine unsichtbare Schutzkuppel
+in Form einer Halbkugel von 3 Schritt Radius, die auch von den Gefährten des Magiers
+genutzt werden kann. Der Schild ist 'orientiert', d.h. auch wenn bestimmte Wirkungen
+nicht nach innen dringen können, ist doch Schadenszauberei aus der Kuppel heraus möglich.
+Der Schild absorbiert durch direkte magische Angriffe erzeugte Trefferpunkte
+(namentlich die Wirkung von Zaubern mit dem Merkmal &lt;b&gt;Schaden&lt;/b&gt;, aber auch
+Schaden erzeugende Zauber von Dämonen, Elementaren oder Geistern, die Flammenwolke
+des IGNISPHAERO, Attacken des Flammenschwerts etc.), nicht aber magisch erhöhte
+Trefferpunkte normaler Waffen (siehe auch SCHADENSZAUBER BANNEN), Schaden von Waffen
+aus magischen Materialien, physischen Attacken von Dämonen, Elementaren oder Geistern
+oder anderen magischen Wesen (Drache, Einhorn). Gegen andere Arten von Magie
+(wie z.B. Verwandlung oder Beherrschung) ist die Grund-Variante wirkungslos.
+Zauber, die von innerhalb der Kuppel gegen den Magier gewirkt werden (oder
+Flammenschwert-Angriffe o.ä.), werden nicht aufgefangen.&lt;br&gt;
+Die Anzahl der aufgefangenen TP entspricht den vom Magier investierten AsP plus den
+doppelten ZfP*. Sobald der Schild diese Trefferpunkte hingenommen hat, spätestens aber
+nach 1 Spielrunde, löst er sich auf. Richtet ein Schadenszauber keine direkten TP
+an (sondern z.B. eine Wunde), so verliert der Schild AsP in Höhe der Kosten des
+Schadenszaubers. Der Schutzschild ist unsichtbar und kann nur mittels magischer
+Hellsicht (oder während er einen Zauber abwehrt) als schimmernde Kuppel wahrgenommen
+werden. Die Kuppel bewegt sich stets mit dem Magier.&lt;br&gt;
+Werden direkt wirkende Kampfzauber (z.B. FULMINICTUS) mittels APPLICATUS o.ä. auf
+einen Gegenstand gelegt, so dass diese als magisches Detonationsgeschoss wirken,
+so werden diese vom GARDIANUM vorzeitig zur Detonation gebracht, was den GARDIANUM
+die Hälfte der TP kostet.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;nach Wahl, mindestens aber 3 AsP
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Zone
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;3 Schritt Radius um den Magier herum
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;bis die aufgewendeten AsP aufgezehrt sind, maximal 1 Spielrunde
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Reichweite (Grösse der Kuppel),
+Wirkungsdauer&lt;br&gt;
+Die drei folgenden Varianten können miteinander kombiniert werden; Zauberdauer jeweils
+zwei zusätzliche Aktionen&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Schild gegen Dämonen &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 7). Zusätzlich zur o.g. Wirkung
+verhindert der Zauber, dass Dämonen die Schutzkuppel durchdringen oder sich in ihr
+aufhalten können. Ebenfalls verhindert werden Angriffe mittels dämonischer Materie
+wie z.B. die Angriffe eines PANDÄMONIUM. Das Verhindern dämonischer Bewegung verbraucht
+keine AsP des Schildes, jeder gezielte dämonische Angriff gegen den Schild verbraucht
+einen Punkt Schildstärke pro 7 angerichteter TP.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Schild gegen Zauber &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 7). Zusätzlich zur Haupt-Wirkung werden
+auch Verwandlungen und Beherrschungen (Zauber mit den Merkmalen Eigenschaften, Einfluss,
+Form und Herrschaft) abgewehrt. Jeder AsP, der auf diese Art und Weise abgeblockt wird,
+reduziert die Schildstärke in gleichem Masse. Zauber die den geschwächten Schild
+durchbrechen, kommen abgeschwächt zur Wirkung: Ihre ZfP* werden um die Zahl der
+AsP reduziert, die der Schild noch aufgefangen hat.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Persönlicher Schild &lt;/i&gt;&lt;/b&gt;(+5; ab ZfW 11). Die Wirkung des GARDIANUM entsteht
+nicht in einer Schutzkuppel, sondern in einer eng anliegenden 'zweiten Haut' um den
+Magier und seine Kleidung/Ausrüstung. Diese Variante stellt einen Schutz in Höhe von
+3 mal ZfP* plus eingesetzter AsP zur Verfügung.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;keine Wirkung. Eine Schutzkuppel zu erzeugen, die das Ausbrechen
+magischer Energie verhindert, erfordert eine Grosse Modifikation des GARDIANUM.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;Ein mit dme PROTECTIONIS geschützter Zauber durchdringt den
+GARDIANUM, wenn die Summe aus den PROTECTIONIS-AsP und dessen ZfP* grösser ist als
+die ZfP* des GARDIANUM. Ansonsten wird er wie ein verzaubertes Geschoss behandelt.
+Die AsP des PROTECTIONIS haben keine Auswirkung auf den Schild.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Antimagie, Kraft, Metamagie
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;D
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Mag 6, Ach 2, Geo (Mag) 2&lt;br&gt;
+Bei all den Gefahren, denen ein Magier bei der Ausübung seiner Kunst
+ausgesetzt ist, nimm es nicht Wunder, wenn diese Formel den Eleven
+von klein auf eingepaukt wird. Diese neue Version des GARDIANUM fasst
+alle Varianten zusammen, die seit altersher oder in den letzten Jahren
+entstanden sind. Sie wird mittlerweile an allen Magierakademien gelehrt
+oder ist zumindest als Abschrift vorhanden. Es kursieren noch viele
+Formen der Thesis, bei denen einzelne Varianten nicht vorhanden sind.&lt;br&gt;
+In Magierkreisen gern verbreitete Gerüchte, es handele sich beim GARDIANUM
+um eine Manifestation des 'Siebten Elements' (in der Form einer elementaren Wand),
+sind, wegen der Eigenheiten besagten Elements, eher spekulativ.
+&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>E</name><dsa_spell_item><id>9</id><name>Einfluss Bannen</name><attributes>IN CH CH</attributes><raisingCost>B</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;IN / CH / CH (+Mod.)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Die Hexe berührt die zu entzaubernde Person und konzentriert
+sich auf die hervorgerufenen Gefühle.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;40 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Der Spruch hebt Zauber mit dem Merkmal Einfluss auf. Die Erinnerung
+an die Gefühle (evtl. für einen anderen Menschen) bleiben jedoch bestehen, so dass
+das Opfer auch nach Aufhebung des Beeinflussungszaubers noch in dessen Sinne
+reagieren kann (Meisterentscheid)&lt;br&gt;
+Die Hexe kann sich mit dieser Formel nicht selbst aus einer Beeinflussung
+befreien. Die Zauberprobe ist um die vom gegnerischen Zauberer (demjenigen, der
+die Beeinflussung gewirkt hat) erzielten ZfP* erschwert, des Weiteren um
+1/5 der AsP des zu brechenden Spruchs. Weitere Erschwernisse können aus einem
+PROTECTIONIS herrühren.&lt;br&gt;
+Sorgfältige magische Analyse des wirkenden Zaubers im Vorfeld erleichtert
+die Probe: Pro 3 Punkte ZfP* bei einem ANALYS ARCANSTRUKTUR ist die Probe auf
+EINFLUSS BANNEN um einen Punkt erleichtert.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;5 AsP plus 1/5 der Kosten des zu brechenden Spruchs
+(Sch: 3 AsP + 2/15 der Kosten). Um einen permanent wirkenden und mittels permanenter
+AsP fixierten Beeinflussungszauber aufzuheben, muss der Druide permanente AsP
+investieren: 1/10 der Kosten des wirkenden zu brechenden Zaubers, mindestens aber
+1 AsP. Misslingt die Probe, entstehen keine permanenten Kosten.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelwesen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;Berührung
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;augenblicklich
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Erzwingen, Kosten, Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Zone &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 7). Für den Einsatz von 15 AsP kann der Druide
+eine ortsfeste Zone von ZfW Schritt Radius erzeugen, in der das Wirken von
+Sprüchen mit dem Merkmal Einfluss um ZfP* Punkte erschwert ist und die
+ZfP* SR lang anhält.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;keine Wirkung
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;Der Beeinflussungszauber kann von einem PROTECTIONIS geschützt sein
+(WdZ 213).
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Antimagie, Einfluss
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;B
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Dru, Geo, Hex je 6; Ach Elf je 5; Mag Sch je 4;
+Srl 3&lt;br&gt;
+Dieser Zauber ist bei fast allen Traditionen bekannt, die sich auf die Manipulation
+des Geistes verstehen. Da Hexen besonders gut mit Gefühlen umzugehen verstehen,
+bringen sie diesen Spruch eher zur Meisterschaft als andere.
+&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>B</name><dsa_spell_item><id>8</id><name>Beherrschung Brechen</name><attributes>KL IN CH</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / IN / CH
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Druide berührt die Stirn des Beherrschten
+mit der Hand und konzentriert sich mit geschlossenen Augen.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;40 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;hebt bei Gelingen einen Spruch mit dem Merkmal
+&lt;b&gt;Herrschaft&lt;/b&gt; auf. Die Zauberprobe ist um die vom gegnerischen
+Zauberer (demjenigen, der die Beherrschung gewirkt hat) erzielten
+ZfP* erschwert. Weitere Erschwernisse können aus einem PROTECTIONIS
+herrühren.&lt;br&gt;
+Mit dieser Formel ist keine Selbstbefreiung eines Beherrschten möglich,
+da es zum Wesen einer Beherrschungsformel gehört, dass das Opfer sich
+nicht gegen sie auflehnen kann. Der Druide muss übrigens nur wissen,
+dass eine Beherrschung vorliegt, nicht aber, welche es genau ist.
+Diese Zauber ist auch dazu geeignet, einen von aussen verursachten
+Traum zu beenden (siehe das Kapitel Tödliche Träume im Band WdZ
+auf den Seiten 69ff.).&lt;br&gt;
+Der Zauber wirkt ebenfalls gegen geistbeeinflussende Hexenflüche,
+wobei sich hier die übrig behaltenen TaP* &lt;i&gt;Ritualkenntnis&lt;/i&gt; als
+Erschwernis auswirken. Dazu kommt wegen des nicht klar definierten
+Merkmals eine zusätzliche Erschwernis von 3 Punkten (Letzteres nicht
+in der hexischen Repräsentation). Sorgfältige magische Analyse des
+wirkenden Beherrschungszaubers im Vorfeld erleichtert die Probe:
+Pro 3 Punkte ZfP* bei einem ANALYS ARCANSTRUKTUR ist die Probe auf
+BEHERRSCHUNG BRECHEN um einen Punkt erleichtert.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;7 AsP plus 1/5 der Kosten des zu brechenden Spruchs.&lt;br&gt;
+Um einen permanent wirkenden und mittels permanenter AsP fixierten
+Beherrschungszauber aufzuheben, muss der Druide permanente AsP investieren:
+1/10 der Kosten des wirkenden Beherrschungszauber, mindestens aber 1 AsP.
+Misslingt die Probe, entstehen keine permanenten Kosten.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelwesen (eigentlich: einzelner Zauber an einem
+Einzelwesen)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;Berührung
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;augenblicklich
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Erzwingen, Kosten, Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Zone &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 7). Für den Einsatz von 21 AsP kann der
+Druide eine ortsfeste Zone von ZfW Schritt Radius erzeugen, in der das
+Wirken von Sprüchen mit dem Merkmal &lt;b&gt;Beherrschung&lt;/b&gt; um ZfP* Punkte
+erschwert ist und die ZfP* SR lang anhält.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;keine Wirkung
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;Der PROTECTIONIS kann auch einen Beherrschungszauber schützen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Antimagie, Herrschaft
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;C
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Dru 7; Geo, Mag je 6; Hex 5;
+Ach, Elf je 4&lt;br&gt;
+Zum Rüstzeug eines jeden Zauberers, der sich mit Beherrschungsmagie
+befasst, gehört seit Urzeiten auch die Formel, mit der man solche
+Zauber wieder aufheben kann - seien es die eigenen oder die anderer Leute.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>7</id><name>Bannbaladin</name><attributes>IN CH CH</attributes><raisingCost>B</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;IN / CH / CH (+MR)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Elf blickt seinem Opfer in die Augen und spricht
+bian bha la da'in.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;5 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;&lt;/P&gt;Der Verzauberte sieht in dem Spruchanwender einen Freund.
+Die Intensität der Wirkung bemisst sich nach den übrig behaltenen
+Zauberfertigkeitspunkten: &lt;br&gt;
+&lt;b&gt;&lt;i&gt;1 ZfP*&lt;/i&gt;&lt;/b&gt;: Das Opfer mag den Zaubernden und hat das unbestimmte
+Gefühl, ihn irgendwoher zu kennen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;4 ZfP*&lt;/i&gt;&lt;/b&gt;: Das Opfer ist dem Zaubernden freundschaftlich
+verbunden, ist zuvorkommend und wohlgesinnt und vertraut ihm auch
+kleinere Geheimnisse an.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;7 ZfP*&lt;/i&gt;&lt;/b&gt;: Das Opfer sieht in dem Zaubernden einen engen
+Vertrauten oder sehr guten Freund, liest ihm jeden Wunsch von den
+Augen ab und antwortet auf fast alle Fragen wahrheitsgemäss.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;10 ZfP*&lt;/i&gt;&lt;/b&gt;: Das Opfer ist bedingungslos loyal, lässt keine
+Geheimnisse offen und erfüllt jede Bitte des Zaubernden, selbst wenn sie
+seinen moralischen Grundsätzen widerspricht.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;13 ZfP*&lt;/i&gt;&lt;/b&gt;: Das Opfer ist bereit, körperlichen oder schweren
+finanziellen Schaden für den Anwender zu erleiden.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;16 ZfP*&lt;/i&gt;&lt;/b&gt;: Das Opfer ist dem Anwende verfallen und würde sogar
+sein Leben für den Spruchanwender opfern.&lt;br&gt;
+Ob eine bestimmte Bitte erfüllt wird, können Proben auf Charisma,
+&lt;i&gt;Überreden&lt;/i&gt; oder &lt;i&gt;Überzeugen&lt;/i&gt; entscheiden, wobei Talentproben
+um die ZfP* erleichtert sind, Eigenschaftsproben um die halben ZfP*. Der
+Zauber ist aus einer Bedrohungssituation heraus um 3 Punkte,
+in einem bereits begonnenen Kampf um 7 Punkte erschwert. Da der Zaubernde
+einen intensiven Kontakt zum Geist seines Opfers herstellen muss, ist es
+nur schwer möglich, diese Formel gegen mehrere Opfer gleichzeitig einzusetzen.
+Ob Aussenstehende bemerken, dass das Opfer unter einem Bann steht,
+hängt von er Situation ab. Dem Opfer wird nach Ablaufen der Wirkungsdauer
+eventuell klar, dass es verzauber worden ist (eine KL-Probe pro SR erlaubt,
+wobei es höchsten KL-ZfP* Versuche hat).
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;7 AsP
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelperson
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;3 Schritt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;ZfP* Spielrunden
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Zielobjekt (mehrere), Reichweite,
+Wirkungsdauer&lt;br&gt;
+In der Variante gegen mehrere Personen kostet der Zauber 6 AsP pro Opfer und ist
+um 2 Punkte (anstatt der üblichen einen) pro Person erschwert.
+&lt;b&gt;&lt;i&gt;Tierfreund &lt;/i&gt;&lt;/b&gt;(+5, nur in der elfischen Repräsentation). Mit dieser
+Variante können auch Tiere so beeinflusst werden, dass sie glauben, ein
+Rudelmitglied oder gar ein Respekt einflössendes Alphatier vor sich zu haben.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Gemeinsame Erinnerungen &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 7; nicht in elfischer
+Repräsentation). Der Zauber schafft zusätzlich im Geist des Opfers fiktive
+Erinnerungen an das Freundschafsband zwischen ihm un dem Zaubernden, der
+diese Erinnerungen vorgibt. (Spieltipp: Lassen Sie den Spieler diese
+gemeinsame Vorgeschichte formulieren: Je glaubwürdiger und kreativer,
+desto stärker kann der BANNBALADIN bei speziellen Bitten wirken.) Gemeinsam
+mit der Grundeinstellung des Opfers lässt sich durch die Erinnerung die
+Art der Freundschaft definieren: Zwangsbündnis, rondrianische Ehrenschuld,
+familiäre Verbundenheit oder thorwalsche Kumpelhaftigkeit. Nach Ende des
+Zaubers verblassen diese Erinnerungen jedoch langsam.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Keine Erinnerung &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11; nicht in elfischer
+Repräsentation). Das Opfer erinnert sich nach dem Zauber nicht daran,
+was es unter Einfluss des Zaubers getan hat.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;Ein existierender BANNBALADIN wird aufgehoben. Ein
+Unverzauberter wird dagegen glauben, einen Feind vor sich zu haben:
+Intensität der Wirkung je nach ZfP* analog zu oben.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;Der EINFLUSS BANNEN lässt das Opfer wieder Herr
+über seine Gefühle werden. Der Zauber kann in einer entsprechenden
+Zone nur entsprechend erschwert gewirkt werden.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Einfluss
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;B
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Elf 7; Mag 6; Dru, Hex je 3; Srl (Mag) 3&lt;br&gt;
+Was ursprünglich als elfischer Freundschaftszauber, ja als höfliche
+Begrüssung angesehen wurde, hat sich in den Händen der Magier zu einem
+verbreiteten Beeinflussungsinstrument par excellence gewandelt - kein
+Wunder also, dass Magier und Elfen in Fragen der Anwendung dieser Formel
+regelmässig in Disput, wenn nicht gar handfesten Streit geraten. Es ist
+den Akademien sogar gelungen, aus dem BANNBALADIN eine Herrschaftsformel,
+den IMPERAVI, zu extrahieren, die von den Elfen zu tiefst badoc und
+als taubra abgelehnt wird.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>6</id><name>Band und Fessel</name><attributes>KL CH KK</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / CH / KK (+ MR)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Die Elfe läuft einmal im Kreis um das Opfer herum und
+spricht zum Abschluss das bhanda fialza dhaom'ra.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;3 Aktionen plus 6 Aktionen pro Schritt Radius, den
+der Kreis hat.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;&lt;/P&gt;Mit diesem Zauber wird ein Opfer (Tier oder denkendes Wesen)
+daran gehindert, das von der Elfe festgelegte Gebiet zu verlassen. Jeweils
+nach Verstreichen einer vollen Spielrunde kann das Opfer versuchen, die
+Zauberwirkung mittels einer MU-Probe abzuschütteln, die jedoch um die ZfP*
+erschwert ist.) Dieser Zuschlag sinkt pro Stunde um einen Punkt (die ZfP*
+verbrauchen sich sozusagen, bis sie bei 0 angekommen sind und der Zauber endet).
+Andererseits bedeutet eine misslungene MU-Probe, dass der MU des Opfers
+bis zum Ende der Wirkungsdauer um 1 Punkt sinkt, diese Abzüge sind kumulativ.&lt;br&gt;
+Die Zone, die durch den Zauber festgelegt wird, ist relativ zu verstehen:
+Wenn eine Person beispielsweise auf einem Schiff Opfer des Zaubers wird,
+dann kann sie sich innerhalb des Schiffes nicht weiterbewegen, unabhängig davon,
+ob das Schiff sich fortbewegt oder nicht. Es ist auch einem Bezauberten
+jederzeit möglich, Gegenstände durch die Barriere hindurch zu bewegen, also
+zu schiessen oder am Rand der Barriere zu kämpfen - nur sein gesamter Körper
+einschliesslich aller Extremitäten wird von der Barriere aufgehalten. Die Elfe
+selbst hingegen kann sich ebenso wie jede Person, die nicht Opfer des Zaubers ist,
+jederzeit in den Kreis hinein oder aus ihm hinaus bewegen. Ein Opfer, das
+einmal seine MU-Probe geschafft hat, unterliegt der Wirkung nicht mehr,
+kann sich also ab sofort frei über die Barriere hinweg bewegen. Sollte das Opfer
+mit Gewalt über die Barriere gezwungen werden, verliert es augenblicklich ZfP*
+Mut-Punkte (die sich um 1 pro Stunde regenerieren) und erleidet ebenso viele
+Punkte Erschöpfung.
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;9 AsP (borb. Var.: 1W20 AsP oder 1W20/2 LeP)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelwesen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;Das abgeschrittene Gebiet darf eine maximale Ausdehnung
+von ZfW Schritt Radius haben. Das Opfer muss sich nicht genau im Zentrum
+des Gebietes befinden, aber es muss vollständig umschlossen sein.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;ZfP* Stunden
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zielobjekt (mehrere)&lt;br&gt;
+Gegen mehrere Zielobjekte kostet der Zauber 7 AsP pro Opfer.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Ausgewählte Zielobjekte &lt;/i&gt;&lt;/b&gt;(+3). In diesem Fall kann die Elfe
+beliebig auswählen, welche Personen innerhalb des abgeschrittenen Kreises
+betroffen sind und welche nicht; Kosten wie bei mehreren Zielobjekten,
+jedoch auch für die ausgesparten Ziele.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Bindung in endloser Höhe &lt;/i&gt;&lt;/b&gt;(+7). Mit diesem Spruch ist es auch
+möglich, Opfer zu binden, die sich beispielsweise in einem anderen Stockwerk
+eines Gebäudes befinden, aber vollständig innerhalb eines Zylinders,
+dessen Ränder durch den von der Elfe gezogenen Kreis beschreiben werden.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Bannen durch einen Blick &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 14). Die Elfe ist in der Lage,
+die Bannzone allein durch einen Blick festzulegen - sie muss sie nicht
+abschreiten, sondern nur den Radius um das Opfer festlegen. Zentrum der
+Bannzone darf maximal ZfW Schritt von der Elfe entfernt sein; die Zone
+darf einen Durchmesser von maximal ZfW Schritt haben (und muss mindesten
+1 Schritt durchmessen). Die Zauberdauer sinkt in dieser Variante auf 4 Aktionen.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;Die Reversalis-Variante des Grundzaubers bewirkt, dass eine
+bestimmte Person den umschrittenen Kreis nicht betreten kann. Allerdings
+muss sich diese Person während der Zauberdauer im Sichtbereich der
+Elfe aufhalten. Eine spezielle Reversalis-Variante mit mehreren Zielobjekten
+erlaubt es, eine Zone so zu präparieren, dass niemand sie ohne erschwerte
+MU-Probe betreten kann, abgesehen von den Personen, die sich zum Zeitpunkt
+des Zaubers selbst innerhalb der Reichweite aufgehalten haben. Diese Variante
+ist durchaus dazu geeignet, einen nächtlichen Lagerplatz zu schützen.
+Allerdings ist die Proben insgesamt um 10 Punkte erschwert, der Zauber
+kostet 15 AsP und die MU-Proben zum Eindringen sind jeweils um die eigene
+MR erleichtert.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;kann in einer Zone des EINFLUSS BANNEN nur erschwert
+gewirkt und durch ihn beendet werden.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Einfluss (Bor: Einfluss, Iribaar)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;C
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Elf 5; Hex 4; Dru, Mag je 3; Ach, Bor,
+Geo je 2&lt;br&gt;
+Ursprünglich benutzten die Waldelfen diesen Zauber dazu, unwillkommene
+Eindringlinge in ihrem Gebiet ohne Waffengewalt gefangen zu nehmen und
+damit zum Verlassen des Waldes zu veranlassen. Spätestens die Gildenmagier
+erkannten aber die zahlreichen Möglichkeiten, die er bietet und benutzten
+ihn zu unterschiedlichsten Zwecken.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>5</id><name>Balsam Salabunde</name><attributes>KL IN CH</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / IN / CH (evtl. + Mod.)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Elf legt dem Verletzten sanft eine Hand auf die
+Verletzung (bei grossflächigen oder inneren Verletzungen aufs Herz)
+und wiederholt die Melodie des Bha'sama sala bian da'o so lange, bis die
+heilende Wirkung einsetzt.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;min. 5 Aktionen bis zum langsamen Einsetzen der
+ersten Heilwirkung, 1 SR insgesamt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;&lt;/P&gt;Dieser mächtige Zauber heilt, je nach AsP-Einsatz,
+sämtliche Wunden und inneren Verletzungen des Verzauberten. Man kann
+der heilenden Wirkung eines mächtigen BALSAM SALABUNDE förmlich zusehen:
+Offene Wunden überziehen sich mit frischer Haut, Blutungen halten ein,
+zersplitterte Knochen finden wieder zusammen. Für jeden AsP, den der
+Zauberer einsetzt, bekommt ein Verwundeter, Kranker oder Vergifteter
+einen Lebenspunkt zurück (maximal jedoch ZfW x 2 LeP). Der Zauberer
+kann sich mit diesem Spruch auch selbst heilen (wenn er nicht bewusstlos
+ist; es gelten die üblichen Zuschläge für Wunden und niedrige LE).
+Die schädliche Wirkung von Krankheiten und Giften wird mit diesem
+Zauber nicht gestoppt.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Heilung von Wunden (WdS 37, 161). &lt;/i&gt;&lt;/b&gt;Die Zauberprobe
+ist um die doppelte Anzahl der Wunden des Patienten erschwert. Je
+7 zurückgegebene LeP heilen eine Wunde vollständig. Optional:
+Wenn Sie mit Trefferzonen spielen, gilt für die Probe der höchste
+Zuschlag (die schlimmste Wunde) der Tabelle aus WdS 37. Auch hier heilen
+je 7 zurückgegebene LeP eine Wunde vollständig. Das Heilen von Wunden
+muss angesagt werden, ist also kein 'Nebeneffekt' des BALSAM-Zaubers.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Heilung von Verstümmelungen.  &lt;/i&gt;&lt;/b&gt;Der Zauber kann auch abgetrennte
+Gliedmassen wieder anfügen oder komplett zerstörte Organe regenerieren,
+solange die Verletzung noch frisch ist (maximal ZfW Stunden). Dies erfordert
+je nach Komplexität und Schwere der Verstümmelung eine bis zu 15 Punkte
+erschwerte Probe und womöglich permanente AsP (Meisterentscheid). Narben
+kann man bis zu ZfW Tagen nach Entstehung mit dem BALSAM verschwinden
+lassen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Rettung von der Schwelle des Todes. &lt;/i&gt;&lt;/b&gt;Schwerst Verwundete
+(zwischen 0 LeP und -KO LeP) vom Rande des Todes zurückzuholen, gelingt,
+wenn der Zauber sofort und mit vollem Einsatz gesprochen wird (mindestens
+10 AsP, ausserdem muss der Patient hierdurch auf mindestens 1 LeP kommen;
+Probe erschwert um ((LeP unter null) x 2). Jeder zurückzubringende LeP
+unter 0 kostet den Zaubernden 2 AsP. Dabei verliert der Zaubernde für je
+10 angefangene LeP unter 0 einen permanenten AsP (jedoch nur, wenn der
+Zauber gelingt), der jedoch nach den Regeln von WdS 173 zurückgekauft werden
+kann. Ein Patient, dessen LeP unter den negativen Wert seiner Wundschwelle
+(üblicherweise also unter -KO/2) gefallen sind, hat so schwere Verletzungen
+erlitten, dass er permanent einen LeP verliert (Optionalregel WdS 56).
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;1 AsP pro LeP, mindestens aber 5 AsP
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelwesen, freiwillig
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;selbst, Berührung
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;augenblicklich
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Kosten, Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Lebenskraft stärken &lt;/i&gt;&lt;/b&gt;(+5; ab ZfW 11). Die Lebensaura des
+Nutzniessers wird für einige Zeit über das gewöhnliche Mass hinaus gestärkt.
+Für je 3 AsP kann die LE des Verzauberten um 1 LeP über den LE-Grundwert
+angehoben werden. Maximal können so vorübergehen ZfW LeP hinzugewonnen werden.
+Nach ZfP* Stunden baut sich dieses Übermass an Lebensaura jedoch wieder ab
+und der Verzauberte verliert die entsprechenden LeP wieder (dadurch kann er
+sogar zu Tode kommen, wenn er zwischenzeitlich zu viele LeP verloren hat).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Sofortige Regeneration &lt;/i&gt;&lt;/b&gt;(+15; ab ZfW 18). Der verzauberte
+Leib erhält die Möglichkeit zur sofortigen Regeneration: Jede KR
+regeneriert der Nutzniesser 1W6 LeP, geschlagene Wunden schliessen sich
+sofort wieder. Kosten: 35 AsP. Zauberdauer: 12 Aktionen.
+Wirkungsdauer: ZfP* x 10 Kampfrunden.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;ein schleichender Schadenszauber, bei dem das Opfer
+je eingesetztem AsP einen LeP verliert.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;Während der Zauber gewirkt wird, kann er mit HEILKRAFT
+BANNEN und VERWANDLUNG BEENDEN zum Scheitern gebracht werden; er wirkt nur
+erschwert in entsprechenden Zonen.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Heilung, Form
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;C
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Elf, Mag je 7; Ach, Geo je 5; Dru 4; Hex 3&lt;br&gt;
+Der König aller Heilzauber ist vor allem von den Elfen bekannt (von denen die
+Gildenzauberer ihn übernommen haben), aber auch Geoden und Achaz haben diese
+Formel entwickelt. Seine Kenntnis ist überall verbreitet, obwohl er in der
+klassischen Medizin überraschend selten eingesetzt wird: Gerade in
+Mittelaventurien kursiert der Glaube, dass die magische Heilung nicht
+göttergefällig oder widernatürlich sei, und sie wird deswegen bisweilen abgelehnt.
+&lt;/P&gt;</desc></dsa_spell_item></folder><folder><name>A</name><dsa_spell_item><id>30</id><name>Ängste Lindern</name><attributes>MU IN CH</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / IN / CH
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Die Hexe tritt vor die Person, der
+sie helfen möchte, sieht ihr in die Augen und
+legt ihr beide Hände auf die Schultern.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 20 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Das Selbstvertrauen des Gefährten wird
+auf magische Weise gestärkt. Der Zauber wird nach
+einer gelungenen Probe auf eine Schlechte Eigenschaft,
+die mit tief verwurzelten Ängsten zu tun hat (alles mit
+‘Angst’ oder ‘Phobie’ im Namen, jedoch auch &lt;i&gt;Aberglaube&lt;/i&gt;),
+oder nach einer misslungenen Mut-Probe angewandt und
+gestattet es einem Helden, die Probe zu wiederholen. Für diese
+Wiederholungsprobe ist die entsprechende Schlechte Eigenschaft
+um die ZfP* gesenkt oder der MU-Wert entsprechend erhöht.
+Wird die Angst als Aufschlag auf eine Probe gehandhabt (z.B.
+Klettern-Probe, erschwert um Höhenangst), muss der Zauber
+vor der Probe gewirkt werden, kann dann aber den Aufschlag
+durch die Angst vollständig aufheben, wenn die Hexe ausreichend
+ZfP* übrig behält.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 5 AsP
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson, freiwillig
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Berührung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: augenblicklich, die motivierende Kraft des
+Zaubers hält so lange an, wie die direkt auf den Zauber folgende
+Aktion dauert (also dem obigen Beispiel folgend für den nächsten
+Kletterabschnitt, je nach Ausdauer der Kletternden).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Erzwingen,
+Kosten, Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Vertrauten beruhigen&lt;/i&gt;&lt;/b&gt;. In der satuarischen Repräsentation gilt
+der eigene Vertraute als Einzelperson – in diesem Fall wirkt die
+Grundvariante des Zaubers also auch auf Tiere.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Gegenzauber &lt;/i&gt;&lt;/b&gt;(+MR des Patienten). Obwohl dies ursprünglich
+bestimmt nicht in der Absicht der Töchter Satuarias lag, hilft
+dieser Zauber auch gegen verschiedene,
+von finsterer Zauberei verursachte Ängste:
+Er verkürzt die Wirkung des HORRIPHOBUS,
+des SCHWARZEN SCHRECKENS, des BÖSEN
+BLICKS, des Fluchs &lt;i&gt;Ängste mehren &lt;/i&gt;sowie anderer,
+ähnlich wirkender Furcht erzeugender Zauber oder
+Rituale. Dazu wird die Hälfte der ZfP* der Hexe von den
+ZfP* des Ängste verursachenden Zaubers abgezogen und
+dessen Wirkung entsprechend angepasst; fällt dadurch die
+Wirkungsdauer auf 0, ist der Furcht-Zauber sofort gebrochen.
+Diese Variante kostet 7 AsP.
+&lt;b&gt;&lt;i&gt;Seele beruhigen &lt;/i&gt;&lt;/b&gt;(+3). Wirkt speziell gegen andere
+Schlechte Eigenschaften: &lt;i&gt;Jähzorn &lt;/i&gt;wird gesenkt,
+&lt;i&gt;Goldgier &lt;/i&gt;wird gemindert und dergleichen.
+&lt;b&gt;&lt;i&gt;Tiere besänftigen &lt;/i&gt;&lt;/b&gt;(+5 plus geistige MR des Tieres).
+Eventuelle Ängste von Tieren können hiermit eine Zeit lang unterdrückt
+werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: bekannt als Ängste mehren: Alle vorhandenen Ängste
+verdoppeln sich für die nächste Viertelstunde.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des EINFLUSS BANNEN nur
+erschwert gewirkt und von diesem Zauber aufgehoben werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Einfluss
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Hex 7; Geo 5; Dru,
+Mag je 4&lt;br&gt;
+Außer von einer Hexe lässt sich dieser Zauber noch an den Akademien
+in Norburg, Vinsalt und Donnerbach erlernen, wobei jedoch in Vinsalt
+nur Magier, in Donnerbach nur Magier und Elfen und in Norburg
+alle Zauberkundigen außer Schelmen zum Studium zugelassen sind.
+Es heißt, dass die gildenmagische Thesis dieser Formel wohl auch in
+Perricum und der Halle der Antimagie zu Kuslik bekannt ist, dort
+jedoch nur den eigenen Eleven gelehrt wird.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>4</id><name>Axxeleratus Blitzgeschwind</name><attributes>KL GE KO</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / GE / KO
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Die Elfe konzentriert sich auf alle Muskeln und Sehnen
+ihres Körpers und spricht a'sela dhao biundawin.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;2 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;&lt;/P&gt;Dieser Zauber versetzt den Verzauberten in die Lage,
+seine Bewegungen kurzfristig enorm zu beschleunigen. Sie sind fliessend und
+grazil, wirken jedoch wegen der Schnelligkeit für Aussenstehende leicht
+verschwommen. Es werden ausschliesslich körperliche Aktionen beeinflusst,
+geistige Aktivitäten (wie lesen, denken, zielen oder zaubern) bleibe
+unbeeinflusst. Auch die Koordinierungsfähigkeit verbessert sich nicht,
+weswegen es vermehrt zu Stürzen oder Verstauchungen kommen kann
+(GE- oder FF-Proben).&lt;br&gt;
+Der Parade-Basiswert erhöht sich um 2 Punkte, Ausweichen-Proben sind
+um weitere 2 Punkte erleichtert; die TP von bewaffneten der unbewaffneten
+Nahkampfangriffen steigen um 2 Punkte und die Abwehr eines beschleunigten
+Nahkampf-Angriffs sind um 2 Punkte erschwert. GS (nach Einrechnung der BE)
+und INI-Basiswert (der aus den Eigenschaften und eventuellen Vor-/Nachteilen
+berechnete Teil der INI) werden verdoppelt. Ebenfalls verdoppelt ist der
+&lt;i&gt;Athletik&lt;/i&gt;-TaW zur Berechnung von Sprints und Sprüngen. Während der
+Wirkungsdauer verfügt der Verzauberte über die Entsprechung der
+Sonderfertigkeiten &lt;i&gt;Schnellziehen&lt;/i&gt; und &lt;i&gt;Schnellladen&lt;/i&gt;. Wenn er
+diese SF sowieso schon beherrscht, kann er das Laden und Ziehen einer
+Waffe um eine weitere Aktion verkürzen (nicht weniger als 1 Aktion,
+FF-Probe erforderlich).
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;7 AsP (Sch: 5 AsP)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelperson, freiwillig
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;selbst, 7 Schritt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;ZfP* mal 3 Kampfrunden (A)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Kosten, Zielobjekt
+(mehrere), Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Blitzgeschwind &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11). Der Zauber verleiht der
+Nutzniesserin die Schnelligkeit eines Pfeils: Zusätzlich zur o.g. Wirkung
+wird der &lt;i&gt;Athletik&lt;/i&gt;-Wert für Sprints und Sprungweiten um die doppelten
+ZfP* erhöht, die GS ebenso. Eine weitere Steigerung von Kampfwerten findet
+jedoch nicht mehr statt. Bei diesem wahnwitzigen Tempo soll es jedoch schon
+häufig zu Unfällen gekommen sein, bei dem sausende Zauberkundige an Bäumen
+oder Felsvorsprüngen endeten. Ein Kampf ist in diesem Tempo besonders riskant
+- alle Würfelwürfe von 18 und höher gelten als Patzer.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Koboldisch &lt;/i&gt;&lt;/b&gt;(ab ZfW 3). Die Beschleunigung bezieht sich einzig
+auf die Sprache der Elfe - nur so ist es möglich, Koboldisch zu sprechen.
+Schelme sind hiervon ausgenommen: Sie beherrschen die Sprache auch ohne diesen
+Zauber. Die Wirkungsdauer für diese Variante beträgt ZfP* Minuten.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;erzeugt beim Verzauberten verlangsamte Bewegungen,
+so dass er sich nur noch mit halber GS fortbewegen kann, sein
+&lt;i&gt;Athletik&lt;/i&gt;-Wert wird für oben genannte Anwendungen halbiert und er
+hat im Kampf reduzierte Werte: AT, PA, Ausweichen und TP je -2. Es gelten
+natürlich die Regeln für ein unfreiwilliges Zielobjekt.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;kann nicht in einer Zone des EIGENSCHAFTEN
+WIEDERHERSTELLEN gesprochen werden und wird von diesem Spruch erschwert.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Eigenschaften
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;C
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Elf 6; Ach, Sch je 5; Mag 3&lt;br&gt;
+Die Waldelfen, von denen der Zauber ursprünglich stammt, verwenden diese Magie
+zur Jagd, Au- und Steppenelfen haben ihn jedoch für den Kampf perfektioniert.
+Die Achaz sollen mit beschleunigtem Schuppenschwanz und schneller Zunge auch
+rituelle Tänze und Gesänge aufführen, während die Schelme den Zauber bisweilen
+von ihren koboldischen Zieheltern gelehrt bekommen. Die gildenmagische
+Repräsentation wird fast nur in Gerasim, Belhanka, an der Akademie der
+Verformungen zu Lowangen und auch im Kreis der Einfühlung gelehrt. Der
+AXXELERATUS lässt sich leider nicht aus &lt;b&gt;Zauberkräfte der Natur&lt;/b&gt;
+rekonstruieren, obwohl Tamara seine Wirkung detailliert beschrieben hat.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>39</id><name>Auris Nasus Oculus</name><attributes>KL CH FF</attributes><raisingCost>D</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / CH / FF
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Magier konzentriert sich auf
+den Ort, an dem die Illusion erscheinen soll, und
+murmelt mit geschlossenen Augen die Formel.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 5 Aktionen pro Illusionskomponente,
+die erscheinen soll.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der Zaubernde kann mit dieser Formel
+illusionäre Geräusche, Gerüche und dreidimensionale
+(aber unbewegte) Bilder erschaffen (z.B. eine Schrift an der
+Wand; eine vorgelagerte Wand, hinter der sich der Zaubernde
+versteckt; eine Stimme aus dem Nichts; Brandgeruch). Jedes
+einzelne Bild und Geräusch und jeder einzelne Geruch gilt
+als eine der oben genannten Illusionskomponenten. Die Größe
+der entstehenden Bilder kann maximal ZfW x 5 Raumschritt
+betragen. Die drei Illusionsarten können miteinander kombiniert
+werden, dafür ist die Probe jedoch um 2 Punkte pro zusätzlicher
+Komponente erschwert. Wenn sie einmal entstanden sind, kann der
+Magier sich anderen Dingen zuwenden. Die Realitätsdichte (siehe
+den Kasten zum Thema Illusionen auf der gegenüberliegenden Seite)
+beträgt ZfP*/2+7 Punkte.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 4 AsP pro Illusionskomponente
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Zone
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: ZfW x 3 Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: maximal ZfP*/2 Spielrunden
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten, Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Verpuffung &lt;/i&gt;&lt;/b&gt;(+3). Bildillusionen lösen sich langsam auf oder
+verpuffen schlagartig, sobald sie berührt werden; ein gewollter
+optischer Effekt.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Außer Sicht &lt;/i&gt;&lt;/b&gt;(+3). Trugbild, Geräusch oder Geruch entstehen
+an einem Punkt innerhalb der Reichweite, den der Zaubernde nicht
+einsehen kann, den er aber schon einmal gesehen haben muss.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Entfernte Phantasmagorie &lt;/i&gt;&lt;/b&gt;(+5). Eine Reichweitenvergrößerung,
+mit der es möglich ist, Trugbilder weiter entfernt erscheinen
+zu lassen (z.B. am Himmel): Die Reichweite
+beträgt ZfW x 30 Schritt.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Bewegte Bilder &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11). Es wird
+eine bewegliche Bildillusion erzeugt (z.B. ein fliegender Drache).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Selbst leuchtend &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11). Die Bild-Illusion
+kann auch eine Lichtquelle darstellen.&lt;br&gt;
+Geschmack und Tastsinn (jeweils +12; ab ZfW 14).
+Prinzipiell möglich, aber eine schon legendär schwierige
+Auswirkung sind die Täuschungen dieser beiden Sinne.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: Der Zauber wird aufgehoben.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des ILLUSION AUFLÖSEN
+nur erschwert gewirkt werden und wird von diesem Zauber
+aufgehoben.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Illusion
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: D
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Mag, Srl je 5
+Es bleibt eine große Frage, warum es mit dem AURIS NASUS – der
+anerkannten Kernformel und ‘Mutter aller Illusionen’ – nur derart
+schwer möglich ist, den Tast- und den Geschmackssinn zu täuschen.
+Kein Wunder also, dass an allen Illusionsschulen heftig an einer solchen
+Erweiterung des Zaubers geforscht wird, jedoch scheint die
+Entwicklung einer ‘vollsensorischen Phantasmagorie’ noch in weiter Ferne zu
+liegen. Die letzte beobachtete Erscheinung einer solchen Illusion durch
+klassische Spruchmagie war während der Magierkriege. (Zumal auch
+berechtigter philosophischer Zweifel daran bestehen darf, ob eine solch
+mächtige Illusion nicht gar die Erschaffung von Realität darstellt und
+damit ein Privileg der Götter ist.)&lt;br&gt;
+Die Formel wird in Zorgan, Grangor, Khunchom und Punin gelehrt.
+Zudem findet sich die Thesis in allen relevanten Werken zur
+Illusionszauberei, namentlich der Theorie der Wahrnehmung und
+Beobachtung und dem Liber Methelessae.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>38</id><name>Aureolus Güldenglanz</name><attributes>IN CH FF</attributes><raisingCost>A</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: IN / CH / FF
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Die Magierin berührt die zu verzaubernde
+Oberfläche und spricht das Zauberwort.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 5 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Die Oberfläche erhält einen goldenen Glanz
+und schimmert leicht – auch im Dunkeln. Der Glanz reicht
+aus, um einen Gegenstand zu lokalisieren, stellt aber keine
+nutzbare Lichtquelle dar. Die Oberfläche kann zu einem
+Gegenstand gehören oder Teil einer Wand sein.
+Diese einfache Illusion stellt genau die richtige Zauberei für
+eitle Magi und Magae aller Art dar, die sich gerne mit dem Schein
+von Reichtum umgeben. An Fürstenhöfen mag eine Magierin
+hiermit so manchen Dukaten, Batzen oder Maravedi verdienen,
+indem sie der Einrichtung des Herrschers strahlenden Glanz
+verleiht. Fürstin Sybia von Aranien soll während ihrer Regierungszeit
+auf diese Art manchen Stammesfürsten der Ferkinas und auch den
+darpatischen Emissär zutiefst beeindruckt haben.
+Die Realitätsdichte (siehe den Kasten zum Thema Illusionen auf Seite
+33) beträgt ZfP*/2+7 Punkte.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 3 AsP pro angefangenem Rechtschritt Oberfläche
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelobjekt, Einzelwesen, freiwillig
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: selbst, Berührung; die Oberfläche darf maximal ZfW
+Rechtschritt groß sein.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP* x 6 Stunden
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten, Reich-
+weite, Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Farbenglanz &lt;/i&gt;&lt;/b&gt;(+3). Anstatt einer goldschimmernden
+Oberfläche können nach Belieben
+auch silbern, kristallen oder opalgleich sowie jede
+denkbare Farbe gewählt werden.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Muster &lt;/i&gt;&lt;/b&gt;(+7). Die Oberfläche besteht aus einem
+vom Zaubernden festgelegten, ‘gekachelten’ Muster aus
+mehreren Farben. Das Muster ist von beliebiger Komplexität
+und kann z.B. auch Schriftzeichen (ständig wiederholte
+Wörter) zeigen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Wasserfläche &lt;/i&gt;&lt;/b&gt;(+7). Das Objekt muss keine feste Oberfläche
+haben, sondern kann z.B. menschliche Haut oder eine
+bewegte Wasserfläche sein.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: Der Zauber wird aufgehoben.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des ILLUSION AUFLÖSEN
+nur erschwert gewirkt werden und wird von diesem Zauber
+aufgehoben.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Illusion
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: A
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Srl 6, Mag 4
+Dieser von der großartigen Methelessa ya Comari entwickelte Spruch
+wird nur an der Akademie des Seienden Scheins und an der Universalschule
+von Al‘Anfa gelehrt. Unter den Scharlatanen hat er jedoch
+weit größere Verbreitung gefunden: so sehr, dass er mittlerweile als
+typische Scharlatanerie gilt und manch verknöcherter Gildenmagier
+diese ‘Spielerei’ als unwürdig erachtet.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>37</id><name>Auge des Limbus</name><attributes>MU KO KK</attributes><raisingCost>E</raisingCost><desc>&lt;b&gt;Auge des Limbus&lt;/b&gt;
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / KO / KK
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Magier macht mit beiden Händen
+eine kreisende Bewegung, reißt die Hände an den
+Körper und spricht die Formel.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 15 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Diese Formel bewirkt eine unkontrollierte,
+strudelartige Öffnung von der Dritten Sphäre in die
+‘darüber liegende’ Ebene des Limbus, die sich als tosender,
+grauer Mahlstrom manifestiert.&lt;br&gt;
+Innerhalb des Zentralbereichs des Wirbels wird alles, was nicht
+massiv an festen Objekten außerhalb dieses Bereichs befestigt
+ist, in den Limbus gerissen. Für Bereiche außerhalb des zentralen
+Wirkungsbereichs gilt, dass von der Mitte des Wirbels aus eine
+Zugkraft entsteht, die der Höhe der eingesetzten AsP entspricht
+und die pro Schritt Abstand vom Zentrum um 2 Punkte abnimmt.
+Am Anfang jeder Kampfrunde müssen alle Wesen innerhalb der
+betroffenen Umgebung eine KK-Probe erschwert um die Zugkraft
+des Wirbels ablegen, bei deren Misslingen sie 1W6 Schritt zum
+Zentrum hingezogen werden. Gegenstände werden je nach Halt und
+Gewicht zum Wirbel hingezogen.&lt;br&gt;
+Wer von diesem Zauber in den Limbus gerissen wird, erleidet halb
+so viele Schadenspunkte, wie AsP für die Erschaffung des Wirbels
+aufgewandt wurden.&lt;br&gt;
+Der Entstehungsort des Wirbels muss bereits während der Zauberdauer
+– nach etwa 7 Aktionen – festgelegt werden. Der Natur des
+chaotischen Zaubers entsprechend, lässt er sich auf bestenfalls einen
+Schritt genau zielen.&lt;br&gt;
+Der zentrale Bereich des Wirbels entsteht ohne weitere Schwierigkeiten
+nur in Luft; in Feuer oder Wasser ist die Probe um 5 Punkte erschwert
+und die Kosten sind verdoppelt, in Humus, Eis oder Erz sind die Kosten
+verdreifacht bei einer Proben-Erschwernis von 12 Punkten. Dieser
+zentrale Wirkungsbereich ‘springt nicht auf ein benachbartes Element
+über’ – es wirkt nur der oben beschriebene Sog.
+Wird der Zauber übrigens im Limbus gewirkt, ist die Probe
+um 3W6 Punkte erschwert und öffnet dann ein Tor zu irgendeinem,
+offenbar zufälligen Ort – vielleicht in Aventurien,
+vielleicht aber auch in einer anderen Sphäre
+oder Globule. Mehr zum Limbus finden Sie im
+gleichnamigen Kapitel in Wege der Zauberei auf
+den Seiten 358ff.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 3W6 AsP plus 3 AsP je Schritt Radius des
+Zentralbereichs, den der Wirbel aufweist.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Zone
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Der Wirbel entsteht maximal ZfW Schritt
+vom Zaubernden entfernt (so dass sich der Zaubernde bei
+einem entsprechend niedrigen Wert höchster Gefahr aussetzt).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: augenblicklich; der Wirbel bleibt ZfP* KR
+bestehen und schließt sich dann schlagartig.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten,
+Erzwingen, Reichweite, Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Tor in die Niederhöllen &lt;/i&gt;&lt;/b&gt;(+10; ab ZfW 14). Der Mahlstrom
+führt anstatt in den Limbus direkt in die Niederhöllen, die sich
+gähnend hinter dem Schlund auftun. Die Kosten für diese Variante
+sind verdreifacht. Gnade der Seele desjenigen, der hier vom Sog
+erfasst wird ...&lt;br&gt;
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: keine Wirkung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: Die Zonen-Variante des LIMBUS VERSIEGELN
+erschwert das Wirken des Zaubers; direkt angewandt kann diese
+Antimagie einen Wirbel schließen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Limbus, Kraft
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: E
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Mag 2, Ach 1
+Eigentlicher Zweck der Formel ist die Verbannung von Dämonen in
+den Limbus. Die solcherart aus der Dritten Sphäre verbannten
+Dämonen werden leider nicht in die Siebte Sphäre zurückgeschleudert,
+sondern können dem Exorzisten bei einem eventuellen Aufenthalt im
+Limbus durchaus wieder begegnen. Die Formel ist quasi unbekannt
+und in ihrer kompletten Form nur in Punin und bei extrem wenigen
+Privatgelehrten in Thesisform niedergelegt. Nach etlichen
+bedauerlichen Unfällen werden diese Thesen jedoch der Öffentlichkeit
+nicht mehr zur Verfügung gestellt.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>36</id><name>Aufgeblasen Abgehoben</name><attributes>CH KO KK</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: CH / KO / KK (+MR)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Die Schelmin holt laut und gut sichtbar
+Luft, bläst ihre Backen auf, hebt die Hände langsam
+zum Himmel und lässt die Luft mit einem lauten
+“Pfrrz!” wieder entweichen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 7 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der Bezauberte bläst gegen seinen Willen selbst
+die Backen auf (ja, er erscheint überhaupt sehr aufgeblasen)
+und beginnt, langsam aber stetig (etwa ein Spann pro Aktion)
+nach oben zu schweben, um nach Ablauf der Zauberdauer ebenso
+langsam wieder zu Boden zu sinken.&lt;br&gt;
+Das Opfer bewegt sich eventuell mit dem Wind, kann aber weder
+von der Schelmin gelenkt werden, noch selbst irgendwelche
+Steuerbewegungen vornehmen – und da es die Backen aufgeblasen hat,
+kann es auch nicht schreien (oder Zaubersprüche ausstoßen).
+Der Zauber wirkt nur gegen intelligente Lebewesen, dabei aber
+auch gegen solch massive Gestalten wie Trolle (in diesem Fall aber
+zu höheren Kosten; siehe die generellen Magieregeln im Band Wege
+der Zauberei auf Seite 24).&lt;br&gt;
+In geschlossenen Räumen wird der Verzauberte natürlich höchst
+unbeholfen und lächerlich unter der Decke haften bleiben, während
+im Freien eine große Höhe (Proben auf eine eventuell vorhandene
+Höhenangst verlangen!) unter Umständen dazu führt, dass er den
+Boden mit leicht gebräunten Beinkleidern wieder betritt ...
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 15 AsP (Sch: 10 AsP)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: 7 Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP*/2 Spielrunden
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Flughöhe begrenzen &lt;/i&gt;&lt;/b&gt;(+3). Opfer fliegt max. ZfW
+Schritt hoch.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Fesselballon &lt;/i&gt;&lt;/b&gt;(+3). Opfer bleibt senkrecht über der
+Startstelle.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Tierballons &lt;/i&gt;&lt;/b&gt;(+5). Diese Variante wirkt auch auf Tiere
+(Zielobjekt: Einzelwesen).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Kunstflug &lt;/i&gt;&lt;/b&gt;(+7). Das Opfer fliegt Figuren, die die Schelmin
+mit ihren Armen vormacht (A).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: hebt einen wirkenden AUFGEBLASEN wieder
+auf.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: VERWANDLUNG BEENDEN und LUFTBANN
+können das Wirken des Zaubers erschweren (Zonen-Variante) oder
+ihn beenden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Form, Elementar (Luft)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Sch 5
+Es ist nicht bekannt, dass andere Zauberkundige außer Schelmen diesen
+Spruch beherrschen oder überhaupt kennen (in der Enzyclopaedia
+Magica ist er auch in der neuesten Ausgabe nicht dokumentiert).&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>3</id><name>Attributo</name><attributes>KL IN CH</attributes><raisingCost>B</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / CH / [gesteigerte Eigenschaft]
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Der Magier berührt seinen Gefährten mit beiden Händen
+und spricht die Formel. Wo er ihn berührt, hängt von der zu steigernden
+Eigenschaft ab: an beiden Oberarmen für Körperkraft, an den Schläfen für
+Klugheit, an den Augen für Intuition, an den Händen für Fingerfertigkeit
+usw. (LE, AU und AE werden durch die Grundwerte nicht neu berechnet;
+AT-, PA- und andere Basiswerte können aber abweichen.)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;30 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Der Zauber hebt den in der Probe durch 'Eigenschaft'
+bezeichneten Wert des Verzauberten für die Dauer einer Stunde um
+ZfP*/3 Punkte.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;7 AsP (Sch: 5 AsP)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelperson, Einzelwesen (s.u.), freiwillig
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;Berührung
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;1 Stunde
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;Zauberdauer, Reichweite (selbst),
+Wirkungsdauer&lt;br&gt;
+Die folgenden, nach Eigenschaften unterteilten Varianten sind keine
+einzelnen Zaubersprüche, sondern ein klassisches Beispiel für mögliche
+Zauber-Spezialisierungen (siehe WdZ 12, 17). Einzelne Varianten je nach
+den Eigenschaften wirken zwar grundsätzlich gleich; es sind jedoch
+einige weitere Anmerkungen nötig:&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Mut: &lt;/i&gt;&lt;/b&gt;Wirkt auch auf Tiere beliebiger Art, ist in diesem Fall
+jedoch um 3 Punkte erschwert.
+&lt;b&gt;&lt;i&gt;Klugheit: &lt;/i&gt;&lt;/b&gt;Dieser Zauber kann auch auf Vertraute, Reit- und
+Haustiere angewandt werden, ja sogar auf Pflanzen (z.B. als Vorbereitung
+auf einen Verständigungszauber), ist jedoch um 3 bis 5 Punkte für Tiere
+und um 7 Punkte für Pflanzen erschwert. Natürlich spricht ein solcherart
+'erleuchtetes' Wesen keine Menschensprache, und auch die Erinnerungen
+aus der Zeit vor Einsetzen des Zaubers sind entsprechen unintelligent.
+Als Ausgangswerte mögen hier dienen: KL 0: Gewürm, Schnecke, Pflanze;
+1: Fisch, Eidechse; 2: Rindvieh, Schlange; 3: Pferd, Raubvogel;
+4: Raubkatze, Hund; 5: Katze, Wolf, Schwein; 6: Affe, Eule, Rabe.&lt;br&gt;
+
+&lt;b&gt;&lt;i&gt;Intuition: &lt;/i&gt;&lt;/b&gt;Bei Lebewesen ohne höhere Verstandesfunktionen
+(Tiere) wirkt dieser Zauber als Verbesserung der Wahrnehmung und
+der Aufmerksamkeit und ist um 3 Punkte erschwert.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Charisma: &lt;/i&gt;&lt;/b&gt;Diese Variante wirkt ausschliesslich auf
+kulturschaffende Wesen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Fingerfertigkeit: &lt;/i&gt;&lt;/b&gt;Kann nur auf Lebewesen angewendet werden,
+die über eine Greifhand verfügen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Gewandtheit: &lt;/i&gt;&lt;/b&gt;Um die GE eines Vierbeiners oder einer
+Schlange zu verbessern, ist die Probe um 3 Punkte erschwert, bei
+Vögeln, Sechsbeinern oder fliegenden Vierbeinern um 5 Punkte, bei
+Achtbeinern oder fliegenden Sechsbeinern sogar um 7 Punkte.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Konstitution: &lt;/i&gt;&lt;/b&gt;Soll die Konstitution eines Tieres
+verändert werden, das leichter oder schwerer als ein Mensch
+(ca. 75 Stein) ist, so müssen die Kosten entsprechend der Masse
+des Tieres angepasst werden: Um die KO eines Pferdes zu erhöhen,
+sind also mindestens 40 AsP aufzuwenden (etwa das sechsfache Gewicht
+eines Menschen). Bei kleinen Tieren gilt, dass die KO durch diesen
+Zauber maximal verdoppelt werden kann.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Körperkraft: &lt;/i&gt;&lt;/b&gt;Wie Konstitution.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Schnellsteigerung: &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 11; nur in der
+gildenmagischen, elfischen, satuarischen und druidischen Repräsentation).
+Von dieser 'kleinen' oder 'Basis-Mutanda' existiert auch eine mächtigere
+Version, die dem Nutzniesser des Zaubers für die Dauer von ZfW KR einen
+Bonus von ZfP* Punkten auf  die entsprechende Eigenschaft bringt, den
+Zauberer jedoch 11 AsP kostet. Diese Form des Zaubers hat zudem eine
+Zauberdauer von nur 5 Aktionen.&lt;br&gt;
+Die ähnlich wirkende &lt;b&gt;&lt;i&gt;Übernatürliche Begabung&lt;/i&gt;&lt;/b&gt; der
+Magiedilettanten wirkt nur auf den Anwender selbst, steigert die
+Eigenschaft um ZfP* Punkte, wirkt für ZfP* KR und kostet ZfP* AsP.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;Die entsprechende Eigenschaft des Opfers sinkt um
+den entsprechenden Betrag.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;kann in einer Zone des EIGENSCHAFTEN WIEDERHERSTELLEN
+nur erschwert gewirkt und kann mit diesem Antimagie-Spruch beendet werden.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Eigenschaften
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;B
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Dru, Elf, Geo, Hex, Mag je 5;
+Ach, Sch, Srl je 3&lt;br&gt;
+Die nach Eigenschaft unterschiedlichen Varianten dieses Zaubers wurden
+lange Zeit als eigenständige Sprüche gelehrt (unter Namen wie KLUGHEIT
+WISSEN INTELLEKT, CHARISMA AUGETE, VORAHNUNG oder STÄRKE STEIGERN) und
+waren in unterschiedlicher Verteilung bei fast allen Zauberkundigen
+bekannt.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>35</id><name>Atemnot</name><attributes>MU KO KK</attributes><raisingCost>C</raisingCost><desc>&lt;b&gt;Atemnot&lt;/b&gt;
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / KO / KK (+MR)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Druide fixiert sein Opfer, atmet
+heftig aus und schlägt die Hände vor der Brust
+zusammen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 6 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Eine unsichtbare Kraft scheint dem Opfer
+die Kehle zuzuschnüren. Es leidet unter Kurzatmigkeit und
+gelegentlichen Schwindelanfällen (es erleidet schlagartig
+ZfP* Punkte Erschöpfung) und muss etwa einen Tag lang
+(das heißt, die nächsten ZfW x 2 Stunden) mit der Hälfte
+seines derzeitigen Ausdauerwertes auskommen (kann also nur
+bis zur halben AU regenerieren). Es kann nicht mehr so lange und
+auch nicht so schnell laufen, schwimmen etc. und ermüdet auch
+schneller bei kräfteraubenden Aktionen wie z.B. Kampf – es erleidet
+doppelt so hohe AuP-Verluste durch kräftezehrende Aktionen und
+doppelt so schnell Erschöpfung (WdS 139). Der Druide hingegen
+kann sich die Hälfte der geraubten Ausdauer gutschreiben (also ein
+Viertel der Ausdauer seines Opfers), so er sie benötigt. Regeln zur
+Auswirkung niedriger Ausdauer finden Sie in WdS auf Seiten 83.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 7 AsP
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: 3 Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfW x 2 Stunden
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer,
+Erzwingen, Kosten, Zielobjekt (mehrere),
+Reichweite, Wirkungsdauer
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: bewirkt freies, unbeschwertes Atmen
+und doppelte AU beim Verzauberten (jedoch nicht
+über den Grundwert hinaus), dafür aber halbe AU beim
+Druiden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des EIGENSCHAFT
+WIEDERHERSTELLEN nur erschwert gewirkt und von diesem
+Zauber aufgehoben werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Eigenschaften
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Dru 5, Ach 3
+Nachdem dieser Zauber lange Zeit auf die Druiden des Bornlands
+beschränkt und anderswo kaum bekannt war, hat er in neuerer
+Zeit unter den Druiden in ganz Aventurien weite Verbreitung
+gefunden, nicht zuletzt, weil er eine hervorragende Methode darstellt,
+Eindringlinge in die Heiligen Haine und andere geheime Orte zu
+vertreiben. Seine Existenz ist den Magiergilden bisher nicht bekannt.
+Den Achaz dagegen ist eine eigene Repräsentation dieses Spruches
+von alters her zugänglich.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>2</id><name>Armatrutz</name><attributes>IN GE KO</attributes><raisingCost>B</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;IN / GE / KO
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Die Elfe streicht mit den Händen über ihre Brust, während sie
+&lt;i&gt;ama tharza&lt;/i&gt; spricht.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;3 Aktionen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Die Zaubernde erhält eine (zusätzliche) 'stählerne Haut',
+die ihren natürlichen Rüstungsschutz erhöht. Die Stärke der zusätzlichen
+Rüstung darf maximal ZfW/2 Punkte betragen. Die zusätzliche Rüstung erzeugt
+keine Behinderung, wirkt wie alle stofflichen Rüstungen gegen materielle
+Angriffe (und damit auch gegen alle Dämonen- und Elementarattacken, die eine
+materielle Komponente haben), jedoch nicht gegen Zauber, die Schaden ohne
+materielle Komponente erzeugen wie der FULMINICTUS. &lt;br&gt;
+Der ARMATRUTZ hält übrigens auch die Bisse von Tieren wie Ratten oder
+Fledermäuse ab, die sich ungerüstete Stellen des Körpers aussuchen und
+SP anstatt TP hervorrufen.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;zusätzlicher RS mal zusätzlicher RS minus ZfP*/2 in AsP,
+mindestens aber 4 AsP
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelperson, freiwillig
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;selbst
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;maximal eine Spielrunde (A)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;&lt;/P&gt;Zauberdauer, Kosten, Reichweite
+(Berührung), Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Körperschild &lt;/i&gt;&lt;/b&gt;(+4): Der Zauber wird nur auf einen Teil des
+Körpers angewendet und kostet entsprechend weniger. Bei den Trefferzonen
+Brust, Rücken und Bauch werden die AsP-Kosten halbiert, bei Kopf, Armen
+und Beinen geviertelt, betragen jeweils aber mindestens 3 AsP.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Kraft des Fakirs &lt;/i&gt;&lt;/b&gt;(+3, ab ZfW 7): Unter der Wirkung dieser
+Variante ist die Zauberin resistent gegen Schäden, die 1 SP oder weniger
+verursachen würden. Grössere Schadenswirkungen betreffen sie allerdings
+unvermindert. Mücken stechen die Elfe nicht, und sie kann schadlos über
+Scherben gehen (nicht jedoch rennen oder springen). Die Wirkungsdauer
+beträgt maximal ZfW* Spielrunden (A), die Kosten 1 AsP pro SR.
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;hebt einen wirkenden ARMATRUTZ auf
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;Sowohl EIGENSCHAFT WIEDERHERSTELLEN als auch EISENBANN
+können die Wirkung beenden; kann in den entsprechenden Zonen nur erschwert
+gewirkt werden.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Eigenschaft, Elementar (Erz)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;B
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Elf, Mag je 6; Hex 3; Dru 2&lt;br&gt;
+Obwohl dieser Spruch ursprünglich von den Elfen stammt, gehört er - wie
+auch der firnelfische FLIM FLAM - zu den meistgelehrten Sprüchen an
+menschlichen Akademien, und auch Hexe und manchen Druiden ist diese
+Schutzformel nicht unbekannt. Andere Zauberkundige erlernen meist die
+leicht zugängliche elfische oder gildenmagische Repräsentation, wenn sie
+Leib und Leben behüten wollen.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>34</id><name>Arcanovi Artefakt</name><attributes>KL KL FF</attributes><raisingCost>E</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / KL / FF
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Magier berührt den Gegenstand,
+in den er den Zauber fließen lassen will, und spricht
+die benötigten Formeln, beginnend und endend mit
+dem ARCANOVI.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: ein bis mehrere Stunden
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Mit Hilfe dieser Formel kann der Zaubernde
+magische Artefakte erschaffen, indem er einen oder mehrere
+Zauber in einen Gegenstand seiner Wahl fließen lässt. Eine
+kurz gefasste Beschreibung der Wirkungsweise finden Sie im
+Kapitel Magische Artefakte im Band Wege der Zauberei
+(Seite 46ff.), eine detaillierte Betrachtung des Herstellungsvorgangs
+in der Spielhilfe Stäbe, Ringe, Dschinnenlampen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 10 AsP (+ Kosten der Wirkenden Sprüche). Jedes
+Artefakt erfordert zudem den Aufwand von permanenten AsP zur
+Schaffung einer dauerhaften Matrix.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelobjekt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Berührung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: variabel; je nach Art des Artefakts bleibt der
+ARCANOVI mindestens bis zur Auslösung der Wirkenden Sprüche
+intakt.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen&lt;/b&gt;: je nach Art des Artefakts
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: keine Wirkung
+Antimagie: Magische Artefakte müssen mit dem DESTRUCTIBO
+entzaubert werden, der OBJEKT ENTZAUBERN reicht hierfür nicht
+aus. Den genauen Modus hierzu finden Sie im oben genannten
+Artefakt-Kapitel in Wege der Zauberei, nähere Einzelheiten in der
+Spielhilfe Stäbe, Ringe, Dschinnenlampen. Sowohl beim ‘Einspeisen’ als
+auch beim Auslösen des Spruches können antimagische Effekte gegen
+den gespeicherten Spruch wirken; der OBJEKT ENTZAUBERN und
+der METAMAGIE NEUTRALISIEREN wirken in ihren Zonenvarianten
+gegen das Sprechen des ARCANOVI.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Metamagie, Objekt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: E
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Ach, Mag je 4; Geo,
+Hex je 2; Dru, Elf je 1
+Als Meister des ARCANOVI gelten vor allem tulamidische
+Zauberer, weswegen man die Formel (meist im Tausch gegen
+viele Maravedis, da sich mit der genauen Kenntnis der
+Formel ein erklecklicher Batzen Geld verdienen
+lässt) auch an jeder tulamidischen Akademie
+(und natürlich in Punin) erlernen kann. Die
+Thesis findet sich ebenfalls in der Ringkunde für
+Fortgeschrittene, eine Möglichkeit zur Herleitung in
+Artefakte und Alchemica.&lt;br&gt;
+Da die Erschaffung magischer Artefakte eine der grundlegenden
+Zaubereien darstellt, nimmt es nicht Wunder,
+dass auch viele andere Zauberkundige über Varianten dieses
+Rituals verfügen (auch wenn sich jeweils andere Methoden der
+Verzauberung bei ihnen eingebürgert haben) und dass dieser
+oder eine verwandte Magie wohl in jedem Äon der Geschichte
+Deres bekannt war.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Versionen des ARCANOVI ARTEFAKT:&lt;/b&gt;
+Zur Herstellung der einzelnen Kategorien von Artefakten – siehe
+den Band Stäbe, Ringe, Dschinnenlampen – werden verschiedene
+Versionen des ARCANOVI benötigt. Im Grunde handelt es sich um
+verschiedene, aber eng verwandte Thesiskerne, die in der aventurischen
+Magiewissenschaft meist als ein Spruch betrachtet werden.
+Jede Version ist ein separat zu steigernder ZfW; Grundkomplexität
+jeder Version ist E (wie üblich evtl. modifiziert durch
+Merkmalskenntnis, Begabung und Hausspruch).
+Für das Erlernen zusätzlicher Varianten über die erste hinaus gelten
+sinngemäß die Regeln für Hexalogien (für zweite und folgende
+Varianten sind sowohl die Aktivierung als auch die Steigerung (bis zum
+höchsten der beteiligten ZfW) um eine Spalte verbilligt.
+Die Versionen im Einzelnen sind:&lt;br&gt;
+&lt;b&gt;&lt;i&gt;ARCANOVI (Aufladbar)&lt;/i&gt;&lt;/b&gt;: Ermöglicht die Schaffung von
+einmaligen und wieder aufladbaren Spruchspeichern. Dies ist die
+‘Grundform’ des ARCANOVI, die üblicherweise erlernt wird und
+z.B. bei einigen magischen Professionen bereits aktiviert ist.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;ARCANOVI (Semipermanenz)&lt;/i&gt;&lt;/b&gt;: Ermöglicht die Schaffung
+von semipermanenten Spruchspeichern. Zur Aktivierung ist der
+Erwerb der Sonderfertigkeit Semipermanenz I nötig.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;ARCANOVI (Matrixgeber)&lt;/i&gt;&lt;/b&gt;: Ermöglicht die Schaffung
+von Matrixgebern. Zur Aktivierung ist der Erwerb der
+Sonderfertigkeit Matrixgeber nötig.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>33</id><name>Arachnea Krabbeltier</name><attributes>MU IN CH</attributes><raisingCost>D</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / IN / CH
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Die Magierin legt die Fingerspitzen
+ihrer gespreizten rechten Hand vor sich auf den
+Boden und zieht sie langsam zusammen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 40 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Die Zaubernde erschafft um sich herum eine
+Zone, in der sich alle Insekten, Spinnen, Maden und wirbellose
+Tiere, ja sogar Morfus, zu ihrem Mittelpunkt gezogen
+fühlen, und mit der ihnen eigenen Geschwindigkeit beginnen,
+sich auf diesen Mittelpunkt hin zu bewegen. Die Zaubernde ist
+gegen eventuelle Angriffe durch die herbeigerufenen Tiere nicht
+gefeit. Da dieser gildenmagische Versuch, satuarische Fluchmagie
+nachzuempfinden, sich leicht (und speziell in sumpfigem Gebiet)
+gegen die Magierin wenden kann, wird sie sich normalerweise
+tunlichst bald aus dem Zentrum des von ihr ‘gesegneten’ Gebietes
+entfernen. Ein mit einem REVERSALIS belegter ARACHNEA
+stellt allerdings einen äußerst effektiven Schutz vor Ungeziefer für
+das Nachtlager dar.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 11 AsP (borbaradianische Variante: W20+3 AsP oder die
+Hälfte dieses Werts als LeP)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Zone
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: ZfW x 50 Schritt Radius
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP* x 2 Stunden (borbaradianische Variante:
+AsP-Kosten in Stunden)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten,
+Reichweite, Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Dauerfliegenfalle &lt;/i&gt;&lt;/b&gt;(+7). Der Zauber hält ZfP* Tage lang an und
+kostet 21 AsP (borbaradianische Repräsentation: 2W20 AsP oder
+die Hälfte davon als LeP).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Schmetterlingssammler &lt;/i&gt;&lt;/b&gt;(+7). Für den
+Einsatz von 7 ZfP kann der Magier speziell eine
+(ihm bekannte, notfalls Tierkunde-Probe) Tierart
+herbeirufen oder diese von dem Ruf ausnehmen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: erzeugt eine Schutzzone vor Spinnen,
+Insekten und anderen wirbellosen Tieren.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des HERBEIRUFUNG
+VEREITELN nur erschwert gesprochen und auch von diesem
+Antimagie-Spruch aufgehoben werden. Gegen die
+borbaradianische Variante wirkt auch der MISHKHARABANN.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Herbeirufung (borbaradianische Variante:
+Herbeirufung, Dämonisch (Mishkhara))
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: D
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Mag 2; Bor, Hex je 1&lt;br&gt;
+Der Spruch wurde von einem gewissen Doctor Drinji Barn
+entwickelt, der sich offensichtlich sowohl mit alter echsischer Zauberei
+als auch mit historischer Dämonologie beschäftigt hat, denn seinem
+‘Repertoire’ entstammt auch der gleichartig wirkende REPTILEA.
+Uns ist keine Akademie bekannt, an der diese Formel gelehrt wird;
+Dr. Barn wurde zuletzt (schon vor einigen Jahren) in der Umgebung
+von Selem gesehen. Es gibt Gerüchte, dass es eine Niederschrift eines
+sehr ähnlichen Zaubers in einem Werke namens Arachnoides
+Almagest gibt; außerdem haben speziell in Südaventurien wohl einige
+exzentrische Gelehrte (darunter auch Hexen und Borbaradianer)
+diese Formel erlernt.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>32</id><name>Applicatus Zauberspeicher</name><attributes>KL FF FF</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / FF / FF
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Magier berührt das Objekt,
+Möbelstück oder Gebäudeteil, das er verzaubern
+will, und spricht das Zauberwort. Anschließend
+zaubert er den Wirkenden Spruch.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 40 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Mit dieser einfachsten aller Artefaktformeln
+kann ein einziger Zauberspruch in einem unbelebten
+Objekt (ein Gegenstand, eine Türschwelle, ein Möbelstück o.ä.)
+fixiert und mit einem speziellen, jedoch einfachen Auslöser
+(z. B. Berührung, Öffnen einer Tür) versehen werden. Der
+gespeicherte Spruch entlädt sich auf denjenigen, der die Falle
+ausgelöst hat (falls der Spruch ein einzelnes Opfer vorsieht), oder
+in der direkten Umgebung des verzauberten Objekts (bei Zaubern,
+die eine Zone zum Ziel haben). Zur genauen Wirkungsbestimmung
+sollten ZfW und ZfP* des Wirkenden Spruches notiert werden.
+Nach Anbringen des APPLICATUS darf das Objekt nicht von seinem
+Platz bewegt werden, sonst wird der Zauber ausgelöst.
+Diese Formel erspart also eine umständliche Anwendung des
+ARCANOVI (der einen Gegenstand mit magischem Muster durchwirkt,
+während der APPLICATUS den Zauber eher ‘anheftet’) und dient in
+erster Linie dazu, magische Fallen auszulegen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 2W6 AsP (+ Kosten des Wirkenden Spruches)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelobjekt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Berührung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: längstens bis zum nächsten Sonnenaufgang,
+dann bauen sich die Muster des APPLICATUS ab und der fixierte
+Zauberspruch wird automatisch ausgelöst.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten,
+Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Tragbare Falle &lt;/i&gt;&lt;/b&gt;(+3). Der verzauberte Gegenstand kann mit-
+geführt werden.
+&lt;b&gt;&lt;i&gt;Hauswächter &lt;/i&gt;&lt;/b&gt;(+7). Die Wirkungsdauer eines mit den
+entsprechenden Zeichen zeitlich ausgedehnten Zaubers beträgt bis
+zur nächsten Sonnenwende. Die Kosten für den APPLICATUS
+betragen 4W6 AsP; der Magier muss allerdings die
+Sonderfertigkeit &lt;i&gt;Zauberzeichen &lt;/i&gt;besitzen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Komplexer Auslöser &lt;/i&gt;&lt;/b&gt;(ab ZfW 14). Der Auslöser des
+APPLICATUS darf mit dieser Variante auch komplexerer
+Natur sein: Die Zauberprobe ist um ebenso viele Punkte
+erschwert, wie der jeweilige Auslöser beim ARCANOVI an
+ZfP* erfordert (siehe das Kapitel Magische Artefakte
+in Wege der Zauberei auf den Seiten 46ff.). Hierfür
+ist das Anbringen einer entsprechenden Sigille auf
+dem Zielobjekt erforderlich, siehe SRD 65. Die
+SF &lt;i&gt;Zauberzeichen &lt;/i&gt;ist dabei zwar nützlich,
+jedoch nicht Bedingung.&lt;br&gt;
+Eigentlich ist dieser Spruch in der
+&lt;b&gt;&lt;i&gt;scharlatanischen Repräsentation &lt;/i&gt;&lt;/b&gt;nicht möglich; er muss
+daher mit ‘Zauberzeichen’ gestützt werden. Diese
+Zauberzeichen für den APPLICATUS sind oft jedoch
+die einzigen echten Arcanoglyphen, die Scharlatanen
+bekannt sind; sie benötigen also für den
+Basis-APPLICATUS und die Varianten &lt;i&gt;Tragbare Falle &lt;/i&gt;und
+&lt;i&gt;komplexer Auslöser &lt;/i&gt;nicht die SF &lt;i&gt;Zauberzeichen&lt;/i&gt;, sehr
+wohl aber für den Hauswächter.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: keine Wirkung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: Um einen mit APPLICATUS gespeicherten Zauber
+zu bannen, muss eine Probe auf DESTRUCTIBO oder OBJEKT
+ENTZAUBERN gelingen, die um so viele Punkte erschwert ist,
+wie der APPLICATUS an AsP gekostet hat. Die Entzauberung
+eines APPLICATUS verbraucht beim DESTRUCTIBO halb so viele
+Punkte wie die AsP-Summe, die für den APPLICATUS und den
+wirkenden Spruch aufgewandt wurden, beim OBJEKT ENTZAUBERN
+Astralenergie je nach ZfP* des APPLICATUS, in keinem der beiden
+Fälle jedoch permanente AsP. Beim Misslingen des Gegenzaubers
+fällt der Wirkende Spruch auf den Entzauberer zurück. Sowohl beim
+‘Einspeisen’ als auch beim Auslösen des Spruches können antimagische
+Effekte gegen den gespeicherten Spruch wirken; der OBJEKT
+ENTZAUBERN und der METAMAGIE NEUTRALISIEREN wirken in
+ihren Zonenvarianten gegen das Sprechen des APPLICATUS.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Objekt, Metamagie
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Ach, Mag, Srl je 3&lt;br&gt;
+Obwohl unter Scharlatanen länger bekannt, nahm die
+gildenmagische Forschung erst wieder vor einigen Jahrzehnten Notiz von
+dieser Metamagie und konnte sie aus dem CUSTODOSIGIL (eine
+eingeschränkte Version dieses Zaubers) wieder ableiten.
+Erlernbar ist der APPLICATUS an der Drachenei-Akademie zu
+Khunchom, aus dem Werk &lt;i&gt;Ringkunde für Fortgeschrittene &lt;/i&gt;und
+– so heißt es – bei den echsischen Meistern der Kristallomantie,
+die wohl die älteste Form beherrschen. Mittels spezieller
+Zauberzeichen und -siegel, wie sie in früheren Zeiten bekannter
+waren und noch in vielen alten Bauten zu finden sind, lässt
+sich die Wirkung des APPLICATUS auch verlängern. Bevor
+der APPLICATUS wiederentdeckt wurde, glaubten die
+Magier, diese Zeichen seien allein für die Zauberwirkung
+verantwortlich. Diese Möglichkeit und weitere
+Optionen zum APPLICATUS werden in der Spielhilfe
+&lt;i&gt;Stäbe, Ringe, Dschinnenlampen &lt;/i&gt;vorgestellt.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>31</id><name>Animato Stummer Diener</name><attributes>KL FF GE</attributes><raisingCost>E</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / FF / GE
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Magier erfasst den Gegen-
+stand mit beiden Händen und vollführt mit
+ihm sieben Mal die Bewegung, die in das Objekt
+übergehen soll, und spricht dabei sieben Mal das
+Zauberwort.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 28 Aktionen oder mehr
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der auf diese Art verzauberte Gegenstand
+(ein unbelebtes Objekt) wiederholt die ihm vorgeschriebene
+Bewegung, sobald er vom Magier die entsprechende
+Aufforderung erhält (Fingerschnippen, kurzer Befehl o.ä.) oder
+ein bestimmter Effekt eintritt. Die wiederholte Bewegung ist
+unabhängig vom Ort, an dem sie beginnt.&lt;br&gt;
+Soll der Zauber durch einen anderen Effekt als den Befehl des
+Magiers ausgelöst werden, ist die Zauberprobe um 3 Punkte erschwert.
+Dieser auslösende Effekt darf aber nur einfachster Natur sein (z.B.
+das Öffnen einer Tür). Soll der Zauber von einer anderen Person als
+dem Magier ausgelöst werden, ist die Zauberprobe um 3 Punkte pro
+zusätzlicher Person erschwert. Soll der Zauber von einem physischen
+Effekt ausgelöst werden, ist die Probe um 5 Punkte erschwert,
+magische Effekte als Auslöser erschweren die Probe um 7 Punkte.
+Die eigentliche Bewegung muss vom Magier mit dem Gegenstand in
+weniger als ZfW x 10 Aktionen auszuführen sein. Der Gegenstand
+selbst darf dabei auch ‘unmögliche’ Bewegungen wie Schweben
+nachvollziehen. Die gewünschte Bewegung darf auch komplexerer Natur
+sein (z.B. Heranschweben, Drehen, Aufschließen und Aufklappen
+einer Kassette mit Spezereien).&lt;br&gt;
+Wie schwer der Gegenstand sein kann, hängt im Übrigen von der
+Körperkraft des Magiers ab, der die Bewegung ja sieben Mal aus-
+führen muss; die Verwendung von Elixieren zur Kraftsteigerung ist
+ausdrücklich erlaubt.&lt;br&gt;
+Bekannte Beispiele für diesen Zauber sind apportierende Tabletts,
+sich auf Kommando öffnende Türen, herbeieilende Mäntel und
+dergleichen mehr.&lt;br&gt;
+Rohal selbst soll ein großer Freund dieses Zaubers gewesen sein,
+den er in Gesprächen als eine der klassischen Arten der
+Herrschaft des Geistes über die Materie bezeichnete.&lt;br&gt;
+Mit ANIMATIO verzauberte Gegenstände gelten nicht als
+magisch in dem Sinne, dass sie z.B. von der Wirkung eines
+DESINTEGRATUS ausgenommen wären oder
+dämonenverletzende Eigenschaften tragen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 12 AsP für Gegenstände bis zu 1 Stein
+Gewicht, 18 AsP für Objekte bis 5 Stein, 24 AsP für
+Gegenstände bis zu 10 Stein, 30 AsP für Objekte
+bis 50 Stein und mindestens 36 AsP für
+schwerere Objekte.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelobjekt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Berührung; die Wirkung des
+Zaubers ist durch die Ausführung der Zauberhandlung
+beschränkt. Nach Abschluss der Zauberdauer kann
+sich der Magier beliebig weit vom verzauberten Objekt
+entfernen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP* Monate, längstens jedoch bis zur
+nächsten Sommersonnenwende
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Kosten&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Tagelöhner &lt;/i&gt;&lt;/b&gt;(+3). Der Zauber wirkt nur ZfP* Stunden
+lang (maximal bis zum nächsten Sonnenaufgang), dafür kostet
+er auch nur ein Drittel der o.a. AsP.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Knechtschaft &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 11). Der Zauber wirkt ZfP* Jahre,
+kostet jedoch je 3 AsP mehr.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Mehrere Objekte &lt;/i&gt;&lt;/b&gt;(+3). Der Magier kann so viele Objekte
+gleichzeitig mit dem ANIMATIO belegen, wie er tragen kann.
+Notfalls ist eine FF-Probe erforderlich.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Ad Infinitum, ad Nauseam &lt;/i&gt;&lt;/b&gt;(+7). Hiermit kann der Gegenstand
+für die Wirkungsdauer dazu gebracht werden, auf ein Kommando des
+Zauberers (Fingerschnippen, Schlüsselwort) stets die gleiche Bewegung
+zu wiederholen, nämlich jene, die der Zauberer dem Gegenstand
+vorgemacht hat. Der Magier selbst kann den Zauber jederzeit unterbrechen
+und wieder einsetzen lassen, um zwischendrin eine eigenhändige
+Manipulation durchzuführen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Geworfenes Objekt &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11). Die Bewegung des Objekts
+kann ein Wurf sein, solange es dem Magier gelingt, den Gegenstand
+binnen ZfP* x 10 Aktionen wiederzuerlangen und neu zu werfen.
+Zum Wiedererlangen ist z.B. ein MOTORICUS erlaubt.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: hebt einen bestehenden ANIMATIO auf.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer BEWEGUNG STÖREN-Zone nur
+erschwert gewirkt und von diesem Zauber beendet werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Telekinese
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: E
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Mag 3&lt;br&gt;
+Der Zauber gilt als nicht ganz einfach zu erlernen, wird jedoch
+in Belhanka, Khunchom und Punin gelehrt; außerdem lässt er
+sich aus den Schriften Telekins herleiten; hierzu muss man die
+kompletten Trilogie besitzen. In Khunchom wird von dem
+Lernenden oft verlangt, nach Jahr und Tag
+wiederzukommen, um eine scheinbar sinnlose Bewegung mit einem
+noch sinnloseren Objekt zu vollführen – mit
+Ersatzteilen für das Zauberschiff &lt;i&gt;Sulman al-Nassori&lt;/i&gt;.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>1</id><name>Analys Arcanstruktur</name><attributes>KL KL IN</attributes><raisingCost>D</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe: &lt;/b&gt;KL / KL / IN (+Mod)
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Technik: &lt;/b&gt;Die Magierin fixiert das Ziel ihres Interesses und spricht
+die Formel.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zauberdauer: &lt;/b&gt;mindestens 1 Spielrunde
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkung: &lt;/b&gt;Mit diesem Spruch kann eine Magierin die magische
+Wirkungsmatrix, das aller Zauberei innewohnende Gewebe aus den Fäden
+und Bahnen der Kraft, sehen, das in magisches Artefakt, magisches Wesen
+oder einen wirkenden Zauber ausmacht. Keine bekannte magische Hellsichtformel
+kann göttliches oder karmales Wirken aufspüren oder klassifizieren.&lt;br&gt;
+Je besser die Probe gelingt, desto mehr Einzelheiten sind daraus abzulesen,
+desto mehr feine Matrixfäden sind zu erkennen, desto eher ist eine
+geplante oder anhaltende Wirkung zu erkennen. Je nachdem, wie viele
+ZfP* bei der Probe übrig bleiben, können verschiedene Detailstufen
+erkannt werden.
+&lt;b&gt;&lt;i&gt;1 ZfP*: &lt;/i&gt;&lt;/b&gt;Bestimmbar sind die Merkmale und die Repräsentation
+eines Zaubers, der auf einem Gegenstand oder einer Person liegt.
+(Ganz exakt kann die Magierin nur solche Sprüche oder Zauberwirkungen
+bestimmen, die sie selbst beherrscht oder deren Matrix sie schon
+häufiger analysiert hat.) Wird ein fragwürdiges Wesen analysiert,
+ist ferner bestimmbar, um welche Klassen von Wesenheit es sich handelt
+(Elementarwesen, Feenwesen, Geisterwesen, Chimäre, Untoter, Dämon).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;4 ZfP*: &lt;/i&gt;&lt;/b&gt;Einzelheiten eines betrachteten Zaubermodus
+werden bekannt (z.B. &quot;Dieser SALANDER ist noch drei Stunden vorhalten.&quot;).
+Magische Wesen können näher klassifiziert werden (&quot;Dieser Dämon
+ist ein Karunga&quot;), aber auch eventuell verkleidete Zauberwirker
+werden erkannt (&quot;Das ist gar keine Scharlatanin, sondern eine echte Hexe&quot;).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;7 ZfP*: &lt;/i&gt;&lt;/b&gt;Versteckte Zaubereien und Varianten von Sprüchen
+werden bestimmbar, Fähigkeiten eines magischen Wesens können ausgelotet
+werden. Eine Signatur zu erkennen (den Erschaffer eines Zauber oder den
+Stil der Akademie) erfordert (neben der entsprechenden SF mindestens
+8 ZfP*).&lt;br&gt;&lt;br&gt;
+Dem stehen &lt;i&gt;Erschwernisse&lt;/i&gt; auf die Probe entgegen, die aus verschiedenen
+Quellen herrühren können: Zauberwirkungen in fremder Repräsentation
+erschweren die Probe um mindestens 2 (Magier analysiert Druiden- oder
+Hexenzauber) bis zu 7 Punkte (Magier analysiert alte Skrsechim-Magie,
+hochelfische Zauberlieder, arachnide Generationenflüche etc.).
+Willentlich verborgene Zauberei erschwert die Probe um die ZfP* des
+Tarnzaubers (HELLSICHT TRÜBEN, SCHLEIER etc.). Ein ANALYS auf die
+Reststrahlung eines nicht mehr vorhandenen Zaubers erschwert die
+Probe um mindestens 7 Punkte.&lt;br&gt;&lt;br&gt;
+Für &lt;i&gt;Elixiere, Tränke&lt;/i&gt; und &lt;i&gt;Artefakte&lt;/i&gt;, die auf Zauberei
+beruhen, gelten besondere Regeln, die Sie kurzgefasst in den
+entsprechenden Kapiteln des WdZ (Seite 51f.), ausführlich in der
+Spielhilfe Stäbe, Ringe, Dschinnenlampen ab Seite 22 finden.&lt;br&gt;&lt;br&gt;
+Vor allem bei der Analyse &lt;i&gt;magischer Artefakte&lt;/i&gt; für die dieser Zauber
+entwickelt wurde, kann es durchaus Probenauschläge jenseits der +10 geben,
+die der Zaubernde jedoch durch eine länger andauernde Analyse wieder
+wettmachen kann: Jeweils nach einer halben Stunde kann er eine neue Probe
+ablegen und die hier übrig behaltenen ZfP* zu den bereits
+'erwirtschafteten' addieren. Um die Konzentration so lange
+aufrechtzuerhalten, muss jedoch nach jeder halben Stunde eine
+Selbstbeherrschungs-Probe abgelegt werden, jeweils erschwert um die
+Anzahl der bereits verstrichenen halben Stunden. Ausserdem kostet eine
+Verlängerung der Wirkungsdauer 3 AsP pro angefangener halber Stunde
+(unabhängig vom Ausgang der Selbstbeherrschungs-Probe).&lt;br&gt;&lt;br&gt;
+Die Hälfte der ZfP* eines vorbereitenden ODEM auf dasselbe Ziel können
+bei der ANALYS-Probe eingesetzt werden, um Erschwernisse zu vermindern.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Kosten: &lt;/b&gt;6 AsP + 3 AsP für jede angefangene halbe Stunde, die die
+Analyse dauert.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Zielobjekt: &lt;/b&gt;Einzelobjekt, Einzelwesen
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Reichweite: &lt;/b&gt;1 Schritt
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Wirkungsdauer: &lt;/b&gt;identisch mit Zauberdauer, nach AsP-Aufwand.
+Während der Wirkungs-/Zauberdauer kann der Magier keine anderen Aktionen
+unternehmen.
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten: &lt;/b&gt;&lt;/P&gt;Zauberdauer, Kosten, Reichweite
+&lt;P&gt;
+&lt;b&gt;Reversalis: &lt;/b&gt;keine Wirkung
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Antimagie: &lt;/b&gt;HELLSICHT TRÜBEN und SCHLEIER DER UNWISSENHEIT erschweren
+die Analyse
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Merkmale: &lt;/b&gt;Hellsicht, Metamagie
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Komplexität: &lt;/b&gt;D
+&lt;/P&gt;
+&lt;P&gt;
+&lt;b&gt;Repräsentation und Verbreitung: &lt;/b&gt;Mag 6; Ach 3; Dru, Geo Hex je
+(Mag) 2&lt;br&gt;
+Dieser Spruch bietet Spielern und Spielleitern jegliche Freiheit,
+die Natur eines Zauber so zu beschreiben, wie die Magierinnen sie sehen:
+als kompliziertes Gewebe aus den Fäden der Kraft, ein komplexes für jeden
+Spruch einmaliges Muster. Der ANALYS stellt somit die magische Form des
+Magiekunde-Talents dar und sollte zum Rüstzeug einer jeden Magierin gehören,
+die etwas auf sich hält. Aus diesem Grund wird die Formel auch an fast
+jeder Akademie unterrichtet und findet sich zudem in mehreren arkanen Werken.
+Aus ihr hat sich auch der OCULUS ASTRALIS als Variante entwickelt, mit der
+die komplette Umgebung betrachtet werden kann.
+&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>29</id><name>Alpgestalt</name><attributes>MU CH GE</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / CH / GE (+MR)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Druide konzentriert sich auf das
+Unterbewusstsein seines Opfers, hebt die Arme und
+geht drohend auf das Opfer zu.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 20 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der Zaubernde weckt im Unterbewusstsein
+des Opfers die dort schlummernden Angstvorstellungen,
+so dass er selbst dem vor Schreck völlig gelähmten Opfer
+als (menschenähnliche) Gestalt aus seinen schlimmsten
+Alpträumen erscheint.&lt;br&gt;
+Solange das Opfer den Zaubernden sieht (und es kann die Augen
+auch nicht freiwillig schließen; maximal jedoch ZfP* x 5 KR
+lang), bringt es keinen Laut mehr hervor und ist völlig in Angst
+erstarrt. Danach muss eine MU-Probe+ZfP* abgelegt werden, bei
+deren Misslingen es in eine tiefe Ohnmacht von ZfP* Kampfrunden
+Dauer fällt. Bei Gelingen erlangt es die Kontrolle über sich wieder.
+Die Zauberprobe kann bei Opfern mit passenden Ängsten erleichtert
+sein (Meisterentscheid).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: MR des Opfers in AsP, wenigstens aber 6 AsP
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: ZfW Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP* x 5 KR
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen&lt;/b&gt;: Zauberdauer, Wirkungsdauer, Erzwingen, Kosten,
+Reichweite, Zielobjekt (mehrere)&lt;br&gt;
+In der Variante &lt;b&gt;&lt;i&gt;gegen mehrere Opfer &lt;/i&gt;&lt;/b&gt;kostet der Zauber 5 AsP
+pro Opfer.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Fremdgestalt &lt;/i&gt;&lt;/b&gt;(+5): Der Zaubernde lässt nicht sich selbst, sondern
+einen anderen als Ausgeburt der Alpträume erscheinen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Alpdrücken &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11): Die
+Erscheinung der ALPGESTALT wirkt so nachhaltig
+beim Opfer, dass es in den folgenden ZfP*
+Nächten von dieser Wesenheit in seinen Träumen
+verfolgt wird. (Wirkt wie der Nachteil &lt;i&gt;Alpträume&lt;/i&gt;.)
+&lt;b&gt;Reversalis&lt;/b&gt;: Der Zaubernde erscheint dem Opfer als
+verlockendste Gestalt, die er sich je erträumt hat, und lässt
+es vor Entzücken erstarren. Nach Ende der Wirkungsdauer
+muss eine IN-Probe+ZfP* gelingen, sonst fällt das Opfer für
+ZfP* x 5 KR in einen rauschhaften Tagtraum.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: EINFLUSS BANNEN und BEHERRSCHUNG
+BRECHEN können den Zauber gleichermaßen aufheben; in
+den entsprechenden antimagischen Zonen kann der Zauber nur
+erschwert gewirkt werden. Aus der Ohnmacht kann das Opfer
+jedoch mit konventionellen Mitteln geweckt werden. ÄNGSTE
+LINDERN kann die Wirkung dieses Zaubers aufheben oder zu-
+mindest abschwächen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Einfluss, Herrschaft
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Dru 3
+Diese Formel ist wohl eine gesteigerte Variante des BÖSER BLICK,
+kombiniert mit Elementen aus der HALLUZINATION. Sie wurde
+vermutlich erst vor einigen Jahrzehnten entwickelt und soll vor allem
+unter denjenigen Druiden Verbreitung gefunden haben, die sich mit
+dem Geist des Menschen und dem Rätsel von Angst und Furcht
+beschäftigen.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>28</id><name>Aerogelo Atemqual</name><attributes>MU IN KO</attributes><raisingCost>D</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / IN / KO
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Magier bläst Luft in seine zu
+einer Schale geschlossenen Handflächen. Dabei
+konzentriert er sich auf die Formel, die er im
+Anschluss ausspricht.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 10 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Durch diesen Spruch ‘gerinnt’ die Luft und
+verwandelt sich in ein zähes, quasi flüssiges Medium, das
+schnelle Bewegungen verhindert (AT/PA je um 6 erschwert,
+ebenso GE-Proben; Waffen- und Manöver-Einschränkungen
+wie beim Kampf unter Wasser, WdS 86), große Feuer glosen
+lässt, während kleinere Flammen ersticken, und das Atmen
+erschwert. Pro Spielrunde – bei großer Anstrengung wie in einem
+Kampf jede KR – muss eine KO-Probe abgelegt werden, bei deren
+Gelingen man 1 SP(A) erleidet, bei Misslingen 1W6 SP(A). Die
+Probe wird von Mal zu Mal (entweder pro SR oder pro KR) um
+1 Punkt schwieriger. Alle KO-Proben, die sich aufs Luftanhalten
+oder ähnliche Aktionen beziehen, sind um 4 Punkte erschwert, jede
+ausdauerintensive (schwierige) Aktion im Kampf (siehe WdS 83)
+kostet zwei zusätzliche AuP, und jeder, der sich längerfristig in einem
+solchen Raum aufhält, erleidet 1W6 Punkte Erschöpfung pro SR.
+Das Medium hat eine Konsistenz wie Wasser und ermöglicht damit eine
+schwimmende Fortbewegung: Es gilt der TaW Schwimmen. Stürze
+in eine solche Zone hinein sind wie Stürze auf eine Wasserfläche zu
+werten. Die Sonderfertigkeit &lt;i&gt;Unterwasserkampf &lt;/i&gt;verhindert Einbußen
+auf AT, PA und GE.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 5 AsP + 1 AsP pro 20 Raumschritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Zone (quaderförmig)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Die verdichtete Luft entsteht
+maximal ZfW x 3 Schritt vom Zaubernden
+entfernt. Ihr maximales Volumen beträgt ZfW x
+20 Raumschritt.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP* Spielrunden
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen&lt;/b&gt;: Zauberdauer, Kosten, Wirkungsdauer
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: bewirkt den AEROFUGO.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des VERÄNDERUNG
+AUFHEBEN oder des LUFTBANN nur erschwert gewirkt und
+von diesen Zaubern beendet werden. Ein ZORN DER LUFT
+kann (wenn mehr TP erzielt werden, als der AEROGELO an
+ZfP* besitzt) ein Leck in die Zonenbegrenzung schlagen, so dass
+sich die verdichtete Luft langsam verteilt.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Umwelt, Elementar (Luft)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: D
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Mag 2&lt;br&gt;
+Es scheint, als wäre dieser Spruch eine etwas harmlosere Abwandlung
+des borbaradianischen WEICHES ERSTARRE. Vermutlich kommt
+diese Formel als Beute aus den Magierkriegen zu uns, denn sie wird
+erstmals in den Gorischen Fragmenten erwähnt. Der Spruch, der
+für die stolze Summe von 300 Dukaten in Khunchom eingesehen und
+abgeschrieben werden kann, ist auch der einzige Hinweis darauf, dass
+dieses legendäre Zauberbuch, das noch keines Menschen Auge erblickt
+hat, tatsächlich existiert.&lt;br&gt;
+Einen rechten Sinn mag man in der Formel nicht erkennen. Da sie je-
+doch aus der Zeit Borbarads stammen soll, kann man annehmen, dass
+auch diese Formel – wie der AEROFUGO – Dämonen bestimmter
+Art ein Habitat schaffen sollte.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>27</id><name>Aerofugo Vakuum</name><attributes>MU KO KK</attributes><raisingCost>D</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / KO / KK
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Die Magierin presst die Hände so fest
+sie kann aneinander, spricht die Formel und reißt
+die Hände blitzartig auseinander.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 10 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Nach Anwenden dieses Spruches verschwindet
+aus einem Raum schlagartig und auf magische Weise
+alle Luft, es herrscht ein Vakuum. Alle dort befindlichen
+Lebewesen drohen zu ersticken. (Es gilt der Schaden eines
+Würgegriffs gemäß WdS 93: 1W6+2 TP(A) / KR.) Außerdem
+werden Flammen gelöscht, und es treten beim Wiedereinströmen
+der Luft heftige Winde auf. Ist der Raum oder das Gefäß
+besonders gut gegen Lufteintritt versiegelt (z.B. verschlossene
+Fässer und Flaschen), kann es passieren, dass er oder es durch den
+Unterdruck zerstört wird.&lt;br&gt;
+Gegen elementare Wesenheiten der Luft wirkt dieser Zauber verheerend:
+Mindergeister, die zum Teil aus Luft bestehen, werden auf der
+Stelle vernichtet, Elementargeister oder Dschinne der Luft erleiden
+2 x ZfP* Schadenspunkte, und es heißt, dass selbst ein Elementarer
+Meister der Luft in der Abwesenheit seines Elements gelähmt ist.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 10 AsP + 1 AsP pro 5 Raumschritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Zone
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Die luftleere Zone entsteht maximal ZfW Schritt
+vom Zaubernden entfernt. Ihre größte Ausdehnung beträgt ZfW x
+5 Raumschritt.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP* KR, danach strömt
+die Luft auf natürliche Weise wieder ein.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen&lt;/b&gt;: Zauberdauer, Kosten, Reichweite,
+Wirkungsdauer&lt;br&gt;
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: bewirkt einen AEROGELO.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des VERÄNDERUNG
+AUFHEBEN nur erschwert gewirkt und von diesem
+Zauber beendet werden. Ein ZORN DER LUFT kann
+(wenn mehr TP erzielt werden, als der AEROFUGO an
+ZfP* besitzt) ein ‘Leck’ in die Vakuumbegrenzung schlagen,
+so dass Luft langsam wieder einströmt.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Umwelt, Elementar (Luft)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: D
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Ach, Mag je 2&lt;br&gt;
+Dieser seltene Spruch ist außerhalb seiner Anwenderschaft – bei
+den Menschen nur die Magier des Konzils der Elementaren Gewalten
+– so gut wie unbekannt. Unseres Wissens nach handelte es sich
+ursprünglich um ein vorbereitendes Ritual zur Beschwörung bestimmter
+gehörnter Dämonen, die erst dann in der Lage sind, in der Gegenwart
+von Luft zu existieren, wenn sie in dieser Welt gebunden sind.
+Vermutet wird weiterhin eine Hexalogie, die Elemente bannt, so etwa ein
+echsisches Ritual, das einem Gebiet alle Feuchtigkeit entzieht.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>26</id><name>Aeolitus Windgebraus</name><attributes>KL CH KO</attributes><raisingCost>B</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / CH / KO
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Elf spricht eo’la dao winya’bha
+und bläst durch die zu einem Trichter geformte
+Hand.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 3 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der Lufthauch, den der Elf erzeugt hat,
+verstärkt sich zu einem kurzen, heftigen Windstoß, der
+sich kegelförmig in Blasrichtung ausbreitet. Jenseits der
+Reichweite verliert der Wind jedoch deutlich an Stärke,
+und in einer Entfernung von der doppelten Reichweite ist er
+kaum noch zu spüren. Der Windstoß ist kräftig genug, um z.B.
+Fackeln verlöschen zu lassen, einen Wandschirm umzuwerfen,
+Staub aufzuwirbeln oder Rauch und Nebel aus einem kleinen
+Raum zu wehen, jedoch nicht, um einen Menschen von den Beinen
+zu holen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 4 AsP (Sch: 3 AsP)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Zone
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: ZfP* x 2 Schritt, Basisbreite des Kegels maximal
+ZfW Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: augenblicklich
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Langer Atem &lt;/i&gt;&lt;/b&gt;(+3). Der Windstoß hält so lange an, wie der Elf
+kräftig blasen kann, also KO Aktionen, in dieser Zeit muss jedes
+Wesen im gesamten Wirkungsbereich eine KK-Probe ablegen, um sich
+dem Elfen zu nähern.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Sturm &lt;/i&gt;&lt;/b&gt;(+7). Der Windstoß ist derart heftig, dass sogar Personen
+umgeweht werden, wenn ihnen nicht sofort eine KK-Probe gelingt,
+die um die ZfP* erschwert ist.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Übler Gestank &lt;/i&gt;&lt;/b&gt;(+7; nicht in elfischer
+Repräsentation). Der Lufthauch ist von einem
+Geruch nach Fäulnis verseucht, so dass jedem
+Opfer eine KO-Probe gelingen muss, um nicht vor
+Übelkeit für ZfP* KR Abzüge von 1 Punkt auf alle
+Werte zu erhalten.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Lieblicher Duft &lt;/i&gt;&lt;/b&gt;(+5). Natürlich der Gegen-Effekt zur
+Variante &lt;i&gt;Übler Gestank&lt;/i&gt;. Für Elfen und jene Gildenmagier,
+denen der Muff in ihrer Bibliothek unangenehm ist.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: Statt eines Windstoßes erzeugt der Zauber
+einen Sog zum Elfen hin – es soll jedoch hin und wieder vor-
+kommen, dass der Elf anschließend allerlei Staub und Kleintiere
+im Mund hat.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann nur erschwert in einer Zone des
+VERÄNDERUNG AUFHEBEN gewirkt und von diesem Zauber verhindert
+werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Umwelt, Elementar (Luft)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: B
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Elf 7; Ach, Dru, Mag
+je 5; Geo 4; Sch, Srl je 3
+Ursprünglich war dieser Zauber wohl eine Möglichkeit der
+Waldelfen, drohende wilde Tiere zu verunsichern und so zu verscheuchen.
+Da der Zauber aber Wind als wichtige Komponente trägt, nimmt es
+nicht Wunder, dass sich Druiden und Geoden mit seinen elementaren
+Fähigkeiten schnell anfreunden konnten. Mittlerweile ist er aber auch
+bei Gildenmagiern recht verbreitet.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>25</id><name>Adlerschwinge Wolfsgestalt</name><attributes>MU IN GE</attributes><raisingCost>D</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: MU / IN / GE (+Mod.)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Elf kauert sich auf dem Boden
+zusammen und spricht leise die Formel a’dao
+valva iama ... Es folgt der Name des Tieres, in das
+sich der Elf verwandeln will.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 20 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der Zaubernde erhält die Gestalt des beim
+Erlernen des Zaubers gewählten Tieres, das nicht kleiner als
+eine Ratte und nicht größer als ein Pferd sein darf. Kleidung
+und Ausrüstung werden nicht mit verwandelt. Der Elf behält
+seine Verstandeskraft, ihm stehen jedoch die körperlichen
+Fähigkeiten des Tieres, dessen Wahrnehmung und dessen LE zur
+Verfügung. Er kann in Tiergestalt nicht zaubern und sich auch
+vor Ablauf der Wirkungsdauer nicht zurückverwandeln.&lt;br&gt;
+Zu welchen körperlichen Aktivitäten ein Elf in Tiergestalt fähig
+ist, hängt in erster Linie von den Möglichkeiten der Tiergestalt,
+in zweiter Linie vom ZfW des Elfen ab. Natürlich ist es immer
+eine Frage des gesunden Menschenverstands, was einem Elf in einer
+Tiergestalt überhaupt möglich ist und wo Proben gefordert werden
+müssen. (Ein Bär kann ohne Probe eine Tür eindrücken, aber selbst
+bei besten Werten keinen Schuh zubinden.) Als Faustregel sollten Sie
+davon ausgehen, dass ein körperlicher Eigenschaftswert oder ein
+Kampfwert des Tiers nicht höher sein darf als der doppelte ZfW des
+Elfen; bei einem eventuellen Talentwert des Tiers ist die Grenze der
+ZfW. (Ein Elf, der den Zauber nur mäßig beherrscht, ist auch mit
+dem Tierkörper nicht sonderlich vertraut und kann dessen Stärken
+nur unvollkommen nutzen.) Weitere Details sind Meisterentscheid.
+(Für die Kampfwerte einiger Tiere ist das Lebensalter wichtig. Für
+eine Maraske gilt hier ZfP*/2 = Lebensalter in Jahren, für einen
+Harnischträger ZfP* x 30 Jahre.)&lt;br&gt;
+Die Lebenspunkte werden bei der Verwandlung wie auch bei der
+Rückverwandlung umgerechnet: Wenn der Elf vor dem Zauber
+schon die Hälfte seiner LeP verloren hat, dann ist auch das Tier
+geschwächt und verfügt nur über die Hälfte seiner Lebensenergie.
+Wird das Tier während der Verwandlung verletzt, so hat auch
+der Elf nach der Rückverwandlung einen entsprechenden An-
+teil LeP verloren. Wunden, die ein Tier erleidet, übertragen
+sich auf das entsprechende Körperteil des Elfen (und auch
+umgekehrt).&lt;br&gt;
+Ein Held mit dem Nachteil &lt;i&gt;Elfische Weltsicht &lt;/i&gt;hat
+eine erweiterte, über diese ‘funktionalen Aspekte’
+hinausgehende Vorstellung, die darauf beruht, sich
+in sein Seelentier – also einen Teil seiner selbst
+– zu verwandeln, was besondere Auswirkungen
+nach sich zieht: Gelegentlich kommt es
+vor, dass bei ihm die Instinkte des Tieres
+überhand nehmen und den Elfenfalken
+dazu bringen, jetzt – und genau jetzt
+– diesen schmackhaften Hasen
+zu schlagen, ohne sich um
+solchen Unfug wie das eilige Überbringen einer
+Botschaft zu scheren.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 4 AsP für die Verwandlung plus 1
+AsP pro Spielrunde; bei amphibischen Lebewesen
+2 AsP/SR, bei wasserbewohnenden und fliegenden
+Lebewesen 3 AsP/SR
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson, freiwillig
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: selbst
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: nach AsP-Aufwand (vorher festlegen)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Erzwin-
+gen, Kosten, Wirkungsdauer (s.u.)&lt;br&gt;
+Die &lt;b&gt;&lt;i&gt;Achaz-Repräsentation &lt;/i&gt;&lt;/b&gt;dieses Zaubers erlaubt lediglich
+die Verwandlung in Reptilien oder Amphibien.&lt;br&gt;
+Bei &lt;b&gt;&lt;i&gt;Tieren mit extrem hoher LE &lt;/i&gt;&lt;/b&gt;steigen die Kosten um 1 bis
+7 AsP für die Verwandlung (1 AsP, wenn das Tier mehr LeP als
+der Held hat, 7 AsP, wenn die LE wenigstens doppelt so hoch ist)
+und 1 bis 2 AsP/SR. Gleiches gilt für magische Sonderfähigkeiten
+und für Giftwirkung (giftiger Biss oder Stich etc.) des Tieres sowie
+für anderweitige Spezialfähigkeiten. Die Einzelheiten der
+Kostensteigerung sind immer Meisterentscheid.&lt;br&gt;
+Für das &lt;b&gt;&lt;i&gt;Seelentier eines Elfen &lt;/i&gt;&lt;/b&gt;gelten die zeitabhängigen Kosten
+nicht pro SR, sondern pro Stunde (dabei ist die Zeitverlängerung
+durch die elfische Repräsentation bereits eingerechnet).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Bewusste Gestalt &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11). Es ist möglich, die
+Wirkungsdauer auf Aufrechterhalten zu ändern.&lt;br&gt;
+Für das &lt;b&gt;&lt;i&gt;Erlernen weiterer Tierarten &lt;/i&gt;&lt;/b&gt;über die erste hinaus gelten
+sinngemäß die Regeln für Hexalogien (siehe WdZ 383ff.; für zweite
+und folgende Varianten sind sowohl die Aktivierung als auch die
+Steigerung (bis zum höchsten der beteiligten ZfW) um eine Spalte
+verbilligt).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Grenzenlose Gestalt &lt;/i&gt;&lt;/b&gt;(+7). Wer wenigstens eine Version dieses
+Spruchs auf ZfW 15+ beherrscht (s.o.), kann als weitere Version
+auch die Verwandlung in ein Tier erlernen, das größer als ein Pferd
+oder kleiner als eine Ratte ist. Es gelten die gerade genannten
+Regeln für das Erlernen weiterer Tierarten. Der Zauber ist für
+eine solche Variante prinzipiell um 7 Punkte erschwert. Welche
+Tiere in Frage kommen, ist grundsätzlich mit dem Meister
+auszuhandeln.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Haut des Seelentiers &lt;/i&gt;&lt;/b&gt;(+7; nur elfische
+Repräsentation). Der Elf verschmilzt mit seinem Seelentier und
+gibt vollends dem Tier und seinen Instinkten die
+Oberhand und hat fast keine (Selbstbeherrschung
++10) Kontrolle über seine Handlungen. Dauer der
+Verwandlung: 1 Tag oder 1 Nacht. Kosten: 12
+AsP. Sofern ihm während der Verwandlung
+kein Unheil widerfährt und die Umgebung
+seinem Seelentier entsprechend war, ist
+der Elf anschließend vollkommen mit
+sich und der Welt ausgeglichen
+(1 Tag lang alle Zauber in
+elfischer Repräsentation
+um 2 erleichtert, alle anderen
+Zauber um 1). Es wird von einer
+Steigerung dieser Variante in den Monats-
+und Jahresbereich hinaus berichtet,
+mit der ein Elf noch intensiver mit seinem
+Seelentier verschmelzen kann. Diese überaus
+gefährliche Formel hat jedoch schon dazu geführt,
+dass ein Elf sich vollends in seiner Tierform verloren
+hat und nur noch durch Antimagie zurückverwandelt
+werden konnte.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: verwandelt eine Tierform zurück in einen
+Elfen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des VERWANDLUNG
+BEENDEN nur erschwert gewirkt werden und kann mit diesem
+Antimagie-Spruch beendet werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Form
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: D
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Elf 6; Ach, Mag je
+3; Dru, Hex je (Elf)2&lt;br&gt;
+Die elfische Variante dient
+vor allem dem Zweck, sich
+in das Seelentier zu verwandeln,
+so dass jeder Elf beim Erlernen des
+Zaubers ein Tier wählen sollte, das
+auch charakterlich zu ihm passt. Manche
+Waldelfen beherrschen mehrere Varianten
+des Zaubers, da sie neben dem Seelen- auch das
+Sippentier kennen, die zwar oft übereinstimmen,
+aber eben nicht immer. Bei Firn- und Auelfen ist das
+Verwandeln in das Seelentier auch verbreitet, allerdings
+ist das Beherrschen unterschiedlicher Tierformen hier fast
+unbekannt. Menschen tun sich mit dieser Formel schwer,
+weshalb sie auch nur in der Akademie der Verformung zu
+Lowangen, in Sinoda, Kuslik, Punin, Tuzak und im Kreis der
+Einfühlung erlernbar ist bzw. war. Mit etwas Tüftelarbeit lässt
+sich die Formel jedoch auch aus Zauberstern und Silberhaar
+deduzieren; selbiges gilt auch für das Corpus Mutantis, eines
+der Standardwerke der Mutanda.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>24</id><name>Adlerauge Luchsenohr</name><attributes>KL IN FF</attributes><raisingCost>B</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / IN / FF
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Die Elfe legt die Hände an die Schläfen
+und konzentriert sich auf die Melodie des a’dao
+biunda visya’eor.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 5 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Das gesamte Wahrnehmungsvermögen der
+Zaubernden (alle fünf Sinne) wird so stark verbessert, dass
+alle Proben auf das Talent &lt;i&gt;Sinnenschärfe &lt;/i&gt;um ZfP* Punkte
+erleichtert werden. Sie ist in der Lage, haarfeine Ornamente
+zu ertasten, hört das Rascheln von Tieren im Dutzende Schritt
+entfernten Gebüsch, riecht den schleichenden Oger auf hundert
+Schritt Entfernung und kann selbst in einer Meile Entfernung
+noch das Gesicht eines Reiters erkennen – wenn die entsprechende
+Sinnenschärfe-Probe gelingt. Dadurch können auch Dinge und
+Ereignisse wahrgenommen werden, die durch gewöhnliche Sinne
+(und seien diese noch so gut) unbemerkt geblieben wären.&lt;br&gt;
+Der Zauber ermöglicht keine &lt;i&gt;Dämmerungssicht &lt;/i&gt;oder gar
+&lt;i&gt;Nachtsicht&lt;/i&gt;, schärft also nur den tatsächlich existenten
+Wahrnehmungsbereich. Solcherart geschärfte Sinne haben übrigens nicht
+nur Vorteile:
+Plötzlicher Lärm, gleißendes Licht oder übler Geruch können für die
+Anwenderin so erschreckend sein, dass sie für W20 Sekunden
+desorientiert ist, wenn ihr keine &lt;i&gt;Selbstbeherrschungs&lt;/i&gt;-Probe gelingt.
+Mit dem ADLERAUGE können auch die von verwandten Zaubern
+wie z. B. dem hexischen KATZENAUGEN (Nachtsicht) und dem
+WARMES BLUT (Wärmesicht) der Achaz zur Verfügung gestellten
+Sinne verstärkt werden (eventuell den Abzug wegen Aufrechterhalten
+beachten).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 4 AsP
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelperson, freiwillig
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: selbst
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: 1 Spielrunde (A)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer,
+Reichweite, Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Einzelsinn schärfen &lt;/i&gt;&lt;/b&gt;(+4). Der Zauber betrifft nur
+einen einzigen Sinn, den dafür umso stärker. Alle
+&lt;i&gt;Sinnenschärfe&lt;/i&gt;-Proben, die diesen Sinn betreffen, sind um die
+doppelten ZfP* erleichtert.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: Die Sinne der Verzauberten werden abgestumpft,
+dadurch verliert sie ZfP* Punkte Sinnenschärfe.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: HELLSICHT TRÜBEN und EIGENSCHAFT
+WIEDERHERSTELLEN heben die Wirkung des Spruches auf;
+er kann in den entsprechenden Zonen nur erschwert gewirkt
+werden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Hellsicht, Eigenschaften
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: B
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Elf 7; Ach, Dru, Geo,
+Hex, Mag je 3&lt;br&gt;
+Der ADLERAUGE ist der Ursprung der Sagen über die phantastischen
+Sinnesleistungen, die alle Quellen den Elfen zuschreiben. Er gehört
+zum Kanon jener Elfensprüche, die bereits seit Jahrhunderten bei vielen
+anderen Traditionen bekannt sind und meist in deren eigenen Ausformungen
+vorliegen: So lehren zum Beispiel jede Hellsicht-Akademie
+sowie Norburg und Donnerbach diesen Zauber.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>23</id><name>Adamantum Erzstruktur</name><attributes>KL FF KO</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / FF / KO
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Kristallomant fährt mit einem
+Smaragd mehrmals über den zu verzaubernden
+Gegenstand.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 40 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Die Struktur des verzauberten Gegenstands
+wird gefestigt. Er wird hart wie ein Diamant und unbezwingbar
+wie ein Amboss. Er ist durch gewöhnliche Gewalteinwirkung
+praktisch unzerstörbar (Strukturpunkte und
+Härte werden verdreifacht; eine Härte von 0 bleibt demzufolge
+0). Schadenszauberei wie ein IGNIFAXIUS kann dem Objekt
+nur Schaden zufügen, wenn die angerichteten SP mindestens
+ein Drittel der Strukturpunkte betragen. Da diese Formel einen
+Teil ihrer Kraft aus der Essenz des Gegenstandes zieht, wird dieser
+jedoch nach Ablauf der Wirkungsdauer ungewöhnlich zerbrechlich
+(Strukturpunkte und Härte halbiert).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 5 AsP + 2 AsP pro angefangenem Stein Gewicht
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelobjekt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Berührung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: ZfP* Spielrunden, die negativen Nachwirkungen
+sind ab Ablauf der Wirkungsdauer augenblicklich.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten, Reich-
+weite, Wirkungsdauer&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Adamantenquader &lt;/i&gt;&lt;/b&gt;(+5). Für je 5 Punkte kann ein fünffaches
+Gewicht verzaubert werden (für +15 betragen die Kosten also 5 AsP
++ 2 AsP pro angefangener (5x5x5=) 125 Stein Gewicht).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Kristallglanz &lt;/i&gt;&lt;/b&gt;(+3; ab ZfW 7). Der verzauberte Gegenstand
+erhält nach Wunsch des Zaubernden zusätzlich eine Oberfläche, die
+wie ein anderes Metall, wie Gestein oder Kristalle wirkt. Dies ist
+jedoch eine rein optische Komponente, die von der inneren Struktur
+unabhängig ist.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Zauberstahl &lt;/i&gt;&lt;/b&gt;(+5; ab ZfW 7). Eine Variante mit zusätzlichen
+Elementarkräften, die eigens für die Anwendung auf Waffen und
+Rüstungen entwickelt wurde. Der Bruchfaktor einer Waffe oder
+eines Schildes sinkt um ZfP* Punkte. Die TP einer Nahkampfwaffe
+steigen um ZfP*/3 Punkte, ebenso der RS einer verzauberten
+Rüstung, die TP eines Geschosses oder einer Wurfwaffe
+um ZfP*/4. Leider verkehren sich diese Boni auch hier nach
+Ablauf der Wirkungsdauer in ihr Gegenteil. Während der
+Wirkungsdauer können die so verzauberten
+Waffen auch Dämonen und andere magische
+Wesen verletzen. Diese TP-Steigerungen sind
+nicht kumulativ zu Steigerungen aus hervorragender
+Schmiedearbeit (WdS 181ff.).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Struktur &lt;/i&gt;&lt;/b&gt;wahren (+7; ab ZfW 11). Der Zauber
+wird so modifiziert, dass er seine Kraft nicht aus der
+Struktur des Materials zieht und der Gegenstand nach
+Ablauf der Wirkungsdauer keine negativen Nachwirkungen
+erleidet. Die Kosten betragen 7 AsP plus 4 AsP pro angefangenem
+Stein Gewicht.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Permanenz &lt;/i&gt;&lt;/b&gt;(+7; ab ZfW 11; nur in der kristallomantischen
+Repräsentation). Der Gegenstand wird permanent gefestigt. Dies
+erfordert den Aufwand von 1 permanenten AsP pro angefangenem
+Stein Gewicht (bei der Variante Adamantenquader pro 5
+etc. Stein).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: erzeugt an Gegenständen einen Zerfallschaden wie
+beim EISENROST (Seite 77).
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: OBJEKT ENTZAUBERN und ERZBANN wirken
+in ihren verschiedenen Varianten gegen den ADAMANTIUM. Die
+erhöhten TP der Zauberstahl-Variante werden von Rüstungen oder
+einem ARMATRUTZ wie üblich gemindert. Die Entzauberung eines
+permanent gehärteten Gegenstandes kostet natürlich auch permanente
+AsP.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Objekt, Elementar (Erz)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Ach 6, Mag 5, Dru(Mag)2&lt;br&gt;
+Dieser Zauber, eine Meisterformel der echsischen Kristallomanten,
+wurde bei den Gildenmagiern schon vor einigen Dutzend Jahren
+wiederentdeckt, jedoch nur wenigen Magiern mitgeteilt, da man
+erhoffte, die Wirkung potenzieren zu können, und demzufolge
+jede Schule das Geheimnis wie ihren Augapfel hütete. Als man
+schließlich erkannte, dass mittlerweile fast jede Akademie über
+die Formel verfügte, entschloss man sich, sie der Öffentlichkeit
+zugänglich zu machen. In allen Schulen, die die Verzauberung
+von Objekten lehren, sowie in Punin, der Fasarer Bannakademie,
+in Rashdul und in Schwert und Stab Gareth gehört der
+Spruch zum festen Lehrplan, an fast allen anderen Schulen
+ist er zumindest bekannt.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>22</id><name>Accuratum Zaubernadel</name><attributes>KL CH FF</attributes><raisingCost>C</raisingCost><desc>&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / CH / FF (+Mod)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Die Magierin streicht über ihr
+Gewand, konzentriert sich auf die Eigenschaften
+des Stoffes und die Möglichkeiten der Wandlung
+desselben und murmelt dabei die Formel.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: 40 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Farbe und Schnitt (nicht jedoch die Art des
+Stoffs) eines Kleidungsstücks können sich mit dieser Formel
+nach Wunsch der Magierin ändern.&lt;br&gt;
+Die Zaubernde muss eine recht genaue Vorstellung vom Endergebnis
+besitzen, genaue Kenntnisse des Schneiderhandwerks
+sind jedoch nicht erforderlich, aber nützlich: Die Hälfte der TaP*
+einer – gedanklich ausgeführten – Schneidern-Probe erleichtern
+die Zauberprobe um den entsprechenden Betrag. Bei besonders
+gewagten Kreationen kann der Meister auf die Zauberprobe
+Zuschläge bis zu +7 verlangen. Die ZfP* geben die künstlerisch-
+handwerkliche Qualität des Kleidungsstücks an, wobei Werte über
+10 für meisterliche Arbeit stehen.&lt;br&gt;
+Das Erschaffen von Stoff aus dem Nichts ist mit diesem Spruch nicht
+möglich, aus einem kurzen Hemd kann also keine weite Robe werden.
+Gewisse Vorsicht ist auch in der Nähe eines schelmisch gesinnten
+Antimagiers geboten, der den OBJEKT ENTZAUBERN beherrscht ...
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 4 AsP pro Stein Gewicht des Kleidungsstücks, mindestens
+aber 7 AsP
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Einzelobjekt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: Berührung
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: bis zur nächsten Wintersonnenwende
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Kosten&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Nadel des Wanderers &lt;/i&gt;&lt;/b&gt;(+3). Wenn ein bereits mit ACCURATUM
+geformtes Kleidungsstück einmal einreißt, einer hungrigen Motte als
+Nahrung dient oder durchzuscheuern droht, kann mit dieser Variante
+für 3 AsP die betroffene Stelle ausgebessert werden. Erzielt man
+dabei mindestens halb so viele ZfP* wie bei der Herstellung, so
+ist die Reparatur nicht zu bemerken. Gleiches gilt, wenn man
+den Schnitt leicht anpassen will, weil man vielleicht die ein oder
+andere Unze zugenommen hat ...&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Ohne Schere &lt;/i&gt;&lt;/b&gt;(+3). Es ist möglich, eine
+rohe Stoffbahn benötigter Größe in ein Kleidungsstück zu verwandeln.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Haltbarkeit &lt;/i&gt;&lt;/b&gt;(+3). Für den Einsatz von 7 AsP
+pro Stein Gewicht wird die Verwandlung dauerhaft
+(Wirkungsdauer: augenblicklich).&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Webstuhl &lt;/i&gt;&lt;/b&gt;(+7, ab ZfW 11). Die Magierin kann das
+Kleidungsstück aus der nötigen Menge Garn herstellen, was
+jedoch eine gute Stunde Arbeit bedeutet.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Sackleinen und Spinnenseide &lt;/i&gt;&lt;/b&gt;(+7 plus eine Erschwernis
+bis zu 7 Punkten für mangelnde Ähnlichkeit der Stoffarten; ab
+ZfW 14; nur gildenmagische Variante). Die Magierin kann mit
+dieser Variante eine Stoffart in eine andere verwandeln (Leinen in
+Seide oder in ein Bausch-Leinen-Mischgewebe); Fell und Leder sind
+jedoch von solchen Verwandlungen ausgenommen. Die Variante ist
+nicht mit der Variante Haltbarkeit kombinierbar.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: bewirkt eine Aufhebung eines bestehenden
+ACCURATUM oder verwandelt ein normales Kleidungsstück in
+unzusammenhängende Stoffbahnen, Fetzen und Fäden.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des OBJEKT ENTZAUBERN nur
+erschwert gewirkt und mit diesem Antimagie-Spruch beendet werden.
+(Gilt nicht für die Variante Haltbarkeit.)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Objekt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Mag, Srl je 4; Hex 2&lt;br&gt;
+Dieser Spruch stammt aus dem Almanach der Wandlungen und
+wurde in letzter Zeit durch Zirkulare innerhalb der Gilden verbreitet.
+Er wird in Riva und Festum gelehrt, genießt jedoch nicht den
+Stellenwert wie der Zauber SAPEFACTA oder ein solider ATTRIBUTO.
+In den letzten Jahren wurde die Formel, die in gildenmagischer
+Repräsentation bei den Hexen schon einige Zeit lang bekannt war,
+offensichtlich satuarischen Vorstellungen angepasst und ist nun
+einer Hand voll Hexen in eigener Repräsentation bekannt.
+Momentan wird in gildenmagischen Kreisen heftig spekuliert,
+ob sich aus diesem Zauber neue Handwerksmagie deduzieren
+lässt.&lt;/P&gt;</desc></dsa_spell_item><dsa_spell_item><id>21</id><name>Abvenum Reine Speise</name><attributes>KL KL FF</attributes><raisingCost>C</raisingCost><desc>&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Probe&lt;/b&gt;: KL / KL / FF (+Mod.)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Technik&lt;/b&gt;: Der Elf spricht bha’sama venya
+bha’za yalza über die zu reinigende Nahrung.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zauberdauer&lt;/b&gt;: mindestens 15 Aktionen
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkung&lt;/b&gt;: Der Zauber reinigt Nahrungsmittel und
+Getränke von sämtlichen Giften und Krankheitskeimen;
+verdorbene Nahrung wird frisch und genießbar. Die
+Zauberprobe ist um die doppelte Stufe des Giftes oder der beim
+Verzehr zu befürchtenden Krankheit erschwert. Verdorbene
+Nahrung kann je nach Zustand einen Zuschlag von 2 bis 12
+Punkten auf die Probe bedeuten.&lt;br&gt;
+Dieser Zauber versetzt Nahrung in einen Zustand, die dem
+Spruchanwender nicht gefährlich werden kann. Da es aber von
+dem Entwickler des Spruches abhängt, in welchem Zustand
+Nahrung als gefährlich angesehen werden muss und in welchem nicht,
+variiert die genaue Wirkung je nach Repräsentation recht erheblich.
+So wandelt die elfische Repräsentation selbst Wein in Traubensaft
+um, während die Achazform des Spruches manche für Menschen und
+Elfen giftige Mahlzeiten unverändert lässt.&lt;br&gt;
+Gift, das sich nicht in Nahrung befindet, wird von dem Zauber
+nicht als solches erkannt, weswegen das Gift auf der Klinge
+eines Meuchlers
+oder in der Phiole eines Alchimisten nicht verändert wird. Wenn
+allerdings zum Beispiel in einer Pilzpfanne giftige Pilze
+enthalten sind, dann wirkt der Zauber sehr wohl.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Kosten&lt;/b&gt;: 4 AsP pro Mahlzeit, die für etwa 10 Personen reicht
+(Sch: 3 AsP)
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Zielobjekt&lt;/b&gt;: Nahrungsmenge (mehrere Objekte) nach AsP-Aufwand
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reichweite&lt;/b&gt;: 1 Schritt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Wirkungsdauer&lt;/b&gt;: augenblicklich
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Modifikationen und Varianten&lt;/b&gt;: Zauberdauer, Reichweite&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Schutz vor Übelkeit &lt;/i&gt;&lt;/b&gt;(+5). Nahrung, die an sich nicht giftig
+ist, deren Genuss aber heftige Übelkeit erzeugt, wird in einen
+Zustand versetzt, der als harmlos gelten kann.
+So ist es zum Beispiel möglich, auch Meerwasser
+in Trinkwasser zu verwandeln. 
+Horasische Sahnetorten werden jedoch nur von den wenigsten
+Repräsentationen in Mitleidenschaft gezogen.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Schutz vor Vergiftung &lt;/i&gt;&lt;/b&gt;(+5). Bewahrt die Nahrung
+für die nächsten ZfP* Stunden vor jeglicher in diesem
+Zeitraum geschehener Vergiftung und jedem Verschimmeln
+oder Verderben. Der Zaubernde muss sich hierbei selbst
+einen Aufschlag auf die Zauberprobe auferlegen, und zwar in
+Höhe der Stufe der Krankheit/des Giftes, gegen die der Schutz
+höchstens wirksam sein soll. Eine bereits vergiftete Speise wird
+dabei entgiftet.&lt;br&gt;
+Vereinzelt existieren eingeschränkte Variationen dieses
+Spruches, die (bei geringerem Probenaufschlag und AsP-Aufwand)
+nur gegen gewisse Giftgruppen (Schlangengifte) oder gar nur gegen
+einzelne Gifte und Krankheiten wirken.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Reversalis&lt;/b&gt;: bewirkt das schlagartige Verfaulen und Verschimmeln
+von Lebensmitteln.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Antimagie&lt;/b&gt;: kann in einer Zone des OBJEKT ENTZAUBERN nur
+erschwert gesprochen werden; lässt sich wegen der Wirkungsdauer
+augenblicklich nicht mittels Antimagie widerrufen.
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Merkmale&lt;/b&gt;: Objekt
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Komplexität&lt;/b&gt;: C
+&lt;/P&gt;&lt;P&gt;
+&lt;b&gt;Repräsentationen und Verbreitung&lt;/b&gt;: Dru, Elf, Hex, Mag je
+6; Geo 5; Ach, Sch je 4&lt;br&gt;
+Dieser ursprünglich von den Waldelfen stammende Spruch ist bei fast
+allen Zauberkundigen weit verbreitet. An allen Orten, an denen die
+lokalen Potentaten in ständiger Furcht vor Meuchlern und
+Giftmischern leben, werden Meisterinnen und Meister des ABVENENUM
+mit Kusshand in den Hofstaat aufgenommen (wenn sie nach einem
+Demonstrationszaubern den Genuss der vorher präparierten
+Nahrung überlebt haben).
+&lt;/P&gt;</desc></dsa_spell_item></folder></folder>
