@@ -9,11 +9,11 @@
   </parent>
 
   <groupId>efa.dsa</groupId>
-  <artifactId>beingServices</artifactId>
+  <artifactId>beingUI</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>nbm</packaging>
 
-  <name>beingServices</name>
+  <name>beingUI</name>
 
   <dependencies>
     <dependency>
@@ -49,6 +49,14 @@
     <dependency>
       <groupId>org.netbeans.api</groupId>
       <artifactId>org-openide-nodes</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.netbeans.api</groupId>
+      <artifactId>org-openide-loaders</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.netbeans.api</groupId>
+      <artifactId>org-openide-filesystems</artifactId>
     </dependency>
     <dependency>
       <groupId>org.netbeans.api</groupId>
@@ -111,6 +119,11 @@
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
+      <artifactId>beingServices</artifactId>
+      <version>${beingServices.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>efa.dsa</groupId>
       <artifactId>generation</artifactId>
       <version>${generation.version}</version>
     </dependency>
@@ -122,12 +135,11 @@
         <artifactId>nbm-maven-plugin</artifactId>
         <configuration>
           <publicPackages>
-            <publicPackage>efa.dsa.being.services.spi</publicPackage>
           </publicPackages>
         </configuration>
       </plugin>
     </plugins>
   </build>
 </project>
-<!-- vim: set ts=2 sw=2 et: -->
 
+<!-- vim: set ts=2 sw=2 et: -->

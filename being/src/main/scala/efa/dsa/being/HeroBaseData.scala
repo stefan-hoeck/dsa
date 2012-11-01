@@ -136,6 +136,9 @@ object HeroBaseData extends Util {
   val profession: HeroBaseData @> GenData =
     Lens.lensu((a,b) ⇒ a copy (profession = b), _.profession)
 
+  val position: HeroBaseData @> String =
+    Lens.lensu((a,b) ⇒ a.copy(position = b), _.position)
+
   val title: HeroBaseData @> String =
     Lens.lensu((a,b) ⇒ a copy (title = b), _.title)
 

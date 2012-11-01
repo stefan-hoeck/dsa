@@ -10,7 +10,7 @@ import efa.react.SIn
 import efa.rpg.being.UIInfo
 import efa.rpg.rules.Rule
 import org.openide.util.{Lookup ⇒ L}
-import scalaz._, Scalaz._
+import scalaz._, Scalaz._, effect.IO
 
 package object services {
   type HeroRule = Rule[Hero]
@@ -31,7 +31,7 @@ package object services {
     IOCached(provide[HeroRule,HeroRulesProvider])
 
   lazy val heroInfo: IOCached[UIInfo[HeroData,Hero]] =
-    IOCached(provide[HeroInfo,UIProvider] map (_.suml))
+    IOCached(provide[IO[HeroInfo],UIProvider] map (_.suml) μ)
 }
 
 // vim: set ts=2 sw=2 et:

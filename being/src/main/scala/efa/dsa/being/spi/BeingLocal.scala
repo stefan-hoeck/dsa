@@ -35,11 +35,17 @@ trait BeingLocal {
   def aw: String
   def base: String
   def be: String
+  def birthday: String
   def bought: String
   def carriedWeight: String
   def carryingCapacity: String
+  def culture: String
+  def eyes: String
   def fk: String
+  def gender: String
   def gs: String
+  def hair: String
+  def height: String
   def hero: String
   def ini: String
   def initial: String
@@ -50,6 +56,9 @@ trait BeingLocal {
   def mrMind: String
   def overstrain: String
   def pa: String
+  def position: String
+  def profession: String
+  def race: String
   def raufen: String
   def ringen: String
   def rs: String
@@ -70,11 +79,15 @@ trait BeingLocal {
   def shortOverstrain: String
   def shortPa: String
   def shortRs: String
+  def shortSo: String
   def shortTp: String
   def shortWs: String
+  def so: String
   def subdual: String
+  def title: String
   def tp: String
   def unknownHandString (s: String): String
+  def weight: String
   def ws: String
 }
 
@@ -86,13 +99,18 @@ object BeingLocal extends BeingLocal {
   def aw = "Ausweichen"
   def base = "Grundwert"
   def be = "Behinderung"
+  def birthday = "Geburtstag"
   def bought = "gekauft"
   def calculated = "berechnet"
   def carriedWeight = "Gewicht"
   def carryingCapacity = "Tragkraft"
   def culture = "Kultur"
+  def eyes = "Augenfarbe"
   def fk = "Fernkampfwert"
+  def gender = "Geschlecht"
   def gs = "Geschwindigkeit"
+  def hair = "Haarfarbe"
+  def height = "Grösse"
   def hero = "Held"
   def ini = "Initiative"
   def initial = "Startwert"
@@ -103,6 +121,7 @@ object BeingLocal extends BeingLocal {
   def mrMind = "Magieresistenz Geist"
   def overstrain = "Überanstrengung"
   def pa = "Paradewert"
+  def position = "Stand"
   def profession = "Profession"
   def race = "Rasse"
   def raufen = "Raufen"
@@ -125,13 +144,17 @@ object BeingLocal extends BeingLocal {
   def shortOverstrain = "ÜA"
   def shortPa = "PA"
   def shortRs = "RS"
+  def shortSo = "SO"
   def shortTp = "TP"
   def shortWs = "WS"
+  def so = "Sozialstatus"
   def start = "Startwert"
   def subdual = "Erschöpfungsschaden"
+  def title = "Titel"
   def tp = "Trefferpunkte"
   def unknownHandString (s: String) = "Unbekannte Eingabe: " + s
   def ws = "Wundschwelle"
+  def weight = "Gewicht"
 
 }
 

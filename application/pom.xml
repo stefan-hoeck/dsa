@@ -123,6 +123,11 @@
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
+      <artifactId>beingUI</artifactId>
+      <version>${beingUI.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>efa.dsa</groupId>
       <artifactId>generation</artifactId>
       <version>${generation.version}</version>
     </dependency>

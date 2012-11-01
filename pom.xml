@@ -140,6 +140,7 @@
     <module>being</module>
     <module>beingCalc</module>
     <module>beingServices</module>
+    <module>beingUI</module>
     <module>generation</module>
   </modules>
 
@@ -156,6 +157,7 @@
     <being.version>1.0.0-SNAPSHOT</being.version>
     <beingCalc.version>1.0.0-SNAPSHOT</beingCalc.version>
     <beingServices.version>1.0.0-SNAPSHOT</beingServices.version>
+    <beingUI.version>1.0.0-SNAPSHOT</beingUI.version>
     <generation.version>1.0.0-SNAPSHOT</generation.version>
   </properties>
 </project>
