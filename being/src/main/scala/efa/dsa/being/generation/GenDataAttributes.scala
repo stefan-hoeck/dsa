@@ -37,6 +37,11 @@ object GenDataAttributes extends Util {
 
   val attributes: GenDataAttributes @> Attributes =
     Lens.lensu((a,b) ⇒ a.copy(attributes = b), _.attributes)
+
+  implicit def GenDataAttributesLenses[A] (l: A @> GenDataAttributes) = new {
+    lazy val data = l >=> GenDataAttributes.data
+    lazy val attributes = l >=> GenDataAttributes.attributes
+  }
 }
 
 // vim: set ts=2 sw=2 et:

@@ -1,39 +1,44 @@
 package efa.dsa.being.ui.hero
 
 import efa.core.{loc ⇒ cLoc}
-import efa.dsa.being.{HeroBaseData ⇒ HBD, loc ⇒ bLoc}
-import efa.dsa.world.mittelreich._
+import efa.dsa.being.{HeroBaseData ⇒ HBD, loc ⇒ bLoc, Height, Weight, So}
+import efa.dsa.world.mittelreich.{Distance ⇒ D, Weight ⇒ W}
 import efa.rpg.being.BeingPanel
 import efa.rpg.core.Gender
 import scalaz._, Scalaz._
 
 class HeroBasePanel extends BeingPanel[HBD,HBD] {
   val nameC = text
-  val raceC = text //TODO
-  val cultureC = text //TODO
-  val professionC = text //TODO
+  val raceC = text
+  val cultureC = text
+  val professionC = text
   val positionC = text
   val titleC = text
   val soC = num
   val birthdayC = num
   val genderC = enumBox[Gender]
-  val heightC = num //TODO
-  val weightC = num //TODO
+  val heightC = num
+  val weightC = num
   val eyesC = text
   val hairC = text
 
   def set = stringIn(nameC)(HBD.name) ⊹ 
     stringIn(positionC)(HBD.position) ⊹
     stringIn(titleC)(HBD.title) ⊹
-    intIn(soC)(HBD.so) ⊹
+    intIn(soC, So.validate)(HBD.so) ⊹
     longIn(birthdayC)(HBD.birthday) ⊹ 
     comboBox(genderC)(HBD.gender) ⊹ 
     stringIn(eyesC)(HBD.eyeColor) ⊹ 
-    stringIn(hairC)(HBD.hairColor)
+    stringIn(hairC)(HBD.hairColor) ⊹
+    unitSET[D](heightC, D.HF, 0, Height.validate, HBD.height) ⊹ 
+    unitSET[W](weightC, W.ST, 0, Weight.validate, HBD.weight) ⊹ 
+    stringIn(raceC)(HBD.race.data.name) ⊹ 
+    stringIn(cultureC)(HBD.culture.data.name) ⊹ 
+    stringIn(professionC)(HBD.profession.name)
 
   {
-    val heightL = "%s [%s]" format (bLoc.height, Distance.HF.shortName)
-    val weightL = "%s [%s]" format (bLoc.weight, Weight.ST.shortName)
+    val heightL = "%s [%s]" format (bLoc.height, D.HF.shortName)
+    val weightL = "%s [%s]" format (bLoc.weight, W.ST.shortName)
 
     //horizontal: 1
     val left = cLoc.name above bLoc.race above bLoc.culture above

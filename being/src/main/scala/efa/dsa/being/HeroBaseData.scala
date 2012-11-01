@@ -166,6 +166,25 @@ object HeroBaseData extends Util {
 
   val desc: HeroBaseData @> String =
     Lens.lensu((a,b) ⇒ a copy (desc = b), _.desc)
+
+  implicit def HeroBaseDataLenses[A] (l: A @> HeroBaseData) = new {
+    lazy val name = l >=> HeroBaseData.name
+    lazy val gender = l >=> HeroBaseData.gender
+    lazy val race = l >=> HeroBaseData.race
+    lazy val culture = l >=> HeroBaseData.culture
+    lazy val profession = l >=> HeroBaseData.profession
+    lazy val position = l >=> HeroBaseData.position
+    lazy val title = l >=> HeroBaseData.title
+    lazy val so = l >=> HeroBaseData.so
+    lazy val ap = l >=> HeroBaseData.ap
+    lazy val birthday = l >=> HeroBaseData.birthday
+    lazy val height = l >=> HeroBaseData.height
+    lazy val weight = l >=> HeroBaseData.weight
+    lazy val eyeColor = l >=> HeroBaseData.eyeColor
+    lazy val hairColor = l >=> HeroBaseData.hairColor
+    lazy val apUsed = l >=> HeroBaseData.apUsed
+    lazy val desc = l >=> HeroBaseData.desc
+  }
 }
 
 // vim: set ts=2 sw=2 et:
