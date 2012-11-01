@@ -55,7 +55,7 @@ object Dependencies {
 
   val rpgRules = rpg %% "rules" % rpgVersion changing
 
-  val nbV = "RELEASE71"
+  val nbV = "RELEASE72"
 
   val scalaSwing = "org.scala-lang" % "scala-swing" % "2.9.2" 
  
