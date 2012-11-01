@@ -33,7 +33,7 @@ private[services] object EquipmentController extends ControllerFactory {
     zoneArmorNames._1 → zoneArmorC.map(_.info).get
   )
 
-  lazy val equipments: SIn[EquipmentItems] = {
+  lazy val equipment: SIn[EquipmentItems] = {
     val cachedEquipments = signal(ammunitionC) ⊛
       signal(armorC) ⊛
       signal(articleC) ⊛
@@ -48,6 +48,11 @@ private[services] object EquipmentController extends ControllerFactory {
 
 class EquipmentInfoProvider extends ItemsInfoProvider {
   def infos = EquipmentController.infos
+}
+
+class EquipmentProviderImpl
+   extends efa.dsa.being.services.spi.EquipmentProvider {
+  def equipment = EquipmentController.equipment
 }
 
 // vim: set ts=2 sw=2 et:

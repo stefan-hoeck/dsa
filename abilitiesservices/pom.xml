@@ -68,6 +68,11 @@
       <artifactId>world</artifactId>
       <version>${world.version}</version>
     </dependency>
+    <dependency>
+      <groupId>efa.dsa</groupId>
+      <artifactId>beingServices</artifactId>
+      <version>${beingServices.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

@@ -62,4 +62,9 @@ class AbilityItemsInfoProvider extends ItemsInfoProvider {
   def infos = AbilitiesController.infos
 }
 
+class AbilityProviderImpl
+   extends efa.dsa.being.services.spi.AbilityProvider {
+  def abilities = AbilitiesController.abilities
+}
+
 // vim: set ts=2 sw=2 et:
