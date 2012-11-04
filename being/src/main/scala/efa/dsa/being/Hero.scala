@@ -4,6 +4,7 @@ import efa.core.{Default, ValSt, Validators}
 import efa.dsa.being.abilities.Abilities
 import efa.dsa.being.equipment.{Equipments, AttackMode}
 import efa.dsa.being.skills.Skills
+import efa.dsa.world.Attribute
 import efa.rpg.core._
 import scalaz._, Scalaz._
 
@@ -46,18 +47,16 @@ case class Hero (
   def setKe (i: Int): ValSt[HeroData] = setDamage(ke, i, Humanoid.lostKe)
 
   def setLe (i: Int): ValSt[HeroData] = setDamage(le, i, Humanoid.lostLe)
+
+  def setBoughtAttribute (a: Attribute, i: Int): ValSt[HeroData] =
+    setInt(0, attributes maxBought a, i, Attributes.bought at a)
 }
 
 object Hero extends Util {
   lazy val default = Hero(!!, Nil, !!, !!, !!, !!, Modifiers.empty, !!)
 
   private val Humanoid: HeroData @> HumanoidBaseData = HeroData.humanoid
-
-  private def setDamage[A] (max: Int, i: Int, l: A @> Int): ValSt[A] = {
-    val validate = Validators.interval(Int.MinValue + max, max)
-
-    (validate run i validation) as (l := (max - i) void)
-  }
+  private val Attributes: HeroData @> AttributesData = HeroData.attributes
 
   implicit lazy val HeroDefault = Default default default
 

@@ -71,12 +71,9 @@ class HeroHumanoidPanel extends BeingPanel[Hero,HeroData] {
   ).add()
 
   private def damageIn (get: Hero ⇒ Int, set: (Hero, Int) ⇒ ValSt[HeroData])
-    (t: scala.swing.TextField): VSET[Hero,HeroData] = {
-    val in: SET[Hero,ValRes[Int]] = readVals[Int](t) ∙ get
-    def vset (h: Hero, vi: ValRes[Int]) = vi flatMap (set(h, _))
+    (t: scala.swing.TextField): VSET[Hero,HeroData] =
+    getSet(get)(set, readVals[Int](t))
 
-    in uponOut vset
-  }
 }
 
 object HeroHumanoidPanel {

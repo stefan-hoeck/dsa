@@ -1,6 +1,6 @@
 package efa.dsa
 
-import efa.core.{Service, Validators}
+import efa.core._
 import efa.dsa.world.{Attribute, BodyPart}
 import efa.dsa.being.spi.BeingLocal
 import efa.rpg.core._
@@ -76,6 +76,16 @@ package object being extends RangeVals {
     def aPair (a: Attribute) = (attributeKeyFor(a), aMods(a))
 
     Modifiers (Attribute.values ∘ aPair: _*)
+  }
+
+  def setDamage[A] (max: Int, i: Int, l: A @> Int): ValSt[A] =
+    setInt(Int.MinValue + max, max, max - i, l)
+
+  def setInt[A] (min: Int, max: Int, i: Int, l: A @> Int)
+  : ValSt[A] = {
+    val validate = Validators.interval(min, max)
+
+    (validate run i validation) as (l := i void)
   }
 }
 

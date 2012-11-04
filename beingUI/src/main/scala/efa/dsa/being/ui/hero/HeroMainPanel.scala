@@ -21,7 +21,13 @@ class HeroMainPanel (pl: PureLookup)
     border = titledBorder (loc.derived)
   }
 
-  basePanel above derivedPanel add()
+  val attributesPanel = new HeroAttributesPanel {
+    border = titledBorder (loc.attributes)
+  }
+
+  val apPanel = new HeroApPanel {border = titledBorder (loc.ap)}
+
+  basePanel above attributesPanel above derivedPanel above apPanel add()
   
   //(basePanel above 
   // (
@@ -34,7 +40,9 @@ class HeroMainPanel (pl: PureLookup)
   //).add()
 
   def set = derivedPanel.set ⊹ 
-    (lensedV(basePanel.set)(HeroData.base) ∙ (_.data))
+    attributesPanel.set ⊹ 
+    (lensedV(basePanel.set)(HeroData.base) ∙ (_.data)) ⊹
+    (lensedV(apPanel.set)(HeroData.base) ∙ (_.data))
 
   def version = v
   def prefId = "DSA_HeroMainPanel"

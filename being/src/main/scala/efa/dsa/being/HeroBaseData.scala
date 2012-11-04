@@ -1,6 +1,6 @@
 package efa.dsa.being
 
-import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.{Efa, ToXml, Default, ValSt}, Efa._
 import efa.dsa.being.generation.{GenData, GenDataAttributes}
 import efa.rpg.core.{Gender, Util}
 import org.scalacheck.{Arbitrary, Gen}, Arbitrary.arbitrary
@@ -33,6 +33,14 @@ case class HeroBaseData(
 
   lazy val modifiers =
     race.modifiers ⊹ culture.modifiers ⊹ profession.modifiers
+
+  lazy val restAp = ap - apUsed
+
+  def setAp (i: Int): ValSt[HeroBaseData] =
+    setInt(apUsed, Int.MaxValue, i, HeroBaseData.ap)
+
+  def setApUsed (i: Int): ValSt[HeroBaseData] =
+    setInt(0, ap, i, HeroBaseData.apUsed)
 }
 
 object HeroBaseData extends Util {

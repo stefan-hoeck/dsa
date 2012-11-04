@@ -25,6 +25,7 @@ trait UILocal {
   def rest: String
   def spells: String
   def spellsPanel: String
+  def start: String
   def talents: String
   def talentsPanel: String
   def total: String
@@ -58,6 +59,7 @@ object UILocal extends UILocal {
   def rest = "Guthaben"
   def spells = "Zauberfertikeiten & Ritualkenntnisse"
   def spellsPanel = "Zauber"
+  def start = "Startwert"
   def talents = "Allgemeine Talente"
   def talentsPanel = "Talente"
   def total = "Total"
