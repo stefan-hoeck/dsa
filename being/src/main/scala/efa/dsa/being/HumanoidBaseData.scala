@@ -153,6 +153,22 @@ object HumanoidBaseData extends Util {
 
   val hands: HumanoidBaseData @> HandsData =
     Lens.lensu((a,b) ⇒ a copy (hands = b), _.hands)
+
+  implicit def HumanoidBaseDataLenses[A] (l: A @> HumanoidBaseData) = new {
+    lazy val lostAe = l >=> HumanoidBaseData.lostAe
+    lazy val lostAu = l >=> HumanoidBaseData.lostAu
+    lazy val lostKe = l >=> HumanoidBaseData.lostKe
+    lazy val lostLe = l >=> HumanoidBaseData.lostLe
+    lazy val boughtAe = l >=> HumanoidBaseData.boughtAe
+    lazy val boughtAu = l >=> HumanoidBaseData.boughtAu
+    lazy val boughtKe = l >=> HumanoidBaseData.boughtKe
+    lazy val boughtLe = l >=> HumanoidBaseData.boughtLe
+    lazy val boughtMr = l >=> HumanoidBaseData.boughtMr
+    lazy val exhaustion = l >=> HumanoidBaseData.exhaustion
+    lazy val wounds = l >=> HumanoidBaseData.wounds
+    lazy val zoneWounds = l >=> HumanoidBaseData.zoneWounds
+    lazy val hands = l >=> HumanoidBaseData.hands
+  }
 }
 
 // vim: set ts=2 sw=2 et:

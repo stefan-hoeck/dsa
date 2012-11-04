@@ -14,11 +14,11 @@ class HeroBasePanel extends BeingPanel[HBD,HBD] {
   val professionC = text
   val positionC = text
   val titleC = text
-  val soC = num
-  val birthdayC = num
+  val soC = number
+  val birthdayC = number
   val genderC = enumBox[Gender]
-  val heightC = num
-  val weightC = num
+  val heightC = number
+  val weightC = number
   val eyesC = text
   val hairC = text
 

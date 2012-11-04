@@ -1,10 +1,10 @@
 package efa.dsa.being
 
-import efa.core.Default
+import efa.core.{Default, ValSt, Validators}
 import efa.dsa.being.abilities.Abilities
 import efa.dsa.being.equipment.{Equipments, AttackMode}
 import efa.dsa.being.skills.Skills
-import efa.rpg.core.{Modifiers, Util, Described}
+import efa.rpg.core._
 import scalaz._, Scalaz._
 
 case class Hero (
@@ -16,62 +16,64 @@ case class Hero (
   equipment: Equipments,
   modifiers: Modifiers,
   skills: Skills
-)
+) {
+  import Hero._
+
+  def intProp (k: ModifierKey): Int = prop(k).toInt
+
+  def prop (k: ModifierKey): Long = modifiers property k
+  
+  lazy val ae = maxAe - data.humanoid.lostAe
+  
+  lazy val au = maxAu - data.humanoid.lostAu
+  
+  lazy val le = maxLe - data.humanoid.lostLe
+  
+  lazy val ke = maxKe - data.humanoid.lostKe
+
+  lazy val maxAe = intProp(AeKey)
+
+  lazy val maxAu = intProp(AuKey)
+
+  lazy val maxLe = intProp(LeKey)
+
+  lazy val maxKe = intProp(KeKey)
+
+  def setAe (i: Int): ValSt[HeroData] = setDamage(ae, i, Humanoid.lostAe)
+
+  def setAu (i: Int): ValSt[HeroData] = setDamage(au, i, Humanoid.lostAu)
+
+  def setKe (i: Int): ValSt[HeroData] = setDamage(ke, i, Humanoid.lostKe)
+
+  def setLe (i: Int): ValSt[HeroData] = setDamage(le, i, Humanoid.lostLe)
+}
 
 object Hero extends Util {
   lazy val default = Hero(!!, Nil, !!, !!, !!, !!, Modifiers.empty, !!)
+
+  private val Humanoid: HeroData @> HumanoidBaseData = HeroData.humanoid
+
+  private def setDamage[A] (max: Int, i: Int, l: A @> Int): ValSt[A] = {
+    val validate = Validators.interval(Int.MinValue + max, max)
+
+    (validate run i validation) as (l := (max - i) void)
+  }
 
   implicit lazy val HeroDefault = Default default default
 
   implicit lazy val HeroEqual = Equal.equalA[Hero]
 
-  implicit lazy val HeroDescribed = new Described[Hero] {
+  implicit lazy val HeroTC = new Described[Hero] with Modified[Hero] {
     def fullDesc (h: Hero) = h.data.base.desc
     def shortDesc (h: Hero) = h.data.base.desc
     def name (h: Hero) = h.data.base.name
     def desc (h: Hero) = h.data.base.desc
+    val modifiersL = Hero.modifiers
   }
-}
 
-////			//creates an optional modifier depending whether a given value is 0 or not
-////			def nonZeroMod(name: String, x: Long): Option[Modifier] = x match {
-////				case 0 => None
-////				case x => Some(Modifier(name, x))
-////			}
-////    
-////			//applies modifiers to attributes (start, bought, race & culture)
-////			def attributesApplied = {
-////				def attr2mods(a: Attribute): List[Modifier] = List(
-////					nonZeroMod(Start, h base a), 
-////					nonZeroMod(Bought, h bought a), 
-////					nonZeroMod(h.race.name, h.race attribute a), 
-////					nonZeroMod(h.culture.name, h.culture attribute a)
-////				).flatten
-////    
-////				(start /: Attribute.values)((hr, a) => 
-////					hr.addModifiers(CalcAttributed keyFromAttribute a, attr2mods(a)))
-////			}
-////    
-////			//applies modifiers to derived values (bought, race, culture & profession)
-////			def allDerived: Hero = {
-////				def boughtGiMod(key: ModifierKey, bought: HeroData => Int, 
-////												fromGi: GenerationInfo => Int)(hr: Hero): Hero = {
-////					def allGi: List[Modifier] = List(h.race, h.culture, h.profession) flatMap (
-////						gi => nonZeroMod(gi.name, fromGi(gi)))
-////					hr addModifiers (key, nonZeroMod(Bought, bought(h)).toList ::: allGi)
-////				}
-////				boughtGiMod(Humanoid.keyLe, _.boughtLe, _.le)(
-////					boughtGiMod(Humanoid.keyAu, _.boughtAu, _.au)(
-////						boughtGiMod(Humanoid.keyAe, _.boughtAe, _.ae)(
-////							boughtGiMod(Humanoid.keyKe, _.boughtKe, _ => 0)(
-////								boughtGiMod(Humanoid.keyMr, _.boughtMr, _.mr)(attributesApplied)
-////							)
-////						)
-////					)
-////				)
-////			}
-////    
-////			allDerived
-//		}
+  val modifiers: Hero @> Modifiers =
+    Lens.lensu((a,b) ⇒ a.copy(modifiers = b), _.modifiers)
+  
+}
 
 // vim: set ts=2 sw=2 et:

@@ -76,6 +76,15 @@ object HeroData extends Util {
   
   val equipment: HeroData @> EquipmentDatas =
     Lens.lensu((a,b) ⇒ a copy (equipment = b), _.equipment)
+
+  implicit def HeroDataLenses[A] (l: A @> HeroData) = new {
+    lazy val base = l >=> HeroData.base
+    lazy val attributes = l >=> HeroData.attributes
+    lazy val humanoid = l >=> HeroData.humanoid
+    lazy val abilities = l >=> HeroData.abilities
+    lazy val skills = l >=> HeroData.skills
+    lazy val equipment = l >=> HeroData.equipment
+  }
 }
 
 // vim: set ts=2 sw=2 et:

@@ -45,6 +45,11 @@ object AttributesData extends Util {
 
   val initial: AttributesData @> Attributes =
     Lens.lensu((a,b) ⇒ a copy (initial= b), _.initial)
+
+  implicit def AttributesDataLenses[A] (l: A @> AttributesData) = new {
+    lazy val bought = l >=> AttributesData.bought
+    lazy val initial = l >=> AttributesData.initial
+  }
 }
 
 // vim: set ts=2 sw=2 et:

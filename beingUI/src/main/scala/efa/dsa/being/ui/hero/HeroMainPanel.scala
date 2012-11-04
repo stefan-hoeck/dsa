@@ -7,7 +7,7 @@ import efa.nb.tc.PersistentComponent
 import efa.rpg.being.MVPanel
 import org.openide.util.Lookup
 import org.openide.util.lookup.ProxyLookup
-import javax.swing.BorderFactory
+import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scalaz._, Scalaz._, effect.IO
 
 class HeroMainPanel (pl: PureLookup)
@@ -15,19 +15,32 @@ class HeroMainPanel (pl: PureLookup)
    with Lookup.Provider
    with PersistentComponent {
 
-   val basePanel = new HeroBasePanel {
-     border = BorderFactory createTitledBorder loc.basePanel
-   }
+  val basePanel = new HeroBasePanel {border = titledBorder (loc.basePanel)}
 
-   basePanel.add()
+  val derivedPanel = new HeroHumanoidPanel {
+    border = titledBorder (loc.derived)
+  }
 
-   def set = fullLensed(basePanel.set)(HeroData.base) ∙ (_.data)
+  basePanel above derivedPanel add()
+  
+  //(basePanel above 
+  // (
+  //    (
+  //      attributesPanel above derivedPanel above apPanel
+  //    ) beside (
+  //      advantagesPanel, fillCons()
+  //    )
+  //  )
+  //).add()
 
-   def version = v
-   def prefId = "DSA_HeroMainPanel"
-   def locName = loc.mainPanel
-   override def persistentChildren = Nil
-   override lazy val getLookup = new ProxyLookup(pl.l)
+  def set = derivedPanel.set ⊹ 
+    (lensedV(basePanel.set)(HeroData.base) ∙ (_.data))
+
+  def version = v
+  def prefId = "DSA_HeroMainPanel"
+  def locName = loc.mainPanel
+  override def persistentChildren = Nil
+  override lazy val getLookup = new ProxyLookup(pl.l)
 }
 
 object HeroMainPanel {
