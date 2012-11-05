@@ -51,18 +51,7 @@ object AbilitiesNodes {
 //  protected def disadvantagesNode = new ParentNode(DisadvantageLinker, disadvantageNode)
 //  protected def featsNode = new ParentNode(FeatLinker, featNode)
 //
-//  abstract class AdvantageLikeNode [A <: AdvantageLikeBuilder[A]]
-//  (a: Signal[A], val linker: AdvantageLikeLinker{type Adv = A})
-//  extends SignalNode[A](a)
-//     with ContextActionNode 
-//     with UdNode[A] 
-//     with AdvantageLikeMutators[A]
 //     with PropertyNode {
-//    
-//    trait AdvController extends PropertyController[A] {
-//      override def signal = a
-//      edits foreach {e => setData(linker updateA (sd.now, e))}
-//    }
 //    
 //    instanceContent add new EditDescriptionCookie{
 //      def get = a.now.userDesc
@@ -74,21 +63,6 @@ object AbilitiesNodes {
 //    private[abilities] lazy val dataController: PropertyController[_] = new AdvController {
 //      override protected def factories = List(booleanRw[A](activeMut))
 //    }
-//    
-//    //update and delete controller
-//    override protected val udController = new UdNodeController[A] {
-//      uds foreach {_ match {
-//          case Delete(d) => setData(linker.deleteA(sd.now, d))
-//          case _ =>
-//        }
-//      }
-//    }
-//    
-//    override def canRename = true
-//    override def setName(s: String): Unit = {
-//      linker renameA (sd.now, a.now, s) foreach (setData)
-//    }
-//  }
 //  
 //  class AdvantageNode(a: Signal[Advantage]) 
 //  extends AdvantageLikeNode(a, AdvantageLinker) {
