@@ -8,7 +8,13 @@ case class Abilities (
   advantages: Map[String,Advantage],
   handicaps: Map[String,Handicap],
   feats: Map[String,Feat]
-)
+) {
+  lazy val advantageList = advantages.toList map (_._2) sortBy (_.name)
+
+  lazy val handicapList = handicaps.toList map (_._2) sortBy (_.name)
+
+  lazy val featList = feats.toList map (_._2) sortBy (_.name)
+}
 
 object Abilities {
   lazy val default = Abilities(Map.empty, Map.empty, Map.empty)

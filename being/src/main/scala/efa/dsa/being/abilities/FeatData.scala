@@ -38,7 +38,7 @@ object FeatData extends Util {
       ("userDesc" xml a.desc)
   }
   
-  implicit val FeatDataAbilityData = abilityData[FeatData](identity)
+  implicit val FeatDataAbilityData = abilityData[FeatData](Lens.self)
 
   def read (ns: Seq[Node]) = FeatDataToXml fromXml ns
 

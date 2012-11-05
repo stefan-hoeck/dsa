@@ -54,6 +54,7 @@ trait BeingLocal {
   def mr: String
   def mrBody: String
   def mrMind: String
+  def nameExists (name: String): String
   def overstrain: String
   def pa: String
   def position: String
@@ -119,6 +120,7 @@ object BeingLocal extends BeingLocal {
   def mr = "Magieresistenz"
   def mrBody = "Magieresistenz Körper"
   def mrMind = "Magieresistenz Geist"
+  def nameExists (name: String) = "Name bereits vorhanden: " + name
   def overstrain = "Überanstrengung"
   def pa = "Paradewert"
   def position = "Stand"

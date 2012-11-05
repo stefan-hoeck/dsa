@@ -12,7 +12,7 @@ sealed abstract class AbilityLinker[I,D](
 ){
 
   import AbilityLinker.SMap
-  type A = Ability[I,D]
+  final type A = Ability[I,D]
 
   def items: Lens[AbilityItems,DB[I]]
 
@@ -20,16 +20,23 @@ sealed abstract class AbilityLinker[I,D](
 
   def abilities: Lens[Abilities,SMap[A]]
   
-  def delete(d: D): State[AbilityDatas,SMap[D]] = data -= (AD name d)
+  def delete(a: A): State[AbilityDatas,Unit] = data -= a.name void
 
-  def update(d: D): State[AbilityDatas,SMap[D]] = data += (AD.name(d) → d)
+  def update(a: A, d: D): State[AbilityDatas,Unit] =
+    delete(a) >> (data += (AD.name(d) → d) void)
+
+  def rename(a: A, s: String): State[AbilityDatas,Unit] =
+    delete(a) >> (data += (s → (AD.nameL set (a.data, s))) void)
 
   def heroAbilities(h: HeroData, as: AbilityItems): SMap[A] = {
+    val abilities = data get h.abilities
+    val names = abilities.keySet
+
     def toAbility(p: (String,D)) = p match {
-      case (s,d) ⇒ items get as get AD.id(d) map (i ⇒ (s, Ability(i,d)))
+      case (s,d) ⇒ items get as get AD.id(d) map (i ⇒ (s, Ability(i,d,names)))
     }
 
-    data get h.abilities flatMap toAbility
+    abilities flatMap toAbility
   }
 }
 

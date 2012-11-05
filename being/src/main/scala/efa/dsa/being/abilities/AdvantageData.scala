@@ -30,14 +30,14 @@ object AdvantageData extends Util {
     def toXml (a: AdvantageData) =
       FeatData.write(a.data) ++ Value.write(a.value)
   }
-
-  implicit val AdvantageDataAbilityData = abilityData[AdvantageData](_.data)
   
   val data: AdvantageData @> FeatData =
     Lens.lensu((a,b) ⇒ a.copy(data = b), _.data)
 
   val value: AdvantageData @> Int =
     Lens.lensu((a,b) ⇒ a.copy(value = b), _.value)
+
+  implicit val AdvantageDataAbilityData = abilityData[AdvantageData](data)
 }
 
 // vim: set ts=2 sw=2 et:
