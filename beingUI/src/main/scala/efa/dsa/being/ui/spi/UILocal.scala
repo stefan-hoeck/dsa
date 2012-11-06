@@ -1,8 +1,8 @@
 package efa.dsa.being.ui.spi
 
 trait UILocal {
+  def abilities: String
   def actual: String
-  def advantages: String
   def ap: String
   def armor: String
   def attackModes: String
@@ -35,8 +35,8 @@ trait UILocal {
 }
 
 object UILocal extends UILocal {
+  def abilities = "Vor-, Nachteile und Sonderfertigkeiten"
   def actual = "Aktuell"
-  def advantages = "Vor-, Nachteile und Sonderfertigkeiten"
   def ap = "Erfahrung"
   def armor = "Rüstungen"
   def attackModes = "Attackemodi"

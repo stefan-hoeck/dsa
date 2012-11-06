@@ -13,6 +13,7 @@ case class Ability[A,B](item: A, data: B, names: Set[String]) (
   def desc = RI desc item
   def shortDesc = RI shortDesc item
   def fullDesc = RI fullDesc item
+  def isActive = AD isActive data
 
   lazy val nameVal: EndoVal[String] = Validators.endo (
     _ match {

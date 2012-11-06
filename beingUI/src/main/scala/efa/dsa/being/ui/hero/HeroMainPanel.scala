@@ -1,7 +1,9 @@
 package efa.dsa.being.ui.hero
 
 import efa.dsa.being.{Hero, HeroData}
+import efa.dsa.being.abilities._
 import efa.dsa.being.ui.{loc, version ⇒ v}
+import efa.dsa.being.ui.abilities.AbilitiesPanel
 import efa.nb.PureLookup
 import efa.nb.tc.PersistentComponent
 import efa.rpg.being.MVPanel
@@ -10,39 +12,34 @@ import org.openide.util.lookup.ProxyLookup
 import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scalaz._, Scalaz._, effect.IO
 
-class HeroMainPanel (pl: PureLookup)
+class HeroMainPanel (pl: PureLookup, abilitiesP: AbilitiesPanel)
    extends MVPanel[Hero, HeroData] 
    with Lookup.Provider
    with PersistentComponent {
 
-  val basePanel = new HeroBasePanel {border = titledBorder (loc.basePanel)}
+  val baseP = new HeroBasePanel {border = titledBorder (loc.basePanel)}
 
-  val derivedPanel = new HeroHumanoidPanel {
+  val derivedP = new HeroHumanoidPanel {
     border = titledBorder (loc.derived)
   }
 
-  val attributesPanel = new HeroAttributesPanel {
+  val attributesP = new HeroAttributesPanel {
     border = titledBorder (loc.attributes)
   }
 
-  val apPanel = new HeroApPanel {border = titledBorder (loc.ap)}
+  val apP = new HeroApPanel {border = titledBorder (loc.ap)}
 
-  basePanel above attributesPanel above derivedPanel above apPanel add()
-  
-  //(basePanel above 
-  // (
-  //    (
-  //      attributesPanel above derivedPanel above apPanel
-  //    ) beside (
-  //      advantagesPanel, fillCons()
-  //    )
-  //  )
-  //).add()
+  abilitiesP.border = titledBorder (loc.abilities)
 
-  def set = derivedPanel.set ⊹ 
-    attributesPanel.set ⊹ 
-    (lensedV(basePanel.set)(HeroData.base) ∙ (_.data)) ⊹
-    (lensedV(apPanel.set)(HeroData.base) ∙ (_.data))
+  (baseP fillH 2) above (
+    (attributesP above derivedP above apP) beside (abilitiesP fillV 3)
+  ) add()
+
+  def set = derivedP.set ⊹ 
+    attributesP.set ⊹ 
+    (lensedV(baseP.set)(HeroData.base) ∙ (_.data)) ⊹
+    (lensedV(apP.set)(HeroData.base) ∙ (_.data)) ⊹
+    (mapSt(abilitiesP.set)(HeroData.abilities) ∙ (_.abilities))
 
   def version = v
   def prefId = "DSA_HeroMainPanel"
@@ -52,8 +49,10 @@ class HeroMainPanel (pl: PureLookup)
 }
 
 object HeroMainPanel {
-  def create: IO[HeroMainPanel] = 
-    PureLookup.apply map (new HeroMainPanel(_))
+  def create: IO[HeroMainPanel] =  for {
+    l ← PureLookup.apply
+    advP ← AbilitiesPanel.create
+  } yield new HeroMainPanel(l, advP)
 }
 
 // vim: set ts=2 sw=2 et:

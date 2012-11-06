@@ -16,6 +16,8 @@ trait BeingLocal {
   lazy val fkLoc = Localization("fk", fk, shortFk, fk)
   lazy val gsLoc = Localization("gs", gs, shortGs, gs)
   lazy val iniLoc = Localization("ini", ini, shortIni, ini)
+  lazy val isActiveLoc =
+    Localization("active", isActive, shortIsActive, descIsActive)
   lazy val keLoc = Localization("ke", ke, shortKe, ke)
   lazy val leLoc = Localization("le", le, shortLe, le)
   lazy val mrLoc = Localization("mr", mr, shortMr, mr)
@@ -28,6 +30,7 @@ trait BeingLocal {
   lazy val tpLoc = Localization("tp", tp, shortTp, tp)
   lazy val wsLoc = Localization("ws", ws, shortWs, ws)
 
+  def advantages: String
   def ae: String
   def at: String
   def atfk: String
@@ -40,15 +43,19 @@ trait BeingLocal {
   def carriedWeight: String
   def carryingCapacity: String
   def culture: String
+  def descIsActive: String
   def eyes: String
+  def feats: String
   def fk: String
   def gender: String
   def gs: String
   def hair: String
+  def handicaps: String
   def height: String
   def hero: String
   def ini: String
   def initial: String
+  def isActive: String
   def ke: String
   def le: String
   def mr: String
@@ -72,6 +79,7 @@ trait BeingLocal {
   def shortFk: String
   def shortGs: String
   def shortIni: String
+  def shortIsActive: String
   def shortKe: String
   def shortLe: String
   def shortMr: String
@@ -93,6 +101,7 @@ trait BeingLocal {
 }
 
 object BeingLocal extends BeingLocal {
+  def advantages = "Vorteile"
   def ae = "Astralenergie"
   def at = "Attackewert"
   def atfk = "Attacke-/Fernkampfwert"
@@ -106,15 +115,19 @@ object BeingLocal extends BeingLocal {
   def carriedWeight = "Gewicht"
   def carryingCapacity = "Tragkraft"
   def culture = "Kultur"
+  def descIsActive = "Derzeit aktiv?"
   def eyes = "Augenfarbe"
+  def feats = "Sonderfertigkeiten"
   def fk = "Fernkampfwert"
   def gender = "Geschlecht"
   def gs = "Geschwindigkeit"
   def hair = "Haarfarbe"
+  def handicaps = "Nachteile"
   def height = "Grösse"
   def hero = "Held"
   def ini = "Initiative"
   def initial = "Startwert"
+  def isActive = "aktiv"
   def ke = "Karmalenergie"
   def le = "Lebensenergie"
   def mr = "Magieresistenz"
@@ -138,6 +151,7 @@ object BeingLocal extends BeingLocal {
   def shortFk = "FK"
   def shortGs = "GS"
   def shortIni = "INI"
+  def shortIsActive = "aktiv"
   def shortKe = "KE"
   def shortLe = "LE"
   def shortMr = "MR"

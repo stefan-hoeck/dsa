@@ -1,5 +1,6 @@
 package efa.dsa.being.calc
 
+import efa.core.{ValSt, ValRes}
 import efa.dsa.abilities._
 import efa.dsa.being.abilities._
 import efa.dsa.being.HeroData
@@ -26,7 +27,10 @@ sealed abstract class AbilityLinker[I,D](
     delete(a) >> (data += (AD.name(d) → d) void)
 
   def rename(a: A, s: String): State[AbilityDatas,Unit] =
-    delete(a) >> (data += (s → (AD.nameL set (a.data, s))) void)
+    update(a, AD.nameL set (a.data, s))
+
+  def setActive(a: A, vb: ValRes[Boolean]): ValSt[AbilityDatas] =
+    vb map (b ⇒ update (a, AD.isActiveL set (a.data, b)))
 
   def heroAbilities(h: HeroData, as: AbilityItems): SMap[A] = {
     val abilities = data get h.abilities

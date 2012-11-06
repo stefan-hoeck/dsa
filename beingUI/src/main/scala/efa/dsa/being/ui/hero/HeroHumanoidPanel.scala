@@ -1,6 +1,7 @@
 package efa.dsa.being.ui.hero
 
 import efa.core._, Efa._
+import efa.nb.VSET
 import efa.dsa.being._
 import efa.dsa.being.ui.{loc ⇒ uiLoc}
 import efa.react.SET

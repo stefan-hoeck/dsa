@@ -4,6 +4,7 @@ import efa.core.Efa._
 import efa.dsa.being._
 import efa.dsa.being.ui.{loc ⇒ uiLoc}
 import efa.dsa.world.Attribute
+import efa.nb.VSET
 import efa.react.swing.component.{tooltip ⇒ tt}
 import efa.rpg.being.BeingPanel
 import scala.swing.TextField
