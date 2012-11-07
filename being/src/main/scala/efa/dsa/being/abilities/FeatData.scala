@@ -16,17 +16,15 @@ case class FeatData (
 object FeatData extends Util {
   val default = FeatData(0, "", true, "")
 
-  implicit val FeatDataDefault = Default default default
-
   implicit val FeatDataEqual = Equal.equalA[FeatData]
 
   implicit val FeatDataArbitrary = Arbitrary(
-    ^(a[Int], Gen.identifier, a[Boolean], Gen.identifier)(FeatData.apply)
+    ^^^(a[Int], Gen.identifier, a[Boolean], Gen.identifier)(FeatData.apply)
   )
 
   implicit val FeatDataToXml = new ToXml[FeatData] {
     def fromXml (ns: Seq[Node]) =
-      ^(ns.readTag[Int]("parentId"),
+      ^^^(ns.readTag[Int]("parentId"),
         ns.readTag[String]("name"),
         ns.readTag[Boolean]("active"),
         ns.readTag[String]("userDesc"))(FeatData.apply)
@@ -37,8 +35,6 @@ object FeatData extends Util {
       ("active" xml a.isActive) ++
       ("userDesc" xml a.desc)
   }
-  
-  implicit val FeatDataAbilityData = abilityData[FeatData](Lens.self)
 
   def read (ns: Seq[Node]) = FeatDataToXml fromXml ns
 
@@ -53,9 +49,8 @@ object FeatData extends Util {
 
   val desc: FeatData @> String = Lens.lensu((a,b) ⇒ a.copy(desc = b), _.desc)
   
-  
-  
-  
+  implicit val FeatDataAbilityData =
+    abilityData[FeatData](Lens.self, default)
 }
 
 // vim: set ts=2 sw=2 et:

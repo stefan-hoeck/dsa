@@ -13,8 +13,11 @@ package object abilities extends RangeVals {
 
   type Feat = Ability[FeatItem,FeatData]
 
-  private[abilities] def abilityData[A] (l: A @> FeatData): AbilityData[A] =
-    new AbilityData[A] { val dataL = l}
+  private[abilities] def abilityData[A] (l: A @> FeatData, a: A)
+  : AbilityData[A] = new AbilityData[A] {
+    val dataL = l
+    val default = a
+  }
 }
 
 // vim: set ts=2 sw=2 et:

@@ -24,13 +24,13 @@ object ZoneArmorData extends EquipmentLikes[ZoneArmorData] {
     ZoneArmorData(eData(_.zoneArmor), 0, ZoneRs.!!, 0, false)
 
   implicit lazy val ZoneArmorDataArbitrary = Arbitrary (
-    ^(eDataGen, parentIdGen, ZoneRs.gen, Be.gen, a[Boolean])(
+    ^^^^(eDataGen, parentIdGen, ZoneRs.gen, Be.gen, a[Boolean])(
       ZoneArmorData.apply)
   )
 
   implicit lazy val ZoneArmorDataToXml = new ToXml[ZoneArmorData] {
     def fromXml (ns: Seq[Node]) =
-      ^(readEData (ns),
+      ^^^^(readEData (ns),
         readParentId (ns),
         ZoneRs read ns,
         Be read ns,

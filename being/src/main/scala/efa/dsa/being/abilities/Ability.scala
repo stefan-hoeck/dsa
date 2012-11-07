@@ -10,7 +10,7 @@ case class Ability[A,B](item: A, data: B, names: Set[String]) (
 ) {
   def name = AD name data
   def id = RI id item
-  def desc = RI desc item
+  def desc = AD desc data
   def shortDesc = RI shortDesc item
   def fullDesc = RI fullDesc item
   def isActive = AD isActive data

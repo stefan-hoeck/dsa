@@ -10,7 +10,7 @@ import scalaz._, Scalaz._, effect.IO
 class TalentPanel(p: ItemPair[TalentItem]) extends AbilityPanel(p) {
 
   def in = 
-    ^(dataIn, 
+    ^^^^^(dataIn, 
       attrC.in, 
       textIn[Ebe] (ebeC),
       comboBox (rcC),

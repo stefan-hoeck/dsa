@@ -7,7 +7,7 @@ import scalaz._, Scalaz._, effect.IO
 
 class ArmorPanel(p: ItemPair[ArmorItem]) extends EquipmentLikePanel(p) {
   def in =
-    ^(eqIn, 
+    ^^^(eqIn, 
       intIn(rsC, Rs.validate),
       intIn(beC, Be.validate),
       checkBox(additionC))(ArmorItem.apply)

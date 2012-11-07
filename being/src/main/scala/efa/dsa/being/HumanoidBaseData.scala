@@ -73,7 +73,7 @@ object HumanoidBaseData extends Util {
   implicit val HumanoidBaseDataToXml = new ToXml[HumanoidBaseData] {
     def fromXml (ns: Seq[Node]) = {
       def fst =
-        ^(LostAe.read(ns),
+        ^^^^^^(LostAe.read(ns),
           BoughtAe.read(ns),
           LostAu.read(ns),
           BoughtAu.read(ns),
@@ -82,7 +82,7 @@ object HumanoidBaseData extends Util {
           LostLe.read(ns))(Tuple7.apply)
 
       def snd =
-        ^(BoughtLe.read(ns),
+        ^^^^^(BoughtLe.read(ns),
           BoughtMr.read(ns),
           Wounds.read(ns),
           Exhaustion.read(ns),

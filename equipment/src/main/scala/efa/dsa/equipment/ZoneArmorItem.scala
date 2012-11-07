@@ -31,7 +31,7 @@ object ZoneArmorItem extends EquipmentItemLikes[ZoneArmorItem] {
 
   implicit lazy val ZoneArmorItemToXml = new ToXml[ZoneArmorItem] {
     def fromXml (ns: Seq[Node]) =
-      ^(readEData (ns),
+      ^^^(readEData (ns),
         ZoneRs read ns,
         Be read ns,
         Addition read ns)(ZoneArmorItem.apply)
@@ -44,7 +44,7 @@ object ZoneArmorItem extends EquipmentItemLikes[ZoneArmorItem] {
   }
 
   implicit lazy val ZoneArmorItemArbitrary = Arbitrary (
-    ^(a[EquipmentItemData],
+    ^^^(a[EquipmentItemData],
       ZoneRs.gen,
       Be.gen,
       a[Boolean])(ZoneArmorItem.apply)

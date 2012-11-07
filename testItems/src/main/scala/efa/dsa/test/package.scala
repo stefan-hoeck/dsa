@@ -76,7 +76,7 @@ package object test {
   lazy val tapGen = Gen choose (0, 20)
 
   lazy val tpGen = 
-    ^(Gen.choose(1,2),
+    ^^(Gen.choose(1,2),
       Gen.oneOf(4, 6, 8, 10, 20),
       Gen.choose(-1, 10))(DieRoller.apply)
 

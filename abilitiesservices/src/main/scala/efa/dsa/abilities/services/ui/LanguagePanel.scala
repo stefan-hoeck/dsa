@@ -8,7 +8,7 @@ import scalaz._, Scalaz._, effect.IO
 
 class LanguagePanel(p: ItemPair[LanguageItem]) extends AbilityPanel (p) {
   def in = 
-    ^(dataIn,
+    ^^^^(dataIn,
       comboBox (rcC),
       intIn (complexityC, Complexity.validate),
       stringIn(scriptureC),

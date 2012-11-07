@@ -16,8 +16,6 @@ case class AdvantageData(data: FeatData, value: Int) {
 object AdvantageData extends Util {
   val default = AdvantageData(!!, 0)
 
-  implicit val AdvantageDataDefault = Default default default
-
   implicit val AdvantageDataEqual = Equal.equalA[AdvantageData]
 
   implicit val AdvantageDataArbitrary =
@@ -37,7 +35,8 @@ object AdvantageData extends Util {
   val value: AdvantageData @> Int =
     Lens.lensu((a,b) ⇒ a.copy(value = b), _.value)
 
-  implicit val AdvantageDataAbilityData = abilityData[AdvantageData](data)
+  implicit val AdvantageDataAbilityData =
+    abilityData[AdvantageData](data, default)
 }
 
 // vim: set ts=2 sw=2 et:

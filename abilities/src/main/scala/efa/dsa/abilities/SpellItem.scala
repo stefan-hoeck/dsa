@@ -28,7 +28,7 @@ object SpellItem extends SkillItemLikes[SpellItem] {
   //type classes
   implicit lazy val SpellItemToXml = new ToXml[SpellItem] {
     def fromXml (ns: Seq[Node]) =
-      ^(readData (ns),
+      ^^(readData (ns),
         ns.tagged[RaisingCost],
         ns.tagged[Attributes])(SpellItem.apply)
 
@@ -37,7 +37,7 @@ object SpellItem extends SkillItemLikes[SpellItem] {
   }
 
   implicit lazy val SpellItemArbitrary = Arbitrary (
-    ^(a[ItemData], a[RaisingCost], a[Attributes])(SpellItem.apply)
+    ^^(a[ItemData], a[RaisingCost], a[Attributes])(SpellItem.apply)
   )
 
   val raisingCost: SpellItem @> RaisingCost =

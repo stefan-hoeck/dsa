@@ -46,7 +46,7 @@ object MeleeWeaponItem extends EquipmentItemLikes[MeleeWeaponItem] {
   implicit lazy val MeleeWeaponItemToXml = new ToXml[MeleeWeaponItem] {
     def fromXml (ns: Seq[Node]) = {
       def first = 
-        ^(readEData(ns),
+        ^^^^^^(readEData(ns),
           Tp read ns,
           ns.tagged[TpKk],
           ns.readTag[Boolean]("improvised"),
@@ -54,7 +54,7 @@ object MeleeWeaponItem extends EquipmentItemLikes[MeleeWeaponItem] {
           Bf read ns,
           ns.readTag[Boolean]("twohanded"))(Tuple7.apply)
       def second =
-        ^(ns.tagged[Wm],
+        ^^^(ns.tagged[Wm],
           Ini read ns,
           ns.tagged[DistanceClass],
           Length read ns)(Tuple4.apply)
@@ -80,7 +80,7 @@ object MeleeWeaponItem extends EquipmentItemLikes[MeleeWeaponItem] {
 
   implicit lazy val MeleeWeaponItemArbitrary = {
     def first =
-      ^(a[EquipmentItemData],
+      ^^^^^^(a[EquipmentItemData],
         a[DieRoller],
         a[TpKk],
         a[Boolean],
@@ -88,7 +88,7 @@ object MeleeWeaponItem extends EquipmentItemLikes[MeleeWeaponItem] {
         Bf.gen,
         a[Boolean])(Tuple7.apply)
     def second =
-      ^(a[Wm],
+      ^^^(a[Wm],
         Ini.gen,
         a[DistanceClass],
         Length.gen)(Tuple4.apply)

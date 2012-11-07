@@ -24,12 +24,12 @@ object TalentData extends Util {
   implicit val TalentDataEqual = Equal.equalA[TalentData]
 
   implicit val TalentDataArbitrary = Arbitrary(
-    ^(a[Int], Tap.gen, a[RaisingCost], a[Boolean])(TalentData.apply)
+    ^^^(a[Int], Tap.gen, a[RaisingCost], a[Boolean])(TalentData.apply)
   )
 
   implicit val TalentDataToXml = new ToXml[TalentData] {
     def fromXml (ns: Seq[Node]) =
-      ^(ns.readTag[Int]("parentId"),
+      ^^^(ns.readTag[Int]("parentId"),
         Tap read ns,
         ns.tagged[RaisingCost],
         ns.readTag[Boolean]("special"))(TalentData.apply)
@@ -41,7 +41,7 @@ object TalentData extends Util {
       ("special" xml a.specialExp)
   }
 
-  implicit val TalentDataSkillData = skillData[TalentData](identity)
+  implicit val TalentDataSkillData = skillData[TalentData](Lens.self)
 
   def read (ns: Seq[Node]) = TalentDataToXml fromXml ns
 

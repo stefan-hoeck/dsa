@@ -24,12 +24,12 @@ object ShieldData extends EquipmentLikes[ShieldData] {
   lazy val default = ShieldData(eData(_.shield), 0, 0, 0, !!)
 
   implicit lazy val ShieldDataArbitrary = Arbitrary (
-    ^(eDataGen, parentIdGen, Ini.gen, Bf.gen, a[Wm])(ShieldData.apply)
+    ^^^^(eDataGen, parentIdGen, Ini.gen, Bf.gen, a[Wm])(ShieldData.apply)
   )
 
   implicit lazy val ShieldDataToXml = new ToXml[ShieldData] {
     def fromXml (ns: Seq[Node]) =
-      ^(readEData (ns),
+      ^^^^(readEData (ns),
         readParentId (ns),
         Ini read ns,
         Bf read ns,

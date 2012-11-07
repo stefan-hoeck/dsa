@@ -2,6 +2,7 @@ package efa.dsa.being
 
 import efa.dsa.abilities._
 import efa.rpg.core.RangeVals
+import scalaz.@>
 
 package object skills extends RangeVals {
   val Tap = fullInfo(0, 999, "tap")
@@ -20,8 +21,8 @@ package object skills extends RangeVals {
 
   type Talent = Skill[TalentItem,TalentData]
 
-  private[skills] def skillData[A](f: A ⇒ TalentData): SkillData[A]
-    = new SkillData[A] { def talentData (a: A) = f(a) }
+  private[skills] def skillData[A](l: A @> TalentData): SkillData[A]
+    = new SkillData[A] { def talentDataL = l }
 }
 
 // vim: set ts=2 sw=2 et:

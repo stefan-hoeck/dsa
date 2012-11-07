@@ -24,7 +24,7 @@ object SkillDatas extends Util with DBs {
   implicit lazy val SkillDatasEqual = Equal.equalA[SkillDatas]
 
   implicit lazy val SkillDatasArbitrary = Arbitrary(
-    ^(a[DB[TalentData]],
+    ^^^^^^(a[DB[TalentData]],
       a[DB[MeleeTalentData]],
       a[DB[TalentData]],
       a[DB[TalentData]],
@@ -39,7 +39,7 @@ object SkillDatas extends Util with DBs {
     implicit val sdXml = dbToXml[TalentData]("dsa_talentData")
 
     def fromXml (ns: Seq[Node]) =
-      ^(ns.readTag[DB[TalentData]]("languages"),
+      ^^^^^^(ns.readTag[DB[TalentData]]("languages"),
         ns.readTag[DB[MeleeTalentData]]("meleeTalents"),
         ns.readTag[DB[TalentData]]("rangedTalents"),
         ns.readTag[DB[TalentData]]("rituals"),

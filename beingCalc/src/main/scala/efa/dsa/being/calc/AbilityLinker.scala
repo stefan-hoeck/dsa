@@ -8,8 +8,8 @@ import efa.rpg.core.{RpgItem, DB}
 import scalaz._, Scalaz._
 
 sealed abstract class AbilityLinker[I,D](
-  implicit val AI:RpgItem[I],
-  val AD:AbilityData[D]
+  implicit AI:RpgItem[I],
+  AD:AbilityData[D]
 ){
 
   import AbilityLinker.SMap
@@ -20,8 +20,18 @@ sealed abstract class AbilityLinker[I,D](
   def data: Lens[AbilityDatas,SMap[D]]
 
   def abilities: Lens[Abilities,SMap[A]]
+
+  def abilityList: Abilities ⇒ List[A]
   
   def delete(a: A): State[AbilityDatas,Unit] = data -= a.name void
+
+  def itemToData (i: I): D = (for {
+    _ ← AD.idL := AI.id(i)
+    _ ← AD.nameL := AI.name(i)
+  } yield ()) exec AD.default
+
+  def add (i: I): State[AbilityDatas,Unit] =
+    data += (AI.name(i) → itemToData(i)) void
 
   def update(a: A, d: D): State[AbilityDatas,Unit] =
     delete(a) >> (data += (AD.name(d) → d) void)
@@ -29,8 +39,8 @@ sealed abstract class AbilityLinker[I,D](
   def rename(a: A, s: String): State[AbilityDatas,Unit] =
     update(a, AD.nameL set (a.data, s))
 
-  def setActive(a: A, vb: ValRes[Boolean]): ValSt[AbilityDatas] =
-    vb map (b ⇒ update (a, AD.isActiveL set (a.data, b)))
+  def setActive(a: A, b: Boolean): State[AbilityDatas,Unit] =
+    update (a, AD.isActiveL set (a.data, b))
 
   def heroAbilities(h: HeroData, as: AbilityItems): SMap[A] = {
     val abilities = data get h.abilities
@@ -56,29 +66,34 @@ object AbilityLinker {
   private def al[I:RpgItem,D:AbilityData](
     il: Lens[AbilityItems,DB[I]],
     dl: Lens[AbilityDatas,SMap[D]],
-    al: Lens[Abilities,SMap[Ability[I,D]]]
+    al: Lens[Abilities,SMap[Ability[I,D]]],
+    list: Abilities ⇒ List[Ability[I,D]]
   ) = new AbilityLinker[I,D]{
     val items = il
     val data = dl
     val abilities = al
+    def abilityList = list
   }
 
   implicit val AdvantageLinker = al[AdvantageItem,AdvantageData](
     AbilityItems.advantages,
     AbilityDatas.advantages,
-    Abilities.advantages
+    Abilities.advantages,
+    _.advantageList
   )
 
   implicit val HandicapLinker = al[HandicapItem,AdvantageData](
     AbilityItems.handicaps,
     AbilityDatas.handicaps,
-    Abilities.handicaps
+    Abilities.handicaps,
+    _.handicapList
   )
 
   implicit val FeatLinker = al[FeatItem,FeatData](
     AbilityItems.feats,
     AbilityDatas.feats,
-    Abilities.feats
+    Abilities.feats,
+    _.featList
   )
 }
 

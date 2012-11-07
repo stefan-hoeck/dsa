@@ -51,7 +51,7 @@ abstract class EquipmentLikePanel[A:EquipmentItem](p: ItemPair[A])
   }
 
   protected def eqIn: VSIn[EquipmentItemData] =
-    ^(dataIn,
+    ^^(dataIn,
     textIn(priceC, Price.validate)(parseP),
     textIn(weightC, Weight.validate)(parseW))(EquipmentItemData.apply)
 }

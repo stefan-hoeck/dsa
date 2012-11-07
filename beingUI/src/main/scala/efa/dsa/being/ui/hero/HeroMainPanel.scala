@@ -3,7 +3,7 @@ package efa.dsa.being.ui.hero
 import efa.dsa.being.{Hero, HeroData}
 import efa.dsa.being.abilities._
 import efa.dsa.being.ui.{loc, version ⇒ v}
-import efa.dsa.being.ui.abilities.AbilitiesPanel
+import efa.dsa.being.ui.abilities.{AbilitiesPanel, abilitiesPanel}
 import efa.nb.PureLookup
 import efa.nb.tc.PersistentComponent
 import efa.rpg.being.MVPanel
@@ -50,8 +50,8 @@ class HeroMainPanel (pl: PureLookup, abilitiesP: AbilitiesPanel)
 
 object HeroMainPanel {
   def create: IO[HeroMainPanel] =  for {
-    l ← PureLookup.apply
-    advP ← AbilitiesPanel.create
+    l    ← PureLookup.apply
+    advP ← abilitiesPanel
   } yield new HeroMainPanel(l, advP)
 }
 

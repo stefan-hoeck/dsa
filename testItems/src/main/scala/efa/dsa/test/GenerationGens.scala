@@ -19,7 +19,7 @@ object GenerationGens {
   lazy val attributesGen = EnumMaps.int[Attribute](-2, 2, 0, "").gen
 
   def genDataGen (sd: SkillDatas, names: List[String]): Gen[GenData] =
-    ^(Gen.oneOf(names),
+    ^^^^^(Gen.oneOf(names),
       genAeGen,
       genAuGen,
       genLeGen,

@@ -38,13 +38,13 @@ object MeleeTalentData extends Util with RangeVals {
       TalentData.write(a.talentData) ++ ("at" xml a.at)
   }
 
-  implicit val MeleeTalentDataTalentDataLike =
-    skillData[MeleeTalentData](_.talentData)
-
   val talentData: MeleeTalentData @> TalentData =
     Lens.lensu((a,b) ⇒ a.copy(talentData = b), _.talentData)
 
   val at: MeleeTalentData @> Int = Lens.lensu((a,b) ⇒ a.copy(at = b), _.at)
+
+  implicit val MeleeTalentDataTalentData =
+    skillData[MeleeTalentData](talentData)
 }
 
 // vim: set ts=2 sw=2 et:

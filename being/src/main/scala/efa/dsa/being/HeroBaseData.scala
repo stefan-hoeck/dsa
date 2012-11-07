@@ -77,19 +77,19 @@ object HeroBaseData extends Util {
   implicit val HeroBaseDataToXml = new ToXml[HeroBaseData] {
     def fromXml (ns: Seq[Node]) = {
       def fst =
-        ^(ns.readTag[String]("name"),
+        ^^^(ns.readTag[String]("name"),
           ns.tagged[Gender],
           ns.readTag[GenDataAttributes]("race"),
           ns.readTag[GenDataAttributes]("culture"))(Tuple4.apply)
 
       def snd =
-        ^(ns.readTag[GenData]("profession"),
+        ^^^(ns.readTag[GenData]("profession"),
           ns.readTag[String]("position"),
           ns.readTag[String]("title"),
           So read ns)(Tuple4.apply)
 
       def thrd =
-        ^(Ap.read(ns),
+        ^^^^^^(Ap.read(ns),
           ns.readTag[Long]("birthday"),
           Height read ns,
           Weight read ns,
@@ -97,7 +97,7 @@ object HeroBaseData extends Util {
           ns.readTag[String]("hairColor"),
           ns.readTag[String]("desc"))(Tuple7.apply)
 
-      def total = ^(fst, snd, thrd)(Tuple3.apply)
+      def total = ^^(fst, snd, thrd)(Tuple3.apply)
 
       for {
         t ← total

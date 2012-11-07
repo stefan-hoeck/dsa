@@ -22,12 +22,12 @@ object SpellData extends Util with RangeVals {
   implicit val SpellDataEqual = Equal.equalA[SpellData]
 
   implicit val SpellDataArbitrary = Arbitrary(
-    ^(a[TalentData], a[Boolean], Gen.identifier)(SpellData.apply)
+    ^^(a[TalentData], a[Boolean], Gen.identifier)(SpellData.apply)
   )
 
   implicit val SpellDataToXml = new ToXml[SpellData] {
     def fromXml (ns: Seq[Node]) =
-      ^(TalentData.read(ns),
+      ^^(TalentData.read(ns),
         ns.readTag[Boolean]("houseSpell"),
         ns.readTag[String]("representation"))(SpellData.apply)
 
@@ -37,8 +37,6 @@ object SpellData extends Util with RangeVals {
       ("representation" xml a.representation)
   }
 
-  implicit val SpellDataSkillData = skillData[SpellData](_.talentData)
-
   val talentData: SpellData @> TalentData =
     Lens.lensu((a,b) ⇒ a.copy(talentData = b), _.talentData)
 
@@ -47,6 +45,8 @@ object SpellData extends Util with RangeVals {
   
   val representation: SpellData @> String =
     Lens.lensu((a,b) ⇒ a.copy(representation = b), _.representation)
+
+  implicit val SpellDataSkillData = skillData[SpellData](talentData)
 }
 
 // vim: set ts=2 sw=2 et:

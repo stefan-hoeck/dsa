@@ -9,7 +9,7 @@ import scalaz._, Scalaz._, effect.IO
 class ScripturePanel(p: ItemPair[ScriptureItem]) extends AbilityPanel(p) {
 
   def in = 
-    ^(dataIn, 
+    ^^(dataIn, 
       comboBox (rcC),
       intIn (complexityC, Complexity.validate))(ScriptureItem.apply)
 

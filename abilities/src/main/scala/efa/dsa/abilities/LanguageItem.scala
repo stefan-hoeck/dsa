@@ -34,7 +34,7 @@ object LanguageItem extends SkillItemLikes[LanguageItem] {
   //type classes
   implicit lazy val LanguageItemToXml = new ToXml[LanguageItem] {
     def fromXml (ns: Seq[Node]) =
-      ^(readData (ns),
+      ^^^^(readData (ns),
         ns.tagged[RaisingCost],
         Complexity.read(ns),
         ns.readTag[String]("scripture"),
@@ -49,7 +49,7 @@ object LanguageItem extends SkillItemLikes[LanguageItem] {
   }
 
   implicit lazy val LanguageItemArbitrary = Arbitrary (
-    ^(a[ItemData],
+    ^^^^(a[ItemData],
       a[RaisingCost],
       Complexity.gen,
       Gen.identifier,

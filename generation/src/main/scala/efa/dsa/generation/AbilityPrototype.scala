@@ -18,12 +18,12 @@ object AbilityPrototype extends Util {
   implicit val AbilityPrototypeEqual = Equal.equalA[AbilityPrototype]
 
   implicit val AbilityPrototypeArbitrary = Arbitrary(
-    ^(a[Int], Gen.identifier, Value.gen)(AbilityPrototype.apply)
+    ^^(a[Int], Gen.identifier, Value.gen)(AbilityPrototype.apply)
   )
 
   implicit val AbilityPrototypeToXml = new ToXml[AbilityPrototype] {
     def fromXml (ns: Seq[Node]) =
-      ^(ns.readTag[Int]("id"),
+      ^^(ns.readTag[Int]("id"),
         ns.readTag[String]("name"),
         Value read ns)(AbilityPrototype.apply)
 

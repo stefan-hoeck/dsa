@@ -16,7 +16,7 @@ class MeleeWeaponPanel(p: ItemPair[MeleeWeaponItem])
     def lengthRead = Read readV (ued readPretty Distance.S)
     
     def first =
-      ^(eqIn,
+      ^^^^^^(eqIn,
         textIn[DieRoller](tpC),
         textIn[TpKk](tpkkC),
         checkBox(improvisedC),
@@ -25,7 +25,7 @@ class MeleeWeaponPanel(p: ItemPair[MeleeWeaponItem])
         checkBox(twohandedC))(Tuple7.apply)
 
     def second =
-      ^(textIn[Wm](wmC),
+      ^^^(textIn[Wm](wmC),
         intIn(iniC, Ini.validate),
         comboBox(dkC),
         textIn(lengthC, Length.validate)(lengthRead))(Tuple4.apply)

@@ -10,7 +10,7 @@ class ZoneArmorPanel(p: ItemPair[ZoneArmorItem])
    extends EquipmentLikePanel(p) {
 
   def in = 
-    ^(eqIn, 
+    ^^^(eqIn, 
       textIn[ZoneRs](rsC)(readV(ZoneRs.read)),
       intIn(beC, Be.validate),
       checkBox(additionC))(ZoneArmorItem.apply)

@@ -34,7 +34,7 @@ object TalentItem extends SkillItemLikes[TalentItem] {
   //type classes
   implicit lazy val TalentItemToXml = new ToXml[TalentItem] {
     def fromXml (ns: Seq[Node]) = 
-      ^(readData (ns),
+      ^^^^^(readData (ns),
         ns.tagged[Attributes],
         ns.tagged[Ebe],
         ns.tagged[RaisingCost],
@@ -51,7 +51,7 @@ object TalentItem extends SkillItemLikes[TalentItem] {
   }
 
   implicit lazy val TalentItemArbitrary = Arbitrary (
-    ^(a[ItemData],
+    ^^^^^(a[ItemData],
       a[Attributes],
       a[Ebe],
       a[RaisingCost],

@@ -43,7 +43,7 @@ object RangedWeaponItem extends EquipmentItemLikes[RangedWeaponItem] {
   implicit lazy val RangedWeaponItemToXml = new ToXml[RangedWeaponItem] {
     def fromXml (ns: Seq[Node]) = {
       def first = 
-        ^(readEData (ns),
+        ^^^^^^(readEData (ns),
           Tp read ns,
           ns.tagged[TpKk],
           ns.readTag[Boolean]("improvised"),
@@ -51,7 +51,7 @@ object RangedWeaponItem extends EquipmentItemLikes[RangedWeaponItem] {
           Reach read ns,
           TpPlus read ns)(Tuple7.apply)
       def second =
-        ^(ns.readTag[Boolean]("wound"),
+        ^^(ns.readTag[Boolean]("wound"),
           Ttl read ns,
           ns.readTag[Boolean]("ammunition"))(Tuple3.apply)
 
@@ -74,7 +74,7 @@ object RangedWeaponItem extends EquipmentItemLikes[RangedWeaponItem] {
 
   implicit lazy val RangedWeaponItemArbitrary = {
     def first =
-      ^(a[EquipmentItemData],
+      ^^^^^^(a[EquipmentItemData],
         a[DieRoller],
         a[TpKk],
         a[Boolean],
@@ -82,7 +82,7 @@ object RangedWeaponItem extends EquipmentItemLikes[RangedWeaponItem] {
         Reach.gen,
         TpPlus.gen)(Tuple7.apply)
     def second =
-      ^(a[Boolean], Ttl.gen, a[Boolean])(Tuple3.apply)
+      ^^(a[Boolean], Ttl.gen, a[Boolean])(Tuple3.apply)
 
       Arbitrary (^(first, second)((t1, t2) ⇒ RangedWeaponItem(
         t1._1, t1._2, t1._3, t1._4, t1._5, t1._6, t1._7, t2._1, t2._2, t2._3)))

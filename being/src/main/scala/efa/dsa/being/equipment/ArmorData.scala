@@ -24,12 +24,12 @@ object ArmorData extends EquipmentLikes[ArmorData] {
   lazy val default = ArmorData(eData(_.armor), 0, 0, 0, false)
 
   implicit lazy val ArmorDataArbitrary = Arbitrary (
-    ^(eDataGen, parentIdGen, Rs.gen, Be.gen, a[Boolean])(ArmorData.apply)
+    ^^^^(eDataGen, parentIdGen, Rs.gen, Be.gen, a[Boolean])(ArmorData.apply)
   )
 
   implicit lazy val ArmorDataToXml = new ToXml[ArmorData] {
     def fromXml (ns: Seq[Node]) =
-      ^(readEData (ns),
+      ^^^^(readEData (ns),
         readParentId (ns),
         Rs read ns,
         Be read ns,

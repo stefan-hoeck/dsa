@@ -25,7 +25,7 @@ object AbilityDatas extends Util with Maps {
     implicit val advMapArbitrary = mapArbitrary[AdvantageData,String](_.name)
 
     Arbitrary(
-      ^(a[Map[String,AdvantageData]],
+      ^^(a[Map[String,AdvantageData]],
         a[Map[String,AdvantageData]],
         a[Map[String,FeatData]])(AbilityDatas.apply)
     )
@@ -37,7 +37,7 @@ object AbilityDatas extends Util with Maps {
       mapToXml[AdvantageData,String]("dsa_advantageData", _.name)
 
     def fromXml (ns: Seq[Node]) =
-      ^(ns.readTag[Map[String,AdvantageData]]("advantages"),
+      ^^(ns.readTag[Map[String,AdvantageData]]("advantages"),
         ns.readTag[Map[String,AdvantageData]]("handicaps"),
         ns.readTag[Map[String,FeatData]]("feats"))(AbilityDatas.apply)
 

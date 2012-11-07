@@ -30,7 +30,7 @@ object ScriptureItem extends SkillItemLikes[ScriptureItem] {
   //type classes
   implicit lazy val ScriptureItemToXml = new ToXml[ScriptureItem] {
     def fromXml (ns: Seq[Node]) =
-      ^(readData (ns),
+      ^^(readData (ns),
         ns.tagged[RaisingCost],
         Complexity.read(ns))(ScriptureItem.apply)
 
@@ -41,7 +41,7 @@ object ScriptureItem extends SkillItemLikes[ScriptureItem] {
   }
 
   implicit lazy val ScriptureItemArbitrary = Arbitrary (
-    ^(a[ItemData], a[RaisingCost], Complexity.gen)(ScriptureItem.apply)
+    ^^(a[ItemData], a[RaisingCost], Complexity.gen)(ScriptureItem.apply)
   )
 
   val raisingCost: ScriptureItem @> RaisingCost =

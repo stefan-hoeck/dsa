@@ -31,7 +31,7 @@ object HeroData extends Util {
   implicit val HeroDataEqual = Equal.equalA[HeroData]
 
   implicit val HeroDataArbitrary = Arbitrary(
-    ^(a[HeroBaseData],
+    ^^^^^(a[HeroBaseData],
       a[AttributesData],
       a[HumanoidBaseData],
       a[AbilityDatas],
@@ -43,7 +43,7 @@ object HeroData extends Util {
     val tag = "dsa_hero"
 
     def fromXml (ns: Seq[Node]) =
-      ^(HeroBaseData.read(ns),
+      ^^^^^(HeroBaseData.read(ns),
         AttributesData.read(ns),
         HumanoidBaseData.read(ns),
         AbilityDatas.read(ns),

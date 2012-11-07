@@ -8,7 +8,7 @@ import efa.nb.dialog.DialogPanel
 
 class AttributesPanel (a: Attributes) extends DialogPanel {
   def in: VSIn[Attributes] =
-    ^(comboBox(ca), comboBox(cb), comboBox(cc))(Attributes.apply)
+    ^^(comboBox(ca), comboBox(cb), comboBox(cc))(Attributes.apply)
 
   val ca = comboBox (a(0), Attribute.values)
   val cb = comboBox (a(1), Attribute.values)

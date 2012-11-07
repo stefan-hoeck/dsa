@@ -21,9 +21,9 @@ object AbilityNodes {
     ho: AbilitiesOut[Handicap],
     fo: AbilitiesOut[Feat]
   ): AbilitiesOut[Abilities] = NC.children(
-    NC singleF parent(ao, bLoc.advantages)(_.advantageList),
-    NC singleF parent(ho, bLoc.handicaps)(_.handicapList),
-    NC singleF parent(fo, bLoc.feats)(_.featList)
+    NC singleF parent(ao, bLoc.advantages),
+    NC singleF parent(ho, bLoc.handicaps),
+    NC singleF parent(fo, bLoc.feats)
   )
 
   def abilityOut[A,B](
@@ -35,16 +35,11 @@ object AbilityNodes {
     (N renameEs L.rename contramap (d ⇒ (d, d.nameVal))) ⊹ 
     Nodes.described[Ability[A,B]] ⊹
     Nodes.childActions("ContextActions/DsaAdvantageNode") ⊹
-    (
-      N.booleanRwProp(bLoc.isActiveLoc.name) contramap (
-        (_: Ability[A,B]).isActive) withIn L.setActive
-    )
+    N.booleanRwPropSetGet(L.setActive)(_.isActive, bLoc.isActiveLoc.name)
 
-  private def parent[A,B] (
-    o: AbilitiesOut[Ability[A,B]], name: String
-  )(get: Abilities ⇒ List[Ability[A,B]]) =
-    NC.children(NC.uniqueIdF[Ability[A,B],ValSt[AbilityDatas],String](o) ∙ get) ⊹
-    N.nameA(name)
+  private def parent[A,B] (o: AbilitiesOut[Ability[A,B]], n: String)
+  (implicit L: AbilityLinker[A,B], M: Manifest[A]) =
+    Nodes.parentNode(n, o)(L.abilityList)(L.add)
 }
 
 // vim: set ts=2 sw=2 et:

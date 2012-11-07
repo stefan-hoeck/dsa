@@ -26,7 +26,7 @@ object EquipmentDatas extends DBs with Util {
   implicit lazy val EquipmentDatasEqual = Equal.equalA[EquipmentDatas]
 
   implicit lazy val EquipmentDatasArbitrary = Arbitrary(
-    ^(a[DB[AmmunitionData]],
+    ^^^^^^(a[DB[AmmunitionData]],
       a[DB[ArmorData]],
       a[DB[ArticleData]],
       a[DB[MeleeWeaponData]],
@@ -45,7 +45,7 @@ object EquipmentDatas extends DBs with Util {
     implicit val zoneArmorXml = dbToXml[ZoneArmorData]("dsa_zoneArmor")
 
     def fromXml (ns: Seq[Node]) =
-      ^(ns.readTag[DB[AmmunitionData]]("ammo"),
+      ^^^^^^(ns.readTag[DB[AmmunitionData]]("ammo"),
         ns.readTag[DB[ArmorData]]("armor"),
         ns.readTag[DB[ArticleData]]("articles"),
         ns.readTag[DB[MeleeWeaponData]]("meleeWeapons"),

@@ -7,7 +7,7 @@ import efa.rpg.items.ItemPair
 import scalaz._, Scalaz._, effect.IO
 
 class SpellPanel(p: ItemPair[SpellItem]) extends AbilityPanel(p) {
-  def in = ^(dataIn, comboBox (rcC), attrC.in)(SpellItem.apply)
+  def in = ^^(dataIn, comboBox (rcC), attrC.in)(SpellItem.apply)
 
   val attrC = new AttributesPanel(item.attributes)
   val rcC = comboBox (item.raisingCost, RaisingCost.values)

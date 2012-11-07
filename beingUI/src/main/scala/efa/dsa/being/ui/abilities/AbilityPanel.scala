@@ -14,10 +14,7 @@ class AbilityPanel[A,B:AbilityData](a: Ability[A,B])
 
    lazy val in: VSIn[B] = 
      ^(stringIn(nameC), stringIn(descC))((n,d) ⇒ (
-       for {
-         _ ← AbilityData[B].nameL := n
-         _ ← AbilityData[B].descL := d
-       } yield ()
+       (AbilityData[B].nameL := n) >> (AbilityData[B].descL := d)
      ) exec a.data
    )
 }

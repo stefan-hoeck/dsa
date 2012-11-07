@@ -9,7 +9,7 @@ import scalaz._, Scalaz._, effect.IO
 class MeleePanel (p: ItemPair[MeleeTalentItem]) extends AbilityPanel(p) {
 
   def in = 
-    ^(dataIn, textIn[Ebe] (ebeC), comboBox (rcC), checkBox (btC))(
+    ^^^(dataIn, textIn[Ebe] (ebeC), comboBox (rcC), checkBox (btC))(
       MeleeTalentItem.apply)
 
   val ebeC = numField (item.ebe)

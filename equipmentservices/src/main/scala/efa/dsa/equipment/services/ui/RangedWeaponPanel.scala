@@ -12,7 +12,7 @@ class RangedWeaponPanel(p: ItemPair[RangedWeaponItem])
    extends EquipmentLikePanel(p) {
   def in = {
     def first =
-      ^(eqIn,
+      ^^^^^^(eqIn,
         textIn[DieRoller](tpC),
         textIn[TpKk](tpkkC),
         checkBox(improvisedC),
@@ -21,7 +21,7 @@ class RangedWeaponPanel(p: ItemPair[RangedWeaponItem])
         textIn[TpPlus](tpPlusC)(readV(TpPlus.read)))(Tuple7.apply)
 
     def second =
-      ^(checkBox(makesWoundC),
+      ^^(checkBox(makesWoundC),
         intIn(ttlC, Ttl.validate),
         checkBox(usesAmmoC))(Tuple3.apply)
 

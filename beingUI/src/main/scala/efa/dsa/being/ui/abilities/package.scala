@@ -1,9 +1,16 @@
 package efa.dsa.being.ui
 
+import efa.dsa.being.{loc ⇒ bLoc}
 import efa.dsa.being.abilities._
 import efa.nb.dialog.DialogEditable
+import scalaz.effect.IO
 
 package object abilities {
+  type AbilitiesPanel = NodePanel[Abilities,AbilityDatas]
+
+  def abilitiesPanel: IO[AbilitiesPanel] =
+    NodePanel(AbilityNodes.default, List(bLoc.isActiveLoc))
+
   implicit lazy val AdvantageEditable =
     DialogEditable.io((a: Advantage) ⇒ AbilityPanel.create(a))(_.in)
 

@@ -22,12 +22,12 @@ object AmmunitionData extends EquipmentLikes[AmmunitionData] {
   lazy val default = AmmunitionData(eData(_.ammunition), 0, !!, 1)
 
   implicit lazy val AmmunitionDataArbitrary = Arbitrary (
-    ^(eDataGen, parentIdGen, a[DieRoller], Count.gen)(AmmunitionData.apply)
+    ^^^(eDataGen, parentIdGen, a[DieRoller], Count.gen)(AmmunitionData.apply)
   )
 
   implicit lazy val AmmunitionDataToXml = new ToXml[AmmunitionData] {
     def fromXml (ns: Seq[Node]) =
-      ^(readEData (ns),
+      ^^^(readEData (ns),
         readParentId (ns),
         Tp read ns,
         Count read ns)(AmmunitionData.apply)

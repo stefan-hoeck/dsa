@@ -8,7 +8,7 @@ import scalaz._, Scalaz._, effect.IO
 class ShieldPanel(p: ItemPair[ShieldItem])
    extends EquipmentLikePanel(p) {
   def in = 
-    ^(eqIn, 
+    ^^^^^(eqIn, 
       comboBox(sizeC),
       comboBox(typeC),
       intIn(iniC, Ini.validate),

@@ -33,7 +33,7 @@ object ShieldItem extends EquipmentItemLikes[ShieldItem] {
 
   implicit lazy val ShieldItemToXml = new ToXml[ShieldItem] {
     def fromXml (ns: Seq[Node]) =
-      ^(readEData (ns),
+      ^^^^^(readEData (ns),
         ns.tagged[ShieldSize],
         ns.tagged[ShieldType],
         Ini read ns,
@@ -50,7 +50,7 @@ object ShieldItem extends EquipmentItemLikes[ShieldItem] {
   }
 
   implicit lazy val ShieldItemArbitrary = Arbitrary (
-    ^(a[EquipmentItemData],
+    ^^^^^(a[EquipmentItemData],
       a[ShieldSize],
       a[ShieldType],
       Ini.gen,

@@ -37,7 +37,7 @@ object GenData extends Util {
   implicit val GenDataEqual = Equal.equalA[GenData]
 
   implicit val GenDataArbitrary = Arbitrary(
-    ^(Gen.identifier,
+    ^^^^^(Gen.identifier,
       Ae.gen,
       Au.gen,
       Le.gen,
@@ -47,7 +47,7 @@ object GenData extends Util {
 
   implicit val GenDataToXml = new ToXml[GenData] {
     def fromXml (ns: Seq[Node]) =
-      ^(ns.readTag[String]("name"),
+      ^^^^^(ns.readTag[String]("name"),
         Ae read ns,
         Au read ns,
         Le read ns,

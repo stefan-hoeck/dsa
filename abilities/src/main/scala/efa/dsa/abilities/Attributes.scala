@@ -37,7 +37,7 @@ object Attributes {
     val reg = "(%s+) (%s+) (%s+)" format (c, c, c) r
 
     _ match {
-      case reg (a, b, c) ⇒ ^(a.read[Attribute],
+      case reg (a, b, c) ⇒ ^^(a.read[Attribute],
                              b.read[Attribute],
                              c.read[Attribute])(Attributes.apply)
       case _ ⇒ efa.dsa.abilities.loc.invalidAttributes.failureNel
@@ -50,7 +50,7 @@ object Attributes {
   implicit val AttributesArbitrary = {
     val arb = Arbitrary.arbitrary[Attribute]
 
-    Arbitrary (^(arb, arb, arb)(Attributes.apply))
+    Arbitrary (^^(arb, arb, arb)(Attributes.apply))
   }
 }
 

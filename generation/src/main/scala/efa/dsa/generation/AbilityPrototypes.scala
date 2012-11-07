@@ -21,7 +21,7 @@ object AbilityPrototypes extends Util with DBs {
     Equal.equalA[AbilityPrototypes]
 
   implicit lazy val AbilityPrototypesArbitrary = Arbitrary(
-    ^(a[DB[AbilityPrototype]],
+    ^^(a[DB[AbilityPrototype]],
       a[DB[AbilityPrototype]],
       a[DB[AbilityPrototype]])(AbilityPrototypes.apply)
   )
@@ -30,7 +30,7 @@ object AbilityPrototypes extends Util with DBs {
     implicit val psXml = dbToXml[AbilityPrototype]("item")
 
     def fromXml (ns: Seq[Node]) =
-      ^(ns.readTag[DB[AbilityPrototype]]("advantages"),
+      ^^(ns.readTag[DB[AbilityPrototype]]("advantages"),
         ns.readTag[DB[AbilityPrototype]]("handicaps"),
         ns.readTag[DB[AbilityPrototype]]("feats"))(AbilityPrototypes.apply)
 

@@ -32,7 +32,7 @@ object EquipmentItemData extends EquipmentItemLikes[EquipmentItemData]  {
     lazy val dataToXml = ToXml[ItemData]
 
     def fromXml (ns: Seq[Node]) =
-     ^(dataToXml fromXml ns,
+     ^^(dataToXml fromXml ns,
        Price read ns,
        Weight read ns)(EquipmentItemData.apply)
 
@@ -41,7 +41,7 @@ object EquipmentItemData extends EquipmentItemLikes[EquipmentItemData]  {
   }
 
   implicit lazy val EquipmentItemDataArbitrary = Arbitrary (
-    ^(a[ItemData], Price.gen, Weight.gen)(EquipmentItemData.apply)
+    ^^(a[ItemData], Price.gen, Weight.gen)(EquipmentItemData.apply)
   )
 
   val data: EquipmentItemData @> ItemData =

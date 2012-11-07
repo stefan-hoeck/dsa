@@ -22,7 +22,7 @@ object HeroGens {
   } yield HeroData(base, attributes, humanoid, feats, skills, equipment)
 
   def baseDataGen(sd: SkillDatas): Gen[HeroBaseData] = 
-    ^(Gen.oneOf(heroNames),
+    ^^^^(Gen.oneOf(heroNames),
       arbitrary[Gender],
       GenerationGens.raceGen(sd),
       GenerationGens.cultureGen(sd),

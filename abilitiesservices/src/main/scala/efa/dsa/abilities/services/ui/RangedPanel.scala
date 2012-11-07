@@ -8,7 +8,7 @@ import scalaz._, Scalaz._, effect.IO
 
 class RangedPanel (p: ItemPair[RangedTalentItem]) extends AbilityPanel(p) {
 
-  def in = ^(dataIn, textIn[Ebe] (ebeC), comboBox (rcC), checkBox (btC))(
+  def in = ^^^(dataIn, textIn[Ebe] (ebeC), comboBox (rcC), checkBox (btC))(
       RangedTalentItem.apply)
 
   val ebeC = numField (item.ebe)

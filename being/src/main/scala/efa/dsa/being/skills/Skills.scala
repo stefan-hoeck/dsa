@@ -12,7 +12,15 @@ case class Skills(
   scriptures: DB[Scripture], 
   spells: DB[Spell], 
   talents: DB[Talent] 
-)
+) {
+  lazy val languageList = languages.toList map (_._2) sortBy (_.name)
+  lazy val meleeTalentList = meleeTalents.toList map (_._2) sortBy (_.name)
+  lazy val rangedTalentList = rangedTalents.toList map (_._2) sortBy (_.name)
+  lazy val ritualList = rituals.toList map (_._2) sortBy (_.name)
+  lazy val scriptureList = scriptures.toList map (_._2) sortBy (_.name)
+  lazy val spellList = spells.toList map (_._2) sortBy (_.name)
+  lazy val talentList = talents.toList map (_._2) sortBy (_.name)
+}
 
 object Skills {
 

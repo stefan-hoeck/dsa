@@ -20,12 +20,12 @@ object ArticleData extends EquipmentLikes[ArticleData] {
   lazy val default = ArticleData(eData(_.equipment), 0, 1)
 
   implicit lazy val ArticleDataArbitrary = Arbitrary (
-    ^(eDataGen, parentIdGen, Count.gen)(ArticleData.apply)
+    ^^(eDataGen, parentIdGen, Count.gen)(ArticleData.apply)
   )
 
   implicit lazy val ArticleDataToXml = new ToXml[ArticleData] {
     def fromXml (ns: Seq[Node]) =
-      ^(readEData (ns), readParentId (ns), Count read ns)(ArticleData.apply)
+      ^^(readEData (ns), readParentId (ns), Count read ns)(ArticleData.apply)
 
     def toXml (a: ArticleData) = 
       eDataNodes(a) ++ Count.write(a.count)

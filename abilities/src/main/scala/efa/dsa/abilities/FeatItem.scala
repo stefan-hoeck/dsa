@@ -25,7 +25,7 @@ object FeatItem extends RpgItemLikes[FeatItem] {
   implicit lazy val FeatItemToXml = new ToXml[FeatItem] {
 
     def fromXml (ns: Seq[Node]) =
-      ^(readData (ns),
+      ^^(readData (ns),
         Ap.read (ns),
         ns.readTag[String]("featType"))(FeatItem.apply)
 
@@ -34,7 +34,7 @@ object FeatItem extends RpgItemLikes[FeatItem] {
   }
 
   implicit lazy val FeatItemArbitrary =
-    Arbitrary (^(a[ItemData], Ap.gen, Gen.identifier)(FeatItem.apply))
+    Arbitrary (^^(a[ItemData], Ap.gen, Gen.identifier)(FeatItem.apply))
 
   val ap: FeatItem @> Int =
     Lens.lensu((a,b) ⇒ a.copy(ap = b), _.ap)

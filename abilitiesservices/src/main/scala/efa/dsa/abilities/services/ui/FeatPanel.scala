@@ -10,7 +10,7 @@ class FeatPanel (a: ItemPair[FeatItem]) extends AbilityPanel(a) {
   val apC = numField (item.ap) 
 
   def in =
-    ^(dataIn, intIn (apC, Ap.validate), item.featType.η[VSIn])(FeatItem.apply)
+    ^^(dataIn, intIn (apC, Ap.validate), item.featType.η[VSIn])(FeatItem.apply)
 
   protected def lbls = List (il.ap)
   protected def fields = List (apC)
