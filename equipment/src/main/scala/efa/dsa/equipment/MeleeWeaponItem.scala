@@ -1,6 +1,6 @@
 package efa.dsa.equipment
 
-import efa.core.{ToXml, Efa}, Efa._
+import efa.core.{ToXml, Efa, ValRes}, Efa._
 import efa.dsa.world.{TpKk, Wm, DistanceClass}
 import efa.rpg.core.DieRoller
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -44,25 +44,19 @@ object MeleeWeaponItem extends EquipmentItemLikes[MeleeWeaponItem] {
   }
 
   implicit lazy val MeleeWeaponItemToXml = new ToXml[MeleeWeaponItem] {
-    def fromXml (ns: Seq[Node]) = {
-      def first = 
-        ^^^^^^(readEData(ns),
-          Tp read ns,
-          ns.tagged[TpKk],
-          ns.readTag[Boolean]("improvised"),
-          Talent read ns,
-          Bf read ns,
-          ns.readTag[Boolean]("twohanded"))(Tuple7.apply)
-      def second =
-        ^^^(ns.tagged[Wm],
-          Ini read ns,
-          ns.tagged[DistanceClass],
-          Length read ns)(Tuple4.apply)
-
-      ^(first, second)((t1, t2) ⇒ MeleeWeaponItem(
-        t1._1, t1._2, t1._3, t1._4, t1._5, t1._6, t1._7,
-        t2._1, t2._2, t2._3, t2._4))
-    }
+    def fromXml (ns: Seq[Node]) = Apply[ValRes].apply11(
+      readEData(ns),
+      Tp read ns,
+      ns.tagged[TpKk],
+      ns.readTag[Boolean]("improvised"),
+      Talent read ns,
+      Bf read ns,
+      ns.readTag[Boolean]("twohanded"),
+      ns.tagged[Wm],
+      Ini read ns,
+      ns.tagged[DistanceClass],
+      Length read ns
+    )(MeleeWeaponItem.apply)
 
     def toXml (a: MeleeWeaponItem) = 
       dataToNode(a) ++
@@ -78,25 +72,21 @@ object MeleeWeaponItem extends EquipmentItemLikes[MeleeWeaponItem] {
       Length.write(a.length)
   }
 
-  implicit lazy val MeleeWeaponItemArbitrary = {
-    def first =
-      ^^^^^^(a[EquipmentItemData],
-        a[DieRoller],
-        a[TpKk],
-        a[Boolean],
-        Gen.identifier,
-        Bf.gen,
-        a[Boolean])(Tuple7.apply)
-    def second =
-      ^^^(a[Wm],
-        Ini.gen,
-        a[DistanceClass],
-        Length.gen)(Tuple4.apply)
-
-      Arbitrary (^(first, second)((t1, t2) ⇒ MeleeWeaponItem(
-        t1._1, t1._2, t1._3, t1._4, t1._5, t1._6, t1._7,
-        t2._1, t2._2, t2._3, t2._4)))
-  }
+  implicit lazy val MeleeWeaponItemArbitrary = Arbitrary(
+    Apply[Gen].apply11(
+      a[EquipmentItemData],
+      a[DieRoller],
+      a[TpKk],
+      a[Boolean],
+      Gen.identifier,
+      Bf.gen,
+      a[Boolean],
+      a[Wm],
+      Ini.gen,
+      a[DistanceClass],
+      Length.gen
+    )(MeleeWeaponItem.apply)
+  )
 
   val tp: MeleeWeaponItem @> DieRoller =
     Lens.lensu((a,b) ⇒ a.copy(tp = b), _.tp)

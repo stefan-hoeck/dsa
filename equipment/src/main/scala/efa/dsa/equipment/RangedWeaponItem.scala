@@ -1,6 +1,6 @@
 package efa.dsa.equipment
 
-import efa.core.{ToXml, Efa}, Efa._
+import efa.core.{ToXml, Efa, ValRes}, Efa._
 import efa.dsa.world.{TpKk, RangedDistance}
 import efa.rpg.core.DieRoller
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -41,23 +41,18 @@ object RangedWeaponItem extends EquipmentItemLikes[RangedWeaponItem] {
   }
 
   implicit lazy val RangedWeaponItemToXml = new ToXml[RangedWeaponItem] {
-    def fromXml (ns: Seq[Node]) = {
-      def first = 
-        ^^^^^^(readEData (ns),
-          Tp read ns,
-          ns.tagged[TpKk],
-          ns.readTag[Boolean]("improvised"),
-          Talent read ns,
-          Reach read ns,
-          TpPlus read ns)(Tuple7.apply)
-      def second =
-        ^^(ns.readTag[Boolean]("wound"),
-          Ttl read ns,
-          ns.readTag[Boolean]("ammunition"))(Tuple3.apply)
-
-      ^(first, second)((t1, t2) ⇒ RangedWeaponItem(
-        t1._1, t1._2, t1._3, t1._4, t1._5, t1._6, t1._7, t2._1, t2._2, t2._3))
-    }
+    def fromXml (ns: Seq[Node]) = Apply[ValRes].apply10(
+      readEData (ns),
+      Tp read ns,
+      ns.tagged[TpKk],
+      ns.readTag[Boolean]("improvised"),
+      Talent read ns,
+      Reach read ns,
+      TpPlus read ns,
+      ns.readTag[Boolean]("wound"),
+      Ttl read ns,
+      ns.readTag[Boolean]("ammunition")
+    )(RangedWeaponItem.apply)
 
     def toXml (a: RangedWeaponItem) =
       dataToNode(a) ++
@@ -72,21 +67,20 @@ object RangedWeaponItem extends EquipmentItemLikes[RangedWeaponItem] {
       ("ammunition" xml a.usesAmmo)
   }
 
-  implicit lazy val RangedWeaponItemArbitrary = {
-    def first =
-      ^^^^^^(a[EquipmentItemData],
-        a[DieRoller],
-        a[TpKk],
-        a[Boolean],
-        Gen.identifier,
-        Reach.gen,
-        TpPlus.gen)(Tuple7.apply)
-    def second =
-      ^^(a[Boolean], Ttl.gen, a[Boolean])(Tuple3.apply)
-
-      Arbitrary (^(first, second)((t1, t2) ⇒ RangedWeaponItem(
-        t1._1, t1._2, t1._3, t1._4, t1._5, t1._6, t1._7, t2._1, t2._2, t2._3)))
-  }
+  implicit lazy val RangedWeaponItemArbitrary = Arbitrary(
+    Apply[Gen].apply10(
+      a[EquipmentItemData],
+      a[DieRoller],
+      a[TpKk],
+      a[Boolean],
+      Gen.identifier,
+      Reach.gen,
+      TpPlus.gen,
+      a[Boolean],
+      Ttl.gen,
+      a[Boolean]
+    )(RangedWeaponItem.apply)
+  )
 
   val tp: RangedWeaponItem @> DieRoller =
     Lens.lensu((a,b) ⇒ a.copy(tp = b), _.tp)

@@ -4,36 +4,28 @@ import efa.core.Read
 import efa.dsa.equipment.{MeleeWeaponItem, Bf, Ini, Length}
 import efa.dsa.world.{DistanceClass, Wm, TpKk}
 import efa.dsa.world.mittelreich.Distance
+import efa.nb.VSIn
 import efa.rpg.core.{DieRoller, UnitEnum}
 import efa.rpg.items.ItemPair
 import scalaz._, Scalaz._, effect.IO
 
 class MeleeWeaponPanel(p: ItemPair[MeleeWeaponItem])
    extends EquipmentLikePanel(p) {
+  import MeleeWeaponPanel._
 
-  private def ued = UnitEnum[Distance]
-  def in = {
-    def lengthRead = Read readV (ued readPretty Distance.S)
-    
-    def first =
-      ^^^^^^(eqIn,
-        textIn[DieRoller](tpC),
-        textIn[TpKk](tpkkC),
-        checkBox(improvisedC),
-        stringIn(talentC),
-        intIn(bfC, Bf.validate),
-        checkBox(twohandedC))(Tuple7.apply)
-
-    def second =
-      ^^^(textIn[Wm](wmC),
-        intIn(iniC, Ini.validate),
-        comboBox(dkC),
-        textIn(lengthC, Length.validate)(lengthRead))(Tuple4.apply)
-
-    ^(first, second)((t1, t2) ⇒ MeleeWeaponItem(
-      t1._1, t1._2, t1._3, t1._4, t1._5, t1._6, t1._7,
-      t2._1, t2._2, t2._3, t2._4))
-  }
+  def in = Apply[VSIn].apply11(
+    eqIn,
+    textIn[DieRoller](tpC),
+    textIn[TpKk](tpkkC),
+    checkBox(improvisedC),
+    stringIn(talentC),
+    intIn(bfC, Bf.validate),
+    checkBox(twohandedC),
+    textIn[Wm](wmC),
+    intIn(iniC, Ini.validate),
+    comboBox(dkC),
+    textIn(lengthC, Length.validate)(lengthRead)
+  )(MeleeWeaponItem.apply)
 
   val tpC = numField(item.tp)
   val tpkkC = numField(item.tpkk)
@@ -53,6 +45,9 @@ class MeleeWeaponPanel(p: ItemPair[MeleeWeaponItem])
 
 object MeleeWeaponPanel {
   def apply(p: ItemPair[MeleeWeaponItem]) = IO(new MeleeWeaponPanel(p))
+
+  def ued = UnitEnum[Distance]
+  val lengthRead = Read readV (ued readPretty Distance.S)
 }
 
 // vim: set ts=2 sw=2 et:

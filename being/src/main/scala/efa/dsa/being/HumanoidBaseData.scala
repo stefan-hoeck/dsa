@@ -72,22 +72,24 @@ object HumanoidBaseData extends Util {
 
   implicit val HumanoidBaseDataToXml = new ToXml[HumanoidBaseData] {
     def fromXml (ns: Seq[Node]) = {
-      def fst =
-        ^^^^^^(LostAe.read(ns),
-          BoughtAe.read(ns),
-          LostAu.read(ns),
-          BoughtAu.read(ns),
-          LostKe.read(ns),
-          BoughtKe.read(ns),
-          LostLe.read(ns))(Tuple7.apply)
+      def fst = ^^^^^^(
+        LostAe.read(ns),
+        BoughtAe.read(ns),
+        LostAu.read(ns),
+        BoughtAu.read(ns),
+        LostKe.read(ns),
+        BoughtKe.read(ns),
+        LostLe.read(ns)
+      )(Tuple7.apply)
 
-      def snd =
-        ^^^^^(BoughtLe.read(ns),
-          BoughtMr.read(ns),
-          Wounds.read(ns),
-          Exhaustion.read(ns),
-          ZoneWounds.read(ns),
-          ns.tagged[HandsData])(Tuple6.apply)
+      def snd = ^^^^^(
+        BoughtLe.read(ns),
+        BoughtMr.read(ns),
+        Wounds.read(ns),
+        Exhaustion.read(ns),
+        ZoneWounds.read(ns),
+        ns.tagged[HandsData]
+      )(Tuple6.apply)
 
       ^(fst, snd){
         case ((a, b, c, d, e, f, g), (h, i, j, k, l, m)) ⇒ 
