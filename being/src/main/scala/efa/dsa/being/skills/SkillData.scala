@@ -9,6 +9,7 @@ trait SkillData[A] extends WithId[A] {
   def tapL: A @> Int = talentDataL >=> TalentData.tap
   def specialExpL: A @> Boolean = talentDataL >=> TalentData.specialExp
   def raisingCostL: A @> RaisingCost = talentDataL >=> TalentData.raisingCost
+
   def talentData (a: A): TalentData = talentDataL get a
   def id (a: A) = talentData(a).id
   def tap (a: A) = talentData(a).tap
