@@ -6,6 +6,10 @@ trait BeingLocal {
   lazy val aeLoc = Localization("ae", ae, shortAe, ae)
   lazy val atLoc = Localization("at", at, shortAt, at)
   lazy val atfkLoc = Localization("atfk", atfk, shortAtFk, atfk)
+
+  lazy val attributesLoc =
+    Localization("attributes", attributes, shortAttributes, attributes)
+
   lazy val auLoc = Localization("au", au, shortAu, au)
   lazy val awLoc = Localization("aw", aw, shortAw, aw)
   lazy val beLoc = Localization("be", be, shortBe, be)
@@ -16,6 +20,7 @@ trait BeingLocal {
   lazy val carryingCapacityLoc =
     new Localization("carryingCapacity", carryingCapacity)
 
+  lazy val ebeLoc = Localization("ebe", ebe, shortEbe, ebe)
   lazy val fkLoc = Localization("fk", fk, shortFk, fk)
   lazy val gsLoc = Localization("gs", gs, shortGs, gs)
 
@@ -59,6 +64,7 @@ trait BeingLocal {
   def ae: String
   def at: String
   def atfk: String
+  def attributes: String
   def au: String
   def aw: String
   def base: String
@@ -72,6 +78,7 @@ trait BeingLocal {
   def descRaisingCost: String
   def descSpecialExp: String
   def descTaw: String
+  def ebe: String
   def eyes: String
   def feats: String
   def fk: String
@@ -86,7 +93,9 @@ trait BeingLocal {
   def initial: String
   def isActive: String
   def ke: String
+  def languages: String
   def le: String
+  def meleeTalents: String
   def mr: String
   def mrBody: String
   def mrMind: String
@@ -97,16 +106,21 @@ trait BeingLocal {
   def profession: String
   def race: String
   def raisingCost: String
+  def rangedTalents: String
   def raufen: String
   def representation: String
   def ringen: String
+  def rituals: String
   def rs: String
+  def scriptures: String
   def shortAe: String
   def shortAt: String
   def shortAtFk: String
+  def shortAttributes: String
   def shortAu: String
   def shortAw: String
   def shortBe: String
+  def shortEbe: String
   def shortFk: String
   def shortGs: String
   def shortHouseSpell: String
@@ -129,6 +143,7 @@ trait BeingLocal {
   def shortWs: String
   def so: String
   def specialExp: String
+  def spells: String
   def subdual: String
   def taw: String
   def title: String
@@ -143,6 +158,7 @@ object BeingLocal extends BeingLocal {
   def ae = "Astralenergie"
   def at = "Attackewert"
   def atfk = "Attacke-/Fernkampfwert"
+  def attributes = "Eigenschaften"
   def au = "Ausdauer"
   def aw = "Ausweichen"
   def base = "Grundwert"
@@ -157,6 +173,7 @@ object BeingLocal extends BeingLocal {
   def descRaisingCost = "Spalte in der Steigerungskostentabelle"
   def descSpecialExp = "Hat eine spezielle Erfahrung in diesem Talent gemacht"
   def descTaw = "Talentwert (inklusive Modifikatoren)"
+  def ebe = "Effektive Behinderung"
   def eyes = "Augenfarbe"
   def feats = "Sonderfertigkeiten"
   def fk = "Fernkampfwert"
@@ -171,7 +188,9 @@ object BeingLocal extends BeingLocal {
   def initial = "Startwert"
   def isActive = "aktiv"
   def ke = "Karmalenergie"
+  def languages = "Sprachen"
   def le = "Lebensenergie"
+  def meleeTalents = "Nahkampftalente"
   def mr = "Magieresistenz"
   def mrBody = "Magieresistenz Körper"
   def mrMind = "Magieresistenz Geist"
@@ -182,16 +201,21 @@ object BeingLocal extends BeingLocal {
   def profession = "Profession"
   def race = "Rasse"
   def raisingCost = "Spalte"
+  def rangedTalents = "Fernkampftalente"
   def raufen = "Raufen"
   def representation = "Repräsentation"
   def ringen = "Ringen"
+  def rituals = "Rituale"
   def rs = "Rüstungsschutz"
+  def scriptures = "Schriften"
   def shortAe = "AE"
   def shortAu = "AU"
   def shortAt = "AT"
   def shortAtFk = "AT/FK"
+  def shortAttributes = "Eig."
   def shortAw = "AW"
   def shortBe = "BE"
+  def shortEbe = "EBE"
   def shortFk = "FK"
   def shortGs = "GS"
   def shortHouseSpell = "HZ"
@@ -214,6 +238,7 @@ object BeingLocal extends BeingLocal {
   def shortWs = "WS"
   def so = "Sozialstatus"
   def specialExp = "Spezielle Erfahrung"
+  def spells = "Zauber"
   def start = "Startwert"
   def subdual = "Erschöpfungsschaden"
   def taw = "Talentwert"

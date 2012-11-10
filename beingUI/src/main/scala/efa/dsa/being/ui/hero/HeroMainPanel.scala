@@ -52,7 +52,8 @@ object HeroMainPanel {
   def create: IO[HeroMainPanel] =  for {
     l    ← PureLookup.apply
     advP ← abilitiesPanel
-  } yield new HeroMainPanel(l, advP)
+    p    ← IO(new HeroMainPanel(l, advP))
+  } yield p
 }
 
 // vim: set ts=2 sw=2 et:

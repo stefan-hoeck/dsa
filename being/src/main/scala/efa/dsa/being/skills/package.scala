@@ -21,8 +21,11 @@ package object skills extends RangeVals {
 
   type Talent = Skill[TalentItem,TalentData]
 
-  private[skills] def skillData[A](l: A @> TalentData): SkillData[A]
-    = new SkillData[A] { def talentDataL = l }
+  private[skills] def skillData[A](l: A @> TalentData, a: A): SkillData[A]
+    = new SkillData[A] {
+      def talentDataL = l
+      val default = a
+    }
 }
 
 // vim: set ts=2 sw=2 et:

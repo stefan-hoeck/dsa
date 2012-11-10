@@ -1,6 +1,6 @@
 package efa.dsa.being.skills
 
-import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.{Efa, ToXml}, Efa._
 import efa.rpg.core.{RangeVals, Util}
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node
@@ -16,8 +16,6 @@ case class SpellData (
 
 object SpellData extends Util with RangeVals {
   val default = SpellData(!!, false, "")
-
-  implicit val SpellDataDefault = Default default default
 
   implicit val SpellDataEqual = Equal.equalA[SpellData]
 
@@ -46,7 +44,8 @@ object SpellData extends Util with RangeVals {
   val representation: SpellData @> String =
     Lens.lensu((a,b) ⇒ a.copy(representation = b), _.representation)
 
-  implicit val SpellDataSkillData = skillData[SpellData](talentData)
+  implicit val SpellDataSkillData =
+    skillData[SpellData](talentData, default)
 }
 
 // vim: set ts=2 sw=2 et:

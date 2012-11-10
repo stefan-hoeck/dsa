@@ -39,7 +39,7 @@ object AbilityNodes {
 
   private def parent[A,B] (o: AbilitiesOut[Ability[A,B]], n: String)
   (implicit L: AbilityLinker[A,B], M: Manifest[A]) =
-    Nodes.parentNode(n, o)(L.abilityList)(L.add)
+    Nodes.parentNode(n, o)(L.abilityList)(L.addI)
 }
 
 // vim: set ts=2 sw=2 et:

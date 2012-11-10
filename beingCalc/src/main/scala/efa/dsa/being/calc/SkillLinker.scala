@@ -17,7 +17,7 @@ import scalaz._, Scalaz._
  */
 sealed abstract class SkillLinker[I,D] (implicit
   protected val SI:SkillItem[I],
-  protected val SL:SkillData[D]
+  protected val SD:SkillData[D]
 ) {
   type SKILL = Skill[I,D]
 
@@ -53,19 +53,28 @@ sealed abstract class SkillLinker[I,D] (implicit
    */
   def skills: Lens[Skills, DB[SKILL]]
 
-  def skillList: Skills ⇒ List[SKILL]
+  def skillList: Skills ⇒ List[SKILL] = s ⇒ 
+    skills.get(s).toList map (_._2) sortBy (_.name)
+
+  def itemToData (i: I): D = (for {
+    _ ← SD.idL := SI.id(i)
+    _ ← SD.raisingCostL := SI.raisingCost(i)
+  } yield ()) exec SD.default
+
+  def addI (i: I): State[SkillDatas,Unit] =
+    data += (SI.id(i) → itemToData(i)) void
 
   final def delete(s: SKILL): State[SkillDatas,Unit] =
     data -= s.id void
     
   final def add(d: D): State[SkillDatas,Unit] =
-    data += (SL.id(d) → d) void
+    data += (SD.id(d) → d) void
     
   final def special (s: SKILL, b: Boolean): State[SkillDatas,Unit] =
-    add(SL.specialExpL set (s.skill, b))
+    add(SD.specialExpL set (s.skill, b))
     
   final def raisingCost (s: SKILL, r: RaisingCost): State[SkillDatas,Unit] =
-    add(SL.raisingCostL set (s.skill, r))
+    add(SD.raisingCostL set (s.skill, r))
 
 //  private def rlSkill(h: Hero, id: Int, tapAdd: Int, ap: Mod => Int): HeroData = 
 //    modsFromData(h.skills) find (_.parent.parentId == id) map {m => 
@@ -96,7 +105,7 @@ sealed abstract class SkillLinker[I,D] (implicit
       def hum = h.base
       def genData = List(hum.race.data, hum.culture.data, hum.profession)
       def genDataMods =  genData flatMap fromGenData
-      val allMods = Modifier(loc.bought, SL tap s) :: genDataMods
+      val allMods = Modifier(loc.bought, SD tap s) :: genDataMods
       val permanentTaw = allMods foldMap (_.value) toInt
       def idSkillPair (i: I) = (id, Skill(i, s, permanentTaw, allMods))
       
@@ -124,7 +133,6 @@ object SkillLinker {
     def prototypes = SkillPrototypes.languages
     def items = AbilityItems.languages
     def skills = Skills.languages
-    def skillList = _.languageList
   }
 
   implicit val MeleeTalentLinker =
@@ -136,7 +144,6 @@ object SkillLinker {
     def prototypes = SkillPrototypes.meleeTalents
     def items = AbilityItems.meleeTalents
     def skills = Skills.meleeTalents
-    def skillList = _.meleeTalentList
   }
 
   implicit val RangedTalentLinker = new TalentDataLinker[RangedTalentItem] {
@@ -144,7 +151,6 @@ object SkillLinker {
     def prototypes = SkillPrototypes.rangedTalents
     def items = AbilityItems.rangedTalents
     def skills = Skills.rangedTalents
-    def skillList = _.rangedTalentList
   }
 
   implicit val RitualLinker = new TalentDataLinker[RitualItem] {
@@ -152,7 +158,6 @@ object SkillLinker {
     def prototypes = SkillPrototypes.rituals
     def items = AbilityItems.rituals
     def skills = Skills.rituals
-    def skillList = _.ritualList
   }
 
   implicit val ScriptureLinker = new TalentDataLinker[ScriptureItem] {
@@ -160,7 +165,6 @@ object SkillLinker {
     def prototypes = SkillPrototypes.scriptures
     def items = AbilityItems.scriptures
     def skills = Skills.scriptures
-    def skillList = _.scriptureList
   }
 
   implicit val SpellLinker = new SkillLinker[SpellItem,SpellData] {
@@ -171,7 +175,6 @@ object SkillLinker {
     def prototypes = SkillPrototypes.spells
     def items = AbilityItems.spells
     def skills = Skills.spells
-    def skillList = _.spellList
   }
 
   implicit val TalentLinker = new TalentDataLinker[TalentItem] {
@@ -179,7 +182,6 @@ object SkillLinker {
     def prototypes = SkillPrototypes.talents
     def items = AbilityItems.talents
     def skills = Skills.talents
-    def skillList = _.talentList
   }
 
   sealed abstract class TalentDataLinker[I:SkillItem]

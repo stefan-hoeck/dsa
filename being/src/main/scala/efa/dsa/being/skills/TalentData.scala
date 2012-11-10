@@ -1,6 +1,6 @@
 package efa.dsa.being.skills
 
-import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.{Efa, ToXml}, Efa._
 import efa.dsa.world.RaisingCost
 import efa.rpg.core.Util
 import org.scalacheck.Arbitrary, Arbitrary.arbitrary
@@ -18,8 +18,6 @@ case class TalentData (
 
 object TalentData extends Util {
   val default = TalentData(0, 0, !!, false)
-
-  implicit val TalentDataDefault = Default default default
 
   implicit val TalentDataEqual = Equal.equalA[TalentData]
 
@@ -41,7 +39,8 @@ object TalentData extends Util {
       ("special" xml a.specialExp)
   }
 
-  implicit val TalentDataSkillData = skillData[TalentData](Lens.self)
+  implicit val TalentDataSkillData =
+    skillData[TalentData](Lens.self, default)
 
   def read (ns: Seq[Node]) = TalentDataToXml fromXml ns
 

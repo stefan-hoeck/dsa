@@ -30,8 +30,8 @@ package object services {
   lazy val heroRules: IOCached[HeroRules] =
     IOCached(provide[HeroRule,HeroRulesProvider])
 
-  lazy val heroInfo: IOCached[UIInfo[HeroData,Hero]] =
-    IOCached(provide[IO[HeroInfo],UIProvider] map (_.suml) μ)
+  lazy val heroInfo: IOCached[IO[UIInfo[HeroData,Hero]]] =
+    IOCached(provide[IO[HeroInfo],UIProvider] map (_.suml))
 }
 
 // vim: set ts=2 sw=2 et:

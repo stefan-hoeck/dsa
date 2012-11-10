@@ -1,6 +1,6 @@
 package efa.dsa.being.skills
 
-import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.{Efa, ToXml}, Efa._
 import efa.rpg.core.{RangeVals, Util}
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node
@@ -16,8 +16,6 @@ object MeleeTalentData extends Util with RangeVals {
   val default = MeleeTalentData(!!, 0)
 
   def atI(sd: TalentData) = fullInfo(0, sd.tap, "at")
-
-  implicit val MeleeTalentDataDefault = Default default default
 
   implicit val MeleeTalentDataEqual = Equal.equalA[MeleeTalentData]
 
@@ -44,7 +42,7 @@ object MeleeTalentData extends Util with RangeVals {
   val at: MeleeTalentData @> Int = Lens.lensu((a,b) ⇒ a.copy(at = b), _.at)
 
   implicit val MeleeTalentDataTalentData =
-    skillData[MeleeTalentData](talentData)
+    skillData[MeleeTalentData](talentData, default)
 }
 
 // vim: set ts=2 sw=2 et:
