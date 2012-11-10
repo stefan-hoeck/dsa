@@ -40,8 +40,10 @@ sealed abstract class AbilityLinker[I,D](
   def rename(a: A, s: String): State[AbilityDatas,Unit] =
     update(a, AD.nameL set (a.data, s))
 
-  def setActive(a: A, b: Boolean): State[AbilityDatas,Unit] =
-    update (a, AD.isActiveL set (a.data, b))
+  val setActive = set(AD.isActiveL)
+
+  def set[X](l: D @> X): (A,X) ⇒ State[AbilityDatas,Unit] =
+    (a,x) ⇒ update (a, l set (a.data, x))
 
   def heroAbilities(h: HeroData, as: AbilityItems): SMap[A] = {
     val abilities = data get h.abilities

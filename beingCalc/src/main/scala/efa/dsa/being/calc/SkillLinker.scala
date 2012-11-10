@@ -70,11 +70,12 @@ sealed abstract class SkillLinker[I,D] (implicit
   final def add(d: D): State[SkillDatas,Unit] =
     data += (SD.id(d) → d) void
     
-  final def special (s: SKILL, b: Boolean): State[SkillDatas,Unit] =
-    add(SD.specialExpL set (s.skill, b))
-    
-  final def raisingCost (s: SKILL, r: RaisingCost): State[SkillDatas,Unit] =
-    add(SD.raisingCostL set (s.skill, r))
+  final def set[X] (l: D @> X): (SKILL,X) ⇒ State[SkillDatas,Unit] =
+    (s,x) ⇒ add(l set (s.skill, x))
+
+  final lazy val special = set(SD.specialExpL)
+
+  final lazy val raisingCost = set(SD.raisingCostL)
 
 //  private def rlSkill(h: Hero, id: Int, tapAdd: Int, ap: Mod => Int): HeroData = 
 //    modsFromData(h.skills) find (_.parent.parentId == id) map {m => 

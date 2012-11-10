@@ -25,14 +25,14 @@ class SkillPanel[A,B:SkillData](s: Skill[A,B])
    (bLoc.raisingCost beside rcC) above
    (bLoc.specialExp beside specialC)
 
-  private val perm = s.taw - s.tap
+  private val perm: Int = s.taw - s.tap
 
   private def tawVal: EndoVal[Int] =
     Validators.interval(Tap.min + perm, Tap.max + perm)
 
   def talentIn: VSIn[TalentData] = ^^^(
     s.id.η[VSIn],
-    intIn(tawC, tawVal),
+    intIn(tawC, tawVal) ∘ (_ - perm),
     comboBox(rcC),
     checkBox(specialC)
   )(TalentData.apply)

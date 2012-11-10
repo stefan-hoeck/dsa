@@ -47,6 +47,10 @@
       <groupId>efa</groupId>
       <artifactId>nb</artifactId>
     </dependency>
+    <dependency>
+      <groupId>efa</groupId>
+      <artifactId>localDe</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>efa.rpg</groupId>

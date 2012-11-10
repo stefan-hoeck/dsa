@@ -65,6 +65,11 @@
         <artifactId>nb</artifactId>
         <version>${util.version}</version>
       </dependency>
+      <dependency>
+        <groupId>efa</groupId>
+        <artifactId>localDe</artifactId>
+        <version>${util.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>efa.rpg</groupId>

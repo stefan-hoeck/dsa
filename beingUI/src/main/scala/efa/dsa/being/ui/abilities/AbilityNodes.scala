@@ -1,8 +1,9 @@
 package efa.dsa.being.ui.abilities
 
-import efa.core._
+import efa.core._, efa.core.{loc ⇒ cLoc}
 import efa.dsa.being.{loc ⇒ bLoc}
 import efa.dsa.being.abilities._
+import efa.dsa.being.abilities.{Value ⇒ V}
 import efa.dsa.being.calc.AbilityLinker
 import efa.dsa.being.ui.{Nodes, loc ⇒ uiLoc}
 import efa.nb.dialog.DialogEditable
@@ -14,7 +15,7 @@ object AbilityNodes {
   type AbilitiesOut[A] = NodeOut[A,ValSt[AbilityDatas]]
 
   lazy val default: AbilitiesOut[Abilities] =
-    abilitiesOut(abilityOut, abilityOut, abilityOut)
+    abilitiesOut(advantageOut, advantageOut, abilityOut)
 
   def abilitiesOut (
     ao: AbilitiesOut[Advantage],
@@ -36,6 +37,14 @@ object AbilityNodes {
     Nodes.described[Ability[A,B]] ⊹
     Nodes.childActions("ContextActions/DsaAdvantageNode") ⊹
     N.booleanRwPropSetGet(L.setActive)(_.isActive, bLoc.isActiveLoc.name)
+
+  def advantageOut[A](
+    implicit L: AbilityLinker[A,AdvantageData],
+    D: DialogEditable[Ability[A,AdvantageData],AdvantageData]
+  ): AbilitiesOut[Ability[A,AdvantageData]] =
+    abilityOut ⊹ 
+    N.intRwPropSetGet(L set AdvantageData.value)(
+      _.data.value, V.validate, cLoc.valueLoc.name)
 
   private def parent[A,B] (o: AbilitiesOut[Ability[A,B]], n: String)
   (implicit L: AbilityLinker[A,B], M: Manifest[A]) =

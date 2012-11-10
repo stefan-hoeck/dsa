@@ -7,7 +7,7 @@ import scala.xml.Node
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 
 case class MeleeTalentData (talentData: TalentData, at: Int) {
-  require (MeleeTalentData atI talentData  validate at isRight)
+  require (At validate at isRight)
 
   def id = talentData.id
 }
@@ -15,25 +15,18 @@ case class MeleeTalentData (talentData: TalentData, at: Int) {
 object MeleeTalentData extends Util with RangeVals {
   val default = MeleeTalentData(!!, 0)
 
-  def atI(sd: TalentData) = fullInfo(0, sd.tap, "at")
-
   implicit val MeleeTalentDataEqual = Equal.equalA[MeleeTalentData]
 
   implicit val MeleeTalentDataArbitrary = Arbitrary(
-    for {
-      sd ← a[TalentData]
-      at ← atI(sd).gen
-    } yield MeleeTalentData(sd, at)
+    ^(a[TalentData], At.gen)(MeleeTalentData.apply)
   )
 
   implicit val MeleeTalentDataToXml = new ToXml[MeleeTalentData] {
-    def fromXml (ns: Seq[Node]) = for {
-      sd ← TalentData read ns
-      a  ← atI(sd) read ns
-    } yield MeleeTalentData(sd, a)
+    def fromXml (ns: Seq[Node]) =
+      ^(TalentData read ns, At read ns)(MeleeTalentData.apply)
 
     def toXml (a: MeleeTalentData) =
-      TalentData.write(a.talentData) ++ ("at" xml a.at)
+      TalentData.write(a.talentData) ++ At.write(a.at)
   }
 
   val talentData: MeleeTalentData @> TalentData =

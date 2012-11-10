@@ -7,6 +7,8 @@ import scalaz.@>
 package object skills extends RangeVals {
   val Tap = fullInfo(0, 999, "tap")
 
+  val At = fullInfo(-Tap.max, Tap.max, "at")
+
   type Language = Skill[LanguageItem,TalentData]
 
   type MeleeTalent = Skill[MeleeTalentItem,MeleeTalentData]

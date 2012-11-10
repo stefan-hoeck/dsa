@@ -34,9 +34,15 @@ object SkillNodes {
 
   lazy val languageOut: SkillsOut[Language] = skillOut
 
-  lazy val meleeOut: SkillsOut[MeleeTalent] = skillOut
+  lazy val meleeOut: SkillsOut[MeleeTalent] =
+    skillOut[MeleeTalentItem,MeleeTalentData] ⊹
+    (N.showPropTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe)) ⊹
+    (N.intProp(bLoc.atLoc.name) ∙ (_.skill.at)) ⊹
+    (N.intProp(bLoc.paLoc.name) ∙ (t ⇒ t.taw - t.skill.at))
 
-  lazy val rangedOut: SkillsOut[RangedTalent] = skillOut
+  lazy val rangedOut: SkillsOut[RangedTalent] =
+    skillOut[RangedTalentItem,TalentData] ⊹
+    (N.showPropTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe))
 
   lazy val ritualOut: SkillsOut[Ritual] = skillOut
 

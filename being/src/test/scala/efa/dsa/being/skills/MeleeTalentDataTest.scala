@@ -6,15 +6,8 @@ import scalaz._, Scalaz._
 
 object MeleeTalentDataTest extends ToXmlProps[MeleeTalentData]("MeleeTalentData") {
 
-  property("validateAt") = Prop.forAll {p: (TalentData, Int) ⇒ 
-    val (sd, i) = p
-    val res = try {
-      val s = MeleeTalentData(sd, i)
-      true
-    } catch {case e: IllegalArgumentException ⇒ false}
-
-    res ≟ (MeleeTalentData atI sd  validate i isRight)
-  }
+  property("validateAt") =
+    Prop forAll validated(MeleeTalentData.at.set)(At.validate)
 
 }
 
