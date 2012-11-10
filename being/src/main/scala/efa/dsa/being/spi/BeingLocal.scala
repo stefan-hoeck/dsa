@@ -18,6 +18,10 @@ trait BeingLocal {
 
   lazy val fkLoc = Localization("fk", fk, shortFk, fk)
   lazy val gsLoc = Localization("gs", gs, shortGs, gs)
+
+  lazy  val houseSpellLoc =
+    Localization("houseSpell", houseSpell, shortHouseSpell, houseSpell)
+
   lazy val iniLoc = Localization("ini", ini, shortIni, ini)
 
   lazy val isActiveLoc =
@@ -34,8 +38,11 @@ trait BeingLocal {
 
   lazy val paLoc = Localization("pa", pa, shortPa, pa)
 
-  lazy val raisingCostLoc =
-    Localization("raisingCost", raisingCost, shortRaisingCost, descRaisingCost)
+  lazy val raisingCostLoc = Localization(
+    "raisingCost", raisingCost, shortRaisingCost, descRaisingCost)
+
+  lazy val representationLoc = Localization("representation",
+    representation, shortRepresentation, representation)
 
   lazy val rsLoc = Localization("rs", rs, shortRs, rs)
 
@@ -74,6 +81,7 @@ trait BeingLocal {
   def handicaps: String
   def height: String
   def hero: String
+  def houseSpell: String
   def ini: String
   def initial: String
   def isActive: String
@@ -90,6 +98,7 @@ trait BeingLocal {
   def race: String
   def raisingCost: String
   def raufen: String
+  def representation: String
   def ringen: String
   def rs: String
   def shortAe: String
@@ -100,6 +109,7 @@ trait BeingLocal {
   def shortBe: String
   def shortFk: String
   def shortGs: String
+  def shortHouseSpell: String
   def shortIni: String
   def shortIsActive: String
   def shortKe: String
@@ -110,6 +120,7 @@ trait BeingLocal {
   def shortOverstrain: String
   def shortPa: String
   def shortRaisingCost: String
+  def shortRepresentation: String
   def shortRs: String
   def shortSo: String
   def shortSpecialExp: String
@@ -155,6 +166,7 @@ object BeingLocal extends BeingLocal {
   def handicaps = "Nachteile"
   def height = "Grösse"
   def hero = "Held"
+  def houseSpell = "Hauszauber"
   def ini = "Initiative"
   def initial = "Startwert"
   def isActive = "aktiv"
@@ -171,6 +183,7 @@ object BeingLocal extends BeingLocal {
   def race = "Rasse"
   def raisingCost = "Spalte"
   def raufen = "Raufen"
+  def representation = "Repräsentation"
   def ringen = "Ringen"
   def rs = "Rüstungsschutz"
   def shortAe = "AE"
@@ -181,6 +194,7 @@ object BeingLocal extends BeingLocal {
   def shortBe = "BE"
   def shortFk = "FK"
   def shortGs = "GS"
+  def shortHouseSpell = "HZ"
   def shortIni = "INI"
   def shortIsActive = "aktiv"
   def shortKe = "KE"
@@ -191,6 +205,7 @@ object BeingLocal extends BeingLocal {
   def shortOverstrain = "ÜA"
   def shortPa = "PA"
   def shortRaisingCost = "SK"
+  def shortRepresentation = "Rep."
   def shortRs = "RS"
   def shortSo = "SO"
   def shortSpecialExp = "SE"
