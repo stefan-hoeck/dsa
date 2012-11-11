@@ -1,5 +1,6 @@
 package efa.dsa.being.calc
 
+import efa.core.{ValRes, Validators, ValSt, EndoVal}
 import efa.dsa.abilities._
 import efa.dsa.being.generation.GenData
 import efa.dsa.being.skills._
@@ -20,18 +21,6 @@ sealed abstract class SkillLinker[I,D] (implicit
   protected val SD:SkillData[D]
 ) {
   type SKILL = Skill[I,D]
-
-  /**
-   * Converts a SkillItem to a corresponding SkillData
-   */
-  def newData(i: I, tap: Int): D
-  
-  /**
-   * Converts a SkillPrototype to a corresponding Skill if the SkillPrototype's
-   * parent was found in the DB
-   */
-  def protoToData(p: SkillPrototype, as: AbilityItems): Option[D] =
-    items get as get p.parentId map (newData(_, p.value))
   
   /**
    * Lens for SkillPrototypes
@@ -61,8 +50,7 @@ sealed abstract class SkillLinker[I,D] (implicit
     _ ← SD.raisingCostL := SI.raisingCost(i)
   } yield ()) exec SD.default
 
-  def addI (i: I): State[SkillDatas,Unit] =
-    data += (SI.id(i) → itemToData(i)) void
+  final def addI (i: I): State[SkillDatas,Unit] = add (itemToData(i))
 
   final def delete(s: SKILL): State[SkillDatas,Unit] =
     data -= s.id void
@@ -138,13 +126,35 @@ object SkillLinker {
 
   implicit val MeleeTalentLinker =
   new SkillLinker[MeleeTalentItem,MeleeTalentData]{
-    def newData(i: MeleeTalentItem, tap: Int) =
-      MeleeTalentData(TalentData(i.id, tap, i.raisingCost, false), 0)
-
     def data = SkillDatas.meleeTalents
     def prototypes = SkillPrototypes.meleeTalents
     def items = AbilityItems.meleeTalents
     def skills = Skills.meleeTalents
+
+    def setAt (s: SKILL, vi: ValRes[Int]): ValSt[SkillDatas] = {
+      def setAt (i: Int) = set(MeleeTalentData.at)(s, i)
+
+      vi flatMap (atVal(s) run _ validation) map setAt
+    }
+
+    def at (s: SKILL): Int = s.skill.at
+
+    def pa (s: SKILL): Int = s.taw - at(s)
+
+    def setPa (s: SKILL, vi: ValRes[Int]): ValSt[SkillDatas] =
+      setAt (s, vi map (s.taw - _))
+
+    def atVal (s: SKILL): EndoVal[Int] = {
+      //if taw <= 0: 0
+      //if taw > 0: the lower of taw and At.max
+      val maxAt = (s.taw <= 0) ? 0 | (s.taw min At.max)
+
+      //if taw < 0: the higher of taw and At.min
+      //if taw >= 0: 0
+      val minAt = (s.taw >= 0) ? 0 | (s.taw max At.min)
+
+      Validators.interval (minAt, maxAt)
+    }
   }
 
   implicit val RangedTalentLinker = new TalentDataLinker[RangedTalentItem] {
@@ -169,9 +179,6 @@ object SkillLinker {
   }
 
   implicit val SpellLinker = new SkillLinker[SpellItem,SpellData] {
-    def newData(i: SpellItem, tap: Int) =
-      SpellData(TalentData(i.id, tap, i.raisingCost, false), false, "")
-   
     def data = SkillDatas.spells
     def prototypes = SkillPrototypes.spells
     def items = AbilityItems.spells
@@ -186,11 +193,7 @@ object SkillLinker {
   }
 
   sealed abstract class TalentDataLinker[I:SkillItem]
-     extends SkillLinker[I,TalentData] {
-
-    def newData(i: I, tap: Int) =
-      TalentData(SI id i, tap, SI raisingCost i, false)
-  }
+     extends SkillLinker[I,TalentData]
 }
 
 // vim: set ts=2 sw=2 et:

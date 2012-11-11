@@ -3,6 +3,7 @@ package efa.dsa.being.ui.skills
 import efa.core.{EndoVal, Validators}
 import efa.dsa.abilities._
 import efa.dsa.being.{loc ⇒ bLoc}
+import efa.dsa.being.calc.SkillLinker.{MeleeTalentLinker ⇒ MTL}
 import efa.dsa.being.skills._
 import efa.dsa.being.ui.DescribedPanel
 import efa.dsa.world.RaisingCost
@@ -49,7 +50,7 @@ class MeleePanel(m: MeleeTalent) extends SkillPanel(m) {
    (bLoc.specialExp beside specialC)
 
   def in: VSIn[MeleeTalentData] =
-    ^(talentIn, intIn(atC))(MeleeTalentData.apply)
+    ^(talentIn, intIn(atC, MTL.atVal(m)))(MeleeTalentData.apply)
 }
 
 class SpellPanel(m: Spell) extends SkillPanel(m) {

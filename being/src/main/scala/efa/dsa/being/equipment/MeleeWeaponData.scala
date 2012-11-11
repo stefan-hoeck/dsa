@@ -22,6 +22,8 @@ case class MeleeWeaponData(
   require(Bf validate bf isRight)
 
   def eData_= (v: EquipmentItemData) = copy (eData = v)
+
+  def parentId_= (v: Int) = copy (parentId = v)
 }
 
 object MeleeWeaponData extends EquipmentLikes[MeleeWeaponData] {

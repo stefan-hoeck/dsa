@@ -21,6 +21,8 @@ case class RangedWeaponData(
   require(Ttl validate timeToLoad isRight)
 
   def eData_= (v: EquipmentItemData) = copy (eData = v)
+
+  def parentId_= (v: Int) = copy (parentId = v)
 }
 
 object RangedWeaponData extends EquipmentLikes[RangedWeaponData] {

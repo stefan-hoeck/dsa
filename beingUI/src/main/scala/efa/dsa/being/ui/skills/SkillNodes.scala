@@ -5,7 +5,7 @@ import efa.dsa.abilities._
 import efa.dsa.being.{loc ⇒ bLoc}
 import efa.dsa.being.skills._
 import efa.dsa.being.calc.SkillLinker
-import SkillLinker.{TalentLinker ⇒ TL}
+import SkillLinker.{TalentLinker ⇒ TL, MeleeTalentLinker ⇒ MTL}
 import efa.dsa.being.ui.{Nodes, loc ⇒ uiLoc}
 import efa.dsa.world.{RaisingCost, Ebe}
 import efa.nb.dialog.DialogEditable
@@ -37,8 +37,10 @@ object SkillNodes {
   lazy val meleeOut: SkillsOut[MeleeTalent] =
     skillOut[MeleeTalentItem,MeleeTalentData] ⊹
     (N.showPropTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe)) ⊹
-    (N.intProp(bLoc.atLoc.name) ∙ (_.skill.at)) ⊹
-    (N.intProp(bLoc.paLoc.name) ∙ (t ⇒ t.taw - t.skill.at))
+    (N.intRwProp(bLoc.atLoc.name, Validators.dummy) contramap
+      MTL.at withIn MTL.setAt) ⊹
+    (N.intRwProp(bLoc.paLoc.name, Validators.dummy) contramap
+      MTL.pa withIn MTL.setPa)
 
   lazy val rangedOut: SkillsOut[RangedTalent] =
     skillOut[RangedTalentItem,TalentData] ⊹

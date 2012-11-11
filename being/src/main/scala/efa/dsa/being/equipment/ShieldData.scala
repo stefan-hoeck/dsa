@@ -18,6 +18,8 @@ case class ShieldData(
   require(Ini validate ini isRight)
 
   def eData_= (v: EquipmentItemData) = copy (eData = v)
+
+  def parentId_= (v: Int) = copy (parentId = v)
 }
 
 object ShieldData extends EquipmentLikes[ShieldData] {

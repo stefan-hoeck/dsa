@@ -4,8 +4,6 @@ import efa.dsa.being.{Hero, HeroData, loc ⇒ bLoc}
 import efa.dsa.being.skills._
 import efa.dsa.being.ui.{loc, version ⇒ v, NodePanel, BePanel, AttributesPanel}
 import efa.dsa.being.ui.skills.{SkillNodes ⇒ SN}
-import efa.nb.PureLookup
-import efa.nb.node.{NbChildren ⇒ NC}, NC._
 import efa.nb.tc.PersistentComponent
 import efa.react.swing.GbPanel
 import efa.rpg.being.MVPanel
@@ -26,9 +24,7 @@ class HeroTalentPanel(
   val beP = new BePanel[Hero,HeroData]
   val apP = new HeroApPanel
 
-  val topP = new GbPanel {
-    attributesP beside apP beside beP add()
-  } 
+  private def topRight = new GbPanel {apP beside beP add()} 
 
   attributesP.border = titledBorder(loc.attributes)
   beP.border = titledBorder(bLoc.be)
@@ -37,7 +33,7 @@ class HeroTalentPanel(
   meleeP.border = titledBorder(loc.battleTalents)
   languageP.border = titledBorder(loc.languages)
 
-  (topP fillH 2) above (
+  (attributesP beside topRight) above (
     ((meleeP fillV 1) above (languageP fillV 1)) beside
     (talentP fillV 2)
   ) add()

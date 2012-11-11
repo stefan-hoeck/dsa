@@ -17,6 +17,8 @@ case class ZoneArmorData(
   require(Be validate be isRight)
 
   def eData_= (v: EquipmentItemData) = copy (eData = v)
+
+  def parentId_= (v: Int) = copy (parentId = v)
 }
 
 object ZoneArmorData extends EquipmentLikes[ZoneArmorData] {

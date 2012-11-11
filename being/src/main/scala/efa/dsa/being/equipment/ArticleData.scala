@@ -14,6 +14,8 @@ case class ArticleData(
   require(Count validate count isRight)
 
   def eData_= (v: EquipmentItemData) = copy (eData = v)
+
+  def parentId_= (v: Int) = copy (parentId = v)
 }
 
 object ArticleData extends EquipmentLikes[ArticleData] {

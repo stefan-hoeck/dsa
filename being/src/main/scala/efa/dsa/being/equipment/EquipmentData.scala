@@ -8,9 +8,10 @@ import org.scalacheck.Gen
 import scala.xml.Node
 import scalaz._, Scalaz._
 
-trait EquipmentData[A] extends WithId[A] {
+trait EquipmentData[A] extends WithId[A] with Default[A] {
   def eData: A @> EquipmentItemData
-  def parentId (a: A): Int
+  def parentIdL: A @> Int
+  def parentId (a: A): Int = parentIdL get a
   def name: A @> String = eData.data.name
   def idL: A @> Int = eData.data.id
   def id (a: A): Int = idL get a
@@ -24,6 +25,8 @@ trait EquipmentLike[+A] {
   def eData_= (v: EquipmentItemData): A
   
   def parentId: Int
+  def parentId_= (i: Int): A
+
   def name = eData.data.name
   def desc = eData.data.desc
   def id = eData.data.id
@@ -32,9 +35,9 @@ trait EquipmentLike[+A] {
 }
 
 trait EquipmentLikes[A <: EquipmentLike[A]] extends Util {
-  def default: A
+  self ⇒ 
 
-  implicit lazy val ADefault = Default default default
+  def default: A
 
   private def eDataToXml = implicitly[ToXml[EquipmentItemData]]
 
@@ -53,8 +56,9 @@ trait EquipmentLikes[A <: EquipmentLike[A]] extends Util {
     EquipmentItemData fromName name(efa.dsa.equipment.loc)
 
   implicit lazy val AEquipment = new EquipmentData[A] {
+    val default = self.default
     val eData: A @> EquipmentItemData = Lens.lensu(_ eData_= _, _.eData)
-    def parentId (a: A) = a.parentId
+    def parentIdL: A @> Int = Lens.lensu(_ parentId_= _, _.parentId)
   }
 
   implicit lazy val AEqual = Equal.equalA[A]
