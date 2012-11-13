@@ -1,6 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{ToXml, Efa, Default}, Efa._
+import efa.dsa.being.{HumanoidBaseData ⇒ HBD}
 import efa.dsa.equipment.EquipmentItemData
 import efa.dsa.equipment.spi.EquipmentLocal
 import efa.rpg.core.{WithId, Util, ItemData}, ItemData.itemDataLenses
@@ -18,6 +19,15 @@ trait EquipmentData[A] extends WithId[A] with Default[A] {
   def desc: A @> String = eData.data.desc
   def price: A @> Long = eData.price
   def weight: A @> Long = eData.weight
+
+  def fullWeight (a: A): Long
+  def fullPrice (a: A): Long
+
+  def leftEquipped (a: A, h: HandsData): Boolean
+  def rightEquipped (a: A, h: HandsData): Boolean
+
+  def equipLeft (a: A, b: Boolean): State[HBD,Unit]
+  def equipRight (a: A, b: Boolean): State[HBD,Unit]
 }
 
 trait EquipmentLike[+A] {
@@ -32,6 +42,13 @@ trait EquipmentLike[+A] {
   def id = eData.data.id
   def price = eData.price
   def weight = eData.weight
+
+  def fullPrice = price
+  def fullWeight = weight
+
+  def equipped (h: HandData): Boolean = false
+
+  def handData: Option[HandData] = None 
 }
 
 trait EquipmentLikes[A <: EquipmentLike[A]] extends Util {
@@ -59,6 +76,23 @@ trait EquipmentLikes[A <: EquipmentLike[A]] extends Util {
     val default = self.default
     val eData: A @> EquipmentItemData = Lens.lensu(_ eData_= _, _.eData)
     def parentIdL: A @> Int = Lens.lensu(_ parentId_= _, _.parentId)
+    def fullPrice (a: A) = a.fullPrice
+    def fullWeight (a: A) = a.fullWeight
+    def leftEquipped (a: A, hs: HandsData): Boolean = a equipped hs.left
+    def rightEquipped (a: A, hs: HandsData): Boolean = a equipped hs.right
+
+    def equipLeft (a: A, b: Boolean): State[HBD,Unit] =
+      equip(b ? a.handData | none, true)
+
+    def equipRight (a: A, b: Boolean): State[HBD,Unit] =
+      equip(b ? a.handData | none, false)
+
+    private def equip (ho: Option[HandData], left: Boolean)
+      : State[HBD,Unit] = {
+        val newH = ho | HandData.Empty
+
+        HBD.hands mods_ (hd ⇒ left ? hd.setLeft(newH) | hd.setRight(newH))
+      }
   }
 
   implicit lazy val AEqual = Equal.equalA[A]

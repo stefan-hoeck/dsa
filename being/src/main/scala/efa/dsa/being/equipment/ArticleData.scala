@@ -16,6 +16,9 @@ case class ArticleData(
   def eData_= (v: EquipmentItemData) = copy (eData = v)
 
   def parentId_= (v: Int) = copy (parentId = v)
+
+  override lazy val fullPrice = count * price
+  override lazy val fullWeight = count * weight
 }
 
 object ArticleData extends EquipmentLikes[ArticleData] {

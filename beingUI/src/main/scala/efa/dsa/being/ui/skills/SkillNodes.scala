@@ -1,50 +1,48 @@
 package efa.dsa.being.ui.skills
 
-import efa.core._
+import efa.core._, Validators.dummy
 import efa.dsa.abilities._
-import efa.dsa.being.{loc ⇒ bLoc}
+import efa.dsa.being.{loc ⇒ bLoc, HeroData ⇒ HD}
 import efa.dsa.being.skills._
 import efa.dsa.being.calc.SkillLinker
 import SkillLinker.{TalentLinker ⇒ TL, MeleeTalentLinker ⇒ MTL}
 import efa.dsa.being.ui.{Nodes, loc ⇒ uiLoc}
 import efa.dsa.world.{RaisingCost, Ebe}
 import efa.nb.dialog.DialogEditable
-import efa.nb.node.{NodeOut, NbNode ⇒ N, NbChildren ⇒ NC}, NC._
+import efa.nb.node._
 import efa.rpg.core.{Described, RpgEnum, prettyMods}
 import scalaz._, Scalaz._
 import scala.swing.Alignment.Trailing
 
-object SkillNodes {
-  type SkillsOut[A] = NodeOut[A,ValSt[SkillDatas]]
+object SkillNodes extends StNodeFunctions {
+  type SkillsOut[A] = ValStOut[A,SkillDatas]
+  type HDOut[A] = ValStOut[A,HD]
 
   def skillOut[A,B](
     implicit L: SkillLinker[A,B],
     D: DialogEditable[Skill[A,B],B]
   ): SkillsOut[Skill[A,B]] = 
-    N.destroyEs(L.delete) ⊹
-    (N.editDialog(D) map (L add _ success)) ⊹
+    destroyEs(L.delete) ⊹
+    (editDialog(D) map (L add _ success)) ⊹
     Nodes.described[Skill[A,B]] ⊹
     Nodes.childActions("ContextActions/DsaSkillNode") ⊹
-    N.booleanRwPropSetGet(L.special)(_.special, bLoc.specialExpLoc.name) ⊹
-    N.comboRwPropSetGet(L.raisingCost)(
-      _.rc, RpgEnum[RaisingCost].values, bLoc.raisingCostLoc.name
-    ) ⊹
-    N.textProp(bLoc.tawLoc.name, _.taw, _.taw.toString,
-               s ⇒ Some(prettyMods(s.taw, s.modifiers)), Trailing)
+    sg(L.special)(_.special)(booleanRw(bLoc.specialExpLoc.name)) ⊹ 
+    sg(L.raisingCost)(_.rc)(comboRw(RpgEnum[RaisingCost].values,
+      bLoc.raisingCostLoc.name)) ⊹ 
+    textW(bLoc.tawLoc.name, _.taw, _.taw.toString,
+      s ⇒ Some(prettyMods(s.taw, s.modifiers)), Trailing)
 
   lazy val languageOut: SkillsOut[Language] = skillOut
 
   lazy val meleeOut: SkillsOut[MeleeTalent] =
     skillOut[MeleeTalentItem,MeleeTalentData] ⊹
-    (N.showPropTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe)) ⊹
-    (N.intRwProp(bLoc.atLoc.name, Validators.dummy) contramap
-      MTL.at withIn MTL.setAt) ⊹
-    (N.intRwProp(bLoc.paLoc.name, Validators.dummy) contramap
-      MTL.pa withIn MTL.setPa)
+    (showWTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe)) ⊹
+    (intRw(bLoc.atLoc.name, dummy) contramap MTL.at withIn MTL.setAt) ⊹
+    (intRw(bLoc.paLoc.name, dummy) contramap MTL.pa withIn MTL.setPa)
 
   lazy val rangedOut: SkillsOut[RangedTalent] =
     skillOut[RangedTalentItem,TalentData] ⊹
-    (N.showPropTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe))
+    (showWTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe))
 
   lazy val ritualOut: SkillsOut[Ritual] = skillOut
 
@@ -52,62 +50,63 @@ object SkillNodes {
 
   lazy val spellOut: SkillsOut[Spell] =
     skillOut[SpellItem,SpellData] ⊹
-    (N.showPropTrailing[Attributes](bLoc.attributesLoc.name) ∙ (
+    (showWTrailing[Attributes](bLoc.attributesLoc.name) ∙ (
       _.item.attributes))
 
   lazy val talentOut: SkillsOut[Talent] =
     skillOut[TalentItem,TalentData] ⊹
-    (N.showPropTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe)) ⊹
-    (N.showPropTrailing[Attributes](bLoc.attributesLoc.name) ∙ (
+    (showWTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe)) ⊹
+    (showWTrailing[Attributes](bLoc.attributesLoc.name) ∙ (
       _.item.attributes))
 
-  val battleOut: SkillsOut[Skills] = NC.children(
-    NC singleF parent(meleeOut, bLoc.meleeTalents),
-    NC singleF parent(rangedOut, bLoc.rangedTalents)
+  val battleOut: HDOut[Skills] = children(
+    singleF (parentHD(meleeOut, bLoc.meleeTalents)),
+    singleF (parentHD(rangedOut, bLoc.rangedTalents))
   )
 
-  val languagesOut: SkillsOut[Skills] = NC.children(
-    NC singleF parent(languageOut, bLoc.languages),
-    NC singleF parent(scriptureOut, bLoc.scriptures)
+  val languagesOut: HDOut[Skills] = children(
+    singleF (parentHD(languageOut, bLoc.languages)),
+    singleF (parentHD(scriptureOut, bLoc.scriptures))
   )
 
-  val talentsOut: SkillsOut[Skills] = NC.children(
+  val talentsOut: HDOut[Skills] = children(
     RpgEnum[TalentType].values map (tt ⇒
-      NC singleF talentParent(talentOut, tt)): _*)
+      singleF (talentParentHD(talentOut, tt))): _*
+  )
 
-  val spellsOut: SkillsOut[Skills] = NC.children(
-    NC singleF parent(ritualOut, bLoc.rituals),
-    NC singleF parent(spellOut, bLoc.spells)
+  val spellsOut: HDOut[Skills] = children(
+    singleF (parentHD(ritualOut, bLoc.rituals)),
+    singleF (parentHD(spellOut, bLoc.spells))
   )
 
   def parent[A,B] (o: SkillsOut[Skill[A,B]], n: String)
   (implicit L: SkillLinker[A,B], M: Manifest[A]) =
     Nodes.parentNode(n, o)(L.skillList)(L.addI)
 
+  def parentHD[A,B] (o: SkillsOut[Skill[A,B]], n: String)
+  (implicit L: SkillLinker[A,B], M: Manifest[A]): HDOut[Skills] = {
+    Nodes.parentNode(n, rl(o))(L.skillList)(L.addIHD)
+  }
+
+  def rl[A,B](o: SkillsOut[Skill[A,B]])(implicit L: SkillLinker[A,B])
+    : HDOut[Skill[A,B]] =
+    mapSt[Skill[A,B],SkillDatas,HD](o)(HD.skills) ⊹ 
+    NodeOut[Skill[A,B],ValSt[HD]](
+      (o,n) ⇒ s ⇒ n.updateCookies[LowerCookie] apply 
+      LowerCookie(o(L lower s success))) ⊹ 
+    NodeOut((o,n) ⇒ s ⇒ n.updateCookies[RaiseCookie] apply 
+      RaiseCookie(o(L raise s success)))
+
   def talentParent (o: SkillsOut[Talent], tt: TalentType) =
     Nodes.parentNode(tt.loc.locName, o)(byTalentType(tt))(TL.addI)
+
+  def talentParentHD (o: SkillsOut[Talent], tt: TalentType) =
+    Nodes.parentNode(tt.loc.locName, rl(o))(byTalentType(tt))(TL.addIHD)
 
   private def byTalentType (tt: TalentType): Skills ⇒ List[Talent] =
     TL.skillList map (_ filter (_.item.talentType ≟ tt))
 }
+
 //        textR(Spell.attributesAcc), textRw(Spell.representationMut),
-//        booleanRw(Spell.houseSpellMut)
-//  
-//  protected class MeleeTalentNode (a: Signal[MeleeTalent])
-//  extends SkillLikeNode(a, MeleeTalentLinker) {
-//    override lazy val controllers = 
-//      List(tawController, dataController, atController, paController)
-//    lazy val atController = new PropertyController[MeleeTalent] {
-//      override def signal = a
-//      protected def factories = List[Factory[MeleeTalent, _]](
-//        textRw(MeleeTalent.atMut, Alignment.Right))
-//      edits foreach {e => setData(linker updateS (sd.now, e))}
-//    }
-//    lazy val paController = new PropertyController[Option[ModMeleeTalent]] {
-//      override def signal = modSignal
-//      protected def factories = List[Factory[Option[ModMeleeTalent], _]](
-//        textR(SkilledComponent.paAcc, Alignment.Right))
-//    }
-//  }
 
 // vim: set ts=2 sw=2 et:

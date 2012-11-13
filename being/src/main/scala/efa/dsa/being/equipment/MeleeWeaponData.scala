@@ -24,6 +24,14 @@ case class MeleeWeaponData(
   def eData_= (v: EquipmentItemData) = copy (eData = v)
 
   def parentId_= (v: Int) = copy (parentId = v)
+
+  override def equipped (h: HandData): Boolean = h match {
+    case HandData.Melee(x) if x ≟ id ⇒ true
+    case _ ⇒ false
+  }
+
+  override def handData: Option[HandData] = Some(HandData.Melee(id))
+  
 }
 
 object MeleeWeaponData extends EquipmentLikes[MeleeWeaponData] {

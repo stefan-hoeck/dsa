@@ -1,6 +1,14 @@
 package efa.dsa.being.ui.spi
 
+import efa.core.Localization
+
 trait UILocal {
+  lazy val priceLoc =
+    Localization("price", price, shortPrice, descPrice)
+
+  lazy val weightLoc =
+    Localization("weight", weight, shortWeight, descWeight)
+
   def abilities: String
   def actual: String
   def ap: String
@@ -14,6 +22,8 @@ trait UILocal {
   def bought: String
   def carryingCapacity: String
   def carriedWeight: String
+  def descPrice: String
+  def descWeight: String
   def derived: String
   def equipment: String
   def equipmentPanel: String
@@ -22,7 +32,10 @@ trait UILocal {
   def load: String
   def mainPanel: String
   def max: String
+  def price: String
   def rest: String
+  def shortPrice: String
+  def shortWeight: String
   def spells: String
   def spellsPanel: String
   def start: String
@@ -31,6 +44,7 @@ trait UILocal {
   def total: String
   def used: String
   def weapons: String
+  def weight: String
   def zones: String
 }
 
@@ -48,6 +62,8 @@ object UILocal extends UILocal {
   def bought = "Gekauft"
   def carryingCapacity = "Tragkraft [st]"
   def carriedWeight = "Getragenes Gewicht [st]"
+  def descWeight = "Gewicht in Unzen"
+  def descPrice = "Preis in Silbertalern"
   def derived = "Grundwerte"
   def equipment = "Ausrüstung"
   def equipmentPanel = "Ausrüstung"
@@ -56,7 +72,10 @@ object UILocal extends UILocal {
   def load = "Last"
   def mainPanel = "Grundwerte"
   def max = "Max."
+  def price = "Preis"
   def rest = "Guthaben"
+  def shortPrice = "[S]"
+  def shortWeight = "[u]"
   def spells = "Zauberfertikeiten & Ritualkenntnisse"
   def spellsPanel = "Zauber"
   def start = "Startwert"
@@ -65,6 +84,7 @@ object UILocal extends UILocal {
   def total = "Total"
   def used = "Gebraucht"
   def weapons = "Waffen & Schilde"
+  def weight = "Gewicht"
   def zones = "Körperzonen"
 }
 

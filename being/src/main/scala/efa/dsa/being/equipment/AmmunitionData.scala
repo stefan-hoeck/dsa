@@ -18,6 +18,16 @@ case class AmmunitionData(
   def eData_= (v: EquipmentItemData) = copy (eData = v)
 
   def parentId_= (v: Int) = copy (parentId = v)
+
+  override lazy val fullPrice = count * price
+  override lazy val fullWeight = count * weight
+
+  override def equipped (h: HandData): Boolean = h match {
+    case HandData.Ammo(x) if x ≟ id ⇒ true
+    case _ ⇒ false
+  }
+
+  override def handData: Option[HandData] = Some(HandData.Ammo(id))
 }
 
 object AmmunitionData extends EquipmentLikes[AmmunitionData] {

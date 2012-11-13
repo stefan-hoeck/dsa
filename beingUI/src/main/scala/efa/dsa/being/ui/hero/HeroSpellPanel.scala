@@ -11,7 +11,7 @@ import org.openide.util.lookup.ProxyLookup
 import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scalaz._, Scalaz._, effect.IO
 
-class HeroSpellPanel (spellP: NodePanel[Skills,SkillDatas])
+class HeroSpellPanel (spellP: NodePanel[Skills,HeroData])
   extends MVPanel[Hero,HeroData]
     with Lookup.Provider
     with PersistentComponent {
@@ -26,7 +26,7 @@ class HeroSpellPanel (spellP: NodePanel[Skills,SkillDatas])
   (attributesP beside apP) above (spellP fillH 2 fillV 1) add()
 
   def set =
-    (mapSt(spellP.set)(HeroData.skills) ∙ ((_: Hero).skills)) ⊹
+    (spellP.set ∙ ((_: Hero).skills)) ⊹
     attributesP.set ⊹
     (lensedV(apP.set)(HeroData.base) ∙ (_.data))
 

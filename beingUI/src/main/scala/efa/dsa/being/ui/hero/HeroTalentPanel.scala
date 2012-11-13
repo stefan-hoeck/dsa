@@ -13,9 +13,9 @@ import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scalaz._, Scalaz._, effect.IO
 
 class HeroTalentPanel(
-  talentP: NodePanel[Skills,SkillDatas],
-  meleeP: NodePanel[Skills,SkillDatas],
-  languageP: NodePanel[Skills,SkillDatas]
+  talentP: NodePanel[Skills,HeroData],
+  meleeP: NodePanel[Skills,HeroData],
+  languageP: NodePanel[Skills,HeroData]
 ) extends MVPanel[Hero,HeroData]
     with Lookup.Provider
     with PersistentComponent {
@@ -39,9 +39,9 @@ class HeroTalentPanel(
   ) add()
 
   def set =
-    (mapSt(talentP.set)(HeroData.skills) ∙ ((_: Hero).skills)) ⊹
-    (mapSt(meleeP.set)(HeroData.skills) ∙ (_.skills)) ⊹
-    (mapSt(languageP.set)(HeroData.skills) ∙ (_.skills)) ⊹
+    (talentP.set ∙ ((_: Hero).skills)) ⊹
+    (meleeP.set ∙ (_.skills)) ⊹
+    (languageP.set ∙ (_.skills)) ⊹
     attributesP.set ⊹
     (lensedV(apP.set)(HeroData.base) ∙ (_.data)) ⊹
     beP.set

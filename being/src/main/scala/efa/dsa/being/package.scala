@@ -58,7 +58,7 @@ package object being extends RangeVals {
   val LeKey = ModifierKey(loc.leLoc, min, max)
   val PaKey = ModifierKey(loc.paLoc, min, max)
   val RsKey = ModifierKey(loc.rsLoc, min, max)
-	val TpKey = ModifierKey(loc.tpLoc, -999L, 999L)
+	val TpKey = ModifierKey(efa.dsa.equipment.loc.tpLoc, -999L, 999L)
   val WeightKey = ModifierKey(loc.carriedWeightLoc, 0L, Long.MaxValue)
   val WsKey = ModifierKey(loc.wsLoc, min, max)
 

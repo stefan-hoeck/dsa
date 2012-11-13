@@ -4,7 +4,7 @@ import efa.core.{ValRes, Validators, ValSt, EndoVal}
 import efa.dsa.abilities._
 import efa.dsa.being.generation.GenData
 import efa.dsa.being.skills._
-import efa.dsa.being.HeroData
+import efa.dsa.being.{HeroData ⇒ HD}
 import efa.dsa.generation.{SkillPrototype, SkillPrototypes}
 import efa.dsa.world.RaisingCost
 import efa.rpg.core.{DB, Modifier}
@@ -42,15 +42,17 @@ sealed abstract class SkillLinker[I,D] (implicit
    */
   def skills: Lens[Skills, DB[SKILL]]
 
-  def skillList: Skills ⇒ List[SKILL] = s ⇒ 
+  final def skillList: Skills ⇒ List[SKILL] = s ⇒ 
     skills.get(s).toList map (_._2) sortBy (_.name)
 
-  def itemToData (i: I): D = (for {
+  final def itemToData (i: I): D = (for {
     _ ← SD.idL := SI.id(i)
     _ ← SD.raisingCostL := SI.raisingCost(i)
   } yield ()) exec SD.default
 
   final def addI (i: I): State[SkillDatas,Unit] = add (itemToData(i))
+
+  final def addIHD (i: I): State[HD,Unit] = HD.skills lifts addI(i)
 
   final def delete(s: SKILL): State[SkillDatas,Unit] =
     data -= s.id void
@@ -65,26 +67,25 @@ sealed abstract class SkillLinker[I,D] (implicit
 
   final lazy val raisingCost = set(SD.raisingCostL)
 
-//  private def rlSkill(h: Hero, id: Int, tapAdd: Int, ap: Mod => Int): HeroData = 
-//    modsFromData(h.skills) find (_.parent.parentId == id) map {m => 
-//      val sd = h.heroData.skilledData
-//      val s = (skillsFromData(sd) find (_.parentId == id)).get
-//      val usedAp = h.heroData.apUsed + ap(m)
-//      if (ap(m) == 0 || usedAp < 0 || usedAp > h.heroData.ap) h.heroData else {
-//        h.heroData
-//        .skilledData_=(updateS(sd, s.tap_=(s.tap + tapAdd).specialExp_=(false)))
-//        .apUsed_=(usedAp)
-//      }
-//    } getOrElse h.heroData
+  private def rlSkill(s: SKILL, cost: Int, add: Int): State[HD,Unit] = for {
+    hd ← init[HD]
+    ap = hd.base.apUsed + cost
+    _  ← if (ap >= 0 && ap <= hd.base.ap) for {
+           _ ← HD.skills := set(SD.tapL)(s, s.tap + add) exec hd.skills
+           _ ← HD.base.apUsed := ap
+         } yield () else init[HD].void
+  } yield ()
   
-//  /**
-//   * Raises a skill of a hero and lowers its rest AP at the same time. The skill
-//   * is not raised, if the ap-cost is higher than the hero can afford.
-//   */
-//  final def raiseSkill(h: Hero, id: Int): HeroData = rlSkill(h, id, 1, _.raiseAp)
-//  final def lowerSkill(h: Hero, id: Int): HeroData = rlSkill(h, id, -1, - _.lowerAp)
-//  
-  final def heroSkills (h: HeroData, as: AbilityItems): DB[SKILL] = {
+  /**
+   * Raises a skill of a hero and lowers its rest AP at
+   * the same time. The skill
+   * is not raised, if the ap-cost is higher than the hero can afford.
+   */
+  final def raise(s: SKILL): State[HD,Unit] = rlSkill(s, s.raiseAp, 1)
+
+  final def lower(s: SKILL): State[HD,Unit] = rlSkill(s, -s.lowerAp, -1)
+
+  final def heroSkills (h: HD, as: AbilityItems): DB[SKILL] = {
     def single(p: (Int,D)): Option[(Int, SKILL)] = {
       val (id, s) = p
 
@@ -107,7 +108,7 @@ sealed abstract class SkillLinker[I,D] (implicit
 
 object SkillLinker {
 
-  def heroSkills (h: HeroData, as: AbilityItems): Skills = Skills (
+  def heroSkills (h: HD, as: AbilityItems): Skills = Skills (
     LanguageLinker heroSkills (h, as),
     MeleeTalentLinker heroSkills (h, as),
     RangedTalentLinker heroSkills (h, as),

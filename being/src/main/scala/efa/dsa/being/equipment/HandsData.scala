@@ -8,6 +8,18 @@ sealed trait HandsData {
   def left: HandData
   def right: HandData
   def toHands (es: Equipments): Option[Hands]
+
+  def setLeft (h: HandData): HandsData = toHD (h, right)
+
+  def setRight (h: HandData): HandsData = toHD (left, h)
+
+  import HandData._
+
+  private def toHD (l: HandData, r: HandData): HandsData = (l,r) match {
+    case (Empty, Empty)                ⇒ HandsData.Empty 
+    case (Melee(x), Melee(y)) if x ≟ y ⇒ HandsData.TwoHanded(x)
+    case (a,b)                         ⇒ HandsData.OneHanded(a,b)
+  }
 }
 
 object HandsData {
@@ -53,7 +65,8 @@ object HandsData {
   lazy val oneHandedGen: Gen[HandsData] = ^(handGen, handGen)(OneHanded)
   lazy val twoHandedGen: Gen[HandsData] = idGen map TwoHanded
 
-  implicit lazy val HandsDataZero: Default[HandsData] = Default default Empty
+  implicit lazy val HandsDataDefault: Default[HandsData] =
+    Default default Empty
 
   implicit lazy val HandsDataEqual = Equal.equalA[HandsData]
 

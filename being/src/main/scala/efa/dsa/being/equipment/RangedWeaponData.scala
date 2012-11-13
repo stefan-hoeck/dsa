@@ -23,6 +23,13 @@ case class RangedWeaponData(
   def eData_= (v: EquipmentItemData) = copy (eData = v)
 
   def parentId_= (v: Int) = copy (parentId = v)
+
+  override def equipped (h: HandData): Boolean = h match {
+    case HandData.Ranged(x) if x ≟ id ⇒ true
+    case _ ⇒ false
+  }
+
+  override def handData: Option[HandData] = Some(HandData.Ranged(id))
 }
 
 object RangedWeaponData extends EquipmentLikes[RangedWeaponData] {

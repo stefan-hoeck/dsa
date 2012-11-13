@@ -20,7 +20,13 @@ trait BeingLocal {
   lazy val carryingCapacityLoc =
     new Localization("carryingCapacity", carryingCapacity)
 
+  lazy val countLoc = Localization("count", count, shortCount, count)
+
   lazy val ebeLoc = Localization("ebe", ebe, shortEbe, ebe)
+
+  lazy val equippedLoc =
+    Localization("equipped", equipped, shortEquipped, equipped)
+
   lazy val fkLoc = Localization("fk", fk, shortFk, fk)
   lazy val gsLoc = Localization("gs", gs, shortGs, gs)
 
@@ -34,6 +40,7 @@ trait BeingLocal {
 
   lazy val keLoc = Localization("ke", ke, shortKe, ke)
   lazy val leLoc = Localization("le", le, shortLe, le)
+  lazy val lhLoc = Localization("lh", lh, shortLh, descLh)
   lazy val mrLoc = Localization("mr", mr, shortMr, mr)
   lazy val mrBodyLoc = Localization("mrBody", mrBody, shortMrBody, mrBody)
   lazy val mrMindLoc = Localization("mrMind", mrMind, shortMrMind, mrMind)
@@ -49,6 +56,7 @@ trait BeingLocal {
   lazy val representationLoc = Localization("representation",
     representation, shortRepresentation, representation)
 
+  lazy val rhLoc = Localization("rh", rh, shortRh, descRh)
   lazy val rsLoc = Localization("rs", rs, shortRs, rs)
 
   lazy val specialExpLoc =
@@ -57,7 +65,6 @@ trait BeingLocal {
   lazy val tawLoc =
     Localization("taw", taw, shortTaw, descTaw)
 
-  lazy val tpLoc = Localization("tp", tp, shortTp, tp)
   lazy val wsLoc = Localization("ws", ws, shortWs, ws)
 
   def advantages: String
@@ -73,12 +80,16 @@ trait BeingLocal {
   def bought: String
   def carriedWeight: String
   def carryingCapacity: String
+  def count: String
   def culture: String
   def descIsActive: String
+  def descLh: String
   def descRaisingCost: String
+  def descRh: String
   def descSpecialExp: String
   def descTaw: String
   def ebe: String
+  def equipped: String
   def eyes: String
   def feats: String
   def fk: String
@@ -95,6 +106,7 @@ trait BeingLocal {
   def ke: String
   def languages: String
   def le: String
+  def lh: String
   def meleeTalents: String
   def mr: String
   def mrBody: String
@@ -109,6 +121,7 @@ trait BeingLocal {
   def rangedTalents: String
   def raufen: String
   def representation: String
+  def rh: String
   def ringen: String
   def rituals: String
   def rs: String
@@ -120,7 +133,9 @@ trait BeingLocal {
   def shortAu: String
   def shortAw: String
   def shortBe: String
+  def shortCount: String
   def shortEbe: String
+  def shortEquipped: String
   def shortFk: String
   def shortGs: String
   def shortHouseSpell: String
@@ -128,6 +143,7 @@ trait BeingLocal {
   def shortIsActive: String
   def shortKe: String
   def shortLe: String
+  def shortLh: String
   def shortMr: String
   def shortMrBody: String
   def shortMrMind: String
@@ -135,11 +151,11 @@ trait BeingLocal {
   def shortPa: String
   def shortRaisingCost: String
   def shortRepresentation: String
+  def shortRh: String
   def shortRs: String
   def shortSo: String
   def shortSpecialExp: String
   def shortTaw: String
-  def shortTp: String
   def shortWs: String
   def so: String
   def specialExp: String
@@ -147,7 +163,6 @@ trait BeingLocal {
   def subdual: String
   def taw: String
   def title: String
-  def tp: String
   def unknownHandString (s: String): String
   def weight: String
   def ws: String
@@ -168,12 +183,16 @@ object BeingLocal extends BeingLocal {
   def calculated = "berechnet"
   def carriedWeight = "Gewicht"
   def carryingCapacity = "Tragkraft"
+  def count = "Anzahl"
   def culture = "Kultur"
   def descIsActive = "Derzeit aktiv?"
+  def descLh = "in linker Hand getragen"
   def descRaisingCost = "Spalte in der Steigerungskostentabelle"
+  def descRh = "in rechter Hand getragen"
   def descSpecialExp = "Hat eine spezielle Erfahrung in diesem Talent gemacht"
   def descTaw = "Talentwert (inklusive Modifikatoren)"
   def ebe = "Effektive Behinderung"
+  def equipped = "getragen"
   def eyes = "Augenfarbe"
   def feats = "Sonderfertigkeiten"
   def fk = "Fernkampfwert"
@@ -190,6 +209,7 @@ object BeingLocal extends BeingLocal {
   def ke = "Karmalenergie"
   def languages = "Sprachen"
   def le = "Lebensenergie"
+  def lh = "Linke Hand"
   def meleeTalents = "Nahkampftalente"
   def mr = "Magieresistenz"
   def mrBody = "Magieresistenz Körper"
@@ -204,6 +224,7 @@ object BeingLocal extends BeingLocal {
   def rangedTalents = "Fernkampftalente"
   def raufen = "Raufen"
   def representation = "Repräsentation"
+  def rh = "Rechte Hand"
   def ringen = "Ringen"
   def rituals = "Rituale"
   def rs = "Rüstungsschutz"
@@ -215,7 +236,9 @@ object BeingLocal extends BeingLocal {
   def shortAttributes = "Eig."
   def shortAw = "AW"
   def shortBe = "BE"
+  def shortCount = "Anz."
   def shortEbe = "EBE"
+  def shortEquipped = "getr."
   def shortFk = "FK"
   def shortGs = "GS"
   def shortHouseSpell = "HZ"
@@ -223,6 +246,7 @@ object BeingLocal extends BeingLocal {
   def shortIsActive = "aktiv"
   def shortKe = "KE"
   def shortLe = "LE"
+  def shortLh = "LH"
   def shortMr = "MR"
   def shortMrBody = "MR K."
   def shortMrMind = "MR G."
@@ -230,11 +254,11 @@ object BeingLocal extends BeingLocal {
   def shortPa = "PA"
   def shortRaisingCost = "SK"
   def shortRepresentation = "Rep."
+  def shortRh = "RH"
   def shortRs = "RS"
   def shortSo = "SO"
   def shortSpecialExp = "SE"
   def shortTaw = "TaW"
-  def shortTp = "TP"
   def shortWs = "WS"
   def so = "Sozialstatus"
   def specialExp = "Spezielle Erfahrung"
@@ -243,7 +267,6 @@ object BeingLocal extends BeingLocal {
   def subdual = "Erschöpfungsschaden"
   def taw = "Talentwert"
   def title = "Titel"
-  def tp = "Trefferpunkte"
   def unknownHandString (s: String) = "Unbekannte Eingabe: " + s
   def ws = "Wundschwelle"
   def weight = "Gewicht"

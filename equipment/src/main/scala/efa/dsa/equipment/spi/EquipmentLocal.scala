@@ -1,85 +1,113 @@
 package efa.dsa.equipment.spi
 
+import efa.core.Localization
+
 trait EquipmentLocal {
-  def weight: String
-  def price: String
-  def tp: String
-  def talent: String
-  def improvised: String
-  def tpkk: String
-  def ini: String
-  def wm: String
-  def bf: String
-  def dk: String
-  def twoHanded: String
-  def length: String
-  def reach: String
-  def tpPlus: String
-  def makesWound: String
-  def timeToLoad: String
-  def usesAmmo: String
-  def rs: String
-  def be: String
-  def isAddition: String
-  def size: String
-  def shieldType: String
-  def difference: String
-  def zoneRs: String
+  lazy val beLoc = Localization("be", be, shortBe, be)
+  lazy val bfLoc = Localization("bf", bf, shortBf, bf)
+  lazy val dkLoc = Localization("dk", dk, shortDk, dk)
+  lazy val iniLoc = Localization("ini", ini, shortIni, ini)
+  lazy val rsLoc = Localization("rs", rs, shortRs, rs)
+  lazy val talentLoc = new Localization("talent", talent)
+  lazy val tpLoc = Localization("tp", tp, shortTp, tp)
+  lazy val tpkkLoc = new Localization("tpkk", tpkk)
+  lazy val wmLoc = Localization("wm", wm, shortWm, wm)
+
   def ammunition: String
   def ammunitions: String
   def armor: String
   def armors: String
-  def zoneArmor: String
-  def zoneArmors: String
-  def meleeWeapon: String
-  def meleeWeapons: String
-  def rangedWeapon: String
-  def rangedWeapons: String
-  def shield: String
-  def shields: String
+  def article: String
+  def articles: String
+  def be: String
+  def bf: String
+  def dk: String
   def equipment: String
   def equipments: String
+  def improvised: String
+  def ini: String
+  def isAddition: String
+  def length: String
+  def makesWound: String
+  def meleeWeapon: String
+  def meleeWeapons: String
+  def price: String
+  def rangedWeapon: String
+  def rangedWeapons: String
+  def reach: String
+  def rs: String
+  def shield: String
+  def shields: String
+  def shieldType: String
+  def shortBe: String
+  def shortBf: String
+  def shortDk: String
+  def shortIni: String
+  def shortRs: String
+  def shortTp: String
+  def shortWm: String
+  def size: String
+  def talent: String
+  def timeToLoad: String
+  def twoHanded: String
+  def tp: String
+  def tpkk: String
+  def tpPlus: String
+  def usesAmmo: String
+  def weight: String
+  def wm: String
+  def zoneArmor: String
+  def zoneArmors: String
+  def zoneRs: String
 }
 
 object EquipmentLocal extends EquipmentLocal {
-  def weight = "Gewicht"
-  def price = "Preis"
-  def tp = "TP"
-  def talent = "Talent"
-  def improvised = "improvisiert"
-  def tpkk = "TP/KK"
-  def ini = "INI"
-  def wm = "WM"
-  def bf = "BF"
-  def dk = "Distanzklasse"
-  def twoHanded = "Zweihandwaffe"
-  def length = "Länge"
-  def reach = "Reichweite"
-  def tpPlus = "TP+"
-  def makesWound = "Verursacht Wunde"
-  def timeToLoad = "Ladezeit"
-  def usesAmmo = "Benötigt Geschosse"
-  def rs = "RS"
-  def be = "BE"
-  def isAddition = "Rüstungszusatz"
-  def size = "Grösse"
-  def shieldType = "Typ"
-  def difference = "Differenz RS - BE"
-  def zoneRs = "Zonen-RS"
   def ammunition = "Geschoss"
   def ammunitions = "Geschosse"
   def armor = "Rüstung"
   def armors = "Rüstungen"
-  def zoneArmor = "Zonenrüstung"
-  def zoneArmors = "Zonenrüstungen"
-  def meleeWeapon = "Nahkampfwaffe"
-  def meleeWeapons = "Nahkampfwaffen"
-  def rangedWeapon = "Fernkampfwaffe"
-  def rangedWeapons = "Fernkampfwaffen"
-  def shield = "Schild"
-  def shields = "Schilde"
+  def article = "Gegenstand"
+  def articles = "Gegenstände"
+  def be = "Behinderung"
+  def bf = "Bruchfaktor"
+  def dk = "Distanzklasse"
   def equipment = "Ausrüstung"
   def equipments = "Ausrüstung"
+  def improvised = "improvisiert"
+  def ini = "Initiative"
+  def isAddition = "Rüstungszusatz"
+  def length = "Länge"
+  def makesWound = "Verursacht Wunde"
+  def meleeWeapon = "Nahkampfwaffe"
+  def meleeWeapons = "Nahkampfwaffen"
+  def price = "Preis"
+  def rangedWeapon = "Fernkampfwaffe"
+  def rangedWeapons = "Fernkampfwaffen"
+  def reach = "Reichweite"
+  def rs = "Rüstungsschutz"
+  def shield = "Schild"
+  def shields = "Schilde"
+  def shieldType = "Typ"
+  def shortBe = "BE"
+  def shortBf = "BF"
+  def shortDk = "DK"
+  def shortIni = "Ini"
+  def shortRs = "RS"
+  def shortTp = "TP"
+  def shortWm = "WM"
+  def size = "Grösse"
+  def timeToLoad = "Ladezeit"
+  def talent = "Talent"
+  def tp = "Trefferpunkte"
+  def tpkk = "TP/KK"
+  def tpPlus = "TP-Plus"
+  def twoHanded = "Zweihandwaffe"
+  def usesAmmo = "Benötigt Geschosse"
+  def weight = "Gewicht"
+  def wm = "Waffenmodifikator"
+  def zoneArmor = "Zonenrüstung"
+  def zoneArmors = "Zonenrüstungen"
+  def zoneRs = "Zonen-RS"
 }
 
 // vim: set ts=2 sw=2 et:
