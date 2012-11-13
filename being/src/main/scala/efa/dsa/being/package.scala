@@ -35,7 +35,9 @@ package object being extends RangeVals {
   val So = fullInfo(1, 23, "so")
   val Weight = fullInfo(0L, Long.MaxValue, "weight")
   val Wounds = fullInfo(0, 99, "wounds")
-  val ZoneWounds = EnumMaps.int[BodyPart](0, 99, 0, "zoneWounds")
+  val (zoneWoundsMax, zoneWoundsMin) = (3, 0)
+  val ZoneWounds = EnumMaps.int[BodyPart](
+    zoneWoundsMin, zoneWoundsMax, 0, "zoneWounds")
 
   def apUsedI(ap: Int) = fullInfo(0, ap, "apUsed")
 
@@ -56,6 +58,7 @@ package object being extends RangeVals {
   val MrBodyKey = ModifierKey(loc.mrBodyLoc, min, max)
   val MrMindKey = ModifierKey(loc.mrMindLoc, min, max)
   val LeKey = ModifierKey(loc.leLoc, min, max)
+  val OverstrainKey = ModifierKey(loc.overstrainLoc, min, max)
   val PaKey = ModifierKey(loc.paLoc, min, max)
   val RsKey = ModifierKey(loc.rsLoc, min, max)
 	val TpKey = ModifierKey(efa.dsa.equipment.loc.tpLoc, -999L, 999L)

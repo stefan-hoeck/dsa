@@ -3,6 +3,7 @@ package efa.dsa.being.ui.equipment
 import efa.core._
 import efa.dsa.abilities._
 import efa.dsa.being.{loc ⇒ bLoc, HumanoidBaseData ⇒ HBD, HeroData ⇒ HD}
+import efa.dsa.being._
 import efa.dsa.being.equipment._
 import efa.dsa.being.calc.EquipmentLinker, EquipmentLinker._
 import efa.dsa.being.ui.{Nodes, loc ⇒ uiLoc}
@@ -11,7 +12,7 @@ import efa.dsa.world.{Be, Rs}
 import efa.dsa.world.mittelreich.{Coin, Weight}
 import efa.nb.dialog.DialogEditable
 import efa.nb.node._
-import efa.rpg.core.{Described, RpgEnum, UnitEnum}
+import efa.rpg.core._
 import scalaz._, Scalaz._
 import scala.swing.Alignment.Trailing
 
@@ -30,6 +31,17 @@ object EquipmentNodes extends StNodeFunctions {
     Nodes.childActions("ContextActions/DsaEquipmentNode") ⊹
     textW[Equipment[A,B],Long](uiLoc.priceLoc.name, _.fullPrice, price) ⊹
     textW[Equipment[A,B],Long](uiLoc.weightLoc.name, _.fullWeight, weight)
+
+  lazy val attackModeOut: NodeOut[AttackMode,Nothing] =
+    name[AttackMode](_.name) ⊹
+    attackMods(_.tp, TpKey) ⊹
+    attackMods(_.at, AtFkKey) ⊹
+    attackMods(_.pa, PaKey) ⊹
+    attackMods(_.aw, AwKey) ⊹
+    attackMods(_.ini, IniKey)
+
+  lazy val attackModesOut: NodeOut[Hero,Nothing] =
+    children(seqF(attackModeOut)) ∙ (_.attackModes)
 
   lazy val ammunitionOut = equipmentOut[AmmunitionItem,AmmunitionData] ⊹
     sg(AmmunitionLinker set AmmunitionData.count)(_.data.count)(
@@ -111,6 +123,13 @@ object EquipmentNodes extends StNodeFunctions {
 
   private def weight[A,B](e: Equipment[A,B]): String =
     UnitEnum[Weight] showPretty (Weight.U, 4) apply e.fullWeight
+
+  private def attackMods[A:Manifest](
+    get: AttackMode ⇒ A,
+    k: ModifierKey
+  ): NodeOut[AttackMode,Nothing] =
+    textW(k.loc.name, get, get(_).toString,
+    prettyModsKeyO[AttackMode](k), Trailing)
 }
 
 // vim: set ts=2 sw=2 et:

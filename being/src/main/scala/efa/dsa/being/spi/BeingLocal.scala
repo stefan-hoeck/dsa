@@ -90,6 +90,7 @@ trait BeingLocal {
   def descTaw: String
   def ebe: String
   def equipped: String
+  def exhaustion: String
   def eyes: String
   def feats: String
   def fk: String
@@ -165,6 +166,7 @@ trait BeingLocal {
   def title: String
   def unknownHandString (s: String): String
   def weight: String
+  def wounds: String
   def ws: String
 }
 
@@ -193,6 +195,7 @@ object BeingLocal extends BeingLocal {
   def descTaw = "Talentwert (inklusive Modifikatoren)"
   def ebe = "Effektive Behinderung"
   def equipped = "getragen"
+  def exhaustion = "Erschöpfung"
   def eyes = "Augenfarbe"
   def feats = "Sonderfertigkeiten"
   def fk = "Fernkampfwert"
@@ -268,6 +271,7 @@ object BeingLocal extends BeingLocal {
   def taw = "Talentwert"
   def title = "Titel"
   def unknownHandString (s: String) = "Unbekannte Eingabe: " + s
+  def wounds = "Wunden"
   def ws = "Wundschwelle"
   def weight = "Gewicht"
 

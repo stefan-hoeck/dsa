@@ -121,6 +121,11 @@ object AttackMode {
 	}
 
   implicit lazy val AttackModeEqual = Equal.equalA[AttackMode]
+
+  implicit lazy val AttackModeModified = new Modified[AttackMode] {
+    val modifiersL =
+      Lens.lensu[AttackMode,Modifiers](_ modifiers_= _, _.modifiers)
+  }
 }
 
 // vim: set ts=2 sw=2 et:
