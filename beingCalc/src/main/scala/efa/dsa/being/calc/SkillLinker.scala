@@ -4,8 +4,8 @@ import efa.core.{ValRes, Validators, ValSt, EndoVal}
 import efa.dsa.abilities._
 import efa.dsa.being.generation.GenData
 import efa.dsa.being.skills._
-import efa.dsa.being.{HeroData ⇒ HD}
-import efa.dsa.generation.{SkillPrototype, SkillPrototypes}
+import efa.dsa.being.{HeroData ⇒ HD, Hero}
+import efa.dsa.generation.{SkillPrototype, SkillPrototypes, NamedPrototype}
 import efa.dsa.world.RaisingCost
 import efa.rpg.core.{DB, Modifier}
 import scalaz._, Scalaz._
@@ -42,6 +42,18 @@ sealed abstract class SkillLinker[I,D] (implicit
    */
   def skills: Lens[Skills, DB[SKILL]]
 
+  final def protoList (gen: Hero ⇒ GenData)(h: Hero): List[NamedPrototype] = {
+    def ss = skills get h.skills
+    def ps = prototypes get gen(h).skills
+    def toNamed (p: SkillPrototype) =
+      ss get p.parentId map (s ⇒ NamedPrototype(s.name, p.parentId, p.value))
+
+    ps.toList flatMap (p ⇒ toNamed(p._2)) sortBy (_.name)
+  }
+
+  final def protoValue (n: NamedPrototype, v: Int): State[SkillPrototypes,Unit] =
+    prototypes += (n.id → SkillPrototype(n.id, v)) void
+
   final def skillList: Skills ⇒ List[SKILL] = s ⇒ 
     skills.get(s).toList map (_._2) sortBy (_.name)
 
@@ -52,6 +64,16 @@ sealed abstract class SkillLinker[I,D] (implicit
 
   final def addI (i: I): State[SkillDatas,Unit] = add (itemToData(i))
 
+  final def addIProto (l: HD @> GenData)(i: I): State[HD,Unit] = {
+    val id = SI id i
+
+    for {
+      hd ← init[HD]
+      _  ← (l.skills >=> prototypes) += (id → SkillPrototype(id, 0))
+      _  ← data.get(hd.skills).keySet(id) ?  (init[HD] void) | addIHD(i)
+    } yield ()
+  }
+  
   final def addIHD (i: I): State[HD,Unit] = HD.skills lifts addI(i)
 
   final def delete(s: SKILL): State[SkillDatas,Unit] =

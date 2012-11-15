@@ -14,6 +14,7 @@ package object generation extends RangeVals {
   val Le = fullInfo(minBase, maxBase, "le")
   val Mr = fullInfo(minBase, maxBase, "mr")
   val Value = fullInfo(-99, Tap.max, "value")
+
   val Attributes = EnumMaps.int[Attribute](-99, 99, 0, "attributes")
 }
 

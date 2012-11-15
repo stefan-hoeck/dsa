@@ -9,7 +9,10 @@ class HeroLoader
 
 object HeroLoader {
   val controller = BeingLoader.default[HeroData,Hero,World] (
-    heroInfo.get.μ, world, (hd, w) ⇒  calcHero(hd, w.abilities, w.equipment)
+    heroInfo.get.μ,
+    world,
+    (hd, w) ⇒  calcHero(hd, w.abilities, w.equipment),
+    heroRules.get
   )
 }
 

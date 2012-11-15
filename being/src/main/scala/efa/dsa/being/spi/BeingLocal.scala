@@ -162,6 +162,8 @@ trait BeingLocal {
   def specialExp: String
   def spells: String
   def subdual: String
+  def talent: String
+  def talents: String
   def taw: String
   def title: String
   def unknownHandString (s: String): String
@@ -268,6 +270,8 @@ object BeingLocal extends BeingLocal {
   def spells = "Zauber"
   def start = "Startwert"
   def subdual = "Erschöpfungsschaden"
+  def talent = "Talent"
+  def talents = "Talente"
   def taw = "Talentwert"
   def title = "Titel"
   def unknownHandString (s: String) = "Unbekannte Eingabe: " + s

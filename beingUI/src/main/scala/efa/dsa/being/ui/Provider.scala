@@ -14,7 +14,8 @@ class Provider extends UIProvider {
     uiInfo(HeroTalentPanel.create),
     uiInfo(HeroBattlePanel.create),
     uiInfo(HeroSpellPanel.create),
-    uiInfo(HeroEquipmentPanel.create)
+    uiInfo(HeroEquipmentPanel.create),
+    uiInfo(HeroGenerationPanel.create)
   )
 }
 
