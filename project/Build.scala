@@ -102,7 +102,8 @@ object UtilBuild extends Build {
     file("."),
     settings = buildSettings
   ) aggregate (world, abilities, abilitiesServices, being, beingCalc,
-    beingServices, beingUI, equipment, equipmentServices, generation, testItems)
+    beingServices, beingUI, equipment, equipmentServices, generation, testItems,
+    rules)
   
   lazy val abilities = Project (
     "abilities",
@@ -159,6 +160,13 @@ object UtilBuild extends Build {
     file("generation"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world)
+
+  lazy val rules = Project (
+    "rules",
+    file("rules"),
+    settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore, rpgRules))
+  ) dependsOn (world, abilities, equipment, generation, being,
+               beingCalc, testItems, beingServices)
 
   lazy val testItems = Project (
     "testItems",

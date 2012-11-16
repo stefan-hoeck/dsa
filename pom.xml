@@ -147,6 +147,7 @@
     <module>beingServices</module>
     <module>beingUI</module>
     <module>generation</module>
+    <module>rules</module>
   </modules>
 
   <properties>
@@ -164,6 +165,7 @@
     <beingServices.version>1.0.0-SNAPSHOT</beingServices.version>
     <beingUI.version>1.0.0-SNAPSHOT</beingUI.version>
     <generation.version>1.0.0-SNAPSHOT</generation.version>
+    <rules.version>1.0.0-SNAPSHOT</rules.version>
   </properties>
 </project>
 

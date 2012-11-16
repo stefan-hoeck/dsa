@@ -135,6 +135,11 @@
       <artifactId>generation</artifactId>
       <version>${generation.version}</version>
     </dependency>
+    <dependency>
+      <groupId>efa.dsa</groupId>
+      <artifactId>rules</artifactId>
+      <version>${rules.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
