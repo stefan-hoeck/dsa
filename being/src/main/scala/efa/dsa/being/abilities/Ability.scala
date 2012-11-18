@@ -2,7 +2,7 @@ package efa.dsa.being.abilities
 
 import efa.core.{UniqueId, EndoVal, Validators}
 import efa.dsa.being.loc
-import efa.rpg.core.{RpgItem, Described}
+import efa.rpg.core.{RpgItem, Described, HtmlTags}
 import scalaz._, Scalaz._
 
 case class Ability[A,B](item: A, data: B, names: Set[String]) (
@@ -11,8 +11,7 @@ case class Ability[A,B](item: A, data: B, names: Set[String]) (
   def name = AD name data
   def id = RI id item
   def desc = AD desc data
-  def shortDesc = RI shortDesc item
-  def fullDesc = RI fullDesc item
+  def fullDesc = "<P>%s</P>%s" format (desc, RI desc item)
   def isActive = AD isActive data
 
   lazy val nameVal: EndoVal[String] = Validators.endo (
@@ -24,7 +23,7 @@ case class Ability[A,B](item: A, data: B, names: Set[String]) (
   )
 }
 
-object Ability {
+object Ability extends HtmlTags {
   implicit def AbilityEqual[A:Equal,B:Equal] = Equal.equalA[Ability[A,B]]
 
   implicit def AbilityItem[A,B] =
@@ -32,8 +31,8 @@ object Ability {
       def name (a: Ability[A,B]) = a.name
       def id (a: Ability[A,B]) = name(a)
       def desc (a: Ability[A,B]) = a.desc
-      def shortDesc (a: Ability[A,B]) = a.shortDesc
-      def fullDesc (a: Ability[A,B]) = a.fullDesc
+      def shortDesc (a: Ability[A,B]) = html (a.name, a.desc)
+      def fullDesc (a: Ability[A,B]) = titleBody(a.name, a.fullDesc)
     }
 }
 

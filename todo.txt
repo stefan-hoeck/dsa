@@ -1,0 +1,126 @@
+# vim:sw=4:ts=4:syntax=todo
+
+*** Beings ***
+
+	#High 		Hero: When removing shields, ranged weapons,
+				melee weapons, or ammo clear hands if necessary
+
+*** Attributes ***
+
+	#Done		Max bought (calculate and display)	
+	#Low		Raise (and lower)	
+	#Low		Special Experience	
+
+*** Derived Values ***
+	
+	#Done		Max bought (calculate and display)	
+	#High		Include possibility to add AE through Grosse
+				Meditation
+	#Low		Raise and lower	
+	#Low		Special Experience for MR	
+	
+
+*** Talent View ***
+
+	#Done		Display BE	
+	#Done 		Display AT and PA for MeleeTalents	
+	#Medium		Popup actions for talent checks	
+
+*** Battle View ***
+
+	#Done		View for attack modes	
+	#Done		Display Exhaustion and Overstrain
+
+*** Equipment View ***
+
+	#Done		Include view
+	#Done		Display carried weight
+	#Done		Display carrying capacity
+	#Medium		Display owned money
+	#Medium		Include view for possessions not carried around as equipment
+	#Medium		Same for owned money not carried around
+
+
+*** Advantages ***
+	
+	#High		Adjust Tooltips for Advantages
+	#High		Adjust Tooltips for Disadvantages
+	#High		Adjust Tooltips for Feats
+	#Done		Ability to rename Advantages
+	#Done		Ability to rename Disadvantages
+	#Done		Ability to rename Feats
+	#Done		Edit Advantage description
+	#Done		Edit Disadvantage description
+	#Done		Edit Feat description
+	#High		Add missing feats.
+
+*** Talents ***
+
+	#High		Adjust Tooltips for Talents
+	#High		Adjust Tooltips for MeleeTalents
+	#High		Adjust Tooltips for RangedTalents
+	#High		Adjust Tooltips for Languages
+	#High		Adjust Tooltips for Scriptures
+	#High		Adjust Tooltips for Spells
+	#High		Adjust Tooltips for Rituals
+	#Medium		Adding spells (at least the raw data without
+				descriptions.
+
+*** Equipment ***
+
+	#High		Adjust Tooltips for MeleeWeapons
+	#High		Adjust Tooltips for RangedWeapons
+	#High		Adjust Tooltips for Ammunition
+	#High		Adjust Tooltips for Shields
+	#High		Adjust Tooltips for Armor
+	#High		Adjust Tooltips for ZoneArmor
+	#High		Adjust Tooltips for SimpleEquipment
+	#Done		Ability to rename MeleeWeapons
+	#Done		Ability to rename RangedWeapons
+	#Done		Ability to rename Ammunition
+	#Done		Ability to rename Shields
+	#Done		Ability to rename Armor
+	#Done		Ability to rename ZoneArmor
+	#Done		Ability to rename SimpleEquipment
+	#Done		Edit MeleeWeapons description
+	#Done		Edit RangedWeapons description
+	#Done		Edit Ammunition description
+	#Done		Edit Shield description
+	#Done		Edit Armor description
+	#Done		Edit ZoneArmor description
+	#Done		Edit SimpleEquipment description
+	#Done		Edit single weight and price for simple equipment
+
+*** UI ***
+
+	#High		Link lookups of multiviews
+	#Medium		Define preferred width for columns
+	#Medium		Store user settings for multiviews
+	#High		Allow to rename being files
+	#Done		Allow to disable/enable rules
+
+*** Rules ***
+  
+	#High		Calc overstrain from exhaustion
+	#High		Adjust KO to overstrain
+	#High		Adjust BE to overstrain
+	#High		Adjust AU to overstrain
+	#High		Include rules for Rüstungsgewöhnung
+	#High		Calculate Carrying Capacity from Strength
+	#High		Adjust GS to BE
+	#High		Adjust INI to BE
+	#High		Adjust values to basic wounds
+	#High		Calc max bought attributes
+	#High		Calc max bought le
+	#High		Calc max bought au
+	#High		Calc max bought ae
+	#High		Calc max bought mr
+	#High		Adjust values to low LE
+	#High		Adjust values to low AU
+	#Medium		Adjust values to ZoneWounds
+	#Low		Adjust AT and PA by -3 and TP by - 2 for Kleinwüchsige
+				when carrying weapons longer than 1.5 s.	
+	#High	    Divide BE from carried weight and armor by 2 before
+				applying it to GS for Zwergenwüchsige.
+	#High		Calculate carrying capacity (already displayed in
+				the UI)

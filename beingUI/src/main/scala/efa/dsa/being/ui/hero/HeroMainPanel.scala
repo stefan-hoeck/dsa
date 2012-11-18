@@ -4,15 +4,13 @@ import efa.dsa.being.{Hero, HeroData}
 import efa.dsa.being.abilities._
 import efa.dsa.being.ui.{loc, version ⇒ v}
 import efa.dsa.being.ui.abilities.{AbilitiesPanel, abilitiesPanel}
-import efa.nb.PureLookup
 import efa.nb.tc.PersistentComponent
 import efa.rpg.being.MVPanel
 import org.openide.util.Lookup
-import org.openide.util.lookup.ProxyLookup
 import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scalaz._, Scalaz._, effect.IO
 
-class HeroMainPanel (pl: PureLookup, abilitiesP: AbilitiesPanel)
+class HeroMainPanel (abilitiesP: AbilitiesPanel)
    extends MVPanel[Hero, HeroData] 
    with Lookup.Provider
    with PersistentComponent {
@@ -45,14 +43,13 @@ class HeroMainPanel (pl: PureLookup, abilitiesP: AbilitiesPanel)
   def prefId = "DSA_HeroMainPanel"
   def locName = loc.mainPanel
   override def persistentChildren = Nil
-  override lazy val getLookup = new ProxyLookup(pl.l)
+  override lazy val getLookup = abilitiesP.getLookup
 }
 
 object HeroMainPanel {
   def create: IO[HeroMainPanel] =  for {
-    l    ← PureLookup.apply
     advP ← abilitiesPanel
-    p    ← IO(new HeroMainPanel(l, advP))
+    p    ← IO(new HeroMainPanel(advP))
   } yield p
 }
 
