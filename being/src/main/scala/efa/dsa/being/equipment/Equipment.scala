@@ -3,7 +3,7 @@ package efa.dsa.being.equipment
 import efa.core.UniqueId
 import efa.dsa.being.{HumanoidBaseData ⇒ HBD}
 import efa.dsa.equipment.EquipmentItem
-import efa.rpg.core.Described
+import efa.rpg.core.{Described, HtmlTags}
 import scalaz.{Equal, Scalaz, State}
 
 case class Equipment[A,B](item: A, data: B, hands: HandsData)
@@ -12,8 +12,7 @@ case class Equipment[A,B](item: A, data: B, hands: HandsData)
   def id: Int = ED id data
   def parentId: Int = ED parentId data
   def desc: String = ED.desc get data
-  def shortDesc: String = EI shortDesc item
-  def fullDesc: String = EI fullDesc item
+  def fullDesc = "<P>%s</P>%s" format (desc, EI desc item)
   def price: Long = ED.price get data
   def weight: Long = ED.weight get data
 
@@ -24,7 +23,7 @@ case class Equipment[A,B](item: A, data: B, hands: HandsData)
   def rightEquipped: Boolean = ED rightEquipped (data, hands)
 }
 
-object Equipment {
+object Equipment extends HtmlTags {
   implicit def EquipmentEqual[A:Equal,B:Equal] = Equal.equalA[Equipment[A,B]]
 
   implicit def EquipmentItem[A,B] =
@@ -32,8 +31,8 @@ object Equipment {
       def name (a: Equipment[A,B]) = a.name
       def id (a: Equipment[A,B]) = a.id
       def desc (a: Equipment[A,B]) = a.desc
-      def shortDesc (a: Equipment[A,B]) = a.shortDesc
-      def fullDesc (a: Equipment[A,B]) = a.fullDesc
+      def shortDesc (a: Equipment[A,B]) = html(a.name, a.desc)
+      def fullDesc (a: Equipment[A,B]) = titleBody(a.name, a.fullDesc)
     }
 }
 

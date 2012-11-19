@@ -14,7 +14,7 @@ import scalaz._, Scalaz._, effect.IO
 
 abstract class GenPanel (
   l: HD @> GenData,
-  np: NodePanel[Hero,HD]
+  val np: NodePanel[Hero,HD]
 ) extends BeingPanel[Hero,HD] with Lookup.Provider {
   val nameC = textField("")
   val leC = number
@@ -69,15 +69,18 @@ object GenPanel {
   val locs = List(cLoc.valueLoc)
 
   def race: IO[GenPanel] = for {
-    n ← NodePanel[Hero,HD](ProtoNodes.all(HD.base.race.data), locs)
+    n ← NodePanel[Hero,HD](ProtoNodes.all(HD.base.race.data),
+          "DSA_raceGeneration_NodePanel", locs)
   } yield new GenAttributesPanel(HD.base.race, n)
 
   def culture: IO[GenPanel] = for {
-    n ← NodePanel[Hero,HD](ProtoNodes.all(HD.base.culture.data), locs)
+    n ← NodePanel[Hero,HD](ProtoNodes.all(HD.base.culture.data),
+          "DSA_cultureGeneration_NodePanel", locs)
   } yield new GenAttributesPanel(HD.base.culture, n)
 
   def profession: IO[GenPanel] = for {
-    n ← NodePanel[Hero,HD](ProtoNodes.all(HD.base.profession), locs)
+    n ← NodePanel[Hero,HD](ProtoNodes.all(HD.base.profession),
+          "DSA_professionGeneration_NodePanel", locs)
   } yield new ProfessionPanel(n)
 }
 

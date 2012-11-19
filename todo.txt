@@ -43,9 +43,9 @@
 
 *** Advantages ***
 	
-	#High		Adjust Tooltips for Advantages
-	#High		Adjust Tooltips for Disadvantages
-	#High		Adjust Tooltips for Feats
+	#Done		Adjust Tooltips for Advantages
+	#Done		Adjust Tooltips for Disadvantages
+	#Done		Adjust Tooltips for Feats
 	#Done		Ability to rename Advantages
 	#Done		Ability to rename Disadvantages
 	#Done		Ability to rename Feats
@@ -56,25 +56,25 @@
 
 *** Talents ***
 
-	#High		Adjust Tooltips for Talents
-	#High		Adjust Tooltips for MeleeTalents
-	#High		Adjust Tooltips for RangedTalents
-	#High		Adjust Tooltips for Languages
-	#High		Adjust Tooltips for Scriptures
-	#High		Adjust Tooltips for Spells
-	#High		Adjust Tooltips for Rituals
+	#Done		Adjust Tooltips for Talents
+	#Done		Adjust Tooltips for MeleeTalents
+	#Done		Adjust Tooltips for RangedTalents
+	#Done		Adjust Tooltips for Languages
+	#Done		Adjust Tooltips for Scriptures
+	#Done		Adjust Tooltips for Spells
+	#Done		Adjust Tooltips for Rituals
 	#Medium		Adding spells (at least the raw data without
-				descriptions.
+				descriptions).
 
 *** Equipment ***
 
-	#High		Adjust Tooltips for MeleeWeapons
-	#High		Adjust Tooltips for RangedWeapons
-	#High		Adjust Tooltips for Ammunition
-	#High		Adjust Tooltips for Shields
-	#High		Adjust Tooltips for Armor
-	#High		Adjust Tooltips for ZoneArmor
-	#High		Adjust Tooltips for SimpleEquipment
+	#Done		Adjust Tooltips for MeleeWeapons
+	#Done		Adjust Tooltips for RangedWeapons
+	#Done		Adjust Tooltips for Ammunition
+	#Done		Adjust Tooltips for Shields
+	#Done		Adjust Tooltips for Armor
+	#Done		Adjust Tooltips for ZoneArmor
+	#Done		Adjust Tooltips for SimpleEquipment
 	#Done		Ability to rename MeleeWeapons
 	#Done		Ability to rename RangedWeapons
 	#Done		Ability to rename Ammunition

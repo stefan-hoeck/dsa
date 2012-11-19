@@ -4,16 +4,14 @@ import efa.dsa.being.{Hero, HeroData}
 import efa.dsa.being.abilities._
 import efa.dsa.being.ui.{loc, version ⇒ v}
 import efa.dsa.being.ui.abilities.{AbilitiesPanel, abilitiesPanel}
-import efa.nb.tc.PersistentComponent
 import efa.rpg.being.MVPanel
-import org.openide.util.Lookup
 import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scalaz._, Scalaz._, effect.IO
 
 class HeroMainPanel (abilitiesP: AbilitiesPanel)
-   extends MVPanel[Hero, HeroData] 
-   with Lookup.Provider
-   with PersistentComponent {
+  extends MVPanel[Hero, HeroData] (
+    "DSA_HeroMainPanel", loc.mainPanel, efa.dsa.being.ui.version
+  ) {
 
   val baseP = new HeroBasePanel {border = titledBorder (loc.basePanel)}
 
@@ -39,10 +37,7 @@ class HeroMainPanel (abilitiesP: AbilitiesPanel)
     (lensedV(apP.set)(HeroData.base) ∙ (_.data)) ⊹
     (mapSt(abilitiesP.set)(HeroData.abilities) ∙ (_.abilities))
 
-  def version = v
-  def prefId = "DSA_HeroMainPanel"
-  def locName = loc.mainPanel
-  override def persistentChildren = Nil
+  override def persistentChildren = List(abilitiesP)
   override lazy val getLookup = abilitiesP.getLookup
 }
 

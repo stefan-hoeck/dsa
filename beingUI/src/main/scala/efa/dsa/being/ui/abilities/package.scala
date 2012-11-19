@@ -10,7 +10,7 @@ package object abilities {
   type AbilitiesPanel = NodePanel[Abilities,AbilityDatas]
 
   def abilitiesPanel: IO[AbilitiesPanel] =
-    NodePanel(AbilityNodes.default,
+    NodePanel(AbilityNodes.default, "DSA_abilities_NodePanel",
       List(cLoc.valueLoc, bLoc.isActiveLoc))
 
   implicit lazy val AdvantageEditable =

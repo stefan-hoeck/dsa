@@ -2,12 +2,10 @@ package efa.dsa.being.ui.hero
 
 import efa.dsa.being.{Hero, HeroData, loc ⇒ bLoc}
 import efa.dsa.being.skills._
-import efa.dsa.being.ui.{loc, version ⇒ v, NodePanel, BePanel, AttributesPanel}
+import efa.dsa.being.ui.{loc, NodePanel, BePanel, AttributesPanel}
 import efa.dsa.being.ui.skills.{SkillNodes ⇒ SN}
-import efa.nb.tc.PersistentComponent
 import efa.react.swing.GbPanel
 import efa.rpg.being.MVPanel
-import org.openide.util.Lookup
 import org.openide.util.lookup.ProxyLookup
 import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scalaz._, Scalaz._, effect.IO
@@ -16,9 +14,9 @@ class HeroTalentPanel(
   talentP: NodePanel[Skills,HeroData],
   meleeP: NodePanel[Skills,HeroData],
   languageP: NodePanel[Skills,HeroData]
-) extends MVPanel[Hero,HeroData]
-    with Lookup.Provider
-    with PersistentComponent {
+) extends MVPanel[Hero,HeroData] (
+  "DSA_HeroTalentPanel", loc.talentsPanel, efa.dsa.being.ui.version
+){
 
   val attributesP = new AttributesPanel[Hero,HeroData]
   val beP = new BePanel[Hero,HeroData]
@@ -46,10 +44,7 @@ class HeroTalentPanel(
     (lensedV(apP.set)(HeroData.base) ∙ (_.data)) ⊹
     beP.set
 
-  def version = v
-  override def prefId = "DSA_HeroTalentPanel"
-  def locName = loc.talentsPanel
-  override def persistentChildren = Nil //List(talentsP, battleP, languageP)
+  override def persistentChildren = List(talentP, meleeP, languageP)
   override lazy val getLookup =
     new ProxyLookup(talentP.getLookup, meleeP.getLookup,
       languageP.getLookup)
@@ -57,13 +52,13 @@ class HeroTalentPanel(
 
 object HeroTalentPanel {
   def create: IO[HeroTalentPanel] = for {
-    a ← NodePanel(SN.talentsOut,
+    a ← NodePanel(SN.talentsOut, "DSA_Talents_NodePanel",
       List(bLoc.tawLoc, bLoc.attributesLoc, bLoc.ebeLoc,
            bLoc.raisingCostLoc, bLoc.specialExpLoc))
-    b ← NodePanel(SN.battleOut,
+    b ← NodePanel(SN.battleOut, "DSA_BattleTalents_NodePanel",
       List(bLoc.tawLoc, bLoc.atLoc, bLoc.paLoc,
            bLoc.raisingCostLoc, bLoc.specialExpLoc))
-    c ← NodePanel(SN.languagesOut,
+    c ← NodePanel(SN.languagesOut, "DSA_Languages_NodePanel",
       List(bLoc.tawLoc, bLoc.raisingCostLoc, bLoc.specialExpLoc))
   } yield new HeroTalentPanel(a,b,c)
 }

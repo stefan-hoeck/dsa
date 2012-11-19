@@ -108,6 +108,7 @@ trait BeingLocal {
   def languages: String
   def le: String
   def lh: String
+  def lower: String
   def meleeTalents: String
   def mr: String
   def mrBody: String
@@ -118,6 +119,7 @@ trait BeingLocal {
   def position: String
   def profession: String
   def race: String
+  def raise: String
   def raisingCost: String
   def rangedTalents: String
   def raufen: String
@@ -215,6 +217,7 @@ object BeingLocal extends BeingLocal {
   def languages = "Sprachen"
   def le = "Lebensenergie"
   def lh = "Linke Hand"
+  def lower = "Senken"
   def meleeTalents = "Nahkampftalente"
   def mr = "Magieresistenz"
   def mrBody = "Magieresistenz Körper"
@@ -225,6 +228,7 @@ object BeingLocal extends BeingLocal {
   def position = "Stand"
   def profession = "Profession"
   def race = "Rasse"
+  def raise = "Steigern"
   def raisingCost = "Spalte"
   def rangedTalents = "Fernkampftalente"
   def raufen = "Raufen"

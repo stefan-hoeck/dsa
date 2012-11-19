@@ -2,12 +2,10 @@ package efa.dsa.being.ui.hero
 
 import efa.dsa.being.{Hero, HeroData, loc ⇒ bLoc}
 import efa.dsa.being._, equipment._
-import efa.dsa.being.ui.{loc, version ⇒ v, NodePanel, AttributesPanel}
+import efa.dsa.being.ui.{loc, NodePanel, AttributesPanel}
 import efa.dsa.being.ui.equipment.{EquipmentNodes ⇒ EN}
 import efa.dsa.equipment.{loc ⇒ eLoc}
-import efa.nb.tc.PersistentComponent
 import efa.rpg.being.{MVPanel, BeingPanel}
-import org.openide.util.Lookup
 import org.openide.util.lookup.ProxyLookup
 import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scalaz._, Scalaz._, effect.IO
@@ -16,9 +14,9 @@ class HeroBattlePanel (
   attackModeP: NodePanel[Hero,HeroData],
   armorP: NodePanel[Equipments,EquipmentDatas],
   weaponP: NodePanel[Equipments,HeroData]
-) extends MVPanel[Hero,HeroData]
-    with Lookup.Provider
-    with PersistentComponent {
+) extends MVPanel[Hero,HeroData] (
+  "DSA_HeroBattlePanel", loc.battlePanel, efa.dsa.being.ui.version
+) {
 
   val zoneRsP = new HeroZoneRsPanel
   val valuesP = new HeroBattleValues
@@ -41,24 +39,23 @@ class HeroBattlePanel (
     attackModeP.set ⊹ 
     valuesP.set
 
-  def version = v
-  override def prefId = "DSA_HeroBattlePanel"
-  def locName = loc.battlePanel
-  override def persistentChildren = Nil //List(equipmentP)
-  override lazy val getLookup =
-    new ProxyLookup(armorP.getLookup, weaponP.getLookup)
+  override def persistentChildren = List(armorP, weaponP, attackModeP)
+  override lazy val getLookup = new ProxyLookup(
+    armorP.getLookup, weaponP.getLookup, attackModeP.getLookup)
 }
 
 object HeroBattlePanel {
 
   def create: IO[HeroBattlePanel] = for {
-    a ← NodePanel[Hero,HeroData](EN.attackModesOut, List(
-      TpKey.loc, AtFkKey.loc, PaKey.loc, AwKey.loc, IniKey.loc))
-    b ← NodePanel(EN.armorsOut, List(
-      bLoc.rsLoc, bLoc.beLoc, bLoc.equippedLoc))
-    c ← NodePanel(EN.weaponsOut, List(eLoc.tpLoc, eLoc.tpkkLoc,
-      eLoc.wmLoc, eLoc.bfLoc, eLoc.iniLoc, eLoc.talentLoc,
-      bLoc.lhLoc, bLoc.rhLoc))
+    a ← NodePanel[Hero,HeroData](EN.attackModesOut,
+        "DSA_attackModes_NodePanel",
+        List(TpKey.loc, AtFkKey.loc, PaKey.loc, AwKey.loc, IniKey.loc))
+    b ← NodePanel(EN.armorsOut, "DSA_Armor_NodePanel",
+        List(bLoc.rsLoc, bLoc.beLoc, bLoc.equippedLoc))
+    c ← NodePanel(EN.weaponsOut, "DSA_Weapons_NodePanel",
+        List(eLoc.tpLoc, eLoc.tpkkLoc,
+        eLoc.wmLoc, eLoc.bfLoc, eLoc.iniLoc, eLoc.talentLoc,
+        bLoc.lhLoc, bLoc.rhLoc))
   } yield new HeroBattlePanel(a,b,c)
 
 }

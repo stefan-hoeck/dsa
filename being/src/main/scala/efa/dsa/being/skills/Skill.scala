@@ -3,7 +3,8 @@ package efa.dsa.being.skills
 import efa.core.UniqueId
 import efa.dsa.world.{Skt, RaisingCost}
 import efa.dsa.abilities.SkillItem
-import efa.rpg.core.{Modifier, Described}
+import efa.dsa.being.loc
+import efa.rpg.core.{Modifier, Described, HtmlTags}
 import scalaz._, Scalaz._
 
 case class Skill[A,B](
@@ -16,8 +17,6 @@ case class Skill[A,B](
   def name = SI name item
 
   def desc = SI desc item
-
-  def shortDesc = SI shortDesc item
 
   def fullDesc = SI fullDesc item
 
@@ -40,7 +39,7 @@ case class Skill[A,B](
     (tap ≟ 0) ? 0 | Skt.cost(rc, permanentTaw - 1)
 }
 
-object Skill {
+object Skill extends HtmlTags {
 
   implicit def SkillEqual[A:Equal,B:Equal]: Equal[Skill[A,B]] =
     Equal.equalA
@@ -56,8 +55,15 @@ object Skill {
       def name (a: Skill[A,B]) = a.name
       def id (a: Skill[A,B]) = a.id
       def desc (a: Skill[A,B]) = a.desc
-      def shortDesc (a: Skill[A,B]) = a.shortDesc
       def fullDesc (a: Skill[A,B]) = a.fullDesc
+
+      def shortDesc (a: Skill[A,B]) = {
+        def rcTag = (loc.raisingCost, a.rc.toString)
+        def raiseTag = (loc.raise, a.raiseAp.toString)
+        def lowerTag = (loc.lower, a.lowerAp.toString)
+
+        nameShortDesc (a.name, rcTag, raiseTag, lowerTag)
+      }
     }
 }
 
