@@ -62,17 +62,24 @@ object Hero extends Util {
 
   implicit lazy val HeroEqual = Equal.equalA[Hero]
 
-  implicit lazy val HeroTC = new Described[Hero] with Modified[Hero] {
+  implicit lazy val HeroTC = new Described[Hero] with AsHero[Hero] {
     def fullDesc (h: Hero) = h.data.base.desc
     def shortDesc (h: Hero) = h.data.base.desc
     def name (h: Hero) = h.data.base.name
     def desc (h: Hero) = h.data.base.desc
     val modifiersL = Hero.modifiers
+    val attributes = Hero.attributes
+    val derived = Hero.derived
   }
 
   val modifiers: Hero @> Modifiers =
     Lens.lensu((a,b) ⇒ a.copy(modifiers = b), _.modifiers)
   
+  val attributes: Hero @> HeroAttributes =
+    Lens.lensu((a,b) ⇒ a copy (attributes = b), _.attributes)
+
+  val derived: Hero @> HeroDerived =
+    Lens.lensu((a,b) ⇒ a copy (derived = b), _.derived)
 }
 
 // vim: set ts=2 sw=2 et:

@@ -3,7 +3,7 @@ package efa.dsa.being
 import efa.core.Default
 import efa.dsa.world.Attribute
 import efa.rpg.core.EnumMap
-import scalaz.{Scalaz, Equal}
+import scalaz.{Scalaz, Equal, Lens, @>}
 
 case class HeroAttributes (
   /**
@@ -36,9 +36,11 @@ object HeroAttributes {
 
     def immu(a: Attribute) = creation(a) + h.attributes.bought(a) 
 
-    lazy val creation = EnumMap(Attribute.values map (a ⇒ (a, crea(a))) toMap)
+    lazy val creation =
+      EnumMap(Attribute.values map (a ⇒ (a, crea(a))) toMap)
 
-    lazy val immutable = EnumMap(Attribute.values map (a ⇒ (a, immu(a))) toMap)
+    lazy val immutable =
+      EnumMap(Attribute.values map (a ⇒ (a, immu(a))) toMap)
 
     HeroAttributes(creation, immutable, EnumMap(0))
   }
@@ -46,6 +48,24 @@ object HeroAttributes {
   implicit lazy val HeroAttributesDefault = Default default default
 
   implicit lazy val HeroAttributesEqual = Equal.equalA[HeroAttributes]
+
+  val creation: HeroAttributes @> Attributes =
+    Lens.lensu((a,b) ⇒ a copy (creation = b), _.creation)
+
+  val immutable: HeroAttributes @> Attributes =
+    Lens.lensu((a,b) ⇒ a copy (immutable = b), _.immutable)
+  
+  val maxBought: HeroAttributes @> Attributes =
+    Lens.lensu((a,b) ⇒ a copy (maxBought = b), _.maxBought)
+  
+  case class HeroAttributesLenses[A] (l: A @> HeroAttributes) {
+    lazy val creation = l >=> HeroAttributes.creation
+    lazy val immutable = l >=> HeroAttributes.immutable
+    lazy val maxBouth = l >=> HeroAttributes.maxBought
+  }
+  
+  implicit def ToLenses[A] (l: A @> HeroAttributes) =
+    HeroAttributesLenses[A](l)
 }
 
 // vim: set ts=2 sw=2 et:
