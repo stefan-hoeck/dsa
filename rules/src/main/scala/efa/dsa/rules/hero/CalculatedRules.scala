@@ -1,5 +1,6 @@
 package efa.dsa.rules.hero
 
+import efa.core.Localization
 import efa.dsa.being._
 import efa.dsa.being.{AsHero ⇒ AH}
 import efa.dsa.being.calc.UtilFunctions
@@ -20,8 +21,8 @@ object CalculatedRules extends UtilFunctions {
     calcAt, calcFk, calcMr, calcIni, calcGs, calcWs)
 
   private def rule[A:AH] (
-    i: String, modName: String, key: ModifierKey, mod: Attributes ⇒ Int
-  ): Rule[A] = Rule.state[A](i, 
+    l: Localization, modName: String, key: ModifierKey, mod: Attributes ⇒ Int
+  ): Rule[A] = Rule.state[A](l.name, 
     for {
       a ← init[A]
       m = Modifier(modName, mod(AH[A].attributes.immutable get a))
@@ -29,38 +30,38 @@ object CalculatedRules extends UtilFunctions {
     } yield ()
   )
   
-  def calcLe[A:AH] = rule[A](loc.calcLeRule, loc.calcLe, LeKey, 
+  def calcLe[A:AH] = rule[A](loc.calcLeL, loc.calcLe, LeKey, 
     as ⇒ (as(Ko) + as(Ko) + as(Kk)) roundedDiv 2)
   
-  def calcAu[A:AH] = rule[A](loc.calcAuRule, loc.calcAu, AuKey, 
+  def calcAu[A:AH] = rule[A](loc.calcAuL, loc.calcAu, AuKey, 
     as ⇒ (as(Ge) + as(Ko) + as(Mu)) roundedDiv 2)
   
-  def calcPa[A:AH] = rule[A](loc.calcPaRule, loc.calcPa, PaKey, 
+  def calcPa[A:AH] = rule[A](loc.calcPaL, loc.calcPa, PaKey, 
     as ⇒ (as(Ge) + as(In) + as(Kk)) roundedDiv 5)
   
-  def calcAw[A:AH] = rule[A](loc.calcDodgeRule, loc.calcDodge, AwKey, 
+  def calcAw[A:AH] = rule[A](loc.calcDodgeL, loc.calcDodge, AwKey, 
     as ⇒ (as(Ge) + as(In) + as(Kk)) roundedDiv 5)
   
-  def calcAt[A:AH] = rule[A](loc.calcAtRule, loc.calcAt, AtKey, 
+  def calcAt[A:AH] = rule[A](loc.calcAtL, loc.calcAt, AtKey, 
     as ⇒ (as(Mu) + as(Kk) + as(Ge)) roundedDiv 5)
   
-  def calcFk[A:AH] = rule[A](loc.calcFkRule, loc.calcFk, FkKey, 
+  def calcFk[A:AH] = rule[A](loc.calcFkL, loc.calcFk, FkKey, 
     as ⇒ (as(In) + as(Ff) + as(Kk)) roundedDiv 5)
   
-  def calcMr[A:AH]= rule[A](loc.calcMrRule, loc.calcMr, MrKey, 
+  def calcMr[A:AH]= rule[A](loc.calcMrL, loc.calcMr, MrKey, 
     as ⇒ (as(Mu) + as(Kl) + as(Ko)) roundedDiv 5)
   
-  def calcIni[A:AH] = rule[A](loc.calcIniRule, loc.calcIni, IniKey, 
+  def calcIni[A:AH] = rule[A](loc.calcIniL, loc.calcIni, IniKey, 
     as ⇒ (as(Ge) + as(In) + as(Mu) + as(Mu)) roundedDiv 5)
   
-  def calcGs[A:AH] = rule[A](loc.calcGsRule, loc.calcGs, GsKey,
+  def calcGs[A:AH] = rule[A](loc.calcGsL, loc.calcGs, GsKey,
     _(Ge) match {
         case x if (x < 11) ⇒ 7  
         case x if (x > 15) ⇒ 9
         case _ ⇒ 8
     })
 
-  def calcWs[A:AH] = rule[A](loc.calcWoundThresholdRule,
+  def calcWs[A:AH] = rule[A](loc.calcWoundThresholdL,
     loc.calcWoundThreshold, WsKey, _(Ko) roundedDiv 2)
 }
 //  def all: List[Rule[Hero]] = calcAeRule :: heroAttributed[Hero] :::
