@@ -7,7 +7,7 @@ import efa.dsa.being.calc.spi.BeingCalcLocal
 import efa.dsa.equipment.EquipmentItems
 import scalaz._, Scalaz._
 
-package object calc extends UtilFunctions {
+package object calc {
   lazy val loc = Service.unique[BeingCalcLocal](BeingCalcLocal)
 
   def calcHero (hd: HeroData, ai: AbilityItems, ei: EquipmentItems): Hero = {

@@ -26,7 +26,8 @@ case class HeroAttributes (
 )
 
 object HeroAttributes {
-  lazy val default = HeroAttributes(EnumMap(0), EnumMap(0), EnumMap(0))
+  lazy val default = HeroAttributes(EnumMap(0), EnumMap(0),
+    EnumMap(maxBoughtAtt))
 
   def fromHeroData (h: HeroData): HeroAttributes = {
     def crea(a: Attribute): Int =
@@ -61,7 +62,7 @@ object HeroAttributes {
   case class HeroAttributesLenses[A] (l: A @> HeroAttributes) {
     lazy val creation = l >=> HeroAttributes.creation
     lazy val immutable = l >=> HeroAttributes.immutable
-    lazy val maxBouth = l >=> HeroAttributes.maxBought
+    lazy val maxBought = l >=> HeroAttributes.maxBought
   }
   
   implicit def ToLenses[A] (l: A @> HeroAttributes) =

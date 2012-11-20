@@ -17,42 +17,52 @@ import scalaz._, Scalaz._
  * miserabel and herausragend rules).
  */
 object CalculatedRules extends UtilFunctions {
-  def all[A:AH]: DList[Rule[A]] = DList(calcLe, calcAu, calcPa, calcAw,
-    calcAt, calcFk, calcMr, calcIni, calcGs, calcWs)
+  def all[A:AH]: DList[Rule[A]] = DList(calcAe, calcLe, calcAu, calcPa,
+    calcAw, calcAt, calcFk, calcMr, calcIni, calcGs, calcWs,
+    maxBoughtAe, maxBoughtAttribute)
+
+  private def immutable[A:AH](a: A) = AH[A].attributes.immutable get a
 
   private def rule[A:AH] (
-    l: Localization, modName: String, key: ModifierKey, mod: Attributes ⇒ Int
-  ): Rule[A] = Rule.state[A](l.name, 
-    for {
-      a ← init[A]
-      m = Modifier(modName, mod(AH[A].attributes.immutable get a))
-      _ ← AH[A].modifiersL add (key, m)
-    } yield ()
-  )
+    l: Localization, name: String, k: ModifierKey, v: Attributes ⇒ Int
+  ): Rule[A] = {
+    def m (a: A) = Modifier(name, v(immutable(a)))
+
+    Rule(l.name, a ⇒ addMod(a, k, m(a)))
+  }
   
-  def calcLe[A:AH] = rule[A](loc.calcLeL, loc.calcLe, LeKey, 
-    as ⇒ (as(Ko) + as(Ko) + as(Kk)) roundedDiv 2)
-  
-  def calcAu[A:AH] = rule[A](loc.calcAuL, loc.calcAu, AuKey, 
-    as ⇒ (as(Ge) + as(Ko) + as(Mu)) roundedDiv 2)
-  
-  def calcPa[A:AH] = rule[A](loc.calcPaL, loc.calcPa, PaKey, 
-    as ⇒ (as(Ge) + as(In) + as(Kk)) roundedDiv 5)
-  
-  def calcAw[A:AH] = rule[A](loc.calcDodgeL, loc.calcDodge, AwKey, 
-    as ⇒ (as(Ge) + as(In) + as(Kk)) roundedDiv 5)
+  def calcAe[A:AH]: Rule[A] = {
+    def calc(a: A): A = {
+      def fromAtts(f: Attributes ⇒ Int) = f (immutable(a))
+      def isMagician =
+          hasAdvantage(loc.vollzauberer, a) || 
+          hasAdvantage(loc.halbzauberer, a) ||
+          hasAdvantage(loc.viertelzauberer, a)
+      
+      def hasGefass = hasFeat(loc.gefass, a) || hasFeat(loc.sumus, a)
+
+      if (isMagician) {
+        if (hasGefass) addMod(a, AeKey, Modifier(loc.calcAeGef, fromAtts(
+          a ⇒ (a(Ch) + a(Ch) + a(In) + a(Mu)) roundedDiv 2)))
+        else addMod(a, AeKey, Modifier(loc.calcAe, fromAtts(
+          a ⇒ (a(Ch) + a(In) + a(Mu)) roundedDiv 2)))
+      } else a
+    }
+     
+    Rule(loc.calcAeL.name, calc)
+  }
   
   def calcAt[A:AH] = rule[A](loc.calcAtL, loc.calcAt, AtKey, 
     as ⇒ (as(Mu) + as(Kk) + as(Ge)) roundedDiv 5)
   
+  def calcAu[A:AH] = rule[A](loc.calcAuL, loc.calcAu, AuKey, 
+    as ⇒ (as(Ge) + as(Ko) + as(Mu)) roundedDiv 2)
+  
+  def calcAw[A:AH] = rule[A](loc.calcDodgeL, loc.calcDodge, AwKey, 
+    as ⇒ (as(Ge) + as(In) + as(Kk)) roundedDiv 5)
+  
   def calcFk[A:AH] = rule[A](loc.calcFkL, loc.calcFk, FkKey, 
     as ⇒ (as(In) + as(Ff) + as(Kk)) roundedDiv 5)
-  
-  def calcMr[A:AH]= rule[A](loc.calcMrL, loc.calcMr, MrKey, 
-    as ⇒ (as(Mu) + as(Kl) + as(Ko)) roundedDiv 5)
-  
-  def calcIni[A:AH] = rule[A](loc.calcIniL, loc.calcIni, IniKey, 
-    as ⇒ (as(Ge) + as(In) + as(Mu) + as(Mu)) roundedDiv 5)
   
   def calcGs[A:AH] = rule[A](loc.calcGsL, loc.calcGs, GsKey,
     _(Ge) match {
@@ -60,54 +70,37 @@ object CalculatedRules extends UtilFunctions {
         case x if (x > 15) ⇒ 9
         case _ ⇒ 8
     })
+  
+  def calcIni[A:AH] = rule[A](loc.calcIniL, loc.calcIni, IniKey, 
+    as ⇒ (as(Ge) + as(In) + as(Mu) + as(Mu)) roundedDiv 5)
+  
+  def calcLe[A:AH] = rule[A](loc.calcLeL, loc.calcLe, LeKey, 
+    as ⇒ (as(Ko) + as(Ko) + as(Kk)) roundedDiv 2)
+  
+  def calcMr[A:AH]= rule[A](loc.calcMrL, loc.calcMr, MrKey, 
+    as ⇒ (as(Mu) + as(Kl) + as(Ko)) roundedDiv 5)
+  
+  def calcPa[A:AH] = rule[A](loc.calcPaL, loc.calcPa, PaKey, 
+    as ⇒ (as(Ge) + as(In) + as(Kk)) roundedDiv 5)
 
   def calcWs[A:AH] = rule[A](loc.calcWoundThresholdL,
     loc.calcWoundThreshold, WsKey, _(Ko) roundedDiv 2)
+
+  def maxBoughtAe[A:AH]: Rule[A] = Rule.state(loc.maxBoughtAeL.name, for{
+    a ← init[A]
+    ch = immutable(a) apply (Ch)
+    _ ← AH[A].derived.maxBoughtAe := ch
+  } yield ())
+
+  def maxBoughtAttribute[A:AH]: Rule[A] = {
+    def maxBought (a: A) =
+      AH[A].attributes.creation get a map (_ roundedDiv 2)
+
+    Rule.state(loc.maxBoughtAttributeL.name, init[A] >>=
+      (a ⇒ AH[A].attributes.maxBought := maxBought(a) void))
+  }
+
 }
-//  def all: List[Rule[Hero]] = calcAeRule :: heroAttributed[Hero] :::
-//                              heroDerived[Hero]
-//
-//  def heroAttributed[H <: HeroAttributedBuilder[H]]: List[Rule[H]] =
-//    List(calcLeRule[H], calcAuRule[H], calcAtRule[H], calcPaRule[H],
-//         calcFkRule[H], calcMrRule[H], calcIniRule[H], calcGsRule[H],
-//         calcDodgeRule[H], calcWoundThresholdRule[H], maxBoughtAttributeRule[H])
-//  
-//  def heroDerived[H <: HeroDerivedBuilder[H]]: List[Rule[H]] =
-//    List(maxBoughtAeRule[H], maxBoughtAuRule[H], maxBoughtLeRule[H],
-//         maxBoughtMrRule[H])
-//
-//  val gefass = message("NAME_gefass") //Gefäss der Sterne
-//  val sumus = message("NAME_sumus") //Sumus Fülle
-//  
-//  
-//  def calcAeRule: Rule[Hero] = new Rule[Hero] {
-//    val id = "calcAeRule"
-//    def apply(h: Hero): Hero = {
-//      def fromAtts(n: Attributes => Int) = n(h.immutableAtts)
-//      
-//      if (h.hasAdvantage(AdvantagesRules.vollzauberer) || 
-//          h.hasAdvantage(AdvantagesRules.halbzauberer) ||
-//          h.hasAdvantage(AdvantagesRules.viertelzauberer)) {
-//        if (h.hasFeat(gefass) || h.hasFeat(sumus)) {
-//          h.addModifier(keyAe, Modifier(modCalcAeGef, fromAtts(
-//                a => (a(Ch) + a(Ch) + a(In) + a(Mu)) roundedDiv 2)))
-//        } else {
-//          h.addModifier(keyAe, Modifier(modCalcAe, fromAtts(
-//                a => (a(Ch) + a(In) + a(Mu)) roundedDiv 2)))
-//        }
-//      } else h
-//    }
-//  }
-//
-//  def maxBoughtAttributeRule[H <: HeroAttributedBuilder[H]]: Rule[H] = new Rule[H] {
-//    val id = "maxBoughtAttributeRule"
-//    def apply(h: H): H = {
-//      def calc(v: Int) = v roundedDiv 2
-//      val atts = Attribute.values map (a => (a, calc(h creationAtt a))) toMap
-//
-//      h maxBoughtAtts_= atts
-//    }
-//  }
 //
 //  def maxBoughtLeRule[H <: HeroDerivedBuilder[H]]: Rule[H] = new Rule[H] {
 //    val id = "maxBoughtLeRule"
@@ -117,11 +110,6 @@ object CalculatedRules extends UtilFunctions {
 //  def maxBoughtAuRule[H <: HeroDerivedBuilder[H]]: Rule[H] = new Rule[H] {
 //    val id = "maxBoughtAuRule"
 //    def apply(h: H): H = h maxBoughtAu_= (h immutableAtt Ko)
-//  }
-//
-//  def maxBoughtAeRule[H <: HeroDerivedBuilder[H]]: Rule[H] = new Rule[H] {
-//    val id = "maxBoughtAeRule"
-//    def apply(h: H): H = h maxBoughtAe_= (h immutableAtt Ch)
 //  }
 //
 //  def maxBoughtMrRule[H <: HeroDerivedBuilder[H]]: Rule[H] = new Rule[H] {

@@ -40,13 +40,13 @@ case class Hero (
 
   lazy val maxKe = intProp(KeKey)
 
-  def setAe (i: Int): ValSt[HeroData] = setDamage(ae, i, Humanoid.lostAe)
+  def setAe (i: Int): ValSt[HeroData] = setDamage(maxAe, i, Humanoid.lostAe)
 
-  def setAu (i: Int): ValSt[HeroData] = setDamage(au, i, Humanoid.lostAu)
+  def setAu (i: Int): ValSt[HeroData] = setDamage(maxAu, i, Humanoid.lostAu)
 
-  def setKe (i: Int): ValSt[HeroData] = setDamage(ke, i, Humanoid.lostKe)
+  def setKe (i: Int): ValSt[HeroData] = setDamage(maxKe, i, Humanoid.lostKe)
 
-  def setLe (i: Int): ValSt[HeroData] = setDamage(le, i, Humanoid.lostLe)
+  def setLe (i: Int): ValSt[HeroData] = setDamage(maxLe, i, Humanoid.lostLe)
 
   def setBoughtAttribute (a: Attribute, i: Int): ValSt[HeroData] =
     setInt(0, attributes maxBought a, i, Attributes.bought at a)
@@ -67,6 +67,7 @@ object Hero extends Util {
     def shortDesc (h: Hero) = h.data.base.desc
     def name (h: Hero) = h.data.base.name
     def desc (h: Hero) = h.data.base.desc
+    def abilities (h: Hero) = h.abilities
     val modifiersL = Hero.modifiers
     val attributes = Hero.attributes
     val derived = Hero.derived

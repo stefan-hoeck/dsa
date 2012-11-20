@@ -4,7 +4,7 @@ import efa.dsa.abilities.{AdvantageItem, HandicapItem, FeatItem}
 import efa.rpg.core.RangeVals
 import scalaz.@>
 
-package object abilities extends RangeVals {
+package object abilities {
   def Value = efa.dsa.generation.Value
 
   type Advantage = Ability[AdvantageItem,AdvantageData]

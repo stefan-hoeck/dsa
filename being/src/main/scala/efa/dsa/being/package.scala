@@ -13,12 +13,15 @@ package object being extends RangeVals {
   type Attributes = EnumMap[Attribute,Int]
   type ZoneWounds = EnumMap[BodyPart, Int]
 
-  private val (minBought, maxBought) = (0, 999)
-  private val (minLost, maxLost) = (0, Int.MaxValue)
+  val (minBought, maxBought) = (0, 999)
+  val (minBoughtAtt, maxBoughtAtt) = (0, 99)
+  val (minLost, maxLost) = (0, Int.MaxValue)
 
   val Ap = fullInfo(0, Int.MaxValue, "ap")
-  val BoughtAttributes =
-    EnumMaps.int[Attribute](0, 99, 0, "boughtAttributes")
+
+  val BoughtAttributes = EnumMaps.int[Attribute](
+    minBoughtAtt, maxBoughtAtt, 0, "boughtAttributes")
+
   val BoughtAe = fullInfo(minBought, maxBought, "boughtAe")
   val BoughtAu = fullInfo(minBought, maxBought, "boughtAu")
   val BoughtKe = fullInfo(minBought, maxBought, "boughtKe")
@@ -26,8 +29,10 @@ package object being extends RangeVals {
   val BoughtMr = fullInfo(minBought, maxBought, "boughtMr")
   val Exhaustion = fullInfo(0, 99, "exhaustion")
   val Height = fullInfo(0L, Long.MaxValue, "height")
+
   val InitialAttributes =
     EnumMaps.int[Attribute](0, 99, 8, "baseAttributes")
+
   val LostAe = fullInfo(minLost, maxLost, "damageAe")
   val LostAu = fullInfo(minLost, maxLost, "damageAu")
   val LostKe = fullInfo(minLost, maxLost, "damageKe")
@@ -36,6 +41,7 @@ package object being extends RangeVals {
   val Weight = fullInfo(0L, Long.MaxValue, "weight")
   val Wounds = fullInfo(0, 99, "wounds")
   val (zoneWoundsMax, zoneWoundsMin) = (3, 0)
+
   val ZoneWounds = EnumMaps.int[BodyPart](
     zoneWoundsMin, zoneWoundsMax, 0, "zoneWounds")
 
@@ -48,8 +54,10 @@ package object being extends RangeVals {
   val AuKey = ModifierKey(loc.auLoc, min, max)
   val AwKey = ModifierKey(loc.awLoc, min, max)
   val BeKey = ModifierKey(loc.beLoc, min, max)
+
   val CarryingCapacityKey =
     ModifierKey(loc.carryingCapacityLoc, 0L, Long.MaxValue)
+
   val FkKey = ModifierKey(loc.fkLoc, min, max)
   val GsKey = ModifierKey(loc.gsLoc, min, max)
   val IniKey = ModifierKey(loc.iniLoc, min, max)

@@ -22,7 +22,7 @@ case class HumanoidBaseData(
   zoneWounds: ZoneWounds,
   hands: HandsData
 ) {
-  require(LostAe validate lostAe isRight)
+  require(LostAe validate lostAe isRight, LostAe validate lostAe toString)
   require(LostAu validate lostAu isRight)
   require(LostKe validate lostKe isRight)
   require(LostLe validate lostLe isRight)

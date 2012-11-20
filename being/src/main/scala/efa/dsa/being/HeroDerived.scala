@@ -12,7 +12,8 @@ case class HeroDerived (
 )
 
 object HeroDerived {
-  lazy val default = HeroDerived(0L, 0L, 0L, 0L, 0L)
+  lazy val default = HeroDerived(maxBought, maxBought, maxBought,
+    maxBought, 0L)
 
   implicit lazy val HeroDerivedDefault = Default default default
 
@@ -34,10 +35,10 @@ object HeroDerived {
     Lens.lensu((a,b) ⇒ a copy (iniBase = b), _.iniBase)
   
   case class HeroDerivedLenses[A] (l: A @> HeroDerived) {
-    lazy val maxBouthAe = l >=> HeroDerived.maxBoughtAe
-    lazy val maxBouthAu = l >=> HeroDerived.maxBoughtAu
-    lazy val maxBouthLe = l >=> HeroDerived.maxBoughtLe
-    lazy val maxBouthMr = l >=> HeroDerived.maxBoughtMr
+    lazy val maxBoughtAe = l >=> HeroDerived.maxBoughtAe
+    lazy val maxBoughtAu = l >=> HeroDerived.maxBoughtAu
+    lazy val maxBoughtLe = l >=> HeroDerived.maxBoughtLe
+    lazy val maxBoughtMr = l >=> HeroDerived.maxBoughtMr
     lazy val iniBase = l >=> HeroDerived.iniBase
   }
   
