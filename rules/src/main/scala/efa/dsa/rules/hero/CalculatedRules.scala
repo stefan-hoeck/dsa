@@ -12,14 +12,15 @@ import scalaz._, Scalaz._
 
 /**
  * The following rules depend on a Hero's attributes and must
- * therefore be cal-
- * culated AFTER all rules that modify a Hero's attributes (especially the
+ * therefore be calculated AFTER all rules that modify
+ * a Hero's attributes (especially the
  * miserabel and herausragend rules).
  */
 object CalculatedRules extends UtilFunctions {
   def all[A:AH]: DList[Rule[A]] = DList(calcAe, calcLe, calcAu, calcPa,
     calcAw, calcAt, calcFk, calcMr, calcIni, calcGs, calcWs,
-    maxBoughtAe, maxBoughtAttribute)
+    maxBoughtAe, maxBoughtAttribute, maxBoughtAu, maxBoughtLe,
+    maxBoughtMr)
 
   private def immutable[A:AH](a: A) = AH[A].attributes.immutable get a
 
@@ -97,25 +98,24 @@ object CalculatedRules extends UtilFunctions {
       AH[A].attributes.creation get a map (_ roundedDiv 2)
 
     Rule.state(loc.maxBoughtAttributeL.name, init[A] >>=
-      (a ⇒ AH[A].attributes.maxBought := maxBought(a) void))
+      (AH[A].attributes.maxBought := maxBought(_) void))
   }
 
+  def maxBoughtAu[A:AH]: Rule[A] = Rule.state (loc.maxBoughtAuL.name, 
+    init[A] >>= (a ⇒ AH[A].derived.maxBoughtAu :=
+    (immutable(a) apply Ko) void)
+  )
+
+  def maxBoughtLe[A:AH]: Rule[A] = Rule.state (loc.maxBoughtLeL.name, 
+    init[A] >>= (a ⇒ AH[A].derived.maxBoughtLe :=
+    (immutable(a) apply Ko roundedDiv 2) void)
+  )
+
+  def maxBoughtMr[A:AH]: Rule[A] = Rule.state (loc.maxBoughtMrL.name, 
+    init[A] >>= (a ⇒ AH[A].derived.maxBoughtMr :=
+    (immutable(a) apply Mu roundedDiv 2) void)
+  )
+
 }
-//
-//  def maxBoughtLeRule[H <: HeroDerivedBuilder[H]]: Rule[H] = new Rule[H] {
-//    val id = "maxBoughtLeRule"
-//    def apply(h: H): H = h maxBoughtLe_= (h immutableAtt Ko roundedDiv 2)
-//  }
-//
-//  def maxBoughtAuRule[H <: HeroDerivedBuilder[H]]: Rule[H] = new Rule[H] {
-//    val id = "maxBoughtAuRule"
-//    def apply(h: H): H = h maxBoughtAu_= (h immutableAtt Ko)
-//  }
-//
-//  def maxBoughtMrRule[H <: HeroDerivedBuilder[H]]: Rule[H] = new Rule[H] {
-//    val id = "maxBoughtMrRule"
-//    def apply(h: H): H = h maxBoughtMr_= (h immutableAtt Mu roundedDiv 2)
-//  }
-//}
 
 // vim: set ts=2 sw=2 et:

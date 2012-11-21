@@ -8,6 +8,15 @@ trait HasAbilities[-A] {
   def handicaps (a: A): Map[String,Handicap] = abilities(a).handicaps
   def feats (a: A): Map[String,Feat] = abilities(a).feats
 
+  def activeFeat (name: String, a: A): Option[Feat] =
+    getActive(name, feats(a))
+
+  def advantageValue (name: String, a: A): Option[Int] =
+    getActive(name, advantages(a)) map (_.data.value)
+
+  def handicapValue (name: String, a: A): Option[Int] =
+    getActive(name, handicaps(a)) map (_.data.value)
+
   def hasAdvantage (name: String, a: A): Boolean =
     hasAbility(name, advantages(a))
 

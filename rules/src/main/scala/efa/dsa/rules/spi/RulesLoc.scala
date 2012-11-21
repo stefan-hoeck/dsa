@@ -1,6 +1,7 @@
 package efa.dsa.rules.spi
 
 import efa.core.{Localization ⇒ L}
+import efa.dsa.world.Attribute, Attribute._
 
 trait RulesLoc {
   lazy val akrobatikDodgeL = L("akrobatikDodge", akrobatikDodgeRule, descAkrobatikDodgeRule, akrobatikDodgeRule)
@@ -42,6 +43,7 @@ trait RulesLoc {
   lazy val halbzaubererAeL = L("halbzaubererAe", halbzaubererAeRule, descHalbzaubererAeRule, halbzaubererAeRule)
   lazy val halbzaubererMrL = L("halbzaubererMr", halbzaubererMrRule, descHalbzaubererMrRule, halbzaubererMrRule)
   lazy val herausragendeEigenschaftL = L("herausragendeEigenschaft", herausragendeEigenschaftRule, descHerausragendeEigenschaftRule, herausragendeEigenschaftRule)
+  lazy val herausragendMap = Map[Attribute,String](Ch → herausragendch, Ff → herausragendff, Ge → herausragendge, In → herausragendin, Kk → herausragendkk, Kl → herausragendkl, Ko → herausragendko, Mu → herausragendmu)
   lazy val hoheLebenskraftL = L("hoheLebenskraft", hoheLebenskraftRule, descHoheLebenskraftRule, hoheLebenskraftRule)
   lazy val hoheMagieresistenzL = L("hoheMagieresistenz", hoheMagieresistenzRule, descHoheMagieresistenzRule, hoheMagieresistenzRule)
   lazy val iniBeL = L("iniBe", iniBeRule, descIniBeRule, iniBeRule)
@@ -66,6 +68,7 @@ trait RulesLoc {
   lazy val meleeWeaponIniL = L("meleeWeaponIni", meleeWeaponIniRule, descMeleeWeaponIniRule, meleeWeaponIniRule)
   lazy val meleeWeaponWmL = L("meleeWeaponWm", meleeWeaponWmRule, descMeleeWeaponWmRule, meleeWeaponWmRule)
   lazy val miserableEigenschaftL = L("miserableEigenschaft", miserableEigenschaftRule, descMiserableEigenschaftRule, miserableEigenschaftRule)
+  lazy val miserabelMap = Map[Attribute,String](Ch → miserabelch, Ff → miserabelff, Ge → miserabelge, In → miserabelin, Kk → miserabelkk, Kl → miserabelkl, Ko → miserabelko, Mu → miserabelmu)
   lazy val niedrigeLebenskraftL = L("niedrigeLebenskraft", niedrigeLebenskraftRule, descNiedrigeLebenskraftRule, niedrigeLebenskraftRule)
   lazy val niedrigeMagieresistenzL = L("niedrigeMagieresistenz", niedrigeMagieresistenzRule, descNiedrigeMagieresistenzRule, niedrigeMagieresistenzRule)
   lazy val overstrainAuL = L("overstrainAu", overstrainAuRule, descOverstrainAuRule, overstrainAuRule)
