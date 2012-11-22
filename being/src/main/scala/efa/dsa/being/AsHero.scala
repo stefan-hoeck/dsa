@@ -6,7 +6,7 @@ import efa.rpg.core.Modified
 import scalaz.@>
 
 trait AsHero[A]
-   extends Modified[A]
+   extends AsBeing[A]
    with HasAbilities[A]
    with HasEquipment[A] {
   def attributes: A @> HeroAttributes

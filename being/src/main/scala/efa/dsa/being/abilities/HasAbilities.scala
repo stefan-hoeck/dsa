@@ -36,15 +36,25 @@ trait HasAbilities[-A] {
 }
 
 trait HasAbilitiesFunctions {
+  import efa.dsa.being.abilities.{HasAbilities ⇒ HA}
 
-  def hasAdvantage[A:HasAbilities] (name: String, a: A): Boolean =
-    HasAbilities[A] hasAdvantage (name, a)
+  def activeFeat[A:HA] (name: String, a: A): Option[Feat] =
+    HA[A] activeFeat (name, a)
 
-  def hasFeat[A:HasAbilities] (name: String, a: A): Boolean =
-    HasAbilities[A] hasFeat (name, a)
+  def advantageValue[A:HA] (name: String, a: A): Option[Int] =
+    HA[A] advantageValue (name, a)
 
-  def hasHandicap[A:HasAbilities] (name: String, a: A): Boolean =
-    HasAbilities[A] hasHandicap (name, a)
+  def handicapValue[A:HA] (name: String, a: A): Option[Int] =
+    HA[A] handicapValue (name, a)
+
+  def hasAdvantage[A:HA] (name: String, a: A): Boolean =
+    HA[A] hasAdvantage (name, a)
+
+  def hasFeat[A:HA] (name: String, a: A): Boolean =
+    HA[A] hasFeat (name, a)
+
+  def hasHandicap[A:HA] (name: String, a: A): Boolean =
+    HA[A] hasHandicap (name, a)
 }
 
 object HasAbilities extends HasAbilitiesFunctions {

@@ -32,7 +32,7 @@ object HerausragendRule extends ModRules {
       def mod (v: Int): A = (
         (AH[A].attributes.immutable.at(att) += v) >>
         (AH[A].attributes.creation.at(att) += v) >>
-        (AH[A].modifiersL.add (attributeKeyFor(att), Modifier(name, v)))
+        addModS[A] (attributeKeyFor(att), Modifier(name, v))
       ) exec a
 
       value(AH[A])(name, a) flatMap notZero fold (mod, a)

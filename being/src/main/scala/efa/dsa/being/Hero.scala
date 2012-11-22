@@ -63,12 +63,16 @@ object Hero extends Util {
   implicit lazy val HeroEqual = Equal.equalA[Hero]
 
   implicit lazy val HeroTC = new Described[Hero] with AsHero[Hero] {
-    def fullDesc (h: Hero) = h.data.base.desc
-    def shortDesc (h: Hero) = h.data.base.desc
-    def name (h: Hero) = h.data.base.name
-    def desc (h: Hero) = h.data.base.desc
     def abilities (h: Hero) = h.abilities
+    def au (h: Hero) = h.au
+    def desc (h: Hero) = h.data.base.desc
     def equipment (h: Hero) = h.equipment
+    def exhaustion (h: Hero) = h.data.humanoid.exhaustion
+    def fullDesc (h: Hero) = h.data.base.desc
+    def le (h: Hero) = h.le
+    def name (h: Hero) = h.data.base.name
+    def shortDesc (h: Hero) = h.data.base.desc
+
     val modifiersL = Hero.modifiers
     val attributes = Hero.attributes
     val derived = Hero.derived

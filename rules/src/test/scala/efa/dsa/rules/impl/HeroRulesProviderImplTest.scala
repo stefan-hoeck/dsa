@@ -13,9 +13,12 @@ object HeroRulesProviderImplTest extends Properties("HeroRulesProviderImpl") {
     val hrp = new HeroRulesProviderImpl
     val rp = new RulesProviderImpl
 
+    val ids = hrp.get.toList map (_.id)
     val names = rp.get.toList >>= (_.allData.toList ∘ (_.name)) toSet
 
-    hrp.get.toList ∀ (names apply _.id)
+    (ids ∀ names) :| "ids found in RulesProvider" &&
+    (ids.toSet.size ≟ ids.size) :| ("all ids unique: " + ids.mkString("\n"))
+
   }
 }
 

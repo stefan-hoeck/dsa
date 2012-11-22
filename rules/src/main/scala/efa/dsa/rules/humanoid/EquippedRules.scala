@@ -38,8 +38,8 @@ object EquippedRules extends FADRules {
   def carriedWeight[A:HE:M]: Rule[A] = {
     def equippedM (e: Equipment[_,_]) = Modifier(e.name, e.fullWeight rdiv 2L)
     def unequippedM (e: Equipment[_,_]) = Modifier(e.name, e.fullWeight)
-    def all (a: A) = (HE[A] allEquipped a map equippedM) :::
-      (HE[A] allUnequipped a map unequippedM)
+    def all (a: A) =
+      (allEquipped(a) map equippedM) ::: (allUnequipped(a) map unequippedM)
 
     Rule(Loc.carriedWeightL.name, a ⇒ addMods(a, WeightKey, all(a)))
   }
@@ -49,8 +49,7 @@ object EquippedRules extends FADRules {
    * armor
    */
   def rs[A:HE:M]: Rule[A] = {
-    def all (a: A) =
-      HE[A] equippedArmor a map (e ⇒ Modifier(e.name, e.data.rs))
+    def all (a: A) = equippedArmor(a) map (e ⇒ Modifier(e.name, e.data.rs))
 
     Rule(Loc.armorRsL.name, a ⇒ addMods(a, RsKey, all(a)))
   }
@@ -81,8 +80,7 @@ object EquippedRules extends FADRules {
    * armor
    */
   def be[A:HE:M]: Rule[A] = {
-    def all (a: A) =
-      HE[A] equippedArmor a map (e ⇒ Modifier(e.name, e.data.be))
+    def all (a: A) = equippedArmor(a) map (e ⇒ Modifier(e.name, e.data.be))
 
     Rule(Loc.armorBeL.name, a ⇒ addMods(a, BeKey, all(a)))
   }
@@ -96,7 +94,7 @@ object EquippedRules extends FADRules {
 
       def zoneMods (a: A, za: ZoneArmor) = (a /: BodyPart.values)(addZa(za))
 
-      (averageMod /: HE[A].equippedZoneArmor(a))(zoneMods)
+      (averageMod /: equippedZoneArmor(a))(zoneMods)
     }
 
     Rule(Loc.zoneArmorRsL.name, calc)
@@ -108,17 +106,17 @@ object EquippedRules extends FADRules {
   private val KkKey = attributeKeyFor(Attribute.Kk)
   
   private def calcArmorBe[A:HE](a: A): Long = 
-    calcZoneBe(a) + (HE[A] equippedArmor a foldMap (_.data.be))
+    calcZoneBe(a) + (equippedArmor(a) foldMap (_.data.be))
   
   private def calcZoneRs[A:HE](a: A): Int = {
     def rs (za: ZoneArmor) =
       BodyPart.values foldMap (b ⇒ za.data.rs(b) * b.factor)
 
-    HE[A] equippedZoneArmor a foldMap rs rdiv BodyPart.factorSum
+    equippedZoneArmor(a) foldMap rs rdiv BodyPart.factorSum
   }
   
   private def calcZoneBe[A:HE](a: A): Long =
-    HE[A] equippedZoneArmor a foldMap (_.data.be) rdiv 10 
+    equippedZoneArmor(a) foldMap (_.data.be) rdiv 10 
 
   private def cc2be[A:M](a: A): Long = {
     val cc = prop(a, CarryingCapacityKey)

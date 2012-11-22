@@ -43,6 +43,33 @@ trait HasEquipment[-A] {
     as.toList ∘ (_._2)
 }
 
+trait HasEquipmentFunctions {
+  import efa.dsa.being.equipment.{HasEquipment ⇒ HE}
+
+  def equipment[A:HE] (a: A): Equipments = HE[A] equipment a
+  def ammunition[A:HE] (a: A): DB[Ammunition] =HE[A] ammunition a 
+  def armor[A:HE] (a: A): DB[Armor] = HE[A] armor a
+  def articles[A:HE] (a: A): DB[Article] = HE[A] articles a
+  def meleeWeapons[A:HE] (a: A): DB[MeleeWeapon] = HE[A] meleeWeapons a
+  def rangedWeapons[A:HE] (a: A): DB[RangedWeapon] = HE[A] rangedWeapons a
+  def shields[A:HE] (a: A): DB[Shield] = HE[A] shields a
+  def zoneArmor[A:HE] (a: A): DB[ZoneArmor] = HE[A] zoneArmor a
+  def allEquipped[A:HE] (a: A): List[Equipment[_,_]] = HE[A] allEquipped a
+
+  def allUnequipped[A:HE] (a: A): List[Equipment[_,_]] =
+    HE[A] allUnequipped a
+
+  def equippedArmor[A:HE] (a: A): List[Armor] = HE[A] equippedArmor a
+
+  def equippedZoneArmor[A:HE] (a: A): List[ZoneArmor] =
+    HE[A] equippedZoneArmor a
+
+  def unequippedArmor[A:HE] (a: A): List[Armor] = HE[A] unequippedArmor a
+
+  def unequippedZoneArmor[A:HE] (a: A): List[ZoneArmor] =
+    HE[A] unequippedZoneArmor a
+}
+
 object HasEquipment {
   def apply[A:HasEquipment]: HasEquipment[A] = implicitly
 }

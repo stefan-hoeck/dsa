@@ -11,7 +11,9 @@ class HeroRulesProviderImpl extends HeroRulesProvider {
     AdvantagesRules.all[Hero] ++
     HerausragendRule.all ++
     EquippedRules.all ++
-    CalculatedRules.all
+    CalculatedRules.all ++
+    ExhaustionRules.all ++
+    BeRules.all
 }
 
 // vim: set ts=2 sw=2 et:

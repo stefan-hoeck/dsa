@@ -3,8 +3,7 @@ package efa.dsa.rules.hero
 import efa.core.Localization
 import efa.dsa.being._
 import efa.dsa.being.{AsHero ⇒ AH}
-import efa.dsa.being.calc.UtilFunctions
-import efa.dsa.rules.loc
+import efa.dsa.rules.{loc, ModRules}
 import efa.dsa.world._, Attribute._
 import efa.rpg.core.{ModifierKey, Modifier}
 import efa.rpg.rules.Rule
@@ -16,7 +15,7 @@ import scalaz._, Scalaz._
  * a Hero's attributes (especially the
  * miserabel and herausragend rules).
  */
-object CalculatedRules extends UtilFunctions {
+object CalculatedRules extends ModRules {
   def all[A:AH]: DList[Rule[A]] = DList(calcAe, calcLe, calcAu, calcPa,
     calcAw, calcAt, calcFk, calcMr, calcIni, calcGs, calcWs,
     maxBoughtAe, maxBoughtAttribute, maxBoughtAu, maxBoughtLe,
