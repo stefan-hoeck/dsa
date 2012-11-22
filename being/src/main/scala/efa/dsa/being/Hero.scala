@@ -68,6 +68,7 @@ object Hero extends Util {
     def name (h: Hero) = h.data.base.name
     def desc (h: Hero) = h.data.base.desc
     def abilities (h: Hero) = h.abilities
+    def equipment (h: Hero) = h.equipment
     val modifiersL = Hero.modifiers
     val attributes = Hero.attributes
     val derived = Hero.derived

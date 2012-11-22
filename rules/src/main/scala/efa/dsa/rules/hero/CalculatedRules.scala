@@ -44,9 +44,9 @@ object CalculatedRules extends UtilFunctions {
 
       if (isMagician) {
         if (hasGefass) addMod(a, AeKey, Modifier(loc.calcAeGef, fromAtts(
-          a ⇒ (a(Ch) + a(Ch) + a(In) + a(Mu)) roundedDiv 2)))
+          a ⇒ (a(Ch) + a(Ch) + a(In) + a(Mu)) rdiv 2)))
         else addMod(a, AeKey, Modifier(loc.calcAe, fromAtts(
-          a ⇒ (a(Ch) + a(In) + a(Mu)) roundedDiv 2)))
+          a ⇒ (a(Ch) + a(In) + a(Mu)) rdiv 2)))
       } else a
     }
      
@@ -54,16 +54,16 @@ object CalculatedRules extends UtilFunctions {
   }
   
   def calcAt[A:AH] = rule[A](loc.calcAtL, loc.calcAt, AtKey, 
-    as ⇒ (as(Mu) + as(Kk) + as(Ge)) roundedDiv 5)
+    as ⇒ (as(Mu) + as(Kk) + as(Ge)) rdiv 5)
   
   def calcAu[A:AH] = rule[A](loc.calcAuL, loc.calcAu, AuKey, 
-    as ⇒ (as(Ge) + as(Ko) + as(Mu)) roundedDiv 2)
+    as ⇒ (as(Ge) + as(Ko) + as(Mu)) rdiv 2)
   
   def calcAw[A:AH] = rule[A](loc.calcDodgeL, loc.calcDodge, AwKey, 
-    as ⇒ (as(Ge) + as(In) + as(Kk)) roundedDiv 5)
+    as ⇒ (as(Ge) + as(In) + as(Kk)) rdiv 5)
   
   def calcFk[A:AH] = rule[A](loc.calcFkL, loc.calcFk, FkKey, 
-    as ⇒ (as(In) + as(Ff) + as(Kk)) roundedDiv 5)
+    as ⇒ (as(In) + as(Ff) + as(Kk)) rdiv 5)
   
   def calcGs[A:AH] = rule[A](loc.calcGsL, loc.calcGs, GsKey,
     _(Ge) match {
@@ -73,19 +73,19 @@ object CalculatedRules extends UtilFunctions {
     })
   
   def calcIni[A:AH] = rule[A](loc.calcIniL, loc.calcIni, IniKey, 
-    as ⇒ (as(Ge) + as(In) + as(Mu) + as(Mu)) roundedDiv 5)
+    as ⇒ (as(Ge) + as(In) + as(Mu) + as(Mu)) rdiv 5)
   
   def calcLe[A:AH] = rule[A](loc.calcLeL, loc.calcLe, LeKey, 
-    as ⇒ (as(Ko) + as(Ko) + as(Kk)) roundedDiv 2)
+    as ⇒ (as(Ko) + as(Ko) + as(Kk)) rdiv 2)
   
   def calcMr[A:AH]= rule[A](loc.calcMrL, loc.calcMr, MrKey, 
-    as ⇒ (as(Mu) + as(Kl) + as(Ko)) roundedDiv 5)
+    as ⇒ (as(Mu) + as(Kl) + as(Ko)) rdiv 5)
   
   def calcPa[A:AH] = rule[A](loc.calcPaL, loc.calcPa, PaKey, 
-    as ⇒ (as(Ge) + as(In) + as(Kk)) roundedDiv 5)
+    as ⇒ (as(Ge) + as(In) + as(Kk)) rdiv 5)
 
   def calcWs[A:AH] = rule[A](loc.calcWoundThresholdL,
-    loc.calcWoundThreshold, WsKey, _(Ko) roundedDiv 2)
+    loc.calcWoundThreshold, WsKey, _(Ko) rdiv 2)
 
   def maxBoughtAe[A:AH]: Rule[A] = Rule.state(loc.maxBoughtAeL.name, for{
     a ← init[A]
@@ -95,7 +95,7 @@ object CalculatedRules extends UtilFunctions {
 
   def maxBoughtAttribute[A:AH]: Rule[A] = {
     def maxBought (a: A) =
-      AH[A].attributes.creation get a map (_ roundedDiv 2)
+      AH[A].attributes.creation get a map (_ rdiv 2)
 
     Rule.state(loc.maxBoughtAttributeL.name, init[A] >>=
       (AH[A].attributes.maxBought := maxBought(_) void))
@@ -108,12 +108,12 @@ object CalculatedRules extends UtilFunctions {
 
   def maxBoughtLe[A:AH]: Rule[A] = Rule.state (loc.maxBoughtLeL.name, 
     init[A] >>= (a ⇒ AH[A].derived.maxBoughtLe :=
-    (immutable(a) apply Ko roundedDiv 2) void)
+    (immutable(a) apply Ko rdiv 2) void)
   )
 
   def maxBoughtMr[A:AH]: Rule[A] = Rule.state (loc.maxBoughtMrL.name, 
     init[A] >>= (a ⇒ AH[A].derived.maxBoughtMr :=
-    (immutable(a) apply Mu roundedDiv 2) void)
+    (immutable(a) apply Mu rdiv 2) void)
   )
 
 }

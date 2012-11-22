@@ -10,6 +10,9 @@ trait UtilFunctions extends HasAbilitiesFunctions {
   def addMod[A:Modified] (a: A, k: ModifierKey, m: Modifier): A =
     Modified[A].modifiersL add (k, m) exec a
 
+  def addMods[A:Modified] (a: A, k: ModifierKey, ms: List[Modifier]): A =
+    Modified[A].modifiersL add (k, ms) exec a
+
   def prop[A:HasModifiers] (a: A, k: ModifierKey): Long = property(a, k)
 }
 

@@ -1,10 +1,14 @@
 package efa.dsa.being
 
 import abilities.HasAbilities
+import equipment.HasEquipment
 import efa.rpg.core.Modified
 import scalaz.@>
 
-trait AsHero[A] extends Modified[A] with HasAbilities[A] {
+trait AsHero[A]
+   extends Modified[A]
+   with HasAbilities[A]
+   with HasEquipment[A] {
   def attributes: A @> HeroAttributes
   def derived: A @> HeroDerived
 }

@@ -15,9 +15,9 @@ object RoundedDivisibleIntTest extends Properties ("RoundedDivisible") {
     half * 2 >= i
   }
 
-  property ("roundedDivInt") = Prop.forAll (intsGen) { p ⇒ 
+  property ("rdivInt") = Prop.forAll (intsGen) { p ⇒ 
     val (a, b) = p
-    val rd = a roundedDiv b
+    val rd = a rdiv b
     val half = b / 2
     val rest5 = ((b % 2) ≟ 0) && ((a % b) ≟ half)
     val diff = rd * b - a
@@ -37,9 +37,9 @@ object RoundedDivisibleIntTest extends Properties ("RoundedDivisible") {
     half * 2L >= i
   }
 
-  property ("roundedDivLong") = Prop.forAll (longsGen) { p ⇒ 
+  property ("rdivLong") = Prop.forAll (longsGen) { p ⇒ 
     val (a, b) = p
-    val rd = a roundedDiv b
+    val rd = a rdiv b
     val half = b / 2L
     val rest5 = ((b % 2L) ≟ 0L) && ((a % b) ≟ half)
     val diff = rd * b - a

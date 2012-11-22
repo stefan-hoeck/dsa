@@ -19,7 +19,7 @@ trait FADRules extends ModRules {
   def featRule[A:HA:M](
     l: Localization,
     name: String,
-    f: A ⇒ Int,
+    f: A ⇒ Long,
     k: ModifierKey
   ): Rule[A] = Rule(l.name, featMod (_, name, k)(f))
 
@@ -32,15 +32,15 @@ trait FADRules extends ModRules {
 
   def advantageMod[A:HA:M] (a: A, name: String, k: ModifierKey)
     (f: (A,Int) ⇒ Int): A = 
-    mod (a, name, HA[A].advantageValue(name, a), k)(f)
+    modI (a, name, HA[A].advantageValue(name, a), k)(f)
 
   def featMod[A:HA:M] (a: A, name: String, k: ModifierKey)
-    (f: A ⇒ Int): A = 
-    mod (a, name, HA[A].activeFeat(name, a) as 0, k)((a,_) ⇒ f(a))
+    (f: A ⇒ Long): A = 
+    mod (a, name, HA[A].activeFeat(name, a) as 0L, k)((a,_) ⇒ f(a))
 
   def handicapMod[A:HA:M] (a: A, name: String, k: ModifierKey)
     (f: (A,Int) ⇒ Int): A = 
-    mod (a, name, HA[A].advantageValue(name, a), k)(f)
+    modI (a, name, HA[A].advantageValue(name, a), k)(f)
 
 }
 

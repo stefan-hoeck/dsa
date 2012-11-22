@@ -3,11 +3,11 @@ package efa.dsa.world
 import scalaz._, Scalaz._
 
 class RoundedDivisibleInt (val value: Int) {
-  def roundedDiv (d: Int): Int = RoundedDiv roundedDivI (value, d)
+  def rdiv (d: Int): Int = RoundedDiv roundedDivI (value, d)
 }
 
 class RoundedDivisibleLong (val value: Long) { 
-  def roundedDiv (d: Long): Long = RoundedDiv roundedDivL (value, d)
+  def rdiv (d: Long): Long = RoundedDiv roundedDivL (value, d)
 }
 
 private[world] object RoundedDiv {

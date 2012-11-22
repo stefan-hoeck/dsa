@@ -10,6 +10,7 @@ class HeroRulesProviderImpl extends HeroRulesProvider {
   def get =
     AdvantagesRules.all[Hero] ++
     HerausragendRule.all ++
+    EquippedRules.all ++
     CalculatedRules.all
 }
 
