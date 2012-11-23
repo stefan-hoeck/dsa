@@ -124,7 +124,6 @@ class RulesProviderImpl extends efa.rpg.rules.spi.RulesProvider {
     ),
     parent("Optionale Regeln", 
       child("Eigenschaften", overstrainKoL),
-      child("Eigenschaften", overstrainKoL),
       child("Grundwerte", lowAuL, lowLeL),
       parent("Kampfwerte",
         child("Attacke", meleeWeaponWmL),
