@@ -31,11 +31,11 @@ object HeroAttributes {
 
   def fromHeroData (h: HeroData): HeroAttributes = {
     def crea(a: Attribute): Int =
-      (h.attributes initial a) +
+      (h.humanoid initial a) +
       (h.base.race attributes a) +
       (h.base.culture attributes a)
 
-    def immu(a: Attribute) = creation(a) + h.attributes.bought(a) 
+    def immu(a: Attribute) = creation(a) + h.bought(a) 
 
     lazy val creation =
       EnumMap(Attribute.values map (a ⇒ (a, crea(a))) toMap)

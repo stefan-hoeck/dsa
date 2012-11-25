@@ -6,6 +6,7 @@ import scalaz.{Equal, Lens, @>}
 case class HeroDerived (
   maxBoughtAe: Long,
   maxBoughtAu: Long,
+  maxBoughtKe: Long,
   maxBoughtLe: Long,
   maxBoughtMr: Long,
   iniBase: Long
@@ -13,7 +14,7 @@ case class HeroDerived (
 
 object HeroDerived {
   lazy val default = HeroDerived(maxBought, maxBought, maxBought,
-    maxBought, 0L)
+    maxBought, maxBought, 0L)
 
   implicit lazy val HeroDerivedDefault = Default default default
 
@@ -24,6 +25,9 @@ object HeroDerived {
 
   val maxBoughtAu: HeroDerived @> Long =
     Lens.lensu((a,b) ⇒ a copy (maxBoughtAu = b), _.maxBoughtAu)
+
+  val maxBoughtKe: HeroDerived @> Long =
+    Lens.lensu((a,b) ⇒ a copy (maxBoughtKe = b), _.maxBoughtKe)
 
   val maxBoughtLe: HeroDerived @> Long =
     Lens.lensu((a,b) ⇒ a copy (maxBoughtLe = b), _.maxBoughtLe)
@@ -37,6 +41,7 @@ object HeroDerived {
   case class HeroDerivedLenses[A] (l: A @> HeroDerived) {
     lazy val maxBoughtAe = l >=> HeroDerived.maxBoughtAe
     lazy val maxBoughtAu = l >=> HeroDerived.maxBoughtAu
+    lazy val maxBoughtKe = l >=> HeroDerived.maxBoughtKe
     lazy val maxBoughtLe = l >=> HeroDerived.maxBoughtLe
     lazy val maxBoughtMr = l >=> HeroDerived.maxBoughtMr
     lazy val iniBase = l >=> HeroDerived.iniBase

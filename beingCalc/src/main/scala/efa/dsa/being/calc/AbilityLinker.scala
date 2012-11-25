@@ -3,7 +3,7 @@ package efa.dsa.being.calc
 import efa.core.{ValSt, ValRes}
 import efa.dsa.abilities._
 import efa.dsa.being.abilities._
-import efa.dsa.being.HeroData
+import efa.dsa.being.HumanoidData
 import efa.rpg.core.{RpgItem, DB}
 import scalaz._, Scalaz._
 
@@ -45,25 +45,25 @@ sealed abstract class AbilityLinker[I,D](
   def set[X](l: D @> X): (A,X) ⇒ State[AbilityDatas,Unit] =
     (a,x) ⇒ update (a, l set (a.data, x))
 
-  def heroAbilities(h: HeroData, as: AbilityItems): SMap[A] = {
-    val abilities = data get h.abilities
-    val names = abilities.keySet
+  def abilities(ad: AbilityDatas, as: AbilityItems): SMap[A] = {
+    val map = data get ad
+    val names = map.keySet
 
     def toAbility(p: (String,D)) = p match {
       case (s,d) ⇒ items get as get AD.id(d) map (i ⇒ (s, Ability(i,d,names)))
     }
 
-    abilities flatMap toAbility
+    map flatMap toAbility
   }
 }
 
 object AbilityLinker {
   type SMap[X] = Map[String,X]
 
-  def heroAbilities (h: HeroData, as: AbilityItems): Abilities = Abilities (
-    AdvantageLinker heroAbilities (h, as),
-    HandicapLinker heroAbilities (h, as),
-    FeatLinker heroAbilities (h, as)
+  def abilities (ad: AbilityDatas, as: AbilityItems): Abilities = Abilities (
+    AdvantageLinker abilities (ad, as),
+    HandicapLinker abilities (ad, as),
+    FeatLinker abilities (ad, as)
   )
 
   private def al[I:RpgItem,D:AbilityData](

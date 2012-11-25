@@ -1,7 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{ToXml, Efa, Default}, Efa._
-import efa.dsa.being.{HumanoidBaseData ⇒ HBD}
+import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.equipment.EquipmentItemData
 import efa.dsa.equipment.spi.EquipmentLocal
 import efa.rpg.core.{WithId, Util, ItemData}, ItemData.itemDataLenses
@@ -26,8 +26,8 @@ trait EquipmentData[A] extends WithId[A] with Default[A] {
   def leftEquipped (a: A, h: HandsData): Boolean
   def rightEquipped (a: A, h: HandsData): Boolean
 
-  def equipLeft (a: A, b: Boolean): State[HBD,Unit]
-  def equipRight (a: A, b: Boolean): State[HBD,Unit]
+  def equipLeft (a: A, b: Boolean): State[HD,Unit]
+  def equipRight (a: A, b: Boolean): State[HD,Unit]
 }
 
 trait EquipmentLike[+A] {
@@ -81,17 +81,17 @@ trait EquipmentLikes[A <: EquipmentLike[A]] extends Util {
     def leftEquipped (a: A, hs: HandsData): Boolean = a equipped hs.left
     def rightEquipped (a: A, hs: HandsData): Boolean = a equipped hs.right
 
-    def equipLeft (a: A, b: Boolean): State[HBD,Unit] =
+    def equipLeft (a: A, b: Boolean): State[HD,Unit] =
       equip(b ? a.handData | none, true)
 
-    def equipRight (a: A, b: Boolean): State[HBD,Unit] =
+    def equipRight (a: A, b: Boolean): State[HD,Unit] =
       equip(b ? a.handData | none, false)
 
     private def equip (ho: Option[HandData], left: Boolean)
-      : State[HBD,Unit] = {
+      : State[HD,Unit] = {
         val newH = ho | HandData.Empty
 
-        HBD.hands mods_ (hd ⇒ left ? hd.setLeft(newH) | hd.setRight(newH))
+        HD.hands mods_ (hd ⇒ left ? hd.setLeft(newH) | hd.setRight(newH))
       }
   }
 

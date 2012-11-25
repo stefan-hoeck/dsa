@@ -89,7 +89,7 @@ object Dependencies {
   val scalazCheckET = scalazCheckT :+ scalaz_effect
 }
 
-object UtilBuild extends Build {
+object DsaBuild extends Build {
   import Resolvers._
   import Dependencies._
   import BuildSettings._
@@ -97,13 +97,14 @@ object UtilBuild extends Build {
   def addDeps (ds: Seq[ModuleID]) =
     BuildSettings.buildSettings ++ Seq (libraryDependencies ++= ds)
 
-  lazy val util = Project (
+  lazy val dsa = Project (
     "dsa",
     file("."),
     settings = buildSettings
   ) aggregate (world, abilities, abilitiesServices, being, beingCalc,
-    beingServices, beingUI, equipment, equipmentServices, generation, testItems,
-    rules)
+    beingServices, 
+    equipment, equipmentServices, generation, rules, testItems)
+    //rules, beingUI
   
   lazy val abilities = Project (
     "abilities",

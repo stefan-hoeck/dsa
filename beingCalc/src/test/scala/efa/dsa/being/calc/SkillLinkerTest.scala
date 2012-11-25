@@ -68,7 +68,7 @@ object SkillLinkerTest extends Properties("SkillLinker") {
     def fromGenData(i: Int, gd: GenData): Int =
       linker.prototypes get gd.skills get i fold (_.value, 0)
 
-    def tap(i: Int): Int = sd.tap(linker.data get cd.hero.skills apply i)
+    def tap(i: Int): Int = sd.tap(linker.data get cd.hero.humanoid.skills apply i)
 
     def taw (i: Int) =
       fromGenData(i, cd.hero.base.race.data) +
@@ -79,7 +79,7 @@ object SkillLinkerTest extends Properties("SkillLinker") {
     def checkLang (p: (Int, Skill[I,D])): Prop = {
       val (i, l) = p
       (l.item ≟ (linker.items get cd.abilities apply i)) :| "item" &&
-      (l.skill ≟ (linker.data get cd.hero.skills apply i)) :| "data" &&
+      (l.skill ≟ (linker.data get cd.hero.humanoid.skills apply i)) :| "data" &&
       (l.permanentTaw ≟ taw(i)) :| "permanentTaw" &&
       (l.taw ≟ l.permanentTaw) :| "taw" &&
       (l.tap ≟ tap(i)) :| "tap"

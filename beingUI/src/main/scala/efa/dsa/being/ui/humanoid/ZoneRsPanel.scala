@@ -1,4 +1,4 @@
-package efa.dsa.being.ui.hero
+package efa.dsa.being.ui.humanoid
 
 import efa.dsa.being._, efa.dsa.being.{loc ⇒ bLoc}
 import efa.dsa.world.BodyPart
@@ -11,8 +11,8 @@ import javax.swing.BorderFactory.{createTitledBorder ⇒ titledBorder}
 import scala.swing.{RadioButton, TextField, ButtonGroup}
 import scalaz._, Scalaz._
 
-class HeroZoneRsPanel extends BeingPanel[Hero,HeroData] {
-  import HeroZoneRsPanel._
+class ZoneRsPanel[A:AsHumanoid] extends BeingPanel[A,HumanoidData] {
+  import ZoneRsPanel._, AsHumanoid._
  
   val panels = RpgEnum[BodyPart].values map panel
 
@@ -34,16 +34,16 @@ class HeroZoneRsPanel extends BeingPanel[Hero,HeroData] {
       border = titledBorder(p._1.loc.locName)
     } horizontal
 
-  private def panelToSet (p: ZonePanel): VSET[Hero,HeroData] =
-    lensed(values(p._2) >=> success)(lens(p._1)) ∙ ((_: Hero).data) ⊹
+  private def panelToSet (p: ZonePanel): VSET[A,HumanoidData] =
+    (lensed(values(p._2) >=> success)(lens(p._1)) ∙ humanoidBaseData[A]) ⊹
     modifiedProp(zoneRsKeyFor(p._1))(p._3)
 }
 
-object HeroZoneRsPanel {
+object ZoneRsPanel {
   type ZonePanel = (BodyPart, List[RadioButton], TextField, ButtonGroup)
 
-  def lens (bp: BodyPart): HeroData @> Int =
-    HeroData.humanoid.zoneWounds at bp
+  def lens (bp: BodyPart): HumanoidData @> Int =
+    HumanoidData.zoneWounds at bp
 }
 
 // vim: set ts=2 sw=2 et:

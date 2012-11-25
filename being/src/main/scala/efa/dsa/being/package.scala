@@ -13,9 +13,9 @@ package object being extends RangeVals {
   type Attributes = EnumMap[Attribute,Int]
   type ZoneWounds = EnumMap[BodyPart, Int]
 
-  val (minBought, maxBought) = (0, 999)
+  val (minBought, maxBought) = (0L, 999L)
   val (minBoughtAtt, maxBoughtAtt) = (0, 99)
-  val (minLost, maxLost) = (0, Int.MaxValue)
+  val (minLost, maxLost) = (0L, Long.MaxValue)
 
   val Ap = fullInfo(0, Int.MaxValue, "ap")
 
@@ -27,7 +27,7 @@ package object being extends RangeVals {
   val BoughtKe = fullInfo(minBought, maxBought, "boughtKe")
   val BoughtLe = fullInfo(minBought, maxBought, "boughtLe")
   val BoughtMr = fullInfo(minBought, maxBought, "boughtMr")
-  val Exhaustion = fullInfo(0, 99, "exhaustion")
+  val Exhaustion = fullInfo(0L, 99L, "exhaustion")
   val Height = fullInfo(0L, Long.MaxValue, "height")
 
   val InitialAttributes =
@@ -39,7 +39,7 @@ package object being extends RangeVals {
   val LostLe = fullInfo(minLost, maxLost, "damageLe")
   val So = fullInfo(1, 23, "so")
   val Weight = fullInfo(0L, Long.MaxValue, "weight")
-  val Wounds = fullInfo(0, 99, "wounds")
+  val Wounds = fullInfo(0L, 99L, "wounds")
   val (zoneWoundsMax, zoneWoundsMin) = (3, 0)
 
   val ZoneWounds = EnumMaps.int[BodyPart](
@@ -89,10 +89,18 @@ package object being extends RangeVals {
     Modifiers (Attribute.values ∘ aPair: _*)
   }
 
-  def setDamage[A] (max: Int, i: Int, l: A @> Int): ValSt[A] =
-    setInt(Int.MinValue + max, max, max - i, l)
+  def setDamage[A] (max: Long, i: Long, l: A @> Long): ValSt[A] =
+    setLong(Long.MinValue + max, max, max - i, l)
 
+  @deprecated("use Long not Int", "1.0.0-SNAPSHOT")
   def setInt[A] (min: Int, max: Int, i: Int, l: A @> Int)
+  : ValSt[A] = {
+    val validate = Validators.interval(min, max)
+
+    (validate run i validation) as (l := i void)
+  }
+
+  def setLong[A] (min: Long, max: Long, i: Long, l: A @> Long)
   : ValSt[A] = {
     val validate = Validators.interval(min, max)
 

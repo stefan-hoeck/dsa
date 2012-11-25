@@ -1,12 +1,13 @@
 package efa.dsa.rules
 
 import efa.core.Localization
+import efa.dsa.being.AsHeroFunctions
 import efa.dsa.being.abilities.{HasAbilities ⇒ HA}
 import efa.rpg.core._, efa.rpg.core.{Modified ⇒ M}
 import efa.rpg.rules.Rule
 import scalaz._, Scalaz._
 
-trait FADRules extends ModRules {
+trait FADRules extends ModRules with AsHeroFunctions {
 
   def advantageRule[A:HA:M](
     l: Localization,

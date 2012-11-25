@@ -8,8 +8,8 @@ import efa.react.SET
 import efa.rpg.being.BeingPanel
 import scalaz._, Scalaz._
 
-class HeroHumanoidPanel extends BeingPanel[Hero,HeroData] {
-  import HeroHumanoidPanel._
+class HeroHumanoidPanel[A:AsHumanoid] extends BeingPanel[A,HumanoidData] {
+  import AsHumanoid._
   
   val tAe = number
   val tAu = number
@@ -35,11 +35,16 @@ class HeroHumanoidPanel extends BeingPanel[Hero,HeroData] {
   val tPa = numberDisabled
   val tWs = numberDisabled
 
-  def set = 
-    damageIn(_.ae, _ setAe _)(tAe) ⊹ 
-    damageIn(_.au, _ setAu _)(tAu) ⊹ 
-    damageIn(_.ke, _ setKe _)(tKe) ⊹ 
-    damageIn(_.le, _ setLe _)(tLe) ⊹ 
+  def set: VSET[A,HumanoidData] =
+    valIn(ae, setAe)(tAe) ⊹ 
+    valIn(au, setAu)(tAu) ⊹ 
+    valIn(ke, setKe)(tKe) ⊹ 
+    valIn(le, setLe)(tLe) ⊹ 
+    valIn(boughtAe, setBoughtAe)(tAeB) ⊹ 
+    valIn(boughtAu, setBoughtAu)(tAuB) ⊹ 
+    valIn(boughtKe, setBoughtKe)(tKeB) ⊹ 
+    valIn(boughtLe, setBoughtLe)(tLeB) ⊹ 
+    valIn(boughtMr, setBoughtMr)(tMrB) ⊹ 
     modifiedProp(AeKey)(tAeM) ⊹ 
     modifiedProp(AtKey)(tAt) ⊹ 
     modifiedProp(AuKey)(tAuM) ⊹ 
@@ -51,14 +56,7 @@ class HeroHumanoidPanel extends BeingPanel[Hero,HeroData] {
     modifiedProp(LeKey)(tLeM) ⊹ 
     modifiedProp(MrKey)(tMr) ⊹ 
     modifiedProp(PaKey)(tPa) ⊹ 
-    modifiedProp(WsKey)(tWs) ⊹ 
-    (
-      intIn(tLeB, BoughtLe.validate)(HL.boughtLe) ⊹
-      intIn(tAuB, BoughtAu.validate)(HL.boughtAu) ⊹
-      intIn(tAeB, BoughtAe.validate)(HL.boughtAe) ⊹
-      intIn(tKeB, BoughtKe.validate)(HL.boughtKe) ⊹
-      intIn(tMrB, BoughtMr.validate)(HL.boughtMr)
-    ).contramap (_.data)
+    modifiedProp(WsKey)(tWs)
 
   (
     ("" beside uiLoc.actual beside uiLoc.max beside
@@ -71,14 +69,12 @@ class HeroHumanoidPanel extends BeingPanel[Hero,HeroData] {
     (WsKey beside tWs beside "" beside "" beside GsKey beside tGs)
   ).add()
 
-  private def damageIn (get: Hero ⇒ Int, set: (Hero, Int) ⇒ ValSt[HeroData])
-    (t: scala.swing.TextField): VSET[Hero,HeroData] =
-    getSet(get)(set, readVals[Int](t))
+  private def valIn (
+    get: A ⇒ Long,
+    set: (A, Long) ⇒ ValSt[HumanoidData]
+  )(t: scala.swing.TextField): VSET[A,HumanoidData] =
+    getSet(get)(set, readVals[Long](t))
 
-}
-
-object HeroHumanoidPanel {
-  val HL = HeroData.humanoid
 }
 
 // vim: set ts=2 sw=2 et:

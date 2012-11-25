@@ -1,7 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.UniqueId
-import efa.dsa.being.{HumanoidBaseData ⇒ HBD}
+import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.equipment.EquipmentItem
 import efa.rpg.core.{Described, HtmlTags}
 import scalaz.{Equal, Scalaz, State}

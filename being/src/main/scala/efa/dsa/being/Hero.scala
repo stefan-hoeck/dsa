@@ -23,59 +23,27 @@ case class Hero (
   def intProp (k: ModifierKey): Int = prop(k).toInt
 
   def prop (k: ModifierKey): Long = modifiers property k
-  
-  lazy val ae = maxAe - data.humanoid.lostAe
-  
-  lazy val au = maxAu - data.humanoid.lostAu
-  
-  lazy val le = maxLe - data.humanoid.lostLe
-  
-  lazy val ke = maxKe - data.humanoid.lostKe
 
-  lazy val maxAe = intProp(AeKey)
-
-  lazy val maxAu = intProp(AuKey)
-
-  lazy val maxLe = intProp(LeKey)
-
-  lazy val maxKe = intProp(KeKey)
-
-  def setAe (i: Int): ValSt[HeroData] = setDamage(maxAe, i, Humanoid.lostAe)
-
-  def setAu (i: Int): ValSt[HeroData] = setDamage(maxAu, i, Humanoid.lostAu)
-
-  def setKe (i: Int): ValSt[HeroData] = setDamage(maxKe, i, Humanoid.lostKe)
-
-  def setLe (i: Int): ValSt[HeroData] = setDamage(maxLe, i, Humanoid.lostLe)
-
-  def setBoughtAttribute (a: Attribute, i: Int): ValSt[HeroData] =
-    setInt(0, attributes maxBought a, i, Attributes.bought at a)
+//  def setBoughtAttribute (a: Attribute, i: Int): ValSt[HeroData] =
+//    setInt(0, attributes maxBought a, i, Attributes.bought at a)
 }
 
 object Hero extends Util {
   lazy val default = Hero(!!, Nil, !!, !!, !!, !!, Modifiers.empty, !!)
 
-  private val Humanoid: HeroData @> HumanoidBaseData = HeroData.humanoid
-  private val Attributes: HeroData @> AttributesData = HeroData.attributes
+  private val Humanoid: HeroData @> HumanoidData = HeroData.humanoid
 
   implicit lazy val HeroDefault = Default default default
 
   implicit lazy val HeroEqual = Equal.equalA[Hero]
 
-  implicit lazy val HeroTC = new Described[Hero] with AsHero[Hero] {
+  implicit lazy val HeroTC = new AsHero[Hero] {
     def abilities (h: Hero) = h.abilities
-    def au (h: Hero) = h.au
-    def desc (h: Hero) = h.data.base.desc
-    def equipment (h: Hero) = h.equipment
-    def exhaustion (h: Hero) = h.data.humanoid.exhaustion
-    def fullDesc (h: Hero) = h.data.base.desc
-    def le (h: Hero) = h.le
-    def name (h: Hero) = h.data.base.name
-    def shortDesc (h: Hero) = h.data.base.desc
-
-    val modifiersL = Hero.modifiers
     val attributes = Hero.attributes
     val derived = Hero.derived
+    def equipment (h: Hero) = h.equipment
+    def heroData (h: Hero) = h.data
+    val modifiersL = Hero.modifiers
   }
 
   val modifiers: Hero @> Modifiers =

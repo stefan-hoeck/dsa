@@ -11,11 +11,12 @@ package object calc {
   lazy val loc = Service.unique[BeingCalcLocal](BeingCalcLocal)
 
   def calcHero (hd: HeroData, ai: AbilityItems, ei: EquipmentItems): Hero = {
-    val es = EquipmentLinker heroEquipment (hd, ei)
-    val hands = hd.humanoid.hands.toHands(es) | Hands.Empty
+    val hum = hd.humanoid
+    val es = EquipmentLinker equipment (hum.equipment, hum.hands, ei)
+    val hands = hum.hands.toHands(es) | Hands.Empty
 
     Hero (
-      AbilityLinker heroAbilities (hd, ai),
+      AbilityLinker abilities (hum.abilities, ai),
       AttackMode fromHands hands,
       HeroAttributes fromHeroData hd,
       hd,

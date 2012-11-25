@@ -4,7 +4,7 @@ import efa.core.{ValRes, Validators, ValSt, EndoVal}
 import efa.dsa.abilities._
 import efa.dsa.being.generation.GenData
 import efa.dsa.being.skills._
-import efa.dsa.being.{HeroData ⇒ HD, Hero}
+import efa.dsa.being.{HumanoidData ⇒ HuD, HeroData ⇒ HD, Hero}
 import efa.dsa.generation.{SkillPrototype, SkillPrototypes, NamedPrototype}
 import efa.dsa.world.RaisingCost
 import efa.rpg.core.{DB, Modifier}
@@ -70,11 +70,11 @@ sealed abstract class SkillLinker[I,D] (implicit
     for {
       hd ← init[HD]
       _  ← (l.skills >=> prototypes) += (id → SkillPrototype(id, 0))
-      _  ← data.get(hd.skills).keySet(id) ?  (init[HD] void) | addIHD(i)
+      _  ← data.get(hd.humanoid.skills).keySet(id) ?  (init[HD] void) | addIHD(i)
     } yield ()
   }
   
-  final def addIHD (i: I): State[HD,Unit] = HD.skills lifts addI(i)
+  final def addIHD (i: I): State[HD,Unit] = HD.humanoid.skills lifts addI(i)
 
   final def delete(s: SKILL): State[SkillDatas,Unit] =
     data -= s.id void
@@ -93,7 +93,8 @@ sealed abstract class SkillLinker[I,D] (implicit
     hd ← init[HD]
     ap = hd.base.apUsed + cost
     _  ← if (ap >= 0 && ap <= hd.base.ap) for {
-           _ ← HD.skills := set(SD.tapL)(s, s.tap + add) exec hd.skills
+           _ ← HD.humanoid.skills := set(SD.tapL)(s, s.tap + add) exec
+               hd.humanoid.skills
            _ ← HD.base.apUsed := ap
          } yield () else init[HD].void
   } yield ()
@@ -124,7 +125,7 @@ sealed abstract class SkillLinker[I,D] (implicit
       items get as get id map idSkillPair
     }
     
-    data get h.skills flatMap single
+    data get h.humanoid.skills flatMap single
   }
 }
 

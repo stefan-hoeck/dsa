@@ -13,13 +13,15 @@ import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 object HeroGens {
 
   def heroDataGen (ais: AbilityItems, eis: EquipmentItems): Gen[HeroData] = for {
-    skills ← AbilityGens skillDatasGen ais
-    equipment ← EquipmentGens equipmentDatasGen eis
-    feats ← AbilityGens abilityDatasGen ais
-    attributes ← attributesGen
-    humanoid ← humanoidBaseDataGen(equipment)
-    base ← baseDataGen(skills)
-  } yield HeroData(base, attributes, humanoid, feats, skills, equipment)
+    humanoid ← humanoidDataGen(ais, eis)
+    base ← baseDataGen(humanoid.skills)
+    bought ← enumGen[Attribute](0, 4)
+    bae ← boughtAeGen
+    bau ← boughtAuGen
+    bke ← boughtKeGen
+    ble ← boughtLeGen
+    bmr ← boughtMrGen
+  } yield HeroData(base, humanoid, bought, bae, bau, bke, ble, bmr)
 
   def baseDataGen(sd: SkillDatas): Gen[HeroBaseData] = 
     ^^^^(Gen.oneOf(heroNames),
@@ -29,26 +31,22 @@ object HeroGens {
       GenerationGens.professionGen(sd))((n, g, r, c, p) ⇒ 
       HeroBaseData(n, g, r, c, p, "", "", 1, 0, 0L, 0L, 0L, "", "", "", 0))
 
-  def humanoidBaseDataGen(ed: EquipmentDatas): Gen[HumanoidBaseData] = for {
+  def humanoidDataGen(ais: AbilityItems, eis: EquipmentItems)
+    : Gen[HumanoidData] = for {
+    att ← enumGen[Attribute](8, 14)
     lae ← lostAeGen
-    bae ← boughtAeGen
     lau ← lostAuGen
-    bau ← boughtAuGen
     lke ← lostKeGen
-    bke ← boughtKeGen
     lle ← lostLeGen
-    ble ← boughtLeGen
-    bmr ← boughtMrGen
     wou ← woundsGen
     exh ← exhaustionGen
     zon ← zoneWoundsGen
+    sks ← AbilityGens skillDatasGen ais
+    ed  ← EquipmentGens equipmentDatasGen eis
+    abs ← AbilityGens abilityDatasGen ais
     han ← EquipmentGens handsDataGen ed
-  } yield HumanoidBaseData(
-    lae, bae, lau, bau, lke, bke, lle, ble, bmr, wou, exh, zon, han)
-
-  lazy val attributesGen =
-    ^(enumGen[Attribute](0, 4), enumGen[Attribute](8, 14))(
-      AttributesData.apply)
+  } yield HumanoidData(att, lae, lau, lke, lle,
+    wou, exh, zon, han, abs, ed, sks)
 
   lazy val heroNames = List (
     "Alice",

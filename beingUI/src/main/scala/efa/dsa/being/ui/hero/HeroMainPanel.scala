@@ -15,7 +15,7 @@ class HeroMainPanel (abilitiesP: AbilitiesPanel)
 
   val baseP = new HeroBasePanel {border = titledBorder (loc.basePanel)}
 
-  val derivedP = new HeroHumanoidPanel {
+  val derivedP = new HeroHumanoidPanel[Hero] {
     border = titledBorder (loc.derived)
   }
 
@@ -31,11 +31,12 @@ class HeroMainPanel (abilitiesP: AbilitiesPanel)
     (attributesP above derivedP above apP) beside (abilitiesP fillV 3)
   ) add()
 
-  def set = derivedP.set ⊹ 
+  def set =
     attributesP.set ⊹ 
     (lensedV(baseP.set)(HeroData.base) ∙ (_.data)) ⊹
     (lensedV(apP.set)(HeroData.base) ∙ (_.data)) ⊹
-    (mapSt(abilitiesP.set)(HeroData.abilities) ∙ (_.abilities))
+    (mapSt(abilitiesP.set)(HeroData.abilities) ∙ (_.abilities)) ⊹ 
+    mapSt(derivedP.set)(HeroData.humanoid)
 
   override def persistentChildren = List(abilitiesP)
   override lazy val getLookup = abilitiesP.getLookup

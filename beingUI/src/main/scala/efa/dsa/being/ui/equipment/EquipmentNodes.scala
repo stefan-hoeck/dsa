@@ -2,7 +2,7 @@ package efa.dsa.being.ui.equipment
 
 import efa.core._
 import efa.dsa.abilities._
-import efa.dsa.being.{loc ⇒ bLoc, HumanoidBaseData ⇒ HBD, HeroData ⇒ HD}
+import efa.dsa.being.{loc ⇒ bLoc, HumanoidData ⇒ HD}
 import efa.dsa.being._
 import efa.dsa.being.equipment._
 import efa.dsa.being.calc.EquipmentLinker, EquipmentLinker._
@@ -18,7 +18,6 @@ import scala.swing.Alignment.Trailing
 
 object EquipmentNodes extends StNodeFunctions {
   type EquipmentOut[A] = NodeOut[A,ValSt[EquipmentDatas]]
-  type HBDOut[A] = NodeOut[A,ValSt[HBD]]
   type HDOut[A] = NodeOut[A,ValSt[HD]]
 
   def equipmentOut[A,B](

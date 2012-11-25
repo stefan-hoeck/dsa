@@ -1,6 +1,6 @@
 package efa.dsa.being.calc
 
-import efa.dsa.being.{HeroData ⇒ HD}
+import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.being.equipment._
 import efa.dsa.equipment._
 import efa.rpg.core.DB
@@ -25,10 +25,10 @@ sealed abstract class EquipmentLinker[I,D](
     equipment.get(es).toList map (_._2) sortBy (_.name)
 
   final def equipLeft (e: E, b: Boolean): State[HD,Unit] = 
-    HD.humanoid lifts (ED equipLeft (e.data, b))
+    ED equipLeft (e.data, b)
 
   final def equipRight (e: E, b: Boolean): State[HD,Unit] = 
-    HD.humanoid lifts (ED equipRight (e.data, b))
+    ED equipRight (e.data, b)
   
   final def delete(e: E): State[EquipmentDatas,Unit] =
     data -= e.id void
@@ -47,26 +47,34 @@ sealed abstract class EquipmentLinker[I,D](
   final def set[X] (l: D @> X): (E,X) ⇒ State[EquipmentDatas,Unit] =
     (e,x) ⇒ add(l set (e.data, x))
 
-  final def heroEquipment (h: HD, es: EquipmentItems): DB[E] = {
+  final def equipment (
+    ed: EquipmentDatas,
+    hd: HandsData,
+    es: EquipmentItems
+  ): DB[E] = {
     def toEquipment(p: (Int,D)) = p match {
       case (id,d) ⇒ items get es get ED.parentId(d) map (
-        i ⇒ (id, Equipment(i,d,h.humanoid.hands)))
+        i ⇒ (id, Equipment(i,d,hd)))
     }
 
-    data get h.equipment flatMap toEquipment
+    data get ed flatMap toEquipment
   }
 }
 
 object EquipmentLinker {
 
-  def heroEquipment (h: HD, es: EquipmentItems) = Equipments (
-    AmmunitionLinker heroEquipment (h, es),
-    ArmorLinker heroEquipment (h, es),
-    ArticleLinker heroEquipment (h, es),
-    MeleeWeaponLinker heroEquipment (h, es),
-    RangedWeaponLinker heroEquipment (h, es),
-    ShieldLinker heroEquipment (h, es),
-    ZoneArmorLinker heroEquipment (h, es)
+  def equipment (
+    ed: EquipmentDatas,
+    hd: HandsData, 
+    es: EquipmentItems
+  ) = Equipments (
+    AmmunitionLinker equipment (ed, hd, es),
+    ArmorLinker equipment (ed, hd, es),
+    ArticleLinker equipment (ed, hd, es),
+    MeleeWeaponLinker equipment (ed, hd, es),
+    RangedWeaponLinker equipment (ed, hd, es),
+    ShieldLinker equipment (ed, hd, es),
+    ZoneArmorLinker equipment (ed, hd, es)
   )
 
   private def el[I:EquipmentItem,D:EquipmentData](
