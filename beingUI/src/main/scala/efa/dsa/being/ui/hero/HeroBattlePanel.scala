@@ -14,7 +14,7 @@ import scalaz._, Scalaz._, effect.IO
 class HeroBattlePanel (
   attackModeP: NodePanel[Hero,HeroData],
   armorP: NodePanel[Equipments,EquipmentDatas],
-  weaponP: NodePanel[Equipments,HeroData]
+  weaponP: NodePanel[Equipments,HumanoidData]
 ) extends MVPanel[Hero,HeroData] (
   "DSA_HeroBattlePanel", loc.battlePanel, efa.dsa.being.ui.version
 ) {
@@ -34,8 +34,8 @@ class HeroBattlePanel (
   ) add()
 
   def set =
-    (mapSt(armorP.set)(HeroData.equipment) ∙ ((_: Hero).equipment)) ⊹
-    (weaponP.set ∙ (_.equipment)) ⊹
+    (mapSt(armorP.set)(HeroData.humanoid.equipment) ∙ ((_: Hero).equipment)) ⊹
+    (mapSt(weaponP.set)(HeroData.humanoid) ∙ (_.equipment)) ⊹
     mapSt(zoneRsP.set)(HeroData.humanoid) ⊹ 
     mapSt(valuesP.set)(HeroData.humanoid) ⊹ 
     attackModeP.set

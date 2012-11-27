@@ -16,7 +16,7 @@ object GenerationGens {
 
   def professionGen (sd: SkillDatas) = genDataGen(sd, professionNames)
 
-  lazy val attributesGen = EnumMaps.int[Attribute](-2, 2, 0, "").gen
+  lazy val attributesGen = EnumMaps.long[Attribute](-2L, 2L, 0L, "").gen
 
   def genDataGen (sd: SkillDatas, names: List[String]): Gen[GenData] =
     ^^^^^(Gen.oneOf(names),

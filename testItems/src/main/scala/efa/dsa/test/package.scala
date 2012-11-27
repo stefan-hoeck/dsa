@@ -15,7 +15,10 @@ package object test {
   def itemDatas (names: List[String]): List[ItemData] =
     names.zipWithIndex map {case (n,i) ⇒ ItemData(i, n, "")}
 
-  def enumGen[A:RpgEnum](min: Int, max: Int): Gen[EnumMap[A,Int]] =
+  def enumGenL[A:RpgEnum](min: Long, max: Long): Gen[EnumMap[A,Long]] =
+    EnumMaps.long[A](min, max, min, "").gen
+
+  def enumGenI[A:RpgEnum](min: Int, max: Int): Gen[EnumMap[A,Int]] =
     EnumMaps.int[A](min, max, min, "").gen
 
   lazy val advValueGen = Gen choose (0, 5)
@@ -63,7 +66,7 @@ package object test {
 
   lazy val priceGen = Gen choose (1L, 10000L)
 
-  lazy val reachGen = enumGen[RangedDistance](1, 200)
+  lazy val reachGen = enumGenI[RangedDistance](1, 200)
 
   lazy val rsGen = Gen choose (1,8)
 
@@ -82,7 +85,7 @@ package object test {
 
   lazy val tpkkGen = ^(Gen.choose(10,15), Gen.choose(2,5))(TpKk.apply)
 
-  lazy val tpPlusGen = enumGen[RangedDistance](-10, 2)
+  lazy val tpPlusGen = enumGenI[RangedDistance](-10, 2)
 
   lazy val timeToLoadGen = Gen choose (1, 20)
 
@@ -93,9 +96,9 @@ package object test {
 
   lazy val wmGen = ^(Gen.choose(-2, 2), Gen.choose(-2, 2))(Wm.apply)
 
-  lazy val zoneRsGen = enumGen[BodyPart](0, 8)
+  lazy val zoneRsGen = enumGenI[BodyPart](0, 8)
 
-  lazy val zoneWoundsGen = enumGen[BodyPart](0, 3)
+  lazy val zoneWoundsGen = enumGenI[BodyPart](0, 3)
 }
 
 // vim: set ts=2 sw=2 et:

@@ -38,8 +38,8 @@ class BattlePanel[A:AsHumanoid] extends BeingPanel[A,HD] {
     modifiedProp(PaKey)(paC) ⊹
     modifiedProp(RsKey)(rsC) ⊹
     modifiedProp(WsKey)(wsC) ⊹
-    (longIn(exhaustionC, Exhaustion.validate)(HD.exhaustion) ∙ humanoidBaseData[A]) ⊹
-    (longIn(woundsC, Wounds.validate)(HD.wounds) ∙ humanoidBaseData[A])
+    (longIn(exhaustionC, Exhaustion.validate)(HD.exhaustion) ∙ humanoidData[A]) ⊹
+    (longIn(woundsC, Wounds.validate)(HD.wounds) ∙ humanoidData[A])
 }
 
 // vim: set ts=2 sw=2 et:

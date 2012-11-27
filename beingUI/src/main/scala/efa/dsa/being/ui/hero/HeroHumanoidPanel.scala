@@ -5,11 +5,13 @@ import efa.nb.VSET
 import efa.dsa.being._
 import efa.dsa.being.ui.{loc ⇒ uiLoc}
 import efa.react.SET
+import efa.react.swing.Swing
 import efa.rpg.being.BeingPanel
+import scala.swing.TextField
 import scalaz._, Scalaz._
 
-class HeroHumanoidPanel[A:AsHumanoid] extends BeingPanel[A,HumanoidData] {
-  import AsHumanoid._
+class HeroHumanoidPanel[A:AsHero] extends BeingPanel[A,HeroData] {
+  import AsHero._
   
   val tAe = number
   val tAu = number
@@ -35,16 +37,16 @@ class HeroHumanoidPanel[A:AsHumanoid] extends BeingPanel[A,HumanoidData] {
   val tPa = numberDisabled
   val tWs = numberDisabled
 
-  def set: VSET[A,HumanoidData] =
-    valIn(ae, setAe)(tAe) ⊹ 
-    valIn(au, setAu)(tAu) ⊹ 
-    valIn(ke, setKe)(tKe) ⊹ 
-    valIn(le, setLe)(tLe) ⊹ 
-    valIn(boughtAe, setBoughtAe)(tAeB) ⊹ 
-    valIn(boughtAu, setBoughtAu)(tAuB) ⊹ 
-    valIn(boughtKe, setBoughtKe)(tKeB) ⊹ 
-    valIn(boughtLe, setBoughtLe)(tLeB) ⊹ 
-    valIn(boughtMr, setBoughtMr)(tMrB) ⊹ 
+  def set: VSET[A,HeroData] = null
+    valInHuman(ae, setAe)(tAe) ⊹ 
+    valInHuman(au, setAu)(tAu) ⊹ 
+    valInHuman(ke, setKe)(tKe) ⊹ 
+    valInHuman(le, setLe)(tLe) ⊹ 
+    valInHero(boughtAe, setBoughtAe)(tAeB) ⊹ 
+    valInHero(boughtAu, setBoughtAu)(tAuB) ⊹ 
+    valInHero(boughtKe, setBoughtKe)(tKeB) ⊹ 
+    valInHero(boughtLe, setBoughtLe)(tLeB) ⊹ 
+    valInHero(boughtMr, setBoughtMr)(tMrB) ⊹ 
     modifiedProp(AeKey)(tAeM) ⊹ 
     modifiedProp(AtKey)(tAt) ⊹ 
     modifiedProp(AuKey)(tAuM) ⊹ 
@@ -56,7 +58,12 @@ class HeroHumanoidPanel[A:AsHumanoid] extends BeingPanel[A,HumanoidData] {
     modifiedProp(LeKey)(tLeM) ⊹ 
     modifiedProp(MrKey)(tMr) ⊹ 
     modifiedProp(PaKey)(tPa) ⊹ 
-    modifiedProp(WsKey)(tWs)
+    modifiedProp(WsKey)(tWs) ⊹
+    maxBoughtTT(maxBoughtAe, tAeB) ⊹
+    maxBoughtTT(maxBoughtAu, tAuB) ⊹
+    maxBoughtTT(maxBoughtKe, tKeB) ⊹
+    maxBoughtTT(maxBoughtLe, tLeB) ⊹
+    maxBoughtTT(maxBoughtMr, tMrB)
 
   (
     ("" beside uiLoc.actual beside uiLoc.max beside
@@ -69,12 +76,20 @@ class HeroHumanoidPanel[A:AsHumanoid] extends BeingPanel[A,HumanoidData] {
     (WsKey beside tWs beside "" beside "" beside GsKey beside tGs)
   ).add()
 
-  private def valIn (
+  private def valInHero (
     get: A ⇒ Long,
-    set: (A, Long) ⇒ ValSt[HumanoidData]
-  )(t: scala.swing.TextField): VSET[A,HumanoidData] =
+    set: (A, Long) ⇒ ValSt[HeroData]
+  )(t: TextField): VSET[A,HeroData] =
     getSet(get)(set, readVals[Long](t))
 
+  private def valInHuman (
+    get: A ⇒ Long,
+    set: (A, Long) ⇒ ValSt[HumanoidData]
+  )(t: TextField): VSET[A,HeroData] =
+    valInHero(get, set ∘ (_ ∘ HeroData.humanoid.lifts))(t)
+
+  private def maxBoughtTT(f: A ⇒ Long, t: TextField):VSET[A,HeroData] =
+    outOnly (Swing tooltip t) ∙ (uiLoc maxBought f(_).toString)
 }
 
 // vim: set ts=2 sw=2 et:

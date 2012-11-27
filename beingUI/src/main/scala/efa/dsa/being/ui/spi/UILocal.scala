@@ -32,6 +32,7 @@ trait UILocal {
   def load: String
   def mainPanel: String
   def max: String
+  def maxBought (a: String): String
   def price: String
   def rest: String
   def shortPrice: String
@@ -72,6 +73,7 @@ object UILocal extends UILocal {
   def load = "Last"
   def mainPanel = "Grundwerte"
   def max = "Max."
+  def maxBought (s: String) = "Max: " + s
   def price = "Preis"
   def rest = "Guthaben"
   def shortPrice = "[S]"

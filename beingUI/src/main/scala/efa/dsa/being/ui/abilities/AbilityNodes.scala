@@ -14,7 +14,7 @@ import scalaz._, Scalaz._
 object AbilityNodes extends StNodeFunctions {
   type AbilitiesOut[A] = ValStOut[A,AbilityDatas]
 
-  lazy val default: AbilitiesOut[Abilities] =
+  lazy val default: ValStOut[Abilities,AbilityDatas] =
     abilitiesOut(advantageOut, advantageOut, abilityOut)
 
   def abilitiesOut (

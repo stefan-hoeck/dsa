@@ -15,7 +15,7 @@ object HeroGens {
   def heroDataGen (ais: AbilityItems, eis: EquipmentItems): Gen[HeroData] = for {
     humanoid ← humanoidDataGen(ais, eis)
     base ← baseDataGen(humanoid.skills)
-    bought ← enumGen[Attribute](0, 4)
+    bought ← enumGenL[Attribute](0L, 4L)
     bae ← boughtAeGen
     bau ← boughtAuGen
     bke ← boughtKeGen
@@ -33,7 +33,7 @@ object HeroGens {
 
   def humanoidDataGen(ais: AbilityItems, eis: EquipmentItems)
     : Gen[HumanoidData] = for {
-    att ← enumGen[Attribute](8, 14)
+    att ← enumGenL[Attribute](8L, 14L)
     lae ← lostAeGen
     lau ← lostAuGen
     lke ← lostKeGen

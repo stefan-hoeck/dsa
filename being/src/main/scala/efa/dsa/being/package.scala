@@ -10,17 +10,17 @@ import scalaz._, Scalaz._
 package object being extends RangeVals {
   lazy val loc = Service.unique[BeingLocal](BeingLocal)
 
-  type Attributes = EnumMap[Attribute,Int]
+  type Attributes = EnumMap[Attribute,Long]
   type ZoneWounds = EnumMap[BodyPart, Int]
 
   val (minBought, maxBought) = (0L, 999L)
-  val (minBoughtAtt, maxBoughtAtt) = (0, 99)
+  val (minBoughtAtt, maxBoughtAtt) = (0L, 99L)
   val (minLost, maxLost) = (0L, Long.MaxValue)
 
   val Ap = fullInfo(0, Int.MaxValue, "ap")
 
-  val BoughtAttributes = EnumMaps.int[Attribute](
-    minBoughtAtt, maxBoughtAtt, 0, "boughtAttributes")
+  val BoughtAttributes = EnumMaps.long[Attribute](
+    minBoughtAtt, maxBoughtAtt, 0L, "boughtAttributes")
 
   val BoughtAe = fullInfo(minBought, maxBought, "boughtAe")
   val BoughtAu = fullInfo(minBought, maxBought, "boughtAu")
@@ -31,7 +31,7 @@ package object being extends RangeVals {
   val Height = fullInfo(0L, Long.MaxValue, "height")
 
   val InitialAttributes =
-    EnumMaps.int[Attribute](0, 99, 8, "baseAttributes")
+    EnumMaps.long[Attribute](0L, 99L, 8L, "baseAttributes")
 
   val LostAe = fullInfo(minLost, maxLost, "damageAe")
   val LostAu = fullInfo(minLost, maxLost, "damageAu")
@@ -82,7 +82,7 @@ package object being extends RangeVals {
   def modSeq (value: Long, name: String): List[Modifier] =
     (value ≠ 0L) ? List(Modifier(name, value)) | Nil
 
-  def attributeMods(em: EnumMap[Attribute,Int], name: String): Modifiers = {
+  def attributeMods(em: EnumMap[Attribute,Long], name: String): Modifiers = {
     def aMods (a: Attribute) =  modSeq(em(a), name)
     def aPair (a: Attribute) = (attributeKeyFor(a), aMods(a))
 

@@ -90,7 +90,7 @@ object SkillNodes extends StNodeFunctions {
 
   def rl[A,B](o: SkillsOut[Skill[A,B]])(implicit L: SkillLinker[A,B])
     : HDOut[Skill[A,B]] =
-    mapSt[Skill[A,B],SkillDatas,HD](o)(HD.skills) ⊹ 
+    mapSt[Skill[A,B],SkillDatas,HD](o)(HD.humanoid.skills) ⊹ 
     NodeOut[Skill[A,B],ValSt[HD]](
       (o,n) ⇒ s ⇒ n.updateCookies[LowerCookie] apply 
       LowerCookie(o(L lower s success))) ⊹ 

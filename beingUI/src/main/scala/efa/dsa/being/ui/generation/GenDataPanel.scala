@@ -62,7 +62,7 @@ final class GenAttributesPanel (
   private def elem (p: Panel): Elem = p._1.loc.locName beside p._2
 
   private def aSet (p: Panel): VSET[HD,HD] =
-    intIn(p._2, Attributes.validator)(l.attributes at p._1)
+    longIn(p._2, Attributes.validator)(l.attributes at p._1)
 }
 
 object GenPanel {

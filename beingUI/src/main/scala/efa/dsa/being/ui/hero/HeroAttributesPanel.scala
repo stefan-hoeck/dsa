@@ -10,8 +10,8 @@ import efa.rpg.being.BeingPanel
 import scala.swing.TextField
 import scalaz._, Scalaz._
 
-class HeroAttributesPanel extends BeingPanel[Hero, HeroData] {
-  import HeroAttributesPanel._
+class HeroAttributesPanel[A:AsHero] extends BeingPanel[A, HeroData] {
+  import HeroAttributesPanel._, AsHero._
 
   val panels: List[Panels] = Attribute.values map (
     (_, numberDisabled, number, number))
@@ -24,21 +24,21 @@ class HeroAttributesPanel extends BeingPanel[Hero, HeroData] {
   private def panelElem (p: Panels): Elem =
     p._1.loc.locName beside p._2 beside p._3 beside p._4
 
-  private def panelSET (p: Panels): VSET[Hero,HeroData] = {
+  private def panelSET (p: Panels): VSET[A,HeroData] = {
     val a: Attribute = p._1
 
     modifiedProp(attributeKeyFor(a))(p._2) ⊹
-    (intIn(p._3, valIni)(lens.initial at a) ∙ (_.data)) ⊹ 
-    outOnly[Hero](h ⇒ tt(p._4)(h.attributes.maxBought(a).toString)) ⊹
-    getSet((_: Hero).data.attributes.bought(a))(
-      _.setBoughtAttribute(a, _), readVals[Int](p._4))
+    (longIn(p._3, valIni)(iniL at a) ∙ heroData[A]) ⊹ 
+    outOnly[A](x ⇒ tt(p._4)(maxBought(a)(x).toString)) ⊹
+    getSet(boughtAtt[A](a))(setBought(a), readVals[Long](p._4))
   }
 }
 
 object HeroAttributesPanel {
   type Panels = (Attribute, TextField, TextField, TextField)
 
-  val lens = HeroData.attributes
+  val iniL = HeroData.humanoid.initial
+  val boughtL = HeroData.bought
 
   def valIni = InitialAttributes.validator
   def valBought = BoughtAttributes.validator

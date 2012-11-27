@@ -24,7 +24,7 @@ object CalculatedRules extends ModRules {
   private def immutable[A:AH](a: A) = AH[A].attributes.immutable get a
 
   private def rule[A:AH] (
-    l: Localization, name: String, k: ModifierKey, v: Attributes ⇒ Int
+    l: Localization, name: String, k: ModifierKey, v: Attributes ⇒ Long
   ): Rule[A] = {
     def m (a: A) = Modifier(name, v(immutable(a)))
 
@@ -33,7 +33,7 @@ object CalculatedRules extends ModRules {
   
   def calcAe[A:AH]: Rule[A] = {
     def calc(a: A): A = {
-      def fromAtts(f: Attributes ⇒ Int) = f (immutable(a))
+      def fromAtts(f: Attributes ⇒ Long) = f (immutable(a))
       def isMagician =
           hasAdvantage(loc.vollzauberer, a) || 
           hasAdvantage(loc.halbzauberer, a) ||

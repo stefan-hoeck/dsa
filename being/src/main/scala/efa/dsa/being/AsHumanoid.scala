@@ -3,6 +3,7 @@ package efa.dsa.being
 import efa.core.{ValSt, Validators, EndoVal}, Validators.interval
 import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.being.equipment.{Hands, HandsData}
+import efa.dsa.world.Attribute
 import scalaz._, Scalaz._
 
 trait AsHumanoid[A] extends AsBeing[A] {
@@ -13,6 +14,8 @@ trait AsHumanoid[A] extends AsBeing[A] {
   def gs (a: A): Long = prop(a, GsKey)
   def hands (a: A): HandsData = humanoidData(a).hands
   def humanoidData (a: A): HD
+  def initial (a: A): Attributes = humanoidData(a).initial
+  def initialAtt (at: Attribute)(a: A): Long = humanoidData(a) initial at
   def ke (a: A): Long = maxKe(a) - humanoidData(a).lostKe
   def le (a: A): Long = maxLe(a) - humanoidData(a).lostLe
   def mr (a: A): Long = prop(a, MrKey)
@@ -32,6 +35,8 @@ trait AsHumanoidFunctions extends AsBeingFunctions {
   def gs[A:AH] (a: A): Long = AH[A] gs a
   def hands[A:AH] (a: A): HandsData = AH[A] hands a
   def humanoidData[A:AH] (a: A): HD = AH[A] humanoidData a
+  def initial[A:AH] (a: A): Attributes = AH[A] initial a
+  def initialAtt[A:AH] (at: Attribute)(a: A): Long = AH[A].initialAtt(at)(a)
   def mr[A:AH] (a: A): Long = AH[A] mr a
   def setAe[A:AH] (a: A, i: Long): ValSt[HD] = AH[A] setAe (a, i)
   def setAu[A:AH] (a: A, i: Long): ValSt[HD] = AH[A] setAu (a, i)

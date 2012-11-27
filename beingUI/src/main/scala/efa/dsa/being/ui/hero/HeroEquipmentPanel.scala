@@ -35,7 +35,8 @@ class HeroEquipmentPanel (equipmentP: NodePanel[Equipments,EquipmentDatas])
   carryP above (equipmentP fillV 1) add()
 
   def set =
-    (mapSt(equipmentP.set)(HeroData.equipment) ∙ ((_: Hero).equipment)) ⊹
+    (mapSt(equipmentP.set)(HeroData.humanoid.equipment) ∙ 
+      ((_: Hero).equipment)) ⊹
     carryP.set
 
   override def persistentChildren = List(equipmentP)

@@ -35,7 +35,7 @@ class ZoneRsPanel[A:AsHumanoid] extends BeingPanel[A,HumanoidData] {
     } horizontal
 
   private def panelToSet (p: ZonePanel): VSET[A,HumanoidData] =
-    (lensed(values(p._2) >=> success)(lens(p._1)) ∙ humanoidBaseData[A]) ⊹
+    (lensed(values(p._2) >=> success)(lens(p._1)) ∙ humanoidData[A]) ⊹
     modifiedProp(zoneRsKeyFor(p._1))(p._3)
 }
 

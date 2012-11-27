@@ -17,16 +17,7 @@ case class Hero (
   equipment: Equipments,
   modifiers: Modifiers,
   skills: Skills
-) {
-  import Hero._
-
-  def intProp (k: ModifierKey): Int = prop(k).toInt
-
-  def prop (k: ModifierKey): Long = modifiers property k
-
-//  def setBoughtAttribute (a: Attribute, i: Int): ValSt[HeroData] =
-//    setInt(0, attributes maxBought a, i, Attributes.bought at a)
-}
+)
 
 object Hero extends Util {
   lazy val default = Hero(!!, Nil, !!, !!, !!, !!, Modifiers.empty, !!)

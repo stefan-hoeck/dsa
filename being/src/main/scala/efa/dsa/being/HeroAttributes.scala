@@ -26,16 +26,16 @@ case class HeroAttributes (
 )
 
 object HeroAttributes {
-  lazy val default = HeroAttributes(EnumMap(0), EnumMap(0),
+  lazy val default = HeroAttributes(EnumMap(0L), EnumMap(0L),
     EnumMap(maxBoughtAtt))
 
   def fromHeroData (h: HeroData): HeroAttributes = {
-    def crea(a: Attribute): Int =
+    def crea(a: Attribute): Long =
       (h.humanoid initial a) +
       (h.base.race attributes a) +
       (h.base.culture attributes a)
 
-    def immu(a: Attribute) = creation(a) + h.bought(a) 
+    def immu(a: Attribute): Long = creation(a) + h.bought(a) 
 
     lazy val creation =
       EnumMap(Attribute.values map (a ⇒ (a, crea(a))) toMap)
@@ -43,7 +43,7 @@ object HeroAttributes {
     lazy val immutable =
       EnumMap(Attribute.values map (a ⇒ (a, immu(a))) toMap)
 
-    HeroAttributes(creation, immutable, EnumMap(0))
+    HeroAttributes(creation, immutable, EnumMap(0L))
   }
 
   implicit lazy val HeroAttributesDefault = Default default default
