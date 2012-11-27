@@ -46,6 +46,7 @@ trait AsHero[A]
     def st: State[HeroData,Unit] = for {
       _ ← (HeroData.bought at at) += 1
       _ ← HeroData.base.apUsed += raiseAttAp(at)(a)
+      _ ← (HeroData.specialExp at at) := false
     } yield ()
 
     (if (canRaiseAtt(at)(a)) st else init[HeroData].void) success

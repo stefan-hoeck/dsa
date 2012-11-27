@@ -83,7 +83,10 @@ sealed abstract class SkillLinker[I,D] (implicit
     data += (SD.id(d) → d) void
     
   final def set[X] (l: D @> X): (SKILL,X) ⇒ State[SkillDatas,Unit] =
-    (s,x) ⇒ add(l set (s.skill, x))
+    (s,x) ⇒ setS(l := x void)(s)
+    
+  final def setS[X] (st: State[D,Unit]): SKILL ⇒ State[SkillDatas,Unit] =
+    s ⇒ add(st exec s.skill)
 
   final lazy val special = set(SD.specialExpL)
 
@@ -93,8 +96,12 @@ sealed abstract class SkillLinker[I,D] (implicit
     hd ← init[HD]
     ap = hd.base.apUsed + cost
     _  ← if (ap >= 0 && ap <= hd.base.ap) for {
-           _ ← HD.humanoid.skills := set(SD.tapL)(s, s.tap + add) exec
-               hd.humanoid.skills
+           _ ← HD.humanoid.skills lifts (
+               setS(
+                 (SD.tapL := (s.tap + add)) >>
+                 (SD.specialExpL := false void)
+               ) apply s
+             )
            _ ← HD.base.apUsed := ap
          } yield () else init[HD].void
   } yield ()

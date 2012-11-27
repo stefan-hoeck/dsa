@@ -8,15 +8,16 @@
 *** Attributes ***
 	
 	#Done		Max bought (calculate and display)	
-	#Low		Raise (and lower)	
-	#Low		Special Experience	
+	#Done		Raise
+	#Done		Special Experience	
+	#Medium		Remove Special Experience after raising
 
 *** Derived Values ***
 	
 	#Done		Max bought (calculate and display)	
 	#High		Include possibility to add AE through Grosse
 				Meditation
-	#Low		Raise and lower	
+	#Low		Raise
 	#Low		Special Experience for MR	
 	
 
@@ -52,7 +53,7 @@
 	#Done		Edit Advantage description
 	#Done		Edit Disadvantage description
 	#Done		Edit Feat description
-	#High		Add missing feats.
+	#Medium		Add missing feats.
 
 *** Talents ***
 
@@ -63,7 +64,7 @@
 	#Done		Adjust Tooltips for Scriptures
 	#Done		Adjust Tooltips for Spells
 	#Done		Adjust Tooltips for Rituals
-	#Medium		Adding spells (at least the raw data without
+	#Medium		Add spells (at least the raw data without
 				descriptions).
 
 *** Equipment ***
@@ -109,7 +110,7 @@
 	#Done		Calculate Carrying Capacity from Strength
 	#Done		Adjust GS to BE
 	#Done		Adjust INI to BE
-	#High		Adjust values to basic wounds
+	#Done		Adjust values to basic wounds
 	#Done		Calc max bought attributes
 	#Done		Calc max bought le
 	#Done		Calc max bought au

@@ -8,25 +8,29 @@ import efa.nb.VSET
 import efa.react.sTrans
 import efa.react.swing.Swing
 import efa.rpg.being.BeingPanel
-import scala.swing.{TextField, Button, CheckBox}
+import scala.swing.{TextField, Button, CheckBox, Label}
 import scalaz._, Scalaz._
 
 class HeroAttributesPanel[A:AsHero] extends BeingPanel[A, HeroData] {
   import HeroAttributesPanel._, AsHero._
 
+ 
   val panels: List[Panels] = Attribute.values map (
-    (_, numberDisabled, number, number, new Button("..."),
+    (_, numberDisabled, number, number, new Button("↑"),
       checkBox(false)))
   
+  private def seLbl =
+    new Label(bLoc.shortSpecialExp){tooltip = bLoc.specialExp}
+
   ("" beside uiLoc.total beside uiLoc.start beside uiLoc.bought beside
-    "" beside bLoc.specialExp) above
+    "" beside seLbl) above
   (panels foldMap panelElem) add()
 
   def set = panels foldMap panelSET
 
   private def panelElem (p: Panels): Elem =
     p._1.loc.locName beside p._2 beside p._3 beside p._4 beside
-    p._5 beside p._6
+    noFill(p._5) beside noFill(p._6)
 
   private def panelSET (p: Panels): VSET[A,HeroData] = {
     val a: Attribute = p._1
