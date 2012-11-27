@@ -2,17 +2,19 @@ package efa.dsa.being
 
 import efa.core.ValSt
 import efa.dsa.being.{HeroData ⇒ HD}
-import efa.dsa.world.Attribute
+import efa.dsa.world._
 import abilities.HasAbilities
 import equipment.HasEquipment
 import efa.rpg.core.{Modified, Described}
-import scalaz.@>
+import scalaz._, Scalaz._
 
 trait AsHero[A]
    extends AsHumanoid[A]
    with HasAbilities[A]
    with HasEquipment[A] 
    with Described[A] {
+  def ap (a: A): Long = baseData(a).ap
+  def apUsed (a: A): Long = baseData(a).apUsed
   def attributes: A @> HeroAttributes
   def baseData (a: A): HeroBaseData = heroData(a).base
   def bought (a: A): Attributes = heroData(a).bought
@@ -22,6 +24,11 @@ trait AsHero[A]
   def boughtKe (a: A): Long = heroData(a).boughtKe
   def boughtLe (a: A): Long = heroData(a).boughtLe
   def boughtMr (a: A): Long = heroData(a).boughtMr
+
+  def canRaiseAtt (at: Attribute)(a: A): Boolean =
+    (boughtAtt(at)(a) < maxBought(at)(a)) &&
+    (raiseAttAp(at)(a) <= restAp(a))
+
   def derived: A @> HeroDerived
   def desc (a: A) = baseData(a).desc
   def fullDesc (h: Hero) = h.data.base.desc
@@ -33,7 +40,24 @@ trait AsHero[A]
   def maxBoughtKe (a: A): Long = derived.get(a).maxBoughtKe
   def maxBoughtLe (a: A): Long = derived.get(a).maxBoughtLe
   def maxBoughtMr (a: A): Long = derived.get(a).maxBoughtMr
-  def name (h: Hero) = h.data.base.name
+  def name (a: A) = baseData(a).name
+
+  def raiseAtt (at: Attribute)(a: A): ValSt[HeroData] = {
+    def st: State[HeroData,Unit] = for {
+      _ ← (HeroData.bought at at) += 1
+      _ ← HeroData.base.apUsed += raiseAttAp(at)(a)
+    } yield ()
+
+    (if (canRaiseAtt(at)(a)) st else init[HeroData].void) success
+  }
+
+  def raiseAttAp (at: Attribute)(a: A): Long = {
+    val rc = if (specialExp(a)(at)) RaisingCost.G else RaisingCost.H
+
+    Skt cost (rc, attributes get a immutable at toInt)
+  }
+
+  def restAp (a: A): Long = baseData(a).restAp
 
   def setBought(at: Attribute)(a: A, l: Long): ValSt[HD] =
     setLong(0L, attributes.get(a) maxBought at, l, HD.bought at at)
@@ -53,12 +77,15 @@ trait AsHero[A]
   def setBoughtMr (a: A, i: Long): ValSt[HD] =
     setLong(0L, maxBoughtMr(a), i, HD.boughtMr)
 
-  def shortDesc (h: Hero) = h.data.base.desc
+  def shortDesc (a: A) = desc(a)
+  def specialExp (a: A): BoolAtts = heroData(a).specialExp
 }
 
 trait AsHeroFunctions extends AsHumanoidFunctions {
   import efa.dsa.being.{AsHero ⇒ AH}
 
+  def ap[A:AH] (a: A): Long = AH[A] ap a
+  def apUsed[A:AH] (a: A): Long = AH[A] apUsed a
   def baseData[A:AH] (a: A): HeroBaseData = AH[A] baseData a
   def bought[A:AH] (a: A): Attributes = AH[A] bought a
   def boughtAe[A:AH] (a: A): Long = AH[A] boughtAe a
@@ -67,6 +94,10 @@ trait AsHeroFunctions extends AsHumanoidFunctions {
   def boughtKe[A:AH] (a: A): Long = AH[A] boughtKe a
   def boughtLe[A:AH] (a: A): Long = AH[A] boughtLe a
   def boughtMr[A:AH] (a: A): Long = AH[A] boughtMr a
+
+  def canRaiseAtt[A:AH] (at: Attribute)(a: A): Boolean =
+    AH[A].canRaiseAtt(at)(a)
+
   def heroData[A:AH] (a: A): HD = AH[A] heroData a
   def maxBought[A:AH](at: Attribute)(a: A): Long = AH[A].maxBought(at)(a)
   def maxBoughtAe[A:AH] (a: A): Long = AH[A] maxBoughtAe a
@@ -74,13 +105,26 @@ trait AsHeroFunctions extends AsHumanoidFunctions {
   def maxBoughtKe[A:AH] (a: A): Long = AH[A] maxBoughtKe a
   def maxBoughtLe[A:AH] (a: A): Long = AH[A] maxBoughtLe a
   def maxBoughtMr[A:AH] (a: A): Long = AH[A] maxBoughtMr a
+
+  def raiseAtt[A:AH] (at: Attribute)(a: A): ValSt[HeroData] =
+    AH[A].raiseAtt(at)(a)
+
+  def raiseAttAp[A:AH] (at: Attribute)(a: A): Long =
+    AH[A].raiseAttAp(at)(a)
+
+  def restAp[A:AH] (a: A): Long = AH[A] restAp a
+
   def setBought[A:AH](at: Attribute)(a: A, l: Long): ValSt[HD] =
     AH[A].setBought(at)(a, l)
+
   def setBoughtAe[A:AH] (a: A, i: Long): ValSt[HD] = AH[A] setBoughtAe (a, i)
   def setBoughtAu[A:AH] (a: A, i: Long): ValSt[HD] = AH[A] setBoughtAu (a, i)
   def setBoughtKe[A:AH] (a: A, i: Long): ValSt[HD] = AH[A] setBoughtKe (a, i)
   def setBoughtLe[A:AH] (a: A, i: Long): ValSt[HD] = AH[A] setBoughtLe (a, i)
   def setBoughtMr[A:AH] (a: A, i: Long): ValSt[HD] = AH[A] setBoughtMr (a, i)
+
+  def shortDesc[A:AH] (a: A): String = AH[A] shortDesc a
+  def specialExp[A:AH] (a: A): BoolAtts = AH[A] specialExp a
 }
 
 object AsHero extends AsHeroFunctions {

@@ -1,15 +1,16 @@
 package efa.dsa
 
-import efa.core._
+import efa.core._, Efa._
 import efa.dsa.world.{Attribute, BodyPart}
 import efa.dsa.being.spi.BeingLocal
 import efa.rpg.core._
 import org.scalacheck.Gen
 import scalaz._, Scalaz._
 
-package object being extends RangeVals {
+package object being extends RangeVals with Util {
   lazy val loc = Service.unique[BeingLocal](BeingLocal)
 
+  type BoolAtts = EnumMap[Attribute,Boolean]
   type Attributes = EnumMap[Attribute,Long]
   type ZoneWounds = EnumMap[BodyPart, Int]
 
@@ -17,7 +18,11 @@ package object being extends RangeVals {
   val (minBoughtAtt, maxBoughtAtt) = (0L, 99L)
   val (minLost, maxLost) = (0L, Long.MaxValue)
 
-  val Ap = fullInfo(0, Int.MaxValue, "ap")
+  val Ap = fullInfo(0L, Long.MaxValue, "ap")
+
+  val AttributesSpecialExp = EnumMaps[Attribute,Boolean](
+    Validators.dummy, a[Boolean], false, "attributesSpecialExp"
+  )
 
   val BoughtAttributes = EnumMaps.long[Attribute](
     minBoughtAtt, maxBoughtAtt, 0L, "boughtAttributes")
@@ -45,7 +50,7 @@ package object being extends RangeVals {
   val ZoneWounds = EnumMaps.int[BodyPart](
     zoneWoundsMin, zoneWoundsMax, 0, "zoneWounds")
 
-  def apUsedI(ap: Int) = fullInfo(0, ap, "apUsed")
+  def apUsedI(ap: Long) = fullInfo(0L, ap, "apUsed")
 
   val (min, max) = (-999, 999)
   val AeKey = ModifierKey(loc.aeLoc, min, max)

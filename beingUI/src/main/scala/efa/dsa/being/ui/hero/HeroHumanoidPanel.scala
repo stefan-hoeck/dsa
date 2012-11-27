@@ -37,7 +37,7 @@ class HeroHumanoidPanel[A:AsHero] extends BeingPanel[A,HeroData] {
   val tPa = numberDisabled
   val tWs = numberDisabled
 
-  def set: VSET[A,HeroData] = null
+  def set: VSET[A,HeroData] =
     valInHuman(ae, setAe)(tAe) ⊹ 
     valInHuman(au, setAu)(tAu) ⊹ 
     valInHuman(ke, setKe)(tKe) ⊹ 

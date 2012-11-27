@@ -16,14 +16,14 @@ case class HeroBaseData(
   position: String,
   title: String,
   so: Int,
-  ap: Int,
+  ap: Long,
   birthday: Long,
   height: Long,
   weight: Long,
   eyeColor: String,
   hairColor: String,
   desc: String,
-  apUsed: Int
+  apUsed: Long
 ) {
   require(So validate so isRight)
   require(Ap validate ap isRight, "ap")
@@ -36,11 +36,11 @@ case class HeroBaseData(
 
   lazy val restAp = ap - apUsed
 
-  def setAp (i: Int): ValSt[HeroBaseData] =
-    setInt(apUsed, Int.MaxValue, i, HeroBaseData.ap)
+  def setAp (i: Long): ValSt[HeroBaseData] =
+    setLong(apUsed, Long.MaxValue, i, HeroBaseData.ap)
 
-  def setApUsed (i: Int): ValSt[HeroBaseData] =
-    setInt(0, ap, i, HeroBaseData.apUsed)
+  def setApUsed (i: Long): ValSt[HeroBaseData] =
+    setLong(0L, ap, i, HeroBaseData.apUsed)
 }
 
 object HeroBaseData extends Util {
@@ -152,7 +152,7 @@ object HeroBaseData extends Util {
 
   val so: HeroBaseData @> Int = Lens.lensu((a,b) ⇒ a copy (so = b), _.so)
 
-  val ap: HeroBaseData @> Int = Lens.lensu((a,b) ⇒ a copy (ap = b), _.ap)
+  val ap: HeroBaseData @> Long = Lens.lensu((a,b) ⇒ a copy (ap = b), _.ap)
     
   val birthday: HeroBaseData @> Long =
     Lens.lensu((a,b) ⇒ a copy (birthday = b), _.birthday)
@@ -169,7 +169,7 @@ object HeroBaseData extends Util {
   val hairColor: HeroBaseData @> String =
     Lens.lensu((a,b) ⇒ a copy (hairColor = b), _.hairColor)
 
-  val apUsed: HeroBaseData @> Int =
+  val apUsed: HeroBaseData @> Long =
     Lens.lensu((a,b) ⇒ a copy (apUsed = b), _.apUsed)
 
   val desc: HeroBaseData @> String =

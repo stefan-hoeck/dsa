@@ -17,7 +17,8 @@ case class HeroData(
   boughtAu: Long,
   boughtKe: Long, 
   boughtLe: Long,
-  boughtMr: Long
+  boughtMr: Long,
+  specialExp: BoolAtts
 ) {
   require (BoughtAttributes validate bought isRight)
   require(BoughtAe validate boughtAe isRight)
@@ -39,14 +40,14 @@ case class HeroData(
 }
 
 object HeroData extends Util {
-  lazy val default =
-    HeroData(!!, !!, BoughtAttributes.!!, 0L, 0L, 0L, 0L, 0L)
+  lazy val default = HeroData(!!, !!, BoughtAttributes.!!,
+    0L, 0L, 0L, 0L, 0L, AttributesSpecialExp.!!)
 
   implicit val HeroDataDefault = Default default default
 
   implicit val HeroDataEqual = Equal.equalA[HeroData]
 
-  implicit val HeroDataArbitrary = Arbitrary(Apply[Gen].apply8(
+  implicit val HeroDataArbitrary = Arbitrary(Apply[Gen].apply9(
       a[HeroBaseData],
       a[HumanoidData],
       BoughtAttributes.gen,
@@ -54,14 +55,15 @@ object HeroData extends Util {
       BoughtAu.gen,
       BoughtKe.gen,
       BoughtLe.gen,
-      BoughtMr.gen
+      BoughtMr.gen,
+      AttributesSpecialExp.gen
     )(HeroData.apply)
   )
 
   implicit val HeroDataToXml = new TaggedToXml[HeroData] {
     val tag = "dsa_hero"
 
-    def fromXml (ns: Seq[Node]) = Apply[ValRes].apply8(
+    def fromXml (ns: Seq[Node]) = Apply[ValRes].apply9(
       HeroBaseData read ns,
       HumanoidData read ns,
       BoughtAttributes read ns,
@@ -69,7 +71,8 @@ object HeroData extends Util {
       BoughtAu read ns,
       BoughtKe read ns,
       BoughtLe read ns,
-      BoughtMr read ns
+      BoughtMr read ns,
+      AttributesSpecialExp read ns
     )(HeroData.apply)
 
     def toXml (a: HeroData) =
@@ -80,7 +83,8 @@ object HeroData extends Util {
       BoughtAu.write(a.boughtAu) ++
       BoughtKe.write(a.boughtKe) ++
       BoughtLe.write(a.boughtLe) ++
-      BoughtMr.write(a.boughtMr)
+      BoughtMr.write(a.boughtMr) ++
+      AttributesSpecialExp.write(a.specialExp)
   }
 
   val base: HeroData @> HeroBaseData =
@@ -107,6 +111,8 @@ object HeroData extends Util {
   val boughtMr: HeroData @> Long =
     Lens.lensu((a,b) ⇒ a copy (boughtMr = b), _.boughtMr)
 
+  val specialExp: HeroData @> BoolAtts =
+    Lens.lensu((a,b) ⇒ a copy (specialExp = b), _.specialExp)
 
   implicit def HeroDataLenses[A] (l: A @> HeroData) = new {
     lazy val base = l >=> HeroData.base
@@ -117,6 +123,7 @@ object HeroData extends Util {
     lazy val boughtKe = l >=> HeroData.boughtKe
     lazy val boughtLe = l >=> HeroData.boughtLe
     lazy val boughtMr = l >=> HeroData.boughtMr
+    lazy val specialExp = l >=> HeroData.specialExp
   }
 }
 

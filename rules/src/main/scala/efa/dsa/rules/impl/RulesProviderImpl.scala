@@ -113,7 +113,7 @@ class RulesProviderImpl extends efa.rpg.rules.spi.RulesProvider {
           calcPaL
         ),
         child("Rüstungsschutz", armorRsL),
-        child("Wunden", baseWoundL),
+        child("Wunden", woundsL),
         child("Wundschwelle",
           glasknochenWoundThresholdL,
           eisernWoundThresholdL,

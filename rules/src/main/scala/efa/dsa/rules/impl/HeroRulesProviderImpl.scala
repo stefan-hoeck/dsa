@@ -12,6 +12,7 @@ class HeroRulesProviderImpl extends HeroRulesProvider {
     HerausragendRule.all ++
     EquippedRules.all ++
     CalculatedRules.all ++
+    WoundRules.all ++
     ExhaustionRules.all ++
     BeRules.all
 }

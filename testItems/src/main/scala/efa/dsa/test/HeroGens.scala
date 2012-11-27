@@ -21,7 +21,8 @@ object HeroGens {
     bke ← boughtKeGen
     ble ← boughtLeGen
     bmr ← boughtMrGen
-  } yield HeroData(base, humanoid, bought, bae, bau, bke, ble, bmr)
+    se  ← AttributesSpecialExp.gen
+  } yield HeroData(base, humanoid, bought, bae, bau, bke, ble, bmr, se)
 
   def baseDataGen(sd: SkillDatas): Gen[HeroBaseData] = 
     ^^^^(Gen.oneOf(heroNames),

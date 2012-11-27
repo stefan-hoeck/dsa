@@ -14,8 +14,8 @@ class HeroApPanel extends BeingPanel[HBD,HBD] {
   val tRestAp = numberDisabled
 
   def set = 
-    getSet((_: HBD).ap)(_ setAp _, readVals[Int](tAp)) ⊹ 
-    getSet((_: HBD).apUsed)(_ setApUsed _, readVals[Int](tApUsed)) ⊹
+    getSet((_: HBD).ap)(_ setAp _, readVals[Long](tAp)) ⊹ 
+    getSet((_: HBD).apUsed)(_ setApUsed _, readVals[Long](tApUsed)) ⊹
     outOnly(textComponent text tRestAp contramap (_.restAp.toString))
 
   uiLoc.total beside tAp beside uiLoc.used beside tApUsed beside 
