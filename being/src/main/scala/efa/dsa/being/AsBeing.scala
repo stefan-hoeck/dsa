@@ -2,7 +2,7 @@ package efa.dsa.being
 
 import efa.rpg.core.{Modified, ModifiedFunctions}
 
-trait AsBeing[A] extends Modified[A] {
+trait AsBeing[A] extends Modified[A] with CanAttack[A] {
   def ae (a: A): Long
   def au (a: A): Long
   def exhaustion (a: A): Long
@@ -18,7 +18,7 @@ trait AsBeing[A] extends Modified[A] {
   def wounds (a: A): Long
 }
 
-trait AsBeingFunctions extends ModifiedFunctions {
+trait AsBeingFunctions extends ModifiedFunctions with CanAttackFunctions {
   import efa.dsa.being.{AsBeing ⇒ AB}
 
   def ae[A:AB] (a: A): Long = AB[A] ae a

@@ -1,6 +1,6 @@
-package efa.dsa.being.equipment
+package efa.dsa.being
 
-import efa.dsa.being.{TpKey, loc, PaKey, AtKey, AtFkKey, AwKey, IniKey}
+import efa.dsa.being.equipment._
 import efa.rpg.core.{Modifiers, Modifier, Modified, DieRoller}
 import scalaz._, Scalaz._
 
@@ -8,6 +8,8 @@ sealed trait AttackMode {
   def name: String
 
   def baseTp: DieRoller
+
+  def isMelee: Boolean
 
   def modifiers: Modifiers
 
@@ -33,6 +35,7 @@ sealed trait AttackMode {
 }
 
 sealed trait MeleeMode extends AttackMode {
+  def isMelee = true
   def weapon: MeleeWeapon
 
   lazy val name = if (subdual) "%s (%s)" format (weapon.name, loc.subdual) 
@@ -71,6 +74,7 @@ object AttackMode {
     wrongHand: Boolean,
     modifiers: Modifiers
   ) extends AttackMode {
+    def isMelee = false
     def name = weapon.name
     def baseTp = weapon.data.tp
   }
@@ -81,11 +85,13 @@ object AttackMode {
     subdual: Boolean,
     modifiers: Modifiers
   ) extends AttackMode {
+    def isMelee = false
     def name = weapon.name
     def baseTp = ammo.data.tp
   }
 
   case class Unarmed (name: String, modifiers: Modifiers) extends AttackMode {
+    def isMelee = true
     def baseTp = DieRoller.default
     def subdual = true
   }

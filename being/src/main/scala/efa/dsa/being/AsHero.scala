@@ -8,11 +8,7 @@ import equipment.HasEquipment
 import efa.rpg.core.{Modified, Described}
 import scalaz._, Scalaz._
 
-trait AsHero[A]
-   extends AsHumanoid[A]
-   with HasAbilities[A]
-   with HasEquipment[A] 
-   with Described[A] {
+trait AsHero[A] extends AsHumanoid[A] with Described[A] {
   def ap (a: A): Long = baseData(a).ap
   def apUsed (a: A): Long = baseData(a).apUsed
   def attributes: A @> HeroAttributes

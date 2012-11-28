@@ -2,7 +2,7 @@
 
 *** Beings ***
 
-	#High 		Hero: When removing shields, ranged weapons,
+	#Done 		Hero: When removing shields, ranged weapons,
 				melee weapons, or ammo clear hands if necessary
 
 *** Attributes ***
@@ -10,7 +10,7 @@
 	#Done		Max bought (calculate and display)	
 	#Done		Raise
 	#Done		Special Experience	
-	#Medium		Remove Special Experience after raising
+	#Done		Remove Special Experience after raising
 
 *** Derived Values ***
 	
@@ -95,8 +95,8 @@
 *** UI ***
 
 	#Done		Link lookups of multiviews
-	#Medium		Define preferred width for columns
-	#Medium		Store user settings for multiviews
+	#Low		Define preferred width for columns
+	#Done		Store user settings for multiviews
 	#High		Allow to rename being files
 	#Done		Allow to disable/enable rules
 

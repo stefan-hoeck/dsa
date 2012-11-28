@@ -2,7 +2,7 @@ package efa.dsa.being
 
 import efa.core.Service
 import efa.dsa.abilities.AbilityItems
-import efa.dsa.being.equipment.{AttackMode, Hands}
+import efa.dsa.being.equipment.Hands
 import efa.dsa.being.calc.spi.BeingCalcLocal
 import efa.dsa.equipment.EquipmentItems
 import scalaz._, Scalaz._
