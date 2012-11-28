@@ -121,10 +121,13 @@ object EquippedRules extends FADRules {
   private def cc2be[A:M](a: A): Long = {
     val cc = prop(a, CarryingCapacityKey)
     val cw = prop(a, WeightKey)
-    def add = if ((cw - cc) % (cc / 2L) == 0L) 0L else 1L
-    def be = (cw - cc) / (cc / 2L) + add
+    val half = cc / 2L
+    val diff = cw - cc //Weight above CarryingCapacity
+    //if new half started, add one else zero
+    def add = if (diff % half == 0L) 0L else 1L
+    def be = diff / half + add
 
-    if (cc ≟ 0L) 0L else be
+    if (cc == 0L || diff <= 0) 0L else be
   }
 }
 

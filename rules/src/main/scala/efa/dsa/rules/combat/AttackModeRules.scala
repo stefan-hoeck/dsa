@@ -33,17 +33,17 @@ object AttackModeRules extends FADRules {
     amRule[A](Loc.baseAttackModeL, a ⇒ {
       case am if am.isMelee ⇒ 
         addRest(a) >>
-        addModsS(AtKey, modsFor (a, AtKey)) >>
+        addModsS(AtFkKey, modsFor (a, AtKey)) >>
         addModsS(PaKey, modsFor (a, PaKey))
       
-      case am ⇒ addRest(a) >> addModsS(FkKey, modsFor (a, FkKey))
+      case am ⇒ addRest(a) >> addModsS(AtFkKey, modsFor (a, FkKey))
     })
   }
 
   def weaponWrongHand[A:CA] = amRule[A](Loc.weaponWrongHandL, h ⇒  {
     case a @MeleeSingle(_, _, true, _) ⇒ 
-      addModS(AtKey, wrongHandMod) >> addModS(PaKey, wrongHandMod)
-    case a @Throwing(_, _, true, _) ⇒ addModS(FkKey, wrongHandMod)
+      addModS(AtFkKey, wrongHandMod) >> addModS(PaKey, wrongHandMod)
+    case a @Throwing(_, _, true, _) ⇒ addModS(AtFkKey, wrongHandMod)
   })
 
   private val wrongHandMod = Modifier(Loc.wrongHand, -9L)

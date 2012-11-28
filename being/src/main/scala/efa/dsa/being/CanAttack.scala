@@ -1,5 +1,6 @@
 package efa.dsa.being
 
+import efa.rpg.core.ModifiedFunctions
 import scalaz._, Scalaz._
 
 trait CanAttack[A] {
@@ -14,13 +15,13 @@ trait CanAttack[A] {
   }
 }
 
-trait CanAttackFunctions {
+trait CanAttackFunctions extends ModifiedFunctions {
   import efa.dsa.being.{CanAttack ⇒ CA}
-
-  def attackModes[A:CA] (a: A): List[AttackMode] = CA[A] attackModes a
 
   def adjustAttackModes[A:CA] (a: A, pf: CA.PfAmSt): A =
     CA[A] adjustAttackModes (a, pf)
+
+  def attackModes[A:CA] (a: A): List[AttackMode] = CA[A] attackModes a
 }
 
 object CanAttack extends CanAttackFunctions {
