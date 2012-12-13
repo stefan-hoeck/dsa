@@ -131,19 +131,19 @@ object HumanoidData extends Util {
   val skills: HumanoidData @> SkillDatas =
     Lens.lensu((a,b) ⇒ a.copy(skills = b), _.skills)
 
-  implicit def HumanoidDataLenses[A] (l: A @> HumanoidData) = new {
-    lazy val initial = l >=> HumanoidData.initial
-    lazy val lostAe = l >=> HumanoidData.lostAe
-    lazy val lostAu = l >=> HumanoidData.lostAu
-    lazy val lostKe = l >=> HumanoidData.lostKe
-    lazy val lostLe = l >=> HumanoidData.lostLe
-    lazy val exhaustion = l >=> HumanoidData.exhaustion
-    lazy val wounds = l >=> HumanoidData.wounds
-    lazy val zoneWounds = l >=> HumanoidData.zoneWounds
-    lazy val hands = l >=> HumanoidData.hands
-    lazy val abilities = l >=> HumanoidData.abilities
-    lazy val equipment = l >=> HumanoidData.equipment
-    lazy val skills = l >=> HumanoidData.skills
+  implicit class HumanoidDataLenses[A] (val l: A @> HumanoidData) extends AnyVal {
+    def initial = l >=> HumanoidData.initial
+    def lostAe = l >=> HumanoidData.lostAe
+    def lostAu = l >=> HumanoidData.lostAu
+    def lostKe = l >=> HumanoidData.lostKe
+    def lostLe = l >=> HumanoidData.lostLe
+    def exhaustion = l >=> HumanoidData.exhaustion
+    def wounds = l >=> HumanoidData.wounds
+    def zoneWounds = l >=> HumanoidData.zoneWounds
+    def hands = l >=> HumanoidData.hands
+    def abilities = l >=> HumanoidData.abilities
+    def equipment = l >=> HumanoidData.equipment
+    def skills = l >=> HumanoidData.skills
   }
 }
 

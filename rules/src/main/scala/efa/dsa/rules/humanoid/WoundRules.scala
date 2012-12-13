@@ -23,7 +23,7 @@ object WoundRules extends FADRules {
       _ ← oModAddS(Loc.wounds, m, IniKey)
       _ ← oModAddS(Loc.wounds, gm, GsKey)
       _ ← oModAddS(Loc.wounds, m, attributeKeyFor(Ge))
-    } yield a
+    } yield ()
 
     Rule.state(Loc.woundsL.name, st)
   }

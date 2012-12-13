@@ -66,7 +66,7 @@ object SkillLinkerTest extends Properties("SkillLinker") {
   ): Prop = {
 
     def fromGenData(i: Int, gd: GenData): Int =
-      linker.prototypes get gd.skills get i fold (_.value, 0)
+      linker.prototypes get gd.skills get i map (_.value) orZero
 
     def tap(i: Int): Int = sd.tap(linker.data get cd.hero.humanoid.skills apply i)
 

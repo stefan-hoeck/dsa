@@ -39,9 +39,9 @@ object TpKk extends RangeVals {
   val tp: TpKk @> Int = Lens.lensu((a,b) ⇒ a.copy(tp = b), _.tp)
   val kk: TpKk @> Int = Lens.lensu((a,b) ⇒ a.copy(kk = b), _.kk)
 
-  implicit def TpKkLens[A](l: A @> TpKk) = new {
-    lazy val tp = l >=> TpKk.tp
-    lazy val kk = l >=> TpKk.kk
+  implicit class TpKkLenses[A](val l: A @> TpKk) extends AnyVal {
+    def tp = l >=> TpKk.tp
+    def kk = l >=> TpKk.kk
   }
     
 }

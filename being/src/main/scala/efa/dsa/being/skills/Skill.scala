@@ -44,10 +44,10 @@ object Skill extends HtmlTags {
   implicit def SkillEqual[A:Equal,B:Equal]: Equal[Skill[A,B]] =
     Equal.equalA
 
-  def modifiers[A,B]: Skill[A,B] @> List[Modifier] =
+  def modifiers[A:SkillItem,B:SkillData]: Skill[A,B] @> List[Modifier] =
     Lens.lensu((a,b) ⇒ a.copy(modifiers = b), _.modifiers)
   
-  def permanentTaw[A,B]: Skill[A,B] @> Int =
+  def permanentTaw[A:SkillItem,B:SkillData]: Skill[A,B] @> Int =
     Lens.lensu((a,b) ⇒ a.copy(permanentTaw = b), _.permanentTaw)
 
   implicit def SkillItem[A,B] =

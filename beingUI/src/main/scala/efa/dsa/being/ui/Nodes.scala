@@ -32,7 +32,7 @@ object Nodes {
       (o,n) ⇒ _ ⇒ {
         val paster: Paster = (p, no) ⇒ for {
           optD ← no.getLookup.head[D]
-          _    ← optD fold (d ⇒ o(add(d).success), IO.ioUnit)
+          _    ← optD map (d ⇒ o(add(d).success)) orZero
         } yield ()
 
         n setPasters List(paster)

@@ -38,9 +38,10 @@ object GenDataAttributes extends Util {
   val attributes: GenDataAttributes @> Attributes =
     Lens.lensu((a,b) ⇒ a.copy(attributes = b), _.attributes)
 
-  implicit def GenDataAttributesLenses[A] (l: A @> GenDataAttributes) = new {
-    lazy val data = l >=> GenDataAttributes.data
-    lazy val attributes = l >=> GenDataAttributes.attributes
+  implicit class GenDataAttributesLenses[A] (val l: A @> GenDataAttributes) 
+  extends AnyVal {
+    def data = l >=> GenDataAttributes.data
+    def attributes = l >=> GenDataAttributes.attributes
   }
 }
 

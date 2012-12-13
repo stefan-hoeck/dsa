@@ -2,14 +2,6 @@ package efa.dsa.world
 
 import scalaz._, Scalaz._
 
-class RoundedDivisibleInt (val value: Int) {
-  def rdiv (d: Int): Int = RoundedDiv roundedDivI (value, d)
-}
-
-class RoundedDivisibleLong (val value: Long) { 
-  def rdiv (d: Long): Long = RoundedDiv roundedDivL (value, d)
-}
-
 private[world] object RoundedDiv {
 
   private[world] def halfI (i: Int) = i / 2 + (((i & 1) ≟ 1) ? 1 | 0)

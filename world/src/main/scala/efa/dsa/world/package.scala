@@ -7,8 +7,13 @@ import org.scalacheck.Arbitrary
 import scalaz._, Scalaz._
 
 package object world {
-  implicit def LongRoundedDivisible (l: Long) = new RoundedDivisibleLong (l)
-  implicit def IntRoundedDivisible (l: Int) = new RoundedDivisibleInt (l)
+  implicit class RoundedDivisibleInt (val value: Int) extends AnyVal {
+    def rdiv (d: Int): Int = RoundedDiv roundedDivI (value, d)
+  }
+
+  implicit class RoundedDivisibleLong (val value: Long) extends AnyVal { 
+    def rdiv (d: Long): Long = RoundedDiv roundedDivL (value, d)
+  }
    
   lazy val loc = Service.unique[WorldLoc] (WorldLoc)
 

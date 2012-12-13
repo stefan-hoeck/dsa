@@ -35,7 +35,7 @@ object HerausragendRule extends ModRules {
         addModS[A] (attributeKeyFor(att), Modifier(name, v))
       ) exec a
 
-      value(AH[A])(name, a) flatMap notZero fold (mod, a)
+      value(AH[A])(name, a) flatMap notZero map mod getOrElse a
     }
 
     Rule(l.name, a ⇒ Attribute.values.foldLeft(a)(applyAtt))

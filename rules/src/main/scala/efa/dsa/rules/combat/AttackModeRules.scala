@@ -14,7 +14,7 @@ import scalaz._, Scalaz._
  * rules must be applied AFTER any rule that modifies the hero's other values.
  */
 object AttackModeRules extends FADRules {
-  type AmSt = State[AttackMode,Unit]
+  type AmSt[A] = State[AttackMode,A]
 
   def all[A:CA:HM]: DList[Rule[A]] = canAttack
 
@@ -26,7 +26,7 @@ object AttackModeRules extends FADRules {
     Rule[A](l.name, a ⇒ adjustAttackModes (a, f(a)))
 
   def baseAttackMode[A:CA:HM]: Rule[A] = {
-    def addRest(a: A): AmSt =
+    def addRest(a: A): AmSt[Unit] =
       addModsS(AwKey, modsFor (a, AwKey)) >>
       addModsS(IniKey, modsFor (a, IniKey))
             

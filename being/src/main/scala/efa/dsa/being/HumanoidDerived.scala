@@ -38,17 +38,14 @@ object HeroDerived {
   val iniBase: HeroDerived @> Long =
     Lens.lensu((a,b) ⇒ a copy (iniBase = b), _.iniBase)
   
-  case class HeroDerivedLenses[A] (l: A @> HeroDerived) {
-    lazy val maxBoughtAe = l >=> HeroDerived.maxBoughtAe
-    lazy val maxBoughtAu = l >=> HeroDerived.maxBoughtAu
-    lazy val maxBoughtKe = l >=> HeroDerived.maxBoughtKe
-    lazy val maxBoughtLe = l >=> HeroDerived.maxBoughtLe
-    lazy val maxBoughtMr = l >=> HeroDerived.maxBoughtMr
-    lazy val iniBase = l >=> HeroDerived.iniBase
+  implicit class HeroDerivedLenses[A] (val l: A @> HeroDerived) extends AnyVal {
+    def maxBoughtAe = l >=> HeroDerived.maxBoughtAe
+    def maxBoughtAu = l >=> HeroDerived.maxBoughtAu
+    def maxBoughtKe = l >=> HeroDerived.maxBoughtKe
+    def maxBoughtLe = l >=> HeroDerived.maxBoughtLe
+    def maxBoughtMr = l >=> HeroDerived.maxBoughtMr
+    def iniBase = l >=> HeroDerived.iniBase
   }
-  
-  implicit def ToLenses[A] (l: A @> HeroDerived) =
-    HeroDerivedLenses[A](l)
 }
 
 // vim: set ts=2 sw=2 et:

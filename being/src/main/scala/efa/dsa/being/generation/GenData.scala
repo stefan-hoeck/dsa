@@ -80,13 +80,13 @@ object GenData extends Util {
   val skills: GenData @> SkillPrototypes =
     Lens.lensu((a,b) ⇒ a.copy(skills = b), _.skills)
 
-  implicit def GenDataLenses[A](l: A @> GenData) = new {
-    lazy val name = l >=> GenData.name
-    lazy val ae = l >=> GenData.ae
-    lazy val au = l >=> GenData.au
-    lazy val le = l >=> GenData.le
-    lazy val mr = l >=> GenData.mr
-    lazy val skills = l >=> GenData.skills
+  implicit class GenDataLenses[A](val l: A @> GenData) extends AnyVal {
+    def name = l >=> GenData.name
+    def ae = l >=> GenData.ae
+    def au = l >=> GenData.au
+    def le = l >=> GenData.le
+    def mr = l >=> GenData.mr
+    def skills = l >=> GenData.skills
   }
 }
 

@@ -39,9 +39,9 @@ object Wm extends RangeVals {
   val at: Wm @> Int = Lens.lensu((a,b) ⇒ a.copy(at = b), _.at)
   val pa: Wm @> Int = Lens.lensu((a,b) ⇒ a.copy(pa = b), _.pa)
 
-  implicit def WmLens[A](l: A @> Wm) = new {
-    lazy val at = l >=> Wm.at
-    lazy val pa = l >=> Wm.pa
+  implicit class WmLenses[A](val l: A @> Wm) extends AnyVal {
+    def at = l >=> Wm.at
+    def pa = l >=> Wm.pa
   }
     
 }

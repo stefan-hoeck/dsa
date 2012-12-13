@@ -114,16 +114,16 @@ object HeroData extends Util {
   val specialExp: HeroData @> BoolAtts =
     Lens.lensu((a,b) ⇒ a copy (specialExp = b), _.specialExp)
 
-  implicit def HeroDataLenses[A] (l: A @> HeroData) = new {
-    lazy val base = l >=> HeroData.base
-    lazy val humanoid = l >=> HeroData.humanoid
-    lazy val bought = l >=> HeroData.bought
-    lazy val boughtAe = l >=> HeroData.boughtAe
-    lazy val boughtAu = l >=> HeroData.boughtAu
-    lazy val boughtKe = l >=> HeroData.boughtKe
-    lazy val boughtLe = l >=> HeroData.boughtLe
-    lazy val boughtMr = l >=> HeroData.boughtMr
-    lazy val specialExp = l >=> HeroData.specialExp
+  implicit class HeroDataLenses[A] (val l: A @> HeroData) extends AnyVal {
+    def base = l >=> HeroData.base
+    def humanoid = l >=> HeroData.humanoid
+    def bought = l >=> HeroData.bought
+    def boughtAe = l >=> HeroData.boughtAe
+    def boughtAu = l >=> HeroData.boughtAu
+    def boughtKe = l >=> HeroData.boughtKe
+    def boughtLe = l >=> HeroData.boughtLe
+    def boughtMr = l >=> HeroData.boughtMr
+    def specialExp = l >=> HeroData.specialExp
   }
 }
 

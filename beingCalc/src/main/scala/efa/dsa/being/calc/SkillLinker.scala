@@ -155,8 +155,8 @@ object SkillLinker {
     def skills = Skills.languages
   }
 
-  implicit val MeleeTalentLinker =
-  new SkillLinker[MeleeTalentItem,MeleeTalentData]{
+  implicit object MeleeTalentLinker
+     extends SkillLinker[MeleeTalentItem,MeleeTalentData]{
     def data = SkillDatas.meleeTalents
     def prototypes = SkillPrototypes.meleeTalents
     def items = AbilityItems.meleeTalents

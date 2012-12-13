@@ -53,7 +53,7 @@ object EquipmentItemData extends EquipmentItemLikes[EquipmentItemData]  {
   val weight: EquipmentItemData @> Long =
     Lens.lensu((a,b) ⇒ a.copy(weight = b), _.weight)
 
-  implicit def EIDLenses[A] (l: A @> EquipmentItemData) = new {
+  implicit class EIDLenses[A] (val l: A @> EquipmentItemData) extends AnyVal {
     def data = l >=> EquipmentItemData.data
     def price = l >=> EquipmentItemData.price
     def weight = l >=> EquipmentItemData.weight

@@ -59,14 +59,11 @@ object HeroAttributes {
   val maxBought: HeroAttributes @> Attributes =
     Lens.lensu((a,b) ⇒ a copy (maxBought = b), _.maxBought)
   
-  case class HeroAttributesLenses[A] (l: A @> HeroAttributes) {
-    lazy val creation = l >=> HeroAttributes.creation
-    lazy val immutable = l >=> HeroAttributes.immutable
-    lazy val maxBought = l >=> HeroAttributes.maxBought
+  implicit class HeroAttributesLenses[A] (val l: A @> HeroAttributes) extends AnyVal {
+    def creation = l >=> HeroAttributes.creation
+    def immutable = l >=> HeroAttributes.immutable
+    def maxBought = l >=> HeroAttributes.maxBought
   }
-  
-  implicit def ToLenses[A] (l: A @> HeroAttributes) =
-    HeroAttributesLenses[A](l)
 }
 
 // vim: set ts=2 sw=2 et:
