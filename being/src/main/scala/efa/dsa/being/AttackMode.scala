@@ -1,7 +1,7 @@
 package efa.dsa.being
 
 import efa.dsa.being.equipment._
-import efa.rpg.core.{Modifiers, Modifier, Modified, DieRoller}
+import efa.rpg.core._
 import scalaz._, Scalaz._
 
 sealed trait AttackMode {
@@ -12,6 +12,8 @@ sealed trait AttackMode {
   def isMelee: Boolean
 
   def modifiers: Modifiers
+
+  def talent: String
 
   lazy val tp = DieRoller.plus.set(baseTp, modifiers property TpKey toInt)
 	lazy val at = modifiers property AtFkKey
@@ -37,6 +39,7 @@ sealed trait AttackMode {
 sealed trait MeleeMode extends AttackMode {
   def isMelee = true
   def weapon: MeleeWeapon
+  def talent = weapon.data.talent
 
   lazy val name = if (subdual) "%s (%s)" format (weapon.name, loc.subdual) 
                   else weapon.name
@@ -76,6 +79,7 @@ object AttackMode {
   ) extends AttackMode {
     def isMelee = false
     def name = weapon.name
+    def talent = weapon.data.talent
     def baseTp = weapon.data.tp
   }
 
@@ -87,6 +91,7 @@ object AttackMode {
   ) extends AttackMode {
     def isMelee = false
     def name = weapon.name
+    def talent = weapon.data.talent
     def baseTp = ammo.data.tp
   }
 
@@ -94,6 +99,7 @@ object AttackMode {
     def isMelee = true
     def baseTp = DieRoller.default
     def subdual = true
+    def talent = name
   }
 
 	def fromHands (hs: Hands): List[AttackMode] = {
@@ -132,6 +138,26 @@ object AttackMode {
     val modifiersL =
       Lens.lensu[AttackMode,Modifiers](_ modifiers_= _, _.modifiers)
   }
+}
+
+trait AttackModeFunctions extends ModifiedFunctions {
+  def addAt (n: String, v: Long): State[AttackMode,Unit] =
+    oModAddS (n, v, AtFkKey)
+
+  def addAw (n: String, v: Long): State[AttackMode,Unit] =
+    oModAddS (n, v, AwKey)
+
+  def addFk (n: String, v: Long): State[AttackMode,Unit] =
+    oModAddS (n, v, AtFkKey)
+
+  def addIni (n: String, v: Long): State[AttackMode,Unit] =
+    oModAddS (n, v, IniKey)
+
+  def addPa (n: String, v: Long): State[AttackMode,Unit] =
+    oModAddS (n, v, PaKey)
+
+  def addTp (n: String, v: Long): State[AttackMode,Unit] =
+    oModAddS (n, v, TpKey)
 }
 
 // vim: set ts=2 sw=2 et:

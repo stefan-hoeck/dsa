@@ -9,6 +9,7 @@ trait ModRules
   extends ModifiedFunctions 
   with efa.dsa.being.abilities.HasAbilitiesFunctions
   with efa.dsa.being.equipment.HasEquipmentFunctions 
+  with efa.dsa.being.skills.HasSkillsFunctions
   with efa.dsa.being.AsBeingFunctions {
 
   def oModRule[A:Modified] (

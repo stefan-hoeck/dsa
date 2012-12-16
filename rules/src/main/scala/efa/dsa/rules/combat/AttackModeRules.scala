@@ -2,7 +2,11 @@ package efa.dsa.rules.combat
 
 import efa.core.Localization
 import efa.dsa.being._, AttackMode._, efa.dsa.being.{CanAttack ⇒ CA}
+import efa.dsa.being.abilities.{HasAbilities ⇒ HA}
+import efa.dsa.being.equipment.{MeleeWeapon, RangedWeapon}
+import efa.dsa.being.skills.{HasSkills ⇒ HS}
 import efa.dsa.rules.{loc ⇒ Loc, FADRules}
+import efa.dsa.world.Ebe
 import efa.rpg.core.{HasModifiers ⇒ HM, Modifier}
 import efa.rpg.rules.Rule
 import scalaz._, Scalaz._
@@ -13,13 +17,15 @@ import scalaz._, Scalaz._
  * base- and derived values as well as carried equipment. Therefore, these
  * rules must be applied AFTER any rule that modifies the hero's other values.
  */
-object AttackModeRules extends FADRules {
+object AttackModeRules extends FADRules with AttackModeFunctions {
   type AmSt[A] = State[AttackMode,A]
 
-  def all[A:CA:HM]: DList[Rule[A]] = canAttack
+  def all[A:CA:HM:HS:HA]: DList[Rule[A]] =
+    canAttack ++ hasSkills ++ hasAbilities
 
   def canAttack[A:CA:HM]: DList[Rule[A]] = DList(
-    baseAttackMode, weaponWrongHand
+    baseAttackMode, weaponWrongHand, shieldIni, shieldAt, shieldPa,
+    meleeWeaponIni, meleeWeaponWm
   )
 
   private def amRule[A:CA](l: Localization, f: A ⇒ CA.PfAmSt): Rule[A] =
@@ -41,153 +47,129 @@ object AttackModeRules extends FADRules {
   }
 
   def weaponWrongHand[A:CA] = amRule[A](Loc.weaponWrongHandL, h ⇒  {
-    case a @MeleeSingle(_, _, true, _) ⇒ 
-      addModS(AtFkKey, wrongHandMod) >> addModS(PaKey, wrongHandMod)
-    case a @Throwing(_, _, true, _) ⇒ addModS(AtFkKey, wrongHandMod)
+    case a @MeleeSingle(_, _, true, _) ⇒
+      addAt(Loc.wrongHand, -9L) >> addPa(Loc.wrongHand, -9L)
+    case a @Throwing(_, _, true, _) ⇒ addFk(Loc.wrongHand, -9L)
+  })
+  
+  def shieldIni[A:CA] = amRule[A](Loc.shieldIniL, a ⇒  {
+    case MeleeShield(_, s, _, _) ⇒ addIni(s.name, s.data.ini)
+  })
+  
+  def shieldAt[A:CA] = amRule[A](Loc.shieldAtL, a ⇒  {
+    case MeleeShield(_, s, _, _) ⇒ addAt(s.name, s.data.wm.at)
+  })
+  
+  def shieldPa[A:CA] = amRule[A](Loc.shieldPaL, a ⇒  {
+    case MeleeShield(_, s, _, _) ⇒ addPa(s.name, s.data.wm.pa)
   })
 
-  private val wrongHandMod = Modifier(Loc.wrongHand, -9L)
-}
+  def meleeWeaponIni[A:CA] = amRule[A](Loc.meleeWeaponIniL, a ⇒ {
+    case MeleeShield(w, _, _, _) ⇒ addIni (w.name, w.data.ini)
+    case MeleeSingle(w, _, _, _) ⇒ addIni (w.name, w.data.ini)
+    case MeleeTwoHanded(w, _, _) ⇒ addIni (w.name, w.data.ini)
+  })
 
-//object AttackModeRules extends NbBundled {
-//  
-//  def beingRules[H <: DsaBeingBuilder[H]]: List[Rule[H]] = 
-//    List(baseAttackModeRule[H], weaponWrongHandRule[H],
-//         linkhandShieldPaRule[H], linkhandWeaponRule[H],
-//         beidhandigerKampfIWeaponRule[H], beidhandigerKampfIIWeaponRule[H],
-//         shieldIniRule[H], shieldAtRule[H], shieldPaRule[H],
-//         schildkampfIRule[H], schildkampfIIRule[H], meleeWeaponIniRule[H],
-//         meleeWeaponWmRule[H], beToAtPaRule[H], beToFkRule[H])
-//  
-//  def skilledRules[H <: SkilledBeingBuilder[H]]: List[Rule[H]] =
-//    List(meleeTalentAtPaRule[H], rangedTalentFkRule[H]) ::: beingRules[H]
-//
-//  def meleeTalentAtPaRule[H <: SkilledBeingBuilder[H]] = {
-//    def addTalent(name: String, h: H, a: AttackMode): AttackMode =
-//      h meleeTalentByName name match {
-//        case None => a.addAt(-2L, noTalent).addPa(-3L, noTalent)
-//        case Some(x) => a.addAt(x.parent.at, name).addPa(x.pa, name)
-//      }
-//    amRule[H]("meleeTalentAtPaRule", h => {
-//        case a @MeleeSingle(w, _, _, _, _) => addTalent(w.talent, h, a)
-//          //do not include talent pa for shields
-//        case a @MeleeShield(w, _, _, _, _) => h meleeTalentByName w.talent match {
-//            case None => a.addAt(-2L, noTalent)
-//            case Some(x) => a.addAt(x.parent.at, x.name)
-//          }
-//        case a @MeleeTwoHanded(w, _, _, _) => addTalent(w.talent, h, a)
-//        case a @Unarmed(n, _, _) => addTalent(n, h, a)
-//      })
-//  }
-//
-//  def rangedTalentFkRule[H <: SkilledBeingBuilder[H]] = {
-//    def addTalent(name: String, h: H, a: AttackMode): AttackMode =
-//      h rangedTalentByName name match {
-//        case None => a.addFk(-5L, noTalent)
-//        case Some(x) => a.addFk(x.taw, name)
-//      }
-//    amRule[H]("rangedTalentFkRule", h => {
-//        case a @Throwing(w, _, _, _, _) => addTalent(w.talent, h, a)
-//        case a @Shooting(w, _, _, _, _) => addTalent(w.talent, h, a)
-//      })
-//  }
-//
-//  def linkhandShieldPaRule[H <: DsaBeingBuilder[H]] =
-//    amRule[H]("linkhandShieldPaRule", h => {
-//      case a @MeleeShield(_, _, _, _, _) if (h hasFeat linkhand) =>
-//        a.addPa(1L, linkhand)})
-//  
-//
-//  def linkhandWeaponRule[H <: DsaBeingBuilder[H]] =
-//    amRule[H]("linkhandWeaponRule", h => {
-//      case a @MeleeSingle(_, _, _, true, _) if (h hasFeat linkhand) =>
-//        a.addAt(3L, linkhand).addPa(3L, linkhand)
-//      case a @Throwing(_, _, _, true, _) if (h hasFeat linkhand) =>
-//        a.addFk(3L, linkhand)
-//    })
-//  
-//  def beidhandigerKampfIWeaponRule[H <: DsaBeingBuilder[H]] =
-//    amRule[H]("beidhandigerKampfIWeaponRule", h => {
-//      case a @MeleeSingle(_, _, _, true, _) if (h hasFeat beidhandigerKampfI) =>
-//        a.addAt(3L, beidhandigerKampfI).addPa(3L, beidhandigerKampfI)
-//      case a @Throwing(_, _, _, true, _) if (h hasFeat beidhandigerKampfI) =>
-//        a.addFk(3L, beidhandigerKampfI)
-//    })
-//  
-//  def beidhandigerKampfIIWeaponRule[H <: DsaBeingBuilder[H]] =
-//    amRule[H]("beidhandigerKampfIIWeaponRule", h => {
-//      case a @MeleeSingle(_, _, _, true, _) if (h hasFeat beidhandigerKampfII) =>
-//        a.addAt(3L, beidhandigerKampfII).addPa(3L, beidhandigerKampfII)
-//      case a @Throwing(_, _, _, true, _) if (h hasFeat beidhandigerKampfII) =>
-//        a.addFk(3L, beidhandigerKampfII)
-//    })
-//  
-//  def shieldIniRule[H <: DsaBeingBuilder[H]] = amRule[H]("shieldIniRule", h => {
-//      case a @MeleeShield(_, s, _, _, _) => a.addIni(s.ini, s.name)
-//    })
-//  
-//  def shieldAtRule[H <: DsaBeingBuilder[H]] = amRule[H]("shieldAtRule", h => {
-//      case a @MeleeShield(_, s, _, _, _) => a.addAt(s.wm.at, shieldWm)
-//    })
-//  
-//  def shieldPaRule[H <: DsaBeingBuilder[H]] = amRule[H]("shieldPaRule", h => {
-//      case a @MeleeShield(_, s, _, _, _) => a.addPa(s.wm.pa, shieldWm)
-//    })
-//
-//  def schildkampfIRule[H <: DsaBeingBuilder[H]] =
-//    amRule[H]("schildkampfIRule", h => {
-//      case a @MeleeShield(_, s, _, _, _) if(h hasFeat schildkampfI) =>
-//        a.addPa(5, schildkampfI)
-//    })
-//
-//  def schildkampfIIRule[H <: DsaBeingBuilder[H]] =
-//    amRule[H]("schildkampfIIRule", h => {
-//      case a @MeleeShield(_, s, _, _, _) if(h hasFeat schildkampfII) =>
-//        a.addPa(5, schildkampfII)
-//    })
-//
-//  def meleeWeaponIniRule[H <: DsaBeingBuilder[H]] =
-//    amRule[H]("meleeWeaponIniRule", h => {
-//      case a @MeleeShield(w, _, _, _, _) => a addIni (w.ini, w.name)
-//      case a @MeleeSingle(w, _, _, _, _) => a addIni (w.ini, w.name)
-//      case a @MeleeTwoHanded(w, _, _, _) => a addIni (w.ini, w.name)
-//    })
-//
-//  def meleeWeaponWmRule[H <: DsaBeingBuilder[H]] =
-//    amRule[H]("meleeWeaponWmRule", h => {
-//      case a @MeleeShield(w, _, _, _, _) => a addAt (w.wm.at, wm)
-//      case a @MeleeSingle(w, _, _, _, _) => a addAt (w.wm.at, wm) addPa (w.wm.pa, wm)
-//      case a @MeleeTwoHanded(w, _, _, _) => a addAt (w.wm.at, wm) addPa (w.wm.pa, wm)
-//    })
-//
-//  private def ebe (h: DsaBeing, ebe: Option[Ebe]): Long =
-//    ebe map (_ calcEbe h.be) getOrElse h.be
-//
-//  def beToAtPaRule[H <: DsaBeingBuilder[H]] = {
-//    def atpa (ebe: Long): (Long, Long) = 
-//      if ((ebe & 1L) == 1L) (ebe / 2L, ebe / 2L + 1L) else (ebe / 2L, ebe / 2L)
-//    def calc (a: AttackMode, w: MeleeWeapon, h: H): AttackMode = {
-//      val (at, pa) = atpa(ebe(h, Skills.meleeTalents.now find
-//                              (_.name == w.talent) map (_.ebe)))
-//      a addAt (-at, ebe) addPa (-pa, ebe)
-//    }
-//    amRule[H]("beToAtPaRule", h => {
-//        case a @MeleeShield(w, _, _, _, _) => calc(a, w, h)
-//        case a @MeleeSingle(w, _, _, _, _) => calc(a, w, h)
-//        case a @MeleeTwoHanded(w, _, _, _) => calc(a, w, h)
-//      })
-//  }
-//
-//  def beToFkRule[H <: DsaBeingBuilder[H]] = {
-//    def calc (a: AttackMode, w: RangedWeapon, h: H): AttackMode = 
-//      a.addFk(- ebe(h, Skills.rangedTalents.now find (_.name == w.talent) map
-//                    (_.ebe)), ebe)
-//    
-//    amRule[H]("beToFkRule", h => {
-//        case a @Shooting(w, _, _, _, _) => calc(a, w, h)
-//        case a @Throwing(w, _, _, _, _) => calc(a, w, h)
-//      })
-//  }
-//}
+  def meleeWeaponWm[A:CA] = amRule[A](Loc.meleeWeaponWmL, a ⇒ {
+    case MeleeShield(w, _, _, _) ⇒ addAt (Loc.wm, w.data.wm.at)
+    case MeleeSingle(w, _, _, _) ⇒ 
+      addAt (Loc.wm, w.data.wm.at) >>
+      addPa (Loc.wm, w.data.wm.pa)
+    case MeleeTwoHanded(w, _, _) ⇒ 
+      addAt (Loc.wm, w.data.wm.at) >>
+      addPa (Loc.wm, w.data.wm.pa)
+  })
+
+  // *** HasSkills ***
+
+  def hasSkills[A:CA:HS:HM]: DList[Rule[A]] = DList(
+    meleeTalentAtPa, rangedTalentFk, beToAtPa, beToFk
+  )
+
+  def meleeTalentAtPa[A:CA:HS] = amRule[A](Loc.meleeTalentAtPaL, a ⇒ {
+    case am if am.isMelee ⇒ meleeAtPa(am.talent, a) match {
+      case Some((at, pa)) ⇒ 
+        addAt(am.talent, at) >> addPa(am.talent, pa)
+      case None ⇒ 
+        addAt(Loc.noTalent, -2L) >> addPa(Loc.noTalent, -3L)
+    }
+  })
+
+  def rangedTalentFk[A:CA:HS] = amRule[A](Loc.rangedTalentFkL, a ⇒ {
+    case am if (! am.isMelee) ⇒ rangedTaw(am.talent, a) match {
+      case Some(fk) ⇒ addFk(am.talent, fk)
+      case None ⇒ addFk(Loc.noTalent, -5L)
+    }
+  })
+
+  private def ebe[A:HM] (a: A, ebe: Option[Ebe]): Long =
+    ebe cata (_ calcEbe prop(a, BeKey), prop(a, BeKey))
+
+  def beToAtPa[A:CA:HS:HM] = {
+    def atpa (ebe: Long): (Long, Long) = (ebe / 2L, ebe / 2L + (ebe % 2L))
+
+    def adj (n: String, a: A) = {
+      val (at, pa) = atpa(ebe(a, melee (n, a) map (_.item.ebe)))
+
+      addAt(Loc.ebe, -at) >> addPa (Loc.ebe, -pa)
+    }
+
+    amRule[A](Loc.beToAtPaL, a ⇒ {
+      case MeleeShield(w, _, _, _) ⇒ adj(w.name, a)
+      case MeleeSingle(w, _, _, _) ⇒ adj(w.name, a)
+      case MeleeTwoHanded(w, _, _) ⇒ adj(w.name, a)
+      case Unarmed (n, _)          ⇒ adj(n, a)
+    })
+  }
+
+  def beToFk[A:CA:HS:HM] = {
+    def adj (n: String, a: A) = 
+      addFk(Loc.ebe, - ebe(a, ranged(n, a) map (_.item.ebe)))
+    
+    amRule[A](Loc.beToFkL, a ⇒ {
+      case Shooting(w, _, _, _) ⇒ adj(w.name, a)
+      case Throwing(w, _, _, _) ⇒ adj(w.name, a)
+    })
+  }
+
+  // *** HasAbilities ***
+
+
+  def hasAbilities[A:CA:HA]: DList[Rule[A]] = DList(
+    linkhandShieldPa, linkhandWeapon, beidhandigerKampfI,
+    beidhandigerKampfII, schildkampfI, schildkampfII
+  )
+
+  def linkhandShieldPa[A:CA:HA] = amRule[A](Loc.linkhandShieldPaL, a ⇒ {
+    case MeleeShield(_, _, _, _) if hasFeat(Loc.linkhand, a) ⇒ 
+      addPa(Loc.linkhand, 1L)
+  })
+
+  private def wrongHandFeat[A:CA:HA](loc: Localization, name: String) =
+    amRule[A](loc, a ⇒ {
+      case MeleeSingle(_, _, true, _) if hasFeat(name, a) ⇒ 
+        addAt(name, 3L) >> addPa(name, 3L)
+      case Throwing(_, _, true, _) if hasFeat(name, a) ⇒ addFk(name, 3L)
+    })
+
+  def linkhandWeapon[A:CA:HA] =
+    wrongHandFeat[A](Loc.linkhandWeaponL, Loc.linkhand)
+
+  def beidhandigerKampfI[A:CA:HA] =
+    wrongHandFeat[A](Loc.beidhandigerKampfIL, Loc.beidhandigerKampfI)
+
+  def beidhandigerKampfII[A:CA:HA] =
+    wrongHandFeat[A](Loc.beidhandigerKampfIIL, Loc.beidhandigerKampfII)
+
+  def schildkampfI[A:CA:HA] = amRule[A](Loc.schildkampfIL, a ⇒ {
+    case MeleeShield(_, _, _, _) if hasFeat(Loc.schildkampfI, a) ⇒ 
+      addPa(Loc.schildkampfI, 5L)
+  })
+
+  def schildkampfII[A:CA:HA] = amRule[A](Loc.schildkampfIIL, a ⇒ {
+    case MeleeShield(_, _, _, _) if hasFeat(Loc.schildkampfII, a) ⇒ 
+      addPa(Loc.schildkampfII, 5L)
+  })
+}
 
 // vim: set ts=2 sw=2 et:

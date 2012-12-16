@@ -4,13 +4,15 @@ import efa.core.{ValSt, Validators, EndoVal}, Validators.interval
 import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.being.abilities.HasAbilities
 import efa.dsa.being.equipment.{Hands, HandsData, HasEquipment}
+import efa.dsa.being.skills.HasSkills
 import efa.dsa.world.Attribute
 import scalaz._, Scalaz._
 
 trait AsHumanoid[A]
    extends AsBeing[A] 
    with HasEquipment[A]
-   with HasAbilities[A] {
+   with HasAbilities[A] 
+   with HasSkills[A] {
   def ae (a: A): Long = maxAe(a) - humanoidData(a).lostAe
   def au (a: A): Long = maxAu(a) - humanoidData(a).lostAu
   def be (a: A): Long = prop(a, BeKey)

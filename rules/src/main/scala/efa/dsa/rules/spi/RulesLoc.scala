@@ -18,8 +18,8 @@ trait RulesLoc {
   lazy val beToFkL = L("beToFk", beToFkRule, descBeToFkRule, beToFkRule)
   lazy val behabigDodgeL = L("behabigDodge", behabigDodgeRule, descBehabigDodgeRule, behabigDodgeRule)
   lazy val behabigGsL = L("behabigGs", behabigGsRule, descBehabigGsRule, behabigGsRule)
-  lazy val beidhandigerKampfIIWeaponL = L("beidhandigerKampfIIWeapon", beidhandigerKampfIIWeaponRule, descBeidhandigerKampfIIWeaponRule, beidhandigerKampfIIWeaponRule)
-  lazy val beidhandigerKampfIWeaponL = L("beidhandigerKampfIWeapon", beidhandigerKampfIWeaponRule, descBeidhandigerKampfIWeaponRule, beidhandigerKampfIWeaponRule)
+  lazy val beidhandigerKampfIIL = L("beidhandigerKampfIIWeapon", beidhandigerKampfIIWeaponRule, descBeidhandigerKampfIIWeaponRule, beidhandigerKampfIIWeaponRule)
+  lazy val beidhandigerKampfIL = L("beidhandigerKampfIWeapon", beidhandigerKampfIWeaponRule, descBeidhandigerKampfIWeaponRule, beidhandigerKampfIWeaponRule)
   lazy val calcAeL = L("calcAe", calcAeRule, descCalcAeRule, calcAeRule)
   lazy val calcAtL = L("calcAt", calcAtRule, descCalcAtRule, calcAtRule)
   lazy val calcAuL = L("calcAu", calcAuRule, descCalcAuRule, calcAuRule)
@@ -326,6 +326,7 @@ trait RulesLoc {
   def vollzaubererAeRule: String
   def vollzaubererMrRule: String
   def weaponWrongHandRule: String
+  def wm: String
   def wounds: String
   def wrongHand: String
   def zoneArmor: String
@@ -571,6 +572,7 @@ object RulesLoc extends RulesLoc {
   def vollzaubererAeRule = "Vollzauberer AE Bonus"
   def vollzaubererMrRule = "Vollzauberer MR Bonus"
   def weaponWrongHandRule = "Waffe in falscher Hand"
+  def wm = "Waffenmodifikator"
   def wounds = "Wunden"
   def wrongHand = "Waffe in falscher Hand"
   def zoneArmor = "Zonenrüstungen"

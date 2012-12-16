@@ -36,6 +36,7 @@ object Hero extends Util {
     def equipment (h: Hero) = h.equipment
     def heroData (h: Hero) = h.data
     val modifiersL = Hero.modifiers
+    def skills (h: Hero) = h.skills
   }
 
   val attackModes: Hero @> List[AttackMode] =
