@@ -33,7 +33,7 @@ object SpellItem extends SkillItemLikes[SpellItem] {
         ns.tagged[Attributes])(SpellItem.apply)
 
     def toXml (a: SpellItem) =
-      dataToNode (a) ++ xml(a.raisingCost) ++ xml(a.attributes)
+      dataToNode (a) ++ Efa.toXml(a.raisingCost) ++ Efa.toXml(a.attributes)
   }
 
   implicit lazy val SpellItemArbitrary = Arbitrary (

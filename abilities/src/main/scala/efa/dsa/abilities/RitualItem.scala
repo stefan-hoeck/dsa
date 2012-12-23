@@ -29,7 +29,7 @@ object RitualItem extends SkillItemLikes[RitualItem] {
       ^(readData (ns), ns.tagged[RaisingCost])(RitualItem.apply)
 
     def toXml (a: RitualItem) =
-      dataToNode (a) ++ xml(a.raisingCost)
+      dataToNode (a) ++ Efa.toXml(a.raisingCost)
   }
 
   implicit lazy val RitualItemArbitrary =

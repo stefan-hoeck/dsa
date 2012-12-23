@@ -43,11 +43,11 @@ object TalentItem extends SkillItemLikes[TalentItem] {
 
     def toXml (a: TalentItem) =
       dataToNode (a) ++
-      xml(a.attributes) ++
-      xml(a.ebe) ++
-      xml(a.raisingCost) ++
+      Efa.toXml(a.attributes) ++
+      Efa.toXml(a.ebe) ++
+      Efa.toXml(a.raisingCost) ++
       BaseTalent.write(a.isBaseTalent) ++
-      xml(a.talentType)
+      Efa.toXml(a.talentType)
   }
 
   implicit lazy val TalentItemArbitrary = Arbitrary (

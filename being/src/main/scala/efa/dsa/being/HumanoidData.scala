@@ -85,7 +85,7 @@ object HumanoidData extends Util {
       Wounds.write(a.wounds) ++
       Exhaustion.write(a.exhaustion) ++
       ZoneWounds.write(a.zoneWounds) ++
-      xml(a.hands) ++
+      Efa.toXml(a.hands) ++
       AbilityDatas.write(a.abilities) ++
       EquipmentDatas.write(a.equipment) ++
       SkillDatas.write(a.skills)

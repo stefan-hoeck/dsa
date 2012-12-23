@@ -37,8 +37,8 @@ object RangedTalentItem extends SkillItemLikes[RangedTalentItem] {
 
     def toXml (a: RangedTalentItem) =
       dataToNode (a) ++
-      xml(a.ebe) ++
-      xml( a.raisingCost) ++
+      Efa.toXml(a.ebe) ++
+      Efa.toXml( a.raisingCost) ++
       BaseTalent.write(a.isBaseTalent)
   }
 

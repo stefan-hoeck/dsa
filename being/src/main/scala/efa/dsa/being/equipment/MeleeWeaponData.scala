@@ -65,9 +65,9 @@ object MeleeWeaponData extends EquipmentLikes[MeleeWeaponData] {
       Tp.write(a.tp) ++
       Talent.write(a.talent) ++
       Bf.write(a.bf) ++
-      xml(a.tpkk) ++
+      Efa.toXml(a.tpkk) ++
       Ini.write(a.ini) ++
-      xml(a.wm)
+      Efa.toXml(a.wm)
   }
 
   val eData: MeleeWeaponData @> EquipmentItemData =

@@ -108,7 +108,7 @@ object HeroBaseData extends Util {
 
     def toXml (a: HeroBaseData) =
       ("name" xml a.name) ++
-      xml(a.gender) ++
+      Efa.toXml(a.gender) ++
       ("race" xml a.race) ++
       ("culture" xml a.culture) ++
       ("profession" xml a.profession) ++

@@ -57,7 +57,7 @@ object RangedWeaponItem extends EquipmentItemLikes[RangedWeaponItem] {
     def toXml (a: RangedWeaponItem) =
       dataToNode(a) ++
       Tp.write(a.tp) ++
-      xml(a.tpkk) ++
+      Efa.toXml(a.tpkk) ++
       ("improvised" xml a.improvised) ++
       Talent.write(a.talent) ++
       Reach.write(a.reach) ++

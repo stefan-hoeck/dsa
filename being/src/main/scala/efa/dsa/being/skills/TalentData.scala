@@ -35,7 +35,7 @@ object TalentData extends Util {
     def toXml (a: TalentData) = 
       ("parentId" xml a.id) ++
       Tap.write(a.tap) ++
-      xml(a.raisingCost) ++
+      Efa.toXml(a.raisingCost) ++
       ("special" xml a.specialExp)
   }
 

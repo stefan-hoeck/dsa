@@ -14,7 +14,7 @@ object HeroBaseDataTest extends ToXmlProps[HeroBaseData]("HeroBaseData"){
   property("validateWeight") =
     Prop forAll validated(HeroBaseData.weight.set)(Weight.validate)
 
-  property("validateAp") = Prop forAll {t: (HeroBaseData, Int, Int) ⇒
+  property("validateAp") = Prop forAll {t: (HeroBaseData, Long, Long) ⇒
     val (h, ap, used) = t
     val valRes = for {
       _ ← Ap validate ap
@@ -25,7 +25,7 @@ object HeroBaseDataTest extends ToXmlProps[HeroBaseData]("HeroBaseData"){
 
     val res = try {
       def set = for {
-        _ ← HeroBaseData.apUsed := 0 //make sure that old used is valid
+        _ ← HeroBaseData.apUsed := 0L //make sure that old used is valid
         _ ← HeroBaseData.ap := ap
         _ ← HeroBaseData.apUsed := used
       } yield ()

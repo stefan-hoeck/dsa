@@ -23,7 +23,7 @@ object HandicapItem extends RpgItemLikes[HandicapItem] {
     def fromXml (ns: Seq[Node]) =
       ^(readData (ns), ns.tagged[HandicapGp])(HandicapItem.apply)
 
-    def toXml (a: HandicapItem) = dataToNode (a) ++ xml(a.gp)
+    def toXml (a: HandicapItem) = dataToNode (a) ++ Efa.toXml(a.gp)
   }
 
   implicit lazy val HandicapItemArbitrary =

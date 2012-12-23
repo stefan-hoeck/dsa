@@ -61,14 +61,14 @@ object MeleeWeaponItem extends EquipmentItemLikes[MeleeWeaponItem] {
     def toXml (a: MeleeWeaponItem) = 
       dataToNode(a) ++
       Tp.write(a.tp) ++
-      xml(a.tpkk) ++
+      Efa.toXml(a.tpkk) ++
       ("improvised" xml a.improvised) ++
       Talent.write(a.talent) ++
       Bf.write(a.bf) ++
       ("twohanded" xml a.twoHanded) ++
-      xml(a.wm) ++
+      Efa.toXml(a.wm) ++
       Ini.write(a.ini) ++
-      xml(a.dk) ++
+      Efa.toXml(a.dk) ++
       Length.write(a.length)
   }
 

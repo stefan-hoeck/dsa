@@ -42,11 +42,11 @@ object ShieldItem extends EquipmentItemLikes[ShieldItem] {
 
     def toXml (a: ShieldItem) = 
       dataToNode (a) ++
-      xml(a.size) ++
-      xml(a.shieldType) ++
+      Efa.toXml(a.size) ++
+      Efa.toXml(a.shieldType) ++
       Ini.write(a.ini) ++
       Bf.write(a.bf) ++
-      xml(a.wm)
+      Efa.toXml(a.wm)
   }
 
   implicit lazy val ShieldItemArbitrary = Arbitrary (

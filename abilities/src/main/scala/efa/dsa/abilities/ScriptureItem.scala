@@ -36,7 +36,7 @@ object ScriptureItem extends SkillItemLikes[ScriptureItem] {
 
     def toXml (a: ScriptureItem) =
       dataToNode(a) ++
-      xml(a.raisingCost) ++
+      Efa.toXml(a.raisingCost) ++
       Complexity.write(a.complexity)
   }
 

@@ -45,7 +45,7 @@ object ShieldData extends EquipmentLikes[ShieldData] {
         ns.tagged[Wm])(ShieldData.apply)
 
     def toXml (a: ShieldData) = 
-      eDataNodes(a) ++ Ini.write(a.ini) ++ Bf.write(a.bf) ++ xml(a.wm)
+      eDataNodes(a) ++ Ini.write(a.ini) ++ Bf.write(a.bf) ++ Efa.toXml(a.wm)
   }
 
   val eData: ShieldData @> EquipmentItemData =

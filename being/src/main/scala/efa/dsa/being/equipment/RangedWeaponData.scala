@@ -62,7 +62,7 @@ object RangedWeaponData extends EquipmentLikes[RangedWeaponData] {
       eDataNodes(a) ++
       Tp.write(a.tp) ++
       Talent.write(a.talent) ++
-      xml(a.tpkk) ++
+      Efa.toXml(a.tpkk) ++
       Reach.write(a.reach) ++
       TpPlus.write(a.tpPlus) ++
       Ttl.write(a.timeToLoad)

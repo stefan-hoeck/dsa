@@ -42,7 +42,7 @@ object LanguageItem extends SkillItemLikes[LanguageItem] {
 
     def toXml (a: LanguageItem) =
       dataToNode (a) ++
-      xml(a.raisingCost) ++
+      Efa.toXml(a.raisingCost) ++
       Complexity.write(a.complexity) ++
       ("scripture" xml a.scripture) ++
       ("family" xml a.family)
