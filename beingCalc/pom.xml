@@ -9,7 +9,7 @@
   </parent>
 
   <groupId>efa.dsa</groupId>
-  <artifactId>beingCalc</artifactId>
+  <artifactId>dsa-beingCalc</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>nbm</packaging>
 
@@ -23,11 +23,11 @@
 
     <dependency>
       <groupId>efa</groupId>
-      <artifactId>core</artifactId>
+      <artifactId>efa-core</artifactId>
     </dependency>
     <dependency>
       <groupId>efa.rpg</groupId>
-      <artifactId>core</artifactId>
+      <artifactId>rpg-core</artifactId>
     </dependency>
     <dependency>
       <groupId>org.netbeans.api</groupId>
@@ -36,27 +36,27 @@
 
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>world</artifactId>
+      <artifactId>dsa-world</artifactId>
       <version>${world.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>abilities</artifactId>
+      <artifactId>dsa-abilities</artifactId>
       <version>${abilities.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>equipment</artifactId>
+      <artifactId>dsa-equipment</artifactId>
       <version>${equipment.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>being</artifactId>
+      <artifactId>dsa-being</artifactId>
       <version>${being.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>generation</artifactId>
+      <artifactId>dsa-generation</artifactId>
       <version>${generation.version}</version>
     </dependency>
   </dependencies>

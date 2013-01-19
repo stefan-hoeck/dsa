@@ -34,29 +34,29 @@ object Resolvers {
 object Dependencies {
   import BuildSettings.sv  
 
-  val utilVersion = "0.1.0-SNAPSHOT"
-  val reactVersion = "0.1.0-SNAPSHOT"
+  val utilVersion = "0.1.0"
+  val reactVersion = "0.1.0"
   val util = "efa"
   val react = "efa.react"
-  val efaCore = util %% "core" % utilVersion changing
+  val efaCore = util %% "efa-core" % utilVersion
 
-  val efaIo = util %% "io" % utilVersion changing
+  val efaIo = util %% "efa-io" % utilVersion
 
-  val efaNb = util %% "nb" % utilVersion changing
+  val efaNb = util %% "efa-nb" % utilVersion
 
-  val efaReact = react %% "core" % reactVersion changing
+  val efaReact = react %% "react-core" % reactVersion
 
-  val efaReactSwing = react %% "swing" % reactVersion changing
+  val efaReactSwing = react %% "react-swing" % reactVersion
 
   val rpgVersion = "1.0.0-SNAPSHOT"
   val rpg = "efa.rpg"
-  val rpgBeing = rpg %% "being" % rpgVersion changing
+  val rpgBeing = rpg %% "rpg-being" % rpgVersion changing
 
-  val rpgCore = rpg %% "core" % rpgVersion changing
+  val rpgCore = rpg %% "rpg-core" % rpgVersion changing
 
-  val rpgItems = rpg %% "items" % rpgVersion changing
+  val rpgItems = rpg %% "rpg-items" % rpgVersion changing
 
-  val rpgRules = rpg %% "rules" % rpgVersion changing
+  val rpgRules = rpg %% "rpg-rules" % rpgVersion changing
 
   val nbV = "RELEASE71"
 
@@ -109,76 +109,76 @@ object DsaBuild extends Build {
     equipment, equipmentServices, generation, rules, testItems)
   
   lazy val abilities = Project (
-    "abilities",
+    "dsa-abilities",
     file("abilities"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world)
 
   lazy val abilitiesServices = Project (
-    "abilitiesservices",
+    "dsa-abilitiesservices",
     file("abilitiesservices"),
     settings = addDeps (scalazCheckET ++ Seq(efaCore, efaNb, rpgCore, rpgItems))
   ) dependsOn (world, abilities, beingServices)
 
   lazy val being = Project (
-    "being",
+    "dsa-being",
     file("being"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world, abilities, equipment, generation)
 
   lazy val beingCalc = Project (
-    "beingCalc",
+    "dsa-beingCalc",
     file("beingCalc"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world, abilities, equipment, generation, being, testItems)
 
   lazy val beingServices = Project (
-    "beingServices",
+    "dsa-beingServices",
     file("beingServices"),
     settings = addDeps (scalazCheckT ++
       Seq(efaCore, efaReact, rpgCore, rpgBeing, rpgRules))
   ) dependsOn (being, beingCalc)
 
   lazy val beingUI = Project (
-    "beingUI",
+    "dsa-beingUI",
     file("beingUI"),
     settings = addDeps (scalazCheckT ++
       Seq(efaCore, efaNb, efaReact, efaReactSwing, rpgCore, rpgBeing))
   ) dependsOn (beingServices)
 
   lazy val equipment = Project (
-    "equipment",
+    "dsa-equipment",
     file("equipment"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world)
 
   lazy val equipmentServices = Project (
-    "equipmentservices",
+    "dsa-equipmentservices",
     file("equipmentservices"),
     settings = addDeps (scalazCheckET ++ Seq(efaCore, efaNb, rpgCore, rpgItems))
   ) dependsOn (world, beingServices, equipment)
 
   lazy val generation = Project (
-    "generation",
+    "dsa-generation",
     file("generation"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world)
 
   lazy val rules = Project (
-    "rules",
+    "dsa-rules",
     file("rules"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore, rpgRules))
   ) dependsOn (world, abilities, equipment, generation, being,
                beingCalc, testItems, beingServices)
 
   lazy val testItems = Project (
-    "testItems",
+    "dsa-testItems",
     file("testItems"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world, abilities, equipment, generation, being)
 
   lazy val world = Project (
-    "world",
+    "dsa-world",
     file("world"),
     settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   )

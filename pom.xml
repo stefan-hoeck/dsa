@@ -50,74 +50,74 @@
 
       <dependency>
         <groupId>efa.react</groupId>
-        <artifactId>core</artifactId>
+        <artifactId>react-core</artifactId>
         <version>${react.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.react</groupId>
-        <artifactId>swing</artifactId>
+        <artifactId>react-swing</artifactId>
         <version>${react.version}</version>
       </dependency>
 
       <dependency>
         <groupId>efa</groupId>
-        <artifactId>core</artifactId>
+        <artifactId>efa-core</artifactId>
         <version>${util.version}</version>
       </dependency>
       <dependency>
         <groupId>efa</groupId>
-        <artifactId>io</artifactId>
+        <artifactId>efa-io</artifactId>
         <version>${util.version}</version>
       </dependency>
       <dependency>
         <groupId>efa</groupId>
-        <artifactId>nb</artifactId>
+        <artifactId>efa-nb</artifactId>
         <version>${util.version}</version>
       </dependency>
       <dependency>
         <groupId>efa</groupId>
-        <artifactId>localDe</artifactId>
+        <artifactId>efa-localDe</artifactId>
         <version>${util.version}</version>
       </dependency>
 
       <dependency>
         <groupId>efa.rpg</groupId>
-        <artifactId>core</artifactId>
+        <artifactId>rpg-core</artifactId>
         <version>${rpg.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.rpg</groupId>
-        <artifactId>preferences</artifactId>
+        <artifactId>rpg-preferences</artifactId>
         <version>${rpg.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.rpg</groupId>
-        <artifactId>items</artifactId>
+        <artifactId>rpg-items</artifactId>
         <version>${rpg.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.rpg</groupId>
-        <artifactId>explorer</artifactId>
+        <artifactId>rpg-explorer</artifactId>
         <version>${rpg.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.rpg</groupId>
-        <artifactId>describedPanel</artifactId>
+        <artifactId>rpg-describedPanel</artifactId>
         <version>${rpg.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.rpg</groupId>
-        <artifactId>rules</artifactId>
+        <artifactId>rpg-rules</artifactId>
         <version>${rpg.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.rpg</groupId>
-        <artifactId>rulesUI</artifactId>
+        <artifactId>rpg-rulesUI</artifactId>
         <version>${rpg.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.rpg</groupId>
-        <artifactId>being</artifactId>
+        <artifactId>rpg-being</artifactId>
         <version>${rpg.version}</version>
       </dependency>
 
@@ -161,8 +161,8 @@
 
   <properties>
     <brandingToken>dsatool</brandingToken>
-    <util.version>0.1.0-SNAPSHOT</util.version>
-    <react.version>0.1.0-SNAPSHOT</react.version>
+    <util.version>0.1.0</util.version>
+    <react.version>0.1.0</react.version>
     <rpg.version>1.0.0-SNAPSHOT</rpg.version>
     <world.version>1.0.0-SNAPSHOT</world.version>
     <abilities.version>1.0.0-SNAPSHOT</abilities.version>

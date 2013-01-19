@@ -24,7 +24,6 @@ object Choice extends Util {
     } yield (Choice(NonEmptyList(v, vs: _*), NonEmptyList(arb, as: _*)))
   )
 
-
   def values[A]: Choice[A] @> NonEmptyList[Int] =
     Lens.lensu((a,b) ⇒ a copy (values = b), _.values)
 

@@ -9,7 +9,7 @@
   </parent>
 
   <groupId>efa.dsa</groupId>
-  <artifactId>beingServices</artifactId>
+  <artifactId>dsa-beingServices</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>nbm</packaging>
 
@@ -23,24 +23,24 @@
 
     <dependency>
       <groupId>efa.react</groupId>
-      <artifactId>core</artifactId>
+      <artifactId>react-core</artifactId>
     </dependency>
     <dependency>
       <groupId>efa.react</groupId>
-      <artifactId>swing</artifactId>
+      <artifactId>react-swing</artifactId>
     </dependency>
 
     <dependency>
       <groupId>efa</groupId>
-      <artifactId>core</artifactId>
+      <artifactId>efa-core</artifactId>
     </dependency>
     <dependency>
       <groupId>efa</groupId>
-      <artifactId>nb</artifactId>
+      <artifactId>efa-nb</artifactId>
     </dependency>
     <dependency>
       <groupId>efa</groupId>
-      <artifactId>io</artifactId>
+      <artifactId>efa-io</artifactId>
     </dependency>
 
     <dependency>
@@ -74,49 +74,49 @@
 
     <dependency>
       <groupId>efa.rpg</groupId>
-      <artifactId>core</artifactId>
+      <artifactId>rpg-core</artifactId>
     </dependency>
     <dependency>
       <groupId>efa.rpg</groupId>
-      <artifactId>rules</artifactId>
+      <artifactId>rpg-rules</artifactId>
     </dependency>
     <dependency>
       <groupId>efa.rpg</groupId>
-      <artifactId>items</artifactId>
+      <artifactId>rpg-items</artifactId>
     </dependency>
     <dependency>
       <groupId>efa.rpg</groupId>
-      <artifactId>being</artifactId>
+      <artifactId>rpg-being</artifactId>
     </dependency>
 
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>world</artifactId>
+      <artifactId>dsa-world</artifactId>
       <version>${world.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>abilities</artifactId>
+      <artifactId>dsa-abilities</artifactId>
       <version>${abilities.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>equipment</artifactId>
+      <artifactId>dsa-equipment</artifactId>
       <version>${equipment.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>being</artifactId>
+      <artifactId>dsa-being</artifactId>
       <version>${being.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>beingCalc</artifactId>
+      <artifactId>dsa-beingCalc</artifactId>
       <version>${beingCalc.version}</version>
     </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
-      <artifactId>generation</artifactId>
+      <artifactId>dsa-generation</artifactId>
       <version>${generation.version}</version>
     </dependency>
   </dependencies>
