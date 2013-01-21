@@ -1,6 +1,7 @@
 package efa.dsa.being.abilities
 
-import efa.core.{UniqueId, EndoVal, Validators}
+import efa.core.{EndoVal, Validators}
+import efa.data.UniqueId
 import efa.dsa.being.loc
 import efa.rpg.core.{RpgItem, Described, HtmlTags}
 import scalaz._, Scalaz._

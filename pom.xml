@@ -66,6 +66,11 @@
       </dependency>
       <dependency>
         <groupId>efa</groupId>
+        <artifactId>efa-data</artifactId>
+        <version>${util.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>efa</groupId>
         <artifactId>efa-io</artifactId>
         <version>${util.version}</version>
       </dependency>
@@ -161,7 +166,7 @@
 
   <properties>
     <brandingToken>dsatool</brandingToken>
-    <util.version>0.1.0</util.version>
+    <util.version>0.2.0-SNAPSHOT</util.version>
     <react.version>0.1.0</react.version>
     <rpg.version>1.0.0-SNAPSHOT</rpg.version>
     <world.version>1.0.0-SNAPSHOT</world.version>

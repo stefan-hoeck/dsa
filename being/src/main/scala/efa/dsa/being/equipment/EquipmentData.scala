@@ -1,21 +1,21 @@
 package efa.dsa.being.equipment
 
 import efa.core.{ToXml, Efa, Default}, Efa._
+import efa.data.{UniqueIdL, NamedL}
 import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.equipment.EquipmentItemData
 import efa.dsa.equipment.spi.EquipmentLocal
-import efa.rpg.core.{WithId, Util, ItemData}, ItemData.itemDataLenses
+import efa.rpg.core.{Util, ItemData}, ItemData.itemDataLenses
 import org.scalacheck.Gen
 import scala.xml.Node
 import scalaz._, Scalaz._
 
-trait EquipmentData[A] extends WithId[A] with Default[A] {
+trait EquipmentData[A] extends UniqueIdL[A,Int] with Default[A] with NamedL[A] {
   def eData: A @> EquipmentItemData
   def parentIdL: A @> Int
   def parentId (a: A): Int = parentIdL get a
-  def name: A @> String = eData.data.name
+  def nameL: A @> String = eData.data.name
   def idL: A @> Int = eData.data.id
-  def id (a: A): Int = idL get a
   def desc: A @> String = eData.data.desc
   def price: A @> Long = eData.price
   def weight: A @> Long = eData.weight

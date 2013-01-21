@@ -13,14 +13,14 @@ case class EquipmentPrototype(parentId: Int, count: Int) {
 object EquipmentPrototype extends Util {
   val default = EquipmentPrototype(0, 1)
 
-  implicit val EquipmentPrototypeDefault = Default default default
+  implicit lazy val EquipmentPrototypeDefault = Default default default
 
-  implicit val EquipmentPrototypeEqual = Equal.equalA[EquipmentPrototype]
+  implicit lazy val EquipmentPrototypeEqual = Equal.equalA[EquipmentPrototype]
 
-  implicit val EquipmentPrototypeArbitrary =
+  implicit lazy val EquipmentPrototypeArbitrary =
     Arbitrary(^(a[Int], Count.gen)(EquipmentPrototype.apply))
 
-  implicit val EquipmentPrototypeToXml = new ToXml[EquipmentPrototype] {
+  implicit lazy val EquipmentPrototypeToXml = new ToXml[EquipmentPrototype] {
     def fromXml (ns: Seq[Node]) =
       ^(ns.readTag[Int]("id"), Count read ns)(EquipmentPrototype.apply)
 
@@ -28,8 +28,7 @@ object EquipmentPrototype extends Util {
       ("id" xml a.parentId) ++ Count.write(a.count)
   }
 
-  implicit val EquipmentPrototypeWithId =
-    withId[EquipmentPrototype](_.parentId)
+  implicit lazy val EquipmentPrototypeIntIdL = intIdL (parentId)
 
   val parentId: EquipmentPrototype @> Int =
     Lens.lensu((a,b) ⇒ a.copy(parentId = b), _.parentId)

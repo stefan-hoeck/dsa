@@ -26,6 +26,10 @@
       <artifactId>react-core</artifactId>
     </dependency>
     <dependency>
+      <groupId>efa</groupId>
+      <artifactId>efa-data</artifactId>
+    </dependency>
+    <dependency>
       <groupId>efa.react</groupId>
       <artifactId>react-swing</artifactId>
     </dependency>

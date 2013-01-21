@@ -13,15 +13,15 @@ case class AbilityPrototype(parentId: Int, name: String, value: Int) {
 object AbilityPrototype extends Util {
   val default = AbilityPrototype(0, "", 0)
 
-  implicit val AbilityPrototypeDefault = Default default default
+  implicit lazy val AbilityPrototypeDefault = Default default default
 
-  implicit val AbilityPrototypeEqual = Equal.equalA[AbilityPrototype]
+  implicit lazy val AbilityPrototypeEqual = Equal.equalA[AbilityPrototype]
 
-  implicit val AbilityPrototypeArbitrary = Arbitrary(
+  implicit lazy val AbilityPrototypeArbitrary = Arbitrary(
     ^^(a[Int], Gen.identifier, Value.gen)(AbilityPrototype.apply)
   )
 
-  implicit val AbilityPrototypeToXml = new ToXml[AbilityPrototype] {
+  implicit lazy val AbilityPrototypeToXml = new ToXml[AbilityPrototype] {
     def fromXml (ns: Seq[Node]) =
       ^^(ns.readTag[Int]("id"),
         ns.readTag[String]("name"),
@@ -31,8 +31,7 @@ object AbilityPrototype extends Util {
       ("id" xml a.parentId) ++ ("name" xml a.name) ++ Value.write(a.value)
   }
 
-  implicit val AbilityPrototypeWithId =
-    withId[AbilityPrototype](_.parentId)
+  implicit lazy val AbilityPrototypeWithId = intIdL (parentId)
 
   val parentId: AbilityPrototype @> Int =
     Lens.lensu((a,b) ⇒ a.copy(parentId = b), _.parentId)

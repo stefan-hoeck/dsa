@@ -1,6 +1,6 @@
 package efa.dsa.being.equipment
 
-import efa.core.UniqueId
+import efa.data.UniqueId
 import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.equipment.EquipmentItem
 import efa.rpg.core.{Described, HtmlTags}
@@ -8,7 +8,7 @@ import scalaz.{Equal, Scalaz, State}
 
 case class Equipment[A,B](item: A, data: B, hands: HandsData)
 (implicit EI: EquipmentItem[A], ED:EquipmentData[B]) {
-  def name: String = ED.name get data
+  def name: String = ED name data
   def id: Int = ED id data
   def parentId: Int = ED parentId data
   def desc: String = ED.desc get data
@@ -27,7 +27,8 @@ object Equipment extends HtmlTags {
   implicit def EquipmentEqual[A:Equal,B:Equal] = Equal.equalA[Equipment[A,B]]
 
   implicit def EquipmentItem[A,B] =
-    new Described[Equipment[A,B]] with UniqueId[Equipment[A,B],Int]{
+    new Described[Equipment[A,B]]
+    with UniqueId[Equipment[A,B],Int] {
       def name (a: Equipment[A,B]) = a.name
       def id (a: Equipment[A,B]) = a.id
       def desc (a: Equipment[A,B]) = a.desc

@@ -1,11 +1,11 @@
 package efa.dsa.being.skills
 
 import efa.core.Default
+import efa.data.UniqueIdL
 import efa.dsa.world.RaisingCost
-import efa.rpg.core.WithId
 import scalaz.@>
 
-trait SkillData[A] extends WithId[A] with Default[A] {
+trait SkillData[A] extends UniqueIdL[A,Int] with Default[A] {
   def talentDataL: A @> TalentData
   def idL: A @> Int = talentDataL >=> TalentData.id
   def tapL: A @> Int = talentDataL >=> TalentData.tap
@@ -13,7 +13,6 @@ trait SkillData[A] extends WithId[A] with Default[A] {
   def raisingCostL: A @> RaisingCost = talentDataL >=> TalentData.raisingCost
 
   def talentData (a: A): TalentData = talentDataL get a
-  def id (a: A) = talentData(a).id
   def tap (a: A) = talentData(a).tap
   def specialExp (a: A) = talentData(a).specialExp
 }
