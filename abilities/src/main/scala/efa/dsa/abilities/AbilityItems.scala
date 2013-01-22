@@ -1,6 +1,6 @@
 package efa.dsa.abilities
 
-import efa.rpg.core.{DB, DBs}
+import efa.rpg.core.{DB, Util}
 import scalaz.{Equal, Lens, @>}
 
 case class AbilityItems (
@@ -16,7 +16,7 @@ case class AbilityItems (
   talents: DB[TalentItem]
 )
 
-object AbilityItems extends DBs {
+object AbilityItems extends Util {
   implicit val AbilityItemsEqual:Equal[AbilityItems] = Equal.equalA
 
   lazy val default = AbilityItems(db, db, db, db, db, db, db, db, db, db)

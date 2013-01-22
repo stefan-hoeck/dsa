@@ -4,12 +4,12 @@ import efa.dsa.abilities._
 import efa.dsa.being.abilities._
 import efa.dsa.being.skills._
 import efa.dsa.world.{Ebe, RaisingCost}
-import efa.rpg.core.{ItemData, DB, RpgItem, DBs}
+import efa.rpg.core.{ItemData, DB, RpgItem}
 import org.scalacheck._, Arbitrary.arbitrary
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 
 
-object AbilityGens extends DBs {
+object AbilityGens {
 
   def abilityDatasGen (abs: AbilityItems): Gen[AbilityDatas] = {
 

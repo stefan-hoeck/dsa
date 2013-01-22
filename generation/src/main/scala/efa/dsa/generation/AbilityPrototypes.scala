@@ -1,7 +1,8 @@
 package efa.dsa.generation
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.rpg.core.{DB, DBs, Util}
+import efa.data.Maps.{mapToXml, mapGen}
+import efa.rpg.core.{DB, Util}
 import org.scalacheck.Arbitrary
 import scala.xml.Node
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -12,7 +13,7 @@ case class AbilityPrototypes (
   feats: DB[AbilityPrototype]
 )
 
-object AbilityPrototypes extends Util with DBs {
+object AbilityPrototypes extends Util {
   lazy val default = AbilityPrototypes(db, db, db)
 
   implicit lazy val AbilityPrototypesDefault = Default default default
@@ -21,13 +22,13 @@ object AbilityPrototypes extends Util with DBs {
     Equal.equalA[AbilityPrototypes]
 
   implicit lazy val AbilityPrototypesArbitrary = Arbitrary(
-    ^^(a[DB[AbilityPrototype]],
-      a[DB[AbilityPrototype]],
-      a[DB[AbilityPrototype]])(AbilityPrototypes.apply)
+    ^^(mapGen[AbilityPrototype,Int],
+      mapGen[AbilityPrototype,Int],
+      mapGen[AbilityPrototype,Int])(AbilityPrototypes.apply)
   )
 
   implicit lazy val AbilityPrototypesToXml = new ToXml[AbilityPrototypes] {
-    implicit val psXml = dbToXml[AbilityPrototype]("item")
+    implicit val psXml = mapToXml[AbilityPrototype,Int]("item")
 
     def fromXml (ns: Seq[Node]) =
       ^^(ns.readTag[DB[AbilityPrototype]]("advantages"),

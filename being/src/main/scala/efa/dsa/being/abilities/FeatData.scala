@@ -1,13 +1,14 @@
 package efa.dsa.being.abilities
 
 import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.data.UniqueIdL
 import efa.rpg.core.Util
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 
 case class FeatData (
-  id: Int,
+  parentId: Int,
   name: String,
   isActive: Boolean,
   desc: String
@@ -22,7 +23,7 @@ object FeatData extends Util {
     ^^^(a[Int], Gen.identifier, a[Boolean], Gen.identifier)(FeatData.apply)
   )
 
-  implicit val FeatDataToXml = new ToXml[FeatData] {
+  implicit lazy val FeatDataToXml = new ToXml[FeatData] {
     def fromXml (ns: Seq[Node]) =
       ^^^(ns.readTag[Int]("parentId"),
         ns.readTag[String]("name"),
@@ -30,7 +31,7 @@ object FeatData extends Util {
         ns.readTag[String]("userDesc"))(FeatData.apply)
 
     def toXml (a: FeatData) = 
-      ("parentId" xml a.id) ++
+      ("parentId" xml a.parentId) ++
       ("name" xml a.name) ++
       ("active" xml a.isActive) ++
       ("userDesc" xml a.desc)
@@ -40,7 +41,8 @@ object FeatData extends Util {
 
   def write (f: FeatData) = FeatDataToXml toXml f
 
-  val id: FeatData @> Int = Lens.lensu((a,b) ⇒ a.copy(id = b), _.id)
+  val parentId: FeatData @> Int =
+    Lens.lensu((a,b) ⇒ a.copy(parentId = b), _.parentId)
 
   val name: FeatData @> String = Lens.lensu((a,b) ⇒ a.copy(name = b), _.name)
 

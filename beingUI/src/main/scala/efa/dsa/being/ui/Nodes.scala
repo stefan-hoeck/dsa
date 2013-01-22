@@ -22,12 +22,14 @@ object Nodes {
    * @tparam C: Type of data items for instance SkillData
    * @tparam D: Type of RpgItems for instance SkillItem
    * @tparam E: Data parent type for instance SkillDatas
+   *
+   * @TODO change from List (get) to Map
    */
   def parentNode[A,B,C,D,E](name: String, out: NodeOut[B,ValSt[C]])
     (get: A ⇒ List[B])(add: D ⇒ State[C,Unit])(
     implicit UI: UniqueId[B,E], M: Manifest[D]
   ): NodeOut[A,ValSt[C]] =
-    NC.children(NC.uniqueIdF[B,ValSt[C],E](out) ∙ get) ⊹
+    NC.children(NC.uniqueIdF[B,ValSt[C],E,List](out) ∙ get) ⊹
     N.nameA(name) ⊹
     NodeOut[A,ValSt[C]](
       (o,n) ⇒ _ ⇒ {

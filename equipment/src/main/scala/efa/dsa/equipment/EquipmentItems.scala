@@ -1,6 +1,6 @@
 package efa.dsa.equipment
 
-import efa.rpg.core.{DB, DBs}
+import efa.rpg.core.{DB, Util}
 import scalaz.{Equal, Lens, @>}
 
 case class EquipmentItems (
@@ -13,7 +13,7 @@ case class EquipmentItems (
   zoneArmor: DB[ZoneArmorItem]
 )
 
-object EquipmentItems extends DBs {
+object EquipmentItems extends Util {
   implicit val EquipmentItemsEqual:Equal[EquipmentItems] = Equal.equalA
 
   lazy val default = EquipmentItems(db, db, db, db, db, db, db)

@@ -27,7 +27,7 @@ sealed abstract class AbilityLinker[I,D](
   def delete(a: A): State[AbilityDatas,Unit] = data -= a.name void
 
   def itemToData (i: I): D = (for {
-    _ ← AD.idL := AI.id(i)
+    _ ← AD.parentIdL := AI.id(i)
     _ ← AD.nameL := AI.name(i)
   } yield ()) exec AD.default
 
@@ -50,7 +50,8 @@ sealed abstract class AbilityLinker[I,D](
     val names = map.keySet
 
     def toAbility(p: (String,D)) = p match {
-      case (s,d) ⇒ items get as get AD.id(d) map (i ⇒ (s, Ability(i,d,names)))
+      case (s,d) ⇒ items get as get AD.parentId(d) map (
+        i ⇒ (s, Ability(i,d,names)))
     }
 
     map flatMap toAbility

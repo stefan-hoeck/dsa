@@ -10,7 +10,7 @@ case class AdvantageData(data: FeatData, value: Int) {
   require(Value validate value isRight)
 
   def name = data.name
-  def id = data.id
+  def parentId = data.parentId
 }
 
 object AdvantageData extends Util {

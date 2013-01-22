@@ -1,7 +1,8 @@
 package efa.dsa.being.skills
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.rpg.core.{DB, DBs, Util}
+import efa.data.Maps.{mapToXml, mapGen}
+import efa.rpg.core.{DB, Util}
 import org.scalacheck.Arbitrary
 import scala.xml.Node
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -16,7 +17,7 @@ case class SkillDatas (
   talents: DB[TalentData]
 )
 
-object SkillDatas extends Util with DBs {
+object SkillDatas extends Util {
   lazy val default = SkillDatas(db, db, db, db, db, db, db)
 
   implicit lazy val SkillDatasDefault = Default default default
@@ -24,19 +25,19 @@ object SkillDatas extends Util with DBs {
   implicit lazy val SkillDatasEqual = Equal.equalA[SkillDatas]
 
   implicit lazy val SkillDatasArbitrary = Arbitrary(
-    ^^^^^^(a[DB[TalentData]],
-      a[DB[MeleeTalentData]],
-      a[DB[TalentData]],
-      a[DB[TalentData]],
-      a[DB[TalentData]],
-      a[DB[SpellData]],
-      a[DB[TalentData]])(SkillDatas.apply)
+    ^^^^^^(mapGen[TalentData,Int],
+      mapGen[MeleeTalentData,Int],
+      mapGen[TalentData,Int],
+      mapGen[TalentData,Int],
+      mapGen[TalentData,Int],
+      mapGen[SpellData,Int],
+      mapGen[TalentData,Int])(SkillDatas.apply)
   )
 
   implicit lazy val SkillDatasToXml = new ToXml[SkillDatas] {
-    implicit val spellXml = dbToXml[SpellData]("dsa_spell")
-    implicit val meleeXml = dbToXml[MeleeTalentData]("dsa_meleeTalent")
-    implicit val sdXml = dbToXml[TalentData]("dsa_talentData")
+    implicit val spellXml = mapToXml[SpellData,Int]("dsa_spell")
+    implicit val meleeXml = mapToXml[MeleeTalentData,Int]("dsa_meleeTalent")
+    implicit val sdXml = mapToXml[TalentData,Int]("dsa_talentData")
 
     def fromXml (ns: Seq[Node]) =
       ^^^^^^(ns.readTag[DB[TalentData]]("languages"),

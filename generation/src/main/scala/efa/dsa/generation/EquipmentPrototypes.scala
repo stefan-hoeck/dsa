@@ -1,7 +1,8 @@
 package efa.dsa.generation
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.rpg.core.{DB, DBs, Util}
+import efa.data.Maps.{mapToXml, mapGen}
+import efa.rpg.core.{DB, Util}
 import org.scalacheck.Arbitrary, Arbitrary.arbitrary
 import scala.xml.Node
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -16,7 +17,7 @@ case class EquipmentPrototypes (
   zoneArmor: DB[EquipmentPrototype]
 )
 
-object EquipmentPrototypes extends Util with DBs {
+object EquipmentPrototypes extends Util {
   lazy val default = EquipmentPrototypes(db, db, db, db, db, db, db)
 
   implicit lazy val EquipmentPrototypesDefault = Default default default
@@ -25,17 +26,17 @@ object EquipmentPrototypes extends Util with DBs {
     Equal.equalA[EquipmentPrototypes]
 
   implicit lazy val EquipmentPrototypesArbitrary = Arbitrary(
-    ^^^^^^(a[DB[EquipmentPrototype]],
-      a[DB[EquipmentPrototype]],
-      a[DB[EquipmentPrototype]],
-      a[DB[EquipmentPrototype]],
-      a[DB[EquipmentPrototype]],
-      a[DB[EquipmentPrototype]],
-      a[DB[EquipmentPrototype]])(EquipmentPrototypes.apply)
+    ^^^^^^(mapGen[EquipmentPrototype,Int],
+      mapGen[EquipmentPrototype,Int],
+      mapGen[EquipmentPrototype,Int],
+      mapGen[EquipmentPrototype,Int],
+      mapGen[EquipmentPrototype,Int],
+      mapGen[EquipmentPrototype,Int],
+      mapGen[EquipmentPrototype,Int])(EquipmentPrototypes.apply)
   )
 
   implicit lazy val EquipmentPrototypesToXml = new ToXml[EquipmentPrototypes] {
-    implicit val psXml = dbToXml[EquipmentPrototype]("item")
+    implicit val psXml = mapToXml[EquipmentPrototype,Int]("item")
 
     def fromXml (ns: Seq[Node]) =
       ^^^^^^(ns.readTag[DB[EquipmentPrototype]]("ammunition"),

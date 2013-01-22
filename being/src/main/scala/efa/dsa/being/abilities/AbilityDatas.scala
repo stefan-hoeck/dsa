@@ -1,7 +1,8 @@
 package efa.dsa.being.abilities
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.rpg.core.{Maps, Util}
+import efa.data.Maps
+import efa.rpg.core.{Util}
 import org.scalacheck.Arbitrary
 import scala.xml.Node
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -21,8 +22,8 @@ object AbilityDatas extends Util with Maps {
   implicit lazy val AbilityDatasEqual = Equal.equalA[AbilityDatas]
 
   implicit lazy val AbilityDatasArbitrary = {
-    implicit val featMapArbitrary = mapArbitrary[FeatData,String](_.name)
-    implicit val advMapArbitrary = mapArbitrary[AdvantageData,String](_.name)
+    implicit val featMapArbitrary = mapArbitrary[FeatData,String]
+    implicit val advMapArbitrary = mapArbitrary[AdvantageData,String]
 
     Arbitrary(
       ^^(a[Map[String,AdvantageData]],
@@ -32,9 +33,8 @@ object AbilityDatas extends Util with Maps {
   }
 
   implicit lazy val AbilityDatasToXml = new ToXml[AbilityDatas] {
-    implicit val featXml = mapToXml[FeatData,String]("dsa_feat", _.name)
-    implicit val advXml =
-      mapToXml[AdvantageData,String]("dsa_advantageData", _.name)
+    implicit val featXml = mapToXml[FeatData,String]("dsa_feat")
+    implicit val advXml = mapToXml[AdvantageData,String]("dsa_advantageData")
 
     def fromXml (ns: Seq[Node]) =
       ^^(ns.readTag[Map[String,AdvantageData]]("advantages"),

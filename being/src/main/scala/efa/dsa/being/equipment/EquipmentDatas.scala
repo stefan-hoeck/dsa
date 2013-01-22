@@ -1,7 +1,8 @@
 package efa.dsa.being.equipment
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.rpg.core.{DB, DBs, Util}
+import efa.data.Maps.{mapToXml, mapGen}
+import efa.rpg.core.{DB, Util}
 import org.scalacheck.Arbitrary
 import scala.xml.Node
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -16,7 +17,7 @@ case class EquipmentDatas(
   zoneArmor: DB[ZoneArmorData]
 )
 
-object EquipmentDatas extends DBs with Util {
+object EquipmentDatas extends Util {
   private def empty[A]: DB[A] = Map.empty
 
   lazy val default = EquipmentDatas(db, db, db, db, db, db, db)
@@ -26,23 +27,23 @@ object EquipmentDatas extends DBs with Util {
   implicit lazy val EquipmentDatasEqual = Equal.equalA[EquipmentDatas]
 
   implicit lazy val EquipmentDatasArbitrary = Arbitrary(
-    ^^^^^^(a[DB[AmmunitionData]],
-      a[DB[ArmorData]],
-      a[DB[ArticleData]],
-      a[DB[MeleeWeaponData]],
-      a[DB[RangedWeaponData]],
-      a[DB[ShieldData]],
-      a[DB[ZoneArmorData]])(EquipmentDatas.apply)
+    ^^^^^^(mapGen[AmmunitionData,Int],
+      mapGen[ArmorData,Int],
+      mapGen[ArticleData,Int],
+      mapGen[MeleeWeaponData,Int],
+      mapGen[RangedWeaponData,Int],
+      mapGen[ShieldData,Int],
+      mapGen[ZoneArmorData,Int])(EquipmentDatas.apply)
   )
 
   implicit lazy val EquipmentDatasToXml = new ToXml[EquipmentDatas] {
-    implicit val ammoXml = dbToXml[AmmunitionData]("dsa_ammunition")
-    implicit val armorXml = dbToXml[ArmorData]("dsa_armor")
-    implicit val articleXml = dbToXml[ArticleData]("dsa_article")
-    implicit val meleeXml = dbToXml[MeleeWeaponData]("dsa_meleeWeapon")
-    implicit val rangedXml = dbToXml[RangedWeaponData]("dsa_rangedWeapon")
-    implicit val shieldXml = dbToXml[ShieldData]("dsa_shield")
-    implicit val zoneArmorXml = dbToXml[ZoneArmorData]("dsa_zoneArmor")
+    implicit val ammoXml = mapToXml[AmmunitionData,Int]("dsa_ammunition")
+    implicit val armorXml = mapToXml[ArmorData,Int]("dsa_armor")
+    implicit val articleXml = mapToXml[ArticleData,Int]("dsa_article")
+    implicit val meleeXml = mapToXml[MeleeWeaponData,Int]("dsa_meleeWeapon")
+    implicit val rangedXml = mapToXml[RangedWeaponData,Int]("dsa_rangedWeapon")
+    implicit val shieldXml = mapToXml[ShieldData,Int]("dsa_shield")
+    implicit val zoneArmorXml = mapToXml[ZoneArmorData,Int]("dsa_zoneArmor")
 
     def fromXml (ns: Seq[Node]) =
       ^^^^^^(ns.readTag[DB[AmmunitionData]]("ammo"),

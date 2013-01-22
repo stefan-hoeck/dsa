@@ -1,19 +1,23 @@
 package efa.dsa.being.abilities
 
 import efa.core.Default
+import efa.data.{UniqueIdL, NamedL}
 import scalaz.@>
 
-trait AbilityData[A] extends Default[A] {
+trait AbilityData[A]
+   extends Default[A] 
+   with UniqueIdL[A,String] 
+   with NamedL[A] {
   def dataL: A @> FeatData
-  def nameL: A @> String = dataL >=> FeatData.name
-  def descL: A @> String = dataL >=> FeatData.desc
-  def idL: A @> Int = dataL >=> FeatData.id
-  def isActiveL: A @> Boolean = dataL >=> FeatData.isActive
+  lazy val nameL: A @> String = dataL >=> FeatData.name
+  lazy val descL: A @> String = dataL >=> FeatData.desc
+  lazy val parentIdL: A @> Int = dataL >=> FeatData.parentId
+  lazy val isActiveL: A @> Boolean = dataL >=> FeatData.isActive
+  def idL = nameL
   def data (a: A): FeatData = dataL get a
   def desc (a: A): String = descL get a
-  def id (a: A) = data(a).id
-  def name (a: A) = data(a).name
   def isActive (a: A) = data(a).isActive
+  def parentId (a: A): Int = data (a).parentId
 }
 
 object AbilityData {

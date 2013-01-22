@@ -72,13 +72,13 @@ object AbilityGensTest extends Properties("AbilityGens") with ItemGensTest {
     testDB(as.talents, talentNames) :| "talents"
 
   def advantageDatas (i: AbilityItems, d: AbilityDatas) =
-    d.advantages forall {case (n,a) ⇒ i.advantages get a.id nonEmpty}
+    d.advantages forall {case (n,a) ⇒ i.advantages get a.parentId nonEmpty}
 
   def handicapDatas (i: AbilityItems, d: AbilityDatas) =
-    d.handicaps forall {case (n,a) ⇒ i.handicaps get a.id nonEmpty}
+    d.handicaps forall {case (n,a) ⇒ i.handicaps get a.parentId nonEmpty}
 
   def featDatas (i: AbilityItems, d: AbilityDatas) =
-    d.feats forall {case (n,a) ⇒ i.feats get a.id nonEmpty}
+    d.feats forall {case (n,a) ⇒ i.feats get a.parentId nonEmpty}
 
   def languageDatas (i: AbilityItems, d: SkillDatas) =
     d.languages forall {case (n,a) ⇒ i.languages get a.id nonEmpty}

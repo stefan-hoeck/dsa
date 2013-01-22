@@ -1,7 +1,8 @@
 package efa.dsa.generation
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.rpg.core.{DB, DBs, Util}
+import efa.data.Maps.{mapToXml, mapGen}
+import efa.rpg.core.{DB, Util}
 import org.scalacheck.Arbitrary, Arbitrary.arbitrary
 import scala.xml.Node
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -16,7 +17,7 @@ case class SkillPrototypes (
   talents: DB[SkillPrototype]
 )
 
-object SkillPrototypes extends DBs with Util {
+object SkillPrototypes extends Util {
   lazy val default = SkillPrototypes(db, db, db, db, db, db, db)
 
   implicit lazy val SkillPrototypesDefault = Default default default
@@ -24,17 +25,17 @@ object SkillPrototypes extends DBs with Util {
   implicit lazy val SkillPrototypesEqual = Equal.equalA[SkillPrototypes]
 
   implicit lazy val SkillPrototypesArbitrary = Arbitrary(
-    ^^^^^^(a[DB[SkillPrototype]],
-      a[DB[SkillPrototype]],
-      a[DB[SkillPrototype]],
-      a[DB[SkillPrototype]],
-      a[DB[SkillPrototype]],
-      a[DB[SkillPrototype]],
-      a[DB[SkillPrototype]])(SkillPrototypes.apply)
+    ^^^^^^(mapGen[SkillPrototype,Int],
+      mapGen[SkillPrototype,Int],
+      mapGen[SkillPrototype,Int],
+      mapGen[SkillPrototype,Int],
+      mapGen[SkillPrototype,Int],
+      mapGen[SkillPrototype,Int],
+      mapGen[SkillPrototype,Int])(SkillPrototypes.apply)
   )
 
   implicit lazy val SkillPrototypesToXml = new ToXml[SkillPrototypes] {
-    implicit val psXml = dbToXml[SkillPrototype]("item")
+    implicit val psXml = mapToXml[SkillPrototype,Int]("item")
 
     def fromXml (ns: Seq[Node]) =
       ^^^^^^(ns.readTag[DB[SkillPrototype]]("languages"),
