@@ -1,7 +1,6 @@
 package efa.dsa.being.abilities
 
-import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.data.UniqueIdL
+import efa.core.{Efa, ToXml, Default, UniqueIdL}, Efa._
 import efa.rpg.core.Util
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node

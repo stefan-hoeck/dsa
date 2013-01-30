@@ -1,7 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.data.Maps.{mapToXml, mapGen}
+import efa.core.std.map.{mapToXml, mapGen}
 import efa.rpg.core.{DB, Util}
 import org.scalacheck.Arbitrary
 import scala.xml.Node

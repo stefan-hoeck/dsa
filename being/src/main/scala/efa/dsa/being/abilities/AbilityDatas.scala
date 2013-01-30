@@ -1,7 +1,7 @@
 package efa.dsa.being.abilities
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.data.Maps
+import efa.core.std.MapFunctions
 import efa.rpg.core.{Util}
 import org.scalacheck.Arbitrary
 import scala.xml.Node
@@ -13,7 +13,7 @@ case class AbilityDatas(
   feats: Map[String,FeatData]
 )
 
-object AbilityDatas extends Util with Maps {
+object AbilityDatas extends Util with MapFunctions {
 
   lazy val default = AbilityDatas(Map.empty, Map.empty, Map.empty)
 

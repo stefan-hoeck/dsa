@@ -1,7 +1,6 @@
 package efa.dsa.being.ui
 
-import efa.core.{ValSt, Efa}, Efa._
-import efa.data.{UniqueId}
+import efa.core.{ValSt, Efa, UniqueId}, Efa._
 import efa.nb.node.{NodeOut, NbNode ⇒ N, NbChildren ⇒ NC,
                     Paster, PasteType}, NC._
 import efa.rpg.core.{Described, HtmlDesc}

@@ -1,6 +1,6 @@
 package efa.dsa.being.skills
 
-import efa.data.{UniqueId, DescribedFunctions}
+import efa.core.{UniqueId, DescribedFunctions}
 import efa.dsa.world.{Skt, RaisingCost}
 import efa.dsa.abilities.SkillItem
 import efa.dsa.being.loc

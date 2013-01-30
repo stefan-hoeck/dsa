@@ -40,8 +40,6 @@ object Dependencies {
   val react = "efa.react"
   val efaCore = util %% "efa-core" % utilVersion changing
 
-  val efaData = util %% "efa-data" % utilVersion changing
-
   val efaIo = util %% "efa-io" % utilVersion changing
 
   val efaNb = util %% "efa-nb" % utilVersion changing
@@ -114,13 +112,13 @@ object DsaBuild extends Build {
   lazy val abilities = Project (
     "dsa-abilities",
     file("abilities"),
-    settings = addDeps (scalazCheckT ++ Seq(efaCore, efaData, rpgCore))
+    settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world)
 
   lazy val abilitiesServices = Project (
     "dsa-abilitiesservices",
     file("abilitiesservices"),
-    settings = addDeps (scalazCheckET ++ Seq(efaCore, efaData, efaNb, rpgCore, rpgItems))
+    settings = addDeps (scalazCheckET ++ Seq(efaCore, efaNb, rpgCore, rpgItems))
   ) dependsOn (world, abilities, beingServices)
 
   lazy val being = Project (
@@ -139,51 +137,51 @@ object DsaBuild extends Build {
     "dsa-beingServices",
     file("beingServices"),
     settings = addDeps (scalazCheckT ++
-      Seq(efaCore, efaData, efaReact, rpgCore, rpgBeing, rpgRules))
+      Seq(efaCore, efaReact, rpgCore, rpgBeing, rpgRules))
   ) dependsOn (being, beingCalc)
 
   lazy val beingUI = Project (
     "dsa-beingUI",
     file("beingUI"),
     settings = addDeps (scalazCheckT ++
-      Seq(efaCore, efaData, efaNb, efaReact, efaReactSwing, rpgCore, rpgBeing))
+      Seq(efaCore, efaNb, efaReact, efaReactSwing, rpgCore, rpgBeing))
   ) dependsOn (beingServices)
 
   lazy val equipment = Project (
     "dsa-equipment",
     file("equipment"),
-    settings = addDeps (scalazCheckT ++ Seq(efaCore, efaData, rpgCore))
+    settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world)
 
   lazy val equipmentServices = Project (
     "dsa-equipmentservices",
     file("equipmentservices"),
-    settings = addDeps (scalazCheckET ++ Seq(efaCore, efaData, efaNb, rpgCore, rpgItems))
+    settings = addDeps (scalazCheckET ++ Seq(efaCore, efaNb, rpgCore, rpgItems))
   ) dependsOn (world, beingServices, equipment)
 
   lazy val generation = Project (
     "dsa-generation",
     file("generation"),
-    settings = addDeps (scalazCheckT ++ Seq(efaCore, efaData, rpgCore))
+    settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world)
 
   lazy val rules = Project (
     "dsa-rules",
     file("rules"),
-    settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore, efaData, rpgRules))
+    settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore, rpgRules))
   ) dependsOn (world, abilities, equipment, generation, being,
                beingCalc, testItems, beingServices)
 
   lazy val testItems = Project (
     "dsa-testItems",
     file("testItems"),
-    settings = addDeps (scalazCheckT ++ Seq(efaCore, efaData, rpgCore))
+    settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   ) dependsOn (world, abilities, equipment, generation, being)
 
   lazy val world = Project (
     "dsa-world",
     file("world"),
-    settings = addDeps (scalazCheckT ++ Seq(efaCore, efaData, rpgCore))
+    settings = addDeps (scalazCheckT ++ Seq(efaCore, rpgCore))
   )
 }
 

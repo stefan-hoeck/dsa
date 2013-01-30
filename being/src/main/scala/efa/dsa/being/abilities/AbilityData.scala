@@ -1,7 +1,6 @@
 package efa.dsa.being.abilities
 
-import efa.core.Default
-import efa.data.{UniqueIdL, NamedL}
+import efa.core.{Default, UniqueIdL, NamedL}
 import scalaz.@>
 
 trait AbilityData[A]

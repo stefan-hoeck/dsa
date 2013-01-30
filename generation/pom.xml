@@ -26,10 +26,6 @@
       <artifactId>efa-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>efa</groupId>
-      <artifactId>efa-data</artifactId>
-    </dependency>
-    <dependency>
       <groupId>efa.rpg</groupId>
       <artifactId>rpg-core</artifactId>
     </dependency>

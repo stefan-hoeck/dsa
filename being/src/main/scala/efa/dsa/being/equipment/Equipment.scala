@@ -1,6 +1,6 @@
 package efa.dsa.being.equipment
 
-import efa.data.{UniqueId, DescribedFunctions}
+import efa.core.{UniqueId, DescribedFunctions}
 import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.equipment.EquipmentItem
 import efa.rpg.core.Described

@@ -1,7 +1,6 @@
 package efa.dsa.being.skills
 
-import efa.core.Default
-import efa.data.UniqueIdL
+import efa.core.{Default, UniqueIdL}
 import efa.dsa.world.RaisingCost
 import scalaz.@>
 

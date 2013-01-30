@@ -1,7 +1,7 @@
 package efa.dsa.generation
 
 import efa.core.{Efa, ToXml, Default}, Efa._
-import efa.data.Maps.{mapToXml, mapGen}
+import efa.core.std.map.{mapToXml, mapGen}
 import efa.rpg.core.{DB, Util}
 import org.scalacheck.Arbitrary, Arbitrary.arbitrary
 import scala.xml.Node
