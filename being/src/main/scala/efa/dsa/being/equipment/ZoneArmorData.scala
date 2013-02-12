@@ -1,6 +1,6 @@
 package efa.dsa.being.equipment
 
-import efa.core.{ToXml, Efa}, Efa._
+import efa.core.{TaggedToXml, Efa}, Efa._
 import efa.dsa.equipment.{EquipmentItemData, ZoneRs}
 import efa.dsa.world.Be
 import org.scalacheck.Arbitrary
@@ -30,7 +30,9 @@ object ZoneArmorData extends EquipmentLikes[ZoneArmorData] {
       ZoneArmorData.apply)
   )
 
-  implicit lazy val ZoneArmorDataToXml = new ToXml[ZoneArmorData] {
+  implicit lazy val ZoneArmorDataToXml = new TaggedToXml[ZoneArmorData] {
+    val tag = "dsa_zoneArmor"
+
     def fromXml (ns: Seq[Node]) =
       ^^^^(readEData (ns),
         readParentId (ns),

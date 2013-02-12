@@ -1,6 +1,6 @@
 package efa.dsa.generation
 
-import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.{Efa, TaggedToXml, Default}, Efa._
 import efa.rpg.core.Util
 import org.scalacheck.Arbitrary
 import scala.xml.Node
@@ -20,7 +20,9 @@ object EquipmentPrototype extends Util {
   implicit lazy val EquipmentPrototypeArbitrary =
     Arbitrary(^(a[Int], Count.gen)(EquipmentPrototype.apply))
 
-  implicit lazy val EquipmentPrototypeToXml = new ToXml[EquipmentPrototype] {
+  implicit lazy val EPToXml = new TaggedToXml[EquipmentPrototype] {
+    val tag = "item"
+
     def fromXml (ns: Seq[Node]) =
       ^(ns.readTag[Int]("id"), Count read ns)(EquipmentPrototype.apply)
 

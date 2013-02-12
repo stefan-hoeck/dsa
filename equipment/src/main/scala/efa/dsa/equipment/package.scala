@@ -2,7 +2,7 @@ package efa.dsa
 
 import efa.core._, Efa._
 import efa.dsa.equipment.spi._
-import efa.dsa.world.{BodyPart, RangedDistance, Rs}
+import efa.dsa.world.{BodyPart, RangedDistance, Rs, EquipmentMaps}
 import efa.dsa.world.mittelreich.Distance
 import efa.rpg.core.{RangeVals, DieRoller, EnumMaps, EnumMap}
 
@@ -26,6 +26,11 @@ package object equipment extends RangeVals {
   type Reach = EnumMap[RangedDistance, Int]
   type TpPlus = EnumMap[RangedDistance, Int]
   type ZoneRs = EnumMap[BodyPart, Int]
+
+  type EquipmentItems = EquipmentMaps[AmmunitionItem, ArmorItem,
+                                      ArticleItem, MeleeWeaponItem,
+                                      RangedWeaponItem, ShieldItem,
+                                      ZoneArmorItem]
 }
 
 // vim: set ts=2 sw=2 et:

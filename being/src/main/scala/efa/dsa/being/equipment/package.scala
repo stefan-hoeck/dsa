@@ -2,6 +2,7 @@ package efa.dsa.being
 
 import efa.core.{Validators, Efa}, Efa._
 import efa.dsa.equipment._
+import efa.dsa.world.EquipmentMaps
 import efa.rpg.core.RangeVals
 
 package object equipment extends RangeVals {
@@ -21,6 +22,14 @@ package object equipment extends RangeVals {
   type Shield = Equipment[ShieldItem,ShieldData]
 
   type ZoneArmor = Equipment[ZoneArmorItem,ZoneArmorData]
+
+  type EquipmentDatas = EquipmentMaps[AmmunitionData, ArmorData,
+                                      ArticleData, MeleeWeaponData,
+                                      RangedWeaponData, ShieldData,
+                                      ZoneArmorData]
+
+  type Equipments = EquipmentMaps[Ammunition, Armor, Article, MeleeWeapon,
+                                  RangedWeapon, Shield, ZoneArmor]
 }
 
 // vim: set ts=2 sw=2 et:

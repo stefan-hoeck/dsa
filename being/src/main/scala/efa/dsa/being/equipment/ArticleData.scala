@@ -1,6 +1,6 @@
 package efa.dsa.being.equipment
 
-import efa.core.{ToXml, Efa}, Efa._
+import efa.core.{TaggedToXml, Efa}, Efa._
 import efa.dsa.equipment.{EquipmentItemData}
 import org.scalacheck.Arbitrary
 import scala.xml.Node
@@ -28,7 +28,9 @@ object ArticleData extends EquipmentLikes[ArticleData] {
     ^^(eDataGen, parentIdGen, Count.gen)(ArticleData.apply)
   )
 
-  implicit lazy val ArticleDataToXml = new ToXml[ArticleData] {
+  implicit lazy val ArticleDataToXml = new TaggedToXml[ArticleData] {
+    val tag = "dsa_article"
+
     def fromXml (ns: Seq[Node]) =
       ^^(readEData (ns), readParentId (ns), Count read ns)(ArticleData.apply)
 

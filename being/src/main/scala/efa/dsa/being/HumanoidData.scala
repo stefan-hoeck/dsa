@@ -71,8 +71,8 @@ object HumanoidData extends Util {
       Exhaustion.read(ns),
       ZoneWounds.read(ns),
       ns.tagged[HandsData],
-      AbilityDatas.read(ns),
-      EquipmentDatas.read(ns),
+      ToXml[AbilityDatas] fromXml ns,
+      ToXml[EquipmentDatas] fromXml ns,
       ToXml[SkillDatas] fromXml ns
     )(HumanoidData.apply)
 
@@ -86,8 +86,8 @@ object HumanoidData extends Util {
       Exhaustion.write(a.exhaustion) ++
       ZoneWounds.write(a.zoneWounds) ++
       Efa.toXml(a.hands) ++
-      AbilityDatas.write(a.abilities) ++
-      EquipmentDatas.write(a.equipment) ++
+      ToXml[AbilityDatas].toXml(a.abilities) ++
+      ToXml[EquipmentDatas].toXml(a.equipment) ++
       ToXml[SkillDatas].toXml(a.skills)
   }
 

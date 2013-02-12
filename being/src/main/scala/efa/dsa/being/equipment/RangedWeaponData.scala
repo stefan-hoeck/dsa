@@ -1,6 +1,6 @@
 package efa.dsa.being.equipment
 
-import efa.core.{ToXml, Efa}, Efa._
+import efa.core.{TaggedToXml, Efa}, Efa._
 import efa.dsa.equipment.{EquipmentItemData, Tp, Talent, Ttl, Reach, TpPlus}
 import efa.dsa.world.{TpKk}
 import efa.rpg.core.DieRoller
@@ -47,7 +47,9 @@ object RangedWeaponData extends EquipmentLikes[RangedWeaponData] {
     Ttl.gen apply RangedWeaponData.apply
   )
 
-  implicit lazy val RangedWeaponDataToXml = new ToXml[RangedWeaponData] {
+  implicit lazy val RangedWeaponDataToXml = new TaggedToXml[RangedWeaponData] {
+    val tag = "dsa_rangedWeapon"
+
     def fromXml (ns: Seq[Node]) =
       readEData (ns) ⊛
       readParentId (ns) ⊛ 

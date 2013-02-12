@@ -16,6 +16,11 @@ package object generation extends RangeVals {
                                    SkillPrototype, SkillPrototype,
                                    SkillPrototype, SkillPrototype,
                                    SkillPrototype]
+
+  type EquipmentPrototypes = SkillMaps[EquipmentPrototype, EquipmentPrototype,
+                                       EquipmentPrototype, EquipmentPrototype,
+                                       EquipmentPrototype, EquipmentPrototype,
+                                       EquipmentPrototype]
 }
 
 // vim: set ts=2 sw=2 et:

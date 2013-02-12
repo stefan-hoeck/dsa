@@ -3,6 +3,7 @@ package efa.dsa.being.calc
 import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.being.equipment._
 import efa.dsa.equipment._
+import efa.dsa.world.EquipmentMaps
 import efa.rpg.core.DB
 import scalaz._, Scalaz._
 
@@ -63,11 +64,15 @@ sealed abstract class EquipmentLinker[I,D](
 
 object EquipmentLinker {
 
+  private val itemL = Lens.self[EquipmentItems]
+  private val dataL = Lens.self[EquipmentDatas]
+  private val eqL = Lens.self[Equipments]
+
   def equipment (
     ed: EquipmentDatas,
     hd: HandsData, 
     es: EquipmentItems
-  ) = Equipments (
+  ) = EquipmentMaps (
     AmmunitionLinker equipment (ed, hd, es),
     ArmorLinker equipment (ed, hd, es),
     ArticleLinker equipment (ed, hd, es),
@@ -90,53 +95,53 @@ object EquipmentLinker {
   }
 
   implicit val AmmunitionLinker = el[AmmunitionItem,AmmunitionData](
-    EquipmentItems.ammunition,
-    EquipmentDatas.ammunition,
-    Equipments.ammunition,
+    itemL.ammunition,
+    dataL.ammunition,
+    eqL.ammunition,
     i ⇒ AmmunitionData(i.eData, i.id, i.tp, 1)
   )
 
   implicit val ArmorLinker = el[ArmorItem,ArmorData](
-    EquipmentItems.armor,
-    EquipmentDatas.armor,
-    Equipments.armor,
+    itemL.armor,
+    dataL.armor,
+    eqL.armor,
     i ⇒ ArmorData(i.eData, i.id, i.rs, i.be, false)
   )
 
   implicit val ArticleLinker = el[ArticleItem,ArticleData](
-    EquipmentItems.articles,
-    EquipmentDatas.articles,
-    Equipments.articles,
+    itemL.articles,
+    dataL.articles,
+    eqL.articles,
     i ⇒ ArticleData(i.eData, i.id, 1)
   )
 
   implicit val MeleeWeaponLinker = el[MeleeWeaponItem,MeleeWeaponData](
-    EquipmentItems.meleeWeapons,
-    EquipmentDatas.meleeWeapons,
-    Equipments.meleeWeapons,
+    itemL.meleeWeapons,
+    dataL.meleeWeapons,
+    eqL.meleeWeapons,
     i ⇒ MeleeWeaponData(i.eData, i.id, i.tp, i.talent, i.bf,
       i.tpkk, i.ini, i.wm)
   )
 
   implicit val RangedWeaponLinker = el[RangedWeaponItem,RangedWeaponData](
-    EquipmentItems.rangedWeapons,
-    EquipmentDatas.rangedWeapons,
-    Equipments.rangedWeapons,
+    itemL.rangedWeapons,
+    dataL.rangedWeapons,
+    eqL.rangedWeapons,
     i ⇒ RangedWeaponData(i.eData, i.id, i.tp, i.talent, i.tpkk,
       i.reach, i.tpPlus, i.timeToLoad)
   )
 
   implicit val ShieldLinker = el[ShieldItem,ShieldData](
-    EquipmentItems.shields,
-    EquipmentDatas.shields,
-    Equipments.shields,
+    itemL.shields,
+    dataL.shields,
+    eqL.shields,
     i ⇒ ShieldData(i.eData, i.id, i.ini, i.bf, i.wm)
   )
 
   implicit val ZoneArmorLinker = el[ZoneArmorItem,ZoneArmorData](
-    EquipmentItems.zoneArmor,
-    EquipmentDatas.zoneArmor,
-    Equipments.zoneArmor,
+    itemL.zoneArmor,
+    dataL.zoneArmor,
+    eqL.zoneArmor,
     i ⇒ ZoneArmorData(i.eData, i.id, i.rs, i.be, false)
   )
 }

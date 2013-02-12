@@ -2,6 +2,7 @@ package efa.dsa.equipment.services
 
 import efa.dsa.equipment._
 import efa.dsa.equipment.services.ui._
+import efa.dsa.world.EquipmentMaps
 import efa.react.{SIn, sTrans}
 import efa.rpg.items.controller.{ControllerFactory, ItemsInfo}
 import efa.rpg.items.spi.ItemsInfoProvider
@@ -40,7 +41,7 @@ private[services] object EquipmentController extends ControllerFactory {
       signal(meleeC) ⊛
       signal(rangedC) ⊛
       signal(shieldC) ⊛
-      signal(zoneArmorC) apply EquipmentItems.apply
+      signal(zoneArmorC) apply EquipmentMaps.apply
 
     sTrans inIO (cachedEquipments.get >>= (_.go map (_._2)))
   }

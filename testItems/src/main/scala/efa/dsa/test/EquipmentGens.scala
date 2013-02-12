@@ -2,7 +2,7 @@ package efa.dsa.test
 
 import efa.dsa.equipment._
 import efa.dsa.being.equipment._
-import efa.dsa.world.{DistanceClass, ShieldType, ShieldSize}
+import efa.dsa.world.{DistanceClass, ShieldType, ShieldSize, EquipmentMaps}
 import efa.rpg.core.{ItemData, DB, RpgItem, DieRoller}
 import org.scalacheck._, Arbitrary.arbitrary
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -46,7 +46,7 @@ object EquipmentGens {
       ran ← dbGen(es.rangedWeapons, rangedGen)
       shi ← dbGen(es.shields, shieldGen)
       zon ← dbGen(es.zoneArmor, zoneArmorGen)
-    } yield EquipmentDatas(amm, arm, art, mel, ran, shi, zon)
+    } yield EquipmentMaps(amm, arm, art, mel, ran, shi, zon)
   }
 
   def handsDataGen (es: EquipmentDatas): Gen[HandsData] = {
@@ -94,7 +94,7 @@ object EquipmentGens {
     ran ← rangedWeaponGen
     shi ← shieldGen
     zon ← zoneArmorGen
-  } yield EquipmentItems(amm, arm, art, mel, ran, shi, zon)
+  } yield EquipmentMaps(amm, arm, art, mel, ran, shi, zon)
   
   lazy val ammunitionGen = dbGen[AmmunitionItem](
     ammunitionNames, ed ⇒ tpGen ∘ (AmmunitionItem(ed, _)))
