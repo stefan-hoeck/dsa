@@ -25,13 +25,13 @@ object SkillPrototypes extends Util {
   implicit lazy val SkillPrototypesEqual = Equal.equalA[SkillPrototypes]
 
   implicit lazy val SkillPrototypesArbitrary = Arbitrary(
-    ^^^^^^(mapGen[SkillPrototype,Int],
-      mapGen[SkillPrototype,Int],
-      mapGen[SkillPrototype,Int],
-      mapGen[SkillPrototype,Int],
-      mapGen[SkillPrototype,Int],
-      mapGen[SkillPrototype,Int],
-      mapGen[SkillPrototype,Int])(SkillPrototypes.apply)
+    ^^^^^^(mapGen[SkillPrototype,Int](0, 10),
+      mapGen[SkillPrototype,Int](0, 10),
+      mapGen[SkillPrototype,Int](0, 10),
+      mapGen[SkillPrototype,Int](0, 10),
+      mapGen[SkillPrototype,Int](0, 10),
+      mapGen[SkillPrototype,Int](0, 10),
+      mapGen[SkillPrototype,Int](0, 10))(SkillPrototypes.apply)
   )
 
   implicit lazy val SkillPrototypesToXml = new ToXml[SkillPrototypes] {

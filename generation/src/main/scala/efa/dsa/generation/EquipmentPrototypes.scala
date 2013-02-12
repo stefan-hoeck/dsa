@@ -26,13 +26,13 @@ object EquipmentPrototypes extends Util {
     Equal.equalA[EquipmentPrototypes]
 
   implicit lazy val EquipmentPrototypesArbitrary = Arbitrary(
-    ^^^^^^(mapGen[EquipmentPrototype,Int],
-      mapGen[EquipmentPrototype,Int],
-      mapGen[EquipmentPrototype,Int],
-      mapGen[EquipmentPrototype,Int],
-      mapGen[EquipmentPrototype,Int],
-      mapGen[EquipmentPrototype,Int],
-      mapGen[EquipmentPrototype,Int])(EquipmentPrototypes.apply)
+    ^^^^^^(mapGen[EquipmentPrototype,Int](0, 10),
+      mapGen[EquipmentPrototype,Int](0, 10),
+      mapGen[EquipmentPrototype,Int](0, 10),
+      mapGen[EquipmentPrototype,Int](0, 10),
+      mapGen[EquipmentPrototype,Int](0, 10),
+      mapGen[EquipmentPrototype,Int](0, 10),
+      mapGen[EquipmentPrototype,Int](0, 10))(EquipmentPrototypes.apply)
   )
 
   implicit lazy val EquipmentPrototypesToXml = new ToXml[EquipmentPrototypes] {

@@ -22,9 +22,9 @@ object AbilityPrototypes extends Util {
     Equal.equalA[AbilityPrototypes]
 
   implicit lazy val AbilityPrototypesArbitrary = Arbitrary(
-    ^^(mapGen[AbilityPrototype,Int],
-      mapGen[AbilityPrototype,Int],
-      mapGen[AbilityPrototype,Int])(AbilityPrototypes.apply)
+    ^^(mapGen[AbilityPrototype,Int](0, 10),
+      mapGen[AbilityPrototype,Int](0, 10),
+      mapGen[AbilityPrototype,Int](0, 10))(AbilityPrototypes.apply)
   )
 
   implicit lazy val AbilityPrototypesToXml = new ToXml[AbilityPrototypes] {

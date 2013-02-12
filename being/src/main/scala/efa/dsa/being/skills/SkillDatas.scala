@@ -25,13 +25,13 @@ object SkillDatas extends Util {
   implicit lazy val SkillDatasEqual = Equal.equalA[SkillDatas]
 
   implicit lazy val SkillDatasArbitrary = Arbitrary(
-    ^^^^^^(mapGen[TalentData,Int],
-      mapGen[MeleeTalentData,Int],
-      mapGen[TalentData,Int],
-      mapGen[TalentData,Int],
-      mapGen[TalentData,Int],
-      mapGen[SpellData,Int],
-      mapGen[TalentData,Int])(SkillDatas.apply)
+    ^^^^^^(mapGen[TalentData,Int](0, 10),
+      mapGen[MeleeTalentData,Int](0, 10),
+      mapGen[TalentData,Int](0, 10),
+      mapGen[TalentData,Int](0, 10),
+      mapGen[TalentData,Int](0, 10),
+      mapGen[SpellData,Int](0, 10),
+      mapGen[TalentData,Int](0, 10))(SkillDatas.apply)
   )
 
   implicit lazy val SkillDatasToXml = new ToXml[SkillDatas] {

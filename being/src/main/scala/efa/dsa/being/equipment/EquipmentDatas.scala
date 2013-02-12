@@ -27,13 +27,13 @@ object EquipmentDatas extends Util {
   implicit lazy val EquipmentDatasEqual = Equal.equalA[EquipmentDatas]
 
   implicit lazy val EquipmentDatasArbitrary = Arbitrary(
-    ^^^^^^(mapGen[AmmunitionData,Int],
-      mapGen[ArmorData,Int],
-      mapGen[ArticleData,Int],
-      mapGen[MeleeWeaponData,Int],
-      mapGen[RangedWeaponData,Int],
-      mapGen[ShieldData,Int],
-      mapGen[ZoneArmorData,Int])(EquipmentDatas.apply)
+    ^^^^^^(mapGen[AmmunitionData,Int](0, 10),
+      mapGen[ArmorData,Int](0, 10),
+      mapGen[ArticleData,Int](0, 10),
+      mapGen[MeleeWeaponData,Int](0, 10),
+      mapGen[RangedWeaponData,Int](0, 10),
+      mapGen[ShieldData,Int](0, 10),
+      mapGen[ZoneArmorData,Int](0, 10))(EquipmentDatas.apply)
   )
 
   implicit lazy val EquipmentDatasToXml = new ToXml[EquipmentDatas] {

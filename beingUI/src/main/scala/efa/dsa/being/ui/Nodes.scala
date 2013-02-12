@@ -28,7 +28,7 @@ object Nodes {
     (get: A ⇒ List[B])(add: D ⇒ State[C,Unit])(
     implicit UI: UniqueId[B,E], M: Manifest[D]
   ): NodeOut[A,ValSt[C]] =
-    NC.children(NC.uniqueIdF[B,ValSt[C],E,List](out) ∙ get) ⊹
+    NC.children(NC.uidF(out)(get)) ⊹
     N.nameA(name) ⊹
     NodeOut[A,ValSt[C]](
       (o,n) ⇒ _ ⇒ {
