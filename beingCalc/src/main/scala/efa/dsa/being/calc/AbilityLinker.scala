@@ -4,6 +4,7 @@ import efa.core.{ValSt, ValRes}
 import efa.dsa.abilities._
 import efa.dsa.being.abilities._
 import efa.dsa.being.HumanoidData
+import efa.dsa.world.AbilityMaps
 import efa.rpg.core.{RpgItem, DB}
 import scalaz._, Scalaz._
 
@@ -61,11 +62,15 @@ sealed abstract class AbilityLinker[I,D](
 object AbilityLinker {
   type SMap[X] = Map[String,X]
 
-  def abilities (ad: AbilityDatas, as: AbilityItems): Abilities = Abilities (
-    AdvantageLinker abilities (ad, as),
-    HandicapLinker abilities (ad, as),
-    FeatLinker abilities (ad, as)
-  )
+  val dataL = Lens.self[AbilityDatas]
+  val abL = Lens.self[Abilities]
+
+  def abilities (ad: AbilityDatas, as: AbilityItems): Abilities = 
+    AbilityMaps (
+      AdvantageLinker abilities (ad, as),
+      HandicapLinker abilities (ad, as),
+      FeatLinker abilities (ad, as)
+    )
 
   private def al[I:RpgItem,D:AbilityData](
     il: Lens[AbilityItems,DB[I]],
@@ -79,20 +84,20 @@ object AbilityLinker {
 
   implicit val AdvantageLinker = al[AdvantageItem,AdvantageData](
     AbilityItems.advantages,
-    AbilityDatas.advantages,
-    Abilities.advantages
+    dataL.advantages,
+    abL.advantages
   )
 
   implicit val HandicapLinker = al[HandicapItem,AdvantageData](
     AbilityItems.handicaps,
-    AbilityDatas.handicaps,
-    Abilities.handicaps
+    dataL.handicaps,
+    abL.handicaps
   )
 
   implicit val FeatLinker = al[FeatItem,FeatData](
     AbilityItems.feats,
-    AbilityDatas.feats,
-    Abilities.feats
+    dataL.feats,
+    abL.feats
   )
 }
 

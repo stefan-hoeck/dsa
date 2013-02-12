@@ -1,6 +1,6 @@
 package efa.dsa.generation
 
-import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.{Efa, TaggedToXml, Default, UniqueIdL}, Efa._
 import efa.rpg.core.Util
 import org.scalacheck.{Arbitrary, Gen}, Arbitrary.arbitrary
 import scala.xml.Node
@@ -21,7 +21,9 @@ object AbilityPrototype extends Util {
     ^^(a[Int], Gen.identifier, Value.gen)(AbilityPrototype.apply)
   )
 
-  implicit lazy val AbilityPrototypeToXml = new ToXml[AbilityPrototype] {
+  implicit lazy val AbilityPrototypeToXml = new TaggedToXml[AbilityPrototype] {
+    val tag = "item"
+
     def fromXml (ns: Seq[Node]) =
       ^^(ns.readTag[Int]("id"),
         ns.readTag[String]("name"),
@@ -31,7 +33,7 @@ object AbilityPrototype extends Util {
       ("id" xml a.parentId) ++ ("name" xml a.name) ++ Value.write(a.value)
   }
 
-  implicit lazy val AbilityPrototypeWithId = intIdL (parentId)
+  implicit lazy val AbilityPrototypeWithId = UniqueIdL lens name
 
   val parentId: AbilityPrototype @> Int =
     Lens.lensu((a,b) ⇒ a.copy(parentId = b), _.parentId)

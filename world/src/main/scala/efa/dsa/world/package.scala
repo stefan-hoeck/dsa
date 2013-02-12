@@ -7,6 +7,8 @@ import org.scalacheck.Arbitrary
 import scalaz._, Scalaz._
 
 package object world {
+  type StringMap[+A] = Map[String,A]
+
   implicit class RoundedDivisibleInt (val value: Int) extends AnyVal {
     def rdiv (d: Int): Int = RoundedDiv roundedDivI (value, d)
   }

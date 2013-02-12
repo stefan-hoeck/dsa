@@ -1,6 +1,6 @@
 package efa.dsa.being.abilities
 
-import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.{Efa, TaggedToXml, Default}, Efa._
 import efa.rpg.core.Util
 import org.scalacheck.Arbitrary
 import scala.xml.Node
@@ -21,7 +21,9 @@ object AdvantageData extends Util {
   implicit val AdvantageDataArbitrary =
     Arbitrary(^(a[FeatData], Value.gen)(AdvantageData.apply))
 
-  implicit val AdvantageDataToXml = new ToXml[AdvantageData] {
+  implicit val AdvantageDataToXml = new TaggedToXml[AdvantageData] {
+    val tag = "dsa_advantageData"
+
     def fromXml (ns: Seq[Node]) =
       ^(FeatData read ns, Value read ns)(AdvantageData.apply)
 

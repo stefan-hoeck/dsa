@@ -2,7 +2,7 @@ package efa.dsa
 
 import efa.core.Service
 import efa.dsa.generation.spi.GenerationLocal
-import efa.dsa.world.SkillMaps
+import efa.dsa.world.{SkillMaps, AbilityMaps, EquipmentMaps}
 import efa.rpg.core.RangeVals
 
 package object generation extends RangeVals {
@@ -12,15 +12,18 @@ package object generation extends RangeVals {
   val Tap = fullInfo(-99, 999, "value")
   val Value = fullInfo(0, 99, "value")
 
+  type AbilityPrototypes = AbilityMaps[AbilityPrototype, AbilityPrototype,
+                                       AbilityPrototype]
+
+  type EquipmentPrototypes =
+    EquipmentMaps[EquipmentPrototype, EquipmentPrototype, EquipmentPrototype,
+                  EquipmentPrototype, EquipmentPrototype, EquipmentPrototype,
+                  EquipmentPrototype]
+
   type SkillPrototypes = SkillMaps[SkillPrototype, SkillPrototype,
                                    SkillPrototype, SkillPrototype,
                                    SkillPrototype, SkillPrototype,
                                    SkillPrototype]
-
-  type EquipmentPrototypes = SkillMaps[EquipmentPrototype, EquipmentPrototype,
-                                       EquipmentPrototype, EquipmentPrototype,
-                                       EquipmentPrototype, EquipmentPrototype,
-                                       EquipmentPrototype]
 }
 
 // vim: set ts=2 sw=2 et:

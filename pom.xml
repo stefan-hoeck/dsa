@@ -171,7 +171,7 @@
   <properties>
     <brandingToken>dsatool</brandingToken>
     <util.version>0.2.0-SNAPSHOT</util.version>
-    <react.version>0.1.0</react.version>
+    <react.version>0.2.0-SNAPSHOT</react.version>
     <rpg.version>1.0.0-SNAPSHOT</rpg.version>
     <world.version>1.0.0-SNAPSHOT</world.version>
     <abilities.version>1.0.0-SNAPSHOT</abilities.version>

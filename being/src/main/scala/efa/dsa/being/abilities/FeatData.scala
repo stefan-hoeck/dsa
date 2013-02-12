@@ -1,6 +1,6 @@
 package efa.dsa.being.abilities
 
-import efa.core.{Efa, ToXml, Default, UniqueIdL}, Efa._
+import efa.core.{Efa, TaggedToXml, Default, UniqueIdL}, Efa._
 import efa.rpg.core.Util
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node
@@ -22,7 +22,9 @@ object FeatData extends Util {
     ^^^(a[Int], Gen.identifier, a[Boolean], Gen.identifier)(FeatData.apply)
   )
 
-  implicit lazy val FeatDataToXml = new ToXml[FeatData] {
+  implicit lazy val FeatDataToXml = new TaggedToXml[FeatData] {
+    val tag = "dsa_feat"
+
     def fromXml (ns: Seq[Node]) =
       ^^^(ns.readTag[Int]("parentId"),
         ns.readTag[String]("name"),
