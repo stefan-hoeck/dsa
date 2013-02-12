@@ -21,8 +21,7 @@ object SkillMaps extends Util {
 
   implicit def SMEqual[A:Equal,B:Equal,C:Equal,D:Equal,E:Equal,
                        F:Equal,G:Equal]: Equal[SkillMaps[A,B,C,D,E,F,G]] = 
-    Equal.equalBy(s ⇒ (s.languages, s.meleeTalents, s.rangedTalents,
-      s.rituals, s.scriptures, s.spells, s.talents))
+    Equal.equalBy(SkillMaps unapply _)
 
   implicit def SMArbitrary[A:Arbitrary:IntIdL,B:Arbitrary:IntIdL,
                            C:Arbitrary:IntIdL,D:Arbitrary:IntIdL,

@@ -17,8 +17,7 @@ object AbilityMaps extends Util {
   implicit def AMDefault[A,B,C] = Default default AbilityMaps[A,B,C](e, e, e)
 
   implicit def AMEqual[A:Equal,B:Equal,C:Equal]
-    : Equal[AbilityMaps[A,B,C]] = 
-    Equal.equalBy(s ⇒ (s.advantages, s.handicaps, s.feats))
+    : Equal[AbilityMaps[A,B,C]] = Equal.equalBy(AbilityMaps unapply _)
 
   implicit def AMArbitrary[A:Arbitrary:StringId,
                            B:Arbitrary:StringId,

@@ -21,8 +21,7 @@ object EquipmentMaps extends Util {
 
   implicit def EMEqual[A:Equal,B:Equal,C:Equal,D:Equal,E:Equal,
                        F:Equal,G:Equal]: Equal[EquipmentMaps[A,B,C,D,E,F,G]] = 
-    Equal.equalBy(s ⇒ (s.ammunition, s.armor, s.articles,
-      s.meleeWeapons, s.rangedWeapons, s.shields, s.zoneArmor))
+    Equal.equalBy(EquipmentMaps unapply _)
 
   implicit def EMArbitrary[A:Arbitrary:IntIdL,B:Arbitrary:IntIdL,
                            C:Arbitrary:IntIdL,D:Arbitrary:IntIdL,
