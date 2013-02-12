@@ -52,7 +52,7 @@ object GenData extends Util {
         Au read ns,
         Le read ns,
         Mr read ns,
-        SkillPrototypes read ns)(GenData.apply)
+        ToXml[SkillPrototypes] fromXml ns)(GenData.apply)
 
     def toXml (a: GenData) =
       ("name" xml a.name) ++
@@ -60,7 +60,7 @@ object GenData extends Util {
       Au.write(a.au) ++
       Le.write(a.le) ++
       Mr.write(a.mr) ++
-      SkillPrototypes.write(a.skills)
+      ToXml[SkillPrototypes].toXml(a.skills)
   }
 
   def read (ns: Seq[Node]) = GenDataToXml fromXml ns

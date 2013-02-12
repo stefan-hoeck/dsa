@@ -3,7 +3,7 @@ package efa.dsa.test
 import efa.dsa.abilities._
 import efa.dsa.being.abilities._
 import efa.dsa.being.skills._
-import efa.dsa.world.{Ebe, RaisingCost}
+import efa.dsa.world.{Ebe, RaisingCost, SkillMaps}
 import efa.rpg.core.{ItemData, DB, RpgItem}
 import org.scalacheck._, Arbitrary.arbitrary
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -76,7 +76,7 @@ object AbilityGens {
       scr ← talentDataDbGen(abs.scriptures)
       spe ← spellDbGen
       tal ← talentDataDbGen(abs.talents)
-    } yield SkillDatas(lan, mel, ran, rit, scr, spe, tal)
+    } yield SkillMaps(lan, mel, ran, rit, scr, spe, tal)
   }
 
   lazy val abilitiesGen = for {

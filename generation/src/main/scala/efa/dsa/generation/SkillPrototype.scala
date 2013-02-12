@@ -1,6 +1,6 @@
 package efa.dsa.generation
 
-import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.{Efa, TaggedToXml, Default}, Efa._
 import efa.rpg.core.Util
 import org.scalacheck.Arbitrary
 import scala.xml.Node
@@ -20,7 +20,9 @@ object SkillPrototype extends Util {
   implicit lazy val SkillPrototypeArbitrary =
     Arbitrary(^(a[Int], Tap.gen)(SkillPrototype.apply))
 
-  implicit lazy val SkillPrototypeToXml = new ToXml[SkillPrototype] {
+  implicit lazy val SkillPrototypeToXml = new TaggedToXml[SkillPrototype] {
+    val tag = "item"
+
     def fromXml (ns: Seq[Node]) =
       ^(ns.readTag[Int]("id"), Tap read ns)(SkillPrototype.apply)
 
@@ -28,7 +30,7 @@ object SkillPrototype extends Util {
       ("id" xml a.parentId) ++ Tap.write(a.value)
   }
   
-  implicit lazy val SkillPrototypeWithId = intIdL (parentId)
+  implicit lazy val SkillPrototypeWithId = intIdL(parentId)
 
   val parentId: SkillPrototype @> Int =
     Lens.lensu((a,b) ⇒ a.copy(parentId = b), _.parentId)

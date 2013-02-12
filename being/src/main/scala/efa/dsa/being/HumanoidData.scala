@@ -73,7 +73,7 @@ object HumanoidData extends Util {
       ns.tagged[HandsData],
       AbilityDatas.read(ns),
       EquipmentDatas.read(ns),
-      SkillDatas.read(ns)
+      ToXml[SkillDatas] fromXml ns
     )(HumanoidData.apply)
 
     def toXml (a: HumanoidData) =
@@ -88,7 +88,7 @@ object HumanoidData extends Util {
       Efa.toXml(a.hands) ++
       AbilityDatas.write(a.abilities) ++
       EquipmentDatas.write(a.equipment) ++
-      SkillDatas.write(a.skills)
+      ToXml[SkillDatas].toXml(a.skills)
   }
 
   def read (ns: Seq[Node]) = HumanoidDataToXml fromXml ns

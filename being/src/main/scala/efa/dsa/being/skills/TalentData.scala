@@ -1,6 +1,6 @@
 package efa.dsa.being.skills
 
-import efa.core.{Efa, ToXml}, Efa._
+import efa.core.{Efa, TaggedToXml}, Efa._
 import efa.dsa.world.RaisingCost
 import efa.rpg.core.Util
 import org.scalacheck.Arbitrary, Arbitrary.arbitrary
@@ -25,7 +25,9 @@ object TalentData extends Util {
     ^^^(a[Int], Tap.gen, a[RaisingCost], a[Boolean])(TalentData.apply)
   )
 
-  implicit val TalentDataToXml = new ToXml[TalentData] {
+  implicit val TalentDataToXml = new TaggedToXml[TalentData] {
+    val tag = "dsa_talentData"
+
     def fromXml (ns: Seq[Node]) =
       ^^^(ns.readTag[Int]("parentId"),
         Tap read ns,

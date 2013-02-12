@@ -1,6 +1,7 @@
 package efa.dsa.being
 
 import efa.dsa.abilities._
+import efa.dsa.world.SkillMaps
 import efa.rpg.core.RangeVals
 import scalaz.@>
 
@@ -22,6 +23,14 @@ package object skills extends RangeVals {
   type Spell = Skill[SpellItem,SpellData]
 
   type Talent = Skill[TalentItem,TalentData]
+
+  type SkillDatas = SkillMaps[TalentData, MeleeTalentData,
+                              TalentData, TalentData,
+                              TalentData, SpellData,
+                              TalentData]
+
+  type Skills = SkillMaps[Language, MeleeTalent, RangedTalent, Ritual,
+                          Scripture, Spell, Talent]
 
   private[skills] def skillData[A](l: A @> TalentData, a: A): SkillData[A]
     = new SkillData[A] {

@@ -1,6 +1,6 @@
 package efa.dsa.being.skills
 
-import efa.core.{Efa, ToXml}, Efa._
+import efa.core.{Efa, TaggedToXml}, Efa._
 import efa.rpg.core.{RangeVals, Util}
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node
@@ -21,7 +21,9 @@ object MeleeTalentData extends Util with RangeVals {
     ^(a[TalentData], At.gen)(MeleeTalentData.apply)
   )
 
-  implicit val MeleeTalentDataToXml = new ToXml[MeleeTalentData] {
+  implicit val MeleeTalentDataToXml = new TaggedToXml[MeleeTalentData] {
+    val tag = "dsa_meleeTalent"
+
     def fromXml (ns: Seq[Node]) =
       ^(TalentData read ns, At read ns)(MeleeTalentData.apply)
 

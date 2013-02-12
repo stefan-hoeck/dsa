@@ -3,7 +3,7 @@ package efa.dsa.test
 import efa.dsa.being.generation._
 import efa.dsa.being.skills.{SkillDatas, SkillData}
 import efa.dsa.generation.{SkillPrototype, SkillPrototypes}
-import efa.dsa.world.{Attribute}
+import efa.dsa.world.{Attribute, SkillMaps}
 import efa.rpg.core.{DB, EnumMaps}
 import org.scalacheck.{Arbitrary, Gen}, Arbitrary.arbitrary
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -47,7 +47,7 @@ object GenerationGens {
       scr ← dbg(sd.scriptures)
       spe ← dbg(sd.spells)
       tal ← dbg(sd.talents)
-    } yield SkillPrototypes(lan, mel, ran, rit, scr, spe, tal)
+    } yield SkillMaps(lan, mel, ran, rit, scr, spe, tal)
   }
 
   lazy val raceNames = List(

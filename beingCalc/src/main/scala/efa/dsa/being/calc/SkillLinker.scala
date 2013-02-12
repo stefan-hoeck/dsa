@@ -6,7 +6,7 @@ import efa.dsa.being.generation.GenData
 import efa.dsa.being.skills._
 import efa.dsa.being.{HumanoidData ⇒ HuD, HeroData ⇒ HD, Hero}
 import efa.dsa.generation.{SkillPrototype, SkillPrototypes, NamedPrototype}
-import efa.dsa.world.RaisingCost
+import efa.dsa.world.{RaisingCost, SkillMaps}
 import efa.rpg.core.{DB, Modifier}
 import scalaz._, Scalaz._
 
@@ -23,7 +23,7 @@ sealed abstract class SkillLinker[I,D] (implicit
   type SKILL = Skill[I,D]
   
   /**
-   * Lens for SkillPrototypes
+   * Lens for items
    */
   def items: Lens[AbilityItems, DB[I]]
 
@@ -138,7 +138,11 @@ sealed abstract class SkillLinker[I,D] (implicit
 
 object SkillLinker {
 
-  def heroSkills (h: HD, as: AbilityItems): Skills = Skills (
+  private val spl = Lens.self[SkillPrototypes]
+  private val sdl = Lens.self[SkillDatas]
+  private val sl = Lens.self[Skills]
+
+  def heroSkills(h: HD, as: AbilityItems): Skills = SkillMaps(
     LanguageLinker heroSkills (h, as),
     MeleeTalentLinker heroSkills (h, as),
     RangedTalentLinker heroSkills (h, as),
@@ -149,18 +153,18 @@ object SkillLinker {
   )
 
   implicit val LanguageLinker = new TalentDataLinker[LanguageItem] {
-    def data = SkillDatas.languages
-    def prototypes = SkillPrototypes.languages
+    def data = sdl.languages
+    def prototypes = spl.languages
     def items = AbilityItems.languages
-    def skills = Skills.languages
+    def skills = sl.languages
   }
 
   implicit object MeleeTalentLinker
      extends SkillLinker[MeleeTalentItem,MeleeTalentData]{
-    def data = SkillDatas.meleeTalents
-    def prototypes = SkillPrototypes.meleeTalents
+    def data = sdl.meleeTalents
+    def prototypes = spl.meleeTalents
     def items = AbilityItems.meleeTalents
-    def skills = Skills.meleeTalents
+    def skills = sl.meleeTalents
 
     def setAt (s: SKILL, vi: ValRes[Int]): ValSt[SkillDatas] = {
       def setAt (i: Int) = set(MeleeTalentData.at)(s, i)
@@ -189,38 +193,38 @@ object SkillLinker {
   }
 
   implicit val RangedTalentLinker = new TalentDataLinker[RangedTalentItem] {
-    def data = SkillDatas.rangedTalents
-    def prototypes = SkillPrototypes.rangedTalents
+    def data = sdl.rangedTalents
+    def prototypes = spl.rangedTalents
     def items = AbilityItems.rangedTalents
-    def skills = Skills.rangedTalents
+    def skills = sl.rangedTalents
   }
 
   implicit val RitualLinker = new TalentDataLinker[RitualItem] {
-    def data = SkillDatas.rituals
-    def prototypes = SkillPrototypes.rituals
+    def data = sdl.rituals
+    def prototypes = spl.rituals
     def items = AbilityItems.rituals
-    def skills = Skills.rituals
+    def skills = sl.rituals
   }
 
   implicit val ScriptureLinker = new TalentDataLinker[ScriptureItem] {
-    def data = SkillDatas.scriptures
-    def prototypes = SkillPrototypes.scriptures
+    def data = sdl.scriptures
+    def prototypes = spl.scriptures
     def items = AbilityItems.scriptures
-    def skills = Skills.scriptures
+    def skills = sl.scriptures
   }
 
   implicit val SpellLinker = new SkillLinker[SpellItem,SpellData] {
-    def data = SkillDatas.spells
-    def prototypes = SkillPrototypes.spells
+    def data = sdl.spells
+    def prototypes = spl.spells
     def items = AbilityItems.spells
-    def skills = Skills.spells
+    def skills = sl.spells
   }
 
   implicit val TalentLinker = new TalentDataLinker[TalentItem] {
-    def data = SkillDatas.talents
-    def prototypes = SkillPrototypes.talents
+    def data = sdl.talents
+    def prototypes = spl.talents
     def items = AbilityItems.talents
-    def skills = Skills.talents
+    def skills = sl.talents
   }
 
   sealed abstract class TalentDataLinker[I:SkillItem]

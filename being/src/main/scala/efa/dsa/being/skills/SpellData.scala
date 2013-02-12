@@ -1,6 +1,6 @@
 package efa.dsa.being.skills
 
-import efa.core.{Efa, ToXml}, Efa._
+import efa.core.{Efa, TaggedToXml}, Efa._
 import efa.rpg.core.{RangeVals, Util}
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node
@@ -23,7 +23,9 @@ object SpellData extends Util with RangeVals {
     ^^(a[TalentData], a[Boolean], Gen.identifier)(SpellData.apply)
   )
 
-  implicit val SpellDataToXml = new ToXml[SpellData] {
+  implicit val SpellDataToXml = new TaggedToXml[SpellData] {
+    val tag = "dsa_spell"
+
     def fromXml (ns: Seq[Node]) =
       ^^(TalentData.read(ns),
         ns.readTag[Boolean]("houseSpell"),
