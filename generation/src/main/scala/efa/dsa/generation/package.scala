@@ -12,6 +12,12 @@ package object generation extends RangeVals {
   val Tap = fullInfo(-99, 999, "value")
   val Value = fullInfo(0, 99, "value")
 
+  type AbilityChoice = Choice[AbilityPrototype]
+
+  type EquipmentChoice = Choice[EquipmentPrototype]
+
+  type SkillChoice = Choice[SkillPrototype]
+
   type AbilityPrototypes = AbilityMaps[AbilityPrototype, AbilityPrototype,
                                        AbilityPrototype]
 
@@ -24,6 +30,19 @@ package object generation extends RangeVals {
                                    SkillPrototype, SkillPrototype,
                                    SkillPrototype, SkillPrototype,
                                    SkillPrototype]
+
+  type AbilityChoices = AbilityMaps[AbilityChoice, AbilityChoice,
+                                       AbilityChoice]
+
+  type EquipmentChoices =
+    EquipmentMaps[EquipmentChoice, EquipmentChoice, EquipmentChoice,
+                  EquipmentChoice, EquipmentChoice, EquipmentChoice,
+                  EquipmentChoice]
+
+  type SkillChoices = SkillMaps[SkillChoice, SkillChoice,
+                                   SkillChoice, SkillChoice,
+                                   SkillChoice, SkillChoice,
+                                   SkillChoice]
 }
 
 // vim: set ts=2 sw=2 et:
