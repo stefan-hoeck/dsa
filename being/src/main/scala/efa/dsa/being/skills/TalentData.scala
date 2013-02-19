@@ -42,7 +42,7 @@ object TalentData extends Util {
   }
 
   implicit val TalentDataSkillData =
-    skillData[TalentData](Lens.self, default)
+    skillData[TalentData](Lens.lensId, default)
 
   def read (ns: Seq[Node]) = TalentDataToXml fromXml ns
 

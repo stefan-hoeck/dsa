@@ -2,6 +2,7 @@ package efa.dsa.generation
 
 import efa.core._, Efa._
 import org.scalacheck.Arbitrary
+import scala.xml.Node
 import scalaz._, Scalaz._
 import shapeless.{Lens ⇒ _, _}, Nat._
 
@@ -28,6 +29,25 @@ object GenLists {
     def equipmentChoices = l >=> lenses.at(_3)
     def skills = l >=> lenses.at(_4)
     def skillChoices = l >=> lenses.at(_5)
+  }
+
+  implicit val GLToXml = new ToXml[GenLists] {
+    def fromXml(ns: Seq[Node]) = ^^^^^(
+      ns.readTag[AbilityPrototypes]("abilities"),
+      ns.readTag[AbilityChoices]("abilityChoices"),
+      ns.readTag[EquipmentPrototypes]("equipment"),
+      ns.readTag[EquipmentChoices]("equipmentChoices"),
+      ns.readTag[SkillPrototypes]("skills"),
+      ns.readTag[SkillChoices]("skillChoices")
+    )(GenLists.apply)
+
+    def toXml(c: GenLists) =
+      ("abilities" xml c.abilities) ++
+      ("abilityChoices" xml c.abilityChoices) ++
+      ("equipment" xml c.equipment) ++
+      ("equipmentChoices" xml c.equipmentChoices) ++
+      ("skills" xml c.skills) ++
+      ("skillChoices" xml c.skillChoices)
   }
 }
 

@@ -64,9 +64,9 @@ sealed abstract class EquipmentLinker[I,D](
 
 object EquipmentLinker {
 
-  private val itemL = Lens.self[EquipmentItems]
-  private val dataL = Lens.self[EquipmentDatas]
-  private val eqL = Lens.self[Equipments]
+  private val itemL = Lens.lensId[EquipmentItems]
+  private val dataL = Lens.lensId[EquipmentDatas]
+  private val eqL = Lens.lensId[Equipments]
 
   def equipment (
     ed: EquipmentDatas,

@@ -138,9 +138,9 @@ sealed abstract class SkillLinker[I,D] (implicit
 
 object SkillLinker {
 
-  private val spl = Lens.self[SkillPrototypes]
-  private val sdl = Lens.self[SkillDatas]
-  private val sl = Lens.self[Skills]
+  private val spl = Lens.lensId[SkillPrototypes]
+  private val sdl = Lens.lensId[SkillDatas]
+  private val sl = Lens.lensId[Skills]
 
   def heroSkills(h: HD, as: AbilityItems): Skills = SkillMaps(
     LanguageLinker heroSkills (h, as),

@@ -62,8 +62,8 @@ sealed abstract class AbilityLinker[I,D](
 object AbilityLinker {
   type SMap[X] = Map[String,X]
 
-  val dataL = Lens.self[AbilityDatas]
-  val abL = Lens.self[Abilities]
+  val dataL = Lens.lensId[AbilityDatas]
+  val abL = Lens.lensId[Abilities]
 
   def abilities (ad: AbilityDatas, as: AbilityItems): Abilities = 
     AbilityMaps (

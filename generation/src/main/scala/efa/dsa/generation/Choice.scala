@@ -9,12 +9,12 @@ import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 case class Choice[A](
     id: Int,
     name: String,
-    values: NonEmptyList[Int],
-    items: NonEmptyList[A])
+    values: List[Int],
+    items: List[A])
 
 object Choice extends Util {
   implicit def ChoiceDefault[A:Default]: Default[Choice[A]] =
-    Default default Choice[A](0, "", 0.wrapNel, !![A].wrapNel)
+    Default default Choice[A](0, "", Nil, Nil)
 
   implicit def ChoiceEqual[A:Equal]: Equal[Choice[A]] =
     Equal equalBy (Choice unapply _)
@@ -27,18 +27,17 @@ object Choice extends Util {
     for {
       id   ← a[Int]
       name ← Gen.identifier
-      v    ← Gen choose (0, 100)
-      vs   ← Gen listOf Gen.choose(0, 100)
-      arb  ← a[A]
-      as   ← Gen listOf a[A]
-    } yield
-      Choice(id, name, NonEmptyList(v, vs: _*), NonEmptyList(arb, as: _*))
+      ca   ← Gen choose (1, 10)
+      cv   ← Gen choose (1, ca)
+      as   ← Gen listOfN (ca, a[A])
+      vs   ← Gen listOfN (cv, Gen choose (0, 100))
+    } yield Choice(id, name, vs, as)
   )
 
   implicit def ChoiceToXml[A:TaggedToXml] = new TaggedToXml[Choice[A]] {
     val tag = "choice"
-    val vToXml = ToXml.nelToXml[Int]("value")
-    val aToXml = ToXml.nelToXml[A](TaggedToXml[A].tag)
+    val vToXml = ToXml.listToXml[Int]("value")
+    val aToXml = ToXml.listToXml[A](TaggedToXml[A].tag)
 
     def fromXml(ns: Seq[Node]) = ^^^(
       ns.readTag[Int]("id"),
@@ -59,10 +58,10 @@ object Choice extends Util {
   def name[A]: Choice[A] @> String =
     Lens.lensu((a,b) ⇒ a.copy(name = b), _.name)
   
-  def values[A]: Choice[A] @> NonEmptyList[Int] =
+  def values[A]: Choice[A] @> List[Int] =
     Lens.lensu((a,b) ⇒ a copy (values = b), _.values)
 
-  def items[A]: Choice[A] @> NonEmptyList[A] =
+  def items[A]: Choice[A] @> List[A] =
     Lens.lensu((a,b) ⇒ a copy (items = b), _.items)
   
   implicit class Lenses[A,B](val l: A @> Choice[B]) extends AnyVal {

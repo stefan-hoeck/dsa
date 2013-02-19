@@ -53,7 +53,7 @@ object FeatData extends Util {
   val desc: FeatData @> String = Lens.lensu((a,b) ⇒ a.copy(desc = b), _.desc)
   
   implicit val FeatDataAbilityData =
-    abilityData[FeatData](Lens.self, default)
+    abilityData[FeatData](Lens.lensId, default)
 }
 
 // vim: set ts=2 sw=2 et:

@@ -22,9 +22,9 @@ object AbilityNodes extends StNodeFunctions {
     ho: AbilitiesOut[Handicap],
     fo: AbilitiesOut[Feat]
   ): AbilitiesOut[Abilities] = children(
-    singleF (parent(ao, bLoc.advantages)),
-    singleF (parent(ho, bLoc.handicaps)),
-    singleF (parent(fo, bLoc.feats))
+    singleF(parent(ao, bLoc.advantages)),
+    singleF(parent(ho, bLoc.handicaps)),
+    singleF(parent(fo, bLoc.feats))
   )
 
   def abilityOut[A,B](
