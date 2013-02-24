@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
 <filesystem>
-    <folder name="Actions">
-        <folder name="Skills">
-            <file name="efa-dsa-being-ui-skills-RaiseAction.instance"/>
-            <file name="efa-dsa-being-ui-skills-LowerAction.instance"/>
-        </folder>    
+  <folder name="Actions">
+    <folder name="Skills">
+      <file name="efa-dsa-being-ui-skills-RaiseAction.instance"/>
+      <file name="efa-dsa-being-ui-skills-LowerAction.instance"/>
+    </folder>    
+  </folder>
+  <folder name="ContextActions">
+    <folder name="DsaParentNode">
+      <file name="NewAction.shadow">
+        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-NewAction.instance"/>
+        <attr name="position" intvalue="0"/>
+      </file>
     </folder>
-    <folder name="ContextActions">
-        <folder name="DsaParentNode">
-            <file name="NewAction.shadow">
-                <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-NewAction.instance"/>
-                <attr name="position" intvalue="0"/>
-            </file>
-        </folder>
-        <folder name="DsaChildNode">
-            <file name="EditAction.shadow">
-                <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-EditAction.instance"/>
-                <attr name="position" intvalue="100"/>
-            </file>
-            <file name="DeleteAction.shadow">
-                <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-DeleteAction.instance"/>
-                <attr name="position" intvalue="500"/>
-            </file>
-        </folder>
-        <folder name="DsaAdvantageNode">
-            <file name="RenameAction.shadow">
-                <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-RenameAction.instance"/>
-                <attr name="position" intvalue="100"/>
-            </file>
-        </folder>
-        <folder name="DsaEquipmentNode">
-            <file name="RenameAction.shadow">
-                <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-RenameAction.instance"/>
-                <attr name="position" intvalue="100"/>
-            </file>
-        </folder>
-        <folder name="DsaSkillNode">
-            <file name="RaiseAction.shadow">
-                <attr name="originalFile" stringvalue="Actions/Skills/efa-dsa-being-ui-skills-RaiseAction.instance"/>
-                <attr name="position" intvalue="105"/>
-            </file>
-            <file name="LowerAction.shadow">
-                <attr name="originalFile" stringvalue="Actions/Skills/efa-dsa-being-ui-skills-LowerAction.instance"/>
-                <attr name="position" intvalue="110"/>
-            </file>
-        </folder>
+    <folder name="DsaChildNode">
+      <file name="EditAction.shadow">
+        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-EditAction.instance"/>
+        <attr name="position" intvalue="100"/>
+      </file>
+      <file name="DeleteAction.shadow">
+        <attr name="originalFile" stringvalue="Actions/Edit/org-openide-actions-DeleteAction.instance"/>
+        <attr name="position" intvalue="500"/>
+      </file>
     </folder>
+    <folder name="DsaAdvantageNode">
+      <file name="RenameAction.shadow">
+        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-RenameAction.instance"/>
+        <attr name="position" intvalue="100"/>
+      </file>
+    </folder>
+    <folder name="DsaEquipmentNode">
+      <file name="RenameAction.shadow">
+        <attr name="originalFile" stringvalue="Actions/System/org-openide-actions-RenameAction.instance"/>
+        <attr name="position" intvalue="100"/>
+      </file>
+    </folder>
+    <folder name="DsaSkillNode">
+      <file name="RaiseAction.shadow">
+        <attr name="originalFile" stringvalue="Actions/Skills/efa-dsa-being-ui-skills-RaiseAction.instance"/>
+        <attr name="position" intvalue="105"/>
+      </file>
+      <file name="LowerAction.shadow">
+        <attr name="originalFile" stringvalue="Actions/Skills/efa-dsa-being-ui-skills-LowerAction.instance"/>
+        <attr name="position" intvalue="110"/>
+      </file>
+    </folder>
+  </folder>
 </filesystem>
+
+<!-- vim: set ts=2 sw=2 et nowrap: -->
