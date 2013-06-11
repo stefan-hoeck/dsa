@@ -2,9 +2,9 @@ import sbt._
 import Keys._
 
 object BuildSettings {
-  val sv = "2.10.0"
+  val sv = "2.10.2"
   val buildOrganization = "efa.dsa"
-  val buildVersion = "1.0.0-SNAPSHOT"
+  val buildVersion = "1.1.0-SNAPSHOT"
   val buildScalaVersion = sv
   val netbeansRepo = "Netbeans" at "http://bits.netbeans.org/maven2/"
 
@@ -23,15 +23,15 @@ object BuildSettings {
 object Dependencies {
   import BuildSettings.sv  
 
-  val utilV = "0.2.1-SNAPSHOT"
-  val reactV = "0.2.1-SNAPSHOT"
-  val efaNbV = "0.2.1-SNAPSHOT"
-  val rpgV = "1.0.0-SNAPSHOT"
+  val utilV = "0.2.2-SNAPSHOT"
+  val direV = "0.1.0-SNAPSHOT"
+  val efaNbV = "0.3.0-SNAPSHOT"
+  val rpgV = "1.1.0-SNAPSHOT"
   val nbV = "RELEASE71"
-  val scalazV = "7.0.0-M8"
+  val scalazV = "7.0.0"
 
   val util = "efa"
-  val react = "efa.react"
+  val direP = "dire"
   val rpg = "efa.rpg"
   val nb = "org.netbeans.api"
   val scalaz = "org.scalaz"
@@ -42,9 +42,9 @@ object Dependencies {
 
   val efaNb = "efa.nb" %% "efa-nb" % efaNbV changing
 
-  val efaReact = react %% "react-core" % reactV changing
+  val dire = direP %% "dire-core" % direV changing
 
-  val efaReactSwing = react %% "react-swing" % reactV changing
+  val direSwing = direP %% "dire-swing" % direV changing
 
   val rpgBeing = rpg %% "rpg-being" % rpgV changing
 
@@ -53,8 +53,6 @@ object Dependencies {
   val rpgItems = rpg %% "rpg-items" % rpgV changing
 
   val rpgRules = rpg %% "rpg-rules" % rpgV changing
-
-  val scalaSwing = "org.scala-lang" % "scala-swing" % sv
  
   val nbAnnotations = nb % "org-netbeans-api-annotations-common" % nbV
   val nbUtil = nb % "org-openide-util" % nbV
@@ -97,10 +95,11 @@ object DsaBuild extends Build {
     "dsa",
     file("."),
     settings = buildSettings
-  ) aggregate (abilities, abilitiesServices,
-               being, beingCalc, beingServices, beingUI,
-               equipment, equipmentServices, generation,
-               rules, testItems, world)
+  ) aggregate (world)
+ // ) aggregate (abilities, abilitiesServices,
+ //              being, beingCalc, beingServices, beingUI,
+ //              equipment, equipmentServices, generation,
+ //              rules, testItems, world)
   
   lazy val abilities = Project (
     "dsa-abilities",
@@ -129,13 +128,13 @@ object DsaBuild extends Build {
   lazy val beingServices = Project (
     "dsa-beingServices",
     file("beingServices"),
-    settings = addDeps(efaCore, efaReact, rpgCore, rpgBeing, rpgRules)
+    settings = addDeps(efaCore, dire, rpgCore, rpgBeing, rpgRules)
   ) dependsOn (being, beingCalc)
 
   lazy val beingUI = Project (
     "dsa-beingUI",
     file("beingUI"),
-    settings = addDeps(efaCore, efaNb, efaReact, efaReactSwing, rpgCore, rpgBeing)
+    settings = addDeps(efaCore, efaNb, dire, direSwing, rpgCore, rpgBeing)
   ) dependsOn (beingServices)
 
   lazy val equipment = Project (

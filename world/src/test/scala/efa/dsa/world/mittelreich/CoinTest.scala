@@ -1,6 +1,5 @@
 package efa.dsa.world.mittelreich
 
-import efa.core.Efa._
 import efa.rpg.core.specs.UnitEnumProps
 import org.scalacheck._, Prop._
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
@@ -16,7 +15,7 @@ object CoinTest extends UnitEnumProps[Coin] ("Coin") {
     val ((c, nod), l) = p
     val read = readPretty(c)(showPretty(c, nod)(l))
 
-    (read ≟ l.success) :| ("Exp: %s, found: %s" format (l, read))
+    (read ≟ l.right) :| ("Exp: %s, found: %s" format (l, read))
   }
 }
 
