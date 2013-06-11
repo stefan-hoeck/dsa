@@ -1,15 +1,12 @@
 package efa.dsa.being
 
+import dire.SIn
 import efa.core.Efa._
 import efa.core.Service.unique
 import efa.dsa.abilities.AbilityItems
 import efa.dsa.being.services.spi._
 import efa.dsa.equipment.EquipmentItems
-import efa.io.IOCached
-import efa.react.SIn
-import efa.rpg.being.UIInfo
 import efa.rpg.rules.Rule
-import org.openide.util.{Lookup ⇒ L}
 import scalaz._, Scalaz._, effect.IO
 
 package object services {
@@ -17,7 +14,7 @@ package object services {
 
   type HeroRules = List[HeroRule]
 
-  type HeroInfo = UIInfo[HeroData,Hero]
+//  type HeroInfo = UIInfo[HeroData,Hero]
 
   lazy val abilities: SIn[AbilityItems] =
     unique[AbilityProvider](AbilityProvider).abilities
@@ -27,11 +24,11 @@ package object services {
 
   lazy val world: SIn[World] = abilities ⊛ equipment apply World
 
-  lazy val heroRules: IOCached[HeroRules] =
-    IOCached(provide[HeroRule,HeroRulesProvider])
+  lazy val heroRules: HeroRules =
+    provide[HeroRule,HeroRulesProvider].unsafePerformIO()
 
-  lazy val heroInfo: IOCached[IO[UIInfo[HeroData,Hero]]] =
-    IOCached(provide[IO[HeroInfo],UIProvider] map (_.suml))
+//  lazy val heroInfo: IO[UIInfo[HeroData,Hero]] =
+//    provide[IO[HeroInfo],UIProvider] map (_.suml)
 }
 
 // vim: set ts=2 sw=2 et:

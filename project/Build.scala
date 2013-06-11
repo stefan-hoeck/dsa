@@ -95,10 +95,9 @@ object DsaBuild extends Build {
     "dsa",
     file("."),
     settings = buildSettings
-  ) aggregate (abilities, being, beingCalc, equipment, generation,
-               testItems, world)
- // ) aggregate (abilitiesServices,
- //              beingServices, beingUI,
+  ) aggregate (abilities, abilitiesServices, being, beingCalc, beingServices,
+               equipment, generation, testItems, world)
+ //              beingUI,
  //              equipmentServices,
  //              rules)
   
@@ -111,7 +110,7 @@ object DsaBuild extends Build {
   lazy val abilitiesServices = Project (
     "dsa-abilitiesservices",
     file("abilitiesservices"),
-    settings = addDeps(efaCore, efaNb, rpgCore, rpgItems)
+    settings = addDeps(efaCore, efaNb, rpgCore, rpgItems) ++ Seq(fork := true)
   ) dependsOn (world, abilities, beingServices)
 
   lazy val being = Project (

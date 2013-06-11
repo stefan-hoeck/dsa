@@ -1,15 +1,14 @@
 package efa.dsa.being.services.spi
 
-import efa.react.SIn
+import dire.{SIn, SF}
 import efa.dsa.abilities.AbilityItems
-import scalaz._, Scalaz._
 
 trait AbilityProvider {
   def abilities: SIn[AbilityItems]
 }
 
 object AbilityProvider extends AbilityProvider {
-  def abilities = AbilityItems.default.η[SIn]
+  def abilities = SF const AbilityItems.default
 }
 
 // vim: set ts=2 sw=2 et:
