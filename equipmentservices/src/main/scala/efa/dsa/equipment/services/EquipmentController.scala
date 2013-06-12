@@ -17,13 +17,13 @@ private[services] object EquipmentController extends Factory {
   val rangedNames = ("Fernkampfwaffen", "dsa_rangedweapon_item")
   val shieldNames = ("Schilde", "dsa_shield_item")
   val zoneArmorNames = ("Zonenruestungen", "dsa_zonearmor_item")
-  val ammunitionC = singleton[AmmunitionItem](ammunitionNames)
-  val armorC = singleton[ArmorItem](armorNames)
-  val articleC = singleton[ArticleItem](articleNames)
-  val meleeC = singleton[MeleeWeaponItem](meleeNames)
-  val rangedC = singleton[RangedWeaponItem](rangedNames)
-  val shieldC = singleton[ShieldItem](shieldNames)
-  val zoneArmorC = singleton[ZoneArmorItem](zoneArmorNames)
+  lazy val ammunitionC = singleton[AmmunitionItem](ammunitionNames)
+  lazy val armorC = singleton[ArmorItem](armorNames)
+  lazy val articleC = singleton[ArticleItem](articleNames)
+  lazy val meleeC = singleton[MeleeWeaponItem](meleeNames)
+  lazy val rangedC = singleton[RangedWeaponItem](rangedNames)
+  lazy val shieldC = singleton[ShieldItem](shieldNames)
+  lazy val zoneArmorC = singleton[ZoneArmorItem](zoneArmorNames)
 
   lazy val infos: Map[String, ItemsInfo] = Map (
     ammunitionNames._1 → ammunitionC.info,

@@ -9,13 +9,15 @@ object EquipmentControllerTest
 
   import EquipmentController._
 
-//  property("ammunition_load") = testLoading(ammunitionC)
-//  property("armor_load") = testLoading(armorC)
-//  property("equipment_load") = testLoading(articleC)
-//  property("melee_load") = testLoading(meleeC)
-//  property("ranged_load") = testLoading(rangedC)
-//  property("shield_load") = testLoading(shieldC)
-//  property("zoneArmor_load") = testLoading(zoneArmorC)
+  override protected def factory = EquipmentController
+
+  property("ammunition_load") = testLoading(ammunitionC)
+  property("armor_load") = testLoading(armorC)
+  property("equipment_load") = testLoading(articleC)
+  property("melee_load") = testLoading(meleeC)
+  property("ranged_load") = testLoading(rangedC)
+  property("shield_load") = testLoading(shieldC)
+  property("zoneArmor_load") = testLoading(zoneArmorC)
     
 }
 
