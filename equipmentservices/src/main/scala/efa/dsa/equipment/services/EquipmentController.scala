@@ -1,14 +1,15 @@
 package efa.dsa.equipment.services
 
+import dire.SIn
 import efa.dsa.equipment._
-import efa.dsa.equipment.services.ui._
 import efa.dsa.world.EquipmentMaps
-import efa.react.{SIn, sTrans}
-import efa.rpg.items.controller.{ControllerFactory, ItemsInfo}
+import efa.rpg.items.controller.{Factory, ItemsInfo}
 import efa.rpg.items.spi.ItemsInfoProvider
 import scalaz._, Scalaz._, effect.IO
 
-private[services] object EquipmentController extends ControllerFactory {
+private[services] object EquipmentController extends Factory {
+  import implicits._
+
   val ammunitionNames = ("Geschosse", "dsa_ammunition_item")
   val armorNames = ("Ruestungen", "dsa_armor_item")
   val articleNames = ("Gegenstaende", "dsa_equipment_item")
@@ -16,35 +17,32 @@ private[services] object EquipmentController extends ControllerFactory {
   val rangedNames = ("Fernkampfwaffen", "dsa_rangedweapon_item")
   val shieldNames = ("Schilde", "dsa_shield_item")
   val zoneArmorNames = ("Zonenruestungen", "dsa_zonearmor_item")
-  val ammunitionC = cached[AmmunitionItem](ammunitionNames)
-  val armorC = cached[ArmorItem](armorNames)
-  val articleC = cached[ArticleItem](articleNames)
-  val meleeC = cached[MeleeWeaponItem](meleeNames)
-  val rangedC = cached[RangedWeaponItem](rangedNames)
-  val shieldC = cached[ShieldItem](shieldNames)
-  val zoneArmorC = cached[ZoneArmorItem](zoneArmorNames)
+  val ammunitionC = singleton[AmmunitionItem](ammunitionNames)
+  val armorC = singleton[ArmorItem](armorNames)
+  val articleC = singleton[ArticleItem](articleNames)
+  val meleeC = singleton[MeleeWeaponItem](meleeNames)
+  val rangedC = singleton[RangedWeaponItem](rangedNames)
+  val shieldC = singleton[ShieldItem](shieldNames)
+  val zoneArmorC = singleton[ZoneArmorItem](zoneArmorNames)
 
-  lazy val infos: Map[String, IO[ItemsInfo]] = Map (
-    ammunitionNames._1 → ammunitionC.map(_.info).get,
-    armorNames._1 → armorC.map(_.info).get,
-    articleNames._1 → articleC.map(_.info).get,
-    meleeNames._1 → meleeC.map(_.info).get,
-    rangedNames._1 → rangedC.map(_.info).get,
-    shieldNames._1 → shieldC.map(_.info).get,
-    zoneArmorNames._1 → zoneArmorC.map(_.info).get
+  lazy val infos: Map[String, ItemsInfo] = Map (
+    ammunitionNames._1 → ammunitionC.info,
+    armorNames._1 → armorC.info,
+    articleNames._1 → articleC.info,
+    meleeNames._1 → meleeC.info,
+    rangedNames._1 → rangedC.info,
+    shieldNames._1 → shieldC.info,
+    zoneArmorNames._1 → zoneArmorC.info
   )
 
-  lazy val equipment: SIn[EquipmentItems] = {
-    val cachedEquipments = signal(ammunitionC) ⊛
-      signal(armorC) ⊛
-      signal(articleC) ⊛
-      signal(meleeC) ⊛
-      signal(rangedC) ⊛
-      signal(shieldC) ⊛
-      signal(zoneArmorC) apply EquipmentMaps.apply
-
-    sTrans inIO (cachedEquipments.get >>= (_.go map (_._2)))
-  }
+  lazy val equipment: SIn[EquipmentItems] =
+    ammunitionC.dbIn ⊛
+    armorC.dbIn ⊛
+    articleC.dbIn ⊛
+    meleeC.dbIn ⊛
+    rangedC.dbIn ⊛
+    shieldC.dbIn ⊛
+    zoneArmorC.dbIn apply EquipmentMaps.apply
 }
 
 class EquipmentInfoProvider extends ItemsInfoProvider {
