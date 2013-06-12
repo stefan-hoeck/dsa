@@ -10,7 +10,7 @@
 
   <groupId>efa</groupId>
   <artifactId>dsa</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>dsa</name>
@@ -22,7 +22,7 @@
     </dependency>
     <dependency>
       <groupId>efa.nb</groupId>
-      <artifactId>scalaSwingW</artifactId>
+      <artifactId>scalaReflectW</artifactId>
     </dependency>
     <dependency>
       <groupId>efa.nb</groupId>
@@ -46,7 +46,7 @@
       </dependency>
       <dependency>
         <groupId>efa.nb</groupId>
-        <artifactId>scalaSwingW</artifactId>
+        <artifactId>scalaReflectW</artifactId>
         <version>${scala.version}</version>
       </dependency>
       <dependency>
@@ -67,13 +67,13 @@
 
       <dependency>
         <groupId>efa.nb</groupId>
-        <artifactId>reactW</artifactId>
-        <version>${react.version}</version>
+        <artifactId>direW</artifactId>
+        <version>${dire.version}</version>
       </dependency>
       <dependency>
         <groupId>efa.nb</groupId>
-        <artifactId>reactSwingW</artifactId>
-        <version>${react.version}</version>
+        <artifactId>direSwingW</artifactId>
+        <version>${dire.version}</version>
       </dependency>
 
       <dependency>
@@ -178,32 +178,32 @@
     <module>being</module>
     <module>beingCalc</module>
     <module>beingServices</module>
-    <module>beingUI</module>
+    <!--module>beingUI</module-->
     <module>generation</module>
     <module>rules</module>
   </modules>
 
   <properties>
-    <scala.version>2.10.0</scala.version>
-    <scalaz.version>7.0.0-M8</scalaz.version>
+    <scala.version>2.10.2</scala.version>
+    <scalaz.version>7.0.0</scalaz.version>
     <shapeless.version>1.2.3</shapeless.version>
     <scalacheck.version>1.10.0</scalacheck.version>
     <brandingToken>dsatool</brandingToken>
-    <util.version>0.2.1-SNAPSHOT</util.version>
-    <nb.version>0.2.1-SNAPSHOT</nb.version>
-    <react.version>0.2.1-SNAPSHOT</react.version>
-    <rpg.version>1.0.0-SNAPSHOT</rpg.version>
-    <world.version>1.0.0-SNAPSHOT</world.version>
-    <abilities.version>1.0.0-SNAPSHOT</abilities.version>
-    <abilitiesservices.version>1.0.0-SNAPSHOT</abilitiesservices.version>
-    <equipment.version>1.0.0-SNAPSHOT</equipment.version>
-    <equipmentservices.version>1.0.0-SNAPSHOT</equipmentservices.version>
-    <being.version>1.0.0-SNAPSHOT</being.version>
-    <beingCalc.version>1.0.0-SNAPSHOT</beingCalc.version>
-    <beingServices.version>1.0.0-SNAPSHOT</beingServices.version>
-    <beingUI.version>1.0.0-SNAPSHOT</beingUI.version>
-    <generation.version>1.0.0-SNAPSHOT</generation.version>
-    <rules.version>1.0.0-SNAPSHOT</rules.version>
+    <util.version>0.2.2-SNAPSHOT</util.version>
+    <nb.version>0.3.0-SNAPSHOT</nb.version>
+    <dire.version>0.1.0-SNAPSHOT</dire.version>
+    <rpg.version>1.1.0-SNAPSHOT</rpg.version>
+    <world.version>1.1.0-SNAPSHOT</world.version>
+    <abilities.version>1.1.0-SNAPSHOT</abilities.version>
+    <abilitiesservices.version>1.1.0-SNAPSHOT</abilitiesservices.version>
+    <equipment.version>1.1.0-SNAPSHOT</equipment.version>
+    <equipmentservices.version>1.1.0-SNAPSHOT</equipmentservices.version>
+    <being.version>1.1.0-SNAPSHOT</being.version>
+    <beingCalc.version>1.1.0-SNAPSHOT</beingCalc.version>
+    <beingServices.version>1.1.0-SNAPSHOT</beingServices.version>
+    <beingUI.version>1.1.0-SNAPSHOT</beingUI.version>
+    <generation.version>1.1.0-SNAPSHOT</generation.version>
+    <rules.version>1.1.0-SNAPSHOT</rules.version>
   </properties>
 </project>
 
