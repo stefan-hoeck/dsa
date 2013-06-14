@@ -14,7 +14,7 @@
   <name>DSA Tool</name>
 
   <properties>
-    <netbeans.run.params.ide>-J-Dnetbeans.logger.console=true -J-Dorg.netbeans.core.TimeableEventQueue.report=100000 -J-Dorg.netbeans.core.TimeableEventQueue.quantum=10000 -J-Xms64m -J-Xmx256m -J-Dnetbeans.preresolve.classes=true</netbeans.run.params.ide>
+    <netbeans.run.params.ide>-J-Dnetbeans.logger.console=true -J-Dorg.netbeans.core.TimeableEventQueue.report=100000 -J-Dorg.netbeans.core.TimeableEventQueue.quantum=10000 -J-Xms64m -J-Xmx256m -J-Dnetbeans.preresolve.classes=true -J-XX:MaxPermSize=128M</netbeans.run.params.ide>
     <netbeans.run.params>${netbeans.run.params.ide}</netbeans.run.params>
   </properties>
 
