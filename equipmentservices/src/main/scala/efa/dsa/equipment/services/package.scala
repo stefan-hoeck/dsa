@@ -17,7 +17,7 @@ object implicits {
   implicit lazy val AmmunitionEditable = editable[AmmunitionItem] { (s,b) ⇒
     for {
       eu ← eqUI(s, b)
-      tp ← TextField trailing item(s).tp.toString
+      tp ← TextField trailing eu.item.tp.toString
 
       elem = eu.elem(Elem(el.tp), Elem(tp))
       in   = ^(eu.in, readIn[DieRoller](tp.in))(AmmunitionItem.apply)
@@ -27,9 +27,9 @@ object implicits {
   implicit lazy val ArmorEditable = editable[ArmorItem] { (s,b) ⇒
     for {
       eu  ← eqUI(s, b)
-      rs  ← TextField trailing item(s).rs.toString
-      be  ← TextField trailing item(s).be.toString
-      add ← CheckBox(selected := item(s).isAddition)
+      rs  ← TextField trailing eu.item.rs.toString
+      be  ← TextField trailing eu.item.be.toString
+      add ← CheckBox(selected := eu.item.isAddition)
 
       elem = eu.elem(el.rs ^^ el.be ^^ el.isAddition, rs ^^ be ^^ add)
 
@@ -47,16 +47,16 @@ object implicits {
   implicit lazy val MeleeWeaponEditable = editable[MeleeWeaponItem] { (s,b) ⇒
     for {
       eu         ← eqUI(s, b)
-      ini        ← TextField trailing item(s).ini.toString
-      bf         ← TextField trailing item(s).bf.toString
-      wm         ← TextField trailing item(s).wm.toString
-      tp         ← TextField trailing item(s).tp.toString
-      tpkk       ← TextField trailing item(s).tpkk.toString
-      improvised ← CheckBox(selected := item(s).improvised)
-      talent     ← TextField text item(s).talent
-      twohanded  ← CheckBox(selected := item(s).twoHanded)
-      dk         ← ComboBox(DistanceClass.values, item(s).dk)
-      length     ← TextField trailing ued.showPretty(Distance.S, 2)(item(s).length)
+      ini        ← TextField trailing eu.item.ini.toString
+      bf         ← TextField trailing eu.item.bf.toString
+      wm         ← TextField trailing eu.item.wm.toString
+      tp         ← TextField trailing eu.item.tp.toString
+      tpkk       ← TextField trailing eu.item.tpkk.toString
+      improvised ← CheckBox(selected := eu.item.improvised)
+      talent     ← TextField text eu.item.talent
+      twohanded  ← CheckBox(selected := eu.item.twoHanded)
+      dk         ← ComboBox(DistanceClass.values, eu.item.dk)
+      length     ← TextField trailing ued.showPretty(Distance.S, 2)(eu.item.length)
 
       lbls = el.tp ^^ el.tpkk ^^ el.improvised ^^ el.talent ^^ el.bf ^^
              el.twoHanded ^^ el.wm ^^ el.ini ^^ el.dk ^^ el.length
@@ -83,15 +83,15 @@ object implicits {
   implicit lazy val RangedWeaponEditable = editable[RangedWeaponItem] { (s,b) ⇒
     for {
       eu         ← eqUI(s, b)
-      tp         ← TextField trailing item(s).tp.toString
-      tpkk       ← TextField trailing item(s).tpkk.toString
-      ttl        ← TextField trailing item(s).timeToLoad.toString
-      improvised ← CheckBox(selected := item(s).improvised)
-      talent     ← TextField text item(s).talent
-      reach      ← TextField text Reach.shows(item(s).reach)
-      tpplus     ← TextField text TpPlus.shows(item(s).tpPlus)
-      usesAmmo   ← CheckBox(selected := item(s).usesAmmo)
-      makesWound ← CheckBox(selected := item(s).makesWound)
+      tp         ← TextField trailing eu.item.tp.toString
+      tpkk       ← TextField trailing eu.item.tpkk.toString
+      ttl        ← TextField trailing eu.item.timeToLoad.toString
+      improvised ← CheckBox(selected := eu.item.improvised)
+      talent     ← TextField text eu.item.talent
+      reach      ← TextField text Reach.shows(eu.item.reach)
+      tpplus     ← TextField text TpPlus.shows(eu.item.tpPlus)
+      usesAmmo   ← CheckBox(selected := eu.item.usesAmmo)
+      makesWound ← CheckBox(selected := eu.item.makesWound)
 
       lbls = el.tp ^^ el.tpkk ^^ el.improvised ^^ el.talent ^^ el.reach ^^
              el.tpPlus ^^ el.makesWound ^^ el.timeToLoad ^^ el.usesAmmo
@@ -117,11 +117,11 @@ object implicits {
   implicit lazy val ShieldEditable = editable[ShieldItem] { (s,b) ⇒
     for {
       eu    ← eqUI(s, b)
-      size  ← ComboBox(ShieldSize.values, item(s).size)
-      sType ← ComboBox(ShieldType.values, item(s).shieldType)
-      ini   ← TextField trailing item(s).ini.toString
-      bf    ← TextField trailing item(s).bf.toString
-      wm    ← TextField trailing item(s).wm.toString
+      size  ← ComboBox(ShieldSize.values, eu.item.size)
+      sType ← ComboBox(ShieldType.values, eu.item.shieldType)
+      ini   ← TextField trailing eu.item.ini.toString
+      bf    ← TextField trailing eu.item.bf.toString
+      wm    ← TextField trailing eu.item.wm.toString
 
       lbls = el.size ^^ el.shieldType ^^ el.ini ^^ el.bf ^^ el.wm
       comps = size ^^ sType ^^ ini ^^ bf ^^ wm
@@ -138,9 +138,9 @@ object implicits {
   implicit lazy val ZoneArmorEditable = editable[ZoneArmorItem] { (s,b) ⇒
     for {
       eu  ← eqUI(s, b)
-      rs  ← TextField text ZoneRs.shows(item(s).rs)
-      be  ← TextField trailing item(s).be.toString
-      add ← CheckBox(selected := item(s).isAddition)
+      rs  ← TextField text ZoneRs.shows(eu.item.rs)
+      be  ← TextField trailing eu.item.be.toString
+      add ← CheckBox(selected := eu.item.isAddition)
 
       elem = eu.elem(el.rs ^^ el.be ^^ el.isAddition, rs ^^ be ^^ add)
 
@@ -163,7 +163,7 @@ object implicits {
     baseCoin: Coin = Coin.S,
     weightPrecision: Int = 4,
     baseWeight: MWeight = MWeight.U
-  ): IO[EquipmentUI] = {
+  ): IO[EquipmentUI[A]] = {
     def formatP = UnitEnum[Coin] showPretty (baseCoin, pricePrecision)
     def parseP = Read read UnitEnum[Coin].readPretty(baseCoin)
     def formatW = UnitEnum[MWeight] showPretty (baseWeight, weightPrecision)
@@ -177,13 +177,15 @@ object implicits {
     } yield new EquipmentUI(dw, price, weight, parseP, parseW)
   }
 
-  final private class EquipmentUI(
-    dw: ItemDataUI,
+  final private class EquipmentUI[A](
+    dw: ItemDataUI[A],
     price: TextField,
     weight: TextField,
     parseP: Read[Long],
     parseW: Read[Long]
-  ) {
+  )(implicit A: EquipmentItem[A]) {
+    def item: A = dw.item
+
     def in: VSIn[EquipmentItemData] =
       ^^(dw.in,
         readIn(price.in, Price.validate)(parseP),
