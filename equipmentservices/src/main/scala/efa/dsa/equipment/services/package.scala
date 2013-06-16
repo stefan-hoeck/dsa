@@ -164,32 +164,28 @@ object implicits {
     weightPrecision: Int = 4,
     baseWeight: MWeight = MWeight.U
   ): IO[EquipmentUI[A]] = {
-    def formatP = UnitEnum[Coin] showPretty (baseCoin, pricePrecision)
-    def parseP = Read read UnitEnum[Coin].readPretty(baseCoin)
-    def formatW = UnitEnum[MWeight] showPretty (baseWeight, weightPrecision)
-    def parseW = Read read UnitEnum[MWeight].readPretty(baseWeight)
     def eq: EquipmentItem[A] = implicitly
 
     for {
-      price ← TextField trailing formatP(eq price item(p))
-      weight ← TextField trailing formatW(eq weight item(p))
+      price ← unitOut(baseCoin, pricePrecision, eq price item(p))
+      weight ← unitOut(baseWeight, weightPrecision, eq weight item(p))
       dw ← dataWidgets(p, b)
-    } yield new EquipmentUI(dw, price, weight, parseP, parseW)
+    } yield new EquipmentUI(dw, price, weight,
+                            unitIn(baseCoin, price, Price.validate),
+                            unitIn(baseWeight, weight, Weight.validate))
   }
 
   final private class EquipmentUI[A](
     dw: ItemDataUI[A],
     price: TextField,
     weight: TextField,
-    parseP: Read[Long],
-    parseW: Read[Long]
+    priceIn: VSIn[Long],
+    weightIn: VSIn[Long] 
   )(implicit A: EquipmentItem[A]) {
     def item: A = dw.item
 
     def in: VSIn[EquipmentItemData] =
-      ^^(dw.in,
-        readIn(price.in, Price.validate)(parseP),
-        readIn(weight.in, Weight.validate)(parseW))(EquipmentItemData.apply)
+      ^^(dw.in, priceIn, weightIn)(EquipmentItemData.apply)
 
     def elem(lbls: Elem, comps: Elem): Elem =
       (ul.name ^^ lbls ^^ el.price ^^ el.weight ^^ ul.desc) <>
