@@ -1,5 +1,6 @@
 package efa.dsa.being.ui.skills
 
+import dire.swing.HAlign.Trailing
 import efa.core._, Validators.dummy
 import efa.dsa.abilities._
 import efa.dsa.being.{loc ⇒ bLoc, HeroData ⇒ HD}
@@ -12,18 +13,19 @@ import efa.nb.dialog.DialogEditable
 import efa.nb.node._
 import efa.rpg.core.{Described, RpgEnum, prettyMods}
 import scalaz._, Scalaz._
-import scala.swing.Alignment.Trailing
 
 object SkillNodes extends StNodeFunctions {
   type SkillsOut[A] = ValStOut[A,SkillDatas]
   type HDOut[A] = ValStOut[A,HD]
+
+  import implicits._
 
   def skillOut[A,B](
     implicit L: SkillLinker[A,B],
     D: DialogEditable[Skill[A,B],B]
   ): SkillsOut[Skill[A,B]] = 
     destroyEs(L.delete) ⊹
-    (editDialog(D) map (L add _ success)) ⊹
+    (editE(D) map (L add _ success)) ⊹
     Nodes.described[Skill[A,B]] ⊹
     Nodes.childActions("ContextActions/DsaSkillNode") ⊹
     sg(L.special)(_.special)(booleanRw(bLoc.specialExpLoc.name)) ⊹ 
@@ -107,6 +109,5 @@ object SkillNodes extends StNodeFunctions {
     TL.skillList map (_ filter (_.item.talentType ≟ tt))
 }
 
-//        textR(Spell.attributesAcc), textRw(Spell.representationMut),
 
 // vim: set ts=2 sw=2 et:

@@ -32,7 +32,7 @@ object AbilityNodes extends StNodeFunctions {
     D: DialogEditable[Ability[A,B],B]
   ): AbilitiesOut[Ability[A,B]] = 
     destroyEs(L.delete) ⊹
-    (editDialog(D) withIn (L update (_, _) success)) ⊹
+    (editE(D) withIn (L update (_, _) success)) ⊹
     (renameEs (L.rename) contramap (d ⇒ (d, d.nameVal))) ⊹ 
     Nodes.described[Ability[A,B]] ⊹
     Nodes.childActions("ContextActions/DsaAdvantageNode") ⊹

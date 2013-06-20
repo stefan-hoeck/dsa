@@ -1,16 +1,16 @@
 package efa.dsa.being.ui
 
+import dire.swing._, Swing._
 import efa.dsa.being._
-import efa.rpg.being.BeingPanel
+import efa.rpg.being.BeingPanel, BeingPanel._
 import efa.rpg.core.HasModifiers
-import scalaz._, Scalaz._
+import scalaz._, Scalaz._, effect.IO
 
-class BePanel[A:HasModifiers,B] extends BeingPanel[A,B] {
-  val beC = numberDisabled
-
-  BeKey.loc.shortName beside beC add()
-
-  def set = modifiedProp(BeKey)(beC)
+object BePanel {
+  def apply[A:HasModifiers,B](): IO[BeingPanel[A,B,Panel]] = for {
+    be ← disabledNumeric
+    p  ← BeKey.loc.shortName beside be panel
+  } yield BeingPanel[A,B,Panel](p, modifiedProp(BeKey, be))
 }
 
 // vim: set ts=2 sw=2 et:

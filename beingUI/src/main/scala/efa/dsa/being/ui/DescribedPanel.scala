@@ -1,26 +1,29 @@
 package efa.dsa.being.ui
 
-import efa.nb.dialog.DialogPanel
+import dire._, dire.swing._, Swing._
 import efa.rpg.core.Described
-import scala.swing.GridBagPanel.Fill
-import scala.swing.{TextArea, ScrollPane, Label, TextComponent, TextField}
 import scalaz.effect.IO
 
-abstract class DescribedPanel[A:Described] (a: A) extends DialogPanel {
-  lazy val nameC = textField (Described[A] name a)
-  lazy val descC = new TextArea (Described[A] desc a)
-  lazy val descPane = new ScrollPane(descC)
+final class DescribedPanel[A:Described](
+    val a: A,
+    val name: TextField,
+    val desc: TextArea,
+    val sp: ScrollPane) {
 
-  protected def descElem: Single = descPane fillV 1
-  protected def descLbl: Single =
-    Single (new Label(efa.core.loc.desc), f = Fill.None, wx = 0D)
+  def size(e: Elem,
+           wMin: Int = 400,
+           wMax: Int = 1000,
+           hMin: Int = 600): Elem = 
+    e adjustSize { case (w, h) ⇒ (wMin max w min wMax, h min hMin) }
+}
 
-  protected def elems: Elem
-
-  protected def sizeF: (Int, Int) ⇒ (Int, Int) =
-    (w, h) ⇒ (400 max w min 1000, h min 600)
-
-  final def adjust: IO[Unit] =  IO{elems.add(); adjSize (sizeF)}
+object DescribedPanel {
+  def apply[A](a: A)(implicit A: Described[A]): IO[DescribedPanel[A]] =
+    for {
+      name ← TextField text A.name(a)
+      desc ← TextArea(text := A.desc(a))
+      sp   ← ScrollPane(desc)
+    } yield new DescribedPanel(a, name, desc, sp)
 }
 
 // vim: set ts=2 sw=2 et:

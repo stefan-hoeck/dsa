@@ -7,7 +7,7 @@ trait LowerCookie {
 }
 
 object LowerCookie {
-  def apply (i: IO[Unit]): List[LowerCookie] =
+  def apply(i: IO[Unit]): List[LowerCookie] =
     List(new LowerCookie{def lower = i})
 }
 

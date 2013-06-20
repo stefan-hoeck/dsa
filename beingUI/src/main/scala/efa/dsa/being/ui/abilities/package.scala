@@ -1,26 +1,33 @@
 package efa.dsa.being.ui
 
+import dire._, dire.swing.Swing._, validation.VSIn
 import efa.core.{loc ⇒ cLoc}
-import efa.dsa.being.{loc ⇒ bLoc}
 import efa.dsa.being.abilities._
-import efa.nb.dialog.{DialogEditable ⇒ DE}
-import scalaz.effect.IO
+import efa.dsa.being.{loc ⇒ bLoc}
+import efa.nb.dialog.{DialogEditable ⇒ DE, DEInfo}
+import efa.nb.Widgets._
+import scalaz._, Scalaz._, effect.IO
 
 package object abilities {
-  type AbilitiesPanel = NodePanel[Abilities,AbilityDatas]
+//  type AbilitiesPanel = NodePanel[Abilities,AbilityDatas]
+//
+//  def abilitiesPanel: IO[AbilitiesPanel] =
+//    NodePanel(AbilityNodes.default, "DSA_abilities_NodePanel",
+//      List(cLoc.valueLoc, bLoc.isActiveLoc))
+  implicit lazy val AdvantageE = DE io1 { a: Advantage ⇒ info(a) }
+  implicit lazy val DisadvantageE = DE io1 { a: Handicap ⇒ info(a) }
+  implicit lazy val FeatE = DE io1 { a: Feat ⇒ info(a) }
 
-  def abilitiesPanel: IO[AbilitiesPanel] =
-    NodePanel(AbilityNodes.default, "DSA_abilities_NodePanel",
-      List(cLoc.valueLoc, bLoc.isActiveLoc))
+  def info[A,B](a: Ability[A,B])(implicit B: AbilityData[B]): DEInfo[B] = for {
+    dp ← DescribedPanel(a)
 
-  implicit lazy val AdvantageE =
-    DE.io1{ a: Advantage ⇒ AbilityPanel.create(a)}(_.in)
+    in = ^(valid(dp.name.in), valid(dp.desc.in))((n,d) ⇒
+           ((B.nameL := n) >> (B.descL := d)) exec a.data
+         )
 
-  implicit lazy val DisadvantageE =
-    DE.io1{ a: Handicap ⇒ AbilityPanel.create(a)}(_.in)
-
-  implicit lazy val FeatE =
-    DE.io1{ a: Feat ⇒ AbilityPanel.create(a) }(_.in)
+    el = (efa.core.loc.name beside dp.name) above
+         (efa.core.loc.desc beside dp.sp)
+  } yield (dp size el, in)
 }
 
 // vim: set ts=2 sw=2 et:

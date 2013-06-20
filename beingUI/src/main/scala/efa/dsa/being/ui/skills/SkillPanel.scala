@@ -1,5 +1,6 @@
 package efa.dsa.being.ui.skills
 
+import dire._, dire.swing._, Swing._
 import efa.core.{EndoVal, Validators}
 import efa.dsa.abilities._
 import efa.dsa.being.{loc ⇒ bLoc}
@@ -7,91 +8,79 @@ import efa.dsa.being.calc.SkillLinker.{MeleeTalentLinker ⇒ MTL}
 import efa.dsa.being.skills._
 import efa.dsa.being.ui.DescribedPanel
 import efa.dsa.world.RaisingCost
-import efa.nb.VSIn
+import efa.nb.Widgets._
+import efa.nb.dialog.{DialogEditable ⇒ DE, DEInfo}
 import efa.rpg.core.RpgEnum
 import scalaz._, Scalaz._, effect.IO
 
-class SkillPanel[A,B:SkillData](s: Skill[A,B])
-  extends DescribedPanel[Skill[A,B]](s) {
+object implicits {
+  implicit lazy val LanguageE = DE.io1((a: Language) ⇒ info(a))
+  implicit lazy val MeleeE = DE io1 melee
+  implicit lazy val RangedE = DE.io1((a: RangedTalent) ⇒ info(a))
+  implicit lazy val RitualE = DE.io1((a: Ritual) ⇒ info(a))
+  implicit lazy val ScriptureE = DE.io1((a: Scripture) ⇒ info(a))
+  implicit lazy val SpellE = DE io1 spell
+  implicit lazy val TalentE = DE.io1((a: Talent) ⇒ info(a))
 
-  val rcC = comboBox(s.rc, RpgEnum[RaisingCost].values)
-  val tawC = numField(s.taw)
-  val specialC = checkBox(s.special)
+  private def info[A,B:SkillData](s: Skill[A,B]): DEInfo[TalentData] =
+    SkillPanel(s) map (p ⇒ (p.dp size p.elem, p.in))
 
-  nameC.editable = false
+  private def melee(s: MeleeTalent): DEInfo[MeleeTalentData] = for {
+    sp ← SkillPanel(s)
+    ap ← TextField trailing s.skill.at.toString
 
-  override def elems =
-   (efa.core.loc.name beside nameC) above
-   (bLoc.taw beside tawC) above
-   (bLoc.raisingCost beside rcC) above
-   (bLoc.specialExp beside specialC)
+    in = ^(sp.in, intIn(ap.in, MTL atVal s))(MeleeTalentData.apply)
+    el = (efa.core.loc.name beside sp.dp.name) above
+         (bLoc.taw beside sp.taw) above
+         (bLoc.at beside ap) above
+         (bLoc.raisingCost beside sp.rc) above
+         (bLoc.specialExp beside sp.special)
+  } yield (sp.dp size el, in)
 
-  private val perm: Int = s.taw - s.tap
+  private def spell(s: Spell): DEInfo[SpellData] = for {
+    sp    ← SkillPanel(s)
+    house ← CheckBox(selected := s.skill.houseSpell)
+    repr  ← TextField text s.skill.representation
+
+    in = ^^(sp.in, valid(house.in), valid(repr.in))(SpellData.apply)
+    el = sp.elem above
+         (bLoc.houseSpell beside house) above
+         (bLoc.representation beside repr)
+  } yield (sp.dp size el, in)
+}
+
+final class SkillPanel[A,B](
+    val dp: DescribedPanel[Skill[A,B]],
+    val rc: ComboBox[RaisingCost],
+    val taw: TextField,
+    val special: CheckBox){
+  private val perm: Int = dp.a.taw - dp.a.tap
 
   private def tawVal: EndoVal[Int] =
     Validators.interval(Tap.min + perm, Tap.max + perm)
 
-  def talentIn: VSIn[TalentData] = ^^^(
-    s.id.η[VSIn],
-    intIn(tawC, tawVal) ∘ (_ - perm),
-    comboBox(rcC),
-    checkBox(specialC)
+  def in: VSIn[TalentData] = ^^^(
+    vsin(dp.a.id),
+    intIn(taw.in, tawVal) ∘ (_ - perm),
+    valid(rc.in),
+    valid(special.in)
   )(TalentData.apply)
-}
 
-class MeleePanel(m: MeleeTalent) extends SkillPanel(m) {
-  val atC = numField(m.skill.at)
-
-  override def elems =
-   (efa.core.loc.name beside nameC) above
-   (bLoc.taw beside tawC) above
-   (bLoc.at beside atC) above
-   (bLoc.raisingCost beside rcC) above
-   (bLoc.specialExp beside specialC)
-
-  def in: VSIn[MeleeTalentData] =
-    ^(talentIn, intIn(atC, MTL.atVal(m)))(MeleeTalentData.apply)
-}
-
-class SpellPanel(m: Spell) extends SkillPanel(m) {
-  val houseC = checkBox(m.skill.houseSpell)
-  val representationC = textField(m.skill.representation)
-
-  override def elems =
-   super.elems above
-   (bLoc.houseSpell beside houseC) above
-   (bLoc.representation beside representationC)
-
-  def in: VSIn[SpellData] =
-    ^^(talentIn, checkBox(houseC), stringIn(representationC))(
-    SpellData.apply)
+  def elem =
+   (efa.core.loc.name beside dp.name) above
+   (bLoc.taw beside taw) above
+   (bLoc.raisingCost beside rc) above
+   (bLoc.specialExp beside special)
 }
 
 object SkillPanel {
-  def create[A,B:SkillData](a: Skill[A,B]): IO[SkillPanel[A,B]] = for {
-    p ← IO(new SkillPanel[A,B](a))
-    _ ← p.adjust
-  } yield p
-
-  def languageP (l: Language) = create(l)
-
-  def meleeP (a: MeleeTalent): IO[MeleePanel] = for {
-    p ← IO(new MeleePanel(a))
-    _ ← p.adjust
-  } yield p
-
-  def rangedP (l: RangedTalent) = create(l)
-
-  def ritualP (l: Ritual) = create(l)
-
-  def scriptureP (l: Scripture) = create(l)
-
-  def spellP (a: Spell): IO[SpellPanel] = for {
-    p ← IO(new SpellPanel(a))
-    _ ← p.adjust
-  } yield p
-
-  def talentP (l: Talent) = create(l)
+  def apply[A,B:SkillData](s: Skill[A,B]): IO[SkillPanel[A,B]] = for {
+    dp  ← DescribedPanel(s)
+    rc  ← ComboBox(RaisingCost.values, s.rc)
+    taw ← TextField trailing s.taw.toString
+    sp  ← CheckBox(selected := s.special)
+    _   ← dp.name properties (editable := false)
+  } yield new SkillPanel(dp, rc, taw, sp)
 }
 
 // vim: set ts=2 sw=2 et:

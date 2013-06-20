@@ -28,7 +28,7 @@ object ProtoNodes extends StNodeFunctions {
     Nodes.parentNode(n, o)(L.protoList(get))(L.addIProto(l))
   }
 
-  def all (l: HeroData @> GenData): ValStOut[Hero,HeroData] = children (
+  def all(l: HeroData @> GenData): ValStOut[Hero,HeroData] = children (
     singleF (parent[LanguageItem,TalentData](l, bLoc.languages)),
     singleF (parent[MeleeTalentItem,MeleeTalentData](l, bLoc.meleeTalents)),
     singleF (parent[RangedTalentItem,TalentData](l, bLoc.rangedTalents)),

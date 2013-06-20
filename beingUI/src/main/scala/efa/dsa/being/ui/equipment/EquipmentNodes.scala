@@ -1,5 +1,6 @@
 package efa.dsa.being.ui.equipment
 
+import dire.swing.HAlign.Trailing
 import efa.core._
 import efa.dsa.abilities._
 import efa.dsa.being.{loc ⇒ bLoc, HumanoidData ⇒ HD}
@@ -14,9 +15,10 @@ import efa.nb.dialog.DialogEditable
 import efa.nb.node._
 import efa.rpg.core._
 import scalaz._, Scalaz._
-import scala.swing.Alignment.Trailing
 
 object EquipmentNodes extends StNodeFunctions {
+  import implicits._
+
   type EquipmentOut[A] = NodeOut[A,ValSt[EquipmentDatas]]
   type HDOut[A] = NodeOut[A,ValSt[HD]]
 
@@ -25,7 +27,7 @@ object EquipmentNodes extends StNodeFunctions {
     D: DialogEditable[Equipment[A,B],B]
   ): EquipmentOut[Equipment[A,B]] = 
     destroyEs(L.delete) ⊹
-    (editDialog(D) map (L add _ success)) ⊹
+    (editE(D) map (L add _ success)) ⊹
     Nodes.described[Equipment[A,B]] ⊹
     Nodes.childActions("ContextActions/DsaEquipmentNode") ⊹
     textW[Equipment[A,B],Long](uiLoc.priceLoc.name, _.fullPrice, price) ⊹
