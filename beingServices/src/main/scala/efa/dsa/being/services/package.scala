@@ -7,6 +7,7 @@ import efa.dsa.abilities.AbilityItems
 import efa.dsa.being.services.spi._
 import efa.dsa.equipment.EquipmentItems
 import efa.rpg.rules.Rule
+import efa.rpg.being.UIInfo
 import scalaz._, Scalaz._, effect.IO
 
 package object services {
@@ -14,7 +15,7 @@ package object services {
 
   type HeroRules = List[HeroRule]
 
-//  type HeroInfo = UIInfo[HeroData,Hero]
+  type HeroInfo = UIInfo[HeroData,Hero]
 
   lazy val abilities: SIn[AbilityItems] =
     unique[AbilityProvider](AbilityProvider).abilities
@@ -24,11 +25,10 @@ package object services {
 
   lazy val world: SIn[World] = abilities ⊛ equipment apply World
 
-  lazy val heroRules: HeroRules =
-    provide[HeroRule,HeroRulesProvider].unsafePerformIO()
+  lazy val heroRules: IO[HeroRules] = provide[HeroRule,HeroRulesProvider]
 
-//  lazy val heroInfo: IO[UIInfo[HeroData,Hero]] =
-//    provide[IO[HeroInfo],UIProvider] map (_.suml)
+  lazy val heroInfo: IO[UIInfo[HeroData,Hero]] =
+    provide[IO[HeroInfo],UIProvider] >>= (_.suml)
 }
 
 // vim: set ts=2 sw=2 et:
