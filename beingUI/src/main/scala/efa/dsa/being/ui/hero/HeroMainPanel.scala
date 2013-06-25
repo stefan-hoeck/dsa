@@ -34,9 +34,9 @@ object HeroMainPanel {
     _         ← ap title loc.ap
 
     sf = atts.sf ⊹ 
-         (lensedVSt(base.sf)(HeroData.base) ∙ (_.data)) ⊹
-         (lensedVSt(ap.sf)(HeroData.base) ∙ (_.data)) ⊹
-         ((abilities.sf >=> mapSt(abilitiesL)) ∙ (_.abilities)) ⊹ 
+         (lensedVSt(base.sf)(HeroData.base) ∙ Hero.data.get) ⊹
+         (lensedVSt(ap.sf)(HeroData.base) ∙ Hero.data.get) ⊹
+         ((abilities.sf >=> mapSt(abilitiesL)) ∙ Hero.abilities.get) ⊹ 
          derived.sf
   } yield BeingPanel(new HeroMainPanel(abilities, p), sf)
 

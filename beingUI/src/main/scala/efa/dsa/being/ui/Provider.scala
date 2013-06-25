@@ -12,10 +12,10 @@ class Provider extends UIProvider {
   def get = DList(
     uiInfo(HeroMainPanel()),
     uiInfo(HeroTalentPanel()),
-//    uiInfo(HeroBattlePanel.create),
-    uiInfo(HeroSpellPanel())
-//    uiInfo(HeroEquipmentPanel.create),
-//    uiInfo(HeroGenerationPanel.create)
+    uiInfo(HeroBattlePanel()),
+    uiInfo(HeroSpellPanel()),
+    uiInfo(HeroEquipmentPanel()),
+    uiInfo(HeroGenerationPanel())
   )
 }
 

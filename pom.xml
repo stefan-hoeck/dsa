@@ -178,7 +178,7 @@
     <module>being</module>
     <module>beingCalc</module>
     <module>beingServices</module>
-    <!--module>beingUI</module-->
+    <module>beingUI</module>
     <module>generation</module>
     <module>rules</module>
   </modules>

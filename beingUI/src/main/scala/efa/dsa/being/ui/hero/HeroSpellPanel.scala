@@ -27,9 +27,9 @@ object HeroSpellPanel {
     _      ← atts title loc.attributes
     _      ← ap title loc.ap
 
-    sf     = (spells.sf ∙ ((_: Hero).skills)) ⊹
+    sf     = (spells.sf ∙ Hero.skills.get) ⊹
              atts.sf ⊹
-             (lensedVSt(ap.sf)(HeroData.base) ∙ (_.data))
+             (lensedVSt(ap.sf)(HeroData.base) ∙ Hero.data.get)
   } yield BeingPanel(new HeroSpellPanel(spells, p), sf)
 
   implicit val Tc: AsTc[HeroSpellPanel] = 

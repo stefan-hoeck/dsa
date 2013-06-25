@@ -39,17 +39,29 @@ object Hero extends Util {
     def skills (h: Hero) = h.skills
   }
 
+  val abilities: Hero @> Abilities =
+    Lens.lensu((a,b) ⇒ a.copy(abilities = b), _.abilities)
+  
   val attackModes: Hero @> List[AttackMode] =
     Lens.lensu((a,b) ⇒ a.copy(attackModes = b), _.attackModes)
   
   val attributes: Hero @> HeroAttributes =
     Lens.lensu((a,b) ⇒ a copy (attributes = b), _.attributes)
+  
+  val data: Hero @> HeroData =
+    Lens.lensu((a,b) ⇒ a.copy(data = b), _.data)
 
   val derived: Hero @> HeroDerived =
     Lens.lensu((a,b) ⇒ a copy (derived = b), _.derived)
 
+  val equipment: Hero @> Equipments =
+    Lens.lensu((a,b) ⇒ a.copy(equipment = b), _.equipment)
+  
   val modifiers: Hero @> Modifiers =
     Lens.lensu((a,b) ⇒ a.copy(modifiers = b), _.modifiers)
+
+  val skills: Hero @> Skills =
+    Lens.lensu((a,b) ⇒ a.copy(skills = b), _.skills)
 }
 
 // vim: set ts=2 sw=2 et:

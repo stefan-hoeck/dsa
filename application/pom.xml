@@ -130,11 +130,11 @@
       <artifactId>dsa-beingServices</artifactId>
       <version>${beingServices.version}</version>
     </dependency>
-    <!--dependency>
+    <dependency>
       <groupId>efa.dsa</groupId>
       <artifactId>dsa-beingUI</artifactId>
       <version>${beingUI.version}</version>
-    </dependency-->
+    </dependency>
     <dependency>
       <groupId>efa.dsa</groupId>
       <artifactId>dsa-generation</artifactId>

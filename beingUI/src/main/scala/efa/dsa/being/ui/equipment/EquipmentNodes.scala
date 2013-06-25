@@ -41,7 +41,7 @@ object EquipmentNodes extends StNodeFunctions {
     attackMods(_.aw, AwKey) ⊹
     attackMods(_.ini, IniKey)
 
-  lazy val attackModesOut: NodeOut[Hero,Nothing] =
+  lazy val attackModesOut: NodeOut[Hero,ValSt[HeroData]] =
     children(leavesF(attackModeOut)(_.attackModes))
 
   lazy val ammunitionOut = equipmentOut[AmmunitionItem,AmmunitionData] ⊹

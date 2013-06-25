@@ -2,8 +2,10 @@ package efa.dsa.being
 
 import dire.swing.Panel
 import efa.core.Service.unique
+import efa.core.{ValSt, Localization}
 import efa.dsa.being.ui.spi.UILocal
 import efa.io.EfaIO._
+import efa.nb.node.{NodeOut ⇒ NOut, NbNode}
 import efa.nb.tc.{OutlineNb, AsTc, WithPrefs}
 import efa.rpg.being.BeingPanel
 import scalaz._, Scalaz._, effect.IO
@@ -30,6 +32,14 @@ package object ui {
     final protected def writeNp[A,B](np: NP[A,B], id: String)
       : WithPrefs[Unit] = np.p writeProps (id, version)
   }
+
+  def NP[A,B,C,D](out: NOut[A,ValSt[B]], ls: List[Localization])
+                 (lens: C @> B, get: D ⇒ A): IO[NP[D,C]] = for {
+    n  ← NbNode()
+    nb ← OutlineNb(n, ls)
+
+    sf = (out.sf(n) >=> BeingPanel.mapSt(lens)) ∙ get
+  } yield BeingPanel(nb, sf)
 }
 
 // vim: set ts=2 sw=2 et:

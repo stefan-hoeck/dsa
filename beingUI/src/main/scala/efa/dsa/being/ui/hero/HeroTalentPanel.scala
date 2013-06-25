@@ -39,12 +39,12 @@ object HeroTalentPanel {
     center     = (melee.fillV(1) ^^ language.fillV(1)) <> talent.fillV(2)
     p          ← (attributes <> topRight) ^^ center panel
 
-    sf         = (talent.sf ∙ ((_: Hero).skills)) ⊹
-                 (melee.sf ∙ (_.skills)) ⊹
-                 (language.sf ∙ (_.skills)) ⊹
+    sf         = (talent.sf ∙ Hero.skills.get) ⊹
+                 (melee.sf ∙ Hero.skills.get) ⊹
+                 (language.sf ∙ Hero.skills.get) ⊹
                  attributes.sf ⊹
-                 (lensedVSt(ap.sf)(HeroData.base) ∙ (_.data)) ⊹
-                 be.sf
+                 be.sf ⊹
+                 (lensedVSt(ap.sf)(HeroData.base) ∙ Hero.data.get)
   } yield BeingPanel(new HeroTalentPanel(talent, melee, language, p), sf)
 
   private val talentId = "DSA_Talents_NodePanel"
@@ -56,6 +56,8 @@ object HeroTalentPanel {
 
   private val langId = "DSA_Languages_NodePanel"
   private val langLoc = List(bLoc.tawLoc, bLoc.raisingCostLoc, bLoc.specialExpLoc)
+
+  private val skills = (_: Hero).skills
 
   implicit val Tc: AsTc[HeroTalentPanel] = 
     new BeingTc[HeroTalentPanel](loc.talentsPanel, "DSA_HeroTalentPanel", _.panel){
