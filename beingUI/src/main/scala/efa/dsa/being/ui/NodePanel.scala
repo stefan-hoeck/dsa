@@ -7,7 +7,7 @@ import efa.rpg.being.BeingPanel
 import scalaz.effect.IO
 
 object NodePanel {
-  def apply[A,B](out: NodeOut[A,ValSt[B]], id: String, ls: List[Localization])
+  def apply[A,B](out: NodeOut[A,ValSt[B]], ls: List[Localization])
     :IO[BeingPanel[A,B,OutlineNb]] = for {
     n  ← NbNode()
     nb ← OutlineNb(n, ls)

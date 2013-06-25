@@ -1,19 +1,12 @@
 package efa.dsa.being.ui
 
-import dire._, dire.swing.Swing._, validation.VSIn
-import efa.core.{loc ⇒ cLoc}
+import dire._, dire.swing.Swing._
 import efa.dsa.being.abilities._
-import efa.dsa.being.{loc ⇒ bLoc}
 import efa.nb.dialog.{DialogEditable ⇒ DE, DEInfo}
 import efa.nb.Widgets._
 import scalaz._, Scalaz._, effect.IO
 
 package object abilities {
-//  type AbilitiesPanel = NodePanel[Abilities,AbilityDatas]
-//
-//  def abilitiesPanel: IO[AbilitiesPanel] =
-//    NodePanel(AbilityNodes.default, "DSA_abilities_NodePanel",
-//      List(cLoc.valueLoc, bLoc.isActiveLoc))
   implicit lazy val AdvantageE = DE io1 { a: Advantage ⇒ info(a) }
   implicit lazy val DisadvantageE = DE io1 { a: Handicap ⇒ info(a) }
   implicit lazy val FeatE = DE io1 { a: Feat ⇒ info(a) }
