@@ -22,20 +22,19 @@ final class HeroBattlePanel private(
 
 object HeroBattlePanel {
   def apply(): IO[BeingPanel[Hero,HeroData,HeroBattlePanel]] = for {
-    attack ← NodePanel(EN.attackModesOut, attackLoc)
-    armor  ← NodePanel(EN.armorsOut, armorLoc)
-    weapon ← NodePanel(EN.weaponsOut, weaponLoc)
+    attack ← NodePanel(EN.attackModesOut, attackLoc, loc.attackModes)
+    armor  ← NodePanel(EN.armorsOut, armorLoc, loc.armor)
+    weapon ← NodePanel(EN.weaponsOut, weaponLoc, loc.weapons)
     zoneRs ← ZoneRsPanel[Hero]()
     values ← BattlePanel[Hero]()
+    _      ← zoneRs title loc.zones
+    _      ← values title loc.battleValues
+
     p      ← values.fillH(2) ^^ zoneRs.fillH(2) ^^ (
                (attack.fillV(1) ^^ armor.fillV(1)) <> weapon.fillV(2)
              ) panel
 
-    _      ← attack title loc.attackModes
-    _      ← armor title loc.armor
-    _      ← weapon title loc.weapons
-    _      ← zoneRs title loc.zones
-    _      ← values title loc.battleValues
+
     sf = ((armor.sf >=> mapSt(eqL)) ∙ Hero.equipment.get) ⊹
          ((weapon.sf >=> mapSt(humanoidL)) ∙ Hero.equipment.get) ⊹
          (zoneRs.sf >=> mapSt(humanoidL)) ⊹ 
@@ -47,10 +46,10 @@ object HeroBattlePanel {
   private val attackLoc = List(TpKey.loc, AtFkKey.loc, PaKey.loc,
                                AwKey.loc, IniKey.loc)
 
-  private val armorId = "DSA_Armor_NodePanel"
+  private val armorId = "DSA_battleArmor_NodePanel"
   private val armorLoc = List(bLoc.rsLoc, bLoc.beLoc, bLoc.equippedLoc)
 
-  private val weaponId = "DSA_Armor_NodePanel"
+  private val weaponId = "DSA_battelWeapon_NodePanel"
   private val weaponLoc = List(eLoc.tpLoc, eLoc.tpkkLoc, eLoc.wmLoc,
                                eLoc.bfLoc, eLoc.iniLoc, eLoc.talentLoc,
                                bLoc.lhLoc, bLoc.rhLoc)

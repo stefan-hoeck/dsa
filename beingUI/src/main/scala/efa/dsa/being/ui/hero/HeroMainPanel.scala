@@ -3,13 +3,16 @@ package efa.dsa.being.ui.hero
 import dire.swing._, Swing._
 import efa.core.{loc ⇒ cLoc}
 import efa.dsa.being.{Hero, HeroData, loc ⇒ bLoc}
+import efa.dsa.being.abilities.{Abilities, AbilityDatas}
 import efa.dsa.being.ui._, abilities.AbilityNodes
 import efa.nb.tc.AsTc
 import efa.rpg.being.BeingPanel, BeingPanel._
 import scalaz._, Scalaz._, effect.IO
 
 final class HeroMainPanel private(
-  val abilities: AbilitiesPanel, val panel: Panel)
+  val abilities: NP[Abilities, AbilityDatas],
+  val panel: Panel
+)
 
 object HeroMainPanel {
   private val locs = List(cLoc.valueLoc, bLoc.isActiveLoc)
@@ -19,19 +22,18 @@ object HeroMainPanel {
   private val abilitiesL = HeroData.humanoid.abilities
 
   def apply(): IO[BeingPanel[Hero,HeroData,HeroMainPanel]] = for {
-    abilities ← NodePanel(AbilityNodes.default, locs)
+    abilities ← NodePanel(AbilityNodes.default, locs, loc.abilities)
     base      ← HeroBasePanel()
     derived   ← HeroHumanoidPanel[Hero]()
     atts      ← HeroAttributesPanel[Hero]()
     ap        ← HeroApPanel()
-    p         ← (base fillH 2) ^^
-                ((atts ^^ derived ^^ ap) <> (abilities fillV 3)) panel
-
-    _         ← abilities title loc.abilities
     _         ← base title loc.basePanel
     _         ← derived title loc.derived
     _         ← atts title loc.attributes
     _         ← ap title loc.ap
+
+    p         ← (base fillH 2) ^^
+                ((atts ^^ derived ^^ ap) <> (abilities fillV 3)) panel
 
     sf = atts.sf ⊹ 
          (lensedVSt(base.sf)(HeroData.base) ∙ Hero.data.get) ⊹

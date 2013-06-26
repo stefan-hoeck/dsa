@@ -18,12 +18,11 @@ final class HeroEquipmentPanel private(
 
 object HeroEquipmentPanel {
   def apply(): IO[BeingPanel[Hero,HeroData,HeroEquipmentPanel]] = for {
-    ep ← NodePanel(EN.allOut, eqLoc)
+    ep ← NodePanel(EN.allOut, eqLoc, loc.equipment)
     cp ← carry
-    p  ← cp ^^ ep.fillV(1) panel
-
-    _  ← ep title loc.equipment
     _  ← cp title loc.load
+
+    p  ← cp ^^ ep.fillV(1) panel
 
     sf = cp.sf ⊹ ((ep.sf >=> mapSt(eqL)) ∙ Hero.equipment.get)
   } yield BeingPanel(new HeroEquipmentPanel(ep, p), sf)

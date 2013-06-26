@@ -21,19 +21,15 @@ final class HeroTalentPanel private(
 
 object HeroTalentPanel {
   def apply(): IO[BeingPanel[Hero,HeroData,HeroTalentPanel]] = for {
-    talent     ← NodePanel(SN.talentsOut, talentLoc)
-    melee      ← NodePanel(SN.battleOut, battleLoc)
-    language   ← NodePanel(SN.languagesOut, langLoc)
+    talent     ← NodePanel(SN.talentsOut, talentLoc, loc.talents)
+    melee      ← NodePanel(SN.battleOut, battleLoc, loc.battleTalents)
+    language   ← NodePanel(SN.languagesOut, langLoc, loc.languages)
     attributes ← AttributesPanel[Hero,HeroData]()
     be         ← BePanel[Hero,HeroData]()
     ap         ← HeroApPanel()
-
     _          ← attributes title loc.attributes
     _          ← be title bLoc.be
     _          ← ap title loc.ap
-    _          ← talent title loc.talents
-    _          ← melee title loc.battleTalents
-    _          ← language title loc.languages
 
     topRight   ← (ap beside be).panel
     center     = (melee.fillV(1) ^^ language.fillV(1)) <> talent.fillV(2)
