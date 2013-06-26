@@ -13,13 +13,14 @@ object HeroApPanel {
     ap     ← numeric
     apUsed ← numeric
     restAp ← disabledNumeric
+    panel  ← Panel(border := Border.title(uiL.ap))
 
-    p ← uiL.total <> ap <> uiL.used <> apUsed <> uiL.rest <> restAp panel
+    _ ← uiL.total <> ap <> uiL.used <> apUsed <> uiL.rest <> restAp addTo panel
 
     sf = getSet((_: HBD).ap)(_ setAp _, readShow[Long](ap.sf)) ⊹ 
          getSet((_: HBD).apUsed)(_ setApUsed _, readShow[Long](apUsed.sf)) ⊹
          outOnly(restAp.text ∙ (_.restAp.toString))
-  } yield BeingPanel(p, sf)
+  } yield BeingPanel(panel, sf)
 }
 
 // vim: set ts=2 sw=2 et:

@@ -27,8 +27,6 @@ object HeroBattlePanel {
     weapon ← NodePanel(EN.weaponsOut, weaponLoc, loc.weapons)
     zoneRs ← ZoneRsPanel[Hero]()
     values ← BattlePanel[Hero]()
-    _      ← zoneRs title loc.zones
-    _      ← values title loc.battleValues
 
     p      ← values.fillH(2) ^^ zoneRs.fillH(2) ^^ (
                (attack.fillV(1) ^^ armor.fillV(1)) <> weapon.fillV(2)

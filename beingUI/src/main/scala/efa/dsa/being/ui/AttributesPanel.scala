@@ -10,7 +10,7 @@ import scalaz._, Scalaz._, effect.IO
 object AttributesPanel {
   def apply[A:HasModifiers,B](): IO[BeingPanel[A,B,Panel]] = for {
     ps ← Attribute.values traverse (a ⇒ disabledNumeric map ((a, _)))
-    p  ← ps foldMap panelElem panel
+    p  ← ps foldMap panelElem panel (border := Border.title(loc.attributes))
   } yield BeingPanel(p, ps foldMap sf[A,B])
 
   private def panelElem(p: (Attribute, TextField)): Elem @@ Horizontal =

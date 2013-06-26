@@ -20,8 +20,6 @@ object HeroEquipmentPanel {
   def apply(): IO[BeingPanel[Hero,HeroData,HeroEquipmentPanel]] = for {
     ep ← NodePanel(EN.allOut, eqLoc, loc.equipment)
     cp ← carry
-    _  ← cp title loc.load
-
     p  ← cp ^^ ep.fillV(1) panel
 
     sf = cp.sf ⊹ ((ep.sf >=> mapSt(eqL)) ∙ Hero.equipment.get)
@@ -42,9 +40,10 @@ object HeroEquipmentPanel {
   private def carry: IO[BP[Hero,HeroData]] = for {
     capacity ← disabledNumeric
     weight   ← disabledNumeric
+    p        ← Panel(border := Border.title(loc.load))
 
-    p        ← bLoc.carryingCapacity <> capacity <>
-               bLoc.carriedWeight <> weight panel
+    _        ← bLoc.carryingCapacity <> capacity <>
+               bLoc.carriedWeight <> weight addTo p
   } yield BeingPanel(p, carrySf(capacity, weight))
 
   private def carrySf(c: TextField, w: TextField) =

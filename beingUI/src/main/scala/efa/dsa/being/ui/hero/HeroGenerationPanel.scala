@@ -27,11 +27,8 @@ object HeroGenerationPanel {
     r   ← GP.race
     c   ← GP.culture
     p   ← GP.profession
-    _   ← r.np title bLoc.race
-    _   ← c.np title bLoc.culture
-    _   ← p.np title bLoc.profession
 
-    pnl ← r.np.fillV(1) <> c.np.fillV(1) <> p.np.fillV(1) panel
+    pnl ← r.panel.fillV(1) <> c.panel.fillV(1) <> p.panel.fillV(1) panel
 
     sf  = r.sf ⊹ c.sf ⊹ p.sf
   } yield BeingPanel(new HGP(r, c, p, pnl), sf)

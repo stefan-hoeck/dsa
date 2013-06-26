@@ -1,6 +1,6 @@
 package efa.dsa.being.ui.hero
 
-import dire.swing._, Swing._
+import dire.swing._, Swing._, Elem.Anchor.N
 import efa.core.{loc ⇒ cLoc}
 import efa.dsa.being.{Hero, HeroData, loc ⇒ bLoc}
 import efa.dsa.being.abilities.{Abilities, AbilityDatas}
@@ -27,13 +27,9 @@ object HeroMainPanel {
     derived   ← HeroHumanoidPanel[Hero]()
     atts      ← HeroAttributesPanel[Hero]()
     ap        ← HeroApPanel()
-    _         ← base title loc.basePanel
-    _         ← derived title loc.derived
-    _         ← atts title loc.attributes
-    _         ← ap title loc.ap
 
     p         ← (base fillH 2) ^^
-                ((atts ^^ derived ^^ ap) <> (abilities fillV 3)) panel
+                ((atts ^^ derived ^^ ap.anchor(N)) <> (abilities fillV 3)) panel
 
     sf = atts.sf ⊹ 
          (lensedVSt(base.sf)(HeroData.base) ∙ Hero.data.get) ⊹

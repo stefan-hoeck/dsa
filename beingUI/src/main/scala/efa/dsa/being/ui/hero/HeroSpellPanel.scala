@@ -22,8 +22,6 @@ object HeroSpellPanel {
     spells ← NodePanel(SkillNodes.spellsOut, locs, loc.spells)
     atts   ← AttributesPanel[Hero,HeroData]()
     ap     ← HeroApPanel()
-    _      ← atts title loc.attributes
-    _      ← ap title loc.ap
 
     p      ← (atts <> ap) ^^ (spells fillH 2 fillV 1) panel
 

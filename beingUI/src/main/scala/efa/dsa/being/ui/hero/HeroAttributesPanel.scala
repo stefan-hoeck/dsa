@@ -34,8 +34,9 @@ object HeroAttributesPanel {
     for {
       se ← Label(text := bLoc.shortSpecialExp, tooltip := bLoc.specialExp.some)
       ps ← Attribute.values traverse panel
-      p  ← ("" <> uiLoc.total <> uiLoc.start <> uiLoc.bought <> "" <> se) ^^
-           (ps foldMap elem) panel
+      p  ← Panel(border := Border.title(uiLoc.attributes))
+      _  ← ("" <> uiLoc.total <> uiLoc.start <> uiLoc.bought <> "" <> se) ^^
+           (ps foldMap elem) addTo p
     } yield BeingPanel(p, ps foldMap sf)
   }
 

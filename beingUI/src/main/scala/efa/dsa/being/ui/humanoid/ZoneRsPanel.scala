@@ -1,7 +1,7 @@
 package efa.dsa.being.ui.humanoid
 
 import dire._, dire.swing._, Swing._
-import efa.dsa.being._, efa.dsa.being.{loc ⇒ bLoc}
+import efa.dsa.being._, efa.dsa.being.{loc ⇒ bLoc, HumanoidData ⇒ HD}
 import efa.dsa.world.BodyPart
 import efa.nb.VStSF
 import efa.rpg.being.BeingPanel, BeingPanel._
@@ -10,11 +10,11 @@ import scalaz._, Scalaz._, effect.IO
 object ZoneRsPanel {
   private val counts = 0 to zoneWoundsMax toList
 
-  def apply[A:AsHumanoid](): IO[BeingPanel[A,HumanoidData,Panel]] = {
-    def ui(bp: BodyPart): IO[(VStSF[A,HumanoidData], Elem)] = for {
+  def apply[A:AsHumanoid](): IO[BeingPanel[A,HD,Panel]] = {
+    def ui(bp: BodyPart): IO[(VStSF[A,HD], Elem)] = for {
       radios ← counts traverse (s ⇒ RadioButton(text :=  s.toString))
       text   ← disabledNumeric
-      panel  ← Panel(border := titleBorder(bp.loc.locName))
+      panel  ← Panel(border := Border.title(bp.loc.locName))
 
       //SF
       wounds ← (radios zip counts).group
@@ -28,12 +28,12 @@ object ZoneRsPanel {
 
     for {
       ps ← BodyPart.values traverse ui
-      p  ← ps foldMap (_._2.horizontal) panel
+      p  ← Panel(border := Border.title(efa.dsa.being.ui.loc.zones))
+      _  ← ps foldMap (_._2.horizontal) addTo p
     } yield BeingPanel(p, ps foldMap (_._1))
   }
 
-  private def lens(bp: BodyPart): HumanoidData @> Int =
-    HumanoidData.zoneWounds at bp
+  private def lens(bp: BodyPart): HD @> Int = HD.zoneWounds at bp
 }
 
 // vim: set ts=2 sw=2 et:

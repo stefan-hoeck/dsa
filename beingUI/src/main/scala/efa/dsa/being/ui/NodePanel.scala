@@ -1,5 +1,6 @@
 package efa.dsa.being.ui
 
+import dire.swing._, dire.swing.Swing._
 import efa.core.{ValSt, Localization}
 import efa.nb.tc.OutlineNb
 import efa.nb.node.{NodeOut, NbNode}
@@ -17,7 +18,7 @@ object NodePanel {
                  ls: List[Localization],
                  title: String): IO[NP[A,B]] = for {
     bp ← NodePanel(out, ls)
-    _  ← bp title title
+    _  ← bp.p properties (border := Border.title(title))
   } yield bp
 }
 

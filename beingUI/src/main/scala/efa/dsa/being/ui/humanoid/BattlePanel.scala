@@ -19,8 +19,9 @@ object BattlePanel {
     rs         ← disabledNumeric
     wounds     ← numeric
     ws         ← disabledNumeric
+    panel      ← Panel(border := Border.title(efa.dsa.being.ui.loc.battleValues))
 
-    panel      ← (AtKey.loc.shortName beside at beside
+    _          ← (AtKey.loc.shortName beside at beside
                   PaKey.loc.shortName beside pa beside
                   FkKey.loc.shortName beside fk beside
                   AwKey.loc.shortName beside aw beside
@@ -29,7 +30,7 @@ object BattlePanel {
                   BeKey.loc.shortName beside be beside
                   WsKey.loc.shortName beside ws beside
                   bLoc.wounds beside wounds beside
-                  bLoc.overstrain beside overstrain) panel
+                  bLoc.overstrain beside overstrain) addTo panel
 
     sf = (longSf(exhaustion.sf, Exhaustion.validate)(HD.exhaustion) ∙ hd[A]) ⊹
          (longSf(wounds.sf, Wounds.validate)(HD.wounds) ∙ hd[A]) ⊹

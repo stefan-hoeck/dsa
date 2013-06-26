@@ -44,7 +44,7 @@ object HeroHumanoidPanel {
           (KeKey <> ke <> keM <> keB <> AwKey <> aw) ^^
           (MrKey <> mr <> "" <> mrB <> IniKey <> ini) ^^
           (WsKey <> ws <> "" <> "" <> GsKey <> gs)
-        ).panel
+        ).panel(border := Border.title(uiLoc.derived))
 
   sf = valInHuman(AH.ae[A], AH.setAe[A])(ae) ⊹ 
        valInHuman(AH.au[A], AH.setAu[A])(au) ⊹ 

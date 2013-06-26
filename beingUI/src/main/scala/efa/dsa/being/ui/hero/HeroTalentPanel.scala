@@ -27,9 +27,6 @@ object HeroTalentPanel {
     attributes ← AttributesPanel[Hero,HeroData]()
     be         ← BePanel[Hero,HeroData]()
     ap         ← HeroApPanel()
-    _          ← attributes title loc.attributes
-    _          ← be title bLoc.be
-    _          ← ap title loc.ap
 
     topRight   ← (ap beside be).panel
     center     = (melee.fillV(1) ^^ language.fillV(1)) <> talent.fillV(2)

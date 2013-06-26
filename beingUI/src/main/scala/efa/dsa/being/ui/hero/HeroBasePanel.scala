@@ -3,6 +3,7 @@ package efa.dsa.being.ui.hero
 import dire._, dire.swing._
 import efa.core.{loc ⇒ cLoc}
 import efa.dsa.being.{HeroBaseData ⇒ HBD, loc ⇒ bLoc, Height, Weight, So}
+import efa.dsa.being.ui.loc
 import efa.dsa.world.mittelreich.{Distance ⇒ D, Weight ⇒ W}
 import efa.rpg.being.BeingPanel, BeingPanel._
 import efa.rpg.core.Gender
@@ -28,8 +29,9 @@ object HeroBasePanel {
     weight     ← numeric
     eyes       ← TextField()
     hair       ← TextField()
+    p          ← Panel(border := Border.title(loc.basePanel))
 
-    p ← {
+    _ ← {
           val heightL = "%s [%s]" format (bLoc.height, D.HF.shortName)
           val weightL = "%s [%s]" format (bLoc.weight, W.ST.shortName)
       
@@ -52,7 +54,7 @@ object HeroBasePanel {
           //horizontal 5
           val totalRight = name.fillH(5) above (middle beside right)
       
-          left beside totalRight panel
+          left beside totalRight addTo p
         }
 
     sf = stringSf(name.sf)(HBD.name) ⊹ 

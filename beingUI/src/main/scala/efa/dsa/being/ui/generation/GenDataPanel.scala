@@ -25,18 +25,19 @@ object GenPanel {
 
   def culture: IO[GenPanel] = for {
     n  ← NodePanel(ProtoNodes.all(HD.base.culture.data), locs)
-    gp ← attPnl(HD.base.culture, n)
+    gp ← attPnl(HD.base.culture, n, bLoc.culture)
   } yield gp
 
   def profession(): IO[GenPanel] = for {
     np  ← NodePanel(ProtoNodes all HD.base.profession, locs)
     gpp ← genPair(HD.base.profession, np)
-    p   ← gpp._1 <> np.fillH(2).fillV(1) panel
+    p   ← Panel(border := Border.title(bLoc.profession))
+    _   ← gpp._1 <> np.fillH(2).fillV(1) addTo p
   } yield new GenPanel(np, p, gpp._2)
 
   def race: IO[GenPanel] = for {
     n  ← NodePanel(ProtoNodes.all(HD.base.race.data), locs)
-    gp ← attPnl(HD.base.race, n)
+    gp ← attPnl(HD.base.race, n, bLoc.race)
   } yield gp
 
   private def genPair(l: HD @> GenData, np: NP[Hero,HD]): IO[GPPair] = for {
@@ -58,10 +59,11 @@ object GenPanel {
   } yield (elem, sf)
 
   private def attPnl(l: HD @> GenDataAttributes,
-                    np: NP[Hero,HD]): IO[GenPanel] = for {
+                    np: NP[Hero,HD], title: String): IO[GenPanel] = for {
     gpp   ← genPair(l.data, np)
     attPs ← atts traverse attPanel
-    p     ← gpp._1 ^^ attPs.foldMap(attElem) ^^ np.fillH(2).fillV(1) panel
+    p     ← Panel(border := Border.title(title))
+    _     ← gpp._1 ^^ attPs.foldMap(attElem) ^^ np.fillH(2).fillV(1) addTo p
 
     sf    = gpp._2 ⊹ (attPs foldMap attSf(l) contramap Hero.data.get)
   } yield new GenPanel(np, p, sf)
