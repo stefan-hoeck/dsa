@@ -17,8 +17,8 @@ object HeroApPanel {
 
     _ ← uiL.total <> ap <> uiL.used <> apUsed <> uiL.rest <> restAp addTo panel
 
-    sf = getSet((_: HBD).ap)(_ setAp _, readShow[Long](ap.sf)) ⊹ 
-         getSet((_: HBD).apUsed)(_ setApUsed _, readShow[Long](apUsed.sf)) ⊹
+    sf = getSet((_: HBD).ap)(_ setAp _, readShow[Long](ap.sfE)) ⊹ 
+         getSet((_: HBD).apUsed)(_ setApUsed _, readShow[Long](apUsed.sfE)) ⊹
          outOnly(restAp.text ∙ (_.restAp.toString))
   } yield BeingPanel(panel, sf)
 }

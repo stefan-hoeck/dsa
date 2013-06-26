@@ -78,7 +78,7 @@ object HeroHumanoidPanel {
     get: A ⇒ Long,
     set: (A, Long) ⇒ ValSt[HeroData]
   )(t: TextField): VStSF[A,HeroData] =
-    getSet(get)(set, readShow[Long](t.sf))
+    getSet(get)(set, readShow[Long](t.sfE))
 
   private def valInHuman[A:AH](
     get: A ⇒ Long,

@@ -57,19 +57,19 @@ object HeroBasePanel {
           left beside totalRight addTo p
         }
 
-    sf = stringSf(name.sf)(HBD.name) ⊹ 
-         stringSf(position.sf)(HBD.position) ⊹
-         stringSf(title.sf)(HBD.title) ⊹
-         intSf(so.sf, So.validate)(HBD.so) ⊹
-         longSf(birthday.sf)(HBD.birthday) ⊹ 
+    sf = stringSf(name.sfE)(HBD.name) ⊹ 
+         stringSf(position.sfE)(HBD.position) ⊹
+         stringSf(title.sfE)(HBD.title) ⊹
+         intSf(so.sfE, So.validate)(HBD.so) ⊹
+         longSf(birthday.sfE)(HBD.birthday) ⊹ 
          lensed(gender.sf)(HBD.gender) ⊹ 
-         stringSf(eyes.sf)(HBD.eyeColor) ⊹ 
-         stringSf(hair.sf)(HBD.hairColor) ⊹
-         unitSf[D,HBD](height.sf, D.HF, 0, Height.validate, HBD.height) ⊹ 
-         unitSf[W,HBD](weight.sf, W.ST, 0, Weight.validate, HBD.weight) ⊹ 
-         stringSf(race.sf)(raceName) ⊹ 
-         stringSf(culture.sf)(cultName) ⊹ 
-         stringSf(profession.sf)(profName)
+         stringSf(eyes.sfE)(HBD.eyeColor) ⊹ 
+         stringSf(hair.sfE)(HBD.hairColor) ⊹
+         unitSf[D,HBD](height.sfE, D.HF, 0, Height.validate, HBD.height) ⊹ 
+         unitSf[W,HBD](weight.sfE, W.ST, 0, Weight.validate, HBD.weight) ⊹ 
+         stringSf(race.sfE)(raceName) ⊹ 
+         stringSf(culture.sfE)(cultName) ⊹ 
+         stringSf(profession.sfE)(profName)
   } yield BeingPanel(p, sf)
 }
 

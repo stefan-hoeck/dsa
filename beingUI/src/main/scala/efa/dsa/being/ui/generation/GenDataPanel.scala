@@ -51,11 +51,11 @@ object GenPanel {
            (name ^^ le ^^ au ^^ ae ^^ mr)
 
     sf   = np.sf ⊹ 
-           (stringSf(name.sf)(l >=> GenData.name) ∙ Hero.data.get) ⊹
-           (intSf(le.sf, Le.validate)(l.le) ∙ Hero.data.get) ⊹
-           (intSf(au.sf, Au.validate)(l.au) ∙ Hero.data.get) ⊹
-           (intSf(ae.sf, Ae.validate)(l.ae) ∙ Hero.data.get) ⊹
-           (intSf(mr.sf, Mr.validate)(l.mr) ∙ Hero.data.get)
+           (stringSf(name.sfE)(l >=> GenData.name) ∙ Hero.data.get) ⊹
+           (intSf(le.sfE, Le.validate)(l.le) ∙ Hero.data.get) ⊹
+           (intSf(au.sfE, Au.validate)(l.au) ∙ Hero.data.get) ⊹
+           (intSf(ae.sfE, Ae.validate)(l.ae) ∙ Hero.data.get) ⊹
+           (intSf(mr.sfE, Mr.validate)(l.mr) ∙ Hero.data.get)
   } yield (elem, sf)
 
   private def attPnl(l: HD @> GenDataAttributes,
@@ -74,7 +74,7 @@ object GenPanel {
   private def attElem(p: (Attribute, TextField)) = p._1.loc.locName <> p._2
 
   private def attSf(l: HD @> GenDataAttributes)(p: (Attribute, TextField)) = 
-    longSf(p._2.sf, Attributes.validator)(l.attributes at p._1)
+    longSf(p._2.sfE, Attributes.validator)(l.attributes at p._1)
 }
 
 // vim: set ts=2 sw=2 et:

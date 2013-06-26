@@ -21,8 +21,8 @@ object HeroAttributesPanel {
     def sf(p: Panels): VStSF[A,HeroData] = {
       val (a, tot, ini, bght, button, chb) = p
 
-      (longSf(ini.sf, valIni)(iniL at a) ∙ heroData[A]) ⊹ 
-      getSet(boughtAtt[A](a))(setBought(a), readShow[Long](bght.sf)) ⊹
+      (longSf(ini.sfE, valIni)(iniL at a) ∙ heroData[A]) ⊹ 
+      getSet(boughtAtt[A](a))(setBought(a), readShow[Long](bght.sfE)) ⊹
       (lensed(chb.sf)(HeroData.specialExp at a) ∙ heroData[A]) ⊹
       (SF.id[A] on button.clicks.sf map raiseAtt(a)) ⊹
       modifiedProp(attributeKeyFor(a), tot) ⊹

@@ -32,8 +32,8 @@ object BattlePanel {
                   bLoc.wounds beside wounds beside
                   bLoc.overstrain beside overstrain) addTo panel
 
-    sf = (longSf(exhaustion.sf, Exhaustion.validate)(HD.exhaustion) ∙ hd[A]) ⊹
-         (longSf(wounds.sf, Wounds.validate)(HD.wounds) ∙ hd[A]) ⊹
+    sf = (longSf(exhaustion.sfE, Exhaustion.validate)(HD.exhaustion) ∙ hd[A]) ⊹
+         (longSf(wounds.sfE, Wounds.validate)(HD.wounds) ∙ hd[A]) ⊹
          modifiedProp(AtKey, at) ⊹
          modifiedProp(AwKey, aw) ⊹
          modifiedProp(BeKey, be) ⊹
