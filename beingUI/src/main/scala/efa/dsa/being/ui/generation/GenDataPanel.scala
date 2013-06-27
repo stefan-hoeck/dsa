@@ -32,7 +32,7 @@ object GenPanel {
     np  ← NodePanel(ProtoNodes all HD.base.profession, locs)
     gpp ← genPair(HD.base.profession, np)
     p   ← Panel(border := Border.title(bLoc.profession))
-    _   ← gpp._1 <> np.fillH(2).fillV(1) addTo p
+    _   ← gpp._1 ^^ np.fillH(2).fillV(1) addTo p
   } yield new GenPanel(np, p, gpp._2)
 
   def race: IO[GenPanel] = for {
