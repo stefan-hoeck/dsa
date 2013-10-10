@@ -28,7 +28,7 @@ object Dependencies {
   val efaNbV = "0.3.0-SNAPSHOT"
   val rpgV = "1.1.0-SNAPSHOT"
   val nbV = "RELEASE71"
-  val scalazV = "7.0.3"
+  val scalazV = "7.0.4"
 
   val util = "efa"
   val direP = "dire"
