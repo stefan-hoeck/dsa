@@ -1,3 +1,4 @@
+import scala.language.postfixOps
 import sbt._
 import Keys._
 
@@ -27,7 +28,7 @@ object Dependencies {
   val direV = "0.1.0-SNAPSHOT"
   val efaNbV = "0.3.0-SNAPSHOT"
   val rpgV = "1.1.0-SNAPSHOT"
-  val nbV = "RELEASE71"
+  val nbV = "RELEASE74"
   val scalazV = "7.0.4"
 
   val util = "efa"
