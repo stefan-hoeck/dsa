@@ -2,6 +2,7 @@ package efa.dsa.abilities
 
 import efa.rpg.core.ItemData
 import efa.core.{ToXml, Efa}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 import scala.xml.Node
 import org.scalacheck._, Prop._

@@ -1,6 +1,7 @@
 package efa.dsa.abilities
 
 import efa.core.{ToXml, Efa}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.world.RaisingCost
 import efa.rpg.core.ItemData
 import org.scalacheck.{Arbitrary, Gen}

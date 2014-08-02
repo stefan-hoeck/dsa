@@ -1,6 +1,7 @@
 package efa.dsa.abilities
 
 import efa.core.{ToXml, Efa}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.world.{RaisingCost, Ebe}
 import efa.rpg.core.ItemData
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._

@@ -2,6 +2,7 @@ package efa.dsa.abilities
 
 import efa.dsa.world.Attribute
 import efa.core.{Efa, TaggedToXml, Read, Validators, Default}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.rpg.core.RangeVals
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 import org.scalacheck.{Gen, Arbitrary}
