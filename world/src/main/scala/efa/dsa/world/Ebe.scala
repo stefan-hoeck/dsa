@@ -50,7 +50,7 @@ object Ebe extends RangeVals {
   implicit val EbeToXml = TaggedToXml.readShow[Ebe]("ebe")
 
   implicit val EbeArbitrary: Arbitrary[Ebe] = {
-    val noEbeGen = Gen value NoEbe
+    val noEbeGen = Gen const NoEbe
     val addGen = add.gen map Add.apply
     val factorGen = fac.gen map Factor.apply
 
