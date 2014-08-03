@@ -1,6 +1,7 @@
 package efa.dsa.being.generation
 
 import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.being.attributeMods
 import efa.rpg.core.{Modifiers, Util}
 import org.scalacheck.{Arbitrary, Gen}

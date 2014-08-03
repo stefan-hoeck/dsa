@@ -1,6 +1,7 @@
 package efa.dsa.being
 
 import efa.core.{Efa, TaggedToXml, Default, ValRes}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.being.abilities.AbilityDatas
 import efa.dsa.being.equipment.EquipmentDatas
 import efa.dsa.being.skills.SkillDatas

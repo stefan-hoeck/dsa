@@ -1,6 +1,7 @@
 package efa.dsa.being.abilities
 
 import efa.core.{Efa, TaggedToXml, Default}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.rpg.core.Util
 import org.scalacheck.Arbitrary
 import scala.xml.Node

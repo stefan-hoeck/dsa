@@ -1,6 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{TaggedToXml, Efa}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.equipment.{EquipmentItemData, ZoneRs}
 import efa.dsa.world.Be
 import org.scalacheck.Arbitrary

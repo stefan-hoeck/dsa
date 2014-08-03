@@ -1,6 +1,5 @@
 package efa.dsa.being
 
-import efa.core.Efa.L
 import efa.dsa.being.equipment._
 import efa.rpg.core._
 import scalaz._, Scalaz._
@@ -16,7 +15,8 @@ sealed trait AttackMode {
 
   def talent: String
 
-  lazy val tp = L[DieRoller].plus.set(baseTp, modifiers property TpKey toInt)
+  lazy val tp = (shapeless.lens[DieRoller] >> 'plus)
+                  .set(baseTp, modifiers property TpKey toInt)
 	lazy val at = modifiers property AtFkKey
 	lazy val pa = modifiers property PaKey
 	lazy val fk = modifiers property AtFkKey

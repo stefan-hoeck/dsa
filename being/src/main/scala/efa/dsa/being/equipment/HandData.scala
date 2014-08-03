@@ -1,6 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{Efa, ValRes, Read, ToXml}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import org.scalacheck.{Arbitrary, Prop, Gen}, Arbitrary.arbitrary
 import scalaz._, Scalaz._
 
@@ -55,7 +56,7 @@ object HandData {
 
   private lazy val idGen = arbitrary[Int]
 
-  lazy val emptyGen: Gen[HandData] = Gen value Empty
+  lazy val emptyGen: Gen[HandData] = Gen const Empty
   lazy val meleeGen: Gen[HandData] = idGen map Melee
   lazy val rangedGen: Gen[HandData] = idGen map Ranged
   lazy val shieldGen: Gen[HandData] = idGen map Shield

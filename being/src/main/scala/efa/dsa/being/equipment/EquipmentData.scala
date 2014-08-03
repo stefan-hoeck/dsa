@@ -1,6 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{ToXml, Efa, Default, UniqueIdL, NamedL}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.being.{HumanoidData ⇒ HD}
 import efa.dsa.equipment.EquipmentItemData
 import efa.dsa.equipment.spi.EquipmentLocal

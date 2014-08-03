@@ -1,6 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{Efa, TaggedToXml}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.equipment.EquipmentItemData
 import efa.dsa.world.{Be, Rs}
 import org.scalacheck.Arbitrary

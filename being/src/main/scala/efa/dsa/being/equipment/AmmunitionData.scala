@@ -1,6 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{Efa, TaggedToXml}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.equipment.{EquipmentItemData, Tp}
 import efa.rpg.core.DieRoller
 import org.scalacheck.Arbitrary

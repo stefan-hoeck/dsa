@@ -1,6 +1,7 @@
 package efa.dsa.being.generation
 
 import efa.core.{Efa, ToXml, Default}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.being._
 import efa.dsa.generation.SkillPrototypes
 import efa.rpg.core.{Modifiers, Util}

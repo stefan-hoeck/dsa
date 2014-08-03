@@ -1,6 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core._, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import org.scalacheck.{Arbitrary, Prop, Gen}, Arbitrary.arbitrary
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 
@@ -61,7 +62,7 @@ object HandsData {
   private lazy val idGen = arbitrary[Int]
   private lazy val handGen = arbitrary[HandData]
 
-  lazy val emptyGen: Gen[HandsData] = Gen value Empty
+  lazy val emptyGen: Gen[HandsData] = Gen const Empty
   lazy val oneHandedGen: Gen[HandsData] = ^(handGen, handGen)(OneHanded)
   lazy val twoHandedGen: Gen[HandsData] = idGen map TwoHanded
 

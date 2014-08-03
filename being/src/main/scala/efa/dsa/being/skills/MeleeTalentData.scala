@@ -1,6 +1,7 @@
 package efa.dsa.being.skills
 
 import efa.core.{Efa, TaggedToXml}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.rpg.core.{RangeVals, Util}
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node

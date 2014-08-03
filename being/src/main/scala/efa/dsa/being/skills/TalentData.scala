@@ -1,6 +1,7 @@
 package efa.dsa.being.skills
 
 import efa.core.{Efa, TaggedToXml}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.world.RaisingCost
 import efa.rpg.core.Util
 import org.scalacheck.Arbitrary, Arbitrary.arbitrary

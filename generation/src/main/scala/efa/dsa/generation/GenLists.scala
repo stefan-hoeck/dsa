@@ -19,17 +19,6 @@ object GenLists {
   implicit val GLEqual = deriveEqual[GenLists]
   implicit val GLArb = deriveArbitrary[GenLists]
 
-  final val L = shapeless.lens[GenLists]
-  
-  //implicit class Lenses[A](val l: A @> GenLists) extends AnyVal {
-  //  def abilities = l >=> zlens(L >> 'abilities)
-  //  def abilityChoices = l >=> zlens(L >> 'abilityChoices)
-  //  def equipment = l >=> zlens(L >> 'equipment)
-  //  def equipmentChoices = zlens(L >> 'equipmentChoices)
-  //  def skills = l >=> zlens(L >> 'skills)
-  //  def skillChoices = l >=> zlens(L >> 'skillChoices)
-  //}
-
   implicit val GLToXml = new ToXml[GenLists] {
     def fromXml(ns: Seq[Node]) = ^^^^^(
       ns.readTag[AbilityPrototypes]("abilities"),

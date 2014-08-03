@@ -1,6 +1,7 @@
 package efa.dsa.being
 
 import efa.core.{Efa, ToXml, Default, ValSt}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.being.generation.{GenData, GenDataAttributes}
 import efa.rpg.core.{Gender, Util}
 import org.scalacheck.{Arbitrary, Gen}, Arbitrary.arbitrary
@@ -98,6 +99,8 @@ object HeroBaseData extends Util {
           ns.readTag[String]("desc"))(Tuple7.apply)
 
       def total = ^^(fst, snd, thrd)(Tuple3.apply)
+
+      import scalaz.Validation.FlatMap._
 
       for {
         t ← total

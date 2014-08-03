@@ -1,6 +1,7 @@
 package efa.dsa.being.equipment
 
 import efa.core.{TaggedToXml, Efa}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.equipment.{EquipmentItemData, Tp, Talent, Ttl, Reach, TpPlus}
 import efa.dsa.world.{TpKk}
 import efa.rpg.core.DieRoller
