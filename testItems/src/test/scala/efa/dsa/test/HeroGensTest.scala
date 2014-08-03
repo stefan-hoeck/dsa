@@ -1,6 +1,7 @@
 package efa.dsa.test
 
 import efa.core.Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.being.HeroData
 import org.scalacheck._, Prop._
 import scalaz._, Scalaz._

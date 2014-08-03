@@ -166,6 +166,7 @@ object SkillLinker {
     def items = AbilityItems.meleeTalents
     def skills = sl.meleeTalents
 
+    import scalaz.Validation.FlatMap._
     def setAt (s: SKILL, vi: ValRes[Int]): ValSt[SkillDatas] = {
       def setAt (i: Int) = set(MeleeTalentData.at)(s, i)
 

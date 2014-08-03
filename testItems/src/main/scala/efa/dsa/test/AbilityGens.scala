@@ -52,7 +52,7 @@ object AbilityGens {
     }
 
     def talentDataDbGen[A:SkillItem](db: DB[A]): Gen[DB[TalentData]] =
-      dbGen(db, Gen value _)
+      dbGen(db, Gen const _)
 
     def meleeDbGen = {
       def gen (td: TalentData) =
@@ -129,7 +129,7 @@ object AbilityGens {
   }
 
   lazy val ritualsGen: Gen[DB[RitualItem]] =
-    dbGen(ritualNames, id ⇒ Gen.value(RitualItem(id, RaisingCost.E)))
+    dbGen(ritualNames, id ⇒ Gen.const(RitualItem(id, RaisingCost.E)))
 
   lazy val scripturesGen: Gen[DB[ScriptureItem]] = {
     def gen (id: ItemData) =

@@ -107,14 +107,11 @@ object DsaBuild extends Build {
     "dsa",
     file("."),
     settings = buildSettings
-  ) aggregate (abilities,
-               being,
-               equipment, generation,
-               world)
-  //) aggregate (abilitiesServices,
-  //             being, beingCalc, beingServices, beingUI,
-  //             equipmentServices, rules,
-  //             testItems,
+  ) aggregate (abilities, abilitiesServices,
+               being, beingCalc, beingServices,
+               equipment, equipmentServices, generation,
+               rules, testItems, world)
+  //             beingUI,
   
   lazy val abilities = Project (
     "dsa-abilities",

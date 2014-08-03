@@ -18,14 +18,14 @@ object EquipmentGens {
 
     def articleGen (i: ArticleItem) = countGen ∘ (ArticleData(i, i.id, _))
 
-    def meleeGen (i: MeleeWeaponItem) = Gen value MeleeWeaponData(
+    def meleeGen (i: MeleeWeaponItem) = Gen const MeleeWeaponData(
       i.eData, i.id, i.tp, i.talent, i.bf, i.tpkk, i.ini, i.wm)
 
-    def rangedGen (i: RangedWeaponItem) = Gen value RangedWeaponData(
+    def rangedGen (i: RangedWeaponItem) = Gen const RangedWeaponData(
       i.eData, i.id, i.tp, i.talent, i.tpkk, i.reach, i.tpPlus, i.timeToLoad)
 
     def shieldGen (i: ShieldItem) =
-      Gen value ShieldData(i.eData, i.id, i.ini, i.bf, i.wm)
+      Gen const ShieldData(i.eData, i.id, i.ini, i.bf, i.wm)
 
     def zoneArmorGen (i: ZoneArmorItem) =
       arbitrary[Boolean] ∘ (ZoneArmorData(i.eData, i.id, i.rs, i.be, _))
@@ -55,7 +55,7 @@ object EquipmentGens {
     def dbGen[A,B](db: DB[A], f: Int ⇒ B, e: Gen[B]): Gen[B] =
       db.isEmpty ? e | Gen.oneOf(db.toList).map(p ⇒ f(p._1))
 
-    val empty: Gen[HandsData] = Gen value Empty
+    val empty: Gen[HandsData] = Gen const Empty
 
     val twoHanded: Gen[HandsData] =
       dbGen(es.meleeWeapons, TwoHanded.apply, empty)
@@ -109,7 +109,7 @@ object EquipmentGens {
     dbGen[ArmorItem](armorNames, gen)
   }
 
-  lazy val articleGen = dbGen[ArticleItem](articleNames, Gen value _)
+  lazy val articleGen = dbGen[ArticleItem](articleNames, Gen const _)
   
   lazy val meleeWeaponGen = {
     def gen (ed: EquipmentItemData) = for {

@@ -29,11 +29,11 @@ object HerausragendRule extends ModRules {
     def applyAtt (a: A, att: Attribute): A = {
       val name = m(att)
 
-      def mod (v: Int): A = (
-        (AH[A].attributes.immutable.at(att) += v) >>
-        (AH[A].attributes.creation.at(att) += v) >>
-        addModS[A] (attributeKeyFor(att), Modifier(name, v))
-      ) exec a
+      def mod (v: Int): A = ( for {
+        _ ← AH[A].attributes.immutable.at(att) += v
+        _ ← AH[A].attributes.creation.at(att) += v
+        x ← addModS[A](attributeKeyFor(att), Modifier(name, v))
+      } yield x) exec a
 
       value(AH[A])(name, a) flatMap notZero map mod getOrElse a
     }

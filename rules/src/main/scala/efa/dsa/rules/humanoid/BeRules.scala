@@ -60,11 +60,13 @@ object BeRules extends FADRules {
         case _                             ⇒ 0L
       }
 
-      oModAddS(Loc.lowLe, -mod, AtKey) >>
-      oModAddS(Loc.lowLe, -mod, PaKey) >>
-      oModAddS(Loc.lowLe, -mod, AwKey) >>
-      oModAddS(Loc.lowLe, -mod, FkKey) >>
-      oModAddS(Loc.lowLe, gsNotBelow1 (a, mod), GsKey)
+      for {
+        _ ← oModAddS(Loc.lowLe, -mod, AtKey)
+        _ ← oModAddS(Loc.lowLe, -mod, PaKey)
+        _ ← oModAddS(Loc.lowLe, -mod, AwKey)
+        _ ← oModAddS(Loc.lowLe, -mod, FkKey)
+        _ ← oModAddS(Loc.lowLe, gsNotBelow1 (a, mod), GsKey)
+      } yield ()
     }
 
     Rule.state(Loc.lowLeL.name, init[A] >>= calc)
@@ -78,11 +80,13 @@ object BeRules extends FADRules {
         case _                             ⇒ 0L
       }
 
-      oModAddS(Loc.lowAu, -mod, AtKey) >>
-      oModAddS(Loc.lowAu, -mod, PaKey) >>
-      oModAddS(Loc.lowAu, -mod, AwKey) >>
-      oModAddS(Loc.lowAu, -mod, FkKey) >>
-      oModAddS(Loc.lowAu, -mod, IniKey)
+      for {
+        _ ← oModAddS(Loc.lowAu, -mod, AtKey)
+        _ ← oModAddS(Loc.lowAu, -mod, PaKey)
+        _ ← oModAddS(Loc.lowAu, -mod, AwKey)
+        _ ← oModAddS(Loc.lowAu, -mod, FkKey)
+        _ ← oModAddS(Loc.lowAu, -mod, IniKey)
+      } yield ()
     }
 
     Rule.state(Loc.lowAuL.name, init[A] >>= calc)
