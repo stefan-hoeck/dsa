@@ -1,6 +1,7 @@
 package efa.dsa.equipment
 
 import efa.core.{ToXml, Efa, ValRes}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.world.{TpKk, RangedDistance}
 import efa.rpg.core.DieRoller
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._

@@ -1,6 +1,7 @@
 package efa.dsa.generation
 
 import efa.core.{Default, TaggedToXml, ToXml, Efa, UniqueIdL}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.rpg.core.Util
 import org.scalacheck.{Gen, Arbitrary}, Arbitrary.arbitrary
 import scala.xml.Node

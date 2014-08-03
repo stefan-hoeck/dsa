@@ -1,6 +1,7 @@
 package efa.dsa.equipment
 
 import efa.core.{ToXml, Efa}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.world.{ShieldSize, ShieldType, Wm}
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 import scala.xml.Node

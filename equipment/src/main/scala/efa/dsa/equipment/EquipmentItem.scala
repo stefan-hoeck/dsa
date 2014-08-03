@@ -24,10 +24,10 @@ trait EquipmentLike[+A] extends RpgItemLike[A] {
 trait EquipmentItemLikes[A<:EquipmentLike[A]] extends RpgItemLikes[A] {
   self ⇒ 
 
-  protected def priceTag (a: A): Pair[String, String] =
+  protected def priceTag (a: A): (String, String) =
     (loc.price, UnitEnum[Coin].showPretty(Coin.S, 2)(a.price))
 
-  protected def weightTag (a: A): Pair[String, String] =
+  protected def weightTag (a: A): (String, String) =
     (loc.price, UnitEnum[MWeight].showPretty(MWeight.U, 4)(a.weight))
 
   private def equipmentToXml = implicitly[ToXml[EquipmentItemData]]

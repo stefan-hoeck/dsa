@@ -1,6 +1,7 @@
 package efa.dsa.equipment
 
 import efa.core.{ToXml, Efa}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import efa.dsa.world.Be
 import org.scalacheck.{Arbitrary, Gen}
 import scala.xml.Node

@@ -1,10 +1,10 @@
 package efa.dsa.generation
 
 import efa.core._, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import org.scalacheck.Arbitrary
 import scala.xml.Node
 import scalaz._, Scalaz._
-import shapeless.{Lens ⇒ _, _}, Nat._
 
 case class GenLists(
     abilities: AbilityPrototypes,
@@ -15,21 +15,20 @@ case class GenLists(
     skillChoices: SkillChoices)
 
 object GenLists {
-  implicit val GLIso = Iso.hlist(GenLists.apply _, GenLists.unapply _)
-  implicit val GLDefault: Default[GenLists] = ccDefault
-  implicit val GLEqual: Equal[GenLists] = ccEqual
-  implicit val GLArb: Arbitrary[GenLists] = ccArbitrary
+  implicit val GLDefault = deriveDefault[GenLists]
+  implicit val GLEqual = deriveEqual[GenLists]
+  implicit val GLArb = deriveArbitrary[GenLists]
 
-  final val lenses = SLens[GenLists]
+  final val L = shapeless.lens[GenLists]
   
-  implicit class Lenses[A](val l: A @> GenLists) extends AnyVal {
-    def abilities = l >=> lenses.at(_0)
-    def abilityChoices = l >=> lenses.at(_1)
-    def equipment = l >=> lenses.at(_2)
-    def equipmentChoices = l >=> lenses.at(_3)
-    def skills = l >=> lenses.at(_4)
-    def skillChoices = l >=> lenses.at(_5)
-  }
+  //implicit class Lenses[A](val l: A @> GenLists) extends AnyVal {
+  //  def abilities = l >=> zlens(L >> 'abilities)
+  //  def abilityChoices = l >=> zlens(L >> 'abilityChoices)
+  //  def equipment = l >=> zlens(L >> 'equipment)
+  //  def equipmentChoices = zlens(L >> 'equipmentChoices)
+  //  def skills = l >=> zlens(L >> 'skills)
+  //  def skillChoices = l >=> zlens(L >> 'skillChoices)
+  //}
 
   implicit val GLToXml = new ToXml[GenLists] {
     def fromXml(ns: Seq[Node]) = ^^^^^(

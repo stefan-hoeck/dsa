@@ -2,6 +2,7 @@ package efa.dsa.equipment
 
 import efa.rpg.core.DieRoller
 import efa.core.{ToXml, Efa}, Efa._
+import efa.core.syntax.{string, nodeSeq}
 import scalaz._, Scalaz._, scalacheck.ScalaCheckBinding._
 import scala.xml.Node
 import org.scalacheck.{Arbitrary, Gen}
