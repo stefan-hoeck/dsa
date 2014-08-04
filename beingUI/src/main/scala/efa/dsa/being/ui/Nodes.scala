@@ -1,18 +1,19 @@
 package efa.dsa.being.ui
 
 import efa.core.{ValSt, Efa, UniqueId}, Efa._
+import efa.core.syntax.lookup
 import efa.nb.node.{NodeOut, NbNode ⇒ N, NbChildren ⇒ NC,
                     Paster, PasteType}, NC._
 import efa.rpg.core.{Described, HtmlDesc}
 import scalaz._, Scalaz._, effect.IO
 
 object Nodes {
-  def described[A:Described]: NodeOut[A,Nothing] =
-    N.name(Described[A].name) ⊹
-    N.desc(Described[A].shortDesc) ⊹
-    (N.cookie[HtmlDesc] ∙ Described[A].htmlDesc)
+  def described[A:Described,B]: NodeOut[A,B] =
+    N.name[A,B](Described[A].name) ⊹
+    N.desc[A,B](Described[A].shortDesc) ⊹
+    (N.cookie[HtmlDesc,B] ∙ Described[A].htmlDesc)
 
-  def childActions (path: String): NodeOut[Any,Nothing] =
+  def childActions[A,B](path: String): NodeOut[A,B] =
     N.contextRootsA(List("ContextActions/DsaChildNode", path))
 
   /**

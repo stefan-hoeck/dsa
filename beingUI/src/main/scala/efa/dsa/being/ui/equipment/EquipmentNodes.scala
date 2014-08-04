@@ -19,6 +19,7 @@ import scalaz._, Scalaz._
 object EquipmentNodes extends StNodeFunctions {
   import implicits._
 
+  type VSED = ValSt[EquipmentDatas]
   type EquipmentOut[A] = NodeOut[A,ValSt[EquipmentDatas]]
   type HDOut[A] = NodeOut[A,ValSt[HD]]
 
@@ -28,13 +29,13 @@ object EquipmentNodes extends StNodeFunctions {
   ): EquipmentOut[Equipment[A,B]] = 
     destroyEs(L.delete) ⊹
     (editE(D) map (L add _ success)) ⊹
-    Nodes.described[Equipment[A,B]] ⊹
+    Nodes.described[Equipment[A,B],VSED] ⊹
     Nodes.childActions("ContextActions/DsaEquipmentNode") ⊹
-    textW[Equipment[A,B],Long](uiLoc.priceLoc.name, _.fullPrice, price) ⊹
-    textW[Equipment[A,B],Long](uiLoc.weightLoc.name, _.fullWeight, weight)
+    textW[Equipment[A,B],Long,VSED](uiLoc.priceLoc.name, _.fullPrice, price) ⊹
+    textW[Equipment[A,B],Long,VSED](uiLoc.weightLoc.name, _.fullWeight, weight)
 
-  lazy val attackModeOut: NodeOut[AttackMode,Nothing] =
-    name[AttackMode](_.name) ⊹
+  lazy val attackModeOut: NodeOut[AttackMode,ValSt[HeroData]] =
+    name[AttackMode,ValSt[HeroData]](_.name) ⊹
     attackMods(_.tp, TpKey) ⊹
     attackMods(_.at, AtFkKey) ⊹
     attackMods(_.pa, PaKey) ⊹
@@ -128,7 +129,7 @@ object EquipmentNodes extends StNodeFunctions {
   private def attackMods[A:Manifest](
     get: AttackMode ⇒ A,
     k: ModifierKey
-  ): NodeOut[AttackMode,Nothing] =
+  ): NodeOut[AttackMode,ValSt[HeroData]] =
     textW(k.loc.name, get, get(_).toString,
     prettyModsKeyO[AttackMode](k), Trailing)
 }

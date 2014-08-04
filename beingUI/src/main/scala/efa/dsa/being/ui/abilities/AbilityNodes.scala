@@ -12,6 +12,7 @@ import efa.rpg.core.{Described}
 import scalaz._, Scalaz._
 
 object AbilityNodes extends StNodeFunctions {
+  type VSAD = ValSt[AbilityDatas]
   type AbilitiesOut[A] = ValStOut[A,AbilityDatas]
 
   lazy val default: ValStOut[Abilities,AbilityDatas] =
@@ -34,7 +35,7 @@ object AbilityNodes extends StNodeFunctions {
     destroyEs(L.delete) ⊹
     (editE(D) withIn (L update (_, _) success)) ⊹
     (renameEs (L.rename) contramap (d ⇒ (d, d.nameVal))) ⊹ 
-    Nodes.described[Ability[A,B]] ⊹
+    Nodes.described[Ability[A,B],VSAD] ⊹
     Nodes.childActions("ContextActions/DsaAdvantageNode") ⊹
     sg(L.setActive)(_.isActive)(booleanRw(bLoc.isActiveLoc.name))
 

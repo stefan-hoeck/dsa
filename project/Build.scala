@@ -44,7 +44,7 @@ object Dependencies {
   val nbV                  = "RELEASE80"
   val rpgV                 = "1.2.0-SNAPSHOT"
   val scalacheckV          = "1.11.4"
-  val scalazV              = "7.1.0-RC2"
+  val scalazV              = "7.1.0"
   val shapelessV           = "2.0.0"
   val utilV                = "0.2.3-SNAPSHOT"
 
@@ -108,10 +108,9 @@ object DsaBuild extends Build {
     file("."),
     settings = buildSettings
   ) aggregate (abilities, abilitiesServices,
-               being, beingCalc, beingServices,
+               being, beingCalc, beingServices, beingUI,
                equipment, equipmentServices, generation,
                rules, testItems, world)
-  //             beingUI,
   
   lazy val abilities = Project (
     "dsa-abilities",

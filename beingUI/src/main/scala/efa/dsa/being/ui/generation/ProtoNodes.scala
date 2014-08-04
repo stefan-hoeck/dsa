@@ -1,6 +1,6 @@
 package efa.dsa.being.ui.generation
 
-import efa.core.{loc ⇒ cLoc}
+import efa.core.{loc ⇒ cLoc, ValSt}
 import efa.dsa.abilities._
 import efa.dsa.being.{Hero, HeroData, loc ⇒ bLoc}
 import efa.dsa.being.generation.GenData
@@ -16,7 +16,7 @@ object ProtoNodes extends StNodeFunctions {
 
   def protoOut[A,B](implicit L: SkillLinker[A,B]): ProtoOut[NamedPrototype] = 
     sg(L.protoValue)(_.value)(intRw(cLoc.valueLoc.name, Tap.validate)) ⊹
-    name[NamedPrototype](_.name)
+    name[NamedPrototype,ValSt[SkillPrototypes]](_.name)
 
   def parent[A,B](l: HeroData @> GenData, n: String)(
     implicit L: SkillLinker[A,B], M: Manifest[A])
@@ -29,13 +29,13 @@ object ProtoNodes extends StNodeFunctions {
   }
 
   def all(l: HeroData @> GenData): ValStOut[Hero,HeroData] = children (
-    singleF (parent[LanguageItem,TalentData](l, bLoc.languages)),
-    singleF (parent[MeleeTalentItem,MeleeTalentData](l, bLoc.meleeTalents)),
-    singleF (parent[RangedTalentItem,TalentData](l, bLoc.rangedTalents)),
-    singleF (parent[RitualItem,TalentData](l, bLoc.rituals)),
-    singleF (parent[ScriptureItem,TalentData](l, bLoc.scriptures)),
-    singleF (parent[SpellItem,SpellData](l, bLoc.spells)),
-    singleF (parent[TalentItem,TalentData](l, bLoc.talents))
+    singleF(parent[LanguageItem,TalentData](l, bLoc.languages)),
+    singleF(parent[MeleeTalentItem,MeleeTalentData](l, bLoc.meleeTalents)),
+    singleF(parent[RangedTalentItem,TalentData](l, bLoc.rangedTalents)),
+    singleF(parent[RitualItem,TalentData](l, bLoc.rituals)),
+    singleF(parent[ScriptureItem,TalentData](l, bLoc.scriptures)),
+    singleF(parent[SpellItem,SpellData](l, bLoc.spells)),
+    singleF(parent[TalentItem,TalentData](l, bLoc.talents))
   )
 }
 

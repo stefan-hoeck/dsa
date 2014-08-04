@@ -15,6 +15,7 @@ import efa.rpg.core.{Described, RpgEnum, prettyMods}
 import scalaz._, Scalaz._
 
 object SkillNodes extends StNodeFunctions {
+  type VSSD = ValSt[SkillDatas]
   type SkillsOut[A] = ValStOut[A,SkillDatas]
   type HDOut[A] = ValStOut[A,HD]
 
@@ -26,25 +27,26 @@ object SkillNodes extends StNodeFunctions {
   ): SkillsOut[Skill[A,B]] = 
     destroyEs(L.delete) ⊹
     (editE(D) map (L add _ success)) ⊹
-    Nodes.described[Skill[A,B]] ⊹
+    Nodes.described[Skill[A,B],VSSD] ⊹
     Nodes.childActions("ContextActions/DsaSkillNode") ⊹
     sg(L.special)(_.special)(booleanRw(bLoc.specialExpLoc.name)) ⊹ 
     sg(L.raisingCost)(_.rc)(comboRw(RpgEnum[RaisingCost].values,
       bLoc.raisingCostLoc.name)) ⊹ 
-    textW(bLoc.tawLoc.name, _.taw, _.taw.toString,
+    textW[Skill[A,B],Int,VSSD](bLoc.tawLoc.name,
+      _.taw, _.taw.toString,
       s ⇒ Some(prettyMods(s.taw, s.modifiers)), Trailing)
 
   lazy val languageOut: SkillsOut[Language] = skillOut
 
   lazy val meleeOut: SkillsOut[MeleeTalent] =
     skillOut[MeleeTalentItem,MeleeTalentData] ⊹
-    (showWTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe)) ⊹
+    showTrailingNO[Ebe,MeleeTalent](bLoc.ebeLoc.name)(_.item.ebe) ⊹
     (intRw(bLoc.atLoc.name, dummy) contramap MTL.at withIn MTL.setAt) ⊹
     (intRw(bLoc.paLoc.name, dummy) contramap MTL.pa withIn MTL.setPa)
 
   lazy val rangedOut: SkillsOut[RangedTalent] =
     skillOut[RangedTalentItem,TalentData] ⊹
-    (showWTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe))
+    showTrailingNO[Ebe,RangedTalent](bLoc.ebeLoc.name)(_.item.ebe)
 
   lazy val ritualOut: SkillsOut[Ritual] = skillOut
 
@@ -52,14 +54,14 @@ object SkillNodes extends StNodeFunctions {
 
   lazy val spellOut: SkillsOut[Spell] =
     skillOut[SpellItem,SpellData] ⊹
-    (showWTrailing[Attributes](bLoc.attributesLoc.name) ∙ (
-      _.item.attributes))
+    showTrailingNO[Attributes,Spell](bLoc.attributesLoc.name)(
+      _.item.attributes)
 
   lazy val talentOut: SkillsOut[Talent] =
     skillOut[TalentItem,TalentData] ⊹
-    (showWTrailing[Ebe](bLoc.ebeLoc.name) ∙ (_.item.ebe)) ⊹
-    (showWTrailing[Attributes](bLoc.attributesLoc.name) ∙ (
-      _.item.attributes))
+    showTrailingNO[Ebe,Talent](bLoc.ebeLoc.name)(_.item.ebe) ⊹
+    showTrailingNO[Attributes,Talent](bLoc.attributesLoc.name)(
+      _.item.attributes)
 
   val battleOut: HDOut[Skills] = children(
     singleF (parentHD(meleeOut, bLoc.meleeTalents)),
@@ -107,6 +109,9 @@ object SkillNodes extends StNodeFunctions {
 
   private def byTalentType (tt: TalentType): Skills ⇒ List[Talent] =
     TL.skillList map (_ filter (_.item.talentType ≟ tt))
+
+  private def showTrailingNO[A:Show,B](s: String)(f: B ⇒ A): SkillsOut[B] =
+    showWTrailing[A,VSSD](s) contramap f
 }
 
 

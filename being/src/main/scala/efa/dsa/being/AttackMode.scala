@@ -16,7 +16,7 @@ sealed trait AttackMode {
   def talent: String
 
   lazy val tp = (shapeless.lens[DieRoller] >> 'plus)
-                  .set(baseTp, modifiers property TpKey toInt)
+                  .set(baseTp)(modifiers property TpKey toInt)
 	lazy val at = modifiers property AtFkKey
 	lazy val pa = modifiers property PaKey
 	lazy val fk = modifiers property AtFkKey

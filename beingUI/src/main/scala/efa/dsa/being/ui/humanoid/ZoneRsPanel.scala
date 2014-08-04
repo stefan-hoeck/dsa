@@ -29,7 +29,7 @@ object ZoneRsPanel {
     for {
       ps ← BodyPart.values traverse ui
       p  ← Panel(border := Border.title(efa.dsa.being.ui.loc.zones))
-      _  ← ps foldMap (_._2.horizontal) addTo p
+      _  ← ps.foldMap(_._2.horizontal).vertical addTo p
     } yield BeingPanel(p, ps foldMap (_._1))
   }
 
