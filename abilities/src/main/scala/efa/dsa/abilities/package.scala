@@ -6,7 +6,7 @@ import efa.rpg.core.RangeVals
 import org.scalacheck.Gen
 
 package object abilities extends RangeVals {
-  lazy val loc = Service.unique[AbilitiesLocal] (AbilitiesLocal)
+  lazy val loc = Service.unique[AbilitiesLocal]
 
   val Gp = fullInfo(0, 99, "gp")
   val Ap = fullInfo(0, 99999, "ap")

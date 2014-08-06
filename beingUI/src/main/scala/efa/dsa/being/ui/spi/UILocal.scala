@@ -1,6 +1,6 @@
 package efa.dsa.being.ui.spi
 
-import efa.core.Localization
+import efa.core.{Localization, Default}
 
 trait UILocal {
   lazy val priceLoc =
@@ -50,6 +50,7 @@ trait UILocal {
 }
 
 object UILocal extends UILocal {
+  implicit val defImpl: Default[UILocal] = Default.default(this)
   def abilities = "Vor-, Nachteile und Sonderfertigkeiten"
   def actual = "Aktuell"
   def ap = "Erfahrung"

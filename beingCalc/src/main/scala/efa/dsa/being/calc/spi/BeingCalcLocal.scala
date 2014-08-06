@@ -1,5 +1,7 @@
 package efa.dsa.being.calc.spi
 
+import efa.core.Default
+
 trait BeingCalcLocal {
   def race: String
   def culture: String
@@ -19,6 +21,7 @@ trait BeingCalcLocal {
 }
 
 object BeingCalcLocal extends BeingCalcLocal {
+  implicit val defImpl: Default[BeingCalcLocal] = Default.default(this)
   def race = "Rasse"
   def culture = "Kultur"
   def profession = "Profession"

@@ -7,7 +7,7 @@ import efa.dsa.world.mittelreich.Distance
 import efa.rpg.core.{RangeVals, DieRoller, EnumMaps, EnumMap}
 
 package object equipment extends RangeVals {
-  lazy val loc = Service.unique[EquipmentLocal] (EquipmentLocal)
+  lazy val loc = Service.unique[EquipmentLocal]
 
   val Addition = xmlInfo[Boolean](Validators.dummy, "addition")
   val Bf = fullInfo (-99, 99, "bf")

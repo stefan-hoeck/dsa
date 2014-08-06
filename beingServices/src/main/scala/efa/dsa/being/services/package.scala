@@ -18,10 +18,10 @@ package object services {
   type HeroInfo = UIInfo[HeroData,Hero]
 
   lazy val abilities: SIn[AbilityItems] =
-    unique[AbilityProvider](AbilityProvider).abilities
+    unique[AbilityProvider].abilities
 
   lazy val equipment: SIn[EquipmentItems] =
-    unique[EquipmentProvider](EquipmentProvider).equipment
+    unique[EquipmentProvider].equipment
 
   lazy val world: SIn[World] = abilities ⊛ equipment apply World
 

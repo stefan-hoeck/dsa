@@ -11,7 +11,7 @@ import efa.rpg.being.BeingPanel
 import scalaz._, Scalaz._, effect.IO
 
 package object ui {
-  lazy val loc = unique[UILocal](UILocal)
+  lazy val loc = unique[UILocal]
   val version = "1.0.0-SNAPSHOT"
 
   type NP[A,B] = BeingPanel[A,B,OutlineNb]

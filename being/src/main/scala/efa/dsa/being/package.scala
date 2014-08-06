@@ -8,7 +8,7 @@ import org.scalacheck.Gen
 import scalaz._, Scalaz._
 
 package object being extends RangeVals with Util {
-  lazy val loc = Service.unique[BeingLocal](BeingLocal)
+  lazy val loc = Service.unique[BeingLocal]
 
   type BoolAtts = EnumMap[Attribute,Boolean]
   type Attributes = EnumMap[Attribute,Long]

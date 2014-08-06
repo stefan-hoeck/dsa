@@ -1,6 +1,6 @@
 package efa.dsa.being.spi
 
-import efa.core.Localization
+import efa.core.{Localization, Default}
 
 trait BeingLocal {
   lazy val aeLoc = Localization("ae", ae, shortAe, ae)
@@ -175,6 +175,7 @@ trait BeingLocal {
 }
 
 object BeingLocal extends BeingLocal {
+  implicit val defImpl: Default[BeingLocal] = Default.default(this)
   def advantages = "Vorteile"
   def ae = "Astralenergie"
   def at = "Attackewert"

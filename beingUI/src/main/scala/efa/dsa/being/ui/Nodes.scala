@@ -1,6 +1,6 @@
 package efa.dsa.being.ui
 
-import efa.core.{ValSt, Efa, UniqueId}, Efa._
+import efa.core.{ValSt, Efa, UniqueId, Unerased}, Efa._
 import efa.core.syntax.lookup
 import efa.nb.node.{NodeOut, NbNode ⇒ N, NbChildren ⇒ NC,
                     Paster, PasteType}, NC._
@@ -23,7 +23,7 @@ object Nodes {
    * @tparam D: Type of RpgItems for instance SkillItem
    * @tparam E: Data parent type for instance SkillDatas
    */
-  def parentNode[A,B,C,D:Manifest](name: String, out: NodeOut[B,ValSt[C]])
+  def parentNode[A,B,C,D:Unerased](name: String, out: NodeOut[B,ValSt[C]])
     (get: A ⇒ List[B])(add: D ⇒ State[C,Unit]): NodeOut[A,ValSt[C]] =
     NC.children(NC.leavesF(out)(get)) ⊹
     N.nameA(name) ⊹

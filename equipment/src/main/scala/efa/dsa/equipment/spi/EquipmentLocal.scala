@@ -1,6 +1,6 @@
 package efa.dsa.equipment.spi
 
-import efa.core.Localization
+import efa.core.{Localization, Default}
 
 trait EquipmentLocal {
   lazy val beLoc = Localization("be", be, shortBe, be)
@@ -62,6 +62,7 @@ trait EquipmentLocal {
 }
 
 object EquipmentLocal extends EquipmentLocal {
+  implicit val defImpl: Default[EquipmentLocal] = Default.default(this)
   def ammunition = "Geschoss"
   def ammunitions = "Geschosse"
   def armor = "Rüstung"

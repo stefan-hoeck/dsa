@@ -6,7 +6,7 @@ import efa.dsa.world.{SkillMaps, AbilityMaps, EquipmentMaps}
 import efa.rpg.core.RangeVals
 
 package object generation extends RangeVals {
-  lazy val loc = Service.unique[GenerationLocal](GenerationLocal)
+  lazy val loc = Service.unique[GenerationLocal]
 
   val Count = fullInfo(0, Int.MaxValue, "count")
   val Tap = fullInfo(-99, 999, "value")

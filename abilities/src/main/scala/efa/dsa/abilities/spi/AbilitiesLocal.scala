@@ -1,6 +1,6 @@
 package efa.dsa.abilities.spi
 
-import efa.core.Localization
+import efa.core.{Localization, Default}
 
 trait AbilitiesLocal {
   //abilities
@@ -46,6 +46,7 @@ trait AbilitiesLocal {
 }
 
 object AbilitiesLocal extends AbilitiesLocal {
+  implicit val defImpl: Default[AbilitiesLocal] = Default.default(this)
   def gp = "GP"
   def ap = "AP"
   def featType = "Typ"

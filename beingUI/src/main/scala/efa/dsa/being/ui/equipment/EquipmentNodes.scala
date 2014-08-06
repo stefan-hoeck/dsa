@@ -113,11 +113,11 @@ object EquipmentNodes extends StNodeFunctions {
     sg(L.equipRight)(_.rightEquipped)(booleanRw(bLoc.rhLoc.name))
 
   def parent[A,B] (o: EquipmentOut[Equipment[A,B]], n: String)
-  (implicit L: EquipmentLinker[A,B], M: Manifest[A]) =
+  (implicit L: EquipmentLinker[A,B], M: Unerased[A]) =
     Nodes.parentNode(n, o)(L.equipmentList)(L.addI)
 
   def parentHands[A,B] (o: EquipmentOut[Equipment[A,B]], n: String)
-  (implicit L: EquipmentLinker[A,B], M: Manifest[A]) =
+  (implicit L: EquipmentLinker[A,B], M: Unerased[A]) =
     Nodes.parentNode(n, hands(o))(L.equipmentList)(L.addIHD)
 
   private def price[A,B](e: Equipment[A,B]): String =
@@ -126,7 +126,7 @@ object EquipmentNodes extends StNodeFunctions {
   private def weight[A,B](e: Equipment[A,B]): String =
     UnitEnum[Weight] showPretty (Weight.U, 4) apply e.fullWeight
 
-  private def attackMods[A:Manifest](
+  private def attackMods[A:Unerased](
     get: AttackMode ⇒ A,
     k: ModifierKey
   ): NodeOut[AttackMode,ValSt[HeroData]] =

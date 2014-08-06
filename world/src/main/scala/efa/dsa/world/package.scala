@@ -17,7 +17,7 @@ package object world {
     def rdiv (d: Long): Long = RoundedDiv roundedDivL (value, d)
   }
    
-  lazy val loc = Service.unique[WorldLoc] (WorldLoc)
+  lazy val loc = Service.unique[WorldLoc]
 
   val Be = RangeVals fullInfo (0, 999, "be")
   val Rs = RangeVals fullInfo (0, 999, "rs")

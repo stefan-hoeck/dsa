@@ -84,11 +84,11 @@ object SkillNodes extends StNodeFunctions {
   )
 
   def parent[A,B] (o: SkillsOut[Skill[A,B]], n: String)
-  (implicit L: SkillLinker[A,B], M: Manifest[A]) =
+  (implicit L: SkillLinker[A,B], M: Unerased[A]) =
     Nodes.parentNode(n, o)(L.skillList)(L.addI)
 
   def parentHD[A,B] (o: SkillsOut[Skill[A,B]], n: String)
-  (implicit L: SkillLinker[A,B], M: Manifest[A]): HDOut[Skills] = {
+  (implicit L: SkillLinker[A,B], M: Unerased[A]): HDOut[Skills] = {
     Nodes.parentNode(n, rl(o))(L.skillList)(L.addIHD)
   }
 

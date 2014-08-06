@@ -1,6 +1,6 @@
 package efa.dsa.world.spi
 
-import efa.core.Localization
+import efa.core.{Localization, Default}
 
 trait WorldLoc {
 
@@ -186,6 +186,7 @@ trait WorldLoc {
 }
 
 object WorldLoc extends WorldLoc {
+  implicit val defImpl: Default[WorldLoc] = Default.default(this)
 
   def invalidEbe = "Unbekanntes Format für EBE. Mögliche Eingaben: -, -1, 0, x2, x3"
   def invalidRaisingCost =

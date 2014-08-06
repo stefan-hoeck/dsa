@@ -48,7 +48,7 @@ object AbilityNodes extends StNodeFunctions {
       intRw(cLoc.valueLoc.name, V.validate))
 
   private def parent[A,B] (o: AbilitiesOut[Ability[A,B]], n: String)
-  (implicit L: AbilityLinker[A,B], M: Manifest[A]) =
+  (implicit L: AbilityLinker[A,B], M: Unerased[A]) =
     Nodes.parentNode(n, o)(L.abilityList)(L.addI)
 }
 

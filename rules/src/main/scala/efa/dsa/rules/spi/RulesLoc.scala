@@ -1,6 +1,6 @@
 package efa.dsa.rules.spi
 
-import efa.core.{Localization ⇒ L}
+import efa.core.{Localization ⇒ L, Default}
 import efa.dsa.world.Attribute, Attribute._
 
 trait RulesLoc {
@@ -338,6 +338,7 @@ trait RulesLoc {
 }
 
 object RulesLoc extends RulesLoc {
+  implicit val defImpl: Default[RulesLoc] = Default.default(this)
   def akrobatik = "Akrobatik"
   def akrobatikDodgeRule = "Akrobatik Bonus auf Ausweichen"
   def armorBeRule = "BE von normaler Rüstung"

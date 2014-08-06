@@ -1,6 +1,6 @@
 package efa.dsa.being.ui.generation
 
-import efa.core.{loc ⇒ cLoc, ValSt}
+import efa.core.{loc ⇒ cLoc, ValSt, Unerased}
 import efa.dsa.abilities._
 import efa.dsa.being.{Hero, HeroData, loc ⇒ bLoc}
 import efa.dsa.being.generation.GenData
@@ -19,7 +19,7 @@ object ProtoNodes extends StNodeFunctions {
     name[NamedPrototype,ValSt[SkillPrototypes]](_.name)
 
   def parent[A,B](l: HeroData @> GenData, n: String)(
-    implicit L: SkillLinker[A,B], M: Manifest[A])
+    implicit L: SkillLinker[A,B], M: Unerased[A])
     : ValStOut[Hero,HeroData] = {
     
     val o = protoOut[A,B] map (_ map (l.skills lifts _))
